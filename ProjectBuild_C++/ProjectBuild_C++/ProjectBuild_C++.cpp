@@ -1,20 +1,71 @@
-﻿// ProjectBuild_C++.cpp : Этот файл содержит функцию "main". Здесь начинается и заканчивается выполнение программы.
-//
-
+﻿
 #include <iostream>
+#include <string>
+
+using namespace std;
+
+template <typename Ta, size_t T, typename Fa, size_t F>
+void func(Ta(&arr1)[T], Fa(&arr2)[F]) {
+    int size1 = T;
+    int size2 = F;
+    for (int i = 0; i < size1-20; i++) {
+        for (char с : arr1)
+            int a = 0;
+    }
+    cout << size1 << endl;
+    cout << size2 << endl;
+
+}
+
 
 int main()
 {
-    std::cout << "Hello World!\n";
+
+    std::string keywords[] = {
+      "auto", "bool", "break", "case"
+    };
+
+    std::string chars[] = {
+    "a", "b", "c", "d", "e", "f",
+    "g", "h", "i", "j", "k", "l",
+    "m", "n", "o", "p", "q", "r",
+    "s", "t", "u", "v", "w", "x",
+    "y", "z",
+    "A", "B", "C", "D", "E", "F",
+    "G", "H", "I", "J", "K", "L",
+    "M", "N", "O", "P", "Q", "R",
+    "S", "T", "U", "V", "W", "X",
+    "Y", "Z"
+    };
+    func(keywords, chars);
 }
 
-// Запуск программы: CTRL+F5 или меню "Отладка" > "Запуск без отладки"
-// Отладка программы: F5 или меню "Отладка" > "Запустить отладку"
+/*
+    std::string keywords[] = {
+      "auto", "bool", "break", "case", "char", "class", "const", "continue", "default", "delete",
+      "do", "double", "else", "enum", "extern", "float", "for", "friend", "goto", "if",
+      "inline", "int", "long", "mutable", "namespace", "new", "operator", "private", "protected", "public",
+      "register", "reinterpret_cast", "return", "short", "signed", "sizeof", "static", "static_assert", "static_cast",
+      "struct", "switch", "synchronized", "template", "this", "throw", "true", "try", "typedef", "typeid",
+      "typename", "union", "unsigned", "using", "virtual", "void", "volatile", "wchar_t", "while"
+    };
 
-// Советы по началу работы 
-//   1. В окне обозревателя решений можно добавлять файлы и управлять ими.
-//   2. В окне Team Explorer можно подключиться к системе управления версиями.
-//   3. В окне "Выходные данные" можно просматривать выходные данные сборки и другие сообщения.
-//   4. В окне "Список ошибок" можно просматривать ошибки.
-//   5. Последовательно выберите пункты меню "Проект" > "Добавить новый элемент", чтобы создать файлы кода, или "Проект" > "Добавить существующий элемент", чтобы добавить в проект существующие файлы кода.
-//   6. Чтобы снова открыть этот проект позже, выберите пункты меню "Файл" > "Открыть" > "Проект" и выберите SLN-файл.
+    std::string chars[] = {
+    "a", "b", "c", "d", "e", "f",
+    "g", "h", "i", "j", "k", "l",
+    "m", "n", "o", "p", "q", "r",
+    "s", "t", "u", "v", "w", "x",
+    "y", "z",
+    "A", "B", "C", "D", "E", "F",
+    "G", "H", "I", "J", "K", "L",
+    "M", "N", "O", "P", "Q", "R",
+    "S", "T", "U", "V", "W", "X",
+    "Y", "Z",
+    "\"", "'", "/", "{", "}",
+    "[", "]", "(", ")", ";",
+    ",", ".", ":", "+", "*",
+    "=", "%", "&", "|", "^",
+    "<", ">", "!", "&", "!",
+    "?"
+    };
+*/
