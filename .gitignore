@@ -32,7 +32,17 @@
 *.app
 
 # Files:
+
 # --ProjectBuild_C++
 ProjectBuild_C++/Debug/
 ProjectBuild_C++/.vs/
 ProjectBuild_C++/ProjectBuild_C++/Debug/
+ProjectBuild_C++/ProjectBuild_C++/x64/Debug/
+ProjectBuild_C++/x64/Debug/
+
+# --Convolution_test
+Convolution_test/Debug/
+Convolution_test/.vs/
+Convolution_test/Convolution_test/Debug/
+Convolution_test/Convolution_test/x64/Debug/
+Convolution_test/x64/Debug/
