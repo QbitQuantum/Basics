@@ -1,6 +1,11 @@
 ﻿
 #include <iostream>
 #include <string>
+#include <algorithm>
+#include <ctime>
+#include <cstdlib>
+#include <random>
+#include <array>
 
 using namespace std;
 
@@ -8,9 +13,9 @@ template <typename Ta, size_t T, typename Fa, size_t F>
 void func(Ta(&arr1)[T], Fa(&arr2)[F]) {
     int size1 = T;
     int size2 = F;
-    int hash = 0;
     for (int i = 0; i < size1; i++) {
-        cout << arr1[i] << " = ";
+        int hash = 0;
+        // cout << arr1[i] << " = ";
         for (char c : arr1[i]) {
             for (int j = 0; j < size2; j++) {
                 if (c == arr2[j]) {
@@ -19,13 +24,34 @@ void func(Ta(&arr1)[T], Fa(&arr2)[F]) {
                 }
             }
         }
-        std::cout << "\033[1;31m";
+        std::cout << "\033[1;99m";
         cout << "Hash = " << hash << endl;
         std::cout << "\033[0m";
     }
 }
+/*
+template <typename Ta, size_t T>
+std::string too_string(Ta(&chars)[T]) {
+    std::string str = string(chars, T);
+    string m[T];
+    return m;
+}
+*/
+template <typename Ta, size_t T>
+std::array<std::string, T> too_string(Ta(&chars)[T]) {
+    std::string str = std::string(chars, T);
+    std::array<std::string, T> M;
+    for (size_t i = 0; i < T; i++) {
+        M[i] = str.at(i);
+    }
+    return M;
+}
+
 int main()
 {
+    std::string programm[] = {
+            "template <typename Ta, size_t T, typename Fa, size_t F>\nvoid func(Ta(&arr1)[T], Fa(&arr2)[F]) {\n    int size1 = T; \n    int size2 = F;\n    for (int i = 0; i < size1; i++) {\n        cout << arr1[i] << ' = ';\n        for (char c : arr1[i]) {\n            for(int j = 0; j < size2; j++) {\n                if (c == arr2[j]) {\n                    hash += j;\n                    cout << j << ' ';\n                }\n            }\n        }\n        std::cout << '\033[1;31m';\n        cout << 'Hash = ' << hash << endl;\n        std::cout << '\033[0m'; \n    }\n}\n"
+    };
 
     std::string keywords[] = {
       "auto", "bool", "break", "case", "char", "class", "const", "continue", "default", "delete",
@@ -55,7 +81,23 @@ int main()
     '?'
     };
 
+    
     func(keywords, chars);
+
+
+    // const char -> string
+    auto result = too_string(chars);
+
+    const size_t size = std::size(chars);
+    std::string newArray[size];
+
+    std::copy(result.begin(), result.end(), std::begin(newArray));
+
+    //Перемешиваем
+    std::random_device rd;
+    std::mt19937 g(rd());
+    std::shuffle(std::begin(newArray), std::end(newArray), g);
+
 }
 /*
 
