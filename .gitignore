@@ -46,3 +46,10 @@ Convolution_test/.vs/
 Convolution_test/Convolution_test/Debug/
 Convolution_test/Convolution_test/x64/Debug/
 Convolution_test/x64/Debug/
+
+# --Convolution_test
+NthArgumentExtractor/Debug/
+NthArgumentExtractor/.vs/
+NthArgumentExtractor/NthArgumentExtractor/Debug/
+NthArgumentExtractor/NthArgumentExtractor/x64/Debug/
+NthArgumentExtractor/x64/Debug/
