@@ -24,7 +24,7 @@ void func(Ta(&arr1)[T], Fa(&arr2)[F]) {
                 }
             }
         }
-        std::cout << "\033[1;99m";
+        std::cout << "\033[41m";
         cout << "Hash = " << hash << endl;
         std::cout << "\033[0m";
     }
@@ -74,7 +74,7 @@ int main()
     '?'
     };
 
-    //func(keywords, chars);
+    func(keywords, chars);
 
 
     // const char -> string

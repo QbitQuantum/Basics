@@ -67,9 +67,9 @@ int main()
     cout << iteration_5 << endl;
     */
     
-                //Смог получить доступ к жементам и рализорвать цикл
+                //Смог получить доступ к элементам и рализорвать цикл
                     /*
-                for (int y = 0; y < size_db+ size_db_2-1; y++)
+                for (int y = 0; y < size_db + size_db_2 - 1; y++)
                 {
                     if (i - j == -2) {
                         //sum += db[i-1][j];
@@ -92,10 +92,11 @@ int main()
     cout << "-----------------------------------------" << endl;
 
     const int db[4][3] = {
-    {4, 5 ,6},
-    {8, 10, 12},
-    {12, 15, 18},
-    {16, 20, 24},
+          /* 0    1     2 */
+    /* 0 */ {4,   5 ,   6},
+    /* 1 */ {8,   10,   12},
+    /* 2 */ {12,  15,   18},
+    /* 3 */ {16,  20,   24},
     };
 
     const int size_db = extent<decltype(db), 0>::value;
@@ -107,28 +108,31 @@ int main()
     for (int i = 0; i < size_db; i++)
     {
         for (int j = 0; j < size_db_2; j++)
-        {
-
-            for (int z = 0; z > -size_db; --z)
+        {   // max value
+            for (int z = 0; z > -size_db_2; z--)
             {
                 if (i - j == z) {
-                    //sum += db[i-1][j];
+                    cout << "Index z = " << z << endl;
+                    cout << "\033[44m";
                     cout << "db[i][j-1] = " << db[i][j] << endl;
+                    cout << "\033[0m";
                     couts++;
                 }
             }
-            coutss++;
-            for (int z = 0; z < size_db_2 - 1; z++)
+            for (int z = 1; z < size_db; ++z)
             {
-                    if (i - j == z) {
-                        //sum += db[i-1][j];
-                        cout << "db[i][j-1] = " << db[i][j] << endl;
-                        couts++;
-                    }    
+                if (i - j == z) {
+                    //cout << "Index z = " << z << endl;
+                    cout << "\033[41m";
+                    cout << "db[][j-1] = " << db[i][j] << endl;
+                    cout << "\033[0m";
+                    couts++;
+               }    
             }
+            coutss++;
         }
     }
-    cout << "Elem = "<<couts << endl;
-    cout << "Iteration = " << coutss << endl;
+    cout << "Elem = " + couts << endl;
+    cout << "Iteration = " + coutss << endl;
 
 };
