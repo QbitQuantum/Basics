@@ -29,14 +29,7 @@ void func(Ta(&arr1)[T], Fa(&arr2)[F]) {
         std::cout << "\033[0m";
     }
 }
-/*
-template <typename Ta, size_t T>
-std::string too_string(Ta(&chars)[T]) {
-    std::string str = string(chars, T);
-    string m[T];
-    return m;
-}
-*/
+
 template <typename Ta, size_t T>
 std::array<std::string, T> too_string(Ta(&chars)[T]) {
     std::string str = std::string(chars, T);
@@ -81,8 +74,7 @@ int main()
     '?'
     };
 
-    
-    func(keywords, chars);
+    //func(keywords, chars);
 
 
     // const char -> string
@@ -96,7 +88,7 @@ int main()
     //Перемешиваем
     std::random_device rd;
     std::mt19937 g(rd());
-    std::shuffle(std::begin(newArray), std::end(newArray), g);
+    //std::shuffle(std::begin(newArray), std::end(newArray), g);
 
 }
 /*
