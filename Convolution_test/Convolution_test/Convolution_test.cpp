@@ -4,7 +4,6 @@
 #include <type_traits> // Для std::extent
 #include <algorithm>
 #include <iomanip>
-#include <iostream>
 #include <string_view>
 
 using namespace std;
@@ -91,48 +90,114 @@ int main()
 
     cout << "-----------------------------------------" << endl;
 
-    const int db[4][3] = {
-          /* 0    1     2 */
-    /* 0 */ {4,   5 ,   6},
-    /* 1 */ {8,   10,   12},
-    /* 2 */ {12,  15,   18},
-    /* 3 */ {16,  20,   24},
+    /*
+    const int db[3][3] = {
+        {4,   5 ,   6},
+        {8,   10,   12},
+        {12,  15,   18},
     };
 
     const int size_db = extent<decltype(db), 0>::value;
     const int size_db_2 = extent<decltype(db), 1>::value;
-    int parametr_db = max(size_db, size_db_2);
+    const int parametr_db_min = min(size_db, size_db_2);
+    const int parametr_db_max = max(size_db, size_db_2);
 
     int couts = 0;
     int coutss = 0;
+    int sum_k[parametr_db_max]{};
+    int sum_z[parametr_db_min]{};
+
     for (int i = 0; i < size_db; i++)
     {
         for (int j = 0; j < size_db_2; j++)
         {   // max value
-            for (int z = 0; z > -size_db_2; z--)
+            
+            for (int k = 0; k < parametr_db_max; k++)
+            {
+                if (i - j == -k) {
+                    cout << "Index k = " << k << endl;
+                    //cout << "\033[44m";
+                    //cout << "db[" + to_string(i) + "][" + to_string(j) + "] = " << db[i][j] << endl;
+                    //cout << "\033[0m";
+                    sum_k[k] += db[i][j];
+                    //couts++;
+                }
+            }            
+            for (int z = 1; z <= parametr_db_min; ++z)
             {
                 if (i - j == z) {
                     cout << "Index z = " << z << endl;
-                    cout << "\033[44m";
-                    cout << "db[i][j-1] = " << db[i][j] << endl;
-                    cout << "\033[0m";
-                    couts++;
+                    //cout << "\033[41m";
+                    //cout << "db[" + to_string(i) + "][" + to_string(j) + "] = " << db[i][j] << endl;
+                    //cout << "\033[0m";
+                    sum_z[z-1] += db[i][j];
+                    //couts++;
                 }
             }
-            for (int z = 1; z < size_db; ++z)
-            {
-                if (i - j == z) {
-                    //cout << "Index z = " << z << endl;
-                    cout << "\033[41m";
-                    cout << "db[][j-1] = " << db[i][j] << endl;
-                    cout << "\033[0m";
-                    couts++;
-               }    
-            }
-            coutss++;
+            //coutss++;
         }
     }
-    cout << "Elem = " + couts << endl;
-    cout << "Iteration = " + coutss << endl;
+    cout << endl;
+    cout << "massiv k:" << endl;
+    reverse(sum_k, sum_k + parametr_db_max);
+    for (int i = 0; i < parametr_db_max; i++) {
+        cout << "\033[44m";
+        std::cout << sum_k[i] << " "; // Выводим каждый элемент массива
+        cout << "\033[0m";
+    }
+    cout << endl;
+    cout << "massiv z:" << endl;
+    for (int i = 0; i < parametr_db_min-1; i++) {
+        cout << "\033[41m";
+        std::cout << sum_z[i] << " "; // Выводим каждый элемент массива
+        cout << "\033[0m";
+    }
 
+    //cout << "Elem = " + couts << endl;
+    //cout << "Iteration = " + coutss << endl;
+    */
+    const int arr1[]{ 1, 2, 3 };
+    const int arr2[]{ 4, 5, 6 };
+    const int sizes_1 = size(arr1);
+    const int sizes_2 = size(arr2);
+    int db[sizes_1][sizes_2]; 
+
+    for (int i = 0; i < 3; ++i) {
+        for (int j = 0; j < 3; ++j) {
+            db[i][j] = arr1[i] * arr2[j];
+        }
+    }
+
+    const int size_db = extent<decltype(db), 0>::value;
+    const int size_db_2 = extent<decltype(db), 1>::value;
+    const int parametr_db_min = min(size_db, size_db_2);
+    const int parametr_db_max = max(size_db, size_db_2);
+    int sum_k[parametr_db_max]{};
+    int sum_z[parametr_db_min]{};
+
+    for (int i = 0; i < size_db; i++)
+    {
+        for (int j = 0; j < size_db_2; j++)
+        { 
+            for (int k = 0; k < parametr_db_max; k++)
+            {
+                if (i - j == -k) {
+                    sum_k[k] += db[i][j];
+                }
+            }
+            for (int z = 1; z <= parametr_db_min; ++z)
+            {
+                if (i - j == z) {
+                    sum_z[z - 1] += db[i][j];
+                }
+            }
+        }
+    }
+    reverse(sum_k, sum_k + parametr_db_max);
+    for (int i = 0; i < parametr_db_max; i++) {
+        std::cout << sum_k[i] << " "; // Выводим каждый элемент массива
+    }
+    for (int i = 0; i < parametr_db_min - 1; i++) {
+        std::cout << sum_z[i] << " "; // Выводим каждый элемент массива
+    }
 };
