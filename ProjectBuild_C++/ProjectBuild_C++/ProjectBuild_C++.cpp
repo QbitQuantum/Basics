@@ -7,6 +7,9 @@
 #include <random>
 #include <array>
 
+#include "class/class_test.cpp"
+
+
 using namespace std;
 
 template <typename Ta, size_t T, typename Fa, size_t F>
@@ -42,6 +45,10 @@ std::array<std::string, T> too_string(Ta(&chars)[T]) {
 
 int main()
 {
+    class_base obj;
+
+    cout<< std::boolalpha<< obj.check("admin");
+
     std::string programm[] = {
             "template <typename Ta, size_t T, typename Fa, size_t F>\nvoid func(Ta(&arr1)[T], Fa(&arr2)[F]) {\n    int size1 = T; \n    int size2 = F;\n    for (int i = 0; i < size1; i++) {\n        cout << arr1[i] << ' = ';\n        for (char c : arr1[i]) {\n            for(int j = 0; j < size2; j++) {\n                if (c == arr2[j]) {\n                    hash += j;\n                    cout << j << ' ';\n                }\n            }\n        }\n        std::cout << '\033[1;31m';\n        cout << 'Hash = ' << hash << endl;\n        std::cout << '\033[0m'; \n    }\n}\n"
     };
@@ -74,7 +81,7 @@ int main()
     '?'
     };
 
-    func(keywords, chars);
+    //func(keywords, chars);
 
 
     // const char -> string
