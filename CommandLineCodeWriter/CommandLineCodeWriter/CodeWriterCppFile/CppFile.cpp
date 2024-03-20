@@ -1,5 +1,5 @@
-#include <iostream>
-int main(){	
-	std::cout<<"İòà ïğîãğàììà íàïèñàíà ÷åğåç êîíñîëü";	
+ï»¿#include <iostream>
+int main(){
+	std::cout << "Ğ­Ñ‚Ğ° Ğ¿Ñ€Ğ¾Ğ³Ñ€Ğ°Ğ¼Ğ¼Ğ° Ğ½Ğ°Ğ¿Ğ¸ÑĞ°Ğ½Ğ° Ñ‡ĞµÑ€ĞµĞ· ĞºĞ¾Ğ½ÑĞ¾Ğ»ÑŒ";
 	return 0;
 }
