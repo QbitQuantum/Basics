@@ -1,23 +1,32 @@
-﻿#include <iostream>
+﻿
+#include <iostream>
 #include <type_traits>
+#include <string>
 
-template <typename T, std::enable_if_t<std::is_same_v<T, std::string>, bool> = true>
-T functions() {
-    return "2T";
-}
-
-template <typename T, std::enable_if_t<std::is_same_v<T, int>, bool> = true>
-T functions() {
-    return 2;
-}
-
-template <typename T, std::enable_if_t<std::is_same_v<T, bool>, bool> = true>
-T functions() {
-    return true;
+template <typename T>
+    typename std::conditional<std::is_same<T, std::string>::value, std::string,
+    typename std::conditional<std::is_same<T, int>::value, int,
+    typename std::conditional<std::is_same<T, bool>::value, bool, void>::type>::type>::type
+    functions() {
+    if constexpr (std::is_same<T, std::string>::value) {
+        return "2T";
+    }
+    else if constexpr (std::is_same<T, int>::value) {
+        return 2;
+    }
+    else if constexpr (std::is_same<T, bool>::value) {
+        return false;
+    }
+    else {
+        static_assert(std::is_same<T, void>::value, "Unsupported type");
+    }
 }
 
 int main() {
-    std::string b = functions<decltype(b)>();
+    int b = functions<decltype(b)>();
     std::cout << b;
     return 0;
 }
+
+
+
