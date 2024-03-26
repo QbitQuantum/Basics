@@ -1,27 +1,23 @@
 ﻿#include <iostream>
 #include <type_traits>
-#include <string>
 
-template <typename T>
+template <typename T, std::enable_if_t<std::is_same_v<T, std::string>, bool> = true>
 T functions() {
+    return "2T";
+}
 
-	std::string s = "1T";
-	int i = 1;
-	bool b = false;
+template <typename T, std::enable_if_t<std::is_same_v<T, int>, bool> = true>
+T functions() {
+    return 2;
+}
 
-	if (typeid(std::string) == typeid(T)) {
-		return s;
-	}
-	if (typeid(int) == typeid(T)) {
-		return i;
-	}
-	if (typeid(bool) == typeid(T)) {
-		return b;
-	}
-	return T();
-};
+template <typename T, std::enable_if_t<std::is_same_v<T, bool>, bool> = true>
+T functions() {
+    return true;
+}
 
 int main() {
-	std::string a = functions<decltype(a)>();
-	std::cout << a;
+    std::string b = functions<decltype(b)>();
+    std::cout << b;
+    return 0;
 }
