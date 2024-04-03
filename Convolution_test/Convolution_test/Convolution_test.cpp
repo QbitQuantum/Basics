@@ -49,16 +49,17 @@ void level_(T(&arr1)[Ta], D(&arr2)[Da]) {
     for (int i = 0; i < size_db; i++)
     {
         for (int j = 0; j < size_db_2; j++)
-        { 
+        {   
+            int difference_index = i - j;
             for (int k = 0; k < parametr_db_max; k++)
             {
-                if (i - j == -k) {
+                if (difference_index == -k) {
                     sum_k[k] += db[i][j];
                 }
             }
-            for (int z = 1; z <= parametr_db_min; ++z)
+            for (int z = 0; z <= parametr_db_min; z++)
             {
-                if (i - j == z) {
+                if (difference_index == z) {
                     sum_z[z - 1] += db[i][j];
                 }
             }
@@ -92,15 +93,16 @@ void level_insert(T(&arr1)[Ta], D(&arr2)[Da]) {
     {
             for (int j = size_db_2-1; j >=0; j--)
             {   
+                int sum_index = i + j;
                 for (int k = 0; k < parametr_db_max; k++)
                 {
-                    if (i + j == k) { 
+                    if (sum_index == k) {
                         sum_k[k] += db[i][j];
                     }
                 }
-                for (int z = 1; z <= parametr_db_min; ++z)
+                for (int z = 0; z <= parametr_db_min; z++)
                 {
-                    if (i + j == size_db + size_db_2 - z) {
+                    if (sum_index == size_db + size_db_2 - z) {
                         sum_z[z -1] += db[i][j];
                     }
                 }
