@@ -1,5 +1,4 @@
 ﻿// 1. __adding.Value[_field("num")] = BilixFlights->EnumerateActHeadNumber(YearOf(__adding.Element[_field("date.begin")]->DateTime));
-
 /*
 #include <iostream>
 #include <map>
@@ -57,4 +56,73 @@ int main() {
 
 */
 
-// 2.
+
+
+/*
+//  2.
+    __classes.Parent = _ctrl_createchildparent(__SCALE(GlobalData->GetInt("service_classes", "visual.width", 860)));
+    __classes.Tab = new OctetBilixServiceClasses(*__classes.Parent, this);
+    __classes.Tab->Width = __SCALE(GlobalData->GetInt("service_classes", "visual.width", 860));
+    __childs.push_back(__classes.Tab);
+*/
+/*
+#include <vector>
+#include <string>
+class ParentClass {
+public:
+    ParentClass(int width) : width(width) {}
+    int width;
+};
+class OctetBilixServiceClasses {
+public:
+    OctetBilixServiceClasses(ParentClass& parent, void* context) : parent(parent), context(context) {}
+    int Width;
+private:
+    ParentClass& parent;
+    void* context;
+};
+class GlobalDataClass {
+public:
+    int GetInt(const std::string& section, const std::string& key, int defaultValue) {
+        return defaultValue;
+    }
+};
+GlobalDataClass* GlobalData;
+ParentClass* _ctrl_createchildparent(int width) {
+    return new ParentClass(width);
+}
+int __SCALE(int value) {
+    return value;
+}
+struct ClassesContainer {
+    ParentClass* Parent;
+    OctetBilixServiceClasses* Tab;
+};
+class OctetBaseClases
+{
+public:
+    void OctetClases();
+};
+void OctetBaseClases::OctetClases()
+{
+    ClassesContainer __classes;
+    std::vector<OctetBilixServiceClasses*> __childs;
+
+    __classes.Parent = _ctrl_createchildparent(__SCALE(GlobalData->GetInt("service_classes", "visual.width", 860)));
+    __classes.Tab = new OctetBilixServiceClasses(*__classes.Parent, this);
+    __classes.Tab->Width = __SCALE(GlobalData->GetInt("service_classes", "visual.width", 860));
+    __childs.push_back(__classes.Tab);
+
+    delete __classes.Tab;
+    delete __classes.Parent;
+}
+int main() {
+    OctetBaseClases* __Octet = new OctetBaseClases();
+    __Octet->OctetClases();
+    delete __Octet;
+    return 0;
+}
+*/
+
+
+
