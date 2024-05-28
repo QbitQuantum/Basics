@@ -1,0 +1,134 @@
+ [
+    {
+        "1": "1",
+        "0000": {
+            "Epoch": null
+        },
+        "0001": {
+            "Time": null
+        },
+        "0002": {
+            "Prediction": null
+        }
+    },
+    {
+        "2": "4",
+        "0000": {
+            "Epoch": null
+        },
+        "0001": {
+            "Time": null
+        },
+        "0002": {
+            "Prediction": null
+        }
+    },
+    {
+        "3": "9",
+        "0000": {
+            "Epoch": null
+        },
+        "0001": {
+            "Time": null
+        },
+        "0002": {
+            "Prediction": null
+        }
+    },
+    {
+        "4": "16",
+        "0000": {
+            "Epoch": null
+        },
+        "0001": {
+            "Time": null
+        },
+        "0002": {
+            "Prediction": null
+        }
+    },
+    {
+        "5": "25",
+        "0000": {
+            "Epoch": null
+        },
+        "0001": {
+            "Time": null
+        },
+        "0002": {
+            "Prediction": null
+        }
+    },
+    {
+        "6": "36",
+        "0000": {
+            "Epoch": null
+        },
+        "0001": {
+            "Time": null
+        },
+        "0002": {
+            "Prediction": null
+        }
+    },
+    {
+        "7": "49",
+        "0000": {
+            "Epoch": null
+        },
+        "0001": {
+            "Time": null
+        },
+        "0002": {
+            "Prediction": null
+        }
+    },
+    {
+        "8": "64",
+        "0000": {
+            "Epoch": null
+        },
+        "0001": {
+            "Time": null
+        },
+        "0002": {
+            "Prediction": null
+        }
+    },
+    {
+        "9": "81",
+        "0000": {
+            "Epoch": null
+        },
+        "0001": {
+            "Time": null
+        },
+        "0002": {
+            "Prediction": null
+        }
+    },
+    {
+        "10": "100",
+        "0000": {
+            "Epoch": null
+        },
+        "0001": {
+            "Time": null
+        },
+        "0002": {
+            "Prediction": null
+        }
+    },
+    {
+        "11": "121",
+        "0000": {
+            "Epoch": null
+        },
+        "0001": {
+            "Time": null
+        },
+        "0002": {
+            "Prediction": null
+        }
+    }
+]
