@@ -1,0 +1,4 @@
+﻿HelloWorld.obj : error LNK2001: неразрешенный внешний символ __imp__Py_Finalize.
+HelloWorld.obj : error LNK2001: неразрешенный внешний символ __imp__Py_Initialize.
+HelloWorld.obj : error LNK2001: неразрешенный внешний символ __imp__PyRun_SimpleStringFlags.
+C:\Users\d.deev\Desktop\HelloWorld\Release\HelloWorld.exe : fatal error LNK1120: неразрешенных внешних элементов: 3
