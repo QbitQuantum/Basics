@@ -1,0 +1,12864 @@
+﻿// CodeGear C++Builder
+// Copyright (c) 1995, 2021 by Embarcadero Technologies, Inc.
+// All rights reserved
+
+// (DO NOT EDIT: machine generated header) 'Androidapi.JNI.Media.pas' rev: 34.00 (Android)
+
+#ifndef Androidapi_Jni_MediaHPP
+#define Androidapi_Jni_MediaHPP
+
+#pragma delphiheader begin
+#pragma option push
+#pragma option -w-      // All warnings off
+#pragma option -Vx      // Zero-length empty class member 
+#pragma pack(push,8)
+#include <System.hpp>
+#include <SysInit.hpp>
+#include <Androidapi.JNIBridge.hpp>
+#include <Androidapi.JNI.App.hpp>
+#include <Androidapi.JNI.Bluetooth.hpp>
+#include <Androidapi.JNI.GraphicsContentViewText.hpp>
+#include <Androidapi.JNI.Hardware.hpp>
+#include <Androidapi.JNI.JavaTypes.hpp>
+#include <Androidapi.JNI.Net.hpp>
+#include <Androidapi.JNI.Os.hpp>
+#include <Androidapi.JNI.Provider.hpp>
+#include <Androidapi.JNI.Util.hpp>
+#include <Androidapi.Jni.hpp>
+#include <System.Rtti.hpp>
+
+//-- user supplied -----------------------------------------------------------
+
+namespace Androidapi
+{
+namespace Jni
+{
+namespace Media
+{
+//-- forward type declarations -----------------------------------------------
+__interface DELPHIINTERFACE JAsyncPlayerClass;
+typedef System::DelphiInterface<JAsyncPlayerClass> _di_JAsyncPlayerClass;
+__interface DELPHIINTERFACE JAsyncPlayer;
+typedef System::DelphiInterface<JAsyncPlayer> _di_JAsyncPlayer;
+class DELPHICLASS TJAsyncPlayer;
+__interface DELPHIINTERFACE JAudioAttributesClass;
+typedef System::DelphiInterface<JAudioAttributesClass> _di_JAudioAttributesClass;
+__interface DELPHIINTERFACE JAudioAttributes;
+typedef System::DelphiInterface<JAudioAttributes> _di_JAudioAttributes;
+class DELPHICLASS TJAudioAttributes;
+__interface DELPHIINTERFACE JAudioAttributes_BuilderClass;
+typedef System::DelphiInterface<JAudioAttributes_BuilderClass> _di_JAudioAttributes_BuilderClass;
+__interface DELPHIINTERFACE JAudioAttributes_Builder;
+typedef System::DelphiInterface<JAudioAttributes_Builder> _di_JAudioAttributes_Builder;
+class DELPHICLASS TJAudioAttributes_Builder;
+__interface DELPHIINTERFACE JAudioDeviceCallbackClass;
+typedef System::DelphiInterface<JAudioDeviceCallbackClass> _di_JAudioDeviceCallbackClass;
+__interface DELPHIINTERFACE JAudioDeviceCallback;
+typedef System::DelphiInterface<JAudioDeviceCallback> _di_JAudioDeviceCallback;
+class DELPHICLASS TJAudioDeviceCallback;
+__interface DELPHIINTERFACE JAudioDeviceInfoClass;
+typedef System::DelphiInterface<JAudioDeviceInfoClass> _di_JAudioDeviceInfoClass;
+__interface DELPHIINTERFACE JAudioDeviceInfo;
+typedef System::DelphiInterface<JAudioDeviceInfo> _di_JAudioDeviceInfo;
+class DELPHICLASS TJAudioDeviceInfo;
+__interface DELPHIINTERFACE JAudioFocusRequestClass;
+typedef System::DelphiInterface<JAudioFocusRequestClass> _di_JAudioFocusRequestClass;
+__interface DELPHIINTERFACE JAudioFocusRequest;
+typedef System::DelphiInterface<JAudioFocusRequest> _di_JAudioFocusRequest;
+class DELPHICLASS TJAudioFocusRequest;
+__interface DELPHIINTERFACE JAudioFocusRequest_BuilderClass;
+typedef System::DelphiInterface<JAudioFocusRequest_BuilderClass> _di_JAudioFocusRequest_BuilderClass;
+__interface DELPHIINTERFACE JAudioFocusRequest_Builder;
+typedef System::DelphiInterface<JAudioFocusRequest_Builder> _di_JAudioFocusRequest_Builder;
+class DELPHICLASS TJAudioFocusRequest_Builder;
+__interface DELPHIINTERFACE JAudioFormatClass;
+typedef System::DelphiInterface<JAudioFormatClass> _di_JAudioFormatClass;
+__interface DELPHIINTERFACE JAudioFormat;
+typedef System::DelphiInterface<JAudioFormat> _di_JAudioFormat;
+class DELPHICLASS TJAudioFormat;
+__interface DELPHIINTERFACE JAudioFormat_BuilderClass;
+typedef System::DelphiInterface<JAudioFormat_BuilderClass> _di_JAudioFormat_BuilderClass;
+__interface DELPHIINTERFACE JAudioFormat_Builder;
+typedef System::DelphiInterface<JAudioFormat_Builder> _di_JAudioFormat_Builder;
+class DELPHICLASS TJAudioFormat_Builder;
+__interface DELPHIINTERFACE JAudioManagerClass;
+typedef System::DelphiInterface<JAudioManagerClass> _di_JAudioManagerClass;
+__interface DELPHIINTERFACE JAudioManager;
+typedef System::DelphiInterface<JAudioManager> _di_JAudioManager;
+class DELPHICLASS TJAudioManager;
+__interface DELPHIINTERFACE JAudioManager_AudioPlaybackCallbackClass;
+typedef System::DelphiInterface<JAudioManager_AudioPlaybackCallbackClass> _di_JAudioManager_AudioPlaybackCallbackClass;
+__interface DELPHIINTERFACE JAudioManager_AudioPlaybackCallback;
+typedef System::DelphiInterface<JAudioManager_AudioPlaybackCallback> _di_JAudioManager_AudioPlaybackCallback;
+class DELPHICLASS TJAudioManager_AudioPlaybackCallback;
+__interface DELPHIINTERFACE JAudioManager_AudioRecordingCallbackClass;
+typedef System::DelphiInterface<JAudioManager_AudioRecordingCallbackClass> _di_JAudioManager_AudioRecordingCallbackClass;
+__interface DELPHIINTERFACE JAudioManager_AudioRecordingCallback;
+typedef System::DelphiInterface<JAudioManager_AudioRecordingCallback> _di_JAudioManager_AudioRecordingCallback;
+class DELPHICLASS TJAudioManager_AudioRecordingCallback;
+__interface DELPHIINTERFACE JAudioManager_OnAudioFocusChangeListenerClass;
+typedef System::DelphiInterface<JAudioManager_OnAudioFocusChangeListenerClass> _di_JAudioManager_OnAudioFocusChangeListenerClass;
+__interface DELPHIINTERFACE JAudioManager_OnAudioFocusChangeListener;
+typedef System::DelphiInterface<JAudioManager_OnAudioFocusChangeListener> _di_JAudioManager_OnAudioFocusChangeListener;
+class DELPHICLASS TJAudioManager_OnAudioFocusChangeListener;
+__interface DELPHIINTERFACE JAudioPlaybackConfigurationClass;
+typedef System::DelphiInterface<JAudioPlaybackConfigurationClass> _di_JAudioPlaybackConfigurationClass;
+__interface DELPHIINTERFACE JAudioPlaybackConfiguration;
+typedef System::DelphiInterface<JAudioPlaybackConfiguration> _di_JAudioPlaybackConfiguration;
+class DELPHICLASS TJAudioPlaybackConfiguration;
+__interface DELPHIINTERFACE JAudioRecordClass;
+typedef System::DelphiInterface<JAudioRecordClass> _di_JAudioRecordClass;
+__interface DELPHIINTERFACE JAudioRecord;
+typedef System::DelphiInterface<JAudioRecord> _di_JAudioRecord;
+class DELPHICLASS TJAudioRecord;
+__interface DELPHIINTERFACE JAudioRecord_BuilderClass;
+typedef System::DelphiInterface<JAudioRecord_BuilderClass> _di_JAudioRecord_BuilderClass;
+__interface DELPHIINTERFACE JAudioRecord_Builder;
+typedef System::DelphiInterface<JAudioRecord_Builder> _di_JAudioRecord_Builder;
+class DELPHICLASS TJAudioRecord_Builder;
+__interface DELPHIINTERFACE JAudioRecord_OnRecordPositionUpdateListenerClass;
+typedef System::DelphiInterface<JAudioRecord_OnRecordPositionUpdateListenerClass> _di_JAudioRecord_OnRecordPositionUpdateListenerClass;
+__interface DELPHIINTERFACE JAudioRecord_OnRecordPositionUpdateListener;
+typedef System::DelphiInterface<JAudioRecord_OnRecordPositionUpdateListener> _di_JAudioRecord_OnRecordPositionUpdateListener;
+class DELPHICLASS TJAudioRecord_OnRecordPositionUpdateListener;
+__interface DELPHIINTERFACE JAudioRouting_OnRoutingChangedListenerClass;
+typedef System::DelphiInterface<JAudioRouting_OnRoutingChangedListenerClass> _di_JAudioRouting_OnRoutingChangedListenerClass;
+__interface DELPHIINTERFACE JAudioRouting_OnRoutingChangedListener;
+typedef System::DelphiInterface<JAudioRouting_OnRoutingChangedListener> _di_JAudioRouting_OnRoutingChangedListener;
+class DELPHICLASS TJAudioRouting_OnRoutingChangedListener;
+__interface DELPHIINTERFACE JAudioRecord_OnRoutingChangedListenerClass;
+typedef System::DelphiInterface<JAudioRecord_OnRoutingChangedListenerClass> _di_JAudioRecord_OnRoutingChangedListenerClass;
+__interface DELPHIINTERFACE JAudioRecord_OnRoutingChangedListener;
+typedef System::DelphiInterface<JAudioRecord_OnRoutingChangedListener> _di_JAudioRecord_OnRoutingChangedListener;
+class DELPHICLASS TJAudioRecord_OnRoutingChangedListener;
+__interface DELPHIINTERFACE JAudioRecordingConfigurationClass;
+typedef System::DelphiInterface<JAudioRecordingConfigurationClass> _di_JAudioRecordingConfigurationClass;
+__interface DELPHIINTERFACE JAudioRecordingConfiguration;
+typedef System::DelphiInterface<JAudioRecordingConfiguration> _di_JAudioRecordingConfiguration;
+class DELPHICLASS TJAudioRecordingConfiguration;
+__interface DELPHIINTERFACE JAudioRoutingClass;
+typedef System::DelphiInterface<JAudioRoutingClass> _di_JAudioRoutingClass;
+__interface DELPHIINTERFACE JAudioRouting;
+typedef System::DelphiInterface<JAudioRouting> _di_JAudioRouting;
+class DELPHICLASS TJAudioRouting;
+__interface DELPHIINTERFACE JAudioTimestampClass;
+typedef System::DelphiInterface<JAudioTimestampClass> _di_JAudioTimestampClass;
+__interface DELPHIINTERFACE JAudioTimestamp;
+typedef System::DelphiInterface<JAudioTimestamp> _di_JAudioTimestamp;
+class DELPHICLASS TJAudioTimestamp;
+__interface DELPHIINTERFACE JAudioTrackClass;
+typedef System::DelphiInterface<JAudioTrackClass> _di_JAudioTrackClass;
+__interface DELPHIINTERFACE JAudioTrack;
+typedef System::DelphiInterface<JAudioTrack> _di_JAudioTrack;
+class DELPHICLASS TJAudioTrack;
+__interface DELPHIINTERFACE JAudioTrack_BuilderClass;
+typedef System::DelphiInterface<JAudioTrack_BuilderClass> _di_JAudioTrack_BuilderClass;
+__interface DELPHIINTERFACE JAudioTrack_Builder;
+typedef System::DelphiInterface<JAudioTrack_Builder> _di_JAudioTrack_Builder;
+class DELPHICLASS TJAudioTrack_Builder;
+__interface DELPHIINTERFACE JAudioTrack_OnPlaybackPositionUpdateListenerClass;
+typedef System::DelphiInterface<JAudioTrack_OnPlaybackPositionUpdateListenerClass> _di_JAudioTrack_OnPlaybackPositionUpdateListenerClass;
+__interface DELPHIINTERFACE JAudioTrack_OnPlaybackPositionUpdateListener;
+typedef System::DelphiInterface<JAudioTrack_OnPlaybackPositionUpdateListener> _di_JAudioTrack_OnPlaybackPositionUpdateListener;
+class DELPHICLASS TJAudioTrack_OnPlaybackPositionUpdateListener;
+__interface DELPHIINTERFACE JAudioTrack_OnRoutingChangedListenerClass;
+typedef System::DelphiInterface<JAudioTrack_OnRoutingChangedListenerClass> _di_JAudioTrack_OnRoutingChangedListenerClass;
+__interface DELPHIINTERFACE JAudioTrack_OnRoutingChangedListener;
+typedef System::DelphiInterface<JAudioTrack_OnRoutingChangedListener> _di_JAudioTrack_OnRoutingChangedListener;
+class DELPHICLASS TJAudioTrack_OnRoutingChangedListener;
+__interface DELPHIINTERFACE JCamcorderProfileClass;
+typedef System::DelphiInterface<JCamcorderProfileClass> _di_JCamcorderProfileClass;
+__interface DELPHIINTERFACE JCamcorderProfile;
+typedef System::DelphiInterface<JCamcorderProfile> _di_JCamcorderProfile;
+class DELPHICLASS TJCamcorderProfile;
+__interface DELPHIINTERFACE JCameraProfileClass;
+typedef System::DelphiInterface<JCameraProfileClass> _di_JCameraProfileClass;
+__interface DELPHIINTERFACE JCameraProfile;
+typedef System::DelphiInterface<JCameraProfile> _di_JCameraProfile;
+class DELPHICLASS TJCameraProfile;
+__interface DELPHIINTERFACE JMediaDrmExceptionClass;
+typedef System::DelphiInterface<JMediaDrmExceptionClass> _di_JMediaDrmExceptionClass;
+__interface DELPHIINTERFACE JMediaDrmException;
+typedef System::DelphiInterface<JMediaDrmException> _di_JMediaDrmException;
+class DELPHICLASS TJMediaDrmException;
+__interface DELPHIINTERFACE JDeniedByServerExceptionClass;
+typedef System::DelphiInterface<JDeniedByServerExceptionClass> _di_JDeniedByServerExceptionClass;
+__interface DELPHIINTERFACE JDeniedByServerException;
+typedef System::DelphiInterface<JDeniedByServerException> _di_JDeniedByServerException;
+class DELPHICLASS TJDeniedByServerException;
+__interface DELPHIINTERFACE JDrmInitDataClass;
+typedef System::DelphiInterface<JDrmInitDataClass> _di_JDrmInitDataClass;
+__interface DELPHIINTERFACE JDrmInitData;
+typedef System::DelphiInterface<JDrmInitData> _di_JDrmInitData;
+class DELPHICLASS TJDrmInitData;
+__interface DELPHIINTERFACE JDrmInitData_SchemeInitDataClass;
+typedef System::DelphiInterface<JDrmInitData_SchemeInitDataClass> _di_JDrmInitData_SchemeInitDataClass;
+__interface DELPHIINTERFACE JDrmInitData_SchemeInitData;
+typedef System::DelphiInterface<JDrmInitData_SchemeInitData> _di_JDrmInitData_SchemeInitData;
+class DELPHICLASS TJDrmInitData_SchemeInitData;
+__interface DELPHIINTERFACE JExifInterfaceClass;
+typedef System::DelphiInterface<JExifInterfaceClass> _di_JExifInterfaceClass;
+__interface DELPHIINTERFACE JExifInterface;
+typedef System::DelphiInterface<JExifInterface> _di_JExifInterface;
+class DELPHICLASS TJExifInterface;
+__interface DELPHIINTERFACE JFaceDetectorClass;
+typedef System::DelphiInterface<JFaceDetectorClass> _di_JFaceDetectorClass;
+__interface DELPHIINTERFACE JFaceDetector;
+typedef System::DelphiInterface<JFaceDetector> _di_JFaceDetector;
+class DELPHICLASS TJFaceDetector;
+__interface DELPHIINTERFACE JFaceDetector_FaceClass;
+typedef System::DelphiInterface<JFaceDetector_FaceClass> _di_JFaceDetector_FaceClass;
+__interface DELPHIINTERFACE JFaceDetector_Face;
+typedef System::DelphiInterface<JFaceDetector_Face> _di_JFaceDetector_Face;
+class DELPHICLASS TJFaceDetector_Face;
+__interface DELPHIINTERFACE JImageClass;
+typedef System::DelphiInterface<JImageClass> _di_JImageClass;
+__interface DELPHIINTERFACE JImage;
+typedef System::DelphiInterface<JImage> _di_JImage;
+class DELPHICLASS TJImage;
+__interface DELPHIINTERFACE JImage_PlaneClass;
+typedef System::DelphiInterface<JImage_PlaneClass> _di_JImage_PlaneClass;
+__interface DELPHIINTERFACE JImage_Plane;
+typedef System::DelphiInterface<JImage_Plane> _di_JImage_Plane;
+class DELPHICLASS TJImage_Plane;
+__interface DELPHIINTERFACE JImageReaderClass;
+typedef System::DelphiInterface<JImageReaderClass> _di_JImageReaderClass;
+__interface DELPHIINTERFACE JImageReader;
+typedef System::DelphiInterface<JImageReader> _di_JImageReader;
+class DELPHICLASS TJImageReader;
+__interface DELPHIINTERFACE JImageReader_OnImageAvailableListenerClass;
+typedef System::DelphiInterface<JImageReader_OnImageAvailableListenerClass> _di_JImageReader_OnImageAvailableListenerClass;
+__interface DELPHIINTERFACE JImageReader_OnImageAvailableListener;
+typedef System::DelphiInterface<JImageReader_OnImageAvailableListener> _di_JImageReader_OnImageAvailableListener;
+class DELPHICLASS TJImageReader_OnImageAvailableListener;
+__interface DELPHIINTERFACE JImageWriterClass;
+typedef System::DelphiInterface<JImageWriterClass> _di_JImageWriterClass;
+__interface DELPHIINTERFACE JImageWriter;
+typedef System::DelphiInterface<JImageWriter> _di_JImageWriter;
+class DELPHICLASS TJImageWriter;
+__interface DELPHIINTERFACE JImageWriter_OnImageReleasedListenerClass;
+typedef System::DelphiInterface<JImageWriter_OnImageReleasedListenerClass> _di_JImageWriter_OnImageReleasedListenerClass;
+__interface DELPHIINTERFACE JImageWriter_OnImageReleasedListener;
+typedef System::DelphiInterface<JImageWriter_OnImageReleasedListener> _di_JImageWriter_OnImageReleasedListener;
+class DELPHICLASS TJImageWriter_OnImageReleasedListener;
+__interface DELPHIINTERFACE JJetPlayerClass;
+typedef System::DelphiInterface<JJetPlayerClass> _di_JJetPlayerClass;
+__interface DELPHIINTERFACE JJetPlayer;
+typedef System::DelphiInterface<JJetPlayer> _di_JJetPlayer;
+class DELPHICLASS TJJetPlayer;
+__interface DELPHIINTERFACE JJetPlayer_OnJetEventListenerClass;
+typedef System::DelphiInterface<JJetPlayer_OnJetEventListenerClass> _di_JJetPlayer_OnJetEventListenerClass;
+__interface DELPHIINTERFACE JJetPlayer_OnJetEventListener;
+typedef System::DelphiInterface<JJetPlayer_OnJetEventListener> _di_JJetPlayer_OnJetEventListener;
+class DELPHICLASS TJJetPlayer_OnJetEventListener;
+__interface DELPHIINTERFACE JMediaActionSoundClass;
+typedef System::DelphiInterface<JMediaActionSoundClass> _di_JMediaActionSoundClass;
+__interface DELPHIINTERFACE JMediaActionSound;
+typedef System::DelphiInterface<JMediaActionSound> _di_JMediaActionSound;
+class DELPHICLASS TJMediaActionSound;
+__interface DELPHIINTERFACE JMediaCasClass;
+typedef System::DelphiInterface<JMediaCasClass> _di_JMediaCasClass;
+__interface DELPHIINTERFACE JMediaCas;
+typedef System::DelphiInterface<JMediaCas> _di_JMediaCas;
+class DELPHICLASS TJMediaCas;
+__interface DELPHIINTERFACE JMediaCas_EventListenerClass;
+typedef System::DelphiInterface<JMediaCas_EventListenerClass> _di_JMediaCas_EventListenerClass;
+__interface DELPHIINTERFACE JMediaCas_EventListener;
+typedef System::DelphiInterface<JMediaCas_EventListener> _di_JMediaCas_EventListener;
+class DELPHICLASS TJMediaCas_EventListener;
+__interface DELPHIINTERFACE JMediaCas_PluginDescriptorClass;
+typedef System::DelphiInterface<JMediaCas_PluginDescriptorClass> _di_JMediaCas_PluginDescriptorClass;
+__interface DELPHIINTERFACE JMediaCas_PluginDescriptor;
+typedef System::DelphiInterface<JMediaCas_PluginDescriptor> _di_JMediaCas_PluginDescriptor;
+class DELPHICLASS TJMediaCas_PluginDescriptor;
+__interface DELPHIINTERFACE JMediaCas_SessionClass;
+typedef System::DelphiInterface<JMediaCas_SessionClass> _di_JMediaCas_SessionClass;
+__interface DELPHIINTERFACE JMediaCas_Session;
+typedef System::DelphiInterface<JMediaCas_Session> _di_JMediaCas_Session;
+class DELPHICLASS TJMediaCas_Session;
+__interface DELPHIINTERFACE JMediaCasExceptionClass;
+typedef System::DelphiInterface<JMediaCasExceptionClass> _di_JMediaCasExceptionClass;
+__interface DELPHIINTERFACE JMediaCasException;
+typedef System::DelphiInterface<JMediaCasException> _di_JMediaCasException;
+class DELPHICLASS TJMediaCasException;
+__interface DELPHIINTERFACE JMediaCasException_DeniedByServerExceptionClass;
+typedef System::DelphiInterface<JMediaCasException_DeniedByServerExceptionClass> _di_JMediaCasException_DeniedByServerExceptionClass;
+__interface DELPHIINTERFACE JMediaCasException_DeniedByServerException;
+typedef System::DelphiInterface<JMediaCasException_DeniedByServerException> _di_JMediaCasException_DeniedByServerException;
+class DELPHICLASS TJMediaCasException_DeniedByServerException;
+__interface DELPHIINTERFACE JMediaCasException_NotProvisionedExceptionClass;
+typedef System::DelphiInterface<JMediaCasException_NotProvisionedExceptionClass> _di_JMediaCasException_NotProvisionedExceptionClass;
+__interface DELPHIINTERFACE JMediaCasException_NotProvisionedException;
+typedef System::DelphiInterface<JMediaCasException_NotProvisionedException> _di_JMediaCasException_NotProvisionedException;
+class DELPHICLASS TJMediaCasException_NotProvisionedException;
+__interface DELPHIINTERFACE JMediaCasException_ResourceBusyExceptionClass;
+typedef System::DelphiInterface<JMediaCasException_ResourceBusyExceptionClass> _di_JMediaCasException_ResourceBusyExceptionClass;
+__interface DELPHIINTERFACE JMediaCasException_ResourceBusyException;
+typedef System::DelphiInterface<JMediaCasException_ResourceBusyException> _di_JMediaCasException_ResourceBusyException;
+class DELPHICLASS TJMediaCasException_ResourceBusyException;
+__interface DELPHIINTERFACE JMediaCasException_UnsupportedCasExceptionClass;
+typedef System::DelphiInterface<JMediaCasException_UnsupportedCasExceptionClass> _di_JMediaCasException_UnsupportedCasExceptionClass;
+__interface DELPHIINTERFACE JMediaCasException_UnsupportedCasException;
+typedef System::DelphiInterface<JMediaCasException_UnsupportedCasException> _di_JMediaCasException_UnsupportedCasException;
+class DELPHICLASS TJMediaCasException_UnsupportedCasException;
+__interface DELPHIINTERFACE JMediaCasStateExceptionClass;
+typedef System::DelphiInterface<JMediaCasStateExceptionClass> _di_JMediaCasStateExceptionClass;
+__interface DELPHIINTERFACE JMediaCasStateException;
+typedef System::DelphiInterface<JMediaCasStateException> _di_JMediaCasStateException;
+class DELPHICLASS TJMediaCasStateException;
+__interface DELPHIINTERFACE JMediaCodecClass;
+typedef System::DelphiInterface<JMediaCodecClass> _di_JMediaCodecClass;
+__interface DELPHIINTERFACE JMediaCodec;
+typedef System::DelphiInterface<JMediaCodec> _di_JMediaCodec;
+class DELPHICLASS TJMediaCodec;
+__interface DELPHIINTERFACE JMediaCodec_BufferInfoClass;
+typedef System::DelphiInterface<JMediaCodec_BufferInfoClass> _di_JMediaCodec_BufferInfoClass;
+__interface DELPHIINTERFACE JMediaCodec_BufferInfo;
+typedef System::DelphiInterface<JMediaCodec_BufferInfo> _di_JMediaCodec_BufferInfo;
+class DELPHICLASS TJMediaCodec_BufferInfo;
+__interface DELPHIINTERFACE JMediaCodec_CallbackClass;
+typedef System::DelphiInterface<JMediaCodec_CallbackClass> _di_JMediaCodec_CallbackClass;
+__interface DELPHIINTERFACE JMediaCodec_Callback;
+typedef System::DelphiInterface<JMediaCodec_Callback> _di_JMediaCodec_Callback;
+class DELPHICLASS TJMediaCodec_Callback;
+__interface DELPHIINTERFACE JMediaCodec_CodecExceptionClass;
+typedef System::DelphiInterface<JMediaCodec_CodecExceptionClass> _di_JMediaCodec_CodecExceptionClass;
+__interface DELPHIINTERFACE JMediaCodec_CodecException;
+typedef System::DelphiInterface<JMediaCodec_CodecException> _di_JMediaCodec_CodecException;
+class DELPHICLASS TJMediaCodec_CodecException;
+__interface DELPHIINTERFACE JMediaCodec_CryptoExceptionClass;
+typedef System::DelphiInterface<JMediaCodec_CryptoExceptionClass> _di_JMediaCodec_CryptoExceptionClass;
+__interface DELPHIINTERFACE JMediaCodec_CryptoException;
+typedef System::DelphiInterface<JMediaCodec_CryptoException> _di_JMediaCodec_CryptoException;
+class DELPHICLASS TJMediaCodec_CryptoException;
+__interface DELPHIINTERFACE JMediaCodec_CryptoInfoClass;
+typedef System::DelphiInterface<JMediaCodec_CryptoInfoClass> _di_JMediaCodec_CryptoInfoClass;
+__interface DELPHIINTERFACE JMediaCodec_CryptoInfo;
+typedef System::DelphiInterface<JMediaCodec_CryptoInfo> _di_JMediaCodec_CryptoInfo;
+class DELPHICLASS TJMediaCodec_CryptoInfo;
+__interface DELPHIINTERFACE JCryptoInfo_PatternClass;
+typedef System::DelphiInterface<JCryptoInfo_PatternClass> _di_JCryptoInfo_PatternClass;
+__interface DELPHIINTERFACE JCryptoInfo_Pattern;
+typedef System::DelphiInterface<JCryptoInfo_Pattern> _di_JCryptoInfo_Pattern;
+class DELPHICLASS TJCryptoInfo_Pattern;
+__interface DELPHIINTERFACE JMediaCodec_MetricsConstantsClass;
+typedef System::DelphiInterface<JMediaCodec_MetricsConstantsClass> _di_JMediaCodec_MetricsConstantsClass;
+__interface DELPHIINTERFACE JMediaCodec_MetricsConstants;
+typedef System::DelphiInterface<JMediaCodec_MetricsConstants> _di_JMediaCodec_MetricsConstants;
+class DELPHICLASS TJMediaCodec_MetricsConstants;
+__interface DELPHIINTERFACE JMediaCodec_OnFrameRenderedListenerClass;
+typedef System::DelphiInterface<JMediaCodec_OnFrameRenderedListenerClass> _di_JMediaCodec_OnFrameRenderedListenerClass;
+__interface DELPHIINTERFACE JMediaCodec_OnFrameRenderedListener;
+typedef System::DelphiInterface<JMediaCodec_OnFrameRenderedListener> _di_JMediaCodec_OnFrameRenderedListener;
+class DELPHICLASS TJMediaCodec_OnFrameRenderedListener;
+__interface DELPHIINTERFACE JMediaCodecInfoClass;
+typedef System::DelphiInterface<JMediaCodecInfoClass> _di_JMediaCodecInfoClass;
+__interface DELPHIINTERFACE JMediaCodecInfo;
+typedef System::DelphiInterface<JMediaCodecInfo> _di_JMediaCodecInfo;
+class DELPHICLASS TJMediaCodecInfo;
+__interface DELPHIINTERFACE JMediaCodecInfo_AudioCapabilitiesClass;
+typedef System::DelphiInterface<JMediaCodecInfo_AudioCapabilitiesClass> _di_JMediaCodecInfo_AudioCapabilitiesClass;
+__interface DELPHIINTERFACE JMediaCodecInfo_AudioCapabilities;
+typedef System::DelphiInterface<JMediaCodecInfo_AudioCapabilities> _di_JMediaCodecInfo_AudioCapabilities;
+class DELPHICLASS TJMediaCodecInfo_AudioCapabilities;
+__interface DELPHIINTERFACE JMediaCodecInfo_CodecCapabilitiesClass;
+typedef System::DelphiInterface<JMediaCodecInfo_CodecCapabilitiesClass> _di_JMediaCodecInfo_CodecCapabilitiesClass;
+__interface DELPHIINTERFACE JMediaCodecInfo_CodecCapabilities;
+typedef System::DelphiInterface<JMediaCodecInfo_CodecCapabilities> _di_JMediaCodecInfo_CodecCapabilities;
+class DELPHICLASS TJMediaCodecInfo_CodecCapabilities;
+__interface DELPHIINTERFACE JMediaCodecInfo_CodecProfileLevelClass;
+typedef System::DelphiInterface<JMediaCodecInfo_CodecProfileLevelClass> _di_JMediaCodecInfo_CodecProfileLevelClass;
+__interface DELPHIINTERFACE JMediaCodecInfo_CodecProfileLevel;
+typedef System::DelphiInterface<JMediaCodecInfo_CodecProfileLevel> _di_JMediaCodecInfo_CodecProfileLevel;
+class DELPHICLASS TJMediaCodecInfo_CodecProfileLevel;
+__interface DELPHIINTERFACE JMediaCodecInfo_EncoderCapabilitiesClass;
+typedef System::DelphiInterface<JMediaCodecInfo_EncoderCapabilitiesClass> _di_JMediaCodecInfo_EncoderCapabilitiesClass;
+__interface DELPHIINTERFACE JMediaCodecInfo_EncoderCapabilities;
+typedef System::DelphiInterface<JMediaCodecInfo_EncoderCapabilities> _di_JMediaCodecInfo_EncoderCapabilities;
+class DELPHICLASS TJMediaCodecInfo_EncoderCapabilities;
+__interface DELPHIINTERFACE JMediaCodecInfo_VideoCapabilitiesClass;
+typedef System::DelphiInterface<JMediaCodecInfo_VideoCapabilitiesClass> _di_JMediaCodecInfo_VideoCapabilitiesClass;
+__interface DELPHIINTERFACE JMediaCodecInfo_VideoCapabilities;
+typedef System::DelphiInterface<JMediaCodecInfo_VideoCapabilities> _di_JMediaCodecInfo_VideoCapabilities;
+class DELPHICLASS TJMediaCodecInfo_VideoCapabilities;
+__interface DELPHIINTERFACE JMediaCodecListClass;
+typedef System::DelphiInterface<JMediaCodecListClass> _di_JMediaCodecListClass;
+__interface DELPHIINTERFACE JMediaCodecList;
+typedef System::DelphiInterface<JMediaCodecList> _di_JMediaCodecList;
+class DELPHICLASS TJMediaCodecList;
+__interface DELPHIINTERFACE JMediaCryptoClass;
+typedef System::DelphiInterface<JMediaCryptoClass> _di_JMediaCryptoClass;
+__interface DELPHIINTERFACE JMediaCrypto;
+typedef System::DelphiInterface<JMediaCrypto> _di_JMediaCrypto;
+class DELPHICLASS TJMediaCrypto;
+__interface DELPHIINTERFACE JMediaCryptoExceptionClass;
+typedef System::DelphiInterface<JMediaCryptoExceptionClass> _di_JMediaCryptoExceptionClass;
+__interface DELPHIINTERFACE JMediaCryptoException;
+typedef System::DelphiInterface<JMediaCryptoException> _di_JMediaCryptoException;
+class DELPHICLASS TJMediaCryptoException;
+__interface DELPHIINTERFACE JMediaDataSourceClass;
+typedef System::DelphiInterface<JMediaDataSourceClass> _di_JMediaDataSourceClass;
+__interface DELPHIINTERFACE JMediaDataSource;
+typedef System::DelphiInterface<JMediaDataSource> _di_JMediaDataSource;
+class DELPHICLASS TJMediaDataSource;
+__interface DELPHIINTERFACE JMediaDescramblerClass;
+typedef System::DelphiInterface<JMediaDescramblerClass> _di_JMediaDescramblerClass;
+__interface DELPHIINTERFACE JMediaDescrambler;
+typedef System::DelphiInterface<JMediaDescrambler> _di_JMediaDescrambler;
+class DELPHICLASS TJMediaDescrambler;
+__interface DELPHIINTERFACE JMediaDescriptionClass;
+typedef System::DelphiInterface<JMediaDescriptionClass> _di_JMediaDescriptionClass;
+__interface DELPHIINTERFACE JMediaDescription;
+typedef System::DelphiInterface<JMediaDescription> _di_JMediaDescription;
+class DELPHICLASS TJMediaDescription;
+__interface DELPHIINTERFACE JMediaDescription_BuilderClass;
+typedef System::DelphiInterface<JMediaDescription_BuilderClass> _di_JMediaDescription_BuilderClass;
+__interface DELPHIINTERFACE JMediaDescription_Builder;
+typedef System::DelphiInterface<JMediaDescription_Builder> _di_JMediaDescription_Builder;
+class DELPHICLASS TJMediaDescription_Builder;
+__interface DELPHIINTERFACE JMediaDrmClass;
+typedef System::DelphiInterface<JMediaDrmClass> _di_JMediaDrmClass;
+__interface DELPHIINTERFACE JMediaDrm;
+typedef System::DelphiInterface<JMediaDrm> _di_JMediaDrm;
+class DELPHICLASS TJMediaDrm;
+__interface DELPHIINTERFACE JMediaDrm_CryptoSessionClass;
+typedef System::DelphiInterface<JMediaDrm_CryptoSessionClass> _di_JMediaDrm_CryptoSessionClass;
+__interface DELPHIINTERFACE JMediaDrm_CryptoSession;
+typedef System::DelphiInterface<JMediaDrm_CryptoSession> _di_JMediaDrm_CryptoSession;
+class DELPHICLASS TJMediaDrm_CryptoSession;
+__interface DELPHIINTERFACE JMediaDrm_KeyRequestClass;
+typedef System::DelphiInterface<JMediaDrm_KeyRequestClass> _di_JMediaDrm_KeyRequestClass;
+__interface DELPHIINTERFACE JMediaDrm_KeyRequest;
+typedef System::DelphiInterface<JMediaDrm_KeyRequest> _di_JMediaDrm_KeyRequest;
+class DELPHICLASS TJMediaDrm_KeyRequest;
+__interface DELPHIINTERFACE JMediaDrm_KeyStatusClass;
+typedef System::DelphiInterface<JMediaDrm_KeyStatusClass> _di_JMediaDrm_KeyStatusClass;
+__interface DELPHIINTERFACE JMediaDrm_KeyStatus;
+typedef System::DelphiInterface<JMediaDrm_KeyStatus> _di_JMediaDrm_KeyStatus;
+class DELPHICLASS TJMediaDrm_KeyStatus;
+__interface DELPHIINTERFACE JMediaDrm_MediaDrmStateExceptionClass;
+typedef System::DelphiInterface<JMediaDrm_MediaDrmStateExceptionClass> _di_JMediaDrm_MediaDrmStateExceptionClass;
+__interface DELPHIINTERFACE JMediaDrm_MediaDrmStateException;
+typedef System::DelphiInterface<JMediaDrm_MediaDrmStateException> _di_JMediaDrm_MediaDrmStateException;
+class DELPHICLASS TJMediaDrm_MediaDrmStateException;
+__interface DELPHIINTERFACE JMediaDrm_OnEventListenerClass;
+typedef System::DelphiInterface<JMediaDrm_OnEventListenerClass> _di_JMediaDrm_OnEventListenerClass;
+__interface DELPHIINTERFACE JMediaDrm_OnEventListener;
+typedef System::DelphiInterface<JMediaDrm_OnEventListener> _di_JMediaDrm_OnEventListener;
+class DELPHICLASS TJMediaDrm_OnEventListener;
+__interface DELPHIINTERFACE JMediaDrm_OnExpirationUpdateListenerClass;
+typedef System::DelphiInterface<JMediaDrm_OnExpirationUpdateListenerClass> _di_JMediaDrm_OnExpirationUpdateListenerClass;
+__interface DELPHIINTERFACE JMediaDrm_OnExpirationUpdateListener;
+typedef System::DelphiInterface<JMediaDrm_OnExpirationUpdateListener> _di_JMediaDrm_OnExpirationUpdateListener;
+class DELPHICLASS TJMediaDrm_OnExpirationUpdateListener;
+__interface DELPHIINTERFACE JMediaDrm_OnKeyStatusChangeListenerClass;
+typedef System::DelphiInterface<JMediaDrm_OnKeyStatusChangeListenerClass> _di_JMediaDrm_OnKeyStatusChangeListenerClass;
+__interface DELPHIINTERFACE JMediaDrm_OnKeyStatusChangeListener;
+typedef System::DelphiInterface<JMediaDrm_OnKeyStatusChangeListener> _di_JMediaDrm_OnKeyStatusChangeListener;
+class DELPHICLASS TJMediaDrm_OnKeyStatusChangeListener;
+__interface DELPHIINTERFACE JMediaDrm_ProvisionRequestClass;
+typedef System::DelphiInterface<JMediaDrm_ProvisionRequestClass> _di_JMediaDrm_ProvisionRequestClass;
+__interface DELPHIINTERFACE JMediaDrm_ProvisionRequest;
+typedef System::DelphiInterface<JMediaDrm_ProvisionRequest> _di_JMediaDrm_ProvisionRequest;
+class DELPHICLASS TJMediaDrm_ProvisionRequest;
+__interface DELPHIINTERFACE JMediaDrmResetExceptionClass;
+typedef System::DelphiInterface<JMediaDrmResetExceptionClass> _di_JMediaDrmResetExceptionClass;
+__interface DELPHIINTERFACE JMediaDrmResetException;
+typedef System::DelphiInterface<JMediaDrmResetException> _di_JMediaDrmResetException;
+class DELPHICLASS TJMediaDrmResetException;
+__interface DELPHIINTERFACE JMediaExtractorClass;
+typedef System::DelphiInterface<JMediaExtractorClass> _di_JMediaExtractorClass;
+__interface DELPHIINTERFACE JMediaExtractor;
+typedef System::DelphiInterface<JMediaExtractor> _di_JMediaExtractor;
+class DELPHICLASS TJMediaExtractor;
+__interface DELPHIINTERFACE JMediaExtractor_CasInfoClass;
+typedef System::DelphiInterface<JMediaExtractor_CasInfoClass> _di_JMediaExtractor_CasInfoClass;
+__interface DELPHIINTERFACE JMediaExtractor_CasInfo;
+typedef System::DelphiInterface<JMediaExtractor_CasInfo> _di_JMediaExtractor_CasInfo;
+class DELPHICLASS TJMediaExtractor_CasInfo;
+__interface DELPHIINTERFACE JMediaExtractor_MetricsConstantsClass;
+typedef System::DelphiInterface<JMediaExtractor_MetricsConstantsClass> _di_JMediaExtractor_MetricsConstantsClass;
+__interface DELPHIINTERFACE JMediaExtractor_MetricsConstants;
+typedef System::DelphiInterface<JMediaExtractor_MetricsConstants> _di_JMediaExtractor_MetricsConstants;
+class DELPHICLASS TJMediaExtractor_MetricsConstants;
+__interface DELPHIINTERFACE JMediaFormatClass;
+typedef System::DelphiInterface<JMediaFormatClass> _di_JMediaFormatClass;
+__interface DELPHIINTERFACE JMediaFormat;
+typedef System::DelphiInterface<JMediaFormat> _di_JMediaFormat;
+class DELPHICLASS TJMediaFormat;
+__interface DELPHIINTERFACE Jmedia_MediaMetadataClass;
+typedef System::DelphiInterface<Jmedia_MediaMetadataClass> _di_Jmedia_MediaMetadataClass;
+__interface DELPHIINTERFACE Jmedia_MediaMetadata;
+typedef System::DelphiInterface<Jmedia_MediaMetadata> _di_Jmedia_MediaMetadata;
+class DELPHICLASS TJmedia_MediaMetadata;
+__interface DELPHIINTERFACE JMediaMetadata_BuilderClass;
+typedef System::DelphiInterface<JMediaMetadata_BuilderClass> _di_JMediaMetadata_BuilderClass;
+__interface DELPHIINTERFACE JMediaMetadata_Builder;
+typedef System::DelphiInterface<JMediaMetadata_Builder> _di_JMediaMetadata_Builder;
+class DELPHICLASS TJMediaMetadata_Builder;
+__interface DELPHIINTERFACE JMediaMetadataEditorClass;
+typedef System::DelphiInterface<JMediaMetadataEditorClass> _di_JMediaMetadataEditorClass;
+__interface DELPHIINTERFACE JMediaMetadataEditor;
+typedef System::DelphiInterface<JMediaMetadataEditor> _di_JMediaMetadataEditor;
+class DELPHICLASS TJMediaMetadataEditor;
+__interface DELPHIINTERFACE JMediaMetadataRetrieverClass;
+typedef System::DelphiInterface<JMediaMetadataRetrieverClass> _di_JMediaMetadataRetrieverClass;
+__interface DELPHIINTERFACE JMediaMetadataRetriever;
+typedef System::DelphiInterface<JMediaMetadataRetriever> _di_JMediaMetadataRetriever;
+class DELPHICLASS TJMediaMetadataRetriever;
+__interface DELPHIINTERFACE JMediaMuxerClass;
+typedef System::DelphiInterface<JMediaMuxerClass> _di_JMediaMuxerClass;
+__interface DELPHIINTERFACE JMediaMuxer;
+typedef System::DelphiInterface<JMediaMuxer> _di_JMediaMuxer;
+class DELPHICLASS TJMediaMuxer;
+__interface DELPHIINTERFACE JMediaMuxer_OutputFormatClass;
+typedef System::DelphiInterface<JMediaMuxer_OutputFormatClass> _di_JMediaMuxer_OutputFormatClass;
+__interface DELPHIINTERFACE JMediaMuxer_OutputFormat;
+typedef System::DelphiInterface<JMediaMuxer_OutputFormat> _di_JMediaMuxer_OutputFormat;
+class DELPHICLASS TJMediaMuxer_OutputFormat;
+__interface DELPHIINTERFACE JMediaPlayerClass;
+typedef System::DelphiInterface<JMediaPlayerClass> _di_JMediaPlayerClass;
+__interface DELPHIINTERFACE JMediaPlayer;
+typedef System::DelphiInterface<JMediaPlayer> _di_JMediaPlayer;
+class DELPHICLASS TJMediaPlayer;
+__interface DELPHIINTERFACE JMediaPlayer_DrmInfoClass;
+typedef System::DelphiInterface<JMediaPlayer_DrmInfoClass> _di_JMediaPlayer_DrmInfoClass;
+__interface DELPHIINTERFACE JMediaPlayer_DrmInfo;
+typedef System::DelphiInterface<JMediaPlayer_DrmInfo> _di_JMediaPlayer_DrmInfo;
+class DELPHICLASS TJMediaPlayer_DrmInfo;
+__interface DELPHIINTERFACE JMediaPlayer_MetricsConstantsClass;
+typedef System::DelphiInterface<JMediaPlayer_MetricsConstantsClass> _di_JMediaPlayer_MetricsConstantsClass;
+__interface DELPHIINTERFACE JMediaPlayer_MetricsConstants;
+typedef System::DelphiInterface<JMediaPlayer_MetricsConstants> _di_JMediaPlayer_MetricsConstants;
+class DELPHICLASS TJMediaPlayer_MetricsConstants;
+__interface DELPHIINTERFACE JMediaPlayer_NoDrmSchemeExceptionClass;
+typedef System::DelphiInterface<JMediaPlayer_NoDrmSchemeExceptionClass> _di_JMediaPlayer_NoDrmSchemeExceptionClass;
+__interface DELPHIINTERFACE JMediaPlayer_NoDrmSchemeException;
+typedef System::DelphiInterface<JMediaPlayer_NoDrmSchemeException> _di_JMediaPlayer_NoDrmSchemeException;
+class DELPHICLASS TJMediaPlayer_NoDrmSchemeException;
+__interface DELPHIINTERFACE JMediaPlayer_OnBufferingUpdateListenerClass;
+typedef System::DelphiInterface<JMediaPlayer_OnBufferingUpdateListenerClass> _di_JMediaPlayer_OnBufferingUpdateListenerClass;
+__interface DELPHIINTERFACE JMediaPlayer_OnBufferingUpdateListener;
+typedef System::DelphiInterface<JMediaPlayer_OnBufferingUpdateListener> _di_JMediaPlayer_OnBufferingUpdateListener;
+class DELPHICLASS TJMediaPlayer_OnBufferingUpdateListener;
+__interface DELPHIINTERFACE JMediaPlayer_OnCompletionListenerClass;
+typedef System::DelphiInterface<JMediaPlayer_OnCompletionListenerClass> _di_JMediaPlayer_OnCompletionListenerClass;
+__interface DELPHIINTERFACE JMediaPlayer_OnCompletionListener;
+typedef System::DelphiInterface<JMediaPlayer_OnCompletionListener> _di_JMediaPlayer_OnCompletionListener;
+class DELPHICLASS TJMediaPlayer_OnCompletionListener;
+__interface DELPHIINTERFACE JMediaPlayer_OnDrmConfigHelperClass;
+typedef System::DelphiInterface<JMediaPlayer_OnDrmConfigHelperClass> _di_JMediaPlayer_OnDrmConfigHelperClass;
+__interface DELPHIINTERFACE JMediaPlayer_OnDrmConfigHelper;
+typedef System::DelphiInterface<JMediaPlayer_OnDrmConfigHelper> _di_JMediaPlayer_OnDrmConfigHelper;
+class DELPHICLASS TJMediaPlayer_OnDrmConfigHelper;
+__interface DELPHIINTERFACE JMediaPlayer_OnDrmInfoListenerClass;
+typedef System::DelphiInterface<JMediaPlayer_OnDrmInfoListenerClass> _di_JMediaPlayer_OnDrmInfoListenerClass;
+__interface DELPHIINTERFACE JMediaPlayer_OnDrmInfoListener;
+typedef System::DelphiInterface<JMediaPlayer_OnDrmInfoListener> _di_JMediaPlayer_OnDrmInfoListener;
+class DELPHICLASS TJMediaPlayer_OnDrmInfoListener;
+__interface DELPHIINTERFACE JMediaPlayer_OnDrmPreparedListenerClass;
+typedef System::DelphiInterface<JMediaPlayer_OnDrmPreparedListenerClass> _di_JMediaPlayer_OnDrmPreparedListenerClass;
+__interface DELPHIINTERFACE JMediaPlayer_OnDrmPreparedListener;
+typedef System::DelphiInterface<JMediaPlayer_OnDrmPreparedListener> _di_JMediaPlayer_OnDrmPreparedListener;
+class DELPHICLASS TJMediaPlayer_OnDrmPreparedListener;
+__interface DELPHIINTERFACE JMediaPlayer_OnErrorListenerClass;
+typedef System::DelphiInterface<JMediaPlayer_OnErrorListenerClass> _di_JMediaPlayer_OnErrorListenerClass;
+__interface DELPHIINTERFACE JMediaPlayer_OnErrorListener;
+typedef System::DelphiInterface<JMediaPlayer_OnErrorListener> _di_JMediaPlayer_OnErrorListener;
+class DELPHICLASS TJMediaPlayer_OnErrorListener;
+__interface DELPHIINTERFACE JMediaPlayer_OnInfoListenerClass;
+typedef System::DelphiInterface<JMediaPlayer_OnInfoListenerClass> _di_JMediaPlayer_OnInfoListenerClass;
+__interface DELPHIINTERFACE JMediaPlayer_OnInfoListener;
+typedef System::DelphiInterface<JMediaPlayer_OnInfoListener> _di_JMediaPlayer_OnInfoListener;
+class DELPHICLASS TJMediaPlayer_OnInfoListener;
+__interface DELPHIINTERFACE JMediaPlayer_OnPreparedListenerClass;
+typedef System::DelphiInterface<JMediaPlayer_OnPreparedListenerClass> _di_JMediaPlayer_OnPreparedListenerClass;
+__interface DELPHIINTERFACE JMediaPlayer_OnPreparedListener;
+typedef System::DelphiInterface<JMediaPlayer_OnPreparedListener> _di_JMediaPlayer_OnPreparedListener;
+class DELPHICLASS TJMediaPlayer_OnPreparedListener;
+__interface DELPHIINTERFACE JMediaPlayer_OnSeekCompleteListenerClass;
+typedef System::DelphiInterface<JMediaPlayer_OnSeekCompleteListenerClass> _di_JMediaPlayer_OnSeekCompleteListenerClass;
+__interface DELPHIINTERFACE JMediaPlayer_OnSeekCompleteListener;
+typedef System::DelphiInterface<JMediaPlayer_OnSeekCompleteListener> _di_JMediaPlayer_OnSeekCompleteListener;
+class DELPHICLASS TJMediaPlayer_OnSeekCompleteListener;
+__interface DELPHIINTERFACE JMediaPlayer_OnTimedMetaDataAvailableListenerClass;
+typedef System::DelphiInterface<JMediaPlayer_OnTimedMetaDataAvailableListenerClass> _di_JMediaPlayer_OnTimedMetaDataAvailableListenerClass;
+__interface DELPHIINTERFACE JMediaPlayer_OnTimedMetaDataAvailableListener;
+typedef System::DelphiInterface<JMediaPlayer_OnTimedMetaDataAvailableListener> _di_JMediaPlayer_OnTimedMetaDataAvailableListener;
+class DELPHICLASS TJMediaPlayer_OnTimedMetaDataAvailableListener;
+__interface DELPHIINTERFACE JMediaPlayer_OnTimedTextListenerClass;
+typedef System::DelphiInterface<JMediaPlayer_OnTimedTextListenerClass> _di_JMediaPlayer_OnTimedTextListenerClass;
+__interface DELPHIINTERFACE JMediaPlayer_OnTimedTextListener;
+typedef System::DelphiInterface<JMediaPlayer_OnTimedTextListener> _di_JMediaPlayer_OnTimedTextListener;
+class DELPHICLASS TJMediaPlayer_OnTimedTextListener;
+__interface DELPHIINTERFACE JMediaPlayer_OnVideoSizeChangedListenerClass;
+typedef System::DelphiInterface<JMediaPlayer_OnVideoSizeChangedListenerClass> _di_JMediaPlayer_OnVideoSizeChangedListenerClass;
+__interface DELPHIINTERFACE JMediaPlayer_OnVideoSizeChangedListener;
+typedef System::DelphiInterface<JMediaPlayer_OnVideoSizeChangedListener> _di_JMediaPlayer_OnVideoSizeChangedListener;
+class DELPHICLASS TJMediaPlayer_OnVideoSizeChangedListener;
+__interface DELPHIINTERFACE JMediaPlayer_ProvisioningNetworkErrorExceptionClass;
+typedef System::DelphiInterface<JMediaPlayer_ProvisioningNetworkErrorExceptionClass> _di_JMediaPlayer_ProvisioningNetworkErrorExceptionClass;
+__interface DELPHIINTERFACE JMediaPlayer_ProvisioningNetworkErrorException;
+typedef System::DelphiInterface<JMediaPlayer_ProvisioningNetworkErrorException> _di_JMediaPlayer_ProvisioningNetworkErrorException;
+class DELPHICLASS TJMediaPlayer_ProvisioningNetworkErrorException;
+__interface DELPHIINTERFACE JMediaPlayer_ProvisioningServerErrorExceptionClass;
+typedef System::DelphiInterface<JMediaPlayer_ProvisioningServerErrorExceptionClass> _di_JMediaPlayer_ProvisioningServerErrorExceptionClass;
+__interface DELPHIINTERFACE JMediaPlayer_ProvisioningServerErrorException;
+typedef System::DelphiInterface<JMediaPlayer_ProvisioningServerErrorException> _di_JMediaPlayer_ProvisioningServerErrorException;
+class DELPHICLASS TJMediaPlayer_ProvisioningServerErrorException;
+__interface DELPHIINTERFACE JMediaPlayer_TrackInfoClass;
+typedef System::DelphiInterface<JMediaPlayer_TrackInfoClass> _di_JMediaPlayer_TrackInfoClass;
+__interface DELPHIINTERFACE JMediaPlayer_TrackInfo;
+typedef System::DelphiInterface<JMediaPlayer_TrackInfo> _di_JMediaPlayer_TrackInfo;
+class DELPHICLASS TJMediaPlayer_TrackInfo;
+__interface DELPHIINTERFACE JMediaRecorderClass;
+typedef System::DelphiInterface<JMediaRecorderClass> _di_JMediaRecorderClass;
+__interface DELPHIINTERFACE JMediaRecorder;
+typedef System::DelphiInterface<JMediaRecorder> _di_JMediaRecorder;
+class DELPHICLASS TJMediaRecorder;
+__interface DELPHIINTERFACE JMediaRecorder_AudioEncoderClass;
+typedef System::DelphiInterface<JMediaRecorder_AudioEncoderClass> _di_JMediaRecorder_AudioEncoderClass;
+__interface DELPHIINTERFACE JMediaRecorder_AudioEncoder;
+typedef System::DelphiInterface<JMediaRecorder_AudioEncoder> _di_JMediaRecorder_AudioEncoder;
+class DELPHICLASS TJMediaRecorder_AudioEncoder;
+__interface DELPHIINTERFACE JMediaRecorder_AudioSourceClass;
+typedef System::DelphiInterface<JMediaRecorder_AudioSourceClass> _di_JMediaRecorder_AudioSourceClass;
+__interface DELPHIINTERFACE JMediaRecorder_AudioSource;
+typedef System::DelphiInterface<JMediaRecorder_AudioSource> _di_JMediaRecorder_AudioSource;
+class DELPHICLASS TJMediaRecorder_AudioSource;
+__interface DELPHIINTERFACE JMediaRecorder_MetricsConstantsClass;
+typedef System::DelphiInterface<JMediaRecorder_MetricsConstantsClass> _di_JMediaRecorder_MetricsConstantsClass;
+__interface DELPHIINTERFACE JMediaRecorder_MetricsConstants;
+typedef System::DelphiInterface<JMediaRecorder_MetricsConstants> _di_JMediaRecorder_MetricsConstants;
+class DELPHICLASS TJMediaRecorder_MetricsConstants;
+__interface DELPHIINTERFACE JMediaRecorder_OnErrorListenerClass;
+typedef System::DelphiInterface<JMediaRecorder_OnErrorListenerClass> _di_JMediaRecorder_OnErrorListenerClass;
+__interface DELPHIINTERFACE JMediaRecorder_OnErrorListener;
+typedef System::DelphiInterface<JMediaRecorder_OnErrorListener> _di_JMediaRecorder_OnErrorListener;
+class DELPHICLASS TJMediaRecorder_OnErrorListener;
+__interface DELPHIINTERFACE JMediaRecorder_OnInfoListenerClass;
+typedef System::DelphiInterface<JMediaRecorder_OnInfoListenerClass> _di_JMediaRecorder_OnInfoListenerClass;
+__interface DELPHIINTERFACE JMediaRecorder_OnInfoListener;
+typedef System::DelphiInterface<JMediaRecorder_OnInfoListener> _di_JMediaRecorder_OnInfoListener;
+class DELPHICLASS TJMediaRecorder_OnInfoListener;
+__interface DELPHIINTERFACE JMediaRecorder_OutputFormatClass;
+typedef System::DelphiInterface<JMediaRecorder_OutputFormatClass> _di_JMediaRecorder_OutputFormatClass;
+__interface DELPHIINTERFACE JMediaRecorder_OutputFormat;
+typedef System::DelphiInterface<JMediaRecorder_OutputFormat> _di_JMediaRecorder_OutputFormat;
+class DELPHICLASS TJMediaRecorder_OutputFormat;
+__interface DELPHIINTERFACE JMediaRecorder_VideoEncoderClass;
+typedef System::DelphiInterface<JMediaRecorder_VideoEncoderClass> _di_JMediaRecorder_VideoEncoderClass;
+__interface DELPHIINTERFACE JMediaRecorder_VideoEncoder;
+typedef System::DelphiInterface<JMediaRecorder_VideoEncoder> _di_JMediaRecorder_VideoEncoder;
+class DELPHICLASS TJMediaRecorder_VideoEncoder;
+__interface DELPHIINTERFACE JMediaRecorder_VideoSourceClass;
+typedef System::DelphiInterface<JMediaRecorder_VideoSourceClass> _di_JMediaRecorder_VideoSourceClass;
+__interface DELPHIINTERFACE JMediaRecorder_VideoSource;
+typedef System::DelphiInterface<JMediaRecorder_VideoSource> _di_JMediaRecorder_VideoSource;
+class DELPHICLASS TJMediaRecorder_VideoSource;
+__interface DELPHIINTERFACE JMediaRouterClass;
+typedef System::DelphiInterface<JMediaRouterClass> _di_JMediaRouterClass;
+__interface DELPHIINTERFACE JMediaRouter;
+typedef System::DelphiInterface<JMediaRouter> _di_JMediaRouter;
+class DELPHICLASS TJMediaRouter;
+__interface DELPHIINTERFACE JMediaRouter_CallbackClass;
+typedef System::DelphiInterface<JMediaRouter_CallbackClass> _di_JMediaRouter_CallbackClass;
+__interface DELPHIINTERFACE JMediaRouter_Callback;
+typedef System::DelphiInterface<JMediaRouter_Callback> _di_JMediaRouter_Callback;
+class DELPHICLASS TJMediaRouter_Callback;
+__interface DELPHIINTERFACE JMediaRouter_RouteCategoryClass;
+typedef System::DelphiInterface<JMediaRouter_RouteCategoryClass> _di_JMediaRouter_RouteCategoryClass;
+__interface DELPHIINTERFACE JMediaRouter_RouteCategory;
+typedef System::DelphiInterface<JMediaRouter_RouteCategory> _di_JMediaRouter_RouteCategory;
+class DELPHICLASS TJMediaRouter_RouteCategory;
+__interface DELPHIINTERFACE JMediaRouter_RouteInfoClass;
+typedef System::DelphiInterface<JMediaRouter_RouteInfoClass> _di_JMediaRouter_RouteInfoClass;
+__interface DELPHIINTERFACE JMediaRouter_RouteInfo;
+typedef System::DelphiInterface<JMediaRouter_RouteInfo> _di_JMediaRouter_RouteInfo;
+class DELPHICLASS TJMediaRouter_RouteInfo;
+__interface DELPHIINTERFACE JMediaRouter_RouteGroupClass;
+typedef System::DelphiInterface<JMediaRouter_RouteGroupClass> _di_JMediaRouter_RouteGroupClass;
+__interface DELPHIINTERFACE JMediaRouter_RouteGroup;
+typedef System::DelphiInterface<JMediaRouter_RouteGroup> _di_JMediaRouter_RouteGroup;
+class DELPHICLASS TJMediaRouter_RouteGroup;
+__interface DELPHIINTERFACE JMediaRouter_SimpleCallbackClass;
+typedef System::DelphiInterface<JMediaRouter_SimpleCallbackClass> _di_JMediaRouter_SimpleCallbackClass;
+__interface DELPHIINTERFACE JMediaRouter_SimpleCallback;
+typedef System::DelphiInterface<JMediaRouter_SimpleCallback> _di_JMediaRouter_SimpleCallback;
+class DELPHICLASS TJMediaRouter_SimpleCallback;
+__interface DELPHIINTERFACE JMediaRouter_UserRouteInfoClass;
+typedef System::DelphiInterface<JMediaRouter_UserRouteInfoClass> _di_JMediaRouter_UserRouteInfoClass;
+__interface DELPHIINTERFACE JMediaRouter_UserRouteInfo;
+typedef System::DelphiInterface<JMediaRouter_UserRouteInfo> _di_JMediaRouter_UserRouteInfo;
+class DELPHICLASS TJMediaRouter_UserRouteInfo;
+__interface DELPHIINTERFACE JMediaRouter_VolumeCallbackClass;
+typedef System::DelphiInterface<JMediaRouter_VolumeCallbackClass> _di_JMediaRouter_VolumeCallbackClass;
+__interface DELPHIINTERFACE JMediaRouter_VolumeCallback;
+typedef System::DelphiInterface<JMediaRouter_VolumeCallback> _di_JMediaRouter_VolumeCallback;
+class DELPHICLASS TJMediaRouter_VolumeCallback;
+__interface DELPHIINTERFACE JMediaScannerConnectionClass;
+typedef System::DelphiInterface<JMediaScannerConnectionClass> _di_JMediaScannerConnectionClass;
+__interface DELPHIINTERFACE JMediaScannerConnection;
+typedef System::DelphiInterface<JMediaScannerConnection> _di_JMediaScannerConnection;
+class DELPHICLASS TJMediaScannerConnection;
+__interface DELPHIINTERFACE JMediaScannerConnection_OnScanCompletedListenerClass;
+typedef System::DelphiInterface<JMediaScannerConnection_OnScanCompletedListenerClass> _di_JMediaScannerConnection_OnScanCompletedListenerClass;
+__interface DELPHIINTERFACE JMediaScannerConnection_OnScanCompletedListener;
+typedef System::DelphiInterface<JMediaScannerConnection_OnScanCompletedListener> _di_JMediaScannerConnection_OnScanCompletedListener;
+class DELPHICLASS TJMediaScannerConnection_OnScanCompletedListener;
+__interface DELPHIINTERFACE JMediaScannerConnection_MediaScannerConnectionClientClass;
+typedef System::DelphiInterface<JMediaScannerConnection_MediaScannerConnectionClientClass> _di_JMediaScannerConnection_MediaScannerConnectionClientClass;
+__interface DELPHIINTERFACE JMediaScannerConnection_MediaScannerConnectionClient;
+typedef System::DelphiInterface<JMediaScannerConnection_MediaScannerConnectionClient> _di_JMediaScannerConnection_MediaScannerConnectionClient;
+class DELPHICLASS TJMediaScannerConnection_MediaScannerConnectionClient;
+__interface DELPHIINTERFACE JMediaSyncClass;
+typedef System::DelphiInterface<JMediaSyncClass> _di_JMediaSyncClass;
+__interface DELPHIINTERFACE JMediaSync;
+typedef System::DelphiInterface<JMediaSync> _di_JMediaSync;
+class DELPHICLASS TJMediaSync;
+__interface DELPHIINTERFACE JMediaSync_CallbackClass;
+typedef System::DelphiInterface<JMediaSync_CallbackClass> _di_JMediaSync_CallbackClass;
+__interface DELPHIINTERFACE JMediaSync_Callback;
+typedef System::DelphiInterface<JMediaSync_Callback> _di_JMediaSync_Callback;
+class DELPHICLASS TJMediaSync_Callback;
+__interface DELPHIINTERFACE JMediaSync_OnErrorListenerClass;
+typedef System::DelphiInterface<JMediaSync_OnErrorListenerClass> _di_JMediaSync_OnErrorListenerClass;
+__interface DELPHIINTERFACE JMediaSync_OnErrorListener;
+typedef System::DelphiInterface<JMediaSync_OnErrorListener> _di_JMediaSync_OnErrorListener;
+class DELPHICLASS TJMediaSync_OnErrorListener;
+__interface DELPHIINTERFACE JMediaSyncEventClass;
+typedef System::DelphiInterface<JMediaSyncEventClass> _di_JMediaSyncEventClass;
+__interface DELPHIINTERFACE JMediaSyncEvent;
+typedef System::DelphiInterface<JMediaSyncEvent> _di_JMediaSyncEvent;
+class DELPHICLASS TJMediaSyncEvent;
+__interface DELPHIINTERFACE JMediaTimestampClass;
+typedef System::DelphiInterface<JMediaTimestampClass> _di_JMediaTimestampClass;
+__interface DELPHIINTERFACE JMediaTimestamp;
+typedef System::DelphiInterface<JMediaTimestamp> _di_JMediaTimestamp;
+class DELPHICLASS TJMediaTimestamp;
+__interface DELPHIINTERFACE JNotProvisionedExceptionClass;
+typedef System::DelphiInterface<JNotProvisionedExceptionClass> _di_JNotProvisionedExceptionClass;
+__interface DELPHIINTERFACE JNotProvisionedException;
+typedef System::DelphiInterface<JNotProvisionedException> _di_JNotProvisionedException;
+class DELPHICLASS TJNotProvisionedException;
+__interface DELPHIINTERFACE JPlaybackParamsClass;
+typedef System::DelphiInterface<JPlaybackParamsClass> _di_JPlaybackParamsClass;
+__interface DELPHIINTERFACE JPlaybackParams;
+typedef System::DelphiInterface<JPlaybackParams> _di_JPlaybackParams;
+class DELPHICLASS TJPlaybackParams;
+__interface DELPHIINTERFACE JRatingClass;
+typedef System::DelphiInterface<JRatingClass> _di_JRatingClass;
+__interface DELPHIINTERFACE JRating;
+typedef System::DelphiInterface<JRating> _di_JRating;
+class DELPHICLASS TJRating;
+__interface DELPHIINTERFACE JRemoteControlClientClass;
+typedef System::DelphiInterface<JRemoteControlClientClass> _di_JRemoteControlClientClass;
+__interface DELPHIINTERFACE JRemoteControlClient;
+typedef System::DelphiInterface<JRemoteControlClient> _di_JRemoteControlClient;
+class DELPHICLASS TJRemoteControlClient;
+__interface DELPHIINTERFACE JRemoteControlClient_MetadataEditorClass;
+typedef System::DelphiInterface<JRemoteControlClient_MetadataEditorClass> _di_JRemoteControlClient_MetadataEditorClass;
+__interface DELPHIINTERFACE JRemoteControlClient_MetadataEditor;
+typedef System::DelphiInterface<JRemoteControlClient_MetadataEditor> _di_JRemoteControlClient_MetadataEditor;
+class DELPHICLASS TJRemoteControlClient_MetadataEditor;
+__interface DELPHIINTERFACE JRemoteControlClient_OnGetPlaybackPositionListenerClass;
+typedef System::DelphiInterface<JRemoteControlClient_OnGetPlaybackPositionListenerClass> _di_JRemoteControlClient_OnGetPlaybackPositionListenerClass;
+__interface DELPHIINTERFACE JRemoteControlClient_OnGetPlaybackPositionListener;
+typedef System::DelphiInterface<JRemoteControlClient_OnGetPlaybackPositionListener> _di_JRemoteControlClient_OnGetPlaybackPositionListener;
+class DELPHICLASS TJRemoteControlClient_OnGetPlaybackPositionListener;
+__interface DELPHIINTERFACE JRemoteControlClient_OnMetadataUpdateListenerClass;
+typedef System::DelphiInterface<JRemoteControlClient_OnMetadataUpdateListenerClass> _di_JRemoteControlClient_OnMetadataUpdateListenerClass;
+__interface DELPHIINTERFACE JRemoteControlClient_OnMetadataUpdateListener;
+typedef System::DelphiInterface<JRemoteControlClient_OnMetadataUpdateListener> _di_JRemoteControlClient_OnMetadataUpdateListener;
+class DELPHICLASS TJRemoteControlClient_OnMetadataUpdateListener;
+__interface DELPHIINTERFACE JRemoteControlClient_OnPlaybackPositionUpdateListenerClass;
+typedef System::DelphiInterface<JRemoteControlClient_OnPlaybackPositionUpdateListenerClass> _di_JRemoteControlClient_OnPlaybackPositionUpdateListenerClass;
+__interface DELPHIINTERFACE JRemoteControlClient_OnPlaybackPositionUpdateListener;
+typedef System::DelphiInterface<JRemoteControlClient_OnPlaybackPositionUpdateListener> _di_JRemoteControlClient_OnPlaybackPositionUpdateListener;
+class DELPHICLASS TJRemoteControlClient_OnPlaybackPositionUpdateListener;
+__interface DELPHIINTERFACE JRemoteControllerClass;
+typedef System::DelphiInterface<JRemoteControllerClass> _di_JRemoteControllerClass;
+__interface DELPHIINTERFACE JRemoteController;
+typedef System::DelphiInterface<JRemoteController> _di_JRemoteController;
+class DELPHICLASS TJRemoteController;
+__interface DELPHIINTERFACE JRemoteController_MetadataEditorClass;
+typedef System::DelphiInterface<JRemoteController_MetadataEditorClass> _di_JRemoteController_MetadataEditorClass;
+__interface DELPHIINTERFACE JRemoteController_MetadataEditor;
+typedef System::DelphiInterface<JRemoteController_MetadataEditor> _di_JRemoteController_MetadataEditor;
+class DELPHICLASS TJRemoteController_MetadataEditor;
+__interface DELPHIINTERFACE JRemoteController_OnClientUpdateListenerClass;
+typedef System::DelphiInterface<JRemoteController_OnClientUpdateListenerClass> _di_JRemoteController_OnClientUpdateListenerClass;
+__interface DELPHIINTERFACE JRemoteController_OnClientUpdateListener;
+typedef System::DelphiInterface<JRemoteController_OnClientUpdateListener> _di_JRemoteController_OnClientUpdateListener;
+class DELPHICLASS TJRemoteController_OnClientUpdateListener;
+__interface DELPHIINTERFACE JResourceBusyExceptionClass;
+typedef System::DelphiInterface<JResourceBusyExceptionClass> _di_JResourceBusyExceptionClass;
+__interface DELPHIINTERFACE JResourceBusyException;
+typedef System::DelphiInterface<JResourceBusyException> _di_JResourceBusyException;
+class DELPHICLASS TJResourceBusyException;
+__interface DELPHIINTERFACE JRingtoneClass;
+typedef System::DelphiInterface<JRingtoneClass> _di_JRingtoneClass;
+__interface DELPHIINTERFACE JRingtone;
+typedef System::DelphiInterface<JRingtone> _di_JRingtone;
+class DELPHICLASS TJRingtone;
+__interface DELPHIINTERFACE JRingtoneManagerClass;
+typedef System::DelphiInterface<JRingtoneManagerClass> _di_JRingtoneManagerClass;
+__interface DELPHIINTERFACE JRingtoneManager;
+typedef System::DelphiInterface<JRingtoneManager> _di_JRingtoneManager;
+class DELPHICLASS TJRingtoneManager;
+__interface DELPHIINTERFACE JSoundPoolClass;
+typedef System::DelphiInterface<JSoundPoolClass> _di_JSoundPoolClass;
+__interface DELPHIINTERFACE JSoundPool;
+typedef System::DelphiInterface<JSoundPool> _di_JSoundPool;
+class DELPHICLASS TJSoundPool;
+__interface DELPHIINTERFACE JSoundPool_BuilderClass;
+typedef System::DelphiInterface<JSoundPool_BuilderClass> _di_JSoundPool_BuilderClass;
+__interface DELPHIINTERFACE JSoundPool_Builder;
+typedef System::DelphiInterface<JSoundPool_Builder> _di_JSoundPool_Builder;
+class DELPHICLASS TJSoundPool_Builder;
+__interface DELPHIINTERFACE JSoundPool_OnLoadCompleteListenerClass;
+typedef System::DelphiInterface<JSoundPool_OnLoadCompleteListenerClass> _di_JSoundPool_OnLoadCompleteListenerClass;
+__interface DELPHIINTERFACE JSoundPool_OnLoadCompleteListener;
+typedef System::DelphiInterface<JSoundPool_OnLoadCompleteListener> _di_JSoundPool_OnLoadCompleteListener;
+class DELPHICLASS TJSoundPool_OnLoadCompleteListener;
+__interface DELPHIINTERFACE JSyncParamsClass;
+typedef System::DelphiInterface<JSyncParamsClass> _di_JSyncParamsClass;
+__interface DELPHIINTERFACE JSyncParams;
+typedef System::DelphiInterface<JSyncParams> _di_JSyncParams;
+class DELPHICLASS TJSyncParams;
+__interface DELPHIINTERFACE JThumbnailUtilsClass;
+typedef System::DelphiInterface<JThumbnailUtilsClass> _di_JThumbnailUtilsClass;
+__interface DELPHIINTERFACE JThumbnailUtils;
+typedef System::DelphiInterface<JThumbnailUtils> _di_JThumbnailUtils;
+class DELPHICLASS TJThumbnailUtils;
+__interface DELPHIINTERFACE JTimedMetaDataClass;
+typedef System::DelphiInterface<JTimedMetaDataClass> _di_JTimedMetaDataClass;
+__interface DELPHIINTERFACE JTimedMetaData;
+typedef System::DelphiInterface<JTimedMetaData> _di_JTimedMetaData;
+class DELPHICLASS TJTimedMetaData;
+__interface DELPHIINTERFACE JTimedTextClass;
+typedef System::DelphiInterface<JTimedTextClass> _di_JTimedTextClass;
+__interface DELPHIINTERFACE JTimedText;
+typedef System::DelphiInterface<JTimedText> _di_JTimedText;
+class DELPHICLASS TJTimedText;
+__interface DELPHIINTERFACE JToneGeneratorClass;
+typedef System::DelphiInterface<JToneGeneratorClass> _di_JToneGeneratorClass;
+__interface DELPHIINTERFACE JToneGenerator;
+typedef System::DelphiInterface<JToneGenerator> _di_JToneGenerator;
+class DELPHICLASS TJToneGenerator;
+__interface DELPHIINTERFACE JUnsupportedSchemeExceptionClass;
+typedef System::DelphiInterface<JUnsupportedSchemeExceptionClass> _di_JUnsupportedSchemeExceptionClass;
+__interface DELPHIINTERFACE JUnsupportedSchemeException;
+typedef System::DelphiInterface<JUnsupportedSchemeException> _di_JUnsupportedSchemeException;
+class DELPHICLASS TJUnsupportedSchemeException;
+__interface DELPHIINTERFACE JVolumeAutomationClass;
+typedef System::DelphiInterface<JVolumeAutomationClass> _di_JVolumeAutomationClass;
+__interface DELPHIINTERFACE JVolumeAutomation;
+typedef System::DelphiInterface<JVolumeAutomation> _di_JVolumeAutomation;
+class DELPHICLASS TJVolumeAutomation;
+__interface DELPHIINTERFACE JVolumeProviderClass;
+typedef System::DelphiInterface<JVolumeProviderClass> _di_JVolumeProviderClass;
+__interface DELPHIINTERFACE JVolumeProvider;
+typedef System::DelphiInterface<JVolumeProvider> _di_JVolumeProvider;
+class DELPHICLASS TJVolumeProvider;
+__interface DELPHIINTERFACE JVolumeShaperClass;
+typedef System::DelphiInterface<JVolumeShaperClass> _di_JVolumeShaperClass;
+__interface DELPHIINTERFACE JVolumeShaper;
+typedef System::DelphiInterface<JVolumeShaper> _di_JVolumeShaper;
+class DELPHICLASS TJVolumeShaper;
+__interface DELPHIINTERFACE JVolumeShaper_ConfigurationClass;
+typedef System::DelphiInterface<JVolumeShaper_ConfigurationClass> _di_JVolumeShaper_ConfigurationClass;
+__interface DELPHIINTERFACE JVolumeShaper_Configuration;
+typedef System::DelphiInterface<JVolumeShaper_Configuration> _di_JVolumeShaper_Configuration;
+class DELPHICLASS TJVolumeShaper_Configuration;
+__interface DELPHIINTERFACE JConfiguration_BuilderClass;
+typedef System::DelphiInterface<JConfiguration_BuilderClass> _di_JConfiguration_BuilderClass;
+__interface DELPHIINTERFACE JConfiguration_Builder;
+typedef System::DelphiInterface<JConfiguration_Builder> _di_JConfiguration_Builder;
+class DELPHICLASS TJConfiguration_Builder;
+__interface DELPHIINTERFACE JVolumeShaper_OperationClass;
+typedef System::DelphiInterface<JVolumeShaper_OperationClass> _di_JVolumeShaper_OperationClass;
+__interface DELPHIINTERFACE JVolumeShaper_Operation;
+typedef System::DelphiInterface<JVolumeShaper_Operation> _di_JVolumeShaper_Operation;
+class DELPHICLASS TJVolumeShaper_Operation;
+__interface DELPHIINTERFACE JAudioEffectClass;
+typedef System::DelphiInterface<JAudioEffectClass> _di_JAudioEffectClass;
+__interface DELPHIINTERFACE JAudioEffect;
+typedef System::DelphiInterface<JAudioEffect> _di_JAudioEffect;
+class DELPHICLASS TJAudioEffect;
+__interface DELPHIINTERFACE JAcousticEchoCancelerClass;
+typedef System::DelphiInterface<JAcousticEchoCancelerClass> _di_JAcousticEchoCancelerClass;
+__interface DELPHIINTERFACE JAcousticEchoCanceler;
+typedef System::DelphiInterface<JAcousticEchoCanceler> _di_JAcousticEchoCanceler;
+class DELPHICLASS TJAcousticEchoCanceler;
+__interface DELPHIINTERFACE JAudioEffect_DescriptorClass;
+typedef System::DelphiInterface<JAudioEffect_DescriptorClass> _di_JAudioEffect_DescriptorClass;
+__interface DELPHIINTERFACE JAudioEffect_Descriptor;
+typedef System::DelphiInterface<JAudioEffect_Descriptor> _di_JAudioEffect_Descriptor;
+class DELPHICLASS TJAudioEffect_Descriptor;
+__interface DELPHIINTERFACE JAudioEffect_OnControlStatusChangeListenerClass;
+typedef System::DelphiInterface<JAudioEffect_OnControlStatusChangeListenerClass> _di_JAudioEffect_OnControlStatusChangeListenerClass;
+__interface DELPHIINTERFACE JAudioEffect_OnControlStatusChangeListener;
+typedef System::DelphiInterface<JAudioEffect_OnControlStatusChangeListener> _di_JAudioEffect_OnControlStatusChangeListener;
+class DELPHICLASS TJAudioEffect_OnControlStatusChangeListener;
+__interface DELPHIINTERFACE JAudioEffect_OnEnableStatusChangeListenerClass;
+typedef System::DelphiInterface<JAudioEffect_OnEnableStatusChangeListenerClass> _di_JAudioEffect_OnEnableStatusChangeListenerClass;
+__interface DELPHIINTERFACE JAudioEffect_OnEnableStatusChangeListener;
+typedef System::DelphiInterface<JAudioEffect_OnEnableStatusChangeListener> _di_JAudioEffect_OnEnableStatusChangeListener;
+class DELPHICLASS TJAudioEffect_OnEnableStatusChangeListener;
+__interface DELPHIINTERFACE JAutomaticGainControlClass;
+typedef System::DelphiInterface<JAutomaticGainControlClass> _di_JAutomaticGainControlClass;
+__interface DELPHIINTERFACE JAutomaticGainControl;
+typedef System::DelphiInterface<JAutomaticGainControl> _di_JAutomaticGainControl;
+class DELPHICLASS TJAutomaticGainControl;
+__interface DELPHIINTERFACE JBassBoostClass;
+typedef System::DelphiInterface<JBassBoostClass> _di_JBassBoostClass;
+__interface DELPHIINTERFACE JBassBoost;
+typedef System::DelphiInterface<JBassBoost> _di_JBassBoost;
+class DELPHICLASS TJBassBoost;
+__interface DELPHIINTERFACE JBassBoost_OnParameterChangeListenerClass;
+typedef System::DelphiInterface<JBassBoost_OnParameterChangeListenerClass> _di_JBassBoost_OnParameterChangeListenerClass;
+__interface DELPHIINTERFACE JBassBoost_OnParameterChangeListener;
+typedef System::DelphiInterface<JBassBoost_OnParameterChangeListener> _di_JBassBoost_OnParameterChangeListener;
+class DELPHICLASS TJBassBoost_OnParameterChangeListener;
+__interface DELPHIINTERFACE JBassBoost_SettingsClass;
+typedef System::DelphiInterface<JBassBoost_SettingsClass> _di_JBassBoost_SettingsClass;
+__interface DELPHIINTERFACE JBassBoost_Settings;
+typedef System::DelphiInterface<JBassBoost_Settings> _di_JBassBoost_Settings;
+class DELPHICLASS TJBassBoost_Settings;
+__interface DELPHIINTERFACE JEnvironmentalReverbClass;
+typedef System::DelphiInterface<JEnvironmentalReverbClass> _di_JEnvironmentalReverbClass;
+__interface DELPHIINTERFACE JEnvironmentalReverb;
+typedef System::DelphiInterface<JEnvironmentalReverb> _di_JEnvironmentalReverb;
+class DELPHICLASS TJEnvironmentalReverb;
+__interface DELPHIINTERFACE JEnvironmentalReverb_OnParameterChangeListenerClass;
+typedef System::DelphiInterface<JEnvironmentalReverb_OnParameterChangeListenerClass> _di_JEnvironmentalReverb_OnParameterChangeListenerClass;
+__interface DELPHIINTERFACE JEnvironmentalReverb_OnParameterChangeListener;
+typedef System::DelphiInterface<JEnvironmentalReverb_OnParameterChangeListener> _di_JEnvironmentalReverb_OnParameterChangeListener;
+class DELPHICLASS TJEnvironmentalReverb_OnParameterChangeListener;
+__interface DELPHIINTERFACE JEnvironmentalReverb_SettingsClass;
+typedef System::DelphiInterface<JEnvironmentalReverb_SettingsClass> _di_JEnvironmentalReverb_SettingsClass;
+__interface DELPHIINTERFACE JEnvironmentalReverb_Settings;
+typedef System::DelphiInterface<JEnvironmentalReverb_Settings> _di_JEnvironmentalReverb_Settings;
+class DELPHICLASS TJEnvironmentalReverb_Settings;
+__interface DELPHIINTERFACE JEqualizerClass;
+typedef System::DelphiInterface<JEqualizerClass> _di_JEqualizerClass;
+__interface DELPHIINTERFACE JEqualizer;
+typedef System::DelphiInterface<JEqualizer> _di_JEqualizer;
+class DELPHICLASS TJEqualizer;
+__interface DELPHIINTERFACE JEqualizer_OnParameterChangeListenerClass;
+typedef System::DelphiInterface<JEqualizer_OnParameterChangeListenerClass> _di_JEqualizer_OnParameterChangeListenerClass;
+__interface DELPHIINTERFACE JEqualizer_OnParameterChangeListener;
+typedef System::DelphiInterface<JEqualizer_OnParameterChangeListener> _di_JEqualizer_OnParameterChangeListener;
+class DELPHICLASS TJEqualizer_OnParameterChangeListener;
+__interface DELPHIINTERFACE JEqualizer_SettingsClass;
+typedef System::DelphiInterface<JEqualizer_SettingsClass> _di_JEqualizer_SettingsClass;
+__interface DELPHIINTERFACE JEqualizer_Settings;
+typedef System::DelphiInterface<JEqualizer_Settings> _di_JEqualizer_Settings;
+class DELPHICLASS TJEqualizer_Settings;
+__interface DELPHIINTERFACE JLoudnessEnhancerClass;
+typedef System::DelphiInterface<JLoudnessEnhancerClass> _di_JLoudnessEnhancerClass;
+__interface DELPHIINTERFACE JLoudnessEnhancer;
+typedef System::DelphiInterface<JLoudnessEnhancer> _di_JLoudnessEnhancer;
+class DELPHICLASS TJLoudnessEnhancer;
+__interface DELPHIINTERFACE JNoiseSuppressorClass;
+typedef System::DelphiInterface<JNoiseSuppressorClass> _di_JNoiseSuppressorClass;
+__interface DELPHIINTERFACE JNoiseSuppressor;
+typedef System::DelphiInterface<JNoiseSuppressor> _di_JNoiseSuppressor;
+class DELPHICLASS TJNoiseSuppressor;
+__interface DELPHIINTERFACE JPresetReverbClass;
+typedef System::DelphiInterface<JPresetReverbClass> _di_JPresetReverbClass;
+__interface DELPHIINTERFACE JPresetReverb;
+typedef System::DelphiInterface<JPresetReverb> _di_JPresetReverb;
+class DELPHICLASS TJPresetReverb;
+__interface DELPHIINTERFACE JPresetReverb_OnParameterChangeListenerClass;
+typedef System::DelphiInterface<JPresetReverb_OnParameterChangeListenerClass> _di_JPresetReverb_OnParameterChangeListenerClass;
+__interface DELPHIINTERFACE JPresetReverb_OnParameterChangeListener;
+typedef System::DelphiInterface<JPresetReverb_OnParameterChangeListener> _di_JPresetReverb_OnParameterChangeListener;
+class DELPHICLASS TJPresetReverb_OnParameterChangeListener;
+__interface DELPHIINTERFACE JPresetReverb_SettingsClass;
+typedef System::DelphiInterface<JPresetReverb_SettingsClass> _di_JPresetReverb_SettingsClass;
+__interface DELPHIINTERFACE JPresetReverb_Settings;
+typedef System::DelphiInterface<JPresetReverb_Settings> _di_JPresetReverb_Settings;
+class DELPHICLASS TJPresetReverb_Settings;
+__interface DELPHIINTERFACE JVirtualizerClass;
+typedef System::DelphiInterface<JVirtualizerClass> _di_JVirtualizerClass;
+__interface DELPHIINTERFACE JVirtualizer;
+typedef System::DelphiInterface<JVirtualizer> _di_JVirtualizer;
+class DELPHICLASS TJVirtualizer;
+__interface DELPHIINTERFACE JVirtualizer_OnParameterChangeListenerClass;
+typedef System::DelphiInterface<JVirtualizer_OnParameterChangeListenerClass> _di_JVirtualizer_OnParameterChangeListenerClass;
+__interface DELPHIINTERFACE JVirtualizer_OnParameterChangeListener;
+typedef System::DelphiInterface<JVirtualizer_OnParameterChangeListener> _di_JVirtualizer_OnParameterChangeListener;
+class DELPHICLASS TJVirtualizer_OnParameterChangeListener;
+__interface DELPHIINTERFACE JVirtualizer_SettingsClass;
+typedef System::DelphiInterface<JVirtualizer_SettingsClass> _di_JVirtualizer_SettingsClass;
+__interface DELPHIINTERFACE JVirtualizer_Settings;
+typedef System::DelphiInterface<JVirtualizer_Settings> _di_JVirtualizer_Settings;
+class DELPHICLASS TJVirtualizer_Settings;
+__interface DELPHIINTERFACE JVisualizerClass;
+typedef System::DelphiInterface<JVisualizerClass> _di_JVisualizerClass;
+__interface DELPHIINTERFACE JVisualizer;
+typedef System::DelphiInterface<JVisualizer> _di_JVisualizer;
+class DELPHICLASS TJVisualizer;
+__interface DELPHIINTERFACE JVisualizer_MeasurementPeakRmsClass;
+typedef System::DelphiInterface<JVisualizer_MeasurementPeakRmsClass> _di_JVisualizer_MeasurementPeakRmsClass;
+__interface DELPHIINTERFACE JVisualizer_MeasurementPeakRms;
+typedef System::DelphiInterface<JVisualizer_MeasurementPeakRms> _di_JVisualizer_MeasurementPeakRms;
+class DELPHICLASS TJVisualizer_MeasurementPeakRms;
+__interface DELPHIINTERFACE JVisualizer_OnDataCaptureListenerClass;
+typedef System::DelphiInterface<JVisualizer_OnDataCaptureListenerClass> _di_JVisualizer_OnDataCaptureListenerClass;
+__interface DELPHIINTERFACE JVisualizer_OnDataCaptureListener;
+typedef System::DelphiInterface<JVisualizer_OnDataCaptureListener> _di_JVisualizer_OnDataCaptureListener;
+class DELPHICLASS TJVisualizer_OnDataCaptureListener;
+__interface DELPHIINTERFACE JMediaBrowserClass;
+typedef System::DelphiInterface<JMediaBrowserClass> _di_JMediaBrowserClass;
+__interface DELPHIINTERFACE JMediaBrowser;
+typedef System::DelphiInterface<JMediaBrowser> _di_JMediaBrowser;
+class DELPHICLASS TJMediaBrowser;
+__interface DELPHIINTERFACE JMediaBrowser_ConnectionCallbackClass;
+typedef System::DelphiInterface<JMediaBrowser_ConnectionCallbackClass> _di_JMediaBrowser_ConnectionCallbackClass;
+__interface DELPHIINTERFACE JMediaBrowser_ConnectionCallback;
+typedef System::DelphiInterface<JMediaBrowser_ConnectionCallback> _di_JMediaBrowser_ConnectionCallback;
+class DELPHICLASS TJMediaBrowser_ConnectionCallback;
+__interface DELPHIINTERFACE JMediaBrowser_ItemCallbackClass;
+typedef System::DelphiInterface<JMediaBrowser_ItemCallbackClass> _di_JMediaBrowser_ItemCallbackClass;
+__interface DELPHIINTERFACE JMediaBrowser_ItemCallback;
+typedef System::DelphiInterface<JMediaBrowser_ItemCallback> _di_JMediaBrowser_ItemCallback;
+class DELPHICLASS TJMediaBrowser_ItemCallback;
+__interface DELPHIINTERFACE JMediaBrowser_MediaItemClass;
+typedef System::DelphiInterface<JMediaBrowser_MediaItemClass> _di_JMediaBrowser_MediaItemClass;
+__interface DELPHIINTERFACE JMediaBrowser_MediaItem;
+typedef System::DelphiInterface<JMediaBrowser_MediaItem> _di_JMediaBrowser_MediaItem;
+class DELPHICLASS TJMediaBrowser_MediaItem;
+__interface DELPHIINTERFACE JMediaBrowser_SubscriptionCallbackClass;
+typedef System::DelphiInterface<JMediaBrowser_SubscriptionCallbackClass> _di_JMediaBrowser_SubscriptionCallbackClass;
+__interface DELPHIINTERFACE JMediaBrowser_SubscriptionCallback;
+typedef System::DelphiInterface<JMediaBrowser_SubscriptionCallback> _di_JMediaBrowser_SubscriptionCallback;
+class DELPHICLASS TJMediaBrowser_SubscriptionCallback;
+__interface DELPHIINTERFACE JEffectClass;
+typedef System::DelphiInterface<JEffectClass> _di_JEffectClass;
+__interface DELPHIINTERFACE JEffect;
+typedef System::DelphiInterface<JEffect> _di_JEffect;
+class DELPHICLASS TJEffect;
+__interface DELPHIINTERFACE JEffectContextClass;
+typedef System::DelphiInterface<JEffectContextClass> _di_JEffectContextClass;
+__interface DELPHIINTERFACE JEffectContext;
+typedef System::DelphiInterface<JEffectContext> _di_JEffectContext;
+class DELPHICLASS TJEffectContext;
+__interface DELPHIINTERFACE JEffectFactoryClass;
+typedef System::DelphiInterface<JEffectFactoryClass> _di_JEffectFactoryClass;
+__interface DELPHIINTERFACE JEffectFactory;
+typedef System::DelphiInterface<JEffectFactory> _di_JEffectFactory;
+class DELPHICLASS TJEffectFactory;
+__interface DELPHIINTERFACE JEffectUpdateListenerClass;
+typedef System::DelphiInterface<JEffectUpdateListenerClass> _di_JEffectUpdateListenerClass;
+__interface DELPHIINTERFACE JEffectUpdateListener;
+typedef System::DelphiInterface<JEffectUpdateListener> _di_JEffectUpdateListener;
+class DELPHICLASS TJEffectUpdateListener;
+__interface DELPHIINTERFACE JMidiDeviceClass;
+typedef System::DelphiInterface<JMidiDeviceClass> _di_JMidiDeviceClass;
+__interface DELPHIINTERFACE JMidiDevice;
+typedef System::DelphiInterface<JMidiDevice> _di_JMidiDevice;
+class DELPHICLASS TJMidiDevice;
+__interface DELPHIINTERFACE JMidiDevice_MidiConnectionClass;
+typedef System::DelphiInterface<JMidiDevice_MidiConnectionClass> _di_JMidiDevice_MidiConnectionClass;
+__interface DELPHIINTERFACE JMidiDevice_MidiConnection;
+typedef System::DelphiInterface<JMidiDevice_MidiConnection> _di_JMidiDevice_MidiConnection;
+class DELPHICLASS TJMidiDevice_MidiConnection;
+__interface DELPHIINTERFACE JMidiDeviceInfoClass;
+typedef System::DelphiInterface<JMidiDeviceInfoClass> _di_JMidiDeviceInfoClass;
+__interface DELPHIINTERFACE JMidiDeviceInfo;
+typedef System::DelphiInterface<JMidiDeviceInfo> _di_JMidiDeviceInfo;
+class DELPHICLASS TJMidiDeviceInfo;
+__interface DELPHIINTERFACE JMidiDeviceInfo_PortInfoClass;
+typedef System::DelphiInterface<JMidiDeviceInfo_PortInfoClass> _di_JMidiDeviceInfo_PortInfoClass;
+__interface DELPHIINTERFACE JMidiDeviceInfo_PortInfo;
+typedef System::DelphiInterface<JMidiDeviceInfo_PortInfo> _di_JMidiDeviceInfo_PortInfo;
+class DELPHICLASS TJMidiDeviceInfo_PortInfo;
+__interface DELPHIINTERFACE JMidiDeviceServiceClass;
+typedef System::DelphiInterface<JMidiDeviceServiceClass> _di_JMidiDeviceServiceClass;
+__interface DELPHIINTERFACE JMidiDeviceService;
+typedef System::DelphiInterface<JMidiDeviceService> _di_JMidiDeviceService;
+class DELPHICLASS TJMidiDeviceService;
+__interface DELPHIINTERFACE JMidiDeviceStatusClass;
+typedef System::DelphiInterface<JMidiDeviceStatusClass> _di_JMidiDeviceStatusClass;
+__interface DELPHIINTERFACE JMidiDeviceStatus;
+typedef System::DelphiInterface<JMidiDeviceStatus> _di_JMidiDeviceStatus;
+class DELPHICLASS TJMidiDeviceStatus;
+__interface DELPHIINTERFACE JMidiReceiverClass;
+typedef System::DelphiInterface<JMidiReceiverClass> _di_JMidiReceiverClass;
+__interface DELPHIINTERFACE JMidiReceiver;
+typedef System::DelphiInterface<JMidiReceiver> _di_JMidiReceiver;
+class DELPHICLASS TJMidiReceiver;
+__interface DELPHIINTERFACE JMidiInputPortClass;
+typedef System::DelphiInterface<JMidiInputPortClass> _di_JMidiInputPortClass;
+__interface DELPHIINTERFACE JMidiInputPort;
+typedef System::DelphiInterface<JMidiInputPort> _di_JMidiInputPort;
+class DELPHICLASS TJMidiInputPort;
+__interface DELPHIINTERFACE JMidiManagerClass;
+typedef System::DelphiInterface<JMidiManagerClass> _di_JMidiManagerClass;
+__interface DELPHIINTERFACE JMidiManager;
+typedef System::DelphiInterface<JMidiManager> _di_JMidiManager;
+class DELPHICLASS TJMidiManager;
+__interface DELPHIINTERFACE JMidiManager_DeviceCallbackClass;
+typedef System::DelphiInterface<JMidiManager_DeviceCallbackClass> _di_JMidiManager_DeviceCallbackClass;
+__interface DELPHIINTERFACE JMidiManager_DeviceCallback;
+typedef System::DelphiInterface<JMidiManager_DeviceCallback> _di_JMidiManager_DeviceCallback;
+class DELPHICLASS TJMidiManager_DeviceCallback;
+__interface DELPHIINTERFACE JMidiManager_OnDeviceOpenedListenerClass;
+typedef System::DelphiInterface<JMidiManager_OnDeviceOpenedListenerClass> _di_JMidiManager_OnDeviceOpenedListenerClass;
+__interface DELPHIINTERFACE JMidiManager_OnDeviceOpenedListener;
+typedef System::DelphiInterface<JMidiManager_OnDeviceOpenedListener> _di_JMidiManager_OnDeviceOpenedListener;
+class DELPHICLASS TJMidiManager_OnDeviceOpenedListener;
+__interface DELPHIINTERFACE JMidiSenderClass;
+typedef System::DelphiInterface<JMidiSenderClass> _di_JMidiSenderClass;
+__interface DELPHIINTERFACE JMidiSender;
+typedef System::DelphiInterface<JMidiSender> _di_JMidiSender;
+class DELPHICLASS TJMidiSender;
+__interface DELPHIINTERFACE JMidiOutputPortClass;
+typedef System::DelphiInterface<JMidiOutputPortClass> _di_JMidiOutputPortClass;
+__interface DELPHIINTERFACE JMidiOutputPort;
+typedef System::DelphiInterface<JMidiOutputPort> _di_JMidiOutputPort;
+class DELPHICLASS TJMidiOutputPort;
+__interface DELPHIINTERFACE JMediaProjectionClass;
+typedef System::DelphiInterface<JMediaProjectionClass> _di_JMediaProjectionClass;
+__interface DELPHIINTERFACE JMediaProjection;
+typedef System::DelphiInterface<JMediaProjection> _di_JMediaProjection;
+class DELPHICLASS TJMediaProjection;
+__interface DELPHIINTERFACE JMediaProjection_CallbackClass;
+typedef System::DelphiInterface<JMediaProjection_CallbackClass> _di_JMediaProjection_CallbackClass;
+__interface DELPHIINTERFACE JMediaProjection_Callback;
+typedef System::DelphiInterface<JMediaProjection_Callback> _di_JMediaProjection_Callback;
+class DELPHICLASS TJMediaProjection_Callback;
+__interface DELPHIINTERFACE JMediaProjectionManagerClass;
+typedef System::DelphiInterface<JMediaProjectionManagerClass> _di_JMediaProjectionManagerClass;
+__interface DELPHIINTERFACE JMediaProjectionManager;
+typedef System::DelphiInterface<JMediaProjectionManager> _di_JMediaProjectionManager;
+class DELPHICLASS TJMediaProjectionManager;
+__interface DELPHIINTERFACE Jsession_MediaControllerClass;
+typedef System::DelphiInterface<Jsession_MediaControllerClass> _di_Jsession_MediaControllerClass;
+__interface DELPHIINTERFACE Jsession_MediaController;
+typedef System::DelphiInterface<Jsession_MediaController> _di_Jsession_MediaController;
+class DELPHICLASS TJsession_MediaController;
+__interface DELPHIINTERFACE JMediaController_CallbackClass;
+typedef System::DelphiInterface<JMediaController_CallbackClass> _di_JMediaController_CallbackClass;
+__interface DELPHIINTERFACE JMediaController_Callback;
+typedef System::DelphiInterface<JMediaController_Callback> _di_JMediaController_Callback;
+class DELPHICLASS TJMediaController_Callback;
+__interface DELPHIINTERFACE JMediaController_PlaybackInfoClass;
+typedef System::DelphiInterface<JMediaController_PlaybackInfoClass> _di_JMediaController_PlaybackInfoClass;
+__interface DELPHIINTERFACE JMediaController_PlaybackInfo;
+typedef System::DelphiInterface<JMediaController_PlaybackInfo> _di_JMediaController_PlaybackInfo;
+class DELPHICLASS TJMediaController_PlaybackInfo;
+__interface DELPHIINTERFACE JMediaController_TransportControlsClass;
+typedef System::DelphiInterface<JMediaController_TransportControlsClass> _di_JMediaController_TransportControlsClass;
+__interface DELPHIINTERFACE JMediaController_TransportControls;
+typedef System::DelphiInterface<JMediaController_TransportControls> _di_JMediaController_TransportControls;
+class DELPHICLASS TJMediaController_TransportControls;
+__interface DELPHIINTERFACE JMediaSessionClass;
+typedef System::DelphiInterface<JMediaSessionClass> _di_JMediaSessionClass;
+__interface DELPHIINTERFACE JMediaSession;
+typedef System::DelphiInterface<JMediaSession> _di_JMediaSession;
+class DELPHICLASS TJMediaSession;
+__interface DELPHIINTERFACE JMediaSession_CallbackClass;
+typedef System::DelphiInterface<JMediaSession_CallbackClass> _di_JMediaSession_CallbackClass;
+__interface DELPHIINTERFACE JMediaSession_Callback;
+typedef System::DelphiInterface<JMediaSession_Callback> _di_JMediaSession_Callback;
+class DELPHICLASS TJMediaSession_Callback;
+__interface DELPHIINTERFACE JMediaSession_QueueItemClass;
+typedef System::DelphiInterface<JMediaSession_QueueItemClass> _di_JMediaSession_QueueItemClass;
+__interface DELPHIINTERFACE JMediaSession_QueueItem;
+typedef System::DelphiInterface<JMediaSession_QueueItem> _di_JMediaSession_QueueItem;
+class DELPHICLASS TJMediaSession_QueueItem;
+__interface DELPHIINTERFACE JMediaSession_TokenClass;
+typedef System::DelphiInterface<JMediaSession_TokenClass> _di_JMediaSession_TokenClass;
+__interface DELPHIINTERFACE JMediaSession_Token;
+typedef System::DelphiInterface<JMediaSession_Token> _di_JMediaSession_Token;
+class DELPHICLASS TJMediaSession_Token;
+__interface DELPHIINTERFACE JMediaSessionManagerClass;
+typedef System::DelphiInterface<JMediaSessionManagerClass> _di_JMediaSessionManagerClass;
+__interface DELPHIINTERFACE JMediaSessionManager;
+typedef System::DelphiInterface<JMediaSessionManager> _di_JMediaSessionManager;
+class DELPHICLASS TJMediaSessionManager;
+__interface DELPHIINTERFACE JMediaSessionManager_OnActiveSessionsChangedListenerClass;
+typedef System::DelphiInterface<JMediaSessionManager_OnActiveSessionsChangedListenerClass> _di_JMediaSessionManager_OnActiveSessionsChangedListenerClass;
+__interface DELPHIINTERFACE JMediaSessionManager_OnActiveSessionsChangedListener;
+typedef System::DelphiInterface<JMediaSessionManager_OnActiveSessionsChangedListener> _di_JMediaSessionManager_OnActiveSessionsChangedListener;
+class DELPHICLASS TJMediaSessionManager_OnActiveSessionsChangedListener;
+__interface DELPHIINTERFACE JPlaybackStateClass;
+typedef System::DelphiInterface<JPlaybackStateClass> _di_JPlaybackStateClass;
+__interface DELPHIINTERFACE JPlaybackState;
+typedef System::DelphiInterface<JPlaybackState> _di_JPlaybackState;
+class DELPHICLASS TJPlaybackState;
+__interface DELPHIINTERFACE JPlaybackState_BuilderClass;
+typedef System::DelphiInterface<JPlaybackState_BuilderClass> _di_JPlaybackState_BuilderClass;
+__interface DELPHIINTERFACE JPlaybackState_Builder;
+typedef System::DelphiInterface<JPlaybackState_Builder> _di_JPlaybackState_Builder;
+class DELPHICLASS TJPlaybackState_Builder;
+__interface DELPHIINTERFACE JPlaybackState_CustomActionClass;
+typedef System::DelphiInterface<JPlaybackState_CustomActionClass> _di_JPlaybackState_CustomActionClass;
+__interface DELPHIINTERFACE JPlaybackState_CustomAction;
+typedef System::DelphiInterface<JPlaybackState_CustomAction> _di_JPlaybackState_CustomAction;
+class DELPHICLASS TJPlaybackState_CustomAction;
+__interface DELPHIINTERFACE JCustomAction_BuilderClass;
+typedef System::DelphiInterface<JCustomAction_BuilderClass> _di_JCustomAction_BuilderClass;
+__interface DELPHIINTERFACE JCustomAction_Builder;
+typedef System::DelphiInterface<JCustomAction_Builder> _di_JCustomAction_Builder;
+class DELPHICLASS TJCustomAction_Builder;
+__interface DELPHIINTERFACE JTvContentRatingClass;
+typedef System::DelphiInterface<JTvContentRatingClass> _di_JTvContentRatingClass;
+__interface DELPHIINTERFACE JTvContentRating;
+typedef System::DelphiInterface<JTvContentRating> _di_JTvContentRating;
+class DELPHICLASS TJTvContentRating;
+__interface DELPHIINTERFACE JTvContractClass;
+typedef System::DelphiInterface<JTvContractClass> _di_JTvContractClass;
+__interface DELPHIINTERFACE JTvContract;
+typedef System::DelphiInterface<JTvContract> _di_JTvContract;
+class DELPHICLASS TJTvContract;
+__interface DELPHIINTERFACE JTvContract_BaseTvColumnsClass;
+typedef System::DelphiInterface<JTvContract_BaseTvColumnsClass> _di_JTvContract_BaseTvColumnsClass;
+__interface DELPHIINTERFACE JTvContract_BaseTvColumns;
+typedef System::DelphiInterface<JTvContract_BaseTvColumns> _di_JTvContract_BaseTvColumns;
+class DELPHICLASS TJTvContract_BaseTvColumns;
+__interface DELPHIINTERFACE JTvContract_ChannelsClass;
+typedef System::DelphiInterface<JTvContract_ChannelsClass> _di_JTvContract_ChannelsClass;
+__interface DELPHIINTERFACE JTvContract_Channels;
+typedef System::DelphiInterface<JTvContract_Channels> _di_JTvContract_Channels;
+class DELPHICLASS TJTvContract_Channels;
+__interface DELPHIINTERFACE JChannels_LogoClass;
+typedef System::DelphiInterface<JChannels_LogoClass> _di_JChannels_LogoClass;
+__interface DELPHIINTERFACE JChannels_Logo;
+typedef System::DelphiInterface<JChannels_Logo> _di_JChannels_Logo;
+class DELPHICLASS TJChannels_Logo;
+__interface DELPHIINTERFACE JTvContract_PreviewProgramsClass;
+typedef System::DelphiInterface<JTvContract_PreviewProgramsClass> _di_JTvContract_PreviewProgramsClass;
+__interface DELPHIINTERFACE JTvContract_PreviewPrograms;
+typedef System::DelphiInterface<JTvContract_PreviewPrograms> _di_JTvContract_PreviewPrograms;
+class DELPHICLASS TJTvContract_PreviewPrograms;
+__interface DELPHIINTERFACE JTvContract_ProgramsClass;
+typedef System::DelphiInterface<JTvContract_ProgramsClass> _di_JTvContract_ProgramsClass;
+__interface DELPHIINTERFACE JTvContract_Programs;
+typedef System::DelphiInterface<JTvContract_Programs> _di_JTvContract_Programs;
+class DELPHICLASS TJTvContract_Programs;
+__interface DELPHIINTERFACE JPrograms_GenresClass;
+typedef System::DelphiInterface<JPrograms_GenresClass> _di_JPrograms_GenresClass;
+__interface DELPHIINTERFACE JPrograms_Genres;
+typedef System::DelphiInterface<JPrograms_Genres> _di_JPrograms_Genres;
+class DELPHICLASS TJPrograms_Genres;
+__interface DELPHIINTERFACE JTvContract_RecordedProgramsClass;
+typedef System::DelphiInterface<JTvContract_RecordedProgramsClass> _di_JTvContract_RecordedProgramsClass;
+__interface DELPHIINTERFACE JTvContract_RecordedPrograms;
+typedef System::DelphiInterface<JTvContract_RecordedPrograms> _di_JTvContract_RecordedPrograms;
+class DELPHICLASS TJTvContract_RecordedPrograms;
+__interface DELPHIINTERFACE JTvContract_WatchNextProgramsClass;
+typedef System::DelphiInterface<JTvContract_WatchNextProgramsClass> _di_JTvContract_WatchNextProgramsClass;
+__interface DELPHIINTERFACE JTvContract_WatchNextPrograms;
+typedef System::DelphiInterface<JTvContract_WatchNextPrograms> _di_JTvContract_WatchNextPrograms;
+class DELPHICLASS TJTvContract_WatchNextPrograms;
+__interface DELPHIINTERFACE JTvInputInfoClass;
+typedef System::DelphiInterface<JTvInputInfoClass> _di_JTvInputInfoClass;
+__interface DELPHIINTERFACE JTvInputInfo;
+typedef System::DelphiInterface<JTvInputInfo> _di_JTvInputInfo;
+class DELPHICLASS TJTvInputInfo;
+__interface DELPHIINTERFACE JTvInputInfo_BuilderClass;
+typedef System::DelphiInterface<JTvInputInfo_BuilderClass> _di_JTvInputInfo_BuilderClass;
+__interface DELPHIINTERFACE JTvInputInfo_Builder;
+typedef System::DelphiInterface<JTvInputInfo_Builder> _di_JTvInputInfo_Builder;
+class DELPHICLASS TJTvInputInfo_Builder;
+__interface DELPHIINTERFACE JTvInputManagerClass;
+typedef System::DelphiInterface<JTvInputManagerClass> _di_JTvInputManagerClass;
+__interface DELPHIINTERFACE JTvInputManager;
+typedef System::DelphiInterface<JTvInputManager> _di_JTvInputManager;
+class DELPHICLASS TJTvInputManager;
+__interface DELPHIINTERFACE JTvInputManager_TvInputCallbackClass;
+typedef System::DelphiInterface<JTvInputManager_TvInputCallbackClass> _di_JTvInputManager_TvInputCallbackClass;
+__interface DELPHIINTERFACE JTvInputManager_TvInputCallback;
+typedef System::DelphiInterface<JTvInputManager_TvInputCallback> _di_JTvInputManager_TvInputCallback;
+class DELPHICLASS TJTvInputManager_TvInputCallback;
+__interface DELPHIINTERFACE JTvInputServiceClass;
+typedef System::DelphiInterface<JTvInputServiceClass> _di_JTvInputServiceClass;
+__interface DELPHIINTERFACE JTvInputService;
+typedef System::DelphiInterface<JTvInputService> _di_JTvInputService;
+class DELPHICLASS TJTvInputService;
+__interface DELPHIINTERFACE JTvInputService_SessionClass;
+typedef System::DelphiInterface<JTvInputService_SessionClass> _di_JTvInputService_SessionClass;
+__interface DELPHIINTERFACE JTvInputService_Session;
+typedef System::DelphiInterface<JTvInputService_Session> _di_JTvInputService_Session;
+class DELPHICLASS TJTvInputService_Session;
+__interface DELPHIINTERFACE JTvInputService_HardwareSessionClass;
+typedef System::DelphiInterface<JTvInputService_HardwareSessionClass> _di_JTvInputService_HardwareSessionClass;
+__interface DELPHIINTERFACE JTvInputService_HardwareSession;
+typedef System::DelphiInterface<JTvInputService_HardwareSession> _di_JTvInputService_HardwareSession;
+class DELPHICLASS TJTvInputService_HardwareSession;
+__interface DELPHIINTERFACE JTvInputService_RecordingSessionClass;
+typedef System::DelphiInterface<JTvInputService_RecordingSessionClass> _di_JTvInputService_RecordingSessionClass;
+__interface DELPHIINTERFACE JTvInputService_RecordingSession;
+typedef System::DelphiInterface<JTvInputService_RecordingSession> _di_JTvInputService_RecordingSession;
+class DELPHICLASS TJTvInputService_RecordingSession;
+__interface DELPHIINTERFACE JTvRecordingClientClass;
+typedef System::DelphiInterface<JTvRecordingClientClass> _di_JTvRecordingClientClass;
+__interface DELPHIINTERFACE JTvRecordingClient;
+typedef System::DelphiInterface<JTvRecordingClient> _di_JTvRecordingClient;
+class DELPHICLASS TJTvRecordingClient;
+__interface DELPHIINTERFACE JTvRecordingClient_RecordingCallbackClass;
+typedef System::DelphiInterface<JTvRecordingClient_RecordingCallbackClass> _di_JTvRecordingClient_RecordingCallbackClass;
+__interface DELPHIINTERFACE JTvRecordingClient_RecordingCallback;
+typedef System::DelphiInterface<JTvRecordingClient_RecordingCallback> _di_JTvRecordingClient_RecordingCallback;
+class DELPHICLASS TJTvRecordingClient_RecordingCallback;
+__interface DELPHIINTERFACE JTvTrackInfoClass;
+typedef System::DelphiInterface<JTvTrackInfoClass> _di_JTvTrackInfoClass;
+__interface DELPHIINTERFACE JTvTrackInfo;
+typedef System::DelphiInterface<JTvTrackInfo> _di_JTvTrackInfo;
+class DELPHICLASS TJTvTrackInfo;
+__interface DELPHIINTERFACE JTvTrackInfo_BuilderClass;
+typedef System::DelphiInterface<JTvTrackInfo_BuilderClass> _di_JTvTrackInfo_BuilderClass;
+__interface DELPHIINTERFACE JTvTrackInfo_Builder;
+typedef System::DelphiInterface<JTvTrackInfo_Builder> _di_JTvTrackInfo_Builder;
+class DELPHICLASS TJTvTrackInfo_Builder;
+__interface DELPHIINTERFACE JTvViewClass;
+typedef System::DelphiInterface<JTvViewClass> _di_JTvViewClass;
+__interface DELPHIINTERFACE JTvView;
+typedef System::DelphiInterface<JTvView> _di_JTvView;
+class DELPHICLASS TJTvView;
+__interface DELPHIINTERFACE JTvView_OnUnhandledInputEventListenerClass;
+typedef System::DelphiInterface<JTvView_OnUnhandledInputEventListenerClass> _di_JTvView_OnUnhandledInputEventListenerClass;
+__interface DELPHIINTERFACE JTvView_OnUnhandledInputEventListener;
+typedef System::DelphiInterface<JTvView_OnUnhandledInputEventListener> _di_JTvView_OnUnhandledInputEventListener;
+class DELPHICLASS TJTvView_OnUnhandledInputEventListener;
+__interface DELPHIINTERFACE JTvView_TimeShiftPositionCallbackClass;
+typedef System::DelphiInterface<JTvView_TimeShiftPositionCallbackClass> _di_JTvView_TimeShiftPositionCallbackClass;
+__interface DELPHIINTERFACE JTvView_TimeShiftPositionCallback;
+typedef System::DelphiInterface<JTvView_TimeShiftPositionCallback> _di_JTvView_TimeShiftPositionCallback;
+class DELPHICLASS TJTvView_TimeShiftPositionCallback;
+__interface DELPHIINTERFACE JTvView_TvInputCallbackClass;
+typedef System::DelphiInterface<JTvView_TvInputCallbackClass> _di_JTvView_TvInputCallbackClass;
+__interface DELPHIINTERFACE JTvView_TvInputCallback;
+typedef System::DelphiInterface<JTvView_TvInputCallback> _di_JTvView_TvInputCallback;
+class DELPHICLASS TJTvView_TvInputCallback;
+//-- type declarations -------------------------------------------------------
+__interface  INTERFACE_UUID("{BF7F601F-6678-4903-B30E-7A73E4EE059C}") JAsyncPlayerClass  : public Androidapi::Jni::Javatypes::JObjectClass 
+{
+	HIDESBASE virtual _di_JAsyncPlayer __cdecl init(Androidapi::Jni::Javatypes::_di_JString tag) = 0 ;
+};
+
+__interface  INTERFACE_UUID("{8415DF11-11ED-4FA6-8864-F4420519D2C3}") JAsyncPlayer  : public Androidapi::Jni::Javatypes::JObject 
+{
+	virtual void __cdecl play(Androidapi::Jni::Graphicscontentviewtext::_di_JContext context, Androidapi::Jni::Net::_di_Jnet_Uri uri, bool looping, int stream) = 0 /* overload */;
+	virtual void __cdecl play(Androidapi::Jni::Graphicscontentviewtext::_di_JContext context, Androidapi::Jni::Net::_di_Jnet_Uri uri, bool looping, _di_JAudioAttributes attributes) = 0 /* overload */;
+	virtual void __cdecl stop() = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJAsyncPlayer : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JAsyncPlayerClass,_di_JAsyncPlayer>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JAsyncPlayerClass,_di_JAsyncPlayer> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJAsyncPlayer() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JAsyncPlayerClass,_di_JAsyncPlayer>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJAsyncPlayer() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{1EB61050-2F9F-4FC2-93C7-98AE576B5DD2}") JAudioAttributesClass  : public Androidapi::Jni::Javatypes::JObjectClass 
+{
+	virtual int __cdecl _GetCONTENT_TYPE_MOVIE() = 0 ;
+	virtual int __cdecl _GetCONTENT_TYPE_MUSIC() = 0 ;
+	virtual int __cdecl _GetCONTENT_TYPE_SONIFICATION() = 0 ;
+	virtual int __cdecl _GetCONTENT_TYPE_SPEECH() = 0 ;
+	virtual int __cdecl _GetCONTENT_TYPE_UNKNOWN() = 0 ;
+	virtual Androidapi::Jni::Os::_di_JParcelable_Creator __cdecl _GetCREATOR() = 0 ;
+	virtual int __cdecl _GetFLAG_AUDIBILITY_ENFORCED() = 0 ;
+	virtual int __cdecl _GetFLAG_HW_AV_SYNC() = 0 ;
+	virtual int __cdecl _GetFLAG_LOW_LATENCY() = 0 ;
+	virtual int __cdecl _GetUSAGE_ALARM() = 0 ;
+	virtual int __cdecl _GetUSAGE_ASSISTANCE_ACCESSIBILITY() = 0 ;
+	virtual int __cdecl _GetUSAGE_ASSISTANCE_NAVIGATION_GUIDANCE() = 0 ;
+	virtual int __cdecl _GetUSAGE_ASSISTANCE_SONIFICATION() = 0 ;
+	virtual int __cdecl _GetUSAGE_ASSISTANT() = 0 ;
+	virtual int __cdecl _GetUSAGE_GAME() = 0 ;
+	virtual int __cdecl _GetUSAGE_MEDIA() = 0 ;
+	virtual int __cdecl _GetUSAGE_NOTIFICATION() = 0 ;
+	virtual int __cdecl _GetUSAGE_NOTIFICATION_COMMUNICATION_DELAYED() = 0 ;
+	virtual int __cdecl _GetUSAGE_NOTIFICATION_COMMUNICATION_INSTANT() = 0 ;
+	virtual int __cdecl _GetUSAGE_NOTIFICATION_COMMUNICATION_REQUEST() = 0 ;
+	virtual int __cdecl _GetUSAGE_NOTIFICATION_EVENT() = 0 ;
+	virtual int __cdecl _GetUSAGE_NOTIFICATION_RINGTONE() = 0 ;
+	virtual int __cdecl _GetUSAGE_UNKNOWN() = 0 ;
+	virtual int __cdecl _GetUSAGE_VOICE_COMMUNICATION() = 0 ;
+	virtual int __cdecl _GetUSAGE_VOICE_COMMUNICATION_SIGNALLING() = 0 ;
+	__property int CONTENT_TYPE_MOVIE = {read=_GetCONTENT_TYPE_MOVIE};
+	__property int CONTENT_TYPE_MUSIC = {read=_GetCONTENT_TYPE_MUSIC};
+	__property int CONTENT_TYPE_SONIFICATION = {read=_GetCONTENT_TYPE_SONIFICATION};
+	__property int CONTENT_TYPE_SPEECH = {read=_GetCONTENT_TYPE_SPEECH};
+	__property int CONTENT_TYPE_UNKNOWN = {read=_GetCONTENT_TYPE_UNKNOWN};
+	__property Androidapi::Jni::Os::_di_JParcelable_Creator CREATOR = {read=_GetCREATOR};
+	__property int FLAG_AUDIBILITY_ENFORCED = {read=_GetFLAG_AUDIBILITY_ENFORCED};
+	__property int FLAG_HW_AV_SYNC = {read=_GetFLAG_HW_AV_SYNC};
+	__property int FLAG_LOW_LATENCY = {read=_GetFLAG_LOW_LATENCY};
+	__property int USAGE_ALARM = {read=_GetUSAGE_ALARM};
+	__property int USAGE_ASSISTANCE_ACCESSIBILITY = {read=_GetUSAGE_ASSISTANCE_ACCESSIBILITY};
+	__property int USAGE_ASSISTANCE_NAVIGATION_GUIDANCE = {read=_GetUSAGE_ASSISTANCE_NAVIGATION_GUIDANCE};
+	__property int USAGE_ASSISTANCE_SONIFICATION = {read=_GetUSAGE_ASSISTANCE_SONIFICATION};
+	__property int USAGE_ASSISTANT = {read=_GetUSAGE_ASSISTANT};
+	__property int USAGE_GAME = {read=_GetUSAGE_GAME};
+	__property int USAGE_MEDIA = {read=_GetUSAGE_MEDIA};
+	__property int USAGE_NOTIFICATION = {read=_GetUSAGE_NOTIFICATION};
+	__property int USAGE_NOTIFICATION_COMMUNICATION_DELAYED = {read=_GetUSAGE_NOTIFICATION_COMMUNICATION_DELAYED};
+	__property int USAGE_NOTIFICATION_COMMUNICATION_INSTANT = {read=_GetUSAGE_NOTIFICATION_COMMUNICATION_INSTANT};
+	__property int USAGE_NOTIFICATION_COMMUNICATION_REQUEST = {read=_GetUSAGE_NOTIFICATION_COMMUNICATION_REQUEST};
+	__property int USAGE_NOTIFICATION_EVENT = {read=_GetUSAGE_NOTIFICATION_EVENT};
+	__property int USAGE_NOTIFICATION_RINGTONE = {read=_GetUSAGE_NOTIFICATION_RINGTONE};
+	__property int USAGE_UNKNOWN = {read=_GetUSAGE_UNKNOWN};
+	__property int USAGE_VOICE_COMMUNICATION = {read=_GetUSAGE_VOICE_COMMUNICATION};
+	__property int USAGE_VOICE_COMMUNICATION_SIGNALLING = {read=_GetUSAGE_VOICE_COMMUNICATION_SIGNALLING};
+};
+
+__interface  INTERFACE_UUID("{880D30F3-3AE2-43F2-979B-9D0E182C20AC}") JAudioAttributes  : public Androidapi::Jni::Javatypes::JObject 
+{
+	virtual int __cdecl describeContents() = 0 ;
+	HIDESBASE virtual bool __cdecl equals(Androidapi::Jni::Javatypes::_di_JObject o) = 0 ;
+	virtual int __cdecl getContentType() = 0 ;
+	virtual int __cdecl getFlags() = 0 ;
+	virtual int __cdecl getUsage() = 0 ;
+	virtual int __cdecl getVolumeControlStream() = 0 ;
+	HIDESBASE virtual int __cdecl hashCode() = 0 ;
+	HIDESBASE virtual Androidapi::Jni::Javatypes::_di_JString __cdecl toString() = 0 ;
+	virtual void __cdecl writeToParcel(Androidapi::Jni::Os::_di_JParcel dest, int flags) = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJAudioAttributes : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JAudioAttributesClass,_di_JAudioAttributes>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JAudioAttributesClass,_di_JAudioAttributes> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJAudioAttributes() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JAudioAttributesClass,_di_JAudioAttributes>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJAudioAttributes() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{A6B7A372-3DD3-4E59-8C9B-301154CD330D}") JAudioAttributes_BuilderClass  : public Androidapi::Jni::Javatypes::JObjectClass 
+{
+	HIDESBASE virtual _di_JAudioAttributes_Builder __cdecl init() = 0 /* overload */;
+	HIDESBASE virtual _di_JAudioAttributes_Builder __cdecl init(_di_JAudioAttributes aa) = 0 /* overload */;
+};
+
+__interface  INTERFACE_UUID("{D73EC2B2-C044-4DF8-9190-64F781958EA9}") JAudioAttributes_Builder  : public Androidapi::Jni::Javatypes::JObject 
+{
+	virtual _di_JAudioAttributes __cdecl build() = 0 ;
+	virtual _di_JAudioAttributes_Builder __cdecl setContentType(int contentType) = 0 ;
+	virtual _di_JAudioAttributes_Builder __cdecl setFlags(int flags) = 0 ;
+	virtual _di_JAudioAttributes_Builder __cdecl setLegacyStreamType(int streamType) = 0 ;
+	virtual _di_JAudioAttributes_Builder __cdecl setUsage(int usage) = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJAudioAttributes_Builder : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JAudioAttributes_BuilderClass,_di_JAudioAttributes_Builder>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JAudioAttributes_BuilderClass,_di_JAudioAttributes_Builder> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJAudioAttributes_Builder() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JAudioAttributes_BuilderClass,_di_JAudioAttributes_Builder>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJAudioAttributes_Builder() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{FC684049-9A6C-43C6-9B21-E906EED4BD3C}") JAudioDeviceCallbackClass  : public Androidapi::Jni::Javatypes::JObjectClass 
+{
+	HIDESBASE virtual _di_JAudioDeviceCallback __cdecl init() = 0 ;
+};
+
+__interface  INTERFACE_UUID("{9118880E-E444-46F1-9B46-89C30E87E51B}") JAudioDeviceCallback  : public Androidapi::Jni::Javatypes::JObject 
+{
+	virtual void __cdecl onAudioDevicesAdded(Androidapi::Jnibridge::TJavaObjectArray__1<_di_JAudioDeviceInfo>* addedDevices) = 0 ;
+	virtual void __cdecl onAudioDevicesRemoved(Androidapi::Jnibridge::TJavaObjectArray__1<_di_JAudioDeviceInfo>* removedDevices) = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJAudioDeviceCallback : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JAudioDeviceCallbackClass,_di_JAudioDeviceCallback>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JAudioDeviceCallbackClass,_di_JAudioDeviceCallback> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJAudioDeviceCallback() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JAudioDeviceCallbackClass,_di_JAudioDeviceCallback>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJAudioDeviceCallback() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{68C9A2CC-486D-4E1B-B35A-9CCC72AE4CAE}") JAudioDeviceInfoClass  : public Androidapi::Jni::Javatypes::JObjectClass 
+{
+	virtual int __cdecl _GetTYPE_AUX_LINE() = 0 ;
+	virtual int __cdecl _GetTYPE_BLUETOOTH_A2DP() = 0 ;
+	virtual int __cdecl _GetTYPE_BLUETOOTH_SCO() = 0 ;
+	virtual int __cdecl _GetTYPE_BUILTIN_EARPIECE() = 0 ;
+	virtual int __cdecl _GetTYPE_BUILTIN_MIC() = 0 ;
+	virtual int __cdecl _GetTYPE_BUILTIN_SPEAKER() = 0 ;
+	virtual int __cdecl _GetTYPE_BUS() = 0 ;
+	virtual int __cdecl _GetTYPE_DOCK() = 0 ;
+	virtual int __cdecl _GetTYPE_FM() = 0 ;
+	virtual int __cdecl _GetTYPE_FM_TUNER() = 0 ;
+	virtual int __cdecl _GetTYPE_HDMI() = 0 ;
+	virtual int __cdecl _GetTYPE_HDMI_ARC() = 0 ;
+	virtual int __cdecl _GetTYPE_IP() = 0 ;
+	virtual int __cdecl _GetTYPE_LINE_ANALOG() = 0 ;
+	virtual int __cdecl _GetTYPE_LINE_DIGITAL() = 0 ;
+	virtual int __cdecl _GetTYPE_TELEPHONY() = 0 ;
+	virtual int __cdecl _GetTYPE_TV_TUNER() = 0 ;
+	virtual int __cdecl _GetTYPE_UNKNOWN() = 0 ;
+	virtual int __cdecl _GetTYPE_USB_ACCESSORY() = 0 ;
+	virtual int __cdecl _GetTYPE_USB_DEVICE() = 0 ;
+	virtual int __cdecl _GetTYPE_USB_HEADSET() = 0 ;
+	virtual int __cdecl _GetTYPE_WIRED_HEADPHONES() = 0 ;
+	virtual int __cdecl _GetTYPE_WIRED_HEADSET() = 0 ;
+	__property int TYPE_AUX_LINE = {read=_GetTYPE_AUX_LINE};
+	__property int TYPE_BLUETOOTH_A2DP = {read=_GetTYPE_BLUETOOTH_A2DP};
+	__property int TYPE_BLUETOOTH_SCO = {read=_GetTYPE_BLUETOOTH_SCO};
+	__property int TYPE_BUILTIN_EARPIECE = {read=_GetTYPE_BUILTIN_EARPIECE};
+	__property int TYPE_BUILTIN_MIC = {read=_GetTYPE_BUILTIN_MIC};
+	__property int TYPE_BUILTIN_SPEAKER = {read=_GetTYPE_BUILTIN_SPEAKER};
+	__property int TYPE_BUS = {read=_GetTYPE_BUS};
+	__property int TYPE_DOCK = {read=_GetTYPE_DOCK};
+	__property int TYPE_FM = {read=_GetTYPE_FM};
+	__property int TYPE_FM_TUNER = {read=_GetTYPE_FM_TUNER};
+	__property int TYPE_HDMI = {read=_GetTYPE_HDMI};
+	__property int TYPE_HDMI_ARC = {read=_GetTYPE_HDMI_ARC};
+	__property int TYPE_IP = {read=_GetTYPE_IP};
+	__property int TYPE_LINE_ANALOG = {read=_GetTYPE_LINE_ANALOG};
+	__property int TYPE_LINE_DIGITAL = {read=_GetTYPE_LINE_DIGITAL};
+	__property int TYPE_TELEPHONY = {read=_GetTYPE_TELEPHONY};
+	__property int TYPE_TV_TUNER = {read=_GetTYPE_TV_TUNER};
+	__property int TYPE_UNKNOWN = {read=_GetTYPE_UNKNOWN};
+	__property int TYPE_USB_ACCESSORY = {read=_GetTYPE_USB_ACCESSORY};
+	__property int TYPE_USB_DEVICE = {read=_GetTYPE_USB_DEVICE};
+	__property int TYPE_USB_HEADSET = {read=_GetTYPE_USB_HEADSET};
+	__property int TYPE_WIRED_HEADPHONES = {read=_GetTYPE_WIRED_HEADPHONES};
+	__property int TYPE_WIRED_HEADSET = {read=_GetTYPE_WIRED_HEADSET};
+};
+
+__interface  INTERFACE_UUID("{F90AC375-3BA3-4AEE-8154-DCCDF7114348}") JAudioDeviceInfo  : public Androidapi::Jni::Javatypes::JObject 
+{
+	virtual Androidapi::Jnibridge::TJavaArray__1<int>* __cdecl getChannelCounts() = 0 ;
+	virtual Androidapi::Jnibridge::TJavaArray__1<int>* __cdecl getChannelIndexMasks() = 0 ;
+	virtual Androidapi::Jnibridge::TJavaArray__1<int>* __cdecl getChannelMasks() = 0 ;
+	virtual Androidapi::Jnibridge::TJavaArray__1<int>* __cdecl getEncodings() = 0 ;
+	virtual int __cdecl getId() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JCharSequence __cdecl getProductName() = 0 ;
+	virtual Androidapi::Jnibridge::TJavaArray__1<int>* __cdecl getSampleRates() = 0 ;
+	virtual int __cdecl getType() = 0 ;
+	virtual bool __cdecl isSink() = 0 ;
+	virtual bool __cdecl isSource() = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJAudioDeviceInfo : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JAudioDeviceInfoClass,_di_JAudioDeviceInfo>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JAudioDeviceInfoClass,_di_JAudioDeviceInfo> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJAudioDeviceInfo() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JAudioDeviceInfoClass,_di_JAudioDeviceInfo>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJAudioDeviceInfo() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{5F6C909B-7643-4F93-8269-B9232901B3EF}") JAudioFocusRequestClass  : public Androidapi::Jni::Javatypes::JObjectClass 
+{
+	
+};
+
+__interface  INTERFACE_UUID("{AC5FF5DE-25FF-44FA-860A-B5364EF53CC4}") JAudioFocusRequest  : public Androidapi::Jni::Javatypes::JObject 
+{
+	virtual bool __cdecl acceptsDelayedFocusGain() = 0 ;
+	virtual _di_JAudioAttributes __cdecl getAudioAttributes() = 0 ;
+	virtual int __cdecl getFocusGain() = 0 ;
+	virtual bool __cdecl willPauseWhenDucked() = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJAudioFocusRequest : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JAudioFocusRequestClass,_di_JAudioFocusRequest>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JAudioFocusRequestClass,_di_JAudioFocusRequest> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJAudioFocusRequest() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JAudioFocusRequestClass,_di_JAudioFocusRequest>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJAudioFocusRequest() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{6F328AFF-6F6E-471A-BE18-4246125A4C6D}") JAudioFocusRequest_BuilderClass  : public Androidapi::Jni::Javatypes::JObjectClass 
+{
+	HIDESBASE virtual _di_JAudioFocusRequest_Builder __cdecl init(int focusGain) = 0 /* overload */;
+	HIDESBASE virtual _di_JAudioFocusRequest_Builder __cdecl init(_di_JAudioFocusRequest requestToCopy) = 0 /* overload */;
+};
+
+__interface  INTERFACE_UUID("{F73C9EE0-49EF-4544-8372-3EDAD5D07F00}") JAudioFocusRequest_Builder  : public Androidapi::Jni::Javatypes::JObject 
+{
+	virtual _di_JAudioFocusRequest __cdecl build() = 0 ;
+	virtual _di_JAudioFocusRequest_Builder __cdecl setAcceptsDelayedFocusGain(bool acceptsDelayedFocusGain) = 0 ;
+	virtual _di_JAudioFocusRequest_Builder __cdecl setAudioAttributes(_di_JAudioAttributes attributes) = 0 ;
+	virtual _di_JAudioFocusRequest_Builder __cdecl setFocusGain(int focusGain) = 0 ;
+	virtual _di_JAudioFocusRequest_Builder __cdecl setOnAudioFocusChangeListener(_di_JAudioManager_OnAudioFocusChangeListener listener) = 0 /* overload */;
+	virtual _di_JAudioFocusRequest_Builder __cdecl setOnAudioFocusChangeListener(_di_JAudioManager_OnAudioFocusChangeListener listener, Androidapi::Jni::Os::_di_JHandler handler) = 0 /* overload */;
+	virtual _di_JAudioFocusRequest_Builder __cdecl setWillPauseWhenDucked(bool pauseOnDuck) = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJAudioFocusRequest_Builder : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JAudioFocusRequest_BuilderClass,_di_JAudioFocusRequest_Builder>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JAudioFocusRequest_BuilderClass,_di_JAudioFocusRequest_Builder> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJAudioFocusRequest_Builder() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JAudioFocusRequest_BuilderClass,_di_JAudioFocusRequest_Builder>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJAudioFocusRequest_Builder() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{C173E007-9835-486C-AA1A-700127383914}") JAudioFormatClass  : public Androidapi::Jni::Javatypes::JObjectClass 
+{
+	virtual int __cdecl _GetCHANNEL_CONFIGURATION_DEFAULT() = 0 ;
+	virtual int __cdecl _GetCHANNEL_CONFIGURATION_INVALID() = 0 ;
+	virtual int __cdecl _GetCHANNEL_CONFIGURATION_MONO() = 0 ;
+	virtual int __cdecl _GetCHANNEL_CONFIGURATION_STEREO() = 0 ;
+	virtual int __cdecl _GetCHANNEL_INVALID() = 0 ;
+	virtual int __cdecl _GetCHANNEL_IN_BACK() = 0 ;
+	virtual int __cdecl _GetCHANNEL_IN_BACK_PROCESSED() = 0 ;
+	virtual int __cdecl _GetCHANNEL_IN_DEFAULT() = 0 ;
+	virtual int __cdecl _GetCHANNEL_IN_FRONT() = 0 ;
+	virtual int __cdecl _GetCHANNEL_IN_FRONT_PROCESSED() = 0 ;
+	virtual int __cdecl _GetCHANNEL_IN_LEFT() = 0 ;
+	virtual int __cdecl _GetCHANNEL_IN_LEFT_PROCESSED() = 0 ;
+	virtual int __cdecl _GetCHANNEL_IN_MONO() = 0 ;
+	virtual int __cdecl _GetCHANNEL_IN_PRESSURE() = 0 ;
+	virtual int __cdecl _GetCHANNEL_IN_RIGHT() = 0 ;
+	virtual int __cdecl _GetCHANNEL_IN_RIGHT_PROCESSED() = 0 ;
+	virtual int __cdecl _GetCHANNEL_IN_STEREO() = 0 ;
+	virtual int __cdecl _GetCHANNEL_IN_VOICE_DNLINK() = 0 ;
+	virtual int __cdecl _GetCHANNEL_IN_VOICE_UPLINK() = 0 ;
+	virtual int __cdecl _GetCHANNEL_IN_X_AXIS() = 0 ;
+	virtual int __cdecl _GetCHANNEL_IN_Y_AXIS() = 0 ;
+	virtual int __cdecl _GetCHANNEL_IN_Z_AXIS() = 0 ;
+	virtual int __cdecl _GetCHANNEL_OUT_5POINT1() = 0 ;
+	virtual int __cdecl _GetCHANNEL_OUT_7POINT1() = 0 ;
+	virtual int __cdecl _GetCHANNEL_OUT_7POINT1_SURROUND() = 0 ;
+	virtual int __cdecl _GetCHANNEL_OUT_BACK_CENTER() = 0 ;
+	virtual int __cdecl _GetCHANNEL_OUT_BACK_LEFT() = 0 ;
+	virtual int __cdecl _GetCHANNEL_OUT_BACK_RIGHT() = 0 ;
+	virtual int __cdecl _GetCHANNEL_OUT_DEFAULT() = 0 ;
+	virtual int __cdecl _GetCHANNEL_OUT_FRONT_CENTER() = 0 ;
+	virtual int __cdecl _GetCHANNEL_OUT_FRONT_LEFT() = 0 ;
+	virtual int __cdecl _GetCHANNEL_OUT_FRONT_LEFT_OF_CENTER() = 0 ;
+	virtual int __cdecl _GetCHANNEL_OUT_FRONT_RIGHT() = 0 ;
+	virtual int __cdecl _GetCHANNEL_OUT_FRONT_RIGHT_OF_CENTER() = 0 ;
+	virtual int __cdecl _GetCHANNEL_OUT_LOW_FREQUENCY() = 0 ;
+	virtual int __cdecl _GetCHANNEL_OUT_MONO() = 0 ;
+	virtual int __cdecl _GetCHANNEL_OUT_QUAD() = 0 ;
+	virtual int __cdecl _GetCHANNEL_OUT_SIDE_LEFT() = 0 ;
+	virtual int __cdecl _GetCHANNEL_OUT_SIDE_RIGHT() = 0 ;
+	virtual int __cdecl _GetCHANNEL_OUT_STEREO() = 0 ;
+	virtual int __cdecl _GetCHANNEL_OUT_SURROUND() = 0 ;
+	virtual Androidapi::Jni::Os::_di_JParcelable_Creator __cdecl _GetCREATOR() = 0 ;
+	virtual int __cdecl _GetENCODING_AC3() = 0 ;
+	virtual int __cdecl _GetENCODING_DEFAULT() = 0 ;
+	virtual int __cdecl _GetENCODING_DOLBY_TRUEHD() = 0 ;
+	virtual int __cdecl _GetENCODING_DTS() = 0 ;
+	virtual int __cdecl _GetENCODING_DTS_HD() = 0 ;
+	virtual int __cdecl _GetENCODING_E_AC3() = 0 ;
+	virtual int __cdecl _GetENCODING_IEC61937() = 0 ;
+	virtual int __cdecl _GetENCODING_INVALID() = 0 ;
+	virtual int __cdecl _GetENCODING_PCM_16BIT() = 0 ;
+	virtual int __cdecl _GetENCODING_PCM_8BIT() = 0 ;
+	virtual int __cdecl _GetENCODING_PCM_FLOAT() = 0 ;
+	virtual int __cdecl _GetSAMPLE_RATE_UNSPECIFIED() = 0 ;
+	HIDESBASE virtual _di_JAudioFormat __cdecl init() = 0 ;
+	__property int CHANNEL_CONFIGURATION_DEFAULT = {read=_GetCHANNEL_CONFIGURATION_DEFAULT};
+	__property int CHANNEL_CONFIGURATION_INVALID = {read=_GetCHANNEL_CONFIGURATION_INVALID};
+	__property int CHANNEL_CONFIGURATION_MONO = {read=_GetCHANNEL_CONFIGURATION_MONO};
+	__property int CHANNEL_CONFIGURATION_STEREO = {read=_GetCHANNEL_CONFIGURATION_STEREO};
+	__property int CHANNEL_INVALID = {read=_GetCHANNEL_INVALID};
+	__property int CHANNEL_IN_BACK = {read=_GetCHANNEL_IN_BACK};
+	__property int CHANNEL_IN_BACK_PROCESSED = {read=_GetCHANNEL_IN_BACK_PROCESSED};
+	__property int CHANNEL_IN_DEFAULT = {read=_GetCHANNEL_IN_DEFAULT};
+	__property int CHANNEL_IN_FRONT = {read=_GetCHANNEL_IN_FRONT};
+	__property int CHANNEL_IN_FRONT_PROCESSED = {read=_GetCHANNEL_IN_FRONT_PROCESSED};
+	__property int CHANNEL_IN_LEFT = {read=_GetCHANNEL_IN_LEFT};
+	__property int CHANNEL_IN_LEFT_PROCESSED = {read=_GetCHANNEL_IN_LEFT_PROCESSED};
+	__property int CHANNEL_IN_MONO = {read=_GetCHANNEL_IN_MONO};
+	__property int CHANNEL_IN_PRESSURE = {read=_GetCHANNEL_IN_PRESSURE};
+	__property int CHANNEL_IN_RIGHT = {read=_GetCHANNEL_IN_RIGHT};
+	__property int CHANNEL_IN_RIGHT_PROCESSED = {read=_GetCHANNEL_IN_RIGHT_PROCESSED};
+	__property int CHANNEL_IN_STEREO = {read=_GetCHANNEL_IN_STEREO};
+	__property int CHANNEL_IN_VOICE_DNLINK = {read=_GetCHANNEL_IN_VOICE_DNLINK};
+	__property int CHANNEL_IN_VOICE_UPLINK = {read=_GetCHANNEL_IN_VOICE_UPLINK};
+	__property int CHANNEL_IN_X_AXIS = {read=_GetCHANNEL_IN_X_AXIS};
+	__property int CHANNEL_IN_Y_AXIS = {read=_GetCHANNEL_IN_Y_AXIS};
+	__property int CHANNEL_IN_Z_AXIS = {read=_GetCHANNEL_IN_Z_AXIS};
+	__property int CHANNEL_OUT_5POINT1 = {read=_GetCHANNEL_OUT_5POINT1};
+	__property int CHANNEL_OUT_7POINT1 = {read=_GetCHANNEL_OUT_7POINT1};
+	__property int CHANNEL_OUT_7POINT1_SURROUND = {read=_GetCHANNEL_OUT_7POINT1_SURROUND};
+	__property int CHANNEL_OUT_BACK_CENTER = {read=_GetCHANNEL_OUT_BACK_CENTER};
+	__property int CHANNEL_OUT_BACK_LEFT = {read=_GetCHANNEL_OUT_BACK_LEFT};
+	__property int CHANNEL_OUT_BACK_RIGHT = {read=_GetCHANNEL_OUT_BACK_RIGHT};
+	__property int CHANNEL_OUT_DEFAULT = {read=_GetCHANNEL_OUT_DEFAULT};
+	__property int CHANNEL_OUT_FRONT_CENTER = {read=_GetCHANNEL_OUT_FRONT_CENTER};
+	__property int CHANNEL_OUT_FRONT_LEFT = {read=_GetCHANNEL_OUT_FRONT_LEFT};
+	__property int CHANNEL_OUT_FRONT_LEFT_OF_CENTER = {read=_GetCHANNEL_OUT_FRONT_LEFT_OF_CENTER};
+	__property int CHANNEL_OUT_FRONT_RIGHT = {read=_GetCHANNEL_OUT_FRONT_RIGHT};
+	__property int CHANNEL_OUT_FRONT_RIGHT_OF_CENTER = {read=_GetCHANNEL_OUT_FRONT_RIGHT_OF_CENTER};
+	__property int CHANNEL_OUT_LOW_FREQUENCY = {read=_GetCHANNEL_OUT_LOW_FREQUENCY};
+	__property int CHANNEL_OUT_MONO = {read=_GetCHANNEL_OUT_MONO};
+	__property int CHANNEL_OUT_QUAD = {read=_GetCHANNEL_OUT_QUAD};
+	__property int CHANNEL_OUT_SIDE_LEFT = {read=_GetCHANNEL_OUT_SIDE_LEFT};
+	__property int CHANNEL_OUT_SIDE_RIGHT = {read=_GetCHANNEL_OUT_SIDE_RIGHT};
+	__property int CHANNEL_OUT_STEREO = {read=_GetCHANNEL_OUT_STEREO};
+	__property int CHANNEL_OUT_SURROUND = {read=_GetCHANNEL_OUT_SURROUND};
+	__property Androidapi::Jni::Os::_di_JParcelable_Creator CREATOR = {read=_GetCREATOR};
+	__property int ENCODING_AC3 = {read=_GetENCODING_AC3};
+	__property int ENCODING_Default = {read=_GetENCODING_DEFAULT};
+	__property int ENCODING_DOLBY_TRUEHD = {read=_GetENCODING_DOLBY_TRUEHD};
+	__property int ENCODING_DTS = {read=_GetENCODING_DTS};
+	__property int ENCODING_DTS_HD = {read=_GetENCODING_DTS_HD};
+	__property int ENCODING_E_AC3 = {read=_GetENCODING_E_AC3};
+	__property int ENCODING_IEC61937 = {read=_GetENCODING_IEC61937};
+	__property int ENCODING_INVALID = {read=_GetENCODING_INVALID};
+	__property int ENCODING_PCM_16BIT = {read=_GetENCODING_PCM_16BIT};
+	__property int ENCODING_PCM_8BIT = {read=_GetENCODING_PCM_8BIT};
+	__property int ENCODING_PCM_FLOAT = {read=_GetENCODING_PCM_FLOAT};
+	__property int SAMPLE_RATE_UNSPECIFIED = {read=_GetSAMPLE_RATE_UNSPECIFIED};
+};
+
+__interface  INTERFACE_UUID("{54729F91-CB43-4106-8A44-08A8FFF26397}") JAudioFormat  : public Androidapi::Jni::Javatypes::JObject 
+{
+	virtual int __cdecl describeContents() = 0 ;
+	HIDESBASE virtual bool __cdecl equals(Androidapi::Jni::Javatypes::_di_JObject o) = 0 ;
+	virtual int __cdecl getChannelCount() = 0 ;
+	virtual int __cdecl getChannelIndexMask() = 0 ;
+	virtual int __cdecl getChannelMask() = 0 ;
+	virtual int __cdecl getEncoding() = 0 ;
+	virtual int __cdecl getSampleRate() = 0 ;
+	HIDESBASE virtual int __cdecl hashCode() = 0 ;
+	HIDESBASE virtual Androidapi::Jni::Javatypes::_di_JString __cdecl toString() = 0 ;
+	virtual void __cdecl writeToParcel(Androidapi::Jni::Os::_di_JParcel dest, int flags) = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJAudioFormat : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JAudioFormatClass,_di_JAudioFormat>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JAudioFormatClass,_di_JAudioFormat> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJAudioFormat() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JAudioFormatClass,_di_JAudioFormat>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJAudioFormat() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{BAEECE3B-32C1-4F49-B6E8-2BA548854362}") JAudioFormat_BuilderClass  : public Androidapi::Jni::Javatypes::JObjectClass 
+{
+	HIDESBASE virtual _di_JAudioFormat_Builder __cdecl init() = 0 /* overload */;
+	HIDESBASE virtual _di_JAudioFormat_Builder __cdecl init(_di_JAudioFormat af) = 0 /* overload */;
+};
+
+__interface  INTERFACE_UUID("{136DA67F-AE5A-488C-8B36-0F6876B261ED}") JAudioFormat_Builder  : public Androidapi::Jni::Javatypes::JObject 
+{
+	virtual _di_JAudioFormat __cdecl build() = 0 ;
+	virtual _di_JAudioFormat_Builder __cdecl setChannelIndexMask(int channelIndexMask) = 0 ;
+	virtual _di_JAudioFormat_Builder __cdecl setChannelMask(int channelMask) = 0 ;
+	virtual _di_JAudioFormat_Builder __cdecl setEncoding(int encoding) = 0 ;
+	virtual _di_JAudioFormat_Builder __cdecl setSampleRate(int sampleRate) = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJAudioFormat_Builder : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JAudioFormat_BuilderClass,_di_JAudioFormat_Builder>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JAudioFormat_BuilderClass,_di_JAudioFormat_Builder> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJAudioFormat_Builder() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JAudioFormat_BuilderClass,_di_JAudioFormat_Builder>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJAudioFormat_Builder() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{9CE5F205-F003-485F-AF71-8F0DAB8346B8}") JAudioManagerClass  : public Androidapi::Jni::Javatypes::JObjectClass 
+{
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetACTION_AUDIO_BECOMING_NOISY() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetACTION_HDMI_AUDIO_PLUG() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetACTION_HEADSET_PLUG() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetACTION_SCO_AUDIO_STATE_CHANGED() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetACTION_SCO_AUDIO_STATE_UPDATED() = 0 ;
+	virtual int __cdecl _GetADJUST_LOWER() = 0 ;
+	virtual int __cdecl _GetADJUST_MUTE() = 0 ;
+	virtual int __cdecl _GetADJUST_RAISE() = 0 ;
+	virtual int __cdecl _GetADJUST_SAME() = 0 ;
+	virtual int __cdecl _GetADJUST_TOGGLE_MUTE() = 0 ;
+	virtual int __cdecl _GetADJUST_UNMUTE() = 0 ;
+	virtual int __cdecl _GetAUDIOFOCUS_GAIN() = 0 ;
+	virtual int __cdecl _GetAUDIOFOCUS_GAIN_TRANSIENT() = 0 ;
+	virtual int __cdecl _GetAUDIOFOCUS_GAIN_TRANSIENT_EXCLUSIVE() = 0 ;
+	virtual int __cdecl _GetAUDIOFOCUS_GAIN_TRANSIENT_MAY_DUCK() = 0 ;
+	virtual int __cdecl _GetAUDIOFOCUS_LOSS() = 0 ;
+	virtual int __cdecl _GetAUDIOFOCUS_LOSS_TRANSIENT() = 0 ;
+	virtual int __cdecl _GetAUDIOFOCUS_LOSS_TRANSIENT_CAN_DUCK() = 0 ;
+	virtual int __cdecl _GetAUDIOFOCUS_NONE() = 0 ;
+	virtual int __cdecl _GetAUDIOFOCUS_REQUEST_DELAYED() = 0 ;
+	virtual int __cdecl _GetAUDIOFOCUS_REQUEST_FAILED() = 0 ;
+	virtual int __cdecl _GetAUDIOFOCUS_REQUEST_GRANTED() = 0 ;
+	virtual int __cdecl _GetAUDIO_SESSION_ID_GENERATE() = 0 ;
+	virtual int __cdecl _GetERROR() = 0 ;
+	virtual int __cdecl _GetERROR_DEAD_OBJECT() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetEXTRA_AUDIO_PLUG_STATE() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetEXTRA_ENCODINGS() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetEXTRA_MAX_CHANNEL_COUNT() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetEXTRA_RINGER_MODE() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetEXTRA_SCO_AUDIO_PREVIOUS_STATE() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetEXTRA_SCO_AUDIO_STATE() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetEXTRA_VIBRATE_SETTING() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetEXTRA_VIBRATE_TYPE() = 0 ;
+	virtual int __cdecl _GetFLAG_ALLOW_RINGER_MODES() = 0 ;
+	virtual int __cdecl _GetFLAG_PLAY_SOUND() = 0 ;
+	virtual int __cdecl _GetFLAG_REMOVE_SOUND_AND_VIBRATE() = 0 ;
+	virtual int __cdecl _GetFLAG_SHOW_UI() = 0 ;
+	virtual int __cdecl _GetFLAG_VIBRATE() = 0 ;
+	virtual int __cdecl _GetFX_FOCUS_NAVIGATION_DOWN() = 0 ;
+	virtual int __cdecl _GetFX_FOCUS_NAVIGATION_LEFT() = 0 ;
+	virtual int __cdecl _GetFX_FOCUS_NAVIGATION_RIGHT() = 0 ;
+	virtual int __cdecl _GetFX_FOCUS_NAVIGATION_UP() = 0 ;
+	virtual int __cdecl _GetFX_KEYPRESS_DELETE() = 0 ;
+	virtual int __cdecl _GetFX_KEYPRESS_INVALID() = 0 ;
+	virtual int __cdecl _GetFX_KEYPRESS_RETURN() = 0 ;
+	virtual int __cdecl _GetFX_KEYPRESS_SPACEBAR() = 0 ;
+	virtual int __cdecl _GetFX_KEYPRESS_STANDARD() = 0 ;
+	virtual int __cdecl _GetFX_KEY_CLICK() = 0 ;
+	virtual int __cdecl _GetGET_DEVICES_ALL() = 0 ;
+	virtual int __cdecl _GetGET_DEVICES_INPUTS() = 0 ;
+	virtual int __cdecl _GetGET_DEVICES_OUTPUTS() = 0 ;
+	virtual int __cdecl _GetMODE_CURRENT() = 0 ;
+	virtual int __cdecl _GetMODE_INVALID() = 0 ;
+	virtual int __cdecl _GetMODE_IN_CALL() = 0 ;
+	virtual int __cdecl _GetMODE_IN_COMMUNICATION() = 0 ;
+	virtual int __cdecl _GetMODE_NORMAL() = 0 ;
+	virtual int __cdecl _GetMODE_RINGTONE() = 0 ;
+	virtual int __cdecl _GetNUM_STREAMS() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetPROPERTY_OUTPUT_FRAMES_PER_BUFFER() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetPROPERTY_OUTPUT_SAMPLE_RATE() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetPROPERTY_SUPPORT_AUDIO_SOURCE_UNPROCESSED() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetPROPERTY_SUPPORT_MIC_NEAR_ULTRASOUND() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetPROPERTY_SUPPORT_SPEAKER_NEAR_ULTRASOUND() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetRINGER_MODE_CHANGED_ACTION() = 0 ;
+	virtual int __cdecl _GetRINGER_MODE_NORMAL() = 0 ;
+	virtual int __cdecl _GetRINGER_MODE_SILENT() = 0 ;
+	virtual int __cdecl _GetRINGER_MODE_VIBRATE() = 0 ;
+	virtual int __cdecl _GetROUTE_ALL() = 0 ;
+	virtual int __cdecl _GetROUTE_BLUETOOTH() = 0 ;
+	virtual int __cdecl _GetROUTE_BLUETOOTH_A2DP() = 0 ;
+	virtual int __cdecl _GetROUTE_BLUETOOTH_SCO() = 0 ;
+	virtual int __cdecl _GetROUTE_EARPIECE() = 0 ;
+	virtual int __cdecl _GetROUTE_HEADSET() = 0 ;
+	virtual int __cdecl _GetROUTE_SPEAKER() = 0 ;
+	virtual int __cdecl _GetSCO_AUDIO_STATE_CONNECTED() = 0 ;
+	virtual int __cdecl _GetSCO_AUDIO_STATE_CONNECTING() = 0 ;
+	virtual int __cdecl _GetSCO_AUDIO_STATE_DISCONNECTED() = 0 ;
+	virtual int __cdecl _GetSCO_AUDIO_STATE_ERROR() = 0 ;
+	virtual int __cdecl _GetSTREAM_ACCESSIBILITY() = 0 ;
+	virtual int __cdecl _GetSTREAM_ALARM() = 0 ;
+	virtual int __cdecl _GetSTREAM_DTMF() = 0 ;
+	virtual int __cdecl _GetSTREAM_MUSIC() = 0 ;
+	virtual int __cdecl _GetSTREAM_NOTIFICATION() = 0 ;
+	virtual int __cdecl _GetSTREAM_RING() = 0 ;
+	virtual int __cdecl _GetSTREAM_SYSTEM() = 0 ;
+	virtual int __cdecl _GetSTREAM_VOICE_CALL() = 0 ;
+	virtual int __cdecl _GetUSE_DEFAULT_STREAM_TYPE() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetVIBRATE_SETTING_CHANGED_ACTION() = 0 ;
+	virtual int __cdecl _GetVIBRATE_SETTING_OFF() = 0 ;
+	virtual int __cdecl _GetVIBRATE_SETTING_ON() = 0 ;
+	virtual int __cdecl _GetVIBRATE_SETTING_ONLY_SILENT() = 0 ;
+	virtual int __cdecl _GetVIBRATE_TYPE_NOTIFICATION() = 0 ;
+	virtual int __cdecl _GetVIBRATE_TYPE_RINGER() = 0 ;
+	__property Androidapi::Jni::Javatypes::_di_JString ACTION_AUDIO_BECOMING_NOISY = {read=_GetACTION_AUDIO_BECOMING_NOISY};
+	__property Androidapi::Jni::Javatypes::_di_JString ACTION_HDMI_AUDIO_PLUG = {read=_GetACTION_HDMI_AUDIO_PLUG};
+	__property Androidapi::Jni::Javatypes::_di_JString ACTION_HEADSET_PLUG = {read=_GetACTION_HEADSET_PLUG};
+	__property Androidapi::Jni::Javatypes::_di_JString ACTION_SCO_AUDIO_STATE_CHANGED = {read=_GetACTION_SCO_AUDIO_STATE_CHANGED};
+	__property Androidapi::Jni::Javatypes::_di_JString ACTION_SCO_AUDIO_STATE_UPDATED = {read=_GetACTION_SCO_AUDIO_STATE_UPDATED};
+	__property int ADJUST_LOWER = {read=_GetADJUST_LOWER};
+	__property int ADJUST_MUTE = {read=_GetADJUST_MUTE};
+	__property int ADJUST_RAISE = {read=_GetADJUST_RAISE};
+	__property int ADJUST_SAME = {read=_GetADJUST_SAME};
+	__property int ADJUST_TOGGLE_MUTE = {read=_GetADJUST_TOGGLE_MUTE};
+	__property int ADJUST_UNMUTE = {read=_GetADJUST_UNMUTE};
+	__property int AUDIOFOCUS_GAIN = {read=_GetAUDIOFOCUS_GAIN};
+	__property int AUDIOFOCUS_GAIN_TRANSIENT = {read=_GetAUDIOFOCUS_GAIN_TRANSIENT};
+	__property int AUDIOFOCUS_GAIN_TRANSIENT_EXCLUSIVE = {read=_GetAUDIOFOCUS_GAIN_TRANSIENT_EXCLUSIVE};
+	__property int AUDIOFOCUS_GAIN_TRANSIENT_MAY_DUCK = {read=_GetAUDIOFOCUS_GAIN_TRANSIENT_MAY_DUCK};
+	__property int AUDIOFOCUS_LOSS = {read=_GetAUDIOFOCUS_LOSS};
+	__property int AUDIOFOCUS_LOSS_TRANSIENT = {read=_GetAUDIOFOCUS_LOSS_TRANSIENT};
+	__property int AUDIOFOCUS_LOSS_TRANSIENT_CAN_DUCK = {read=_GetAUDIOFOCUS_LOSS_TRANSIENT_CAN_DUCK};
+	__property int AUDIOFOCUS_NONE = {read=_GetAUDIOFOCUS_NONE};
+	__property int AUDIOFOCUS_REQUEST_DELAYED = {read=_GetAUDIOFOCUS_REQUEST_DELAYED};
+	__property int AUDIOFOCUS_REQUEST_FAILED = {read=_GetAUDIOFOCUS_REQUEST_FAILED};
+	__property int AUDIOFOCUS_REQUEST_GRANTED = {read=_GetAUDIOFOCUS_REQUEST_GRANTED};
+	__property int AUDIO_SESSION_ID_GENERATE = {read=_GetAUDIO_SESSION_ID_GENERATE};
+	__property int ERROR = {read=_GetERROR};
+	__property int ERROR_DEAD_OBJECT = {read=_GetERROR_DEAD_OBJECT};
+	__property Androidapi::Jni::Javatypes::_di_JString EXTRA_AUDIO_PLUG_STATE = {read=_GetEXTRA_AUDIO_PLUG_STATE};
+	__property Androidapi::Jni::Javatypes::_di_JString EXTRA_ENCODINGS = {read=_GetEXTRA_ENCODINGS};
+	__property Androidapi::Jni::Javatypes::_di_JString EXTRA_MAX_CHANNEL_COUNT = {read=_GetEXTRA_MAX_CHANNEL_COUNT};
+	__property Androidapi::Jni::Javatypes::_di_JString EXTRA_RINGER_MODE = {read=_GetEXTRA_RINGER_MODE};
+	__property Androidapi::Jni::Javatypes::_di_JString EXTRA_SCO_AUDIO_PREVIOUS_STATE = {read=_GetEXTRA_SCO_AUDIO_PREVIOUS_STATE};
+	__property Androidapi::Jni::Javatypes::_di_JString EXTRA_SCO_AUDIO_STATE = {read=_GetEXTRA_SCO_AUDIO_STATE};
+	__property Androidapi::Jni::Javatypes::_di_JString EXTRA_VIBRATE_SETTING = {read=_GetEXTRA_VIBRATE_SETTING};
+	__property Androidapi::Jni::Javatypes::_di_JString EXTRA_VIBRATE_TYPE = {read=_GetEXTRA_VIBRATE_TYPE};
+	__property int FLAG_ALLOW_RINGER_MODES = {read=_GetFLAG_ALLOW_RINGER_MODES};
+	__property int FLAG_PLAY_SOUND = {read=_GetFLAG_PLAY_SOUND};
+	__property int FLAG_REMOVE_SOUND_AND_VIBRATE = {read=_GetFLAG_REMOVE_SOUND_AND_VIBRATE};
+	__property int FLAG_SHOW_UI = {read=_GetFLAG_SHOW_UI};
+	__property int FLAG_VIBRATE = {read=_GetFLAG_VIBRATE};
+	__property int FX_FOCUS_NAVIGATION_DOWN = {read=_GetFX_FOCUS_NAVIGATION_DOWN};
+	__property int FX_FOCUS_NAVIGATION_LEFT = {read=_GetFX_FOCUS_NAVIGATION_LEFT};
+	__property int FX_FOCUS_NAVIGATION_RIGHT = {read=_GetFX_FOCUS_NAVIGATION_RIGHT};
+	__property int FX_FOCUS_NAVIGATION_UP = {read=_GetFX_FOCUS_NAVIGATION_UP};
+	__property int FX_KEYPRESS_DELETE = {read=_GetFX_KEYPRESS_DELETE};
+	__property int FX_KEYPRESS_INVALID = {read=_GetFX_KEYPRESS_INVALID};
+	__property int FX_KEYPRESS_RETURN = {read=_GetFX_KEYPRESS_RETURN};
+	__property int FX_KEYPRESS_SPACEBAR = {read=_GetFX_KEYPRESS_SPACEBAR};
+	__property int FX_KEYPRESS_STANDARD = {read=_GetFX_KEYPRESS_STANDARD};
+	__property int FX_KEY_CLICK = {read=_GetFX_KEY_CLICK};
+	__property int GET_DEVICES_ALL = {read=_GetGET_DEVICES_ALL};
+	__property int GET_DEVICES_INPUTS = {read=_GetGET_DEVICES_INPUTS};
+	__property int GET_DEVICES_OUTPUTS = {read=_GetGET_DEVICES_OUTPUTS};
+	__property int MODE_CURRENT = {read=_GetMODE_CURRENT};
+	__property int MODE_INVALID = {read=_GetMODE_INVALID};
+	__property int MODE_IN_CALL = {read=_GetMODE_IN_CALL};
+	__property int MODE_IN_COMMUNICATION = {read=_GetMODE_IN_COMMUNICATION};
+	__property int MODE_NORMAL = {read=_GetMODE_NORMAL};
+	__property int MODE_RINGTONE = {read=_GetMODE_RINGTONE};
+	__property int NUM_STREAMS = {read=_GetNUM_STREAMS};
+	__property Androidapi::Jni::Javatypes::_di_JString PROPERTY_OUTPUT_FRAMES_PER_BUFFER = {read=_GetPROPERTY_OUTPUT_FRAMES_PER_BUFFER};
+	__property Androidapi::Jni::Javatypes::_di_JString PROPERTY_OUTPUT_SAMPLE_RATE = {read=_GetPROPERTY_OUTPUT_SAMPLE_RATE};
+	__property Androidapi::Jni::Javatypes::_di_JString PROPERTY_SUPPORT_AUDIO_SOURCE_UNPROCESSED = {read=_GetPROPERTY_SUPPORT_AUDIO_SOURCE_UNPROCESSED};
+	__property Androidapi::Jni::Javatypes::_di_JString PROPERTY_SUPPORT_MIC_NEAR_ULTRASOUND = {read=_GetPROPERTY_SUPPORT_MIC_NEAR_ULTRASOUND};
+	__property Androidapi::Jni::Javatypes::_di_JString PROPERTY_SUPPORT_SPEAKER_NEAR_ULTRASOUND = {read=_GetPROPERTY_SUPPORT_SPEAKER_NEAR_ULTRASOUND};
+	__property Androidapi::Jni::Javatypes::_di_JString RINGER_MODE_CHANGED_ACTION = {read=_GetRINGER_MODE_CHANGED_ACTION};
+	__property int RINGER_MODE_NORMAL = {read=_GetRINGER_MODE_NORMAL};
+	__property int RINGER_MODE_SILENT = {read=_GetRINGER_MODE_SILENT};
+	__property int RINGER_MODE_VIBRATE = {read=_GetRINGER_MODE_VIBRATE};
+	__property int ROUTE_ALL = {read=_GetROUTE_ALL};
+	__property int ROUTE_BLUETOOTH = {read=_GetROUTE_BLUETOOTH};
+	__property int ROUTE_BLUETOOTH_A2DP = {read=_GetROUTE_BLUETOOTH_A2DP};
+	__property int ROUTE_BLUETOOTH_SCO = {read=_GetROUTE_BLUETOOTH_SCO};
+	__property int ROUTE_EARPIECE = {read=_GetROUTE_EARPIECE};
+	__property int ROUTE_HEADSET = {read=_GetROUTE_HEADSET};
+	__property int ROUTE_SPEAKER = {read=_GetROUTE_SPEAKER};
+	__property int SCO_AUDIO_STATE_CONNECTED = {read=_GetSCO_AUDIO_STATE_CONNECTED};
+	__property int SCO_AUDIO_STATE_CONNECTING = {read=_GetSCO_AUDIO_STATE_CONNECTING};
+	__property int SCO_AUDIO_STATE_DISCONNECTED = {read=_GetSCO_AUDIO_STATE_DISCONNECTED};
+	__property int SCO_AUDIO_STATE_ERROR = {read=_GetSCO_AUDIO_STATE_ERROR};
+	__property int STREAM_ACCESSIBILITY = {read=_GetSTREAM_ACCESSIBILITY};
+	__property int STREAM_ALARM = {read=_GetSTREAM_ALARM};
+	__property int STREAM_DTMF = {read=_GetSTREAM_DTMF};
+	__property int STREAM_MUSIC = {read=_GetSTREAM_MUSIC};
+	__property int STREAM_NOTIFICATION = {read=_GetSTREAM_NOTIFICATION};
+	__property int STREAM_RING = {read=_GetSTREAM_RING};
+	__property int STREAM_SYSTEM = {read=_GetSTREAM_SYSTEM};
+	__property int STREAM_VOICE_CALL = {read=_GetSTREAM_VOICE_CALL};
+	__property int USE_DEFAULT_STREAM_TYPE = {read=_GetUSE_DEFAULT_STREAM_TYPE};
+	__property Androidapi::Jni::Javatypes::_di_JString VIBRATE_SETTING_CHANGED_ACTION = {read=_GetVIBRATE_SETTING_CHANGED_ACTION};
+	__property int VIBRATE_SETTING_OFF = {read=_GetVIBRATE_SETTING_OFF};
+	__property int VIBRATE_SETTING_ON = {read=_GetVIBRATE_SETTING_ON};
+	__property int VIBRATE_SETTING_ONLY_SILENT = {read=_GetVIBRATE_SETTING_ONLY_SILENT};
+	__property int VIBRATE_TYPE_NOTIFICATION = {read=_GetVIBRATE_TYPE_NOTIFICATION};
+	__property int VIBRATE_TYPE_RINGER = {read=_GetVIBRATE_TYPE_RINGER};
+};
+
+__interface  INTERFACE_UUID("{C02E6757-33D6-4A65-99F4-F658813EF426}") JAudioManager  : public Androidapi::Jni::Javatypes::JObject 
+{
+	virtual int __cdecl abandonAudioFocus(_di_JAudioManager_OnAudioFocusChangeListener l) = 0 ;
+	virtual int __cdecl abandonAudioFocusRequest(_di_JAudioFocusRequest focusRequest) = 0 ;
+	virtual void __cdecl adjustStreamVolume(int streamType, int direction, int flags) = 0 ;
+	virtual void __cdecl adjustSuggestedStreamVolume(int direction, int suggestedStreamType, int flags) = 0 ;
+	virtual void __cdecl adjustVolume(int direction, int flags) = 0 ;
+	virtual void __cdecl dispatchMediaKeyEvent(Androidapi::Jni::Graphicscontentviewtext::_di_JKeyEvent keyEvent) = 0 ;
+	virtual int __cdecl generateAudioSessionId() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JList __cdecl getActivePlaybackConfigurations() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JList __cdecl getActiveRecordingConfigurations() = 0 ;
+	virtual Androidapi::Jnibridge::TJavaObjectArray__1<_di_JAudioDeviceInfo>* __cdecl getDevices(int flags) = 0 ;
+	virtual int __cdecl getMode() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl getParameters(Androidapi::Jni::Javatypes::_di_JString keys) = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl getProperty(Androidapi::Jni::Javatypes::_di_JString key) = 0 ;
+	virtual int __cdecl getRingerMode() = 0 ;
+	virtual int __cdecl getRouting(int mode) = 0 ;
+	virtual int __cdecl getStreamMaxVolume(int streamType) = 0 ;
+	virtual int __cdecl getStreamVolume(int streamType) = 0 ;
+	virtual int __cdecl getVibrateSetting(int vibrateType) = 0 ;
+	virtual bool __cdecl isBluetoothA2dpOn() = 0 ;
+	virtual bool __cdecl isBluetoothScoAvailableOffCall() = 0 ;
+	virtual bool __cdecl isBluetoothScoOn() = 0 ;
+	virtual bool __cdecl isMicrophoneMute() = 0 ;
+	virtual bool __cdecl isMusicActive() = 0 ;
+	virtual bool __cdecl isSpeakerphoneOn() = 0 ;
+	virtual bool __cdecl isStreamMute(int streamType) = 0 ;
+	virtual bool __cdecl isVolumeFixed() = 0 ;
+	virtual bool __cdecl isWiredHeadsetOn() = 0 ;
+	virtual void __cdecl loadSoundEffects() = 0 ;
+	virtual void __cdecl playSoundEffect(int effectType) = 0 /* overload */;
+	virtual void __cdecl playSoundEffect(int effectType, float volume) = 0 /* overload */;
+	virtual void __cdecl registerAudioDeviceCallback(_di_JAudioDeviceCallback callback, Androidapi::Jni::Os::_di_JHandler handler) = 0 ;
+	virtual void __cdecl registerAudioPlaybackCallback(_di_JAudioManager_AudioPlaybackCallback cb, Androidapi::Jni::Os::_di_JHandler handler) = 0 ;
+	virtual void __cdecl registerAudioRecordingCallback(_di_JAudioManager_AudioRecordingCallback cb, Androidapi::Jni::Os::_di_JHandler handler) = 0 ;
+	virtual void __cdecl registerMediaButtonEventReceiver(Androidapi::Jni::Graphicscontentviewtext::_di_JComponentName eventReceiver) = 0 /* overload */;
+	virtual void __cdecl registerMediaButtonEventReceiver(Androidapi::Jni::App::_di_JPendingIntent eventReceiver) = 0 /* overload */;
+	virtual void __cdecl registerRemoteControlClient(_di_JRemoteControlClient rcClient) = 0 ;
+	virtual bool __cdecl registerRemoteController(_di_JRemoteController rctlr) = 0 ;
+	virtual int __cdecl requestAudioFocus(_di_JAudioManager_OnAudioFocusChangeListener l, int streamType, int durationHint) = 0 /* overload */;
+	virtual int __cdecl requestAudioFocus(_di_JAudioFocusRequest focusRequest) = 0 /* overload */;
+	virtual void __cdecl setBluetoothA2dpOn(bool on) = 0 ;
+	virtual void __cdecl setBluetoothScoOn(bool on) = 0 ;
+	virtual void __cdecl setMicrophoneMute(bool on) = 0 ;
+	virtual void __cdecl setMode(int mode) = 0 ;
+	virtual void __cdecl setParameters(Androidapi::Jni::Javatypes::_di_JString keyValuePairs) = 0 ;
+	virtual void __cdecl setRingerMode(int ringerMode) = 0 ;
+	virtual void __cdecl setRouting(int mode, int routes, int mask) = 0 ;
+	virtual void __cdecl setSpeakerphoneOn(bool on) = 0 ;
+	virtual void __cdecl setStreamMute(int streamType, bool state) = 0 ;
+	virtual void __cdecl setStreamSolo(int streamType, bool state) = 0 ;
+	virtual void __cdecl setStreamVolume(int streamType, int index, int flags) = 0 ;
+	virtual void __cdecl setVibrateSetting(int vibrateType, int vibrateSetting) = 0 ;
+	virtual void __cdecl setWiredHeadsetOn(bool on) = 0 ;
+	virtual bool __cdecl shouldVibrate(int vibrateType) = 0 ;
+	virtual void __cdecl startBluetoothSco() = 0 ;
+	virtual void __cdecl stopBluetoothSco() = 0 ;
+	virtual void __cdecl unloadSoundEffects() = 0 ;
+	virtual void __cdecl unregisterAudioDeviceCallback(_di_JAudioDeviceCallback callback) = 0 ;
+	virtual void __cdecl unregisterAudioPlaybackCallback(_di_JAudioManager_AudioPlaybackCallback cb) = 0 ;
+	virtual void __cdecl unregisterAudioRecordingCallback(_di_JAudioManager_AudioRecordingCallback cb) = 0 ;
+	virtual void __cdecl unregisterMediaButtonEventReceiver(Androidapi::Jni::Graphicscontentviewtext::_di_JComponentName eventReceiver) = 0 /* overload */;
+	virtual void __cdecl unregisterMediaButtonEventReceiver(Androidapi::Jni::App::_di_JPendingIntent eventReceiver) = 0 /* overload */;
+	virtual void __cdecl unregisterRemoteControlClient(_di_JRemoteControlClient rcClient) = 0 ;
+	virtual void __cdecl unregisterRemoteController(_di_JRemoteController rctlr) = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJAudioManager : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JAudioManagerClass,_di_JAudioManager>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JAudioManagerClass,_di_JAudioManager> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJAudioManager() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JAudioManagerClass,_di_JAudioManager>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJAudioManager() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{5A64A3D6-5F8E-47B7-B216-9E5B8352DA97}") JAudioManager_AudioPlaybackCallbackClass  : public Androidapi::Jni::Javatypes::JObjectClass 
+{
+	HIDESBASE virtual _di_JAudioManager_AudioPlaybackCallback __cdecl init() = 0 ;
+};
+
+__interface  INTERFACE_UUID("{BD9F9573-D5E2-4450-8DB4-12F223FCD84E}") JAudioManager_AudioPlaybackCallback  : public Androidapi::Jni::Javatypes::JObject 
+{
+	virtual void __cdecl onPlaybackConfigChanged(Androidapi::Jni::Javatypes::_di_JList configs) = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJAudioManager_AudioPlaybackCallback : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JAudioManager_AudioPlaybackCallbackClass,_di_JAudioManager_AudioPlaybackCallback>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JAudioManager_AudioPlaybackCallbackClass,_di_JAudioManager_AudioPlaybackCallback> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJAudioManager_AudioPlaybackCallback() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JAudioManager_AudioPlaybackCallbackClass,_di_JAudioManager_AudioPlaybackCallback>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJAudioManager_AudioPlaybackCallback() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{206FAF8C-49FB-4254-93C3-E34D5E945687}") JAudioManager_AudioRecordingCallbackClass  : public Androidapi::Jni::Javatypes::JObjectClass 
+{
+	HIDESBASE virtual _di_JAudioManager_AudioRecordingCallback __cdecl init() = 0 ;
+};
+
+__interface  INTERFACE_UUID("{0FD134DC-A1C6-4B88-AEA2-ACD25079FD97}") JAudioManager_AudioRecordingCallback  : public Androidapi::Jni::Javatypes::JObject 
+{
+	virtual void __cdecl onRecordingConfigChanged(Androidapi::Jni::Javatypes::_di_JList configs) = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJAudioManager_AudioRecordingCallback : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JAudioManager_AudioRecordingCallbackClass,_di_JAudioManager_AudioRecordingCallback>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JAudioManager_AudioRecordingCallbackClass,_di_JAudioManager_AudioRecordingCallback> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJAudioManager_AudioRecordingCallback() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JAudioManager_AudioRecordingCallbackClass,_di_JAudioManager_AudioRecordingCallback>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJAudioManager_AudioRecordingCallback() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{D79C0846-0031-48D5-9EB0-A995A3D034A2}") JAudioManager_OnAudioFocusChangeListenerClass  : public Androidapi::Jnibridge::IJavaClass 
+{
+	
+};
+
+__interface  INTERFACE_UUID("{F6FE80F4-5596-4E41-B718-BFEEEDBFAE47}") JAudioManager_OnAudioFocusChangeListener  : public Androidapi::Jnibridge::IJavaInstance 
+{
+	virtual void __cdecl onAudioFocusChange(int focusChange) = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJAudioManager_OnAudioFocusChangeListener : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JAudioManager_OnAudioFocusChangeListenerClass,_di_JAudioManager_OnAudioFocusChangeListener>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JAudioManager_OnAudioFocusChangeListenerClass,_di_JAudioManager_OnAudioFocusChangeListener> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJAudioManager_OnAudioFocusChangeListener() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JAudioManager_OnAudioFocusChangeListenerClass,_di_JAudioManager_OnAudioFocusChangeListener>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJAudioManager_OnAudioFocusChangeListener() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{1FB952DC-2123-4060-8382-C0A8777521F4}") JAudioPlaybackConfigurationClass  : public Androidapi::Jni::Javatypes::JObjectClass 
+{
+	virtual Androidapi::Jni::Os::_di_JParcelable_Creator __cdecl _GetCREATOR() = 0 ;
+	__property Androidapi::Jni::Os::_di_JParcelable_Creator CREATOR = {read=_GetCREATOR};
+};
+
+__interface  INTERFACE_UUID("{2106A800-04E0-486D-9985-28AF39BCC686}") JAudioPlaybackConfiguration  : public Androidapi::Jni::Javatypes::JObject 
+{
+	virtual int __cdecl describeContents() = 0 ;
+	HIDESBASE virtual bool __cdecl equals(Androidapi::Jni::Javatypes::_di_JObject o) = 0 ;
+	virtual _di_JAudioAttributes __cdecl getAudioAttributes() = 0 ;
+	HIDESBASE virtual int __cdecl hashCode() = 0 ;
+	virtual void __cdecl writeToParcel(Androidapi::Jni::Os::_di_JParcel dest, int flags) = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJAudioPlaybackConfiguration : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JAudioPlaybackConfigurationClass,_di_JAudioPlaybackConfiguration>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JAudioPlaybackConfigurationClass,_di_JAudioPlaybackConfiguration> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJAudioPlaybackConfiguration() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JAudioPlaybackConfigurationClass,_di_JAudioPlaybackConfiguration>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJAudioPlaybackConfiguration() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{52854509-E981-4598-90BD-591E322B9E11}") JAudioRecordClass  : public Androidapi::Jni::Javatypes::JObjectClass 
+{
+	virtual int __cdecl _GetERROR() = 0 ;
+	virtual int __cdecl _GetERROR_BAD_VALUE() = 0 ;
+	virtual int __cdecl _GetERROR_DEAD_OBJECT() = 0 ;
+	virtual int __cdecl _GetERROR_INVALID_OPERATION() = 0 ;
+	virtual int __cdecl _GetREAD_BLOCKING() = 0 ;
+	virtual int __cdecl _GetREAD_NON_BLOCKING() = 0 ;
+	virtual int __cdecl _GetRECORDSTATE_RECORDING() = 0 ;
+	virtual int __cdecl _GetRECORDSTATE_STOPPED() = 0 ;
+	virtual int __cdecl _GetSTATE_INITIALIZED() = 0 ;
+	virtual int __cdecl _GetSTATE_UNINITIALIZED() = 0 ;
+	virtual int __cdecl _GetSUCCESS() = 0 ;
+	HIDESBASE virtual _di_JAudioRecord __cdecl init(int audioSource, int sampleRateInHz, int channelConfig, int audioFormat, int bufferSizeInBytes) = 0 ;
+	virtual int __cdecl getMinBufferSize(int sampleRateInHz, int channelConfig, int audioFormat) = 0 ;
+	__property int ERROR = {read=_GetERROR};
+	__property int ERROR_BAD_VALUE = {read=_GetERROR_BAD_VALUE};
+	__property int ERROR_DEAD_OBJECT = {read=_GetERROR_DEAD_OBJECT};
+	__property int ERROR_INVALID_OPERATION = {read=_GetERROR_INVALID_OPERATION};
+	__property int READ_BLOCKING = {read=_GetREAD_BLOCKING};
+	__property int READ_NON_BLOCKING = {read=_GetREAD_NON_BLOCKING};
+	__property int RECORDSTATE_RECORDING = {read=_GetRECORDSTATE_RECORDING};
+	__property int RECORDSTATE_STOPPED = {read=_GetRECORDSTATE_STOPPED};
+	__property int STATE_INITIALIZED = {read=_GetSTATE_INITIALIZED};
+	__property int STATE_UNINITIALIZED = {read=_GetSTATE_UNINITIALIZED};
+	__property int SUCCESS = {read=_GetSUCCESS};
+};
+
+__interface  INTERFACE_UUID("{512F5ADB-2452-441B-8FA6-C45F9A4449C0}") JAudioRecord  : public Androidapi::Jni::Javatypes::JObject 
+{
+	virtual void __cdecl addOnRoutingChangedListener(_di_JAudioRouting_OnRoutingChangedListener listener, Androidapi::Jni::Os::_di_JHandler handler) = 0 /* overload */;
+	virtual void __cdecl addOnRoutingChangedListener(_di_JAudioRecord_OnRoutingChangedListener listener, Androidapi::Jni::Os::_di_JHandler handler) = 0 /* overload */;
+	virtual int __cdecl getAudioFormat() = 0 ;
+	virtual int __cdecl getAudioSessionId() = 0 ;
+	virtual int __cdecl getAudioSource() = 0 ;
+	virtual int __cdecl getBufferSizeInFrames() = 0 ;
+	virtual int __cdecl getChannelConfiguration() = 0 ;
+	virtual int __cdecl getChannelCount() = 0 ;
+	virtual _di_JAudioFormat __cdecl getFormat() = 0 ;
+	virtual int __cdecl getNotificationMarkerPosition() = 0 ;
+	virtual int __cdecl getPositionNotificationPeriod() = 0 ;
+	virtual _di_JAudioDeviceInfo __cdecl getPreferredDevice() = 0 ;
+	virtual int __cdecl getRecordingState() = 0 ;
+	virtual _di_JAudioDeviceInfo __cdecl getRoutedDevice() = 0 ;
+	virtual int __cdecl getSampleRate() = 0 ;
+	virtual int __cdecl getState() = 0 ;
+	virtual int __cdecl getTimestamp(_di_JAudioTimestamp outTimestamp, int timebase) = 0 ;
+	virtual int __cdecl read(Androidapi::Jnibridge::TJavaArray__1<System::Byte>* audioData, int offsetInBytes, int sizeInBytes) = 0 /* overload */;
+	virtual int __cdecl read(Androidapi::Jnibridge::TJavaArray__1<System::Byte>* audioData, int offsetInBytes, int sizeInBytes, int readMode) = 0 /* overload */;
+	virtual int __cdecl read(Androidapi::Jnibridge::TJavaArray__1<short>* audioData, int offsetInShorts, int sizeInShorts) = 0 /* overload */;
+	virtual int __cdecl read(Androidapi::Jnibridge::TJavaArray__1<short>* audioData, int offsetInShorts, int sizeInShorts, int readMode) = 0 /* overload */;
+	virtual int __cdecl read(Androidapi::Jnibridge::TJavaArray__1<float>* audioData, int offsetInFloats, int sizeInFloats, int readMode) = 0 /* overload */;
+	virtual int __cdecl read(Androidapi::Jni::Javatypes::_di_JByteBuffer audioBuffer, int sizeInBytes) = 0 /* overload */;
+	virtual int __cdecl read(Androidapi::Jni::Javatypes::_di_JByteBuffer audioBuffer, int sizeInBytes, int readMode) = 0 /* overload */;
+	virtual void __cdecl release() = 0 ;
+	virtual void __cdecl removeOnRoutingChangedListener(_di_JAudioRouting_OnRoutingChangedListener listener) = 0 /* overload */;
+	virtual void __cdecl removeOnRoutingChangedListener(_di_JAudioRecord_OnRoutingChangedListener listener) = 0 /* overload */;
+	virtual int __cdecl setNotificationMarkerPosition(int markerInFrames) = 0 ;
+	virtual int __cdecl setPositionNotificationPeriod(int periodInFrames) = 0 ;
+	virtual bool __cdecl setPreferredDevice(_di_JAudioDeviceInfo deviceInfo) = 0 ;
+	virtual void __cdecl setRecordPositionUpdateListener(_di_JAudioRecord_OnRecordPositionUpdateListener listener) = 0 /* overload */;
+	virtual void __cdecl setRecordPositionUpdateListener(_di_JAudioRecord_OnRecordPositionUpdateListener listener, Androidapi::Jni::Os::_di_JHandler handler) = 0 /* overload */;
+	virtual void __cdecl startRecording() = 0 /* overload */;
+	virtual void __cdecl startRecording(_di_JMediaSyncEvent syncEvent) = 0 /* overload */;
+	virtual void __cdecl stop() = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJAudioRecord : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JAudioRecordClass,_di_JAudioRecord>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JAudioRecordClass,_di_JAudioRecord> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJAudioRecord() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JAudioRecordClass,_di_JAudioRecord>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJAudioRecord() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{76A6E9D4-566B-49BD-BF4E-2CAA4C17525B}") JAudioRecord_BuilderClass  : public Androidapi::Jni::Javatypes::JObjectClass 
+{
+	HIDESBASE virtual _di_JAudioRecord_Builder __cdecl init() = 0 ;
+};
+
+__interface  INTERFACE_UUID("{BF486BE7-BE8A-48E5-A9FC-B7F22D0B6115}") JAudioRecord_Builder  : public Androidapi::Jni::Javatypes::JObject 
+{
+	virtual _di_JAudioRecord __cdecl build() = 0 ;
+	virtual _di_JAudioRecord_Builder __cdecl setAudioFormat(_di_JAudioFormat format) = 0 ;
+	virtual _di_JAudioRecord_Builder __cdecl setAudioSource(int source) = 0 ;
+	virtual _di_JAudioRecord_Builder __cdecl setBufferSizeInBytes(int bufferSizeInBytes) = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJAudioRecord_Builder : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JAudioRecord_BuilderClass,_di_JAudioRecord_Builder>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JAudioRecord_BuilderClass,_di_JAudioRecord_Builder> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJAudioRecord_Builder() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JAudioRecord_BuilderClass,_di_JAudioRecord_Builder>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJAudioRecord_Builder() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{61883778-37ED-4EE0-9039-ED97AA45C8FD}") JAudioRecord_OnRecordPositionUpdateListenerClass  : public Androidapi::Jnibridge::IJavaClass 
+{
+	
+};
+
+__interface  INTERFACE_UUID("{C465EEDB-9E94-4687-B81D-9A0194874655}") JAudioRecord_OnRecordPositionUpdateListener  : public Androidapi::Jnibridge::IJavaInstance 
+{
+	virtual void __cdecl onMarkerReached(_di_JAudioRecord recorder) = 0 ;
+	virtual void __cdecl onPeriodicNotification(_di_JAudioRecord recorder) = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJAudioRecord_OnRecordPositionUpdateListener : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JAudioRecord_OnRecordPositionUpdateListenerClass,_di_JAudioRecord_OnRecordPositionUpdateListener>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JAudioRecord_OnRecordPositionUpdateListenerClass,_di_JAudioRecord_OnRecordPositionUpdateListener> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJAudioRecord_OnRecordPositionUpdateListener() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JAudioRecord_OnRecordPositionUpdateListenerClass,_di_JAudioRecord_OnRecordPositionUpdateListener>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJAudioRecord_OnRecordPositionUpdateListener() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{E40E402A-F26B-4DA6-9451-AB2BE37A8F5D}") JAudioRouting_OnRoutingChangedListenerClass  : public Androidapi::Jnibridge::IJavaClass 
+{
+	
+};
+
+__interface  INTERFACE_UUID("{D284ACD0-E9B4-4C5E-837B-C3F76A216650}") JAudioRouting_OnRoutingChangedListener  : public Androidapi::Jnibridge::IJavaInstance 
+{
+	virtual void __cdecl onRoutingChanged(_di_JAudioRouting router) = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJAudioRouting_OnRoutingChangedListener : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JAudioRouting_OnRoutingChangedListenerClass,_di_JAudioRouting_OnRoutingChangedListener>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JAudioRouting_OnRoutingChangedListenerClass,_di_JAudioRouting_OnRoutingChangedListener> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJAudioRouting_OnRoutingChangedListener() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JAudioRouting_OnRoutingChangedListenerClass,_di_JAudioRouting_OnRoutingChangedListener>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJAudioRouting_OnRoutingChangedListener() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{468513AE-D4D7-4C5A-9C98-C2F3D2A37608}") JAudioRecord_OnRoutingChangedListenerClass  : public JAudioRouting_OnRoutingChangedListenerClass 
+{
+	
+};
+
+__interface  INTERFACE_UUID("{67AB498B-237C-4BB1-9451-420F0990C8B5}") JAudioRecord_OnRoutingChangedListener  : public JAudioRouting_OnRoutingChangedListener 
+{
+	HIDESBASE virtual void __cdecl onRoutingChanged(_di_JAudioRecord audioRecord) = 0 /* overload */;
+	HIDESBASE virtual void __cdecl onRoutingChanged(_di_JAudioRouting router) = 0 /* overload */;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJAudioRecord_OnRoutingChangedListener : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JAudioRecord_OnRoutingChangedListenerClass,_di_JAudioRecord_OnRoutingChangedListener>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JAudioRecord_OnRoutingChangedListenerClass,_di_JAudioRecord_OnRoutingChangedListener> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJAudioRecord_OnRoutingChangedListener() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JAudioRecord_OnRoutingChangedListenerClass,_di_JAudioRecord_OnRoutingChangedListener>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJAudioRecord_OnRoutingChangedListener() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{BC5AB5CC-1BE2-47FE-B00B-C4CB6854D712}") JAudioRecordingConfigurationClass  : public Androidapi::Jni::Javatypes::JObjectClass 
+{
+	virtual Androidapi::Jni::Os::_di_JParcelable_Creator __cdecl _GetCREATOR() = 0 ;
+	__property Androidapi::Jni::Os::_di_JParcelable_Creator CREATOR = {read=_GetCREATOR};
+};
+
+__interface  INTERFACE_UUID("{C74E707D-D815-4243-A27D-930A6EAFBC79}") JAudioRecordingConfiguration  : public Androidapi::Jni::Javatypes::JObject 
+{
+	virtual int __cdecl describeContents() = 0 ;
+	HIDESBASE virtual bool __cdecl equals(Androidapi::Jni::Javatypes::_di_JObject o) = 0 ;
+	virtual _di_JAudioDeviceInfo __cdecl getAudioDevice() = 0 ;
+	virtual int __cdecl getClientAudioSessionId() = 0 ;
+	virtual int __cdecl getClientAudioSource() = 0 ;
+	virtual _di_JAudioFormat __cdecl getClientFormat() = 0 ;
+	virtual _di_JAudioFormat __cdecl getFormat() = 0 ;
+	HIDESBASE virtual int __cdecl hashCode() = 0 ;
+	virtual void __cdecl writeToParcel(Androidapi::Jni::Os::_di_JParcel dest, int flags) = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJAudioRecordingConfiguration : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JAudioRecordingConfigurationClass,_di_JAudioRecordingConfiguration>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JAudioRecordingConfigurationClass,_di_JAudioRecordingConfiguration> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJAudioRecordingConfiguration() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JAudioRecordingConfigurationClass,_di_JAudioRecordingConfiguration>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJAudioRecordingConfiguration() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{712FE214-4132-4FB2-8885-C4218B8D6B9E}") JAudioRoutingClass  : public Androidapi::Jnibridge::IJavaClass 
+{
+	
+};
+
+__interface  INTERFACE_UUID("{680ADCDC-4E6F-4713-82BF-0CB120CAC118}") JAudioRouting  : public Androidapi::Jnibridge::IJavaInstance 
+{
+	virtual void __cdecl addOnRoutingChangedListener(_di_JAudioRouting_OnRoutingChangedListener listener, Androidapi::Jni::Os::_di_JHandler handler) = 0 ;
+	virtual _di_JAudioDeviceInfo __cdecl getPreferredDevice() = 0 ;
+	virtual _di_JAudioDeviceInfo __cdecl getRoutedDevice() = 0 ;
+	virtual void __cdecl removeOnRoutingChangedListener(_di_JAudioRouting_OnRoutingChangedListener listener) = 0 ;
+	virtual bool __cdecl setPreferredDevice(_di_JAudioDeviceInfo deviceInfo) = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJAudioRouting : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JAudioRoutingClass,_di_JAudioRouting>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JAudioRoutingClass,_di_JAudioRouting> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJAudioRouting() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JAudioRoutingClass,_di_JAudioRouting>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJAudioRouting() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{3E8076C1-696E-4380-8944-188F9A35A1D1}") JAudioTimestampClass  : public Androidapi::Jni::Javatypes::JObjectClass 
+{
+	virtual int __cdecl _GetTIMEBASE_BOOTTIME() = 0 ;
+	virtual int __cdecl _GetTIMEBASE_MONOTONIC() = 0 ;
+	HIDESBASE virtual _di_JAudioTimestamp __cdecl init() = 0 ;
+	__property int TIMEBASE_BOOTTIME = {read=_GetTIMEBASE_BOOTTIME};
+	__property int TIMEBASE_MONOTONIC = {read=_GetTIMEBASE_MONOTONIC};
+};
+
+__interface  INTERFACE_UUID("{AB157175-DD33-422D-80A3-EBF292D59A04}") JAudioTimestamp  : public Androidapi::Jni::Javatypes::JObject 
+{
+	virtual __int64 __cdecl _GetframePosition() = 0 ;
+	virtual void __cdecl _SetframePosition(__int64 Value) = 0 ;
+	virtual __int64 __cdecl _GetnanoTime() = 0 ;
+	virtual void __cdecl _SetnanoTime(__int64 Value) = 0 ;
+	__property __int64 framePosition = {read=_GetframePosition, write=_SetframePosition};
+	__property __int64 nanoTime = {read=_GetnanoTime, write=_SetnanoTime};
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJAudioTimestamp : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JAudioTimestampClass,_di_JAudioTimestamp>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JAudioTimestampClass,_di_JAudioTimestamp> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJAudioTimestamp() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JAudioTimestampClass,_di_JAudioTimestamp>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJAudioTimestamp() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{F1B69999-E4BF-4586-B05F-708A2172FC51}") JAudioTrackClass  : public Androidapi::Jni::Javatypes::JObjectClass 
+{
+	virtual int __cdecl _GetERROR() = 0 ;
+	virtual int __cdecl _GetERROR_BAD_VALUE() = 0 ;
+	virtual int __cdecl _GetERROR_DEAD_OBJECT() = 0 ;
+	virtual int __cdecl _GetERROR_INVALID_OPERATION() = 0 ;
+	virtual int __cdecl _GetMODE_STATIC() = 0 ;
+	virtual int __cdecl _GetMODE_STREAM() = 0 ;
+	virtual int __cdecl _GetPERFORMANCE_MODE_LOW_LATENCY() = 0 ;
+	virtual int __cdecl _GetPERFORMANCE_MODE_NONE() = 0 ;
+	virtual int __cdecl _GetPERFORMANCE_MODE_POWER_SAVING() = 0 ;
+	virtual int __cdecl _GetPLAYSTATE_PAUSED() = 0 ;
+	virtual int __cdecl _GetPLAYSTATE_PLAYING() = 0 ;
+	virtual int __cdecl _GetPLAYSTATE_STOPPED() = 0 ;
+	virtual int __cdecl _GetSTATE_INITIALIZED() = 0 ;
+	virtual int __cdecl _GetSTATE_NO_STATIC_DATA() = 0 ;
+	virtual int __cdecl _GetSTATE_UNINITIALIZED() = 0 ;
+	virtual int __cdecl _GetSUCCESS() = 0 ;
+	virtual int __cdecl _GetWRITE_BLOCKING() = 0 ;
+	virtual int __cdecl _GetWRITE_NON_BLOCKING() = 0 ;
+	HIDESBASE virtual _di_JAudioTrack __cdecl init(int streamType, int sampleRateInHz, int channelConfig, int audioFormat, int bufferSizeInBytes, int mode) = 0 /* overload */;
+	HIDESBASE virtual _di_JAudioTrack __cdecl init(int streamType, int sampleRateInHz, int channelConfig, int audioFormat, int bufferSizeInBytes, int mode, int sessionId) = 0 /* overload */;
+	HIDESBASE virtual _di_JAudioTrack __cdecl init(_di_JAudioAttributes attributes, _di_JAudioFormat format, int bufferSizeInBytes, int mode, int sessionId) = 0 /* overload */;
+	virtual float __cdecl getMaxVolume() = 0 ;
+	virtual int __cdecl getMinBufferSize(int sampleRateInHz, int channelConfig, int audioFormat) = 0 ;
+	virtual float __cdecl getMinVolume() = 0 ;
+	virtual int __cdecl getNativeOutputSampleRate(int streamType) = 0 ;
+	__property int ERROR = {read=_GetERROR};
+	__property int ERROR_BAD_VALUE = {read=_GetERROR_BAD_VALUE};
+	__property int ERROR_DEAD_OBJECT = {read=_GetERROR_DEAD_OBJECT};
+	__property int ERROR_INVALID_OPERATION = {read=_GetERROR_INVALID_OPERATION};
+	__property int MODE_STATIC = {read=_GetMODE_STATIC};
+	__property int MODE_STREAM = {read=_GetMODE_STREAM};
+	__property int PERFORMANCE_MODE_LOW_LATENCY = {read=_GetPERFORMANCE_MODE_LOW_LATENCY};
+	__property int PERFORMANCE_MODE_NONE = {read=_GetPERFORMANCE_MODE_NONE};
+	__property int PERFORMANCE_MODE_POWER_SAVING = {read=_GetPERFORMANCE_MODE_POWER_SAVING};
+	__property int PLAYSTATE_PAUSED = {read=_GetPLAYSTATE_PAUSED};
+	__property int PLAYSTATE_PLAYING = {read=_GetPLAYSTATE_PLAYING};
+	__property int PLAYSTATE_STOPPED = {read=_GetPLAYSTATE_STOPPED};
+	__property int STATE_INITIALIZED = {read=_GetSTATE_INITIALIZED};
+	__property int STATE_NO_STATIC_DATA = {read=_GetSTATE_NO_STATIC_DATA};
+	__property int STATE_UNINITIALIZED = {read=_GetSTATE_UNINITIALIZED};
+	__property int SUCCESS = {read=_GetSUCCESS};
+	__property int WRITE_BLOCKING = {read=_GetWRITE_BLOCKING};
+	__property int WRITE_NON_BLOCKING = {read=_GetWRITE_NON_BLOCKING};
+};
+
+__interface  INTERFACE_UUID("{84D3E8CB-9DDC-4DCB-902C-43C9AECE0830}") JAudioTrack  : public Androidapi::Jni::Javatypes::JObject 
+{
+	virtual void __cdecl addOnRoutingChangedListener(_di_JAudioRouting_OnRoutingChangedListener listener, Androidapi::Jni::Os::_di_JHandler handler) = 0 /* overload */;
+	virtual void __cdecl addOnRoutingChangedListener(_di_JAudioTrack_OnRoutingChangedListener listener, Androidapi::Jni::Os::_di_JHandler handler) = 0 /* overload */;
+	virtual int __cdecl attachAuxEffect(int effectId) = 0 ;
+	virtual _di_JVolumeShaper __cdecl createVolumeShaper(_di_JVolumeShaper_Configuration configuration) = 0 ;
+	virtual void __cdecl flush() = 0 ;
+	virtual int __cdecl getAudioFormat() = 0 ;
+	virtual int __cdecl getAudioSessionId() = 0 ;
+	virtual int __cdecl getBufferCapacityInFrames() = 0 ;
+	virtual int __cdecl getBufferSizeInFrames() = 0 ;
+	virtual int __cdecl getChannelConfiguration() = 0 ;
+	virtual int __cdecl getChannelCount() = 0 ;
+	virtual _di_JAudioFormat __cdecl getFormat() = 0 ;
+	virtual int __cdecl getNotificationMarkerPosition() = 0 ;
+	virtual int __cdecl getPerformanceMode() = 0 ;
+	virtual int __cdecl getPlayState() = 0 ;
+	virtual int __cdecl getPlaybackHeadPosition() = 0 ;
+	virtual _di_JPlaybackParams __cdecl getPlaybackParams() = 0 ;
+	virtual int __cdecl getPlaybackRate() = 0 ;
+	virtual int __cdecl getPositionNotificationPeriod() = 0 ;
+	virtual _di_JAudioDeviceInfo __cdecl getPreferredDevice() = 0 ;
+	virtual _di_JAudioDeviceInfo __cdecl getRoutedDevice() = 0 ;
+	virtual int __cdecl getSampleRate() = 0 ;
+	virtual int __cdecl getState() = 0 ;
+	virtual int __cdecl getStreamType() = 0 ;
+	virtual bool __cdecl getTimestamp(_di_JAudioTimestamp timestamp) = 0 ;
+	virtual int __cdecl getUnderrunCount() = 0 ;
+	virtual void __cdecl pause() = 0 ;
+	virtual void __cdecl play() = 0 ;
+	virtual void __cdecl release() = 0 ;
+	virtual int __cdecl reloadStaticData() = 0 ;
+	virtual void __cdecl removeOnRoutingChangedListener(_di_JAudioRouting_OnRoutingChangedListener listener) = 0 /* overload */;
+	virtual void __cdecl removeOnRoutingChangedListener(_di_JAudioTrack_OnRoutingChangedListener listener) = 0 /* overload */;
+	virtual int __cdecl setAuxEffectSendLevel(float level) = 0 ;
+	virtual int __cdecl setBufferSizeInFrames(int bufferSizeInFrames) = 0 ;
+	virtual int __cdecl setLoopPoints(int startInFrames, int endInFrames, int loopCount) = 0 ;
+	virtual int __cdecl setNotificationMarkerPosition(int markerInFrames) = 0 ;
+	virtual int __cdecl setPlaybackHeadPosition(int positionInFrames) = 0 ;
+	virtual void __cdecl setPlaybackParams(_di_JPlaybackParams params) = 0 ;
+	virtual void __cdecl setPlaybackPositionUpdateListener(_di_JAudioTrack_OnPlaybackPositionUpdateListener listener) = 0 /* overload */;
+	virtual void __cdecl setPlaybackPositionUpdateListener(_di_JAudioTrack_OnPlaybackPositionUpdateListener listener, Androidapi::Jni::Os::_di_JHandler handler) = 0 /* overload */;
+	virtual int __cdecl setPlaybackRate(int sampleRateInHz) = 0 ;
+	virtual int __cdecl setPositionNotificationPeriod(int periodInFrames) = 0 ;
+	virtual bool __cdecl setPreferredDevice(_di_JAudioDeviceInfo deviceInfo) = 0 ;
+	virtual int __cdecl setStereoVolume(float leftGain, float rightGain) = 0 ;
+	virtual int __cdecl setVolume(float gain) = 0 ;
+	virtual void __cdecl stop() = 0 ;
+	virtual int __cdecl write(Androidapi::Jnibridge::TJavaArray__1<System::Byte>* audioData, int offsetInBytes, int sizeInBytes) = 0 /* overload */;
+	virtual int __cdecl write(Androidapi::Jnibridge::TJavaArray__1<System::Byte>* audioData, int offsetInBytes, int sizeInBytes, int writeMode) = 0 /* overload */;
+	virtual int __cdecl write(Androidapi::Jnibridge::TJavaArray__1<short>* audioData, int offsetInShorts, int sizeInShorts) = 0 /* overload */;
+	virtual int __cdecl write(Androidapi::Jnibridge::TJavaArray__1<short>* audioData, int offsetInShorts, int sizeInShorts, int writeMode) = 0 /* overload */;
+	virtual int __cdecl write(Androidapi::Jnibridge::TJavaArray__1<float>* audioData, int offsetInFloats, int sizeInFloats, int writeMode) = 0 /* overload */;
+	virtual int __cdecl write(Androidapi::Jni::Javatypes::_di_JByteBuffer audioData, int sizeInBytes, int writeMode) = 0 /* overload */;
+	virtual int __cdecl write(Androidapi::Jni::Javatypes::_di_JByteBuffer audioData, int sizeInBytes, int writeMode, __int64 timestamp) = 0 /* overload */;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJAudioTrack : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JAudioTrackClass,_di_JAudioTrack>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JAudioTrackClass,_di_JAudioTrack> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJAudioTrack() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JAudioTrackClass,_di_JAudioTrack>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJAudioTrack() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{0F1ED02C-DB93-4597-B733-1A0398EBBBEF}") JAudioTrack_BuilderClass  : public Androidapi::Jni::Javatypes::JObjectClass 
+{
+	HIDESBASE virtual _di_JAudioTrack_Builder __cdecl init() = 0 ;
+};
+
+__interface  INTERFACE_UUID("{6D4E424C-4AC6-4F46-89CF-A08F472B5B10}") JAudioTrack_Builder  : public Androidapi::Jni::Javatypes::JObject 
+{
+	virtual _di_JAudioTrack __cdecl build() = 0 ;
+	virtual _di_JAudioTrack_Builder __cdecl setAudioAttributes(_di_JAudioAttributes attributes) = 0 ;
+	virtual _di_JAudioTrack_Builder __cdecl setAudioFormat(_di_JAudioFormat format) = 0 ;
+	virtual _di_JAudioTrack_Builder __cdecl setBufferSizeInBytes(int bufferSizeInBytes) = 0 ;
+	virtual _di_JAudioTrack_Builder __cdecl setPerformanceMode(int performanceMode) = 0 ;
+	virtual _di_JAudioTrack_Builder __cdecl setSessionId(int sessionId) = 0 ;
+	virtual _di_JAudioTrack_Builder __cdecl setTransferMode(int mode) = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJAudioTrack_Builder : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JAudioTrack_BuilderClass,_di_JAudioTrack_Builder>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JAudioTrack_BuilderClass,_di_JAudioTrack_Builder> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJAudioTrack_Builder() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JAudioTrack_BuilderClass,_di_JAudioTrack_Builder>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJAudioTrack_Builder() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{8D53A876-1D82-45AE-87A9-26C1E7CF5736}") JAudioTrack_OnPlaybackPositionUpdateListenerClass  : public Androidapi::Jnibridge::IJavaClass 
+{
+	
+};
+
+__interface  INTERFACE_UUID("{71399D16-1559-485C-900C-D25CFD06E25B}") JAudioTrack_OnPlaybackPositionUpdateListener  : public Androidapi::Jnibridge::IJavaInstance 
+{
+	virtual void __cdecl onMarkerReached(_di_JAudioTrack track) = 0 ;
+	virtual void __cdecl onPeriodicNotification(_di_JAudioTrack track) = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJAudioTrack_OnPlaybackPositionUpdateListener : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JAudioTrack_OnPlaybackPositionUpdateListenerClass,_di_JAudioTrack_OnPlaybackPositionUpdateListener>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JAudioTrack_OnPlaybackPositionUpdateListenerClass,_di_JAudioTrack_OnPlaybackPositionUpdateListener> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJAudioTrack_OnPlaybackPositionUpdateListener() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JAudioTrack_OnPlaybackPositionUpdateListenerClass,_di_JAudioTrack_OnPlaybackPositionUpdateListener>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJAudioTrack_OnPlaybackPositionUpdateListener() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{829B450B-0CC6-4FD8-A7DE-776EC46D97BE}") JAudioTrack_OnRoutingChangedListenerClass  : public JAudioRouting_OnRoutingChangedListenerClass 
+{
+	
+};
+
+__interface  INTERFACE_UUID("{C5DE60E1-8A6B-4607-AA9B-EFBF0ACB5C35}") JAudioTrack_OnRoutingChangedListener  : public JAudioRouting_OnRoutingChangedListener 
+{
+	HIDESBASE virtual void __cdecl onRoutingChanged(_di_JAudioTrack audioTrack) = 0 /* overload */;
+	HIDESBASE virtual void __cdecl onRoutingChanged(_di_JAudioRouting router) = 0 /* overload */;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJAudioTrack_OnRoutingChangedListener : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JAudioTrack_OnRoutingChangedListenerClass,_di_JAudioTrack_OnRoutingChangedListener>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JAudioTrack_OnRoutingChangedListenerClass,_di_JAudioTrack_OnRoutingChangedListener> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJAudioTrack_OnRoutingChangedListener() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JAudioTrack_OnRoutingChangedListenerClass,_di_JAudioTrack_OnRoutingChangedListener>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJAudioTrack_OnRoutingChangedListener() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{74CB0E77-4E93-4724-A3AA-EEE1C29C90AD}") JCamcorderProfileClass  : public Androidapi::Jni::Javatypes::JObjectClass 
+{
+	virtual int __cdecl _GetQUALITY_1080P() = 0 ;
+	virtual int __cdecl _GetQUALITY_2160P() = 0 ;
+	virtual int __cdecl _GetQUALITY_480P() = 0 ;
+	virtual int __cdecl _GetQUALITY_720P() = 0 ;
+	virtual int __cdecl _GetQUALITY_CIF() = 0 ;
+	virtual int __cdecl _GetQUALITY_HIGH() = 0 ;
+	virtual int __cdecl _GetQUALITY_HIGH_SPEED_1080P() = 0 ;
+	virtual int __cdecl _GetQUALITY_HIGH_SPEED_2160P() = 0 ;
+	virtual int __cdecl _GetQUALITY_HIGH_SPEED_480P() = 0 ;
+	virtual int __cdecl _GetQUALITY_HIGH_SPEED_720P() = 0 ;
+	virtual int __cdecl _GetQUALITY_HIGH_SPEED_HIGH() = 0 ;
+	virtual int __cdecl _GetQUALITY_HIGH_SPEED_LOW() = 0 ;
+	virtual int __cdecl _GetQUALITY_LOW() = 0 ;
+	virtual int __cdecl _GetQUALITY_QCIF() = 0 ;
+	virtual int __cdecl _GetQUALITY_QVGA() = 0 ;
+	virtual int __cdecl _GetQUALITY_TIME_LAPSE_1080P() = 0 ;
+	virtual int __cdecl _GetQUALITY_TIME_LAPSE_2160P() = 0 ;
+	virtual int __cdecl _GetQUALITY_TIME_LAPSE_480P() = 0 ;
+	virtual int __cdecl _GetQUALITY_TIME_LAPSE_720P() = 0 ;
+	virtual int __cdecl _GetQUALITY_TIME_LAPSE_CIF() = 0 ;
+	virtual int __cdecl _GetQUALITY_TIME_LAPSE_HIGH() = 0 ;
+	virtual int __cdecl _GetQUALITY_TIME_LAPSE_LOW() = 0 ;
+	virtual int __cdecl _GetQUALITY_TIME_LAPSE_QCIF() = 0 ;
+	virtual int __cdecl _GetQUALITY_TIME_LAPSE_QVGA() = 0 ;
+	virtual _di_JCamcorderProfile __cdecl get(int quality) = 0 /* overload */;
+	virtual _di_JCamcorderProfile __cdecl get(int cameraId, int quality) = 0 /* overload */;
+	virtual bool __cdecl hasProfile(int quality) = 0 /* overload */;
+	virtual bool __cdecl hasProfile(int cameraId, int quality) = 0 /* overload */;
+	__property int QUALITY_1080P = {read=_GetQUALITY_1080P};
+	__property int QUALITY_2160P = {read=_GetQUALITY_2160P};
+	__property int QUALITY_480P = {read=_GetQUALITY_480P};
+	__property int QUALITY_720P = {read=_GetQUALITY_720P};
+	__property int QUALITY_CIF = {read=_GetQUALITY_CIF};
+	__property int QUALITY_HIGH = {read=_GetQUALITY_HIGH};
+	__property int QUALITY_HIGH_SPEED_1080P = {read=_GetQUALITY_HIGH_SPEED_1080P};
+	__property int QUALITY_HIGH_SPEED_2160P = {read=_GetQUALITY_HIGH_SPEED_2160P};
+	__property int QUALITY_HIGH_SPEED_480P = {read=_GetQUALITY_HIGH_SPEED_480P};
+	__property int QUALITY_HIGH_SPEED_720P = {read=_GetQUALITY_HIGH_SPEED_720P};
+	__property int QUALITY_HIGH_SPEED_HIGH = {read=_GetQUALITY_HIGH_SPEED_HIGH};
+	__property int QUALITY_HIGH_SPEED_LOW = {read=_GetQUALITY_HIGH_SPEED_LOW};
+	__property int QUALITY_LOW = {read=_GetQUALITY_LOW};
+	__property int QUALITY_QCIF = {read=_GetQUALITY_QCIF};
+	__property int QUALITY_QVGA = {read=_GetQUALITY_QVGA};
+	__property int QUALITY_TIME_LAPSE_1080P = {read=_GetQUALITY_TIME_LAPSE_1080P};
+	__property int QUALITY_TIME_LAPSE_2160P = {read=_GetQUALITY_TIME_LAPSE_2160P};
+	__property int QUALITY_TIME_LAPSE_480P = {read=_GetQUALITY_TIME_LAPSE_480P};
+	__property int QUALITY_TIME_LAPSE_720P = {read=_GetQUALITY_TIME_LAPSE_720P};
+	__property int QUALITY_TIME_LAPSE_CIF = {read=_GetQUALITY_TIME_LAPSE_CIF};
+	__property int QUALITY_TIME_LAPSE_HIGH = {read=_GetQUALITY_TIME_LAPSE_HIGH};
+	__property int QUALITY_TIME_LAPSE_LOW = {read=_GetQUALITY_TIME_LAPSE_LOW};
+	__property int QUALITY_TIME_LAPSE_QCIF = {read=_GetQUALITY_TIME_LAPSE_QCIF};
+	__property int QUALITY_TIME_LAPSE_QVGA = {read=_GetQUALITY_TIME_LAPSE_QVGA};
+};
+
+__interface  INTERFACE_UUID("{2957E3CA-A488-4829-84DE-F15DEA6F7FFB}") JCamcorderProfile  : public Androidapi::Jni::Javatypes::JObject 
+{
+	virtual int __cdecl _GetaudioBitRate() = 0 ;
+	virtual void __cdecl _SetaudioBitRate(int Value) = 0 ;
+	virtual int __cdecl _GetaudioChannels() = 0 ;
+	virtual void __cdecl _SetaudioChannels(int Value) = 0 ;
+	virtual int __cdecl _GetaudioCodec() = 0 ;
+	virtual void __cdecl _SetaudioCodec(int Value) = 0 ;
+	virtual int __cdecl _GetaudioSampleRate() = 0 ;
+	virtual void __cdecl _SetaudioSampleRate(int Value) = 0 ;
+	virtual int __cdecl _Getduration() = 0 ;
+	virtual void __cdecl _Setduration(int Value) = 0 ;
+	virtual int __cdecl _GetfileFormat() = 0 ;
+	virtual void __cdecl _SetfileFormat(int Value) = 0 ;
+	virtual int __cdecl _Getquality() = 0 ;
+	virtual void __cdecl _Setquality(int Value) = 0 ;
+	virtual int __cdecl _GetvideoBitRate() = 0 ;
+	virtual void __cdecl _SetvideoBitRate(int Value) = 0 ;
+	virtual int __cdecl _GetvideoCodec() = 0 ;
+	virtual void __cdecl _SetvideoCodec(int Value) = 0 ;
+	virtual int __cdecl _GetvideoFrameHeight() = 0 ;
+	virtual void __cdecl _SetvideoFrameHeight(int Value) = 0 ;
+	virtual int __cdecl _GetvideoFrameRate() = 0 ;
+	virtual void __cdecl _SetvideoFrameRate(int Value) = 0 ;
+	virtual int __cdecl _GetvideoFrameWidth() = 0 ;
+	virtual void __cdecl _SetvideoFrameWidth(int Value) = 0 ;
+	__property int audioBitRate = {read=_GetaudioBitRate, write=_SetaudioBitRate};
+	__property int audioChannels = {read=_GetaudioChannels, write=_SetaudioChannels};
+	__property int audioCodec = {read=_GetaudioCodec, write=_SetaudioCodec};
+	__property int audioSampleRate = {read=_GetaudioSampleRate, write=_SetaudioSampleRate};
+	__property int duration = {read=_Getduration, write=_Setduration};
+	__property int fileFormat = {read=_GetfileFormat, write=_SetfileFormat};
+	__property int quality = {read=_Getquality, write=_Setquality};
+	__property int videoBitRate = {read=_GetvideoBitRate, write=_SetvideoBitRate};
+	__property int videoCodec = {read=_GetvideoCodec, write=_SetvideoCodec};
+	__property int videoFrameHeight = {read=_GetvideoFrameHeight, write=_SetvideoFrameHeight};
+	__property int videoFrameRate = {read=_GetvideoFrameRate, write=_SetvideoFrameRate};
+	__property int videoFrameWidth = {read=_GetvideoFrameWidth, write=_SetvideoFrameWidth};
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJCamcorderProfile : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JCamcorderProfileClass,_di_JCamcorderProfile>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JCamcorderProfileClass,_di_JCamcorderProfile> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJCamcorderProfile() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JCamcorderProfileClass,_di_JCamcorderProfile>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJCamcorderProfile() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{60E4B807-EC20-448E-86E5-DC8FE661FCEF}") JCameraProfileClass  : public Androidapi::Jni::Javatypes::JObjectClass 
+{
+	virtual int __cdecl _GetQUALITY_HIGH() = 0 ;
+	virtual int __cdecl _GetQUALITY_LOW() = 0 ;
+	virtual int __cdecl _GetQUALITY_MEDIUM() = 0 ;
+	HIDESBASE virtual _di_JCameraProfile __cdecl init() = 0 ;
+	virtual int __cdecl getJpegEncodingQualityParameter(int quality) = 0 /* overload */;
+	virtual int __cdecl getJpegEncodingQualityParameter(int cameraId, int quality) = 0 /* overload */;
+	__property int QUALITY_HIGH = {read=_GetQUALITY_HIGH};
+	__property int QUALITY_LOW = {read=_GetQUALITY_LOW};
+	__property int QUALITY_MEDIUM = {read=_GetQUALITY_MEDIUM};
+};
+
+__interface  INTERFACE_UUID("{D149134A-7FEF-4216-B46B-F7E2E2F3C919}") JCameraProfile  : public Androidapi::Jni::Javatypes::JObject 
+{
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJCameraProfile : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JCameraProfileClass,_di_JCameraProfile>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JCameraProfileClass,_di_JCameraProfile> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJCameraProfile() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JCameraProfileClass,_di_JCameraProfile>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJCameraProfile() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{2E43AF16-EDE3-44E4-B99F-46BC9B38C242}") JMediaDrmExceptionClass  : public Androidapi::Jni::Javatypes::JExceptionClass 
+{
+	HIDESBASE virtual _di_JMediaDrmException __cdecl init(Androidapi::Jni::Javatypes::_di_JString detailMessage) = 0 ;
+};
+
+__interface  INTERFACE_UUID("{3E068C5A-026A-4E02-BCA4-C37659511F93}") JMediaDrmException  : public Androidapi::Jni::Javatypes::JException 
+{
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJMediaDrmException : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMediaDrmExceptionClass,_di_JMediaDrmException>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMediaDrmExceptionClass,_di_JMediaDrmException> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJMediaDrmException() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMediaDrmExceptionClass,_di_JMediaDrmException>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJMediaDrmException() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{A810E72B-E334-42EC-BAC0-715B71FE2412}") JDeniedByServerExceptionClass  : public JMediaDrmExceptionClass 
+{
+	HIDESBASE virtual _di_JDeniedByServerException __cdecl init(Androidapi::Jni::Javatypes::_di_JString detailMessage) = 0 ;
+};
+
+__interface  INTERFACE_UUID("{14535695-BF59-4A81-BC49-E8F5FD94F3BF}") JDeniedByServerException  : public JMediaDrmException 
+{
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJDeniedByServerException : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JDeniedByServerExceptionClass,_di_JDeniedByServerException>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JDeniedByServerExceptionClass,_di_JDeniedByServerException> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJDeniedByServerException() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JDeniedByServerExceptionClass,_di_JDeniedByServerException>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJDeniedByServerException() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{92C9D930-9381-4A30-8D6B-4E1F77FE4607}") JDrmInitDataClass  : public Androidapi::Jni::Javatypes::JObjectClass 
+{
+	
+};
+
+__interface  INTERFACE_UUID("{BF72C262-0872-4C51-A07D-07687A0C0574}") JDrmInitData  : public Androidapi::Jni::Javatypes::JObject 
+{
+	virtual _di_JDrmInitData_SchemeInitData __cdecl get(Androidapi::Jni::Javatypes::_di_JUUID schemeUuid) = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJDrmInitData : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JDrmInitDataClass,_di_JDrmInitData>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JDrmInitDataClass,_di_JDrmInitData> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJDrmInitData() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JDrmInitDataClass,_di_JDrmInitData>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJDrmInitData() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{C585F665-4418-4953-9725-713F3D31E8EB}") JDrmInitData_SchemeInitDataClass  : public Androidapi::Jni::Javatypes::JObjectClass 
+{
+	
+};
+
+__interface  INTERFACE_UUID("{AB97D8C5-87E7-42F0-80E8-5CB0F196A8F4}") JDrmInitData_SchemeInitData  : public Androidapi::Jni::Javatypes::JObject 
+{
+	virtual Androidapi::Jnibridge::TJavaArray__1<System::Byte>* __cdecl _Getdata() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetmimeType() = 0 ;
+	HIDESBASE virtual bool __cdecl equals(Androidapi::Jni::Javatypes::_di_JObject obj) = 0 ;
+	HIDESBASE virtual int __cdecl hashCode() = 0 ;
+	__property Androidapi::Jnibridge::TJavaArray__1<System::Byte>* data = {read=_Getdata};
+	__property Androidapi::Jni::Javatypes::_di_JString mimeType = {read=_GetmimeType};
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJDrmInitData_SchemeInitData : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JDrmInitData_SchemeInitDataClass,_di_JDrmInitData_SchemeInitData>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JDrmInitData_SchemeInitDataClass,_di_JDrmInitData_SchemeInitData> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJDrmInitData_SchemeInitData() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JDrmInitData_SchemeInitDataClass,_di_JDrmInitData_SchemeInitData>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJDrmInitData_SchemeInitData() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{023B6C11-488A-4106-9562-9DE6A3B3305C}") JExifInterfaceClass  : public Androidapi::Jni::Javatypes::JObjectClass 
+{
+	virtual int __cdecl _GetORIENTATION_FLIP_HORIZONTAL() = 0 ;
+	virtual int __cdecl _GetORIENTATION_FLIP_VERTICAL() = 0 ;
+	virtual int __cdecl _GetORIENTATION_NORMAL() = 0 ;
+	virtual int __cdecl _GetORIENTATION_ROTATE_180() = 0 ;
+	virtual int __cdecl _GetORIENTATION_ROTATE_270() = 0 ;
+	virtual int __cdecl _GetORIENTATION_ROTATE_90() = 0 ;
+	virtual int __cdecl _GetORIENTATION_TRANSPOSE() = 0 ;
+	virtual int __cdecl _GetORIENTATION_TRANSVERSE() = 0 ;
+	virtual int __cdecl _GetORIENTATION_UNDEFINED() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetTAG_APERTURE() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetTAG_APERTURE_VALUE() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetTAG_ARTIST() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetTAG_BITS_PER_SAMPLE() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetTAG_BRIGHTNESS_VALUE() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetTAG_CFA_PATTERN() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetTAG_COLOR_SPACE() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetTAG_COMPONENTS_CONFIGURATION() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetTAG_COMPRESSED_BITS_PER_PIXEL() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetTAG_COMPRESSION() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetTAG_CONTRAST() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetTAG_COPYRIGHT() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetTAG_CUSTOM_RENDERED() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetTAG_DATETIME() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetTAG_DATETIME_DIGITIZED() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetTAG_DATETIME_ORIGINAL() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetTAG_DEFAULT_CROP_SIZE() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetTAG_DEVICE_SETTING_DESCRIPTION() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetTAG_DIGITAL_ZOOM_RATIO() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetTAG_DNG_VERSION() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetTAG_EXIF_VERSION() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetTAG_EXPOSURE_BIAS_VALUE() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetTAG_EXPOSURE_INDEX() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetTAG_EXPOSURE_MODE() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetTAG_EXPOSURE_PROGRAM() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetTAG_EXPOSURE_TIME() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetTAG_FILE_SOURCE() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetTAG_FLASH() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetTAG_FLASHPIX_VERSION() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetTAG_FLASH_ENERGY() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetTAG_FOCAL_LENGTH() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetTAG_FOCAL_LENGTH_IN_35MM_FILM() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetTAG_FOCAL_PLANE_RESOLUTION_UNIT() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetTAG_FOCAL_PLANE_X_RESOLUTION() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetTAG_FOCAL_PLANE_Y_RESOLUTION() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetTAG_F_NUMBER() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetTAG_GAIN_CONTROL() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetTAG_GPS_ALTITUDE() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetTAG_GPS_ALTITUDE_REF() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetTAG_GPS_AREA_INFORMATION() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetTAG_GPS_DATESTAMP() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetTAG_GPS_DEST_BEARING() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetTAG_GPS_DEST_BEARING_REF() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetTAG_GPS_DEST_DISTANCE() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetTAG_GPS_DEST_DISTANCE_REF() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetTAG_GPS_DEST_LATITUDE() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetTAG_GPS_DEST_LATITUDE_REF() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetTAG_GPS_DEST_LONGITUDE() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetTAG_GPS_DEST_LONGITUDE_REF() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetTAG_GPS_DIFFERENTIAL() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetTAG_GPS_DOP() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetTAG_GPS_IMG_DIRECTION() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetTAG_GPS_IMG_DIRECTION_REF() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetTAG_GPS_LATITUDE() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetTAG_GPS_LATITUDE_REF() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetTAG_GPS_LONGITUDE() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetTAG_GPS_LONGITUDE_REF() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetTAG_GPS_MAP_DATUM() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetTAG_GPS_MEASURE_MODE() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetTAG_GPS_PROCESSING_METHOD() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetTAG_GPS_SATELLITES() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetTAG_GPS_SPEED() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetTAG_GPS_SPEED_REF() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetTAG_GPS_STATUS() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetTAG_GPS_TIMESTAMP() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetTAG_GPS_TRACK() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetTAG_GPS_TRACK_REF() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetTAG_GPS_VERSION_ID() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetTAG_IMAGE_DESCRIPTION() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetTAG_IMAGE_LENGTH() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetTAG_IMAGE_UNIQUE_ID() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetTAG_IMAGE_WIDTH() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetTAG_INTEROPERABILITY_INDEX() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetTAG_ISO() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetTAG_ISO_SPEED_RATINGS() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetTAG_JPEG_INTERCHANGE_FORMAT() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetTAG_JPEG_INTERCHANGE_FORMAT_LENGTH() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetTAG_LIGHT_SOURCE() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetTAG_MAKE() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetTAG_MAKER_NOTE() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetTAG_MAX_APERTURE_VALUE() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetTAG_METERING_MODE() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetTAG_MODEL() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetTAG_NEW_SUBFILE_TYPE() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetTAG_OECF() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetTAG_ORF_ASPECT_FRAME() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetTAG_ORF_PREVIEW_IMAGE_LENGTH() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetTAG_ORF_PREVIEW_IMAGE_START() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetTAG_ORF_THUMBNAIL_IMAGE() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetTAG_ORIENTATION() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetTAG_PHOTOMETRIC_INTERPRETATION() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetTAG_PIXEL_X_DIMENSION() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetTAG_PIXEL_Y_DIMENSION() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetTAG_PLANAR_CONFIGURATION() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetTAG_PRIMARY_CHROMATICITIES() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetTAG_REFERENCE_BLACK_WHITE() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetTAG_RELATED_SOUND_FILE() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetTAG_RESOLUTION_UNIT() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetTAG_ROWS_PER_STRIP() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetTAG_RW2_ISO() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetTAG_RW2_JPG_FROM_RAW() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetTAG_RW2_SENSOR_BOTTOM_BORDER() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetTAG_RW2_SENSOR_LEFT_BORDER() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetTAG_RW2_SENSOR_RIGHT_BORDER() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetTAG_RW2_SENSOR_TOP_BORDER() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetTAG_SAMPLES_PER_PIXEL() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetTAG_SATURATION() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetTAG_SCENE_CAPTURE_TYPE() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetTAG_SCENE_TYPE() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetTAG_SENSING_METHOD() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetTAG_SHARPNESS() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetTAG_SHUTTER_SPEED_VALUE() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetTAG_SOFTWARE() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetTAG_SPATIAL_FREQUENCY_RESPONSE() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetTAG_SPECTRAL_SENSITIVITY() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetTAG_STRIP_BYTE_COUNTS() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetTAG_STRIP_OFFSETS() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetTAG_SUBFILE_TYPE() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetTAG_SUBJECT_AREA() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetTAG_SUBJECT_DISTANCE() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetTAG_SUBJECT_DISTANCE_RANGE() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetTAG_SUBJECT_LOCATION() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetTAG_SUBSEC_TIME() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetTAG_SUBSEC_TIME_DIG() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetTAG_SUBSEC_TIME_DIGITIZED() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetTAG_SUBSEC_TIME_ORIG() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetTAG_SUBSEC_TIME_ORIGINAL() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetTAG_THUMBNAIL_IMAGE_LENGTH() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetTAG_THUMBNAIL_IMAGE_WIDTH() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetTAG_TRANSFER_FUNCTION() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetTAG_USER_COMMENT() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetTAG_WHITE_BALANCE() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetTAG_WHITE_POINT() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetTAG_X_RESOLUTION() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetTAG_Y_CB_CR_COEFFICIENTS() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetTAG_Y_CB_CR_POSITIONING() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetTAG_Y_CB_CR_SUB_SAMPLING() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetTAG_Y_RESOLUTION() = 0 ;
+	virtual int __cdecl _GetWHITEBALANCE_AUTO() = 0 ;
+	virtual int __cdecl _GetWHITEBALANCE_MANUAL() = 0 ;
+	HIDESBASE virtual _di_JExifInterface __cdecl init(Androidapi::Jni::Javatypes::_di_JString filename) = 0 /* overload */;
+	HIDESBASE virtual _di_JExifInterface __cdecl init(Androidapi::Jni::Javatypes::_di_JFileDescriptor fileDescriptor) = 0 /* overload */;
+	HIDESBASE virtual _di_JExifInterface __cdecl init(Androidapi::Jni::Javatypes::_di_JInputStream inputStream) = 0 /* overload */;
+	__property int ORIENTATION_FLIP_HORIZONTAL = {read=_GetORIENTATION_FLIP_HORIZONTAL};
+	__property int ORIENTATION_FLIP_VERTICAL = {read=_GetORIENTATION_FLIP_VERTICAL};
+	__property int ORIENTATION_NORMAL = {read=_GetORIENTATION_NORMAL};
+	__property int ORIENTATION_ROTATE_180 = {read=_GetORIENTATION_ROTATE_180};
+	__property int ORIENTATION_ROTATE_270 = {read=_GetORIENTATION_ROTATE_270};
+	__property int ORIENTATION_ROTATE_90 = {read=_GetORIENTATION_ROTATE_90};
+	__property int ORIENTATION_TRANSPOSE = {read=_GetORIENTATION_TRANSPOSE};
+	__property int ORIENTATION_TRANSVERSE = {read=_GetORIENTATION_TRANSVERSE};
+	__property int ORIENTATION_UNDEFINED = {read=_GetORIENTATION_UNDEFINED};
+	__property Androidapi::Jni::Javatypes::_di_JString TAG_APERTURE = {read=_GetTAG_APERTURE};
+	__property Androidapi::Jni::Javatypes::_di_JString TAG_APERTURE_VALUE = {read=_GetTAG_APERTURE_VALUE};
+	__property Androidapi::Jni::Javatypes::_di_JString TAG_ARTIST = {read=_GetTAG_ARTIST};
+	__property Androidapi::Jni::Javatypes::_di_JString TAG_BITS_PER_SAMPLE = {read=_GetTAG_BITS_PER_SAMPLE};
+	__property Androidapi::Jni::Javatypes::_di_JString TAG_BRIGHTNESS_VALUE = {read=_GetTAG_BRIGHTNESS_VALUE};
+	__property Androidapi::Jni::Javatypes::_di_JString TAG_CFA_PATTERN = {read=_GetTAG_CFA_PATTERN};
+	__property Androidapi::Jni::Javatypes::_di_JString TAG_COLOR_SPACE = {read=_GetTAG_COLOR_SPACE};
+	__property Androidapi::Jni::Javatypes::_di_JString TAG_COMPONENTS_CONFIGURATION = {read=_GetTAG_COMPONENTS_CONFIGURATION};
+	__property Androidapi::Jni::Javatypes::_di_JString TAG_COMPRESSED_BITS_PER_PIXEL = {read=_GetTAG_COMPRESSED_BITS_PER_PIXEL};
+	__property Androidapi::Jni::Javatypes::_di_JString TAG_COMPRESSION = {read=_GetTAG_COMPRESSION};
+	__property Androidapi::Jni::Javatypes::_di_JString TAG_CONTRAST = {read=_GetTAG_CONTRAST};
+	__property Androidapi::Jni::Javatypes::_di_JString TAG_COPYRIGHT = {read=_GetTAG_COPYRIGHT};
+	__property Androidapi::Jni::Javatypes::_di_JString TAG_CUSTOM_RENDERED = {read=_GetTAG_CUSTOM_RENDERED};
+	__property Androidapi::Jni::Javatypes::_di_JString TAG_DATETIME = {read=_GetTAG_DATETIME};
+	__property Androidapi::Jni::Javatypes::_di_JString TAG_DATETIME_DIGITIZED = {read=_GetTAG_DATETIME_DIGITIZED};
+	__property Androidapi::Jni::Javatypes::_di_JString TAG_DATETIME_ORIGINAL = {read=_GetTAG_DATETIME_ORIGINAL};
+	__property Androidapi::Jni::Javatypes::_di_JString TAG_DEFAULT_CROP_SIZE = {read=_GetTAG_DEFAULT_CROP_SIZE};
+	__property Androidapi::Jni::Javatypes::_di_JString TAG_DEVICE_SETTING_DESCRIPTION = {read=_GetTAG_DEVICE_SETTING_DESCRIPTION};
+	__property Androidapi::Jni::Javatypes::_di_JString TAG_DIGITAL_ZOOM_RATIO = {read=_GetTAG_DIGITAL_ZOOM_RATIO};
+	__property Androidapi::Jni::Javatypes::_di_JString TAG_DNG_VERSION = {read=_GetTAG_DNG_VERSION};
+	__property Androidapi::Jni::Javatypes::_di_JString TAG_EXIF_VERSION = {read=_GetTAG_EXIF_VERSION};
+	__property Androidapi::Jni::Javatypes::_di_JString TAG_EXPOSURE_BIAS_VALUE = {read=_GetTAG_EXPOSURE_BIAS_VALUE};
+	__property Androidapi::Jni::Javatypes::_di_JString TAG_EXPOSURE_INDEX = {read=_GetTAG_EXPOSURE_INDEX};
+	__property Androidapi::Jni::Javatypes::_di_JString TAG_EXPOSURE_MODE = {read=_GetTAG_EXPOSURE_MODE};
+	__property Androidapi::Jni::Javatypes::_di_JString TAG_EXPOSURE_PROGRAM = {read=_GetTAG_EXPOSURE_PROGRAM};
+	__property Androidapi::Jni::Javatypes::_di_JString TAG_EXPOSURE_TIME = {read=_GetTAG_EXPOSURE_TIME};
+	__property Androidapi::Jni::Javatypes::_di_JString TAG_FILE_SOURCE = {read=_GetTAG_FILE_SOURCE};
+	__property Androidapi::Jni::Javatypes::_di_JString TAG_FLASH = {read=_GetTAG_FLASH};
+	__property Androidapi::Jni::Javatypes::_di_JString TAG_FLASHPIX_VERSION = {read=_GetTAG_FLASHPIX_VERSION};
+	__property Androidapi::Jni::Javatypes::_di_JString TAG_FLASH_ENERGY = {read=_GetTAG_FLASH_ENERGY};
+	__property Androidapi::Jni::Javatypes::_di_JString TAG_FOCAL_LENGTH = {read=_GetTAG_FOCAL_LENGTH};
+	__property Androidapi::Jni::Javatypes::_di_JString TAG_FOCAL_LENGTH_IN_35MM_FILM = {read=_GetTAG_FOCAL_LENGTH_IN_35MM_FILM};
+	__property Androidapi::Jni::Javatypes::_di_JString TAG_FOCAL_PLANE_RESOLUTION_UNIT = {read=_GetTAG_FOCAL_PLANE_RESOLUTION_UNIT};
+	__property Androidapi::Jni::Javatypes::_di_JString TAG_FOCAL_PLANE_X_RESOLUTION = {read=_GetTAG_FOCAL_PLANE_X_RESOLUTION};
+	__property Androidapi::Jni::Javatypes::_di_JString TAG_FOCAL_PLANE_Y_RESOLUTION = {read=_GetTAG_FOCAL_PLANE_Y_RESOLUTION};
+	__property Androidapi::Jni::Javatypes::_di_JString TAG_F_NUMBER = {read=_GetTAG_F_NUMBER};
+	__property Androidapi::Jni::Javatypes::_di_JString TAG_GAIN_CONTROL = {read=_GetTAG_GAIN_CONTROL};
+	__property Androidapi::Jni::Javatypes::_di_JString TAG_GPS_ALTITUDE = {read=_GetTAG_GPS_ALTITUDE};
+	__property Androidapi::Jni::Javatypes::_di_JString TAG_GPS_ALTITUDE_REF = {read=_GetTAG_GPS_ALTITUDE_REF};
+	__property Androidapi::Jni::Javatypes::_di_JString TAG_GPS_AREA_INFORMATION = {read=_GetTAG_GPS_AREA_INFORMATION};
+	__property Androidapi::Jni::Javatypes::_di_JString TAG_GPS_DATESTAMP = {read=_GetTAG_GPS_DATESTAMP};
+	__property Androidapi::Jni::Javatypes::_di_JString TAG_GPS_DEST_BEARING = {read=_GetTAG_GPS_DEST_BEARING};
+	__property Androidapi::Jni::Javatypes::_di_JString TAG_GPS_DEST_BEARING_REF = {read=_GetTAG_GPS_DEST_BEARING_REF};
+	__property Androidapi::Jni::Javatypes::_di_JString TAG_GPS_DEST_DISTANCE = {read=_GetTAG_GPS_DEST_DISTANCE};
+	__property Androidapi::Jni::Javatypes::_di_JString TAG_GPS_DEST_DISTANCE_REF = {read=_GetTAG_GPS_DEST_DISTANCE_REF};
+	__property Androidapi::Jni::Javatypes::_di_JString TAG_GPS_DEST_LATITUDE = {read=_GetTAG_GPS_DEST_LATITUDE};
+	__property Androidapi::Jni::Javatypes::_di_JString TAG_GPS_DEST_LATITUDE_REF = {read=_GetTAG_GPS_DEST_LATITUDE_REF};
+	__property Androidapi::Jni::Javatypes::_di_JString TAG_GPS_DEST_LONGITUDE = {read=_GetTAG_GPS_DEST_LONGITUDE};
+	__property Androidapi::Jni::Javatypes::_di_JString TAG_GPS_DEST_LONGITUDE_REF = {read=_GetTAG_GPS_DEST_LONGITUDE_REF};
+	__property Androidapi::Jni::Javatypes::_di_JString TAG_GPS_DIFFERENTIAL = {read=_GetTAG_GPS_DIFFERENTIAL};
+	__property Androidapi::Jni::Javatypes::_di_JString TAG_GPS_DOP = {read=_GetTAG_GPS_DOP};
+	__property Androidapi::Jni::Javatypes::_di_JString TAG_GPS_IMG_DIRECTION = {read=_GetTAG_GPS_IMG_DIRECTION};
+	__property Androidapi::Jni::Javatypes::_di_JString TAG_GPS_IMG_DIRECTION_REF = {read=_GetTAG_GPS_IMG_DIRECTION_REF};
+	__property Androidapi::Jni::Javatypes::_di_JString TAG_GPS_LATITUDE = {read=_GetTAG_GPS_LATITUDE};
+	__property Androidapi::Jni::Javatypes::_di_JString TAG_GPS_LATITUDE_REF = {read=_GetTAG_GPS_LATITUDE_REF};
+	__property Androidapi::Jni::Javatypes::_di_JString TAG_GPS_LONGITUDE = {read=_GetTAG_GPS_LONGITUDE};
+	__property Androidapi::Jni::Javatypes::_di_JString TAG_GPS_LONGITUDE_REF = {read=_GetTAG_GPS_LONGITUDE_REF};
+	__property Androidapi::Jni::Javatypes::_di_JString TAG_GPS_MAP_DATUM = {read=_GetTAG_GPS_MAP_DATUM};
+	__property Androidapi::Jni::Javatypes::_di_JString TAG_GPS_MEASURE_MODE = {read=_GetTAG_GPS_MEASURE_MODE};
+	__property Androidapi::Jni::Javatypes::_di_JString TAG_GPS_PROCESSING_METHOD = {read=_GetTAG_GPS_PROCESSING_METHOD};
+	__property Androidapi::Jni::Javatypes::_di_JString TAG_GPS_SATELLITES = {read=_GetTAG_GPS_SATELLITES};
+	__property Androidapi::Jni::Javatypes::_di_JString TAG_GPS_SPEED = {read=_GetTAG_GPS_SPEED};
+	__property Androidapi::Jni::Javatypes::_di_JString TAG_GPS_SPEED_REF = {read=_GetTAG_GPS_SPEED_REF};
+	__property Androidapi::Jni::Javatypes::_di_JString TAG_GPS_STATUS = {read=_GetTAG_GPS_STATUS};
+	__property Androidapi::Jni::Javatypes::_di_JString TAG_GPS_TIMESTAMP = {read=_GetTAG_GPS_TIMESTAMP};
+	__property Androidapi::Jni::Javatypes::_di_JString TAG_GPS_TRACK = {read=_GetTAG_GPS_TRACK};
+	__property Androidapi::Jni::Javatypes::_di_JString TAG_GPS_TRACK_REF = {read=_GetTAG_GPS_TRACK_REF};
+	__property Androidapi::Jni::Javatypes::_di_JString TAG_GPS_VERSION_ID = {read=_GetTAG_GPS_VERSION_ID};
+	__property Androidapi::Jni::Javatypes::_di_JString TAG_IMAGE_DESCRIPTION = {read=_GetTAG_IMAGE_DESCRIPTION};
+	__property Androidapi::Jni::Javatypes::_di_JString TAG_IMAGE_LENGTH = {read=_GetTAG_IMAGE_LENGTH};
+	__property Androidapi::Jni::Javatypes::_di_JString TAG_IMAGE_UNIQUE_ID = {read=_GetTAG_IMAGE_UNIQUE_ID};
+	__property Androidapi::Jni::Javatypes::_di_JString TAG_IMAGE_WIDTH = {read=_GetTAG_IMAGE_WIDTH};
+	__property Androidapi::Jni::Javatypes::_di_JString TAG_INTEROPERABILITY_INDEX = {read=_GetTAG_INTEROPERABILITY_INDEX};
+	__property Androidapi::Jni::Javatypes::_di_JString TAG_ISO = {read=_GetTAG_ISO};
+	__property Androidapi::Jni::Javatypes::_di_JString TAG_ISO_SPEED_RATINGS = {read=_GetTAG_ISO_SPEED_RATINGS};
+	__property Androidapi::Jni::Javatypes::_di_JString TAG_JPEG_INTERCHANGE_FORMAT = {read=_GetTAG_JPEG_INTERCHANGE_FORMAT};
+	__property Androidapi::Jni::Javatypes::_di_JString TAG_JPEG_INTERCHANGE_FORMAT_LENGTH = {read=_GetTAG_JPEG_INTERCHANGE_FORMAT_LENGTH};
+	__property Androidapi::Jni::Javatypes::_di_JString TAG_LIGHT_SOURCE = {read=_GetTAG_LIGHT_SOURCE};
+	__property Androidapi::Jni::Javatypes::_di_JString TAG_MAKE = {read=_GetTAG_MAKE};
+	__property Androidapi::Jni::Javatypes::_di_JString TAG_MAKER_NOTE = {read=_GetTAG_MAKER_NOTE};
+	__property Androidapi::Jni::Javatypes::_di_JString TAG_MAX_APERTURE_VALUE = {read=_GetTAG_MAX_APERTURE_VALUE};
+	__property Androidapi::Jni::Javatypes::_di_JString TAG_METERING_MODE = {read=_GetTAG_METERING_MODE};
+	__property Androidapi::Jni::Javatypes::_di_JString TAG_MODEL = {read=_GetTAG_MODEL};
+	__property Androidapi::Jni::Javatypes::_di_JString TAG_NEW_SUBFILE_TYPE = {read=_GetTAG_NEW_SUBFILE_TYPE};
+	__property Androidapi::Jni::Javatypes::_di_JString TAG_OECF = {read=_GetTAG_OECF};
+	__property Androidapi::Jni::Javatypes::_di_JString TAG_ORF_ASPECT_FRAME = {read=_GetTAG_ORF_ASPECT_FRAME};
+	__property Androidapi::Jni::Javatypes::_di_JString TAG_ORF_PREVIEW_IMAGE_LENGTH = {read=_GetTAG_ORF_PREVIEW_IMAGE_LENGTH};
+	__property Androidapi::Jni::Javatypes::_di_JString TAG_ORF_PREVIEW_IMAGE_START = {read=_GetTAG_ORF_PREVIEW_IMAGE_START};
+	__property Androidapi::Jni::Javatypes::_di_JString TAG_ORF_THUMBNAIL_IMAGE = {read=_GetTAG_ORF_THUMBNAIL_IMAGE};
+	__property Androidapi::Jni::Javatypes::_di_JString TAG_ORIENTATION = {read=_GetTAG_ORIENTATION};
+	__property Androidapi::Jni::Javatypes::_di_JString TAG_PHOTOMETRIC_INTERPRETATION = {read=_GetTAG_PHOTOMETRIC_INTERPRETATION};
+	__property Androidapi::Jni::Javatypes::_di_JString TAG_PIXEL_X_DIMENSION = {read=_GetTAG_PIXEL_X_DIMENSION};
+	__property Androidapi::Jni::Javatypes::_di_JString TAG_PIXEL_Y_DIMENSION = {read=_GetTAG_PIXEL_Y_DIMENSION};
+	__property Androidapi::Jni::Javatypes::_di_JString TAG_PLANAR_CONFIGURATION = {read=_GetTAG_PLANAR_CONFIGURATION};
+	__property Androidapi::Jni::Javatypes::_di_JString TAG_PRIMARY_CHROMATICITIES = {read=_GetTAG_PRIMARY_CHROMATICITIES};
+	__property Androidapi::Jni::Javatypes::_di_JString TAG_REFERENCE_BLACK_WHITE = {read=_GetTAG_REFERENCE_BLACK_WHITE};
+	__property Androidapi::Jni::Javatypes::_di_JString TAG_RELATED_SOUND_FILE = {read=_GetTAG_RELATED_SOUND_FILE};
+	__property Androidapi::Jni::Javatypes::_di_JString TAG_RESOLUTION_UNIT = {read=_GetTAG_RESOLUTION_UNIT};
+	__property Androidapi::Jni::Javatypes::_di_JString TAG_ROWS_PER_STRIP = {read=_GetTAG_ROWS_PER_STRIP};
+	__property Androidapi::Jni::Javatypes::_di_JString TAG_RW2_ISO = {read=_GetTAG_RW2_ISO};
+	__property Androidapi::Jni::Javatypes::_di_JString TAG_RW2_JPG_FROM_RAW = {read=_GetTAG_RW2_JPG_FROM_RAW};
+	__property Androidapi::Jni::Javatypes::_di_JString TAG_RW2_SENSOR_BOTTOM_BORDER = {read=_GetTAG_RW2_SENSOR_BOTTOM_BORDER};
+	__property Androidapi::Jni::Javatypes::_di_JString TAG_RW2_SENSOR_LEFT_BORDER = {read=_GetTAG_RW2_SENSOR_LEFT_BORDER};
+	__property Androidapi::Jni::Javatypes::_di_JString TAG_RW2_SENSOR_RIGHT_BORDER = {read=_GetTAG_RW2_SENSOR_RIGHT_BORDER};
+	__property Androidapi::Jni::Javatypes::_di_JString TAG_RW2_SENSOR_TOP_BORDER = {read=_GetTAG_RW2_SENSOR_TOP_BORDER};
+	__property Androidapi::Jni::Javatypes::_di_JString TAG_SAMPLES_PER_PIXEL = {read=_GetTAG_SAMPLES_PER_PIXEL};
+	__property Androidapi::Jni::Javatypes::_di_JString TAG_SATURATION = {read=_GetTAG_SATURATION};
+	__property Androidapi::Jni::Javatypes::_di_JString TAG_SCENE_CAPTURE_TYPE = {read=_GetTAG_SCENE_CAPTURE_TYPE};
+	__property Androidapi::Jni::Javatypes::_di_JString TAG_SCENE_TYPE = {read=_GetTAG_SCENE_TYPE};
+	__property Androidapi::Jni::Javatypes::_di_JString TAG_SENSING_METHOD = {read=_GetTAG_SENSING_METHOD};
+	__property Androidapi::Jni::Javatypes::_di_JString TAG_SHARPNESS = {read=_GetTAG_SHARPNESS};
+	__property Androidapi::Jni::Javatypes::_di_JString TAG_SHUTTER_SPEED_VALUE = {read=_GetTAG_SHUTTER_SPEED_VALUE};
+	__property Androidapi::Jni::Javatypes::_di_JString TAG_SOFTWARE = {read=_GetTAG_SOFTWARE};
+	__property Androidapi::Jni::Javatypes::_di_JString TAG_SPATIAL_FREQUENCY_RESPONSE = {read=_GetTAG_SPATIAL_FREQUENCY_RESPONSE};
+	__property Androidapi::Jni::Javatypes::_di_JString TAG_SPECTRAL_SENSITIVITY = {read=_GetTAG_SPECTRAL_SENSITIVITY};
+	__property Androidapi::Jni::Javatypes::_di_JString TAG_STRIP_BYTE_COUNTS = {read=_GetTAG_STRIP_BYTE_COUNTS};
+	__property Androidapi::Jni::Javatypes::_di_JString TAG_STRIP_OFFSETS = {read=_GetTAG_STRIP_OFFSETS};
+	__property Androidapi::Jni::Javatypes::_di_JString TAG_SUBFILE_TYPE = {read=_GetTAG_SUBFILE_TYPE};
+	__property Androidapi::Jni::Javatypes::_di_JString TAG_SUBJECT_AREA = {read=_GetTAG_SUBJECT_AREA};
+	__property Androidapi::Jni::Javatypes::_di_JString TAG_SUBJECT_DISTANCE = {read=_GetTAG_SUBJECT_DISTANCE};
+	__property Androidapi::Jni::Javatypes::_di_JString TAG_SUBJECT_DISTANCE_RANGE = {read=_GetTAG_SUBJECT_DISTANCE_RANGE};
+	__property Androidapi::Jni::Javatypes::_di_JString TAG_SUBJECT_LOCATION = {read=_GetTAG_SUBJECT_LOCATION};
+	__property Androidapi::Jni::Javatypes::_di_JString TAG_SUBSEC_TIME = {read=_GetTAG_SUBSEC_TIME};
+	__property Androidapi::Jni::Javatypes::_di_JString TAG_SUBSEC_TIME_DIG = {read=_GetTAG_SUBSEC_TIME_DIG};
+	__property Androidapi::Jni::Javatypes::_di_JString TAG_SUBSEC_TIME_DIGITIZED = {read=_GetTAG_SUBSEC_TIME_DIGITIZED};
+	__property Androidapi::Jni::Javatypes::_di_JString TAG_SUBSEC_TIME_ORIG = {read=_GetTAG_SUBSEC_TIME_ORIG};
+	__property Androidapi::Jni::Javatypes::_di_JString TAG_SUBSEC_TIME_ORIGINAL = {read=_GetTAG_SUBSEC_TIME_ORIGINAL};
+	__property Androidapi::Jni::Javatypes::_di_JString TAG_THUMBNAIL_IMAGE_LENGTH = {read=_GetTAG_THUMBNAIL_IMAGE_LENGTH};
+	__property Androidapi::Jni::Javatypes::_di_JString TAG_THUMBNAIL_IMAGE_WIDTH = {read=_GetTAG_THUMBNAIL_IMAGE_WIDTH};
+	__property Androidapi::Jni::Javatypes::_di_JString TAG_TRANSFER_FUNCTION = {read=_GetTAG_TRANSFER_FUNCTION};
+	__property Androidapi::Jni::Javatypes::_di_JString TAG_USER_COMMENT = {read=_GetTAG_USER_COMMENT};
+	__property Androidapi::Jni::Javatypes::_di_JString TAG_WHITE_BALANCE = {read=_GetTAG_WHITE_BALANCE};
+	__property Androidapi::Jni::Javatypes::_di_JString TAG_WHITE_POINT = {read=_GetTAG_WHITE_POINT};
+	__property Androidapi::Jni::Javatypes::_di_JString TAG_X_RESOLUTION = {read=_GetTAG_X_RESOLUTION};
+	__property Androidapi::Jni::Javatypes::_di_JString TAG_Y_CB_CR_COEFFICIENTS = {read=_GetTAG_Y_CB_CR_COEFFICIENTS};
+	__property Androidapi::Jni::Javatypes::_di_JString TAG_Y_CB_CR_POSITIONING = {read=_GetTAG_Y_CB_CR_POSITIONING};
+	__property Androidapi::Jni::Javatypes::_di_JString TAG_Y_CB_CR_SUB_SAMPLING = {read=_GetTAG_Y_CB_CR_SUB_SAMPLING};
+	__property Androidapi::Jni::Javatypes::_di_JString TAG_Y_RESOLUTION = {read=_GetTAG_Y_RESOLUTION};
+	__property int WHITEBALANCE_AUTO = {read=_GetWHITEBALANCE_AUTO};
+	__property int WHITEBALANCE_MANUAL = {read=_GetWHITEBALANCE_MANUAL};
+};
+
+__interface  INTERFACE_UUID("{A1FEA8A4-6E88-46E7-BB89-BC24ACA69331}") JExifInterface  : public Androidapi::Jni::Javatypes::JObject 
+{
+	virtual double __cdecl getAltitude(double defaultValue) = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl getAttribute(Androidapi::Jni::Javatypes::_di_JString tag) = 0 ;
+	virtual double __cdecl getAttributeDouble(Androidapi::Jni::Javatypes::_di_JString tag, double defaultValue) = 0 ;
+	virtual int __cdecl getAttributeInt(Androidapi::Jni::Javatypes::_di_JString tag, int defaultValue) = 0 ;
+	virtual bool __cdecl getLatLong(Androidapi::Jnibridge::TJavaArray__1<float>* output) = 0 ;
+	virtual Androidapi::Jnibridge::TJavaArray__1<System::Byte>* __cdecl getThumbnail() = 0 ;
+	virtual Androidapi::Jni::Graphicscontentviewtext::_di_JBitmap __cdecl getThumbnailBitmap() = 0 ;
+	virtual Androidapi::Jnibridge::TJavaArray__1<System::Byte>* __cdecl getThumbnailBytes() = 0 ;
+	virtual Androidapi::Jnibridge::TJavaArray__1<__int64>* __cdecl getThumbnailRange() = 0 ;
+	virtual bool __cdecl hasThumbnail() = 0 ;
+	virtual bool __cdecl isThumbnailCompressed() = 0 ;
+	virtual void __cdecl saveAttributes() = 0 ;
+	virtual void __cdecl setAttribute(Androidapi::Jni::Javatypes::_di_JString tag, Androidapi::Jni::Javatypes::_di_JString value) = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJExifInterface : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JExifInterfaceClass,_di_JExifInterface>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JExifInterfaceClass,_di_JExifInterface> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJExifInterface() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JExifInterfaceClass,_di_JExifInterface>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJExifInterface() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{1EFF1585-F9D1-473B-8157-809AF8522E6C}") JFaceDetectorClass  : public Androidapi::Jni::Javatypes::JObjectClass 
+{
+	HIDESBASE virtual _di_JFaceDetector __cdecl init(int width, int height, int maxFaces) = 0 ;
+};
+
+__interface  INTERFACE_UUID("{51F75D8F-DFA7-4368-B73F-DE24C7C060E4}") JFaceDetector  : public Androidapi::Jni::Javatypes::JObject 
+{
+	virtual int __cdecl findFaces(Androidapi::Jni::Graphicscontentviewtext::_di_JBitmap bitmap, Androidapi::Jnibridge::TJavaObjectArray__1<_di_JFaceDetector_Face>* faces) = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJFaceDetector : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JFaceDetectorClass,_di_JFaceDetector>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JFaceDetectorClass,_di_JFaceDetector> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJFaceDetector() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JFaceDetectorClass,_di_JFaceDetector>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJFaceDetector() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{17134C3D-57CA-4AF8-8AF5-042B9891843E}") JFaceDetector_FaceClass  : public Androidapi::Jni::Javatypes::JObjectClass 
+{
+	virtual float __cdecl _GetCONFIDENCE_THRESHOLD() = 0 ;
+	virtual int __cdecl _GetEULER_X() = 0 ;
+	virtual int __cdecl _GetEULER_Y() = 0 ;
+	virtual int __cdecl _GetEULER_Z() = 0 ;
+	__property float CONFIDENCE_THRESHOLD = {read=_GetCONFIDENCE_THRESHOLD};
+	__property int EULER_X = {read=_GetEULER_X};
+	__property int EULER_Y = {read=_GetEULER_Y};
+	__property int EULER_Z = {read=_GetEULER_Z};
+};
+
+__interface  INTERFACE_UUID("{45D33BFD-93F8-4603-BA45-E24ED10ABE1E}") JFaceDetector_Face  : public Androidapi::Jni::Javatypes::JObject 
+{
+	virtual float __cdecl confidence() = 0 ;
+	virtual float __cdecl eyesDistance() = 0 ;
+	virtual void __cdecl getMidPoint(Androidapi::Jni::Graphicscontentviewtext::_di_JPointF point) = 0 ;
+	virtual float __cdecl pose(int euler) = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJFaceDetector_Face : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JFaceDetector_FaceClass,_di_JFaceDetector_Face>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JFaceDetector_FaceClass,_di_JFaceDetector_Face> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJFaceDetector_Face() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JFaceDetector_FaceClass,_di_JFaceDetector_Face>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJFaceDetector_Face() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{222370FD-2F78-455E-8287-D8E3BCEBF8DA}") JImageClass  : public Androidapi::Jni::Javatypes::JObjectClass 
+{
+	
+};
+
+__interface  INTERFACE_UUID("{1433F1F5-7A0D-4F00-8551-D25DA9CE6B4D}") JImage  : public Androidapi::Jni::Javatypes::JObject 
+{
+	virtual void __cdecl close() = 0 ;
+	virtual Androidapi::Jni::Graphicscontentviewtext::_di_JRect __cdecl getCropRect() = 0 ;
+	virtual int __cdecl getFormat() = 0 ;
+	virtual int __cdecl getHeight() = 0 ;
+	virtual Androidapi::Jnibridge::TJavaObjectArray__1<_di_JImage_Plane>* __cdecl getPlanes() = 0 ;
+	virtual __int64 __cdecl getTimestamp() = 0 ;
+	virtual int __cdecl getWidth() = 0 ;
+	virtual void __cdecl setCropRect(Androidapi::Jni::Graphicscontentviewtext::_di_JRect cropRect) = 0 ;
+	virtual void __cdecl setTimestamp(__int64 timestamp) = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJImage : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JImageClass,_di_JImage>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JImageClass,_di_JImage> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJImage() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JImageClass,_di_JImage>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJImage() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{9FC1C95F-4623-461D-A1F9-64209E469FE6}") JImage_PlaneClass  : public Androidapi::Jni::Javatypes::JObjectClass 
+{
+	
+};
+
+__interface  INTERFACE_UUID("{CC2F324B-70D7-4ACD-A0C6-516372E18651}") JImage_Plane  : public Androidapi::Jni::Javatypes::JObject 
+{
+	virtual Androidapi::Jni::Javatypes::_di_JByteBuffer __cdecl getBuffer() = 0 ;
+	virtual int __cdecl getPixelStride() = 0 ;
+	virtual int __cdecl getRowStride() = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJImage_Plane : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JImage_PlaneClass,_di_JImage_Plane>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JImage_PlaneClass,_di_JImage_Plane> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJImage_Plane() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JImage_PlaneClass,_di_JImage_Plane>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJImage_Plane() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{D8EA1DC9-1A2D-42B8-BCA9-BDD6BACF2B5D}") JImageReaderClass  : public Androidapi::Jni::Javatypes::JObjectClass 
+{
+	virtual _di_JImageReader __cdecl newInstance(int width, int height, int format, int maxImages) = 0 ;
+};
+
+__interface  INTERFACE_UUID("{9C4D5031-D450-4FFC-B555-67A8E8AEF4A4}") JImageReader  : public Androidapi::Jni::Javatypes::JObject 
+{
+	virtual _di_JImage __cdecl acquireLatestImage() = 0 ;
+	virtual _di_JImage __cdecl acquireNextImage() = 0 ;
+	virtual void __cdecl close() = 0 ;
+	virtual int __cdecl getHeight() = 0 ;
+	virtual int __cdecl getImageFormat() = 0 ;
+	virtual int __cdecl getMaxImages() = 0 ;
+	virtual Androidapi::Jni::Graphicscontentviewtext::_di_JSurface __cdecl getSurface() = 0 ;
+	virtual int __cdecl getWidth() = 0 ;
+	virtual void __cdecl setOnImageAvailableListener(_di_JImageReader_OnImageAvailableListener listener, Androidapi::Jni::Os::_di_JHandler handler) = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJImageReader : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JImageReaderClass,_di_JImageReader>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JImageReaderClass,_di_JImageReader> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJImageReader() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JImageReaderClass,_di_JImageReader>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJImageReader() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{33317279-C3D3-40D2-9A41-F34FC98572A7}") JImageReader_OnImageAvailableListenerClass  : public Androidapi::Jnibridge::IJavaClass 
+{
+	
+};
+
+__interface  INTERFACE_UUID("{9FD886E2-54F8-4503-BF77-F112A0645C31}") JImageReader_OnImageAvailableListener  : public Androidapi::Jnibridge::IJavaInstance 
+{
+	virtual void __cdecl onImageAvailable(_di_JImageReader reader) = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJImageReader_OnImageAvailableListener : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JImageReader_OnImageAvailableListenerClass,_di_JImageReader_OnImageAvailableListener>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JImageReader_OnImageAvailableListenerClass,_di_JImageReader_OnImageAvailableListener> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJImageReader_OnImageAvailableListener() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JImageReader_OnImageAvailableListenerClass,_di_JImageReader_OnImageAvailableListener>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJImageReader_OnImageAvailableListener() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{7BDA487C-CABD-4F23-AA24-AB6EEE8453EC}") JImageWriterClass  : public Androidapi::Jni::Javatypes::JObjectClass 
+{
+	virtual _di_JImageWriter __cdecl newInstance(Androidapi::Jni::Graphicscontentviewtext::_di_JSurface surface, int maxImages) = 0 ;
+};
+
+__interface  INTERFACE_UUID("{439AF5FD-217C-4772-828E-6C8614556D67}") JImageWriter  : public Androidapi::Jni::Javatypes::JObject 
+{
+	virtual void __cdecl close() = 0 ;
+	virtual _di_JImage __cdecl dequeueInputImage() = 0 ;
+	virtual int __cdecl getFormat() = 0 ;
+	virtual int __cdecl getMaxImages() = 0 ;
+	virtual void __cdecl queueInputImage(_di_JImage image) = 0 ;
+	virtual void __cdecl setOnImageReleasedListener(_di_JImageWriter_OnImageReleasedListener listener, Androidapi::Jni::Os::_di_JHandler handler) = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJImageWriter : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JImageWriterClass,_di_JImageWriter>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JImageWriterClass,_di_JImageWriter> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJImageWriter() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JImageWriterClass,_di_JImageWriter>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJImageWriter() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{1503EC3F-E332-4673-AEE2-233E46C74A66}") JImageWriter_OnImageReleasedListenerClass  : public Androidapi::Jnibridge::IJavaClass 
+{
+	
+};
+
+__interface  INTERFACE_UUID("{468D8616-1AAE-4485-95A8-3805CB1DB12A}") JImageWriter_OnImageReleasedListener  : public Androidapi::Jnibridge::IJavaInstance 
+{
+	virtual void __cdecl onImageReleased(_di_JImageWriter writer) = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJImageWriter_OnImageReleasedListener : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JImageWriter_OnImageReleasedListenerClass,_di_JImageWriter_OnImageReleasedListener>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JImageWriter_OnImageReleasedListenerClass,_di_JImageWriter_OnImageReleasedListener> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJImageWriter_OnImageReleasedListener() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JImageWriter_OnImageReleasedListenerClass,_di_JImageWriter_OnImageReleasedListener>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJImageWriter_OnImageReleasedListener() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{2CA09255-297D-4CAE-A504-4B4D00375EC3}") JJetPlayerClass  : public Androidapi::Jni::Javatypes::JObjectClass 
+{
+	virtual _di_JJetPlayer __cdecl getJetPlayer() = 0 ;
+	virtual int __cdecl getMaxTracks() = 0 ;
+};
+
+__interface  INTERFACE_UUID("{3E8DCD57-E0F8-4526-BFA1-62121FB1B4C2}") JJetPlayer  : public Androidapi::Jni::Javatypes::JObject 
+{
+	virtual bool __cdecl clearQueue() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JObject __cdecl clone() = 0 ;
+	virtual bool __cdecl closeJetFile() = 0 ;
+	virtual bool __cdecl loadJetFile(Androidapi::Jni::Javatypes::_di_JString path) = 0 /* overload */;
+	virtual bool __cdecl loadJetFile(Androidapi::Jni::Graphicscontentviewtext::_di_JAssetFileDescriptor afd) = 0 /* overload */;
+	virtual bool __cdecl pause() = 0 ;
+	virtual bool __cdecl play() = 0 ;
+	virtual bool __cdecl queueJetSegment(int segmentNum, int libNum, int repeatCount, int transpose, int muteFlags, System::Byte userID) = 0 ;
+	virtual bool __cdecl queueJetSegmentMuteArray(int segmentNum, int libNum, int repeatCount, int transpose, Androidapi::Jnibridge::TJavaArray__1<bool>* muteArray, System::Byte userID) = 0 ;
+	virtual void __cdecl release() = 0 ;
+	virtual void __cdecl setEventListener(_di_JJetPlayer_OnJetEventListener listener) = 0 /* overload */;
+	virtual void __cdecl setEventListener(_di_JJetPlayer_OnJetEventListener listener, Androidapi::Jni::Os::_di_JHandler handler) = 0 /* overload */;
+	virtual bool __cdecl setMuteArray(Androidapi::Jnibridge::TJavaArray__1<bool>* muteArray, bool sync) = 0 ;
+	virtual bool __cdecl setMuteFlag(int trackId, bool muteFlag, bool sync) = 0 ;
+	virtual bool __cdecl setMuteFlags(int muteFlags, bool sync) = 0 ;
+	virtual bool __cdecl triggerClip(int clipId) = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJJetPlayer : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JJetPlayerClass,_di_JJetPlayer>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JJetPlayerClass,_di_JJetPlayer> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJJetPlayer() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JJetPlayerClass,_di_JJetPlayer>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJJetPlayer() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{1B13E4B7-FC2B-4396-9E99-04D8FDE142F7}") JJetPlayer_OnJetEventListenerClass  : public Androidapi::Jnibridge::IJavaClass 
+{
+	
+};
+
+__interface  INTERFACE_UUID("{3F6F1880-0533-4008-91A0-EDA0C4C2EC62}") JJetPlayer_OnJetEventListener  : public Androidapi::Jnibridge::IJavaInstance 
+{
+	virtual void __cdecl onJetEvent(_di_JJetPlayer player, short segment, System::Byte track, System::Byte channel, System::Byte controller, System::Byte value) = 0 ;
+	virtual void __cdecl onJetNumQueuedSegmentUpdate(_di_JJetPlayer player, int nbSegments) = 0 ;
+	virtual void __cdecl onJetPauseUpdate(_di_JJetPlayer player, int paused) = 0 ;
+	virtual void __cdecl onJetUserIdUpdate(_di_JJetPlayer player, int userId, int repeatCount) = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJJetPlayer_OnJetEventListener : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JJetPlayer_OnJetEventListenerClass,_di_JJetPlayer_OnJetEventListener>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JJetPlayer_OnJetEventListenerClass,_di_JJetPlayer_OnJetEventListener> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJJetPlayer_OnJetEventListener() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JJetPlayer_OnJetEventListenerClass,_di_JJetPlayer_OnJetEventListener>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJJetPlayer_OnJetEventListener() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{2B4CEE61-D673-4EDE-9154-6C7D30F15988}") JMediaActionSoundClass  : public Androidapi::Jni::Javatypes::JObjectClass 
+{
+	virtual int __cdecl _GetFOCUS_COMPLETE() = 0 ;
+	virtual int __cdecl _GetSHUTTER_CLICK() = 0 ;
+	virtual int __cdecl _GetSTART_VIDEO_RECORDING() = 0 ;
+	virtual int __cdecl _GetSTOP_VIDEO_RECORDING() = 0 ;
+	HIDESBASE virtual _di_JMediaActionSound __cdecl init() = 0 ;
+	__property int FOCUS_COMPLETE = {read=_GetFOCUS_COMPLETE};
+	__property int SHUTTER_CLICK = {read=_GetSHUTTER_CLICK};
+	__property int START_VIDEO_RECORDING = {read=_GetSTART_VIDEO_RECORDING};
+	__property int STOP_VIDEO_RECORDING = {read=_GetSTOP_VIDEO_RECORDING};
+};
+
+__interface  INTERFACE_UUID("{F9314010-8F95-4079-A513-EA752C916635}") JMediaActionSound  : public Androidapi::Jni::Javatypes::JObject 
+{
+	virtual void __cdecl load(int soundName) = 0 ;
+	virtual void __cdecl play(int soundName) = 0 ;
+	virtual void __cdecl release() = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJMediaActionSound : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMediaActionSoundClass,_di_JMediaActionSound>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMediaActionSoundClass,_di_JMediaActionSound> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJMediaActionSound() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMediaActionSoundClass,_di_JMediaActionSound>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJMediaActionSound() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{70AE0C2A-C7BD-4927-BAF4-1B7D5DE24B0D}") JMediaCasClass  : public Androidapi::Jni::Javatypes::JObjectClass 
+{
+	HIDESBASE virtual _di_JMediaCas __cdecl init(int CA_system_id) = 0 ;
+	virtual Androidapi::Jnibridge::TJavaObjectArray__1<_di_JMediaCas_PluginDescriptor>* __cdecl enumeratePlugins() = 0 ;
+	virtual bool __cdecl isSystemIdSupported(int CA_system_id) = 0 ;
+};
+
+__interface  INTERFACE_UUID("{E2A6B7A7-4CDB-4D8B-9E55-4BD7EFA4A9F4}") JMediaCas  : public Androidapi::Jni::Javatypes::JObject 
+{
+	virtual void __cdecl close() = 0 ;
+	virtual _di_JMediaCas_Session __cdecl openSession() = 0 ;
+	virtual void __cdecl processEmm(Androidapi::Jnibridge::TJavaArray__1<System::Byte>* data, int offset, int length) = 0 /* overload */;
+	virtual void __cdecl processEmm(Androidapi::Jnibridge::TJavaArray__1<System::Byte>* data) = 0 /* overload */;
+	virtual void __cdecl provision(Androidapi::Jni::Javatypes::_di_JString provisionString) = 0 ;
+	virtual void __cdecl refreshEntitlements(int refreshType, Androidapi::Jnibridge::TJavaArray__1<System::Byte>* refreshData) = 0 ;
+	virtual void __cdecl sendEvent(int event, int arg, Androidapi::Jnibridge::TJavaArray__1<System::Byte>* data) = 0 ;
+	virtual void __cdecl setEventListener(_di_JMediaCas_EventListener listener, Androidapi::Jni::Os::_di_JHandler handler) = 0 ;
+	virtual void __cdecl setPrivateData(Androidapi::Jnibridge::TJavaArray__1<System::Byte>* data) = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJMediaCas : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMediaCasClass,_di_JMediaCas>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMediaCasClass,_di_JMediaCas> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJMediaCas() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMediaCasClass,_di_JMediaCas>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJMediaCas() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{55AD74AC-C6E0-412A-A910-4574CC07691F}") JMediaCas_EventListenerClass  : public Androidapi::Jnibridge::IJavaClass 
+{
+	
+};
+
+__interface  INTERFACE_UUID("{19074E1C-BC68-4BFA-990C-C48FD148BA07}") JMediaCas_EventListener  : public Androidapi::Jnibridge::IJavaInstance 
+{
+	virtual void __cdecl onEvent(_di_JMediaCas MediaCas, int event, int arg, Androidapi::Jnibridge::TJavaArray__1<System::Byte>* data) = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJMediaCas_EventListener : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMediaCas_EventListenerClass,_di_JMediaCas_EventListener>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMediaCas_EventListenerClass,_di_JMediaCas_EventListener> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJMediaCas_EventListener() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMediaCas_EventListenerClass,_di_JMediaCas_EventListener>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJMediaCas_EventListener() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{614839C1-D5AD-484A-B338-65CE993B535F}") JMediaCas_PluginDescriptorClass  : public Androidapi::Jni::Javatypes::JObjectClass 
+{
+	
+};
+
+__interface  INTERFACE_UUID("{42EAFBAF-C7C3-4DA9-83B3-5012BE4312C3}") JMediaCas_PluginDescriptor  : public Androidapi::Jni::Javatypes::JObject 
+{
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl getName() = 0 ;
+	virtual int __cdecl getSystemId() = 0 ;
+	HIDESBASE virtual Androidapi::Jni::Javatypes::_di_JString __cdecl toString() = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJMediaCas_PluginDescriptor : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMediaCas_PluginDescriptorClass,_di_JMediaCas_PluginDescriptor>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMediaCas_PluginDescriptorClass,_di_JMediaCas_PluginDescriptor> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJMediaCas_PluginDescriptor() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMediaCas_PluginDescriptorClass,_di_JMediaCas_PluginDescriptor>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJMediaCas_PluginDescriptor() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{BE116F45-D242-40CA-85A5-3D6545BDFDD7}") JMediaCas_SessionClass  : public Androidapi::Jni::Javatypes::JObjectClass 
+{
+	
+};
+
+__interface  INTERFACE_UUID("{1A9CBA80-841A-4845-8E08-5092869F1474}") JMediaCas_Session  : public Androidapi::Jni::Javatypes::JObject 
+{
+	virtual void __cdecl close() = 0 ;
+	virtual void __cdecl processEcm(Androidapi::Jnibridge::TJavaArray__1<System::Byte>* data, int offset, int length) = 0 /* overload */;
+	virtual void __cdecl processEcm(Androidapi::Jnibridge::TJavaArray__1<System::Byte>* data) = 0 /* overload */;
+	virtual void __cdecl setPrivateData(Androidapi::Jnibridge::TJavaArray__1<System::Byte>* data) = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJMediaCas_Session : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMediaCas_SessionClass,_di_JMediaCas_Session>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMediaCas_SessionClass,_di_JMediaCas_Session> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJMediaCas_Session() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMediaCas_SessionClass,_di_JMediaCas_Session>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJMediaCas_Session() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{D39C6017-4DDD-446C-8435-7BD98B2D6DDB}") JMediaCasExceptionClass  : public Androidapi::Jni::Javatypes::JExceptionClass 
+{
+	
+};
+
+__interface  INTERFACE_UUID("{CEA703AF-E9AB-4419-9FD2-20ECC7E9849E}") JMediaCasException  : public Androidapi::Jni::Javatypes::JException 
+{
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJMediaCasException : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMediaCasExceptionClass,_di_JMediaCasException>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMediaCasExceptionClass,_di_JMediaCasException> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJMediaCasException() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMediaCasExceptionClass,_di_JMediaCasException>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJMediaCasException() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{EF7B235F-F127-4A88-8FFD-F68FA304E7BD}") JMediaCasException_DeniedByServerExceptionClass  : public JMediaCasExceptionClass 
+{
+	
+};
+
+__interface  INTERFACE_UUID("{B1C7BAA5-4F20-41E9-91B8-0B8C54EAE598}") JMediaCasException_DeniedByServerException  : public JMediaCasException 
+{
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJMediaCasException_DeniedByServerException : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMediaCasException_DeniedByServerExceptionClass,_di_JMediaCasException_DeniedByServerException>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMediaCasException_DeniedByServerExceptionClass,_di_JMediaCasException_DeniedByServerException> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJMediaCasException_DeniedByServerException() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMediaCasException_DeniedByServerExceptionClass,_di_JMediaCasException_DeniedByServerException>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJMediaCasException_DeniedByServerException() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{95840713-13C9-4340-A9B9-3D73B0FD2F0D}") JMediaCasException_NotProvisionedExceptionClass  : public JMediaCasExceptionClass 
+{
+	
+};
+
+__interface  INTERFACE_UUID("{B115657D-E6EF-4761-85A4-0D0651850C99}") JMediaCasException_NotProvisionedException  : public JMediaCasException 
+{
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJMediaCasException_NotProvisionedException : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMediaCasException_NotProvisionedExceptionClass,_di_JMediaCasException_NotProvisionedException>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMediaCasException_NotProvisionedExceptionClass,_di_JMediaCasException_NotProvisionedException> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJMediaCasException_NotProvisionedException() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMediaCasException_NotProvisionedExceptionClass,_di_JMediaCasException_NotProvisionedException>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJMediaCasException_NotProvisionedException() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{8A5FB67A-1581-4A6D-88D6-A434115D383C}") JMediaCasException_ResourceBusyExceptionClass  : public JMediaCasExceptionClass 
+{
+	
+};
+
+__interface  INTERFACE_UUID("{D916F741-B304-413D-BB14-0009E41CFE2E}") JMediaCasException_ResourceBusyException  : public JMediaCasException 
+{
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJMediaCasException_ResourceBusyException : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMediaCasException_ResourceBusyExceptionClass,_di_JMediaCasException_ResourceBusyException>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMediaCasException_ResourceBusyExceptionClass,_di_JMediaCasException_ResourceBusyException> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJMediaCasException_ResourceBusyException() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMediaCasException_ResourceBusyExceptionClass,_di_JMediaCasException_ResourceBusyException>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJMediaCasException_ResourceBusyException() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{EC5ACD49-6760-49DF-9C81-3E90ABB7479A}") JMediaCasException_UnsupportedCasExceptionClass  : public JMediaCasExceptionClass 
+{
+	
+};
+
+__interface  INTERFACE_UUID("{2DD8DD0A-CBCC-4FE5-93BC-A00C7473FF53}") JMediaCasException_UnsupportedCasException  : public JMediaCasException 
+{
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJMediaCasException_UnsupportedCasException : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMediaCasException_UnsupportedCasExceptionClass,_di_JMediaCasException_UnsupportedCasException>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMediaCasException_UnsupportedCasExceptionClass,_di_JMediaCasException_UnsupportedCasException> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJMediaCasException_UnsupportedCasException() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMediaCasException_UnsupportedCasExceptionClass,_di_JMediaCasException_UnsupportedCasException>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJMediaCasException_UnsupportedCasException() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{E420C364-7CF4-4651-97F8-57FCDD181703}") JMediaCasStateExceptionClass  : public Androidapi::Jni::Javatypes::JIllegalStateExceptionClass 
+{
+	
+};
+
+__interface  INTERFACE_UUID("{88EAB25F-F413-45D7-A23F-A9D47633C1A2}") JMediaCasStateException  : public Androidapi::Jni::Javatypes::JIllegalStateException 
+{
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl getDiagnosticInfo() = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJMediaCasStateException : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMediaCasStateExceptionClass,_di_JMediaCasStateException>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMediaCasStateExceptionClass,_di_JMediaCasStateException> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJMediaCasStateException() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMediaCasStateExceptionClass,_di_JMediaCasStateException>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJMediaCasStateException() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{CE3DED9B-E9AD-4A29-9755-ECFFFC1831BA}") JMediaCodecClass  : public Androidapi::Jni::Javatypes::JObjectClass 
+{
+	virtual int __cdecl _GetBUFFER_FLAG_CODEC_CONFIG() = 0 ;
+	virtual int __cdecl _GetBUFFER_FLAG_END_OF_STREAM() = 0 ;
+	virtual int __cdecl _GetBUFFER_FLAG_KEY_FRAME() = 0 ;
+	virtual int __cdecl _GetBUFFER_FLAG_PARTIAL_FRAME() = 0 ;
+	virtual int __cdecl _GetBUFFER_FLAG_SYNC_FRAME() = 0 ;
+	virtual int __cdecl _GetCONFIGURE_FLAG_ENCODE() = 0 ;
+	virtual int __cdecl _GetCRYPTO_MODE_AES_CBC() = 0 ;
+	virtual int __cdecl _GetCRYPTO_MODE_AES_CTR() = 0 ;
+	virtual int __cdecl _GetCRYPTO_MODE_UNENCRYPTED() = 0 ;
+	virtual int __cdecl _GetINFO_OUTPUT_BUFFERS_CHANGED() = 0 ;
+	virtual int __cdecl _GetINFO_OUTPUT_FORMAT_CHANGED() = 0 ;
+	virtual int __cdecl _GetINFO_TRY_AGAIN_LATER() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetPARAMETER_KEY_REQUEST_SYNC_FRAME() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetPARAMETER_KEY_SUSPEND() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetPARAMETER_KEY_VIDEO_BITRATE() = 0 ;
+	virtual int __cdecl _GetVIDEO_SCALING_MODE_SCALE_TO_FIT() = 0 ;
+	virtual int __cdecl _GetVIDEO_SCALING_MODE_SCALE_TO_FIT_WITH_CROPPING() = 0 ;
+	virtual _di_JMediaCodec __cdecl createByCodecName(Androidapi::Jni::Javatypes::_di_JString name) = 0 ;
+	virtual _di_JMediaCodec __cdecl createDecoderByType(Androidapi::Jni::Javatypes::_di_JString type_) = 0 ;
+	virtual _di_JMediaCodec __cdecl createEncoderByType(Androidapi::Jni::Javatypes::_di_JString type_) = 0 ;
+	virtual Androidapi::Jni::Graphicscontentviewtext::_di_JSurface __cdecl createPersistentInputSurface() = 0 ;
+	__property int BUFFER_FLAG_CODEC_CONFIG = {read=_GetBUFFER_FLAG_CODEC_CONFIG};
+	__property int BUFFER_FLAG_END_OF_STREAM = {read=_GetBUFFER_FLAG_END_OF_STREAM};
+	__property int BUFFER_FLAG_KEY_FRAME = {read=_GetBUFFER_FLAG_KEY_FRAME};
+	__property int BUFFER_FLAG_PARTIAL_FRAME = {read=_GetBUFFER_FLAG_PARTIAL_FRAME};
+	__property int BUFFER_FLAG_SYNC_FRAME = {read=_GetBUFFER_FLAG_SYNC_FRAME};
+	__property int CONFIGURE_FLAG_ENCODE = {read=_GetCONFIGURE_FLAG_ENCODE};
+	__property int CRYPTO_MODE_AES_CBC = {read=_GetCRYPTO_MODE_AES_CBC};
+	__property int CRYPTO_MODE_AES_CTR = {read=_GetCRYPTO_MODE_AES_CTR};
+	__property int CRYPTO_MODE_UNENCRYPTED = {read=_GetCRYPTO_MODE_UNENCRYPTED};
+	__property int INFO_OUTPUT_BUFFERS_CHANGED = {read=_GetINFO_OUTPUT_BUFFERS_CHANGED};
+	__property int INFO_OUTPUT_FORMAT_CHANGED = {read=_GetINFO_OUTPUT_FORMAT_CHANGED};
+	__property int INFO_TRY_AGAIN_LATER = {read=_GetINFO_TRY_AGAIN_LATER};
+	__property Androidapi::Jni::Javatypes::_di_JString PARAMETER_KEY_REQUEST_SYNC_FRAME = {read=_GetPARAMETER_KEY_REQUEST_SYNC_FRAME};
+	__property Androidapi::Jni::Javatypes::_di_JString PARAMETER_KEY_SUSPEND = {read=_GetPARAMETER_KEY_SUSPEND};
+	__property Androidapi::Jni::Javatypes::_di_JString PARAMETER_KEY_VIDEO_BITRATE = {read=_GetPARAMETER_KEY_VIDEO_BITRATE};
+	__property int VIDEO_SCALING_MODE_SCALE_TO_FIT = {read=_GetVIDEO_SCALING_MODE_SCALE_TO_FIT};
+	__property int VIDEO_SCALING_MODE_SCALE_TO_FIT_WITH_CROPPING = {read=_GetVIDEO_SCALING_MODE_SCALE_TO_FIT_WITH_CROPPING};
+};
+
+__interface  INTERFACE_UUID("{A535089E-5F3D-464D-9BB5-2A3553A461F1}") JMediaCodec  : public Androidapi::Jni::Javatypes::JObject 
+{
+	virtual void __cdecl configure(_di_JMediaFormat format, Androidapi::Jni::Graphicscontentviewtext::_di_JSurface surface, _di_JMediaCrypto crypto, int flags) = 0 /* overload */;
+	virtual void __cdecl configure(_di_JMediaFormat format, Androidapi::Jni::Graphicscontentviewtext::_di_JSurface surface, int flags, _di_JMediaDescrambler descrambler) = 0 /* overload */;
+	virtual Androidapi::Jni::Graphicscontentviewtext::_di_JSurface __cdecl createInputSurface() = 0 ;
+	virtual int __cdecl dequeueInputBuffer(__int64 timeoutUs) = 0 ;
+	virtual int __cdecl dequeueOutputBuffer(_di_JMediaCodec_BufferInfo info, __int64 timeoutUs) = 0 ;
+	virtual void __cdecl flush() = 0 ;
+	virtual _di_JMediaCodecInfo __cdecl getCodecInfo() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JByteBuffer __cdecl getInputBuffer(int index) = 0 ;
+	virtual Androidapi::Jnibridge::TJavaObjectArray__1<Androidapi::Jni::Javatypes::_di_JByteBuffer>* __cdecl getInputBuffers() = 0 ;
+	virtual _di_JMediaFormat __cdecl getInputFormat() = 0 ;
+	virtual _di_JImage __cdecl getInputImage(int index) = 0 ;
+	virtual Androidapi::Jni::Os::_di_JPersistableBundle __cdecl getMetrics() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl getName() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JByteBuffer __cdecl getOutputBuffer(int index) = 0 ;
+	virtual Androidapi::Jnibridge::TJavaObjectArray__1<Androidapi::Jni::Javatypes::_di_JByteBuffer>* __cdecl getOutputBuffers() = 0 ;
+	virtual _di_JMediaFormat __cdecl getOutputFormat() = 0 /* overload */;
+	virtual _di_JMediaFormat __cdecl getOutputFormat(int index) = 0 /* overload */;
+	virtual _di_JImage __cdecl getOutputImage(int index) = 0 ;
+	virtual void __cdecl queueInputBuffer(int index, int offset, int size, __int64 presentationTimeUs, int flags) = 0 ;
+	virtual void __cdecl queueSecureInputBuffer(int index, int offset, _di_JMediaCodec_CryptoInfo info, __int64 presentationTimeUs, int flags) = 0 ;
+	virtual void __cdecl release() = 0 ;
+	virtual void __cdecl releaseOutputBuffer(int index, bool render) = 0 /* overload */;
+	virtual void __cdecl releaseOutputBuffer(int index, __int64 renderTimestampNs) = 0 /* overload */;
+	virtual void __cdecl reset() = 0 ;
+	virtual void __cdecl setCallback(_di_JMediaCodec_Callback cb, Androidapi::Jni::Os::_di_JHandler handler) = 0 /* overload */;
+	virtual void __cdecl setCallback(_di_JMediaCodec_Callback cb) = 0 /* overload */;
+	virtual void __cdecl setInputSurface(Androidapi::Jni::Graphicscontentviewtext::_di_JSurface surface) = 0 ;
+	virtual void __cdecl setOnFrameRenderedListener(_di_JMediaCodec_OnFrameRenderedListener listener, Androidapi::Jni::Os::_di_JHandler handler) = 0 ;
+	virtual void __cdecl setOutputSurface(Androidapi::Jni::Graphicscontentviewtext::_di_JSurface surface) = 0 ;
+	virtual void __cdecl setParameters(Androidapi::Jni::Os::_di_JBundle params) = 0 ;
+	virtual void __cdecl setVideoScalingMode(int mode) = 0 ;
+	virtual void __cdecl signalEndOfInputStream() = 0 ;
+	virtual void __cdecl start() = 0 ;
+	virtual void __cdecl stop() = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJMediaCodec : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMediaCodecClass,_di_JMediaCodec>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMediaCodecClass,_di_JMediaCodec> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJMediaCodec() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMediaCodecClass,_di_JMediaCodec>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJMediaCodec() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{F2CE3B97-9D62-442D-A689-ED511D19C5F2}") JMediaCodec_BufferInfoClass  : public Androidapi::Jni::Javatypes::JObjectClass 
+{
+	HIDESBASE virtual _di_JMediaCodec_BufferInfo __cdecl init() = 0 ;
+};
+
+__interface  INTERFACE_UUID("{EB7BFC1B-B1F0-4602-9173-69B036DE28E1}") JMediaCodec_BufferInfo  : public Androidapi::Jni::Javatypes::JObject 
+{
+	virtual int __cdecl _Getflags() = 0 ;
+	virtual void __cdecl _Setflags(int Value) = 0 ;
+	virtual int __cdecl _Getoffset() = 0 ;
+	virtual void __cdecl _Setoffset(int Value) = 0 ;
+	virtual __int64 __cdecl _GetpresentationTimeUs() = 0 ;
+	virtual void __cdecl _SetpresentationTimeUs(__int64 Value) = 0 ;
+	virtual int __cdecl _Getsize() = 0 ;
+	virtual void __cdecl _Setsize(int Value) = 0 ;
+	virtual void __cdecl set(int newOffset, int newSize, __int64 newTimeUs, int newFlags) = 0 ;
+	__property int flags = {read=_Getflags, write=_Setflags};
+	__property int offset = {read=_Getoffset, write=_Setoffset};
+	__property __int64 presentationTimeUs = {read=_GetpresentationTimeUs, write=_SetpresentationTimeUs};
+	__property int size = {read=_Getsize, write=_Setsize};
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJMediaCodec_BufferInfo : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMediaCodec_BufferInfoClass,_di_JMediaCodec_BufferInfo>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMediaCodec_BufferInfoClass,_di_JMediaCodec_BufferInfo> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJMediaCodec_BufferInfo() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMediaCodec_BufferInfoClass,_di_JMediaCodec_BufferInfo>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJMediaCodec_BufferInfo() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{603A4EB4-F4D1-41EB-BB3E-CA8FD9125BB6}") JMediaCodec_CallbackClass  : public Androidapi::Jni::Javatypes::JObjectClass 
+{
+	HIDESBASE virtual _di_JMediaCodec_Callback __cdecl init() = 0 ;
+};
+
+__interface  INTERFACE_UUID("{63456BCE-790E-4EE8-8607-6E19D3D4370E}") JMediaCodec_Callback  : public Androidapi::Jni::Javatypes::JObject 
+{
+	virtual void __cdecl onError(_di_JMediaCodec codec, _di_JMediaCodec_CodecException e) = 0 ;
+	virtual void __cdecl onInputBufferAvailable(_di_JMediaCodec codec, int index) = 0 ;
+	virtual void __cdecl onOutputBufferAvailable(_di_JMediaCodec codec, int index, _di_JMediaCodec_BufferInfo info) = 0 ;
+	virtual void __cdecl onOutputFormatChanged(_di_JMediaCodec codec, _di_JMediaFormat format) = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJMediaCodec_Callback : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMediaCodec_CallbackClass,_di_JMediaCodec_Callback>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMediaCodec_CallbackClass,_di_JMediaCodec_Callback> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJMediaCodec_Callback() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMediaCodec_CallbackClass,_di_JMediaCodec_Callback>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJMediaCodec_Callback() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{52958DD7-6125-4029-ABC5-B25990346AB9}") JMediaCodec_CodecExceptionClass  : public Androidapi::Jni::Javatypes::JIllegalStateExceptionClass 
+{
+	virtual int __cdecl _GetERROR_INSUFFICIENT_RESOURCE() = 0 ;
+	virtual int __cdecl _GetERROR_RECLAIMED() = 0 ;
+	__property int ERROR_INSUFFICIENT_RESOURCE = {read=_GetERROR_INSUFFICIENT_RESOURCE};
+	__property int ERROR_RECLAIMED = {read=_GetERROR_RECLAIMED};
+};
+
+__interface  INTERFACE_UUID("{0582C58D-F00C-467F-A211-847AE1AEA50E}") JMediaCodec_CodecException  : public Androidapi::Jni::Javatypes::JIllegalStateException 
+{
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl getDiagnosticInfo() = 0 ;
+	virtual int __cdecl getErrorCode() = 0 ;
+	virtual bool __cdecl isRecoverable() = 0 ;
+	virtual bool __cdecl isTransient() = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJMediaCodec_CodecException : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMediaCodec_CodecExceptionClass,_di_JMediaCodec_CodecException>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMediaCodec_CodecExceptionClass,_di_JMediaCodec_CodecException> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJMediaCodec_CodecException() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMediaCodec_CodecExceptionClass,_di_JMediaCodec_CodecException>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJMediaCodec_CodecException() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{CE90A025-BE54-4F7A-95ED-4FEA792EA200}") JMediaCodec_CryptoExceptionClass  : public Androidapi::Jni::Javatypes::JRuntimeExceptionClass 
+{
+	virtual int __cdecl _GetERROR_INSUFFICIENT_OUTPUT_PROTECTION() = 0 ;
+	virtual int __cdecl _GetERROR_KEY_EXPIRED() = 0 ;
+	virtual int __cdecl _GetERROR_NO_KEY() = 0 ;
+	virtual int __cdecl _GetERROR_RESOURCE_BUSY() = 0 ;
+	virtual int __cdecl _GetERROR_SESSION_NOT_OPENED() = 0 ;
+	virtual int __cdecl _GetERROR_UNSUPPORTED_OPERATION() = 0 ;
+	HIDESBASE virtual _di_JMediaCodec_CryptoException __cdecl init(int errorCode, Androidapi::Jni::Javatypes::_di_JString detailMessage) = 0 ;
+	__property int ERROR_INSUFFICIENT_OUTPUT_PROTECTION = {read=_GetERROR_INSUFFICIENT_OUTPUT_PROTECTION};
+	__property int ERROR_KEY_EXPIRED = {read=_GetERROR_KEY_EXPIRED};
+	__property int ERROR_NO_KEY = {read=_GetERROR_NO_KEY};
+	__property int ERROR_RESOURCE_BUSY = {read=_GetERROR_RESOURCE_BUSY};
+	__property int ERROR_SESSION_NOT_OPENED = {read=_GetERROR_SESSION_NOT_OPENED};
+	__property int ERROR_UNSUPPORTED_OPERATION = {read=_GetERROR_UNSUPPORTED_OPERATION};
+};
+
+__interface  INTERFACE_UUID("{D0A8F499-E687-4578-9E2D-A86E14881DB5}") JMediaCodec_CryptoException  : public Androidapi::Jni::Javatypes::JRuntimeException 
+{
+	virtual int __cdecl getErrorCode() = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJMediaCodec_CryptoException : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMediaCodec_CryptoExceptionClass,_di_JMediaCodec_CryptoException>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMediaCodec_CryptoExceptionClass,_di_JMediaCodec_CryptoException> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJMediaCodec_CryptoException() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMediaCodec_CryptoExceptionClass,_di_JMediaCodec_CryptoException>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJMediaCodec_CryptoException() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{DDA3A4C6-56FD-4C37-8812-5269A274E6DD}") JMediaCodec_CryptoInfoClass  : public Androidapi::Jni::Javatypes::JObjectClass 
+{
+	HIDESBASE virtual _di_JMediaCodec_CryptoInfo __cdecl init() = 0 ;
+};
+
+__interface  INTERFACE_UUID("{5281B1AC-4C52-4BF3-A45F-75B3778E3774}") JMediaCodec_CryptoInfo  : public Androidapi::Jni::Javatypes::JObject 
+{
+	virtual Androidapi::Jnibridge::TJavaArray__1<System::Byte>* __cdecl _Getiv() = 0 ;
+	virtual void __cdecl _Setiv(Androidapi::Jnibridge::TJavaArray__1<System::Byte>* Value) = 0 ;
+	virtual Androidapi::Jnibridge::TJavaArray__1<System::Byte>* __cdecl _Getkey() = 0 ;
+	virtual void __cdecl _Setkey(Androidapi::Jnibridge::TJavaArray__1<System::Byte>* Value) = 0 ;
+	virtual int __cdecl _Getmode() = 0 ;
+	virtual void __cdecl _Setmode(int Value) = 0 ;
+	virtual Androidapi::Jnibridge::TJavaArray__1<int>* __cdecl _GetnumBytesOfClearData() = 0 ;
+	virtual void __cdecl _SetnumBytesOfClearData(Androidapi::Jnibridge::TJavaArray__1<int>* Value) = 0 ;
+	virtual Androidapi::Jnibridge::TJavaArray__1<int>* __cdecl _GetnumBytesOfEncryptedData() = 0 ;
+	virtual void __cdecl _SetnumBytesOfEncryptedData(Androidapi::Jnibridge::TJavaArray__1<int>* Value) = 0 ;
+	virtual int __cdecl _GetnumSubSamples() = 0 ;
+	virtual void __cdecl _SetnumSubSamples(int Value) = 0 ;
+	virtual void __cdecl set(int newNumSubSamples, Androidapi::Jnibridge::TJavaArray__1<int>* newNumBytesOfClearData, Androidapi::Jnibridge::TJavaArray__1<int>* newNumBytesOfEncryptedData, Androidapi::Jnibridge::TJavaArray__1<System::Byte>* newKey, Androidapi::Jnibridge::TJavaArray__1<System::Byte>* newIV, int newMode) = 0 ;
+	virtual void __cdecl setPattern(_di_JCryptoInfo_Pattern newPattern) = 0 ;
+	HIDESBASE virtual Androidapi::Jni::Javatypes::_di_JString __cdecl toString() = 0 ;
+	__property Androidapi::Jnibridge::TJavaArray__1<System::Byte>* iv = {read=_Getiv, write=_Setiv};
+	__property Androidapi::Jnibridge::TJavaArray__1<System::Byte>* key = {read=_Getkey, write=_Setkey};
+	__property int mode = {read=_Getmode, write=_Setmode};
+	__property Androidapi::Jnibridge::TJavaArray__1<int>* numBytesOfClearData = {read=_GetnumBytesOfClearData, write=_SetnumBytesOfClearData};
+	__property Androidapi::Jnibridge::TJavaArray__1<int>* numBytesOfEncryptedData = {read=_GetnumBytesOfEncryptedData, write=_SetnumBytesOfEncryptedData};
+	__property int numSubSamples = {read=_GetnumSubSamples, write=_SetnumSubSamples};
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJMediaCodec_CryptoInfo : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMediaCodec_CryptoInfoClass,_di_JMediaCodec_CryptoInfo>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMediaCodec_CryptoInfoClass,_di_JMediaCodec_CryptoInfo> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJMediaCodec_CryptoInfo() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMediaCodec_CryptoInfoClass,_di_JMediaCodec_CryptoInfo>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJMediaCodec_CryptoInfo() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{05D6B0DB-3979-4DD3-B7E4-A00FC099C52B}") JCryptoInfo_PatternClass  : public Androidapi::Jni::Javatypes::JObjectClass 
+{
+	HIDESBASE virtual _di_JCryptoInfo_Pattern __cdecl init(int blocksToEncrypt, int blocksToSkip) = 0 ;
+};
+
+__interface  INTERFACE_UUID("{F939CECD-DD90-4AE6-BB59-E1A07175DBC6}") JCryptoInfo_Pattern  : public Androidapi::Jni::Javatypes::JObject 
+{
+	virtual int __cdecl getEncryptBlocks() = 0 ;
+	virtual int __cdecl getSkipBlocks() = 0 ;
+	virtual void __cdecl set(int blocksToEncrypt, int blocksToSkip) = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJCryptoInfo_Pattern : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JCryptoInfo_PatternClass,_di_JCryptoInfo_Pattern>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JCryptoInfo_PatternClass,_di_JCryptoInfo_Pattern> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJCryptoInfo_Pattern() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JCryptoInfo_PatternClass,_di_JCryptoInfo_Pattern>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJCryptoInfo_Pattern() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{DDFA48B2-F264-4F43-B0F5-99AD8861D9E6}") JMediaCodec_MetricsConstantsClass  : public Androidapi::Jni::Javatypes::JObjectClass 
+{
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetCODEC() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetENCODER() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetHEIGHT() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetMIME_TYPE() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetMODE() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetMODE_AUDIO() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetMODE_VIDEO() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetROTATION() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetSECURE() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetWIDTH() = 0 ;
+	__property Androidapi::Jni::Javatypes::_di_JString CODEC = {read=_GetCODEC};
+	__property Androidapi::Jni::Javatypes::_di_JString ENCODER = {read=_GetENCODER};
+	__property Androidapi::Jni::Javatypes::_di_JString HEIGHT = {read=_GetHEIGHT};
+	__property Androidapi::Jni::Javatypes::_di_JString MIME_TYPE = {read=_GetMIME_TYPE};
+	__property Androidapi::Jni::Javatypes::_di_JString MODE = {read=_GetMODE};
+	__property Androidapi::Jni::Javatypes::_di_JString MODE_AUDIO = {read=_GetMODE_AUDIO};
+	__property Androidapi::Jni::Javatypes::_di_JString MODE_VIDEO = {read=_GetMODE_VIDEO};
+	__property Androidapi::Jni::Javatypes::_di_JString ROTATION = {read=_GetROTATION};
+	__property Androidapi::Jni::Javatypes::_di_JString SECURE = {read=_GetSECURE};
+	__property Androidapi::Jni::Javatypes::_di_JString WIDTH = {read=_GetWIDTH};
+};
+
+__interface  INTERFACE_UUID("{75F6E590-2E6B-42E7-8F61-7F5DB6B4A6F5}") JMediaCodec_MetricsConstants  : public Androidapi::Jni::Javatypes::JObject 
+{
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJMediaCodec_MetricsConstants : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMediaCodec_MetricsConstantsClass,_di_JMediaCodec_MetricsConstants>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMediaCodec_MetricsConstantsClass,_di_JMediaCodec_MetricsConstants> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJMediaCodec_MetricsConstants() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMediaCodec_MetricsConstantsClass,_di_JMediaCodec_MetricsConstants>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJMediaCodec_MetricsConstants() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{84F9D7D7-89EB-487E-B4E1-530587A82704}") JMediaCodec_OnFrameRenderedListenerClass  : public Androidapi::Jnibridge::IJavaClass 
+{
+	
+};
+
+__interface  INTERFACE_UUID("{D8D0DD67-71AF-4052-B101-6EAA19ABCF6D}") JMediaCodec_OnFrameRenderedListener  : public Androidapi::Jnibridge::IJavaInstance 
+{
+	virtual void __cdecl onFrameRendered(_di_JMediaCodec codec, __int64 presentationTimeUs, __int64 nanoTime) = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJMediaCodec_OnFrameRenderedListener : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMediaCodec_OnFrameRenderedListenerClass,_di_JMediaCodec_OnFrameRenderedListener>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMediaCodec_OnFrameRenderedListenerClass,_di_JMediaCodec_OnFrameRenderedListener> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJMediaCodec_OnFrameRenderedListener() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMediaCodec_OnFrameRenderedListenerClass,_di_JMediaCodec_OnFrameRenderedListener>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJMediaCodec_OnFrameRenderedListener() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{65843676-C663-48B7-B957-36E0FAA8C6DE}") JMediaCodecInfoClass  : public Androidapi::Jni::Javatypes::JObjectClass 
+{
+	
+};
+
+__interface  INTERFACE_UUID("{DEB2A66A-5E90-4568-8DD2-5D17A9008896}") JMediaCodecInfo  : public Androidapi::Jni::Javatypes::JObject 
+{
+	virtual _di_JMediaCodecInfo_CodecCapabilities __cdecl getCapabilitiesForType(Androidapi::Jni::Javatypes::_di_JString type_) = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl getName() = 0 ;
+	virtual Androidapi::Jnibridge::TJavaObjectArray__1<Androidapi::Jni::Javatypes::_di_JString>* __cdecl getSupportedTypes() = 0 ;
+	virtual bool __cdecl isEncoder() = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJMediaCodecInfo : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMediaCodecInfoClass,_di_JMediaCodecInfo>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMediaCodecInfoClass,_di_JMediaCodecInfo> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJMediaCodecInfo() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMediaCodecInfoClass,_di_JMediaCodecInfo>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJMediaCodecInfo() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{75906A2D-B46A-4CC9-945B-DDEA07BE543C}") JMediaCodecInfo_AudioCapabilitiesClass  : public Androidapi::Jni::Javatypes::JObjectClass 
+{
+	
+};
+
+__interface  INTERFACE_UUID("{9D0C7E86-4355-4231-9666-C4266685A95D}") JMediaCodecInfo_AudioCapabilities  : public Androidapi::Jni::Javatypes::JObject 
+{
+	virtual Androidapi::Jni::Util::_di_JRange __cdecl getBitrateRange() = 0 ;
+	virtual int __cdecl getMaxInputChannelCount() = 0 ;
+	virtual Androidapi::Jnibridge::TJavaObjectArray__1<Androidapi::Jni::Util::_di_JRange>* __cdecl getSupportedSampleRateRanges() = 0 ;
+	virtual Androidapi::Jnibridge::TJavaArray__1<int>* __cdecl getSupportedSampleRates() = 0 ;
+	virtual bool __cdecl isSampleRateSupported(int sampleRate) = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJMediaCodecInfo_AudioCapabilities : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMediaCodecInfo_AudioCapabilitiesClass,_di_JMediaCodecInfo_AudioCapabilities>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMediaCodecInfo_AudioCapabilitiesClass,_di_JMediaCodecInfo_AudioCapabilities> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJMediaCodecInfo_AudioCapabilities() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMediaCodecInfo_AudioCapabilitiesClass,_di_JMediaCodecInfo_AudioCapabilities>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJMediaCodecInfo_AudioCapabilities() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{007827D3-EC90-41C8-BA89-794265D12834}") JMediaCodecInfo_CodecCapabilitiesClass  : public Androidapi::Jni::Javatypes::JObjectClass 
+{
+	virtual int __cdecl _GetCOLOR_Format12bitRGB444() = 0 ;
+	virtual int __cdecl _GetCOLOR_Format16bitARGB1555() = 0 ;
+	virtual int __cdecl _GetCOLOR_Format16bitARGB4444() = 0 ;
+	virtual int __cdecl _GetCOLOR_Format16bitBGR565() = 0 ;
+	virtual int __cdecl _GetCOLOR_Format16bitRGB565() = 0 ;
+	virtual int __cdecl _GetCOLOR_Format18BitBGR666() = 0 ;
+	virtual int __cdecl _GetCOLOR_Format18bitARGB1665() = 0 ;
+	virtual int __cdecl _GetCOLOR_Format18bitRGB666() = 0 ;
+	virtual int __cdecl _GetCOLOR_Format19bitARGB1666() = 0 ;
+	virtual int __cdecl _GetCOLOR_Format24BitABGR6666() = 0 ;
+	virtual int __cdecl _GetCOLOR_Format24BitARGB6666() = 0 ;
+	virtual int __cdecl _GetCOLOR_Format24bitARGB1887() = 0 ;
+	virtual int __cdecl _GetCOLOR_Format24bitBGR888() = 0 ;
+	virtual int __cdecl _GetCOLOR_Format24bitRGB888() = 0 ;
+	virtual int __cdecl _GetCOLOR_Format25bitARGB1888() = 0 ;
+	virtual int __cdecl _GetCOLOR_Format32bitABGR8888() = 0 ;
+	virtual int __cdecl _GetCOLOR_Format32bitARGB8888() = 0 ;
+	virtual int __cdecl _GetCOLOR_Format32bitBGRA8888() = 0 ;
+	virtual int __cdecl _GetCOLOR_Format8bitRGB332() = 0 ;
+	virtual int __cdecl _GetCOLOR_FormatCbYCrY() = 0 ;
+	virtual int __cdecl _GetCOLOR_FormatCrYCbY() = 0 ;
+	virtual int __cdecl _GetCOLOR_FormatL16() = 0 ;
+	virtual int __cdecl _GetCOLOR_FormatL2() = 0 ;
+	virtual int __cdecl _GetCOLOR_FormatL24() = 0 ;
+	virtual int __cdecl _GetCOLOR_FormatL32() = 0 ;
+	virtual int __cdecl _GetCOLOR_FormatL4() = 0 ;
+	virtual int __cdecl _GetCOLOR_FormatL8() = 0 ;
+	virtual int __cdecl _GetCOLOR_FormatMonochrome() = 0 ;
+	virtual int __cdecl _GetCOLOR_FormatRGBAFlexible() = 0 ;
+	virtual int __cdecl _GetCOLOR_FormatRGBFlexible() = 0 ;
+	virtual int __cdecl _GetCOLOR_FormatRawBayer10bit() = 0 ;
+	virtual int __cdecl _GetCOLOR_FormatRawBayer8bit() = 0 ;
+	virtual int __cdecl _GetCOLOR_FormatRawBayer8bitcompressed() = 0 ;
+	virtual int __cdecl _GetCOLOR_FormatSurface() = 0 ;
+	virtual int __cdecl _GetCOLOR_FormatYCbYCr() = 0 ;
+	virtual int __cdecl _GetCOLOR_FormatYCrYCb() = 0 ;
+	virtual int __cdecl _GetCOLOR_FormatYUV411PackedPlanar() = 0 ;
+	virtual int __cdecl _GetCOLOR_FormatYUV411Planar() = 0 ;
+	virtual int __cdecl _GetCOLOR_FormatYUV420Flexible() = 0 ;
+	virtual int __cdecl _GetCOLOR_FormatYUV420PackedPlanar() = 0 ;
+	virtual int __cdecl _GetCOLOR_FormatYUV420PackedSemiPlanar() = 0 ;
+	virtual int __cdecl _GetCOLOR_FormatYUV420Planar() = 0 ;
+	virtual int __cdecl _GetCOLOR_FormatYUV420SemiPlanar() = 0 ;
+	virtual int __cdecl _GetCOLOR_FormatYUV422Flexible() = 0 ;
+	virtual int __cdecl _GetCOLOR_FormatYUV422PackedPlanar() = 0 ;
+	virtual int __cdecl _GetCOLOR_FormatYUV422PackedSemiPlanar() = 0 ;
+	virtual int __cdecl _GetCOLOR_FormatYUV422Planar() = 0 ;
+	virtual int __cdecl _GetCOLOR_FormatYUV422SemiPlanar() = 0 ;
+	virtual int __cdecl _GetCOLOR_FormatYUV444Flexible() = 0 ;
+	virtual int __cdecl _GetCOLOR_FormatYUV444Interleaved() = 0 ;
+	virtual int __cdecl _GetCOLOR_QCOM_FormatYUV420SemiPlanar() = 0 ;
+	virtual int __cdecl _GetCOLOR_TI_FormatYUV420PackedSemiPlanar() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetFEATURE_AdaptivePlayback() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetFEATURE_IntraRefresh() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetFEATURE_PartialFrame() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetFEATURE_SecurePlayback() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetFEATURE_TunneledPlayback() = 0 ;
+	HIDESBASE virtual _di_JMediaCodecInfo_CodecCapabilities __cdecl init() = 0 ;
+	virtual _di_JMediaCodecInfo_CodecCapabilities __cdecl createFromProfileLevel(Androidapi::Jni::Javatypes::_di_JString mime, int profile, int level) = 0 ;
+	__property int COLOR_Format12bitRGB444 = {read=_GetCOLOR_Format12bitRGB444};
+	__property int COLOR_Format16bitARGB1555 = {read=_GetCOLOR_Format16bitARGB1555};
+	__property int COLOR_Format16bitARGB4444 = {read=_GetCOLOR_Format16bitARGB4444};
+	__property int COLOR_Format16bitBGR565 = {read=_GetCOLOR_Format16bitBGR565};
+	__property int COLOR_Format16bitRGB565 = {read=_GetCOLOR_Format16bitRGB565};
+	__property int COLOR_Format18BitBGR666 = {read=_GetCOLOR_Format18BitBGR666};
+	__property int COLOR_Format18bitARGB1665 = {read=_GetCOLOR_Format18bitARGB1665};
+	__property int COLOR_Format18bitRGB666 = {read=_GetCOLOR_Format18bitRGB666};
+	__property int COLOR_Format19bitARGB1666 = {read=_GetCOLOR_Format19bitARGB1666};
+	__property int COLOR_Format24BitABGR6666 = {read=_GetCOLOR_Format24BitABGR6666};
+	__property int COLOR_Format24BitARGB6666 = {read=_GetCOLOR_Format24BitARGB6666};
+	__property int COLOR_Format24bitARGB1887 = {read=_GetCOLOR_Format24bitARGB1887};
+	__property int COLOR_Format24bitBGR888 = {read=_GetCOLOR_Format24bitBGR888};
+	__property int COLOR_Format24bitRGB888 = {read=_GetCOLOR_Format24bitRGB888};
+	__property int COLOR_Format25bitARGB1888 = {read=_GetCOLOR_Format25bitARGB1888};
+	__property int COLOR_Format32bitABGR8888 = {read=_GetCOLOR_Format32bitABGR8888};
+	__property int COLOR_Format32bitARGB8888 = {read=_GetCOLOR_Format32bitARGB8888};
+	__property int COLOR_Format32bitBGRA8888 = {read=_GetCOLOR_Format32bitBGRA8888};
+	__property int COLOR_Format8bitRGB332 = {read=_GetCOLOR_Format8bitRGB332};
+	__property int COLOR_FormatCbYCrY = {read=_GetCOLOR_FormatCbYCrY};
+	__property int COLOR_FormatCrYCbY = {read=_GetCOLOR_FormatCrYCbY};
+	__property int COLOR_FormatL16 = {read=_GetCOLOR_FormatL16};
+	__property int COLOR_FormatL2 = {read=_GetCOLOR_FormatL2};
+	__property int COLOR_FormatL24 = {read=_GetCOLOR_FormatL24};
+	__property int COLOR_FormatL32 = {read=_GetCOLOR_FormatL32};
+	__property int COLOR_FormatL4 = {read=_GetCOLOR_FormatL4};
+	__property int COLOR_FormatL8 = {read=_GetCOLOR_FormatL8};
+	__property int COLOR_FormatMonochrome = {read=_GetCOLOR_FormatMonochrome};
+	__property int COLOR_FormatRGBAFlexible = {read=_GetCOLOR_FormatRGBAFlexible};
+	__property int COLOR_FormatRGBFlexible = {read=_GetCOLOR_FormatRGBFlexible};
+	__property int COLOR_FormatRawBayer10bit = {read=_GetCOLOR_FormatRawBayer10bit};
+	__property int COLOR_FormatRawBayer8bit = {read=_GetCOLOR_FormatRawBayer8bit};
+	__property int COLOR_FormatRawBayer8bitcompressed = {read=_GetCOLOR_FormatRawBayer8bitcompressed};
+	__property int COLOR_FormatSurface = {read=_GetCOLOR_FormatSurface};
+	__property int COLOR_FormatYCbYCr = {read=_GetCOLOR_FormatYCbYCr};
+	__property int COLOR_FormatYCrYCb = {read=_GetCOLOR_FormatYCrYCb};
+	__property int COLOR_FormatYUV411PackedPlanar = {read=_GetCOLOR_FormatYUV411PackedPlanar};
+	__property int COLOR_FormatYUV411Planar = {read=_GetCOLOR_FormatYUV411Planar};
+	__property int COLOR_FormatYUV420Flexible = {read=_GetCOLOR_FormatYUV420Flexible};
+	__property int COLOR_FormatYUV420PackedPlanar = {read=_GetCOLOR_FormatYUV420PackedPlanar};
+	__property int COLOR_FormatYUV420PackedSemiPlanar = {read=_GetCOLOR_FormatYUV420PackedSemiPlanar};
+	__property int COLOR_FormatYUV420Planar = {read=_GetCOLOR_FormatYUV420Planar};
+	__property int COLOR_FormatYUV420SemiPlanar = {read=_GetCOLOR_FormatYUV420SemiPlanar};
+	__property int COLOR_FormatYUV422Flexible = {read=_GetCOLOR_FormatYUV422Flexible};
+	__property int COLOR_FormatYUV422PackedPlanar = {read=_GetCOLOR_FormatYUV422PackedPlanar};
+	__property int COLOR_FormatYUV422PackedSemiPlanar = {read=_GetCOLOR_FormatYUV422PackedSemiPlanar};
+	__property int COLOR_FormatYUV422Planar = {read=_GetCOLOR_FormatYUV422Planar};
+	__property int COLOR_FormatYUV422SemiPlanar = {read=_GetCOLOR_FormatYUV422SemiPlanar};
+	__property int COLOR_FormatYUV444Flexible = {read=_GetCOLOR_FormatYUV444Flexible};
+	__property int COLOR_FormatYUV444Interleaved = {read=_GetCOLOR_FormatYUV444Interleaved};
+	__property int COLOR_QCOM_FormatYUV420SemiPlanar = {read=_GetCOLOR_QCOM_FormatYUV420SemiPlanar};
+	__property int COLOR_TI_FormatYUV420PackedSemiPlanar = {read=_GetCOLOR_TI_FormatYUV420PackedSemiPlanar};
+	__property Androidapi::Jni::Javatypes::_di_JString FEATURE_AdaptivePlayback = {read=_GetFEATURE_AdaptivePlayback};
+	__property Androidapi::Jni::Javatypes::_di_JString FEATURE_IntraRefresh = {read=_GetFEATURE_IntraRefresh};
+	__property Androidapi::Jni::Javatypes::_di_JString FEATURE_PartialFrame = {read=_GetFEATURE_PartialFrame};
+	__property Androidapi::Jni::Javatypes::_di_JString FEATURE_SecurePlayback = {read=_GetFEATURE_SecurePlayback};
+	__property Androidapi::Jni::Javatypes::_di_JString FEATURE_TunneledPlayback = {read=_GetFEATURE_TunneledPlayback};
+};
+
+__interface  INTERFACE_UUID("{A04BF209-41B0-4DA2-B376-447B7BBC6237}") JMediaCodecInfo_CodecCapabilities  : public Androidapi::Jni::Javatypes::JObject 
+{
+	virtual Androidapi::Jnibridge::TJavaArray__1<int>* __cdecl _GetcolorFormats() = 0 ;
+	virtual void __cdecl _SetcolorFormats(Androidapi::Jnibridge::TJavaArray__1<int>* Value) = 0 ;
+	virtual Androidapi::Jnibridge::TJavaObjectArray__1<_di_JMediaCodecInfo_CodecProfileLevel>* __cdecl _GetprofileLevels() = 0 ;
+	virtual void __cdecl _SetprofileLevels(Androidapi::Jnibridge::TJavaObjectArray__1<_di_JMediaCodecInfo_CodecProfileLevel>* Value) = 0 ;
+	virtual _di_JMediaCodecInfo_AudioCapabilities __cdecl getAudioCapabilities() = 0 ;
+	virtual _di_JMediaFormat __cdecl getDefaultFormat() = 0 ;
+	virtual _di_JMediaCodecInfo_EncoderCapabilities __cdecl getEncoderCapabilities() = 0 ;
+	virtual int __cdecl getMaxSupportedInstances() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl getMimeType() = 0 ;
+	virtual _di_JMediaCodecInfo_VideoCapabilities __cdecl getVideoCapabilities() = 0 ;
+	virtual bool __cdecl isFeatureRequired(Androidapi::Jni::Javatypes::_di_JString name) = 0 ;
+	virtual bool __cdecl isFeatureSupported(Androidapi::Jni::Javatypes::_di_JString name) = 0 ;
+	virtual bool __cdecl isFormatSupported(_di_JMediaFormat format) = 0 ;
+	__property Androidapi::Jnibridge::TJavaArray__1<int>* colorFormats = {read=_GetcolorFormats, write=_SetcolorFormats};
+	__property Androidapi::Jnibridge::TJavaObjectArray__1<_di_JMediaCodecInfo_CodecProfileLevel>* profileLevels = {read=_GetprofileLevels, write=_SetprofileLevels};
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJMediaCodecInfo_CodecCapabilities : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMediaCodecInfo_CodecCapabilitiesClass,_di_JMediaCodecInfo_CodecCapabilities>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMediaCodecInfo_CodecCapabilitiesClass,_di_JMediaCodecInfo_CodecCapabilities> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJMediaCodecInfo_CodecCapabilities() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMediaCodecInfo_CodecCapabilitiesClass,_di_JMediaCodecInfo_CodecCapabilities>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJMediaCodecInfo_CodecCapabilities() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{E162DC0D-F8D3-4572-8029-474D4691B5E0}") JMediaCodecInfo_CodecProfileLevelClass  : public Androidapi::Jni::Javatypes::JObjectClass 
+{
+	virtual int __cdecl _GetAACObjectELD() = 0 ;
+	virtual int __cdecl _GetAACObjectERLC() = 0 ;
+	virtual int __cdecl _GetAACObjectERScalable() = 0 ;
+	virtual int __cdecl _GetAACObjectHE() = 0 ;
+	virtual int __cdecl _GetAACObjectHE_PS() = 0 ;
+	virtual int __cdecl _GetAACObjectLC() = 0 ;
+	virtual int __cdecl _GetAACObjectLD() = 0 ;
+	virtual int __cdecl _GetAACObjectLTP() = 0 ;
+	virtual int __cdecl _GetAACObjectMain() = 0 ;
+	virtual int __cdecl _GetAACObjectSSR() = 0 ;
+	virtual int __cdecl _GetAACObjectScalable() = 0 ;
+	virtual int __cdecl _GetAVCLevel1() = 0 ;
+	virtual int __cdecl _GetAVCLevel11() = 0 ;
+	virtual int __cdecl _GetAVCLevel12() = 0 ;
+	virtual int __cdecl _GetAVCLevel13() = 0 ;
+	virtual int __cdecl _GetAVCLevel1b() = 0 ;
+	virtual int __cdecl _GetAVCLevel2() = 0 ;
+	virtual int __cdecl _GetAVCLevel21() = 0 ;
+	virtual int __cdecl _GetAVCLevel22() = 0 ;
+	virtual int __cdecl _GetAVCLevel3() = 0 ;
+	virtual int __cdecl _GetAVCLevel31() = 0 ;
+	virtual int __cdecl _GetAVCLevel32() = 0 ;
+	virtual int __cdecl _GetAVCLevel4() = 0 ;
+	virtual int __cdecl _GetAVCLevel41() = 0 ;
+	virtual int __cdecl _GetAVCLevel42() = 0 ;
+	virtual int __cdecl _GetAVCLevel5() = 0 ;
+	virtual int __cdecl _GetAVCLevel51() = 0 ;
+	virtual int __cdecl _GetAVCLevel52() = 0 ;
+	virtual int __cdecl _GetAVCProfileBaseline() = 0 ;
+	virtual int __cdecl _GetAVCProfileExtended() = 0 ;
+	virtual int __cdecl _GetAVCProfileHigh() = 0 ;
+	virtual int __cdecl _GetAVCProfileHigh10() = 0 ;
+	virtual int __cdecl _GetAVCProfileHigh422() = 0 ;
+	virtual int __cdecl _GetAVCProfileHigh444() = 0 ;
+	virtual int __cdecl _GetAVCProfileMain() = 0 ;
+	virtual int __cdecl _GetDolbyVisionLevelFhd24() = 0 ;
+	virtual int __cdecl _GetDolbyVisionLevelFhd30() = 0 ;
+	virtual int __cdecl _GetDolbyVisionLevelFhd60() = 0 ;
+	virtual int __cdecl _GetDolbyVisionLevelHd24() = 0 ;
+	virtual int __cdecl _GetDolbyVisionLevelHd30() = 0 ;
+	virtual int __cdecl _GetDolbyVisionLevelUhd24() = 0 ;
+	virtual int __cdecl _GetDolbyVisionLevelUhd30() = 0 ;
+	virtual int __cdecl _GetDolbyVisionLevelUhd48() = 0 ;
+	virtual int __cdecl _GetDolbyVisionLevelUhd60() = 0 ;
+	virtual int __cdecl _GetDolbyVisionProfileDvavPen() = 0 ;
+	virtual int __cdecl _GetDolbyVisionProfileDvavPer() = 0 ;
+	virtual int __cdecl _GetDolbyVisionProfileDvheDen() = 0 ;
+	virtual int __cdecl _GetDolbyVisionProfileDvheDer() = 0 ;
+	virtual int __cdecl _GetDolbyVisionProfileDvheDtb() = 0 ;
+	virtual int __cdecl _GetDolbyVisionProfileDvheDth() = 0 ;
+	virtual int __cdecl _GetDolbyVisionProfileDvheDtr() = 0 ;
+	virtual int __cdecl _GetDolbyVisionProfileDvheStn() = 0 ;
+	virtual int __cdecl _GetH263Level10() = 0 ;
+	virtual int __cdecl _GetH263Level20() = 0 ;
+	virtual int __cdecl _GetH263Level30() = 0 ;
+	virtual int __cdecl _GetH263Level40() = 0 ;
+	virtual int __cdecl _GetH263Level45() = 0 ;
+	virtual int __cdecl _GetH263Level50() = 0 ;
+	virtual int __cdecl _GetH263Level60() = 0 ;
+	virtual int __cdecl _GetH263Level70() = 0 ;
+	virtual int __cdecl _GetH263ProfileBackwardCompatible() = 0 ;
+	virtual int __cdecl _GetH263ProfileBaseline() = 0 ;
+	virtual int __cdecl _GetH263ProfileH320Coding() = 0 ;
+	virtual int __cdecl _GetH263ProfileHighCompression() = 0 ;
+	virtual int __cdecl _GetH263ProfileHighLatency() = 0 ;
+	virtual int __cdecl _GetH263ProfileISWV2() = 0 ;
+	virtual int __cdecl _GetH263ProfileISWV3() = 0 ;
+	virtual int __cdecl _GetH263ProfileInterlace() = 0 ;
+	virtual int __cdecl _GetH263ProfileInternet() = 0 ;
+	virtual int __cdecl _GetHEVCHighTierLevel1() = 0 ;
+	virtual int __cdecl _GetHEVCHighTierLevel2() = 0 ;
+	virtual int __cdecl _GetHEVCHighTierLevel21() = 0 ;
+	virtual int __cdecl _GetHEVCHighTierLevel3() = 0 ;
+	virtual int __cdecl _GetHEVCHighTierLevel31() = 0 ;
+	virtual int __cdecl _GetHEVCHighTierLevel4() = 0 ;
+	virtual int __cdecl _GetHEVCHighTierLevel41() = 0 ;
+	virtual int __cdecl _GetHEVCHighTierLevel5() = 0 ;
+	virtual int __cdecl _GetHEVCHighTierLevel51() = 0 ;
+	virtual int __cdecl _GetHEVCHighTierLevel52() = 0 ;
+	virtual int __cdecl _GetHEVCHighTierLevel6() = 0 ;
+	virtual int __cdecl _GetHEVCHighTierLevel61() = 0 ;
+	virtual int __cdecl _GetHEVCHighTierLevel62() = 0 ;
+	virtual int __cdecl _GetHEVCMainTierLevel1() = 0 ;
+	virtual int __cdecl _GetHEVCMainTierLevel2() = 0 ;
+	virtual int __cdecl _GetHEVCMainTierLevel21() = 0 ;
+	virtual int __cdecl _GetHEVCMainTierLevel3() = 0 ;
+	virtual int __cdecl _GetHEVCMainTierLevel31() = 0 ;
+	virtual int __cdecl _GetHEVCMainTierLevel4() = 0 ;
+	virtual int __cdecl _GetHEVCMainTierLevel41() = 0 ;
+	virtual int __cdecl _GetHEVCMainTierLevel5() = 0 ;
+	virtual int __cdecl _GetHEVCMainTierLevel51() = 0 ;
+	virtual int __cdecl _GetHEVCMainTierLevel52() = 0 ;
+	virtual int __cdecl _GetHEVCMainTierLevel6() = 0 ;
+	virtual int __cdecl _GetHEVCMainTierLevel61() = 0 ;
+	virtual int __cdecl _GetHEVCMainTierLevel62() = 0 ;
+	virtual int __cdecl _GetHEVCProfileMain() = 0 ;
+	virtual int __cdecl _GetHEVCProfileMain10() = 0 ;
+	virtual int __cdecl _GetHEVCProfileMain10HDR10() = 0 ;
+	virtual int __cdecl _GetMPEG2LevelH14() = 0 ;
+	virtual int __cdecl _GetMPEG2LevelHL() = 0 ;
+	virtual int __cdecl _GetMPEG2LevelHP() = 0 ;
+	virtual int __cdecl _GetMPEG2LevelLL() = 0 ;
+	virtual int __cdecl _GetMPEG2LevelML() = 0 ;
+	virtual int __cdecl _GetMPEG2Profile422() = 0 ;
+	virtual int __cdecl _GetMPEG2ProfileHigh() = 0 ;
+	virtual int __cdecl _GetMPEG2ProfileMain() = 0 ;
+	virtual int __cdecl _GetMPEG2ProfileSNR() = 0 ;
+	virtual int __cdecl _GetMPEG2ProfileSimple() = 0 ;
+	virtual int __cdecl _GetMPEG2ProfileSpatial() = 0 ;
+	virtual int __cdecl _GetMPEG4Level0() = 0 ;
+	virtual int __cdecl _GetMPEG4Level0b() = 0 ;
+	virtual int __cdecl _GetMPEG4Level1() = 0 ;
+	virtual int __cdecl _GetMPEG4Level2() = 0 ;
+	virtual int __cdecl _GetMPEG4Level3() = 0 ;
+	virtual int __cdecl _GetMPEG4Level3b() = 0 ;
+	virtual int __cdecl _GetMPEG4Level4() = 0 ;
+	virtual int __cdecl _GetMPEG4Level4a() = 0 ;
+	virtual int __cdecl _GetMPEG4Level5() = 0 ;
+	virtual int __cdecl _GetMPEG4Level6() = 0 ;
+	virtual int __cdecl _GetMPEG4ProfileAdvancedCoding() = 0 ;
+	virtual int __cdecl _GetMPEG4ProfileAdvancedCore() = 0 ;
+	virtual int __cdecl _GetMPEG4ProfileAdvancedRealTime() = 0 ;
+	virtual int __cdecl _GetMPEG4ProfileAdvancedScalable() = 0 ;
+	virtual int __cdecl _GetMPEG4ProfileAdvancedSimple() = 0 ;
+	virtual int __cdecl _GetMPEG4ProfileBasicAnimated() = 0 ;
+	virtual int __cdecl _GetMPEG4ProfileCore() = 0 ;
+	virtual int __cdecl _GetMPEG4ProfileCoreScalable() = 0 ;
+	virtual int __cdecl _GetMPEG4ProfileHybrid() = 0 ;
+	virtual int __cdecl _GetMPEG4ProfileMain() = 0 ;
+	virtual int __cdecl _GetMPEG4ProfileNbit() = 0 ;
+	virtual int __cdecl _GetMPEG4ProfileScalableTexture() = 0 ;
+	virtual int __cdecl _GetMPEG4ProfileSimple() = 0 ;
+	virtual int __cdecl _GetMPEG4ProfileSimpleFBA() = 0 ;
+	virtual int __cdecl _GetMPEG4ProfileSimpleFace() = 0 ;
+	virtual int __cdecl _GetMPEG4ProfileSimpleScalable() = 0 ;
+	virtual int __cdecl _GetVP8Level_Version0() = 0 ;
+	virtual int __cdecl _GetVP8Level_Version1() = 0 ;
+	virtual int __cdecl _GetVP8Level_Version2() = 0 ;
+	virtual int __cdecl _GetVP8Level_Version3() = 0 ;
+	virtual int __cdecl _GetVP8ProfileMain() = 0 ;
+	virtual int __cdecl _GetVP9Level1() = 0 ;
+	virtual int __cdecl _GetVP9Level11() = 0 ;
+	virtual int __cdecl _GetVP9Level2() = 0 ;
+	virtual int __cdecl _GetVP9Level21() = 0 ;
+	virtual int __cdecl _GetVP9Level3() = 0 ;
+	virtual int __cdecl _GetVP9Level31() = 0 ;
+	virtual int __cdecl _GetVP9Level4() = 0 ;
+	virtual int __cdecl _GetVP9Level41() = 0 ;
+	virtual int __cdecl _GetVP9Level5() = 0 ;
+	virtual int __cdecl _GetVP9Level51() = 0 ;
+	virtual int __cdecl _GetVP9Level52() = 0 ;
+	virtual int __cdecl _GetVP9Level6() = 0 ;
+	virtual int __cdecl _GetVP9Level61() = 0 ;
+	virtual int __cdecl _GetVP9Level62() = 0 ;
+	virtual int __cdecl _GetVP9Profile0() = 0 ;
+	virtual int __cdecl _GetVP9Profile1() = 0 ;
+	virtual int __cdecl _GetVP9Profile2() = 0 ;
+	virtual int __cdecl _GetVP9Profile2HDR() = 0 ;
+	virtual int __cdecl _GetVP9Profile3() = 0 ;
+	virtual int __cdecl _GetVP9Profile3HDR() = 0 ;
+	HIDESBASE virtual _di_JMediaCodecInfo_CodecProfileLevel __cdecl init() = 0 ;
+	__property int AACObjectELD = {read=_GetAACObjectELD};
+	__property int AACObjectERLC = {read=_GetAACObjectERLC};
+	__property int AACObjectERScalable = {read=_GetAACObjectERScalable};
+	__property int AACObjectHE = {read=_GetAACObjectHE};
+	__property int AACObjectHE_PS = {read=_GetAACObjectHE_PS};
+	__property int AACObjectLC = {read=_GetAACObjectLC};
+	__property int AACObjectLD = {read=_GetAACObjectLD};
+	__property int AACObjectLTP = {read=_GetAACObjectLTP};
+	__property int AACObjectMain = {read=_GetAACObjectMain};
+	__property int AACObjectSSR = {read=_GetAACObjectSSR};
+	__property int AACObjectScalable = {read=_GetAACObjectScalable};
+	__property int AVCLevel1 = {read=_GetAVCLevel1};
+	__property int AVCLevel11 = {read=_GetAVCLevel11};
+	__property int AVCLevel12 = {read=_GetAVCLevel12};
+	__property int AVCLevel13 = {read=_GetAVCLevel13};
+	__property int AVCLevel1b = {read=_GetAVCLevel1b};
+	__property int AVCLevel2 = {read=_GetAVCLevel2};
+	__property int AVCLevel21 = {read=_GetAVCLevel21};
+	__property int AVCLevel22 = {read=_GetAVCLevel22};
+	__property int AVCLevel3 = {read=_GetAVCLevel3};
+	__property int AVCLevel31 = {read=_GetAVCLevel31};
+	__property int AVCLevel32 = {read=_GetAVCLevel32};
+	__property int AVCLevel4 = {read=_GetAVCLevel4};
+	__property int AVCLevel41 = {read=_GetAVCLevel41};
+	__property int AVCLevel42 = {read=_GetAVCLevel42};
+	__property int AVCLevel5 = {read=_GetAVCLevel5};
+	__property int AVCLevel51 = {read=_GetAVCLevel51};
+	__property int AVCLevel52 = {read=_GetAVCLevel52};
+	__property int AVCProfileBaseline = {read=_GetAVCProfileBaseline};
+	__property int AVCProfileExtended = {read=_GetAVCProfileExtended};
+	__property int AVCProfileHigh = {read=_GetAVCProfileHigh};
+	__property int AVCProfileHigh10 = {read=_GetAVCProfileHigh10};
+	__property int AVCProfileHigh422 = {read=_GetAVCProfileHigh422};
+	__property int AVCProfileHigh444 = {read=_GetAVCProfileHigh444};
+	__property int AVCProfileMain = {read=_GetAVCProfileMain};
+	__property int DolbyVisionLevelFhd24 = {read=_GetDolbyVisionLevelFhd24};
+	__property int DolbyVisionLevelFhd30 = {read=_GetDolbyVisionLevelFhd30};
+	__property int DolbyVisionLevelFhd60 = {read=_GetDolbyVisionLevelFhd60};
+	__property int DolbyVisionLevelHd24 = {read=_GetDolbyVisionLevelHd24};
+	__property int DolbyVisionLevelHd30 = {read=_GetDolbyVisionLevelHd30};
+	__property int DolbyVisionLevelUhd24 = {read=_GetDolbyVisionLevelUhd24};
+	__property int DolbyVisionLevelUhd30 = {read=_GetDolbyVisionLevelUhd30};
+	__property int DolbyVisionLevelUhd48 = {read=_GetDolbyVisionLevelUhd48};
+	__property int DolbyVisionLevelUhd60 = {read=_GetDolbyVisionLevelUhd60};
+	__property int DolbyVisionProfileDvavPen = {read=_GetDolbyVisionProfileDvavPen};
+	__property int DolbyVisionProfileDvavPer = {read=_GetDolbyVisionProfileDvavPer};
+	__property int DolbyVisionProfileDvheDen = {read=_GetDolbyVisionProfileDvheDen};
+	__property int DolbyVisionProfileDvheDer = {read=_GetDolbyVisionProfileDvheDer};
+	__property int DolbyVisionProfileDvheDtb = {read=_GetDolbyVisionProfileDvheDtb};
+	__property int DolbyVisionProfileDvheDth = {read=_GetDolbyVisionProfileDvheDth};
+	__property int DolbyVisionProfileDvheDtr = {read=_GetDolbyVisionProfileDvheDtr};
+	__property int DolbyVisionProfileDvheStn = {read=_GetDolbyVisionProfileDvheStn};
+	__property int H263Level10 = {read=_GetH263Level10};
+	__property int H263Level20 = {read=_GetH263Level20};
+	__property int H263Level30 = {read=_GetH263Level30};
+	__property int H263Level40 = {read=_GetH263Level40};
+	__property int H263Level45 = {read=_GetH263Level45};
+	__property int H263Level50 = {read=_GetH263Level50};
+	__property int H263Level60 = {read=_GetH263Level60};
+	__property int H263Level70 = {read=_GetH263Level70};
+	__property int H263ProfileBackwardCompatible = {read=_GetH263ProfileBackwardCompatible};
+	__property int H263ProfileBaseline = {read=_GetH263ProfileBaseline};
+	__property int H263ProfileH320Coding = {read=_GetH263ProfileH320Coding};
+	__property int H263ProfileHighCompression = {read=_GetH263ProfileHighCompression};
+	__property int H263ProfileHighLatency = {read=_GetH263ProfileHighLatency};
+	__property int H263ProfileISWV2 = {read=_GetH263ProfileISWV2};
+	__property int H263ProfileISWV3 = {read=_GetH263ProfileISWV3};
+	__property int H263ProfileInterlace = {read=_GetH263ProfileInterlace};
+	__property int H263ProfileInternet = {read=_GetH263ProfileInternet};
+	__property int HEVCHighTierLevel1 = {read=_GetHEVCHighTierLevel1};
+	__property int HEVCHighTierLevel2 = {read=_GetHEVCHighTierLevel2};
+	__property int HEVCHighTierLevel21 = {read=_GetHEVCHighTierLevel21};
+	__property int HEVCHighTierLevel3 = {read=_GetHEVCHighTierLevel3};
+	__property int HEVCHighTierLevel31 = {read=_GetHEVCHighTierLevel31};
+	__property int HEVCHighTierLevel4 = {read=_GetHEVCHighTierLevel4};
+	__property int HEVCHighTierLevel41 = {read=_GetHEVCHighTierLevel41};
+	__property int HEVCHighTierLevel5 = {read=_GetHEVCHighTierLevel5};
+	__property int HEVCHighTierLevel51 = {read=_GetHEVCHighTierLevel51};
+	__property int HEVCHighTierLevel52 = {read=_GetHEVCHighTierLevel52};
+	__property int HEVCHighTierLevel6 = {read=_GetHEVCHighTierLevel6};
+	__property int HEVCHighTierLevel61 = {read=_GetHEVCHighTierLevel61};
+	__property int HEVCHighTierLevel62 = {read=_GetHEVCHighTierLevel62};
+	__property int HEVCMainTierLevel1 = {read=_GetHEVCMainTierLevel1};
+	__property int HEVCMainTierLevel2 = {read=_GetHEVCMainTierLevel2};
+	__property int HEVCMainTierLevel21 = {read=_GetHEVCMainTierLevel21};
+	__property int HEVCMainTierLevel3 = {read=_GetHEVCMainTierLevel3};
+	__property int HEVCMainTierLevel31 = {read=_GetHEVCMainTierLevel31};
+	__property int HEVCMainTierLevel4 = {read=_GetHEVCMainTierLevel4};
+	__property int HEVCMainTierLevel41 = {read=_GetHEVCMainTierLevel41};
+	__property int HEVCMainTierLevel5 = {read=_GetHEVCMainTierLevel5};
+	__property int HEVCMainTierLevel51 = {read=_GetHEVCMainTierLevel51};
+	__property int HEVCMainTierLevel52 = {read=_GetHEVCMainTierLevel52};
+	__property int HEVCMainTierLevel6 = {read=_GetHEVCMainTierLevel6};
+	__property int HEVCMainTierLevel61 = {read=_GetHEVCMainTierLevel61};
+	__property int HEVCMainTierLevel62 = {read=_GetHEVCMainTierLevel62};
+	__property int HEVCProfileMain = {read=_GetHEVCProfileMain};
+	__property int HEVCProfileMain10 = {read=_GetHEVCProfileMain10};
+	__property int HEVCProfileMain10HDR10 = {read=_GetHEVCProfileMain10HDR10};
+	__property int MPEG2LevelH14 = {read=_GetMPEG2LevelH14};
+	__property int MPEG2LevelHL = {read=_GetMPEG2LevelHL};
+	__property int MPEG2LevelHP = {read=_GetMPEG2LevelHP};
+	__property int MPEG2LevelLL = {read=_GetMPEG2LevelLL};
+	__property int MPEG2LevelML = {read=_GetMPEG2LevelML};
+	__property int MPEG2Profile422 = {read=_GetMPEG2Profile422};
+	__property int MPEG2ProfileHigh = {read=_GetMPEG2ProfileHigh};
+	__property int MPEG2ProfileMain = {read=_GetMPEG2ProfileMain};
+	__property int MPEG2ProfileSNR = {read=_GetMPEG2ProfileSNR};
+	__property int MPEG2ProfileSimple = {read=_GetMPEG2ProfileSimple};
+	__property int MPEG2ProfileSpatial = {read=_GetMPEG2ProfileSpatial};
+	__property int MPEG4Level0 = {read=_GetMPEG4Level0};
+	__property int MPEG4Level0b = {read=_GetMPEG4Level0b};
+	__property int MPEG4Level1 = {read=_GetMPEG4Level1};
+	__property int MPEG4Level2 = {read=_GetMPEG4Level2};
+	__property int MPEG4Level3 = {read=_GetMPEG4Level3};
+	__property int MPEG4Level3b = {read=_GetMPEG4Level3b};
+	__property int MPEG4Level4 = {read=_GetMPEG4Level4};
+	__property int MPEG4Level4a = {read=_GetMPEG4Level4a};
+	__property int MPEG4Level5 = {read=_GetMPEG4Level5};
+	__property int MPEG4Level6 = {read=_GetMPEG4Level6};
+	__property int MPEG4ProfileAdvancedCoding = {read=_GetMPEG4ProfileAdvancedCoding};
+	__property int MPEG4ProfileAdvancedCore = {read=_GetMPEG4ProfileAdvancedCore};
+	__property int MPEG4ProfileAdvancedRealTime = {read=_GetMPEG4ProfileAdvancedRealTime};
+	__property int MPEG4ProfileAdvancedScalable = {read=_GetMPEG4ProfileAdvancedScalable};
+	__property int MPEG4ProfileAdvancedSimple = {read=_GetMPEG4ProfileAdvancedSimple};
+	__property int MPEG4ProfileBasicAnimated = {read=_GetMPEG4ProfileBasicAnimated};
+	__property int MPEG4ProfileCore = {read=_GetMPEG4ProfileCore};
+	__property int MPEG4ProfileCoreScalable = {read=_GetMPEG4ProfileCoreScalable};
+	__property int MPEG4ProfileHybrid = {read=_GetMPEG4ProfileHybrid};
+	__property int MPEG4ProfileMain = {read=_GetMPEG4ProfileMain};
+	__property int MPEG4ProfileNbit = {read=_GetMPEG4ProfileNbit};
+	__property int MPEG4ProfileScalableTexture = {read=_GetMPEG4ProfileScalableTexture};
+	__property int MPEG4ProfileSimple = {read=_GetMPEG4ProfileSimple};
+	__property int MPEG4ProfileSimpleFBA = {read=_GetMPEG4ProfileSimpleFBA};
+	__property int MPEG4ProfileSimpleFace = {read=_GetMPEG4ProfileSimpleFace};
+	__property int MPEG4ProfileSimpleScalable = {read=_GetMPEG4ProfileSimpleScalable};
+	__property int VP8Level_Version0 = {read=_GetVP8Level_Version0};
+	__property int VP8Level_Version1 = {read=_GetVP8Level_Version1};
+	__property int VP8Level_Version2 = {read=_GetVP8Level_Version2};
+	__property int VP8Level_Version3 = {read=_GetVP8Level_Version3};
+	__property int VP8ProfileMain = {read=_GetVP8ProfileMain};
+	__property int VP9Level1 = {read=_GetVP9Level1};
+	__property int VP9Level11 = {read=_GetVP9Level11};
+	__property int VP9Level2 = {read=_GetVP9Level2};
+	__property int VP9Level21 = {read=_GetVP9Level21};
+	__property int VP9Level3 = {read=_GetVP9Level3};
+	__property int VP9Level31 = {read=_GetVP9Level31};
+	__property int VP9Level4 = {read=_GetVP9Level4};
+	__property int VP9Level41 = {read=_GetVP9Level41};
+	__property int VP9Level5 = {read=_GetVP9Level5};
+	__property int VP9Level51 = {read=_GetVP9Level51};
+	__property int VP9Level52 = {read=_GetVP9Level52};
+	__property int VP9Level6 = {read=_GetVP9Level6};
+	__property int VP9Level61 = {read=_GetVP9Level61};
+	__property int VP9Level62 = {read=_GetVP9Level62};
+	__property int VP9Profile0 = {read=_GetVP9Profile0};
+	__property int VP9Profile1 = {read=_GetVP9Profile1};
+	__property int VP9Profile2 = {read=_GetVP9Profile2};
+	__property int VP9Profile2HDR = {read=_GetVP9Profile2HDR};
+	__property int VP9Profile3 = {read=_GetVP9Profile3};
+	__property int VP9Profile3HDR = {read=_GetVP9Profile3HDR};
+};
+
+__interface  INTERFACE_UUID("{73647127-6989-4ABF-B521-186C8899A5AC}") JMediaCodecInfo_CodecProfileLevel  : public Androidapi::Jni::Javatypes::JObject 
+{
+	virtual int __cdecl _Getlevel() = 0 ;
+	virtual void __cdecl _Setlevel(int Value) = 0 ;
+	virtual int __cdecl _Getprofile() = 0 ;
+	virtual void __cdecl _Setprofile(int Value) = 0 ;
+	__property int level = {read=_Getlevel, write=_Setlevel};
+	__property int profile = {read=_Getprofile, write=_Setprofile};
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJMediaCodecInfo_CodecProfileLevel : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMediaCodecInfo_CodecProfileLevelClass,_di_JMediaCodecInfo_CodecProfileLevel>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMediaCodecInfo_CodecProfileLevelClass,_di_JMediaCodecInfo_CodecProfileLevel> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJMediaCodecInfo_CodecProfileLevel() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMediaCodecInfo_CodecProfileLevelClass,_di_JMediaCodecInfo_CodecProfileLevel>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJMediaCodecInfo_CodecProfileLevel() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{7E63CBC5-39D5-4BD2-BA7D-546C75E7E8E7}") JMediaCodecInfo_EncoderCapabilitiesClass  : public Androidapi::Jni::Javatypes::JObjectClass 
+{
+	virtual int __cdecl _GetBITRATE_MODE_CBR() = 0 ;
+	virtual int __cdecl _GetBITRATE_MODE_CQ() = 0 ;
+	virtual int __cdecl _GetBITRATE_MODE_VBR() = 0 ;
+	__property int BITRATE_MODE_CBR = {read=_GetBITRATE_MODE_CBR};
+	__property int BITRATE_MODE_CQ = {read=_GetBITRATE_MODE_CQ};
+	__property int BITRATE_MODE_VBR = {read=_GetBITRATE_MODE_VBR};
+};
+
+__interface  INTERFACE_UUID("{CF329E17-B67E-43AA-B25C-1CBF285012FE}") JMediaCodecInfo_EncoderCapabilities  : public Androidapi::Jni::Javatypes::JObject 
+{
+	virtual Androidapi::Jni::Util::_di_JRange __cdecl getComplexityRange() = 0 ;
+	virtual bool __cdecl isBitrateModeSupported(int mode) = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJMediaCodecInfo_EncoderCapabilities : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMediaCodecInfo_EncoderCapabilitiesClass,_di_JMediaCodecInfo_EncoderCapabilities>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMediaCodecInfo_EncoderCapabilitiesClass,_di_JMediaCodecInfo_EncoderCapabilities> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJMediaCodecInfo_EncoderCapabilities() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMediaCodecInfo_EncoderCapabilitiesClass,_di_JMediaCodecInfo_EncoderCapabilities>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJMediaCodecInfo_EncoderCapabilities() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{0316BD5A-7F27-454B-BB1D-8A56AB696162}") JMediaCodecInfo_VideoCapabilitiesClass  : public Androidapi::Jni::Javatypes::JObjectClass 
+{
+	
+};
+
+__interface  INTERFACE_UUID("{CAAA6FFF-B464-486E-8455-A484667C9BDA}") JMediaCodecInfo_VideoCapabilities  : public Androidapi::Jni::Javatypes::JObject 
+{
+	virtual bool __cdecl areSizeAndRateSupported(int width, int height, double frameRate) = 0 ;
+	virtual Androidapi::Jni::Util::_di_JRange __cdecl getAchievableFrameRatesFor(int width, int height) = 0 ;
+	virtual Androidapi::Jni::Util::_di_JRange __cdecl getBitrateRange() = 0 ;
+	virtual int __cdecl getHeightAlignment() = 0 ;
+	virtual Androidapi::Jni::Util::_di_JRange __cdecl getSupportedFrameRates() = 0 ;
+	virtual Androidapi::Jni::Util::_di_JRange __cdecl getSupportedFrameRatesFor(int width, int height) = 0 ;
+	virtual Androidapi::Jni::Util::_di_JRange __cdecl getSupportedHeights() = 0 ;
+	virtual Androidapi::Jni::Util::_di_JRange __cdecl getSupportedHeightsFor(int width) = 0 ;
+	virtual Androidapi::Jni::Util::_di_JRange __cdecl getSupportedWidths() = 0 ;
+	virtual Androidapi::Jni::Util::_di_JRange __cdecl getSupportedWidthsFor(int height) = 0 ;
+	virtual int __cdecl getWidthAlignment() = 0 ;
+	virtual bool __cdecl isSizeSupported(int width, int height) = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJMediaCodecInfo_VideoCapabilities : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMediaCodecInfo_VideoCapabilitiesClass,_di_JMediaCodecInfo_VideoCapabilities>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMediaCodecInfo_VideoCapabilitiesClass,_di_JMediaCodecInfo_VideoCapabilities> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJMediaCodecInfo_VideoCapabilities() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMediaCodecInfo_VideoCapabilitiesClass,_di_JMediaCodecInfo_VideoCapabilities>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJMediaCodecInfo_VideoCapabilities() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{F1400E68-3BDF-4B8B-9B45-F679CD2B2BF3}") JMediaCodecListClass  : public Androidapi::Jni::Javatypes::JObjectClass 
+{
+	virtual int __cdecl _GetALL_CODECS() = 0 ;
+	virtual int __cdecl _GetREGULAR_CODECS() = 0 ;
+	HIDESBASE virtual _di_JMediaCodecList __cdecl init(int kind) = 0 ;
+	virtual int __cdecl getCodecCount() = 0 ;
+	virtual _di_JMediaCodecInfo __cdecl getCodecInfoAt(int index) = 0 ;
+	__property int ALL_CODECS = {read=_GetALL_CODECS};
+	__property int REGULAR_CODECS = {read=_GetREGULAR_CODECS};
+};
+
+__interface  INTERFACE_UUID("{26F449D6-A979-4BE9-BCE4-C67841504DA3}") JMediaCodecList  : public Androidapi::Jni::Javatypes::JObject 
+{
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl findDecoderForFormat(_di_JMediaFormat format) = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl findEncoderForFormat(_di_JMediaFormat format) = 0 ;
+	virtual Androidapi::Jnibridge::TJavaObjectArray__1<_di_JMediaCodecInfo>* __cdecl getCodecInfos() = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJMediaCodecList : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMediaCodecListClass,_di_JMediaCodecList>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMediaCodecListClass,_di_JMediaCodecList> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJMediaCodecList() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMediaCodecListClass,_di_JMediaCodecList>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJMediaCodecList() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{31B7D145-1DBA-4D5C-860B-338AA3F6780B}") JMediaCryptoClass  : public Androidapi::Jni::Javatypes::JObjectClass 
+{
+	HIDESBASE virtual _di_JMediaCrypto __cdecl init(Androidapi::Jni::Javatypes::_di_JUUID uuid, Androidapi::Jnibridge::TJavaArray__1<System::Byte>* initData) = 0 ;
+	virtual bool __cdecl isCryptoSchemeSupported(Androidapi::Jni::Javatypes::_di_JUUID uuid) = 0 ;
+};
+
+__interface  INTERFACE_UUID("{B1E505C9-9F43-4C70-AB68-C0DEC0999882}") JMediaCrypto  : public Androidapi::Jni::Javatypes::JObject 
+{
+	virtual void __cdecl release() = 0 ;
+	virtual bool __cdecl requiresSecureDecoderComponent(Androidapi::Jni::Javatypes::_di_JString mime) = 0 ;
+	virtual void __cdecl setMediaDrmSession(Androidapi::Jnibridge::TJavaArray__1<System::Byte>* sessionId) = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJMediaCrypto : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMediaCryptoClass,_di_JMediaCrypto>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMediaCryptoClass,_di_JMediaCrypto> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJMediaCrypto() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMediaCryptoClass,_di_JMediaCrypto>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJMediaCrypto() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{36A5DB4A-6D5E-49B1-B7A0-5C25892D9C7E}") JMediaCryptoExceptionClass  : public Androidapi::Jni::Javatypes::JExceptionClass 
+{
+	HIDESBASE virtual _di_JMediaCryptoException __cdecl init(Androidapi::Jni::Javatypes::_di_JString detailMessage) = 0 ;
+};
+
+__interface  INTERFACE_UUID("{1039BDE3-1DD7-440A-A6B8-B55FE0B3658E}") JMediaCryptoException  : public Androidapi::Jni::Javatypes::JException 
+{
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJMediaCryptoException : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMediaCryptoExceptionClass,_di_JMediaCryptoException>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMediaCryptoExceptionClass,_di_JMediaCryptoException> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJMediaCryptoException() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMediaCryptoExceptionClass,_di_JMediaCryptoException>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJMediaCryptoException() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{F151577B-1760-4D30-B10E-76366C98EFBC}") JMediaDataSourceClass  : public Androidapi::Jni::Javatypes::JObjectClass 
+{
+	HIDESBASE virtual _di_JMediaDataSource __cdecl init() = 0 ;
+};
+
+__interface  INTERFACE_UUID("{5FCFC5A1-995B-4989-878C-B361BC93D355}") JMediaDataSource  : public Androidapi::Jni::Javatypes::JObject 
+{
+	virtual __int64 __cdecl getSize() = 0 ;
+	virtual int __cdecl readAt(__int64 position, Androidapi::Jnibridge::TJavaArray__1<System::Byte>* buffer, int offset, int size) = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJMediaDataSource : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMediaDataSourceClass,_di_JMediaDataSource>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMediaDataSourceClass,_di_JMediaDataSource> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJMediaDataSource() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMediaDataSourceClass,_di_JMediaDataSource>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJMediaDataSource() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{72B0BD67-1373-4A16-A65D-FD1C21707281}") JMediaDescramblerClass  : public Androidapi::Jni::Javatypes::JObjectClass 
+{
+	HIDESBASE virtual _di_JMediaDescrambler __cdecl init(int CA_system_id) = 0 ;
+};
+
+__interface  INTERFACE_UUID("{370B7364-FBA8-4CB6-A30E-DFA5E3E1A580}") JMediaDescrambler  : public Androidapi::Jni::Javatypes::JObject 
+{
+	virtual void __cdecl close() = 0 ;
+	virtual int __cdecl descramble(Androidapi::Jni::Javatypes::_di_JByteBuffer srcBuf, Androidapi::Jni::Javatypes::_di_JByteBuffer dstBuf, _di_JMediaCodec_CryptoInfo cryptoInfo) = 0 ;
+	virtual bool __cdecl requiresSecureDecoderComponent(Androidapi::Jni::Javatypes::_di_JString mime) = 0 ;
+	virtual void __cdecl setMediaCasSession(_di_JMediaCas_Session session) = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJMediaDescrambler : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMediaDescramblerClass,_di_JMediaDescrambler>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMediaDescramblerClass,_di_JMediaDescrambler> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJMediaDescrambler() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMediaDescramblerClass,_di_JMediaDescrambler>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJMediaDescrambler() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{48EF965A-BA6D-4E0D-9E96-295D7FC4A8A7}") JMediaDescriptionClass  : public Androidapi::Jni::Javatypes::JObjectClass 
+{
+	virtual __int64 __cdecl _GetBT_FOLDER_TYPE_ALBUMS() = 0 ;
+	virtual __int64 __cdecl _GetBT_FOLDER_TYPE_ARTISTS() = 0 ;
+	virtual __int64 __cdecl _GetBT_FOLDER_TYPE_GENRES() = 0 ;
+	virtual __int64 __cdecl _GetBT_FOLDER_TYPE_MIXED() = 0 ;
+	virtual __int64 __cdecl _GetBT_FOLDER_TYPE_PLAYLISTS() = 0 ;
+	virtual __int64 __cdecl _GetBT_FOLDER_TYPE_TITLES() = 0 ;
+	virtual __int64 __cdecl _GetBT_FOLDER_TYPE_YEARS() = 0 ;
+	virtual Androidapi::Jni::Os::_di_JParcelable_Creator __cdecl _GetCREATOR() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetEXTRA_BT_FOLDER_TYPE() = 0 ;
+	__property __int64 BT_FOLDER_TYPE_ALBUMS = {read=_GetBT_FOLDER_TYPE_ALBUMS};
+	__property __int64 BT_FOLDER_TYPE_ARTISTS = {read=_GetBT_FOLDER_TYPE_ARTISTS};
+	__property __int64 BT_FOLDER_TYPE_GENRES = {read=_GetBT_FOLDER_TYPE_GENRES};
+	__property __int64 BT_FOLDER_TYPE_MIXED = {read=_GetBT_FOLDER_TYPE_MIXED};
+	__property __int64 BT_FOLDER_TYPE_PLAYLISTS = {read=_GetBT_FOLDER_TYPE_PLAYLISTS};
+	__property __int64 BT_FOLDER_TYPE_TITLES = {read=_GetBT_FOLDER_TYPE_TITLES};
+	__property __int64 BT_FOLDER_TYPE_YEARS = {read=_GetBT_FOLDER_TYPE_YEARS};
+	__property Androidapi::Jni::Os::_di_JParcelable_Creator CREATOR = {read=_GetCREATOR};
+	__property Androidapi::Jni::Javatypes::_di_JString EXTRA_BT_FOLDER_TYPE = {read=_GetEXTRA_BT_FOLDER_TYPE};
+};
+
+__interface  INTERFACE_UUID("{7990BBD4-299A-42B2-9A86-DAB2B978009D}") JMediaDescription  : public Androidapi::Jni::Javatypes::JObject 
+{
+	virtual int __cdecl describeContents() = 0 ;
+	HIDESBASE virtual bool __cdecl equals(Androidapi::Jni::Javatypes::_di_JObject o) = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JCharSequence __cdecl getDescription() = 0 ;
+	virtual Androidapi::Jni::Os::_di_JBundle __cdecl getExtras() = 0 ;
+	virtual Androidapi::Jni::Graphicscontentviewtext::_di_JBitmap __cdecl getIconBitmap() = 0 ;
+	virtual Androidapi::Jni::Net::_di_Jnet_Uri __cdecl getIconUri() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl getMediaId() = 0 ;
+	virtual Androidapi::Jni::Net::_di_Jnet_Uri __cdecl getMediaUri() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JCharSequence __cdecl getSubtitle() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JCharSequence __cdecl getTitle() = 0 ;
+	HIDESBASE virtual Androidapi::Jni::Javatypes::_di_JString __cdecl toString() = 0 ;
+	virtual void __cdecl writeToParcel(Androidapi::Jni::Os::_di_JParcel dest, int flags) = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJMediaDescription : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMediaDescriptionClass,_di_JMediaDescription>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMediaDescriptionClass,_di_JMediaDescription> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJMediaDescription() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMediaDescriptionClass,_di_JMediaDescription>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJMediaDescription() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{AD916B94-C370-4AB8-8521-CC3665D973EA}") JMediaDescription_BuilderClass  : public Androidapi::Jni::Javatypes::JObjectClass 
+{
+	HIDESBASE virtual _di_JMediaDescription_Builder __cdecl init() = 0 ;
+};
+
+__interface  INTERFACE_UUID("{0E5F1828-0ED0-494B-A738-274DC25F2FBF}") JMediaDescription_Builder  : public Androidapi::Jni::Javatypes::JObject 
+{
+	virtual _di_JMediaDescription __cdecl build() = 0 ;
+	virtual _di_JMediaDescription_Builder __cdecl setDescription(Androidapi::Jni::Javatypes::_di_JCharSequence description) = 0 ;
+	virtual _di_JMediaDescription_Builder __cdecl setExtras(Androidapi::Jni::Os::_di_JBundle extras) = 0 ;
+	virtual _di_JMediaDescription_Builder __cdecl setIconBitmap(Androidapi::Jni::Graphicscontentviewtext::_di_JBitmap icon) = 0 ;
+	virtual _di_JMediaDescription_Builder __cdecl setIconUri(Androidapi::Jni::Net::_di_Jnet_Uri iconUri) = 0 ;
+	virtual _di_JMediaDescription_Builder __cdecl setMediaId(Androidapi::Jni::Javatypes::_di_JString mediaId) = 0 ;
+	virtual _di_JMediaDescription_Builder __cdecl setMediaUri(Androidapi::Jni::Net::_di_Jnet_Uri mediaUri) = 0 ;
+	virtual _di_JMediaDescription_Builder __cdecl setSubtitle(Androidapi::Jni::Javatypes::_di_JCharSequence subtitle) = 0 ;
+	virtual _di_JMediaDescription_Builder __cdecl setTitle(Androidapi::Jni::Javatypes::_di_JCharSequence title) = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJMediaDescription_Builder : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMediaDescription_BuilderClass,_di_JMediaDescription_Builder>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMediaDescription_BuilderClass,_di_JMediaDescription_Builder> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJMediaDescription_Builder() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMediaDescription_BuilderClass,_di_JMediaDescription_Builder>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJMediaDescription_Builder() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{C651B2A8-FB61-4FB8-A78A-AC978A0301B6}") JMediaDrmClass  : public Androidapi::Jni::Javatypes::JObjectClass 
+{
+	virtual int __cdecl _GetEVENT_KEY_EXPIRED() = 0 ;
+	virtual int __cdecl _GetEVENT_KEY_REQUIRED() = 0 ;
+	virtual int __cdecl _GetEVENT_PROVISION_REQUIRED() = 0 ;
+	virtual int __cdecl _GetEVENT_SESSION_RECLAIMED() = 0 ;
+	virtual int __cdecl _GetEVENT_VENDOR_DEFINED() = 0 ;
+	virtual int __cdecl _GetKEY_TYPE_OFFLINE() = 0 ;
+	virtual int __cdecl _GetKEY_TYPE_RELEASE() = 0 ;
+	virtual int __cdecl _GetKEY_TYPE_STREAMING() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetPROPERTY_ALGORITHMS() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetPROPERTY_DESCRIPTION() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetPROPERTY_DEVICE_UNIQUE_ID() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetPROPERTY_VENDOR() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetPROPERTY_VERSION() = 0 ;
+	HIDESBASE virtual _di_JMediaDrm __cdecl init(Androidapi::Jni::Javatypes::_di_JUUID uuid) = 0 ;
+	virtual bool __cdecl isCryptoSchemeSupported(Androidapi::Jni::Javatypes::_di_JUUID uuid) = 0 /* overload */;
+	virtual bool __cdecl isCryptoSchemeSupported(Androidapi::Jni::Javatypes::_di_JUUID uuid, Androidapi::Jni::Javatypes::_di_JString mimeType) = 0 /* overload */;
+	__property int EVENT_KEY_EXPIRED = {read=_GetEVENT_KEY_EXPIRED};
+	__property int EVENT_KEY_REQUIRED = {read=_GetEVENT_KEY_REQUIRED};
+	__property int EVENT_PROVISION_REQUIRED = {read=_GetEVENT_PROVISION_REQUIRED};
+	__property int EVENT_SESSION_RECLAIMED = {read=_GetEVENT_SESSION_RECLAIMED};
+	__property int EVENT_VENDOR_DEFINED = {read=_GetEVENT_VENDOR_DEFINED};
+	__property int KEY_TYPE_OFFLINE = {read=_GetKEY_TYPE_OFFLINE};
+	__property int KEY_TYPE_RELEASE = {read=_GetKEY_TYPE_RELEASE};
+	__property int KEY_TYPE_STREAMING = {read=_GetKEY_TYPE_STREAMING};
+	__property Androidapi::Jni::Javatypes::_di_JString PROPERTY_ALGORITHMS = {read=_GetPROPERTY_ALGORITHMS};
+	__property Androidapi::Jni::Javatypes::_di_JString PROPERTY_DESCRIPTION = {read=_GetPROPERTY_DESCRIPTION};
+	__property Androidapi::Jni::Javatypes::_di_JString PROPERTY_DEVICE_UNIQUE_ID = {read=_GetPROPERTY_DEVICE_UNIQUE_ID};
+	__property Androidapi::Jni::Javatypes::_di_JString PROPERTY_VENDOR = {read=_GetPROPERTY_VENDOR};
+	__property Androidapi::Jni::Javatypes::_di_JString PROPERTY_VERSION = {read=_GetPROPERTY_VERSION};
+};
+
+__interface  INTERFACE_UUID("{5F04A6A3-8E24-418B-B9DF-17F7D05A7679}") JMediaDrm  : public Androidapi::Jni::Javatypes::JObject 
+{
+	virtual void __cdecl closeSession(Androidapi::Jnibridge::TJavaArray__1<System::Byte>* sessionId) = 0 ;
+	virtual _di_JMediaDrm_CryptoSession __cdecl getCryptoSession(Androidapi::Jnibridge::TJavaArray__1<System::Byte>* sessionId, Androidapi::Jni::Javatypes::_di_JString cipherAlgorithm, Androidapi::Jni::Javatypes::_di_JString macAlgorithm) = 0 ;
+	virtual _di_JMediaDrm_KeyRequest __cdecl getKeyRequest(Androidapi::Jnibridge::TJavaArray__1<System::Byte>* scope, Androidapi::Jnibridge::TJavaArray__1<System::Byte>* init, Androidapi::Jni::Javatypes::_di_JString mimeType, int keyType, Androidapi::Jni::Javatypes::_di_JHashMap optionalParameters) = 0 ;
+	virtual Androidapi::Jnibridge::TJavaArray__1<System::Byte>* __cdecl getPropertyByteArray(Androidapi::Jni::Javatypes::_di_JString propertyName) = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl getPropertyString(Androidapi::Jni::Javatypes::_di_JString propertyName) = 0 ;
+	virtual _di_JMediaDrm_ProvisionRequest __cdecl getProvisionRequest() = 0 ;
+	virtual Androidapi::Jnibridge::TJavaArray__1<System::Byte>* __cdecl getSecureStop(Androidapi::Jnibridge::TJavaArray__1<System::Byte>* ssid) = 0 ;
+	virtual Androidapi::Jnibridge::TJavaObjectArray__1<Androidapi::Jni::Javatypes::_di_JList>* __cdecl getSecureStops() = 0 ;
+	virtual Androidapi::Jnibridge::TJavaArray__1<System::Byte>* __cdecl openSession() = 0 ;
+	virtual Androidapi::Jnibridge::TJavaArray__1<System::Byte>* __cdecl provideKeyResponse(Androidapi::Jnibridge::TJavaArray__1<System::Byte>* scope, Androidapi::Jnibridge::TJavaArray__1<System::Byte>* response) = 0 ;
+	virtual void __cdecl provideProvisionResponse(Androidapi::Jnibridge::TJavaArray__1<System::Byte>* response) = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JHashMap __cdecl queryKeyStatus(Androidapi::Jnibridge::TJavaArray__1<System::Byte>* sessionId) = 0 ;
+	virtual void __cdecl release() = 0 ;
+	virtual void __cdecl releaseAllSecureStops() = 0 ;
+	virtual void __cdecl releaseSecureStops(Androidapi::Jnibridge::TJavaArray__1<System::Byte>* ssRelease) = 0 ;
+	virtual void __cdecl removeKeys(Androidapi::Jnibridge::TJavaArray__1<System::Byte>* sessionId) = 0 ;
+	virtual void __cdecl restoreKeys(Androidapi::Jnibridge::TJavaArray__1<System::Byte>* sessionId, Androidapi::Jnibridge::TJavaArray__1<System::Byte>* keySetId) = 0 ;
+	virtual void __cdecl setOnEventListener(_di_JMediaDrm_OnEventListener listener) = 0 ;
+	virtual void __cdecl setOnExpirationUpdateListener(_di_JMediaDrm_OnExpirationUpdateListener listener, Androidapi::Jni::Os::_di_JHandler handler) = 0 ;
+	virtual void __cdecl setOnKeyStatusChangeListener(_di_JMediaDrm_OnKeyStatusChangeListener listener, Androidapi::Jni::Os::_di_JHandler handler) = 0 ;
+	virtual void __cdecl setPropertyByteArray(Androidapi::Jni::Javatypes::_di_JString propertyName, Androidapi::Jnibridge::TJavaArray__1<System::Byte>* value) = 0 ;
+	virtual void __cdecl setPropertyString(Androidapi::Jni::Javatypes::_di_JString propertyName, Androidapi::Jni::Javatypes::_di_JString value) = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJMediaDrm : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMediaDrmClass,_di_JMediaDrm>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMediaDrmClass,_di_JMediaDrm> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJMediaDrm() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMediaDrmClass,_di_JMediaDrm>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJMediaDrm() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{2DC02445-1225-4C69-81FE-1753BE2C6FB2}") JMediaDrm_CryptoSessionClass  : public Androidapi::Jni::Javatypes::JObjectClass 
+{
+	
+};
+
+__interface  INTERFACE_UUID("{F42109AE-2871-43EE-B6EA-2D781395C054}") JMediaDrm_CryptoSession  : public Androidapi::Jni::Javatypes::JObject 
+{
+	virtual Androidapi::Jnibridge::TJavaArray__1<System::Byte>* __cdecl decrypt(Androidapi::Jnibridge::TJavaArray__1<System::Byte>* keyid, Androidapi::Jnibridge::TJavaArray__1<System::Byte>* input, Androidapi::Jnibridge::TJavaArray__1<System::Byte>* iv) = 0 ;
+	virtual Androidapi::Jnibridge::TJavaArray__1<System::Byte>* __cdecl encrypt(Androidapi::Jnibridge::TJavaArray__1<System::Byte>* keyid, Androidapi::Jnibridge::TJavaArray__1<System::Byte>* input, Androidapi::Jnibridge::TJavaArray__1<System::Byte>* iv) = 0 ;
+	virtual Androidapi::Jnibridge::TJavaArray__1<System::Byte>* __cdecl sign(Androidapi::Jnibridge::TJavaArray__1<System::Byte>* keyid, Androidapi::Jnibridge::TJavaArray__1<System::Byte>* message) = 0 ;
+	virtual bool __cdecl verify(Androidapi::Jnibridge::TJavaArray__1<System::Byte>* keyid, Androidapi::Jnibridge::TJavaArray__1<System::Byte>* message, Androidapi::Jnibridge::TJavaArray__1<System::Byte>* signature) = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJMediaDrm_CryptoSession : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMediaDrm_CryptoSessionClass,_di_JMediaDrm_CryptoSession>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMediaDrm_CryptoSessionClass,_di_JMediaDrm_CryptoSession> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJMediaDrm_CryptoSession() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMediaDrm_CryptoSessionClass,_di_JMediaDrm_CryptoSession>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJMediaDrm_CryptoSession() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{964AE14A-4E26-41DA-A810-ABD922956875}") JMediaDrm_KeyRequestClass  : public Androidapi::Jni::Javatypes::JObjectClass 
+{
+	virtual int __cdecl _GetREQUEST_TYPE_INITIAL() = 0 ;
+	virtual int __cdecl _GetREQUEST_TYPE_RELEASE() = 0 ;
+	virtual int __cdecl _GetREQUEST_TYPE_RENEWAL() = 0 ;
+	__property int REQUEST_TYPE_INITIAL = {read=_GetREQUEST_TYPE_INITIAL};
+	__property int REQUEST_TYPE_RELEASE = {read=_GetREQUEST_TYPE_RELEASE};
+	__property int REQUEST_TYPE_RENEWAL = {read=_GetREQUEST_TYPE_RENEWAL};
+};
+
+__interface  INTERFACE_UUID("{D00A9BA0-FA23-413F-A5EB-D8CF720DBFB5}") JMediaDrm_KeyRequest  : public Androidapi::Jni::Javatypes::JObject 
+{
+	virtual Androidapi::Jnibridge::TJavaArray__1<System::Byte>* __cdecl getData() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl getDefaultUrl() = 0 ;
+	virtual int __cdecl getRequestType() = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJMediaDrm_KeyRequest : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMediaDrm_KeyRequestClass,_di_JMediaDrm_KeyRequest>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMediaDrm_KeyRequestClass,_di_JMediaDrm_KeyRequest> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJMediaDrm_KeyRequest() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMediaDrm_KeyRequestClass,_di_JMediaDrm_KeyRequest>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJMediaDrm_KeyRequest() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{3FF8AC02-0C3A-4628-A9FD-BE28D043700A}") JMediaDrm_KeyStatusClass  : public Androidapi::Jni::Javatypes::JObjectClass 
+{
+	virtual int __cdecl _GetSTATUS_EXPIRED() = 0 ;
+	virtual int __cdecl _GetSTATUS_INTERNAL_ERROR() = 0 ;
+	virtual int __cdecl _GetSTATUS_OUTPUT_NOT_ALLOWED() = 0 ;
+	virtual int __cdecl _GetSTATUS_PENDING() = 0 ;
+	virtual int __cdecl _GetSTATUS_USABLE() = 0 ;
+	__property int STATUS_EXPIRED = {read=_GetSTATUS_EXPIRED};
+	__property int STATUS_INTERNAL_ERROR = {read=_GetSTATUS_INTERNAL_ERROR};
+	__property int STATUS_OUTPUT_NOT_ALLOWED = {read=_GetSTATUS_OUTPUT_NOT_ALLOWED};
+	__property int STATUS_PENDING = {read=_GetSTATUS_PENDING};
+	__property int STATUS_USABLE = {read=_GetSTATUS_USABLE};
+};
+
+__interface  INTERFACE_UUID("{A2D99787-145F-4464-8F6E-2DEFA69F0DED}") JMediaDrm_KeyStatus  : public Androidapi::Jni::Javatypes::JObject 
+{
+	virtual Androidapi::Jnibridge::TJavaArray__1<System::Byte>* __cdecl getKeyId() = 0 ;
+	virtual int __cdecl getStatusCode() = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJMediaDrm_KeyStatus : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMediaDrm_KeyStatusClass,_di_JMediaDrm_KeyStatus>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMediaDrm_KeyStatusClass,_di_JMediaDrm_KeyStatus> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJMediaDrm_KeyStatus() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMediaDrm_KeyStatusClass,_di_JMediaDrm_KeyStatus>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJMediaDrm_KeyStatus() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{CD3FEF9C-60BC-4475-B926-D396045CC1A5}") JMediaDrm_MediaDrmStateExceptionClass  : public Androidapi::Jni::Javatypes::JIllegalStateExceptionClass 
+{
+	
+};
+
+__interface  INTERFACE_UUID("{3664C8EF-AA87-4AED-802E-21D9F86220F4}") JMediaDrm_MediaDrmStateException  : public Androidapi::Jni::Javatypes::JIllegalStateException 
+{
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl getDiagnosticInfo() = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJMediaDrm_MediaDrmStateException : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMediaDrm_MediaDrmStateExceptionClass,_di_JMediaDrm_MediaDrmStateException>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMediaDrm_MediaDrmStateExceptionClass,_di_JMediaDrm_MediaDrmStateException> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJMediaDrm_MediaDrmStateException() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMediaDrm_MediaDrmStateExceptionClass,_di_JMediaDrm_MediaDrmStateException>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJMediaDrm_MediaDrmStateException() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{CF6EE834-C432-4B0D-8ECB-EE4718331C51}") JMediaDrm_OnEventListenerClass  : public Androidapi::Jnibridge::IJavaClass 
+{
+	
+};
+
+__interface  INTERFACE_UUID("{4DB6D7F5-F0FC-418A-AB37-43AA7721ADFF}") JMediaDrm_OnEventListener  : public Androidapi::Jnibridge::IJavaInstance 
+{
+	virtual void __cdecl onEvent(_di_JMediaDrm md, Androidapi::Jnibridge::TJavaArray__1<System::Byte>* sessionId, int event, int extra, Androidapi::Jnibridge::TJavaArray__1<System::Byte>* data) = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJMediaDrm_OnEventListener : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMediaDrm_OnEventListenerClass,_di_JMediaDrm_OnEventListener>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMediaDrm_OnEventListenerClass,_di_JMediaDrm_OnEventListener> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJMediaDrm_OnEventListener() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMediaDrm_OnEventListenerClass,_di_JMediaDrm_OnEventListener>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJMediaDrm_OnEventListener() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{D38B58CC-A6CF-4A6C-B5C2-F29285B3C67F}") JMediaDrm_OnExpirationUpdateListenerClass  : public Androidapi::Jnibridge::IJavaClass 
+{
+	
+};
+
+__interface  INTERFACE_UUID("{759CF711-9B4E-4965-8EFF-AF9FB3101231}") JMediaDrm_OnExpirationUpdateListener  : public Androidapi::Jnibridge::IJavaInstance 
+{
+	virtual void __cdecl onExpirationUpdate(_di_JMediaDrm md, Androidapi::Jnibridge::TJavaArray__1<System::Byte>* sessionId, __int64 expirationTime) = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJMediaDrm_OnExpirationUpdateListener : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMediaDrm_OnExpirationUpdateListenerClass,_di_JMediaDrm_OnExpirationUpdateListener>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMediaDrm_OnExpirationUpdateListenerClass,_di_JMediaDrm_OnExpirationUpdateListener> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJMediaDrm_OnExpirationUpdateListener() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMediaDrm_OnExpirationUpdateListenerClass,_di_JMediaDrm_OnExpirationUpdateListener>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJMediaDrm_OnExpirationUpdateListener() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{95ED86EB-B775-47E6-8AD2-86796BFF69D2}") JMediaDrm_OnKeyStatusChangeListenerClass  : public Androidapi::Jnibridge::IJavaClass 
+{
+	
+};
+
+__interface  INTERFACE_UUID("{CA1EB58D-4CCD-4325-976B-242CDFC71ECA}") JMediaDrm_OnKeyStatusChangeListener  : public Androidapi::Jnibridge::IJavaInstance 
+{
+	virtual void __cdecl onKeyStatusChange(_di_JMediaDrm md, Androidapi::Jnibridge::TJavaArray__1<System::Byte>* sessionId, Androidapi::Jni::Javatypes::_di_JList keyInformation, bool hasNewUsableKey) = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJMediaDrm_OnKeyStatusChangeListener : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMediaDrm_OnKeyStatusChangeListenerClass,_di_JMediaDrm_OnKeyStatusChangeListener>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMediaDrm_OnKeyStatusChangeListenerClass,_di_JMediaDrm_OnKeyStatusChangeListener> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJMediaDrm_OnKeyStatusChangeListener() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMediaDrm_OnKeyStatusChangeListenerClass,_di_JMediaDrm_OnKeyStatusChangeListener>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJMediaDrm_OnKeyStatusChangeListener() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{7DC946DD-6DB8-48EC-8EE7-2D000D7A7FA1}") JMediaDrm_ProvisionRequestClass  : public Androidapi::Jni::Javatypes::JObjectClass 
+{
+	
+};
+
+__interface  INTERFACE_UUID("{91EB8A7F-9E53-4FDC-8D0C-1C0A62A8B16C}") JMediaDrm_ProvisionRequest  : public Androidapi::Jni::Javatypes::JObject 
+{
+	virtual Androidapi::Jnibridge::TJavaArray__1<System::Byte>* __cdecl getData() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl getDefaultUrl() = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJMediaDrm_ProvisionRequest : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMediaDrm_ProvisionRequestClass,_di_JMediaDrm_ProvisionRequest>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMediaDrm_ProvisionRequestClass,_di_JMediaDrm_ProvisionRequest> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJMediaDrm_ProvisionRequest() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMediaDrm_ProvisionRequestClass,_di_JMediaDrm_ProvisionRequest>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJMediaDrm_ProvisionRequest() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{1C4CB370-BACA-4292-BECE-FA86BE23E196}") JMediaDrmResetExceptionClass  : public Androidapi::Jni::Javatypes::JIllegalStateExceptionClass 
+{
+	HIDESBASE virtual _di_JMediaDrmResetException __cdecl init(Androidapi::Jni::Javatypes::_di_JString detailMessage) = 0 ;
+};
+
+__interface  INTERFACE_UUID("{D65151B3-A20A-4BD6-BD11-AC70FA453291}") JMediaDrmResetException  : public Androidapi::Jni::Javatypes::JIllegalStateException 
+{
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJMediaDrmResetException : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMediaDrmResetExceptionClass,_di_JMediaDrmResetException>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMediaDrmResetExceptionClass,_di_JMediaDrmResetException> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJMediaDrmResetException() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMediaDrmResetExceptionClass,_di_JMediaDrmResetException>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJMediaDrmResetException() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{CAAD040F-C796-427A-91E6-29BD622C8972}") JMediaExtractorClass  : public Androidapi::Jni::Javatypes::JObjectClass 
+{
+	virtual int __cdecl _GetSAMPLE_FLAG_ENCRYPTED() = 0 ;
+	virtual int __cdecl _GetSAMPLE_FLAG_PARTIAL_FRAME() = 0 ;
+	virtual int __cdecl _GetSAMPLE_FLAG_SYNC() = 0 ;
+	virtual int __cdecl _GetSEEK_TO_CLOSEST_SYNC() = 0 ;
+	virtual int __cdecl _GetSEEK_TO_NEXT_SYNC() = 0 ;
+	virtual int __cdecl _GetSEEK_TO_PREVIOUS_SYNC() = 0 ;
+	HIDESBASE virtual _di_JMediaExtractor __cdecl init() = 0 ;
+	__property int SAMPLE_FLAG_ENCRYPTED = {read=_GetSAMPLE_FLAG_ENCRYPTED};
+	__property int SAMPLE_FLAG_PARTIAL_FRAME = {read=_GetSAMPLE_FLAG_PARTIAL_FRAME};
+	__property int SAMPLE_FLAG_SYNC = {read=_GetSAMPLE_FLAG_SYNC};
+	__property int SEEK_TO_CLOSEST_SYNC = {read=_GetSEEK_TO_CLOSEST_SYNC};
+	__property int SEEK_TO_NEXT_SYNC = {read=_GetSEEK_TO_NEXT_SYNC};
+	__property int SEEK_TO_PREVIOUS_SYNC = {read=_GetSEEK_TO_PREVIOUS_SYNC};
+};
+
+__interface  INTERFACE_UUID("{0B544D30-92E2-4592-86C8-80CB330796C9}") JMediaExtractor  : public Androidapi::Jni::Javatypes::JObject 
+{
+	virtual bool __cdecl advance() = 0 ;
+	virtual __int64 __cdecl getCachedDuration() = 0 ;
+	virtual _di_JMediaExtractor_CasInfo __cdecl getCasInfo(int index) = 0 ;
+	virtual _di_JDrmInitData __cdecl getDrmInitData() = 0 ;
+	virtual Androidapi::Jni::Os::_di_JPersistableBundle __cdecl getMetrics() = 0 ;
+	virtual Androidapi::Jnibridge::TJavaObjectArray__1<Androidapi::Jni::Javatypes::_di_JMap>* __cdecl getPsshInfo() = 0 ;
+	virtual bool __cdecl getSampleCryptoInfo(_di_JMediaCodec_CryptoInfo info) = 0 ;
+	virtual int __cdecl getSampleFlags() = 0 ;
+	virtual __int64 __cdecl getSampleTime() = 0 ;
+	virtual int __cdecl getSampleTrackIndex() = 0 ;
+	virtual int __cdecl getTrackCount() = 0 ;
+	virtual _di_JMediaFormat __cdecl getTrackFormat(int index) = 0 ;
+	virtual bool __cdecl hasCacheReachedEndOfStream() = 0 ;
+	virtual int __cdecl readSampleData(Androidapi::Jni::Javatypes::_di_JByteBuffer byteBuf, int offset) = 0 ;
+	virtual void __cdecl release() = 0 ;
+	virtual void __cdecl seekTo(__int64 timeUs, int mode) = 0 ;
+	virtual void __cdecl selectTrack(int index) = 0 ;
+	virtual void __cdecl setDataSource(_di_JMediaDataSource dataSource) = 0 /* overload */;
+	virtual void __cdecl setDataSource(Androidapi::Jni::Graphicscontentviewtext::_di_JContext context, Androidapi::Jni::Net::_di_Jnet_Uri uri, Androidapi::Jni::Javatypes::_di_JMap headers) = 0 /* overload */;
+	virtual void __cdecl setDataSource(Androidapi::Jni::Javatypes::_di_JString path, Androidapi::Jni::Javatypes::_di_JMap headers) = 0 /* overload */;
+	virtual void __cdecl setDataSource(Androidapi::Jni::Javatypes::_di_JString path) = 0 /* overload */;
+	virtual void __cdecl setDataSource(Androidapi::Jni::Graphicscontentviewtext::_di_JAssetFileDescriptor afd) = 0 /* overload */;
+	virtual void __cdecl setDataSource(Androidapi::Jni::Javatypes::_di_JFileDescriptor fd) = 0 /* overload */;
+	virtual void __cdecl setDataSource(Androidapi::Jni::Javatypes::_di_JFileDescriptor fd, __int64 offset, __int64 length) = 0 /* overload */;
+	virtual void __cdecl setMediaCas(_di_JMediaCas mediaCas) = 0 ;
+	virtual void __cdecl unselectTrack(int index) = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJMediaExtractor : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMediaExtractorClass,_di_JMediaExtractor>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMediaExtractorClass,_di_JMediaExtractor> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJMediaExtractor() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMediaExtractorClass,_di_JMediaExtractor>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJMediaExtractor() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{A8388B8A-3BE6-4E14-8C8C-7983EA4565F9}") JMediaExtractor_CasInfoClass  : public Androidapi::Jni::Javatypes::JObjectClass 
+{
+	
+};
+
+__interface  INTERFACE_UUID("{1B8D57A9-8B8A-4877-91FB-752D364C3267}") JMediaExtractor_CasInfo  : public Androidapi::Jni::Javatypes::JObject 
+{
+	virtual _di_JMediaCas_Session __cdecl getSession() = 0 ;
+	virtual int __cdecl getSystemId() = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJMediaExtractor_CasInfo : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMediaExtractor_CasInfoClass,_di_JMediaExtractor_CasInfo>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMediaExtractor_CasInfoClass,_di_JMediaExtractor_CasInfo> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJMediaExtractor_CasInfo() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMediaExtractor_CasInfoClass,_di_JMediaExtractor_CasInfo>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJMediaExtractor_CasInfo() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{FFF9470D-24EB-4F24-A306-F82B76FDE98B}") JMediaExtractor_MetricsConstantsClass  : public Androidapi::Jni::Javatypes::JObjectClass 
+{
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetFORMAT() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetMIME_TYPE() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetTRACKS() = 0 ;
+	__property Androidapi::Jni::Javatypes::_di_JString FORMAT = {read=_GetFORMAT};
+	__property Androidapi::Jni::Javatypes::_di_JString MIME_TYPE = {read=_GetMIME_TYPE};
+	__property Androidapi::Jni::Javatypes::_di_JString TRACKS = {read=_GetTRACKS};
+};
+
+__interface  INTERFACE_UUID("{07A7F62B-CB09-438B-9E0B-EEDE568D0201}") JMediaExtractor_MetricsConstants  : public Androidapi::Jni::Javatypes::JObject 
+{
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJMediaExtractor_MetricsConstants : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMediaExtractor_MetricsConstantsClass,_di_JMediaExtractor_MetricsConstants>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMediaExtractor_MetricsConstantsClass,_di_JMediaExtractor_MetricsConstants> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJMediaExtractor_MetricsConstants() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMediaExtractor_MetricsConstantsClass,_di_JMediaExtractor_MetricsConstants>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJMediaExtractor_MetricsConstants() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{60105A0D-2764-4533-8EF5-DCE2759F23CC}") JMediaFormatClass  : public Androidapi::Jni::Javatypes::JObjectClass 
+{
+	virtual int __cdecl _GetCOLOR_RANGE_FULL() = 0 ;
+	virtual int __cdecl _GetCOLOR_RANGE_LIMITED() = 0 ;
+	virtual int __cdecl _GetCOLOR_STANDARD_BT2020() = 0 ;
+	virtual int __cdecl _GetCOLOR_STANDARD_BT601_NTSC() = 0 ;
+	virtual int __cdecl _GetCOLOR_STANDARD_BT601_PAL() = 0 ;
+	virtual int __cdecl _GetCOLOR_STANDARD_BT709() = 0 ;
+	virtual int __cdecl _GetCOLOR_TRANSFER_HLG() = 0 ;
+	virtual int __cdecl _GetCOLOR_TRANSFER_LINEAR() = 0 ;
+	virtual int __cdecl _GetCOLOR_TRANSFER_SDR_VIDEO() = 0 ;
+	virtual int __cdecl _GetCOLOR_TRANSFER_ST2084() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetKEY_AAC_DRC_ATTENUATION_FACTOR() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetKEY_AAC_DRC_BOOST_FACTOR() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetKEY_AAC_DRC_HEAVY_COMPRESSION() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetKEY_AAC_DRC_TARGET_REFERENCE_LEVEL() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetKEY_AAC_ENCODED_TARGET_LEVEL() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetKEY_AAC_MAX_OUTPUT_CHANNEL_COUNT() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetKEY_AAC_PROFILE() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetKEY_AAC_SBR_MODE() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetKEY_AUDIO_SESSION_ID() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetKEY_BITRATE_MODE() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetKEY_BIT_RATE() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetKEY_CAPTURE_RATE() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetKEY_CHANNEL_COUNT() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetKEY_CHANNEL_MASK() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetKEY_COLOR_FORMAT() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetKEY_COLOR_RANGE() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetKEY_COLOR_STANDARD() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetKEY_COLOR_TRANSFER() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetKEY_COMPLEXITY() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetKEY_DURATION() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetKEY_FLAC_COMPRESSION_LEVEL() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetKEY_FRAME_RATE() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetKEY_HDR_STATIC_INFO() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetKEY_HEIGHT() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetKEY_INTRA_REFRESH_PERIOD() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetKEY_IS_ADTS() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetKEY_IS_AUTOSELECT() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetKEY_IS_DEFAULT() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetKEY_IS_FORCED_SUBTITLE() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetKEY_I_FRAME_INTERVAL() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetKEY_LANGUAGE() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetKEY_LATENCY() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetKEY_LEVEL() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetKEY_MAX_HEIGHT() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetKEY_MAX_INPUT_SIZE() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetKEY_MAX_WIDTH() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetKEY_MIME() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetKEY_OPERATING_RATE() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetKEY_PCM_ENCODING() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetKEY_PRIORITY() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetKEY_PROFILE() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetKEY_PUSH_BLANK_BUFFERS_ON_STOP() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetKEY_REPEAT_PREVIOUS_FRAME_AFTER() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetKEY_ROTATION() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetKEY_SAMPLE_RATE() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetKEY_SLICE_HEIGHT() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetKEY_STRIDE() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetKEY_TEMPORAL_LAYERING() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetKEY_TRACK_ID() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetKEY_WIDTH() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetMIMETYPE_AUDIO_AAC() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetMIMETYPE_AUDIO_AC3() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetMIMETYPE_AUDIO_AMR_NB() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetMIMETYPE_AUDIO_AMR_WB() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetMIMETYPE_AUDIO_EAC3() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetMIMETYPE_AUDIO_FLAC() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetMIMETYPE_AUDIO_G711_ALAW() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetMIMETYPE_AUDIO_G711_MLAW() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetMIMETYPE_AUDIO_MPEG() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetMIMETYPE_AUDIO_MSGSM() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetMIMETYPE_AUDIO_OPUS() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetMIMETYPE_AUDIO_QCELP() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetMIMETYPE_AUDIO_RAW() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetMIMETYPE_AUDIO_SCRAMBLED() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetMIMETYPE_AUDIO_VORBIS() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetMIMETYPE_TEXT_CEA_608() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetMIMETYPE_TEXT_VTT() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetMIMETYPE_VIDEO_AVC() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetMIMETYPE_VIDEO_DOLBY_VISION() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetMIMETYPE_VIDEO_H263() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetMIMETYPE_VIDEO_HEVC() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetMIMETYPE_VIDEO_MPEG2() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetMIMETYPE_VIDEO_MPEG4() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetMIMETYPE_VIDEO_RAW() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetMIMETYPE_VIDEO_SCRAMBLED() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetMIMETYPE_VIDEO_VP8() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetMIMETYPE_VIDEO_VP9() = 0 ;
+	HIDESBASE virtual _di_JMediaFormat __cdecl init() = 0 ;
+	virtual _di_JMediaFormat __cdecl createAudioFormat(Androidapi::Jni::Javatypes::_di_JString mime, int sampleRate, int channelCount) = 0 ;
+	virtual _di_JMediaFormat __cdecl createSubtitleFormat(Androidapi::Jni::Javatypes::_di_JString mime, Androidapi::Jni::Javatypes::_di_JString language) = 0 ;
+	virtual _di_JMediaFormat __cdecl createVideoFormat(Androidapi::Jni::Javatypes::_di_JString mime, int width, int height) = 0 ;
+	__property int COLOR_RANGE_FULL = {read=_GetCOLOR_RANGE_FULL};
+	__property int COLOR_RANGE_LIMITED = {read=_GetCOLOR_RANGE_LIMITED};
+	__property int COLOR_STANDARD_BT2020 = {read=_GetCOLOR_STANDARD_BT2020};
+	__property int COLOR_STANDARD_BT601_NTSC = {read=_GetCOLOR_STANDARD_BT601_NTSC};
+	__property int COLOR_STANDARD_BT601_PAL = {read=_GetCOLOR_STANDARD_BT601_PAL};
+	__property int COLOR_STANDARD_BT709 = {read=_GetCOLOR_STANDARD_BT709};
+	__property int COLOR_TRANSFER_HLG = {read=_GetCOLOR_TRANSFER_HLG};
+	__property int COLOR_TRANSFER_LINEAR = {read=_GetCOLOR_TRANSFER_LINEAR};
+	__property int COLOR_TRANSFER_SDR_VIDEO = {read=_GetCOLOR_TRANSFER_SDR_VIDEO};
+	__property int COLOR_TRANSFER_ST2084 = {read=_GetCOLOR_TRANSFER_ST2084};
+	__property Androidapi::Jni::Javatypes::_di_JString KEY_AAC_DRC_ATTENUATION_FACTOR = {read=_GetKEY_AAC_DRC_ATTENUATION_FACTOR};
+	__property Androidapi::Jni::Javatypes::_di_JString KEY_AAC_DRC_BOOST_FACTOR = {read=_GetKEY_AAC_DRC_BOOST_FACTOR};
+	__property Androidapi::Jni::Javatypes::_di_JString KEY_AAC_DRC_HEAVY_COMPRESSION = {read=_GetKEY_AAC_DRC_HEAVY_COMPRESSION};
+	__property Androidapi::Jni::Javatypes::_di_JString KEY_AAC_DRC_TARGET_REFERENCE_LEVEL = {read=_GetKEY_AAC_DRC_TARGET_REFERENCE_LEVEL};
+	__property Androidapi::Jni::Javatypes::_di_JString KEY_AAC_ENCODED_TARGET_LEVEL = {read=_GetKEY_AAC_ENCODED_TARGET_LEVEL};
+	__property Androidapi::Jni::Javatypes::_di_JString KEY_AAC_MAX_OUTPUT_CHANNEL_COUNT = {read=_GetKEY_AAC_MAX_OUTPUT_CHANNEL_COUNT};
+	__property Androidapi::Jni::Javatypes::_di_JString KEY_AAC_PROFILE = {read=_GetKEY_AAC_PROFILE};
+	__property Androidapi::Jni::Javatypes::_di_JString KEY_AAC_SBR_MODE = {read=_GetKEY_AAC_SBR_MODE};
+	__property Androidapi::Jni::Javatypes::_di_JString KEY_AUDIO_SESSION_ID = {read=_GetKEY_AUDIO_SESSION_ID};
+	__property Androidapi::Jni::Javatypes::_di_JString KEY_BITRATE_MODE = {read=_GetKEY_BITRATE_MODE};
+	__property Androidapi::Jni::Javatypes::_di_JString KEY_BIT_RATE = {read=_GetKEY_BIT_RATE};
+	__property Androidapi::Jni::Javatypes::_di_JString KEY_CAPTURE_RATE = {read=_GetKEY_CAPTURE_RATE};
+	__property Androidapi::Jni::Javatypes::_di_JString KEY_CHANNEL_COUNT = {read=_GetKEY_CHANNEL_COUNT};
+	__property Androidapi::Jni::Javatypes::_di_JString KEY_CHANNEL_MASK = {read=_GetKEY_CHANNEL_MASK};
+	__property Androidapi::Jni::Javatypes::_di_JString KEY_COLOR_FORMAT = {read=_GetKEY_COLOR_FORMAT};
+	__property Androidapi::Jni::Javatypes::_di_JString KEY_COLOR_RANGE = {read=_GetKEY_COLOR_RANGE};
+	__property Androidapi::Jni::Javatypes::_di_JString KEY_COLOR_STANDARD = {read=_GetKEY_COLOR_STANDARD};
+	__property Androidapi::Jni::Javatypes::_di_JString KEY_COLOR_TRANSFER = {read=_GetKEY_COLOR_TRANSFER};
+	__property Androidapi::Jni::Javatypes::_di_JString KEY_COMPLEXITY = {read=_GetKEY_COMPLEXITY};
+	__property Androidapi::Jni::Javatypes::_di_JString KEY_DURATION = {read=_GetKEY_DURATION};
+	__property Androidapi::Jni::Javatypes::_di_JString KEY_FLAC_COMPRESSION_LEVEL = {read=_GetKEY_FLAC_COMPRESSION_LEVEL};
+	__property Androidapi::Jni::Javatypes::_di_JString KEY_FRAME_RATE = {read=_GetKEY_FRAME_RATE};
+	__property Androidapi::Jni::Javatypes::_di_JString KEY_HDR_STATIC_INFO = {read=_GetKEY_HDR_STATIC_INFO};
+	__property Androidapi::Jni::Javatypes::_di_JString KEY_HEIGHT = {read=_GetKEY_HEIGHT};
+	__property Androidapi::Jni::Javatypes::_di_JString KEY_INTRA_REFRESH_PERIOD = {read=_GetKEY_INTRA_REFRESH_PERIOD};
+	__property Androidapi::Jni::Javatypes::_di_JString KEY_IS_ADTS = {read=_GetKEY_IS_ADTS};
+	__property Androidapi::Jni::Javatypes::_di_JString KEY_IS_AUTOSELECT = {read=_GetKEY_IS_AUTOSELECT};
+	__property Androidapi::Jni::Javatypes::_di_JString KEY_IS_DEFAULT = {read=_GetKEY_IS_DEFAULT};
+	__property Androidapi::Jni::Javatypes::_di_JString KEY_IS_FORCED_SUBTITLE = {read=_GetKEY_IS_FORCED_SUBTITLE};
+	__property Androidapi::Jni::Javatypes::_di_JString KEY_I_FRAME_INTERVAL = {read=_GetKEY_I_FRAME_INTERVAL};
+	__property Androidapi::Jni::Javatypes::_di_JString KEY_LANGUAGE = {read=_GetKEY_LANGUAGE};
+	__property Androidapi::Jni::Javatypes::_di_JString KEY_LATENCY = {read=_GetKEY_LATENCY};
+	__property Androidapi::Jni::Javatypes::_di_JString KEY_LEVEL = {read=_GetKEY_LEVEL};
+	__property Androidapi::Jni::Javatypes::_di_JString KEY_MAX_HEIGHT = {read=_GetKEY_MAX_HEIGHT};
+	__property Androidapi::Jni::Javatypes::_di_JString KEY_MAX_INPUT_SIZE = {read=_GetKEY_MAX_INPUT_SIZE};
+	__property Androidapi::Jni::Javatypes::_di_JString KEY_MAX_WIDTH = {read=_GetKEY_MAX_WIDTH};
+	__property Androidapi::Jni::Javatypes::_di_JString KEY_MIME = {read=_GetKEY_MIME};
+	__property Androidapi::Jni::Javatypes::_di_JString KEY_OPERATING_RATE = {read=_GetKEY_OPERATING_RATE};
+	__property Androidapi::Jni::Javatypes::_di_JString KEY_PCM_ENCODING = {read=_GetKEY_PCM_ENCODING};
+	__property Androidapi::Jni::Javatypes::_di_JString KEY_PRIORITY = {read=_GetKEY_PRIORITY};
+	__property Androidapi::Jni::Javatypes::_di_JString KEY_PROFILE = {read=_GetKEY_PROFILE};
+	__property Androidapi::Jni::Javatypes::_di_JString KEY_PUSH_BLANK_BUFFERS_ON_STOP = {read=_GetKEY_PUSH_BLANK_BUFFERS_ON_STOP};
+	__property Androidapi::Jni::Javatypes::_di_JString KEY_REPEAT_PREVIOUS_FRAME_AFTER = {read=_GetKEY_REPEAT_PREVIOUS_FRAME_AFTER};
+	__property Androidapi::Jni::Javatypes::_di_JString KEY_ROTATION = {read=_GetKEY_ROTATION};
+	__property Androidapi::Jni::Javatypes::_di_JString KEY_SAMPLE_RATE = {read=_GetKEY_SAMPLE_RATE};
+	__property Androidapi::Jni::Javatypes::_di_JString KEY_SLICE_HEIGHT = {read=_GetKEY_SLICE_HEIGHT};
+	__property Androidapi::Jni::Javatypes::_di_JString KEY_STRIDE = {read=_GetKEY_STRIDE};
+	__property Androidapi::Jni::Javatypes::_di_JString KEY_TEMPORAL_LAYERING = {read=_GetKEY_TEMPORAL_LAYERING};
+	__property Androidapi::Jni::Javatypes::_di_JString KEY_TRACK_ID = {read=_GetKEY_TRACK_ID};
+	__property Androidapi::Jni::Javatypes::_di_JString KEY_WIDTH = {read=_GetKEY_WIDTH};
+	__property Androidapi::Jni::Javatypes::_di_JString MIMETYPE_AUDIO_AAC = {read=_GetMIMETYPE_AUDIO_AAC};
+	__property Androidapi::Jni::Javatypes::_di_JString MIMETYPE_AUDIO_AC3 = {read=_GetMIMETYPE_AUDIO_AC3};
+	__property Androidapi::Jni::Javatypes::_di_JString MIMETYPE_AUDIO_AMR_NB = {read=_GetMIMETYPE_AUDIO_AMR_NB};
+	__property Androidapi::Jni::Javatypes::_di_JString MIMETYPE_AUDIO_AMR_WB = {read=_GetMIMETYPE_AUDIO_AMR_WB};
+	__property Androidapi::Jni::Javatypes::_di_JString MIMETYPE_AUDIO_EAC3 = {read=_GetMIMETYPE_AUDIO_EAC3};
+	__property Androidapi::Jni::Javatypes::_di_JString MIMETYPE_AUDIO_FLAC = {read=_GetMIMETYPE_AUDIO_FLAC};
+	__property Androidapi::Jni::Javatypes::_di_JString MIMETYPE_AUDIO_G711_ALAW = {read=_GetMIMETYPE_AUDIO_G711_ALAW};
+	__property Androidapi::Jni::Javatypes::_di_JString MIMETYPE_AUDIO_G711_MLAW = {read=_GetMIMETYPE_AUDIO_G711_MLAW};
+	__property Androidapi::Jni::Javatypes::_di_JString MIMETYPE_AUDIO_MPEG = {read=_GetMIMETYPE_AUDIO_MPEG};
+	__property Androidapi::Jni::Javatypes::_di_JString MIMETYPE_AUDIO_MSGSM = {read=_GetMIMETYPE_AUDIO_MSGSM};
+	__property Androidapi::Jni::Javatypes::_di_JString MIMETYPE_AUDIO_OPUS = {read=_GetMIMETYPE_AUDIO_OPUS};
+	__property Androidapi::Jni::Javatypes::_di_JString MIMETYPE_AUDIO_QCELP = {read=_GetMIMETYPE_AUDIO_QCELP};
+	__property Androidapi::Jni::Javatypes::_di_JString MIMETYPE_AUDIO_RAW = {read=_GetMIMETYPE_AUDIO_RAW};
+	__property Androidapi::Jni::Javatypes::_di_JString MIMETYPE_AUDIO_SCRAMBLED = {read=_GetMIMETYPE_AUDIO_SCRAMBLED};
+	__property Androidapi::Jni::Javatypes::_di_JString MIMETYPE_AUDIO_VORBIS = {read=_GetMIMETYPE_AUDIO_VORBIS};
+	__property Androidapi::Jni::Javatypes::_di_JString MIMETYPE_TEXT_CEA_608 = {read=_GetMIMETYPE_TEXT_CEA_608};
+	__property Androidapi::Jni::Javatypes::_di_JString MIMETYPE_TEXT_VTT = {read=_GetMIMETYPE_TEXT_VTT};
+	__property Androidapi::Jni::Javatypes::_di_JString MIMETYPE_VIDEO_AVC = {read=_GetMIMETYPE_VIDEO_AVC};
+	__property Androidapi::Jni::Javatypes::_di_JString MIMETYPE_VIDEO_DOLBY_VISION = {read=_GetMIMETYPE_VIDEO_DOLBY_VISION};
+	__property Androidapi::Jni::Javatypes::_di_JString MIMETYPE_VIDEO_H263 = {read=_GetMIMETYPE_VIDEO_H263};
+	__property Androidapi::Jni::Javatypes::_di_JString MIMETYPE_VIDEO_HEVC = {read=_GetMIMETYPE_VIDEO_HEVC};
+	__property Androidapi::Jni::Javatypes::_di_JString MIMETYPE_VIDEO_MPEG2 = {read=_GetMIMETYPE_VIDEO_MPEG2};
+	__property Androidapi::Jni::Javatypes::_di_JString MIMETYPE_VIDEO_MPEG4 = {read=_GetMIMETYPE_VIDEO_MPEG4};
+	__property Androidapi::Jni::Javatypes::_di_JString MIMETYPE_VIDEO_RAW = {read=_GetMIMETYPE_VIDEO_RAW};
+	__property Androidapi::Jni::Javatypes::_di_JString MIMETYPE_VIDEO_SCRAMBLED = {read=_GetMIMETYPE_VIDEO_SCRAMBLED};
+	__property Androidapi::Jni::Javatypes::_di_JString MIMETYPE_VIDEO_VP8 = {read=_GetMIMETYPE_VIDEO_VP8};
+	__property Androidapi::Jni::Javatypes::_di_JString MIMETYPE_VIDEO_VP9 = {read=_GetMIMETYPE_VIDEO_VP9};
+};
+
+__interface  INTERFACE_UUID("{93B4C18E-4FE8-4AA6-9E32-469B5CC4E6DC}") JMediaFormat  : public Androidapi::Jni::Javatypes::JObject 
+{
+	virtual bool __cdecl containsKey(Androidapi::Jni::Javatypes::_di_JString name) = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JByteBuffer __cdecl getByteBuffer(Androidapi::Jni::Javatypes::_di_JString name) = 0 ;
+	virtual bool __cdecl getFeatureEnabled(Androidapi::Jni::Javatypes::_di_JString feature) = 0 ;
+	virtual float __cdecl getFloat(Androidapi::Jni::Javatypes::_di_JString name) = 0 ;
+	virtual int __cdecl getInteger(Androidapi::Jni::Javatypes::_di_JString name) = 0 ;
+	virtual __int64 __cdecl getLong(Androidapi::Jni::Javatypes::_di_JString name) = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl getString(Androidapi::Jni::Javatypes::_di_JString name) = 0 ;
+	virtual void __cdecl setByteBuffer(Androidapi::Jni::Javatypes::_di_JString name, Androidapi::Jni::Javatypes::_di_JByteBuffer bytes) = 0 ;
+	virtual void __cdecl setFeatureEnabled(Androidapi::Jni::Javatypes::_di_JString feature, bool enabled) = 0 ;
+	virtual void __cdecl setFloat(Androidapi::Jni::Javatypes::_di_JString name, float value) = 0 ;
+	virtual void __cdecl setInteger(Androidapi::Jni::Javatypes::_di_JString name, int value) = 0 ;
+	virtual void __cdecl setLong(Androidapi::Jni::Javatypes::_di_JString name, __int64 value) = 0 ;
+	virtual void __cdecl setString(Androidapi::Jni::Javatypes::_di_JString name, Androidapi::Jni::Javatypes::_di_JString value) = 0 ;
+	HIDESBASE virtual Androidapi::Jni::Javatypes::_di_JString __cdecl toString() = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJMediaFormat : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMediaFormatClass,_di_JMediaFormat>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMediaFormatClass,_di_JMediaFormat> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJMediaFormat() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMediaFormatClass,_di_JMediaFormat>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJMediaFormat() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{2204D633-3F5A-49E0-9B8B-877BED88ECE8}") Jmedia_MediaMetadataClass  : public Androidapi::Jni::Javatypes::JObjectClass 
+{
+	virtual Androidapi::Jni::Os::_di_JParcelable_Creator __cdecl _GetCREATOR() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetMETADATA_KEY_ALBUM() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetMETADATA_KEY_ALBUM_ART() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetMETADATA_KEY_ALBUM_ARTIST() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetMETADATA_KEY_ALBUM_ART_URI() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetMETADATA_KEY_ART() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetMETADATA_KEY_ARTIST() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetMETADATA_KEY_ART_URI() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetMETADATA_KEY_AUTHOR() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetMETADATA_KEY_BT_FOLDER_TYPE() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetMETADATA_KEY_COMPILATION() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetMETADATA_KEY_COMPOSER() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetMETADATA_KEY_DATE() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetMETADATA_KEY_DISC_NUMBER() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetMETADATA_KEY_DISPLAY_DESCRIPTION() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetMETADATA_KEY_DISPLAY_ICON() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetMETADATA_KEY_DISPLAY_ICON_URI() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetMETADATA_KEY_DISPLAY_SUBTITLE() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetMETADATA_KEY_DISPLAY_TITLE() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetMETADATA_KEY_DURATION() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetMETADATA_KEY_GENRE() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetMETADATA_KEY_MEDIA_ID() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetMETADATA_KEY_MEDIA_URI() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetMETADATA_KEY_NUM_TRACKS() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetMETADATA_KEY_RATING() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetMETADATA_KEY_TITLE() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetMETADATA_KEY_TRACK_NUMBER() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetMETADATA_KEY_USER_RATING() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetMETADATA_KEY_WRITER() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetMETADATA_KEY_YEAR() = 0 ;
+	__property Androidapi::Jni::Os::_di_JParcelable_Creator CREATOR = {read=_GetCREATOR};
+	__property Androidapi::Jni::Javatypes::_di_JString METADATA_KEY_ALBUM = {read=_GetMETADATA_KEY_ALBUM};
+	__property Androidapi::Jni::Javatypes::_di_JString METADATA_KEY_ALBUM_ART = {read=_GetMETADATA_KEY_ALBUM_ART};
+	__property Androidapi::Jni::Javatypes::_di_JString METADATA_KEY_ALBUM_ARTIST = {read=_GetMETADATA_KEY_ALBUM_ARTIST};
+	__property Androidapi::Jni::Javatypes::_di_JString METADATA_KEY_ALBUM_ART_URI = {read=_GetMETADATA_KEY_ALBUM_ART_URI};
+	__property Androidapi::Jni::Javatypes::_di_JString METADATA_KEY_ART = {read=_GetMETADATA_KEY_ART};
+	__property Androidapi::Jni::Javatypes::_di_JString METADATA_KEY_ARTIST = {read=_GetMETADATA_KEY_ARTIST};
+	__property Androidapi::Jni::Javatypes::_di_JString METADATA_KEY_ART_URI = {read=_GetMETADATA_KEY_ART_URI};
+	__property Androidapi::Jni::Javatypes::_di_JString METADATA_KEY_AUTHOR = {read=_GetMETADATA_KEY_AUTHOR};
+	__property Androidapi::Jni::Javatypes::_di_JString METADATA_KEY_BT_FOLDER_TYPE = {read=_GetMETADATA_KEY_BT_FOLDER_TYPE};
+	__property Androidapi::Jni::Javatypes::_di_JString METADATA_KEY_COMPILATION = {read=_GetMETADATA_KEY_COMPILATION};
+	__property Androidapi::Jni::Javatypes::_di_JString METADATA_KEY_COMPOSER = {read=_GetMETADATA_KEY_COMPOSER};
+	__property Androidapi::Jni::Javatypes::_di_JString METADATA_KEY_DATE = {read=_GetMETADATA_KEY_DATE};
+	__property Androidapi::Jni::Javatypes::_di_JString METADATA_KEY_DISC_NUMBER = {read=_GetMETADATA_KEY_DISC_NUMBER};
+	__property Androidapi::Jni::Javatypes::_di_JString METADATA_KEY_DISPLAY_DESCRIPTION = {read=_GetMETADATA_KEY_DISPLAY_DESCRIPTION};
+	__property Androidapi::Jni::Javatypes::_di_JString METADATA_KEY_DISPLAY_ICON = {read=_GetMETADATA_KEY_DISPLAY_ICON};
+	__property Androidapi::Jni::Javatypes::_di_JString METADATA_KEY_DISPLAY_ICON_URI = {read=_GetMETADATA_KEY_DISPLAY_ICON_URI};
+	__property Androidapi::Jni::Javatypes::_di_JString METADATA_KEY_DISPLAY_SUBTITLE = {read=_GetMETADATA_KEY_DISPLAY_SUBTITLE};
+	__property Androidapi::Jni::Javatypes::_di_JString METADATA_KEY_DISPLAY_TITLE = {read=_GetMETADATA_KEY_DISPLAY_TITLE};
+	__property Androidapi::Jni::Javatypes::_di_JString METADATA_KEY_DURATION = {read=_GetMETADATA_KEY_DURATION};
+	__property Androidapi::Jni::Javatypes::_di_JString METADATA_KEY_GENRE = {read=_GetMETADATA_KEY_GENRE};
+	__property Androidapi::Jni::Javatypes::_di_JString METADATA_KEY_MEDIA_ID = {read=_GetMETADATA_KEY_MEDIA_ID};
+	__property Androidapi::Jni::Javatypes::_di_JString METADATA_KEY_MEDIA_URI = {read=_GetMETADATA_KEY_MEDIA_URI};
+	__property Androidapi::Jni::Javatypes::_di_JString METADATA_KEY_NUM_TRACKS = {read=_GetMETADATA_KEY_NUM_TRACKS};
+	__property Androidapi::Jni::Javatypes::_di_JString METADATA_KEY_RATING = {read=_GetMETADATA_KEY_RATING};
+	__property Androidapi::Jni::Javatypes::_di_JString METADATA_KEY_TITLE = {read=_GetMETADATA_KEY_TITLE};
+	__property Androidapi::Jni::Javatypes::_di_JString METADATA_KEY_TRACK_NUMBER = {read=_GetMETADATA_KEY_TRACK_NUMBER};
+	__property Androidapi::Jni::Javatypes::_di_JString METADATA_KEY_USER_RATING = {read=_GetMETADATA_KEY_USER_RATING};
+	__property Androidapi::Jni::Javatypes::_di_JString METADATA_KEY_WRITER = {read=_GetMETADATA_KEY_WRITER};
+	__property Androidapi::Jni::Javatypes::_di_JString METADATA_KEY_YEAR = {read=_GetMETADATA_KEY_YEAR};
+};
+
+__interface  INTERFACE_UUID("{7FAEFB8D-C99D-459F-8A3C-4476B15DF5DB}") Jmedia_MediaMetadata  : public Androidapi::Jni::Javatypes::JObject 
+{
+	virtual bool __cdecl containsKey(Androidapi::Jni::Javatypes::_di_JString key) = 0 ;
+	virtual int __cdecl describeContents() = 0 ;
+	virtual Androidapi::Jni::Graphicscontentviewtext::_di_JBitmap __cdecl getBitmap(Androidapi::Jni::Javatypes::_di_JString key) = 0 ;
+	virtual _di_JMediaDescription __cdecl getDescription() = 0 ;
+	virtual __int64 __cdecl getLong(Androidapi::Jni::Javatypes::_di_JString key) = 0 ;
+	virtual _di_JRating __cdecl getRating(Androidapi::Jni::Javatypes::_di_JString key) = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl getString(Androidapi::Jni::Javatypes::_di_JString key) = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JCharSequence __cdecl getText(Androidapi::Jni::Javatypes::_di_JString key) = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JSet __cdecl keySet() = 0 ;
+	virtual int __cdecl size() = 0 ;
+	virtual void __cdecl writeToParcel(Androidapi::Jni::Os::_di_JParcel dest, int flags) = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJmedia_MediaMetadata : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_Jmedia_MediaMetadataClass,_di_Jmedia_MediaMetadata>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_Jmedia_MediaMetadataClass,_di_Jmedia_MediaMetadata> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJmedia_MediaMetadata() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_Jmedia_MediaMetadataClass,_di_Jmedia_MediaMetadata>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJmedia_MediaMetadata() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{B01B3502-75B4-4728-8517-51DBE5BF3877}") JMediaMetadata_BuilderClass  : public Androidapi::Jni::Javatypes::JObjectClass 
+{
+	HIDESBASE virtual _di_JMediaMetadata_Builder __cdecl init() = 0 /* overload */;
+	HIDESBASE virtual _di_JMediaMetadata_Builder __cdecl init(_di_Jmedia_MediaMetadata source) = 0 /* overload */;
+};
+
+__interface  INTERFACE_UUID("{AED3AB63-592B-4E66-947F-86532D4FAC74}") JMediaMetadata_Builder  : public Androidapi::Jni::Javatypes::JObject 
+{
+	virtual _di_Jmedia_MediaMetadata __cdecl build() = 0 ;
+	virtual _di_JMediaMetadata_Builder __cdecl putBitmap(Androidapi::Jni::Javatypes::_di_JString key, Androidapi::Jni::Graphicscontentviewtext::_di_JBitmap value) = 0 ;
+	virtual _di_JMediaMetadata_Builder __cdecl putLong(Androidapi::Jni::Javatypes::_di_JString key, __int64 value) = 0 ;
+	virtual _di_JMediaMetadata_Builder __cdecl putRating(Androidapi::Jni::Javatypes::_di_JString key, _di_JRating value) = 0 ;
+	virtual _di_JMediaMetadata_Builder __cdecl putString(Androidapi::Jni::Javatypes::_di_JString key, Androidapi::Jni::Javatypes::_di_JString value) = 0 ;
+	virtual _di_JMediaMetadata_Builder __cdecl putText(Androidapi::Jni::Javatypes::_di_JString key, Androidapi::Jni::Javatypes::_di_JCharSequence value) = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJMediaMetadata_Builder : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMediaMetadata_BuilderClass,_di_JMediaMetadata_Builder>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMediaMetadata_BuilderClass,_di_JMediaMetadata_Builder> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJMediaMetadata_Builder() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMediaMetadata_BuilderClass,_di_JMediaMetadata_Builder>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJMediaMetadata_Builder() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{9DAEB2EA-4239-4CD5-94D0-B399E8D41B54}") JMediaMetadataEditorClass  : public Androidapi::Jni::Javatypes::JObjectClass 
+{
+	virtual int __cdecl _GetBITMAP_KEY_ARTWORK() = 0 ;
+	virtual int __cdecl _GetRATING_KEY_BY_OTHERS() = 0 ;
+	virtual int __cdecl _GetRATING_KEY_BY_USER() = 0 ;
+	__property int BITMAP_KEY_ARTWORK = {read=_GetBITMAP_KEY_ARTWORK};
+	__property int RATING_KEY_BY_OTHERS = {read=_GetRATING_KEY_BY_OTHERS};
+	__property int RATING_KEY_BY_USER = {read=_GetRATING_KEY_BY_USER};
+};
+
+__interface  INTERFACE_UUID("{C0B1B71F-FC48-4E17-8B68-19B83612F2B1}") JMediaMetadataEditor  : public Androidapi::Jni::Javatypes::JObject 
+{
+	virtual void __cdecl addEditableKey(int key) = 0 ;
+	virtual void __cdecl apply() = 0 ;
+	virtual void __cdecl clear() = 0 ;
+	virtual Androidapi::Jni::Graphicscontentviewtext::_di_JBitmap __cdecl getBitmap(int key, Androidapi::Jni::Graphicscontentviewtext::_di_JBitmap defaultValue) = 0 ;
+	virtual Androidapi::Jnibridge::TJavaArray__1<int>* __cdecl getEditableKeys() = 0 ;
+	virtual __int64 __cdecl getLong(int key, __int64 defaultValue) = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JObject __cdecl getObject(int key, Androidapi::Jni::Javatypes::_di_JObject defaultValue) = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl getString(int key, Androidapi::Jni::Javatypes::_di_JString defaultValue) = 0 ;
+	virtual _di_JMediaMetadataEditor __cdecl putBitmap(int key, Androidapi::Jni::Graphicscontentviewtext::_di_JBitmap bitmap) = 0 ;
+	virtual _di_JMediaMetadataEditor __cdecl putLong(int key, __int64 value) = 0 ;
+	virtual _di_JMediaMetadataEditor __cdecl putObject(int key, Androidapi::Jni::Javatypes::_di_JObject value) = 0 ;
+	virtual _di_JMediaMetadataEditor __cdecl putString(int key, Androidapi::Jni::Javatypes::_di_JString value) = 0 ;
+	virtual void __cdecl removeEditableKeys() = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJMediaMetadataEditor : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMediaMetadataEditorClass,_di_JMediaMetadataEditor>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMediaMetadataEditorClass,_di_JMediaMetadataEditor> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJMediaMetadataEditor() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMediaMetadataEditorClass,_di_JMediaMetadataEditor>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJMediaMetadataEditor() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{A5C39E03-F4F3-4A10-B43C-0A01C64CB8A9}") JMediaMetadataRetrieverClass  : public Androidapi::Jni::Javatypes::JObjectClass 
+{
+	virtual int __cdecl _GetMETADATA_KEY_ALBUM() = 0 ;
+	virtual int __cdecl _GetMETADATA_KEY_ALBUMARTIST() = 0 ;
+	virtual int __cdecl _GetMETADATA_KEY_ARTIST() = 0 ;
+	virtual int __cdecl _GetMETADATA_KEY_AUTHOR() = 0 ;
+	virtual int __cdecl _GetMETADATA_KEY_BITRATE() = 0 ;
+	virtual int __cdecl _GetMETADATA_KEY_CAPTURE_FRAMERATE() = 0 ;
+	virtual int __cdecl _GetMETADATA_KEY_CD_TRACK_NUMBER() = 0 ;
+	virtual int __cdecl _GetMETADATA_KEY_COMPILATION() = 0 ;
+	virtual int __cdecl _GetMETADATA_KEY_COMPOSER() = 0 ;
+	virtual int __cdecl _GetMETADATA_KEY_DATE() = 0 ;
+	virtual int __cdecl _GetMETADATA_KEY_DISC_NUMBER() = 0 ;
+	virtual int __cdecl _GetMETADATA_KEY_DURATION() = 0 ;
+	virtual int __cdecl _GetMETADATA_KEY_GENRE() = 0 ;
+	virtual int __cdecl _GetMETADATA_KEY_HAS_AUDIO() = 0 ;
+	virtual int __cdecl _GetMETADATA_KEY_HAS_VIDEO() = 0 ;
+	virtual int __cdecl _GetMETADATA_KEY_LOCATION() = 0 ;
+	virtual int __cdecl _GetMETADATA_KEY_MIMETYPE() = 0 ;
+	virtual int __cdecl _GetMETADATA_KEY_NUM_TRACKS() = 0 ;
+	virtual int __cdecl _GetMETADATA_KEY_TITLE() = 0 ;
+	virtual int __cdecl _GetMETADATA_KEY_VIDEO_HEIGHT() = 0 ;
+	virtual int __cdecl _GetMETADATA_KEY_VIDEO_ROTATION() = 0 ;
+	virtual int __cdecl _GetMETADATA_KEY_VIDEO_WIDTH() = 0 ;
+	virtual int __cdecl _GetMETADATA_KEY_WRITER() = 0 ;
+	virtual int __cdecl _GetMETADATA_KEY_YEAR() = 0 ;
+	virtual int __cdecl _GetOPTION_CLOSEST() = 0 ;
+	virtual int __cdecl _GetOPTION_CLOSEST_SYNC() = 0 ;
+	virtual int __cdecl _GetOPTION_NEXT_SYNC() = 0 ;
+	virtual int __cdecl _GetOPTION_PREVIOUS_SYNC() = 0 ;
+	HIDESBASE virtual _di_JMediaMetadataRetriever __cdecl init() = 0 ;
+	__property int METADATA_KEY_ALBUM = {read=_GetMETADATA_KEY_ALBUM};
+	__property int METADATA_KEY_ALBUMARTIST = {read=_GetMETADATA_KEY_ALBUMARTIST};
+	__property int METADATA_KEY_ARTIST = {read=_GetMETADATA_KEY_ARTIST};
+	__property int METADATA_KEY_AUTHOR = {read=_GetMETADATA_KEY_AUTHOR};
+	__property int METADATA_KEY_BITRATE = {read=_GetMETADATA_KEY_BITRATE};
+	__property int METADATA_KEY_CAPTURE_FRAMERATE = {read=_GetMETADATA_KEY_CAPTURE_FRAMERATE};
+	__property int METADATA_KEY_CD_TRACK_NUMBER = {read=_GetMETADATA_KEY_CD_TRACK_NUMBER};
+	__property int METADATA_KEY_COMPILATION = {read=_GetMETADATA_KEY_COMPILATION};
+	__property int METADATA_KEY_COMPOSER = {read=_GetMETADATA_KEY_COMPOSER};
+	__property int METADATA_KEY_DATE = {read=_GetMETADATA_KEY_DATE};
+	__property int METADATA_KEY_DISC_NUMBER = {read=_GetMETADATA_KEY_DISC_NUMBER};
+	__property int METADATA_KEY_DURATION = {read=_GetMETADATA_KEY_DURATION};
+	__property int METADATA_KEY_GENRE = {read=_GetMETADATA_KEY_GENRE};
+	__property int METADATA_KEY_HAS_AUDIO = {read=_GetMETADATA_KEY_HAS_AUDIO};
+	__property int METADATA_KEY_HAS_VIDEO = {read=_GetMETADATA_KEY_HAS_VIDEO};
+	__property int METADATA_KEY_LOCATION = {read=_GetMETADATA_KEY_LOCATION};
+	__property int METADATA_KEY_MIMETYPE = {read=_GetMETADATA_KEY_MIMETYPE};
+	__property int METADATA_KEY_NUM_TRACKS = {read=_GetMETADATA_KEY_NUM_TRACKS};
+	__property int METADATA_KEY_TITLE = {read=_GetMETADATA_KEY_TITLE};
+	__property int METADATA_KEY_VIDEO_HEIGHT = {read=_GetMETADATA_KEY_VIDEO_HEIGHT};
+	__property int METADATA_KEY_VIDEO_ROTATION = {read=_GetMETADATA_KEY_VIDEO_ROTATION};
+	__property int METADATA_KEY_VIDEO_WIDTH = {read=_GetMETADATA_KEY_VIDEO_WIDTH};
+	__property int METADATA_KEY_WRITER = {read=_GetMETADATA_KEY_WRITER};
+	__property int METADATA_KEY_YEAR = {read=_GetMETADATA_KEY_YEAR};
+	__property int OPTION_CLOSEST = {read=_GetOPTION_CLOSEST};
+	__property int OPTION_CLOSEST_SYNC = {read=_GetOPTION_CLOSEST_SYNC};
+	__property int OPTION_NEXT_SYNC = {read=_GetOPTION_NEXT_SYNC};
+	__property int OPTION_PREVIOUS_SYNC = {read=_GetOPTION_PREVIOUS_SYNC};
+};
+
+__interface  INTERFACE_UUID("{FE494ED1-BDE3-4DC1-BB24-35F061DE55DC}") JMediaMetadataRetriever  : public Androidapi::Jni::Javatypes::JObject 
+{
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl extractMetadata(int keyCode) = 0 ;
+	virtual Androidapi::Jnibridge::TJavaArray__1<System::Byte>* __cdecl getEmbeddedPicture() = 0 ;
+	virtual Androidapi::Jni::Graphicscontentviewtext::_di_JBitmap __cdecl getFrameAtTime(__int64 timeUs, int option) = 0 /* overload */;
+	virtual Androidapi::Jni::Graphicscontentviewtext::_di_JBitmap __cdecl getFrameAtTime(__int64 timeUs) = 0 /* overload */;
+	virtual Androidapi::Jni::Graphicscontentviewtext::_di_JBitmap __cdecl getFrameAtTime() = 0 /* overload */;
+	virtual void __cdecl release() = 0 ;
+	virtual void __cdecl setDataSource(Androidapi::Jni::Javatypes::_di_JString path) = 0 /* overload */;
+	virtual void __cdecl setDataSource(Androidapi::Jni::Javatypes::_di_JString uri, Androidapi::Jni::Javatypes::_di_JMap headers) = 0 /* overload */;
+	virtual void __cdecl setDataSource(Androidapi::Jni::Javatypes::_di_JFileDescriptor fd, __int64 offset, __int64 length) = 0 /* overload */;
+	virtual void __cdecl setDataSource(Androidapi::Jni::Javatypes::_di_JFileDescriptor fd) = 0 /* overload */;
+	virtual void __cdecl setDataSource(Androidapi::Jni::Graphicscontentviewtext::_di_JContext context, Androidapi::Jni::Net::_di_Jnet_Uri uri) = 0 /* overload */;
+	virtual void __cdecl setDataSource(_di_JMediaDataSource dataSource) = 0 /* overload */;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJMediaMetadataRetriever : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMediaMetadataRetrieverClass,_di_JMediaMetadataRetriever>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMediaMetadataRetrieverClass,_di_JMediaMetadataRetriever> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJMediaMetadataRetriever() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMediaMetadataRetrieverClass,_di_JMediaMetadataRetriever>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJMediaMetadataRetriever() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{2D17D70B-C9D2-4B57-87FA-0D726CEC9078}") JMediaMuxerClass  : public Androidapi::Jni::Javatypes::JObjectClass 
+{
+	HIDESBASE virtual _di_JMediaMuxer __cdecl init(Androidapi::Jni::Javatypes::_di_JString path, int format) = 0 /* overload */;
+	HIDESBASE virtual _di_JMediaMuxer __cdecl init(Androidapi::Jni::Javatypes::_di_JFileDescriptor fd, int format) = 0 /* overload */;
+};
+
+__interface  INTERFACE_UUID("{CD2A8ED6-F79C-46C9-AF4C-5FCACFE8CB9E}") JMediaMuxer  : public Androidapi::Jni::Javatypes::JObject 
+{
+	virtual int __cdecl addTrack(_di_JMediaFormat format) = 0 ;
+	virtual void __cdecl release() = 0 ;
+	virtual void __cdecl setLocation(float latitude, float longitude) = 0 ;
+	virtual void __cdecl setOrientationHint(int degrees) = 0 ;
+	virtual void __cdecl start() = 0 ;
+	virtual void __cdecl stop() = 0 ;
+	virtual void __cdecl writeSampleData(int trackIndex, Androidapi::Jni::Javatypes::_di_JByteBuffer byteBuf, _di_JMediaCodec_BufferInfo bufferInfo) = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJMediaMuxer : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMediaMuxerClass,_di_JMediaMuxer>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMediaMuxerClass,_di_JMediaMuxer> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJMediaMuxer() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMediaMuxerClass,_di_JMediaMuxer>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJMediaMuxer() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{F6EB670C-37E3-4066-9F7A-290A3D6AD905}") JMediaMuxer_OutputFormatClass  : public Androidapi::Jni::Javatypes::JObjectClass 
+{
+	virtual int __cdecl _GetMUXER_OUTPUT_3GPP() = 0 ;
+	virtual int __cdecl _GetMUXER_OUTPUT_MPEG_4() = 0 ;
+	virtual int __cdecl _GetMUXER_OUTPUT_WEBM() = 0 ;
+	__property int MUXER_OUTPUT_3GPP = {read=_GetMUXER_OUTPUT_3GPP};
+	__property int MUXER_OUTPUT_MPEG_4 = {read=_GetMUXER_OUTPUT_MPEG_4};
+	__property int MUXER_OUTPUT_WEBM = {read=_GetMUXER_OUTPUT_WEBM};
+};
+
+__interface  INTERFACE_UUID("{40A3AF3E-CAA5-4779-B297-9EB9F25EF337}") JMediaMuxer_OutputFormat  : public Androidapi::Jni::Javatypes::JObject 
+{
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJMediaMuxer_OutputFormat : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMediaMuxer_OutputFormatClass,_di_JMediaMuxer_OutputFormat>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMediaMuxer_OutputFormatClass,_di_JMediaMuxer_OutputFormat> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJMediaMuxer_OutputFormat() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMediaMuxer_OutputFormatClass,_di_JMediaMuxer_OutputFormat>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJMediaMuxer_OutputFormat() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{5C9CABE2-E9F5-4990-8E18-6D0BB6C469FB}") JMediaPlayerClass  : public Androidapi::Jni::Javatypes::JObjectClass 
+{
+	virtual int __cdecl _GetMEDIA_ERROR_IO() = 0 ;
+	virtual int __cdecl _GetMEDIA_ERROR_MALFORMED() = 0 ;
+	virtual int __cdecl _GetMEDIA_ERROR_NOT_VALID_FOR_PROGRESSIVE_PLAYBACK() = 0 ;
+	virtual int __cdecl _GetMEDIA_ERROR_SERVER_DIED() = 0 ;
+	virtual int __cdecl _GetMEDIA_ERROR_TIMED_OUT() = 0 ;
+	virtual int __cdecl _GetMEDIA_ERROR_UNKNOWN() = 0 ;
+	virtual int __cdecl _GetMEDIA_ERROR_UNSUPPORTED() = 0 ;
+	virtual int __cdecl _GetMEDIA_INFO_AUDIO_NOT_PLAYING() = 0 ;
+	virtual int __cdecl _GetMEDIA_INFO_BAD_INTERLEAVING() = 0 ;
+	virtual int __cdecl _GetMEDIA_INFO_BUFFERING_END() = 0 ;
+	virtual int __cdecl _GetMEDIA_INFO_BUFFERING_START() = 0 ;
+	virtual int __cdecl _GetMEDIA_INFO_METADATA_UPDATE() = 0 ;
+	virtual int __cdecl _GetMEDIA_INFO_NOT_SEEKABLE() = 0 ;
+	virtual int __cdecl _GetMEDIA_INFO_SUBTITLE_TIMED_OUT() = 0 ;
+	virtual int __cdecl _GetMEDIA_INFO_UNKNOWN() = 0 ;
+	virtual int __cdecl _GetMEDIA_INFO_UNSUPPORTED_SUBTITLE() = 0 ;
+	virtual int __cdecl _GetMEDIA_INFO_VIDEO_NOT_PLAYING() = 0 ;
+	virtual int __cdecl _GetMEDIA_INFO_VIDEO_RENDERING_START() = 0 ;
+	virtual int __cdecl _GetMEDIA_INFO_VIDEO_TRACK_LAGGING() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetMEDIA_MIMETYPE_TEXT_SUBRIP() = 0 ;
+	virtual int __cdecl _GetPREPARE_DRM_STATUS_PREPARATION_ERROR() = 0 ;
+	virtual int __cdecl _GetPREPARE_DRM_STATUS_PROVISIONING_NETWORK_ERROR() = 0 ;
+	virtual int __cdecl _GetPREPARE_DRM_STATUS_PROVISIONING_SERVER_ERROR() = 0 ;
+	virtual int __cdecl _GetPREPARE_DRM_STATUS_SUCCESS() = 0 ;
+	virtual int __cdecl _GetSEEK_CLOSEST() = 0 ;
+	virtual int __cdecl _GetSEEK_CLOSEST_SYNC() = 0 ;
+	virtual int __cdecl _GetSEEK_NEXT_SYNC() = 0 ;
+	virtual int __cdecl _GetSEEK_PREVIOUS_SYNC() = 0 ;
+	virtual int __cdecl _GetVIDEO_SCALING_MODE_SCALE_TO_FIT() = 0 ;
+	virtual int __cdecl _GetVIDEO_SCALING_MODE_SCALE_TO_FIT_WITH_CROPPING() = 0 ;
+	HIDESBASE virtual _di_JMediaPlayer __cdecl init() = 0 ;
+	virtual _di_JMediaPlayer __cdecl create(Androidapi::Jni::Graphicscontentviewtext::_di_JContext context, Androidapi::Jni::Net::_di_Jnet_Uri uri) = 0 /* overload */;
+	virtual _di_JMediaPlayer __cdecl create(Androidapi::Jni::Graphicscontentviewtext::_di_JContext context, Androidapi::Jni::Net::_di_Jnet_Uri uri, Androidapi::Jni::Graphicscontentviewtext::_di_JSurfaceHolder holder) = 0 /* overload */;
+	virtual _di_JMediaPlayer __cdecl create(Androidapi::Jni::Graphicscontentviewtext::_di_JContext context, Androidapi::Jni::Net::_di_Jnet_Uri uri, Androidapi::Jni::Graphicscontentviewtext::_di_JSurfaceHolder holder, _di_JAudioAttributes audioAttributes, int audioSessionId) = 0 /* overload */;
+	virtual _di_JMediaPlayer __cdecl create(Androidapi::Jni::Graphicscontentviewtext::_di_JContext context, int resid) = 0 /* overload */;
+	virtual _di_JMediaPlayer __cdecl create(Androidapi::Jni::Graphicscontentviewtext::_di_JContext context, int resid, _di_JAudioAttributes audioAttributes, int audioSessionId) = 0 /* overload */;
+	__property int MEDIA_ERROR_IO = {read=_GetMEDIA_ERROR_IO};
+	__property int MEDIA_ERROR_MALFORMED = {read=_GetMEDIA_ERROR_MALFORMED};
+	__property int MEDIA_ERROR_NOT_VALID_FOR_PROGRESSIVE_PLAYBACK = {read=_GetMEDIA_ERROR_NOT_VALID_FOR_PROGRESSIVE_PLAYBACK};
+	__property int MEDIA_ERROR_SERVER_DIED = {read=_GetMEDIA_ERROR_SERVER_DIED};
+	__property int MEDIA_ERROR_TIMED_OUT = {read=_GetMEDIA_ERROR_TIMED_OUT};
+	__property int MEDIA_ERROR_UNKNOWN = {read=_GetMEDIA_ERROR_UNKNOWN};
+	__property int MEDIA_ERROR_UNSUPPORTED = {read=_GetMEDIA_ERROR_UNSUPPORTED};
+	__property int MEDIA_INFO_AUDIO_NOT_PLAYING = {read=_GetMEDIA_INFO_AUDIO_NOT_PLAYING};
+	__property int MEDIA_INFO_BAD_INTERLEAVING = {read=_GetMEDIA_INFO_BAD_INTERLEAVING};
+	__property int MEDIA_INFO_BUFFERING_END = {read=_GetMEDIA_INFO_BUFFERING_END};
+	__property int MEDIA_INFO_BUFFERING_START = {read=_GetMEDIA_INFO_BUFFERING_START};
+	__property int MEDIA_INFO_METADATA_UPDATE = {read=_GetMEDIA_INFO_METADATA_UPDATE};
+	__property int MEDIA_INFO_NOT_SEEKABLE = {read=_GetMEDIA_INFO_NOT_SEEKABLE};
+	__property int MEDIA_INFO_SUBTITLE_TIMED_OUT = {read=_GetMEDIA_INFO_SUBTITLE_TIMED_OUT};
+	__property int MEDIA_INFO_UNKNOWN = {read=_GetMEDIA_INFO_UNKNOWN};
+	__property int MEDIA_INFO_UNSUPPORTED_SUBTITLE = {read=_GetMEDIA_INFO_UNSUPPORTED_SUBTITLE};
+	__property int MEDIA_INFO_VIDEO_NOT_PLAYING = {read=_GetMEDIA_INFO_VIDEO_NOT_PLAYING};
+	__property int MEDIA_INFO_VIDEO_RENDERING_START = {read=_GetMEDIA_INFO_VIDEO_RENDERING_START};
+	__property int MEDIA_INFO_VIDEO_TRACK_LAGGING = {read=_GetMEDIA_INFO_VIDEO_TRACK_LAGGING};
+	__property Androidapi::Jni::Javatypes::_di_JString MEDIA_MIMETYPE_TEXT_SUBRIP = {read=_GetMEDIA_MIMETYPE_TEXT_SUBRIP};
+	__property int PREPARE_DRM_STATUS_PREPARATION_ERROR = {read=_GetPREPARE_DRM_STATUS_PREPARATION_ERROR};
+	__property int PREPARE_DRM_STATUS_PROVISIONING_NETWORK_ERROR = {read=_GetPREPARE_DRM_STATUS_PROVISIONING_NETWORK_ERROR};
+	__property int PREPARE_DRM_STATUS_PROVISIONING_SERVER_ERROR = {read=_GetPREPARE_DRM_STATUS_PROVISIONING_SERVER_ERROR};
+	__property int PREPARE_DRM_STATUS_SUCCESS = {read=_GetPREPARE_DRM_STATUS_SUCCESS};
+	__property int SEEK_CLOSEST = {read=_GetSEEK_CLOSEST};
+	__property int SEEK_CLOSEST_SYNC = {read=_GetSEEK_CLOSEST_SYNC};
+	__property int SEEK_NEXT_SYNC = {read=_GetSEEK_NEXT_SYNC};
+	__property int SEEK_PREVIOUS_SYNC = {read=_GetSEEK_PREVIOUS_SYNC};
+	__property int VIDEO_SCALING_MODE_SCALE_TO_FIT = {read=_GetVIDEO_SCALING_MODE_SCALE_TO_FIT};
+	__property int VIDEO_SCALING_MODE_SCALE_TO_FIT_WITH_CROPPING = {read=_GetVIDEO_SCALING_MODE_SCALE_TO_FIT_WITH_CROPPING};
+};
+
+__interface  INTERFACE_UUID("{BC844B6F-92C1-4D1D-93C5-E9B18351F502}") JMediaPlayer  : public Androidapi::Jni::Javatypes::JObject 
+{
+	virtual void __cdecl addTimedTextSource(Androidapi::Jni::Javatypes::_di_JString path, Androidapi::Jni::Javatypes::_di_JString mimeType) = 0 /* overload */;
+	virtual void __cdecl addTimedTextSource(Androidapi::Jni::Graphicscontentviewtext::_di_JContext context, Androidapi::Jni::Net::_di_Jnet_Uri uri, Androidapi::Jni::Javatypes::_di_JString mimeType) = 0 /* overload */;
+	virtual void __cdecl addTimedTextSource(Androidapi::Jni::Javatypes::_di_JFileDescriptor fd, Androidapi::Jni::Javatypes::_di_JString mimeType) = 0 /* overload */;
+	virtual void __cdecl addTimedTextSource(Androidapi::Jni::Javatypes::_di_JFileDescriptor fd, __int64 offset, __int64 length, Androidapi::Jni::Javatypes::_di_JString mime) = 0 /* overload */;
+	virtual void __cdecl attachAuxEffect(int effectId) = 0 ;
+	virtual _di_JVolumeShaper __cdecl createVolumeShaper(_di_JVolumeShaper_Configuration configuration) = 0 ;
+	virtual void __cdecl deselectTrack(int index) = 0 ;
+	virtual int __cdecl getAudioSessionId() = 0 ;
+	virtual int __cdecl getCurrentPosition() = 0 ;
+	virtual _di_JMediaPlayer_DrmInfo __cdecl getDrmInfo() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl getDrmPropertyString(Androidapi::Jni::Javatypes::_di_JString propertyName) = 0 ;
+	virtual int __cdecl getDuration() = 0 ;
+	virtual _di_JMediaDrm_KeyRequest __cdecl getKeyRequest(Androidapi::Jnibridge::TJavaArray__1<System::Byte>* keySetId, Androidapi::Jnibridge::TJavaArray__1<System::Byte>* initData, Androidapi::Jni::Javatypes::_di_JString mimeType, int keyType, Androidapi::Jni::Javatypes::_di_JMap optionalParameters) = 0 ;
+	virtual Androidapi::Jni::Os::_di_JPersistableBundle __cdecl getMetrics() = 0 ;
+	virtual _di_JPlaybackParams __cdecl getPlaybackParams() = 0 ;
+	virtual int __cdecl getSelectedTrack(int trackType) = 0 ;
+	virtual _di_JSyncParams __cdecl getSyncParams() = 0 ;
+	virtual _di_JMediaTimestamp __cdecl getTimestamp() = 0 ;
+	virtual Androidapi::Jnibridge::TJavaObjectArray__1<_di_JMediaPlayer_TrackInfo>* __cdecl getTrackInfo() = 0 ;
+	virtual int __cdecl getVideoHeight() = 0 ;
+	virtual int __cdecl getVideoWidth() = 0 ;
+	virtual bool __cdecl isLooping() = 0 ;
+	virtual bool __cdecl isPlaying() = 0 ;
+	virtual void __cdecl pause() = 0 ;
+	virtual void __cdecl prepare() = 0 ;
+	virtual void __cdecl prepareAsync() = 0 ;
+	virtual void __cdecl prepareDrm(Androidapi::Jni::Javatypes::_di_JUUID uuid) = 0 ;
+	virtual Androidapi::Jnibridge::TJavaArray__1<System::Byte>* __cdecl provideKeyResponse(Androidapi::Jnibridge::TJavaArray__1<System::Byte>* keySetId, Androidapi::Jnibridge::TJavaArray__1<System::Byte>* response) = 0 ;
+	virtual void __cdecl release() = 0 ;
+	virtual void __cdecl releaseDrm() = 0 ;
+	virtual void __cdecl reset() = 0 ;
+	virtual void __cdecl restoreKeys(Androidapi::Jnibridge::TJavaArray__1<System::Byte>* keySetId) = 0 ;
+	virtual void __cdecl seekTo(__int64 msec, int mode) = 0 /* overload */;
+	virtual void __cdecl seekTo(int msec) = 0 /* overload */;
+	virtual void __cdecl selectTrack(int index) = 0 ;
+	virtual void __cdecl setAudioAttributes(_di_JAudioAttributes attributes) = 0 ;
+	virtual void __cdecl setAudioSessionId(int sessionId) = 0 ;
+	virtual void __cdecl setAudioStreamType(int streamtype) = 0 ;
+	virtual void __cdecl setAuxEffectSendLevel(float level) = 0 ;
+	virtual void __cdecl setDataSource(Androidapi::Jni::Graphicscontentviewtext::_di_JContext context, Androidapi::Jni::Net::_di_Jnet_Uri uri) = 0 /* overload */;
+	virtual void __cdecl setDataSource(Androidapi::Jni::Graphicscontentviewtext::_di_JContext context, Androidapi::Jni::Net::_di_Jnet_Uri uri, Androidapi::Jni::Javatypes::_di_JMap headers, Androidapi::Jni::Javatypes::_di_JList cookies) = 0 /* overload */;
+	virtual void __cdecl setDataSource(Androidapi::Jni::Graphicscontentviewtext::_di_JContext context, Androidapi::Jni::Net::_di_Jnet_Uri uri, Androidapi::Jni::Javatypes::_di_JMap headers) = 0 /* overload */;
+	virtual void __cdecl setDataSource(Androidapi::Jni::Javatypes::_di_JString path) = 0 /* overload */;
+	virtual void __cdecl setDataSource(Androidapi::Jni::Graphicscontentviewtext::_di_JAssetFileDescriptor afd) = 0 /* overload */;
+	virtual void __cdecl setDataSource(Androidapi::Jni::Javatypes::_di_JFileDescriptor fd) = 0 /* overload */;
+	virtual void __cdecl setDataSource(Androidapi::Jni::Javatypes::_di_JFileDescriptor fd, __int64 offset, __int64 length) = 0 /* overload */;
+	virtual void __cdecl setDataSource(_di_JMediaDataSource dataSource) = 0 /* overload */;
+	virtual void __cdecl setDisplay(Androidapi::Jni::Graphicscontentviewtext::_di_JSurfaceHolder sh) = 0 ;
+	virtual void __cdecl setDrmPropertyString(Androidapi::Jni::Javatypes::_di_JString propertyName, Androidapi::Jni::Javatypes::_di_JString value) = 0 ;
+	virtual void __cdecl setLooping(bool looping) = 0 ;
+	virtual void __cdecl setNextMediaPlayer(_di_JMediaPlayer next) = 0 ;
+	virtual void __cdecl setOnBufferingUpdateListener(_di_JMediaPlayer_OnBufferingUpdateListener listener) = 0 ;
+	virtual void __cdecl setOnCompletionListener(_di_JMediaPlayer_OnCompletionListener listener) = 0 ;
+	virtual void __cdecl setOnDrmConfigHelper(_di_JMediaPlayer_OnDrmConfigHelper listener) = 0 ;
+	virtual void __cdecl setOnDrmInfoListener(_di_JMediaPlayer_OnDrmInfoListener listener) = 0 /* overload */;
+	virtual void __cdecl setOnDrmInfoListener(_di_JMediaPlayer_OnDrmInfoListener listener, Androidapi::Jni::Os::_di_JHandler handler) = 0 /* overload */;
+	virtual void __cdecl setOnDrmPreparedListener(_di_JMediaPlayer_OnDrmPreparedListener listener) = 0 /* overload */;
+	virtual void __cdecl setOnDrmPreparedListener(_di_JMediaPlayer_OnDrmPreparedListener listener, Androidapi::Jni::Os::_di_JHandler handler) = 0 /* overload */;
+	virtual void __cdecl setOnErrorListener(_di_JMediaPlayer_OnErrorListener listener) = 0 ;
+	virtual void __cdecl setOnInfoListener(_di_JMediaPlayer_OnInfoListener listener) = 0 ;
+	virtual void __cdecl setOnPreparedListener(_di_JMediaPlayer_OnPreparedListener listener) = 0 ;
+	virtual void __cdecl setOnSeekCompleteListener(_di_JMediaPlayer_OnSeekCompleteListener listener) = 0 ;
+	virtual void __cdecl setOnTimedMetaDataAvailableListener(_di_JMediaPlayer_OnTimedMetaDataAvailableListener listener) = 0 ;
+	virtual void __cdecl setOnTimedTextListener(_di_JMediaPlayer_OnTimedTextListener listener) = 0 ;
+	virtual void __cdecl setOnVideoSizeChangedListener(_di_JMediaPlayer_OnVideoSizeChangedListener listener) = 0 ;
+	virtual void __cdecl setPlaybackParams(_di_JPlaybackParams params) = 0 ;
+	virtual void __cdecl setScreenOnWhilePlaying(bool screenOn) = 0 ;
+	virtual void __cdecl setSurface(Androidapi::Jni::Graphicscontentviewtext::_di_JSurface surface) = 0 ;
+	virtual void __cdecl setSyncParams(_di_JSyncParams params) = 0 ;
+	virtual void __cdecl setVideoScalingMode(int mode) = 0 ;
+	virtual void __cdecl setVolume(float leftVolume, float rightVolume) = 0 ;
+	virtual void __cdecl setWakeMode(Androidapi::Jni::Graphicscontentviewtext::_di_JContext context, int mode) = 0 ;
+	virtual void __cdecl start() = 0 ;
+	virtual void __cdecl stop() = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJMediaPlayer : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMediaPlayerClass,_di_JMediaPlayer>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMediaPlayerClass,_di_JMediaPlayer> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJMediaPlayer() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMediaPlayerClass,_di_JMediaPlayer>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJMediaPlayer() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{066DE5C7-D87A-417A-A918-B6B5F3C9C033}") JMediaPlayer_DrmInfoClass  : public Androidapi::Jni::Javatypes::JObjectClass 
+{
+	
+};
+
+__interface  INTERFACE_UUID("{AEF285BB-BD83-479D-BD0F-F017ADF72B87}") JMediaPlayer_DrmInfo  : public Androidapi::Jni::Javatypes::JObject 
+{
+	virtual Androidapi::Jnibridge::TJavaObjectArray__1<Androidapi::Jni::Javatypes::_di_JMap>* __cdecl getPssh() = 0 ;
+	virtual Androidapi::Jnibridge::TJavaObjectArray__1<Androidapi::Jni::Javatypes::_di_JUUID>* __cdecl getSupportedSchemes() = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJMediaPlayer_DrmInfo : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMediaPlayer_DrmInfoClass,_di_JMediaPlayer_DrmInfo>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMediaPlayer_DrmInfoClass,_di_JMediaPlayer_DrmInfo> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJMediaPlayer_DrmInfo() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMediaPlayer_DrmInfoClass,_di_JMediaPlayer_DrmInfo>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJMediaPlayer_DrmInfo() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{BA584A13-24D1-459A-AA5A-6F56D4D97A01}") JMediaPlayer_MetricsConstantsClass  : public Androidapi::Jni::Javatypes::JObjectClass 
+{
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetCODEC_AUDIO() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetCODEC_VIDEO() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetDURATION() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetERRORS() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetERROR_CODE() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetFRAMES() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetFRAMES_DROPPED() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetHEIGHT() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetMIME_TYPE_AUDIO() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetMIME_TYPE_VIDEO() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetPLAYING() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetWIDTH() = 0 ;
+	__property Androidapi::Jni::Javatypes::_di_JString CODEC_AUDIO = {read=_GetCODEC_AUDIO};
+	__property Androidapi::Jni::Javatypes::_di_JString CODEC_VIDEO = {read=_GetCODEC_VIDEO};
+	__property Androidapi::Jni::Javatypes::_di_JString DURATION = {read=_GetDURATION};
+	__property Androidapi::Jni::Javatypes::_di_JString ERRORS = {read=_GetERRORS};
+	__property Androidapi::Jni::Javatypes::_di_JString ERROR_CODE = {read=_GetERROR_CODE};
+	__property Androidapi::Jni::Javatypes::_di_JString FRAMES = {read=_GetFRAMES};
+	__property Androidapi::Jni::Javatypes::_di_JString FRAMES_DROPPED = {read=_GetFRAMES_DROPPED};
+	__property Androidapi::Jni::Javatypes::_di_JString HEIGHT = {read=_GetHEIGHT};
+	__property Androidapi::Jni::Javatypes::_di_JString MIME_TYPE_AUDIO = {read=_GetMIME_TYPE_AUDIO};
+	__property Androidapi::Jni::Javatypes::_di_JString MIME_TYPE_VIDEO = {read=_GetMIME_TYPE_VIDEO};
+	__property Androidapi::Jni::Javatypes::_di_JString PLAYING = {read=_GetPLAYING};
+	__property Androidapi::Jni::Javatypes::_di_JString WIDTH = {read=_GetWIDTH};
+};
+
+__interface  INTERFACE_UUID("{62B9AF4E-B2A4-4DF3-9F75-BB9F0306D7A5}") JMediaPlayer_MetricsConstants  : public Androidapi::Jni::Javatypes::JObject 
+{
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJMediaPlayer_MetricsConstants : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMediaPlayer_MetricsConstantsClass,_di_JMediaPlayer_MetricsConstants>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMediaPlayer_MetricsConstantsClass,_di_JMediaPlayer_MetricsConstants> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJMediaPlayer_MetricsConstants() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMediaPlayer_MetricsConstantsClass,_di_JMediaPlayer_MetricsConstants>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJMediaPlayer_MetricsConstants() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{E87BE218-8495-4734-AE26-944277FB24D8}") JMediaPlayer_NoDrmSchemeExceptionClass  : public JMediaDrmExceptionClass 
+{
+	HIDESBASE virtual _di_JMediaPlayer_NoDrmSchemeException __cdecl init(Androidapi::Jni::Javatypes::_di_JString detailMessage) = 0 ;
+};
+
+__interface  INTERFACE_UUID("{A06C1A4A-1276-4F7B-9F73-92A92DC2CD40}") JMediaPlayer_NoDrmSchemeException  : public JMediaDrmException 
+{
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJMediaPlayer_NoDrmSchemeException : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMediaPlayer_NoDrmSchemeExceptionClass,_di_JMediaPlayer_NoDrmSchemeException>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMediaPlayer_NoDrmSchemeExceptionClass,_di_JMediaPlayer_NoDrmSchemeException> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJMediaPlayer_NoDrmSchemeException() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMediaPlayer_NoDrmSchemeExceptionClass,_di_JMediaPlayer_NoDrmSchemeException>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJMediaPlayer_NoDrmSchemeException() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{9690972A-5827-477B-A01D-4285196FB577}") JMediaPlayer_OnBufferingUpdateListenerClass  : public Androidapi::Jnibridge::IJavaClass 
+{
+	
+};
+
+__interface  INTERFACE_UUID("{BA8BF9D7-325E-4A93-B58F-81B180199D14}") JMediaPlayer_OnBufferingUpdateListener  : public Androidapi::Jnibridge::IJavaInstance 
+{
+	virtual void __cdecl onBufferingUpdate(_di_JMediaPlayer mp, int percent) = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJMediaPlayer_OnBufferingUpdateListener : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMediaPlayer_OnBufferingUpdateListenerClass,_di_JMediaPlayer_OnBufferingUpdateListener>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMediaPlayer_OnBufferingUpdateListenerClass,_di_JMediaPlayer_OnBufferingUpdateListener> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJMediaPlayer_OnBufferingUpdateListener() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMediaPlayer_OnBufferingUpdateListenerClass,_di_JMediaPlayer_OnBufferingUpdateListener>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJMediaPlayer_OnBufferingUpdateListener() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{B52C8D4D-90D6-4A31-A123-590582DCA314}") JMediaPlayer_OnCompletionListenerClass  : public Androidapi::Jnibridge::IJavaClass 
+{
+	
+};
+
+__interface  INTERFACE_UUID("{855040E1-8E41-40EE-B36F-06C212B8AC81}") JMediaPlayer_OnCompletionListener  : public Androidapi::Jnibridge::IJavaInstance 
+{
+	virtual void __cdecl onCompletion(_di_JMediaPlayer mp) = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJMediaPlayer_OnCompletionListener : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMediaPlayer_OnCompletionListenerClass,_di_JMediaPlayer_OnCompletionListener>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMediaPlayer_OnCompletionListenerClass,_di_JMediaPlayer_OnCompletionListener> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJMediaPlayer_OnCompletionListener() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMediaPlayer_OnCompletionListenerClass,_di_JMediaPlayer_OnCompletionListener>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJMediaPlayer_OnCompletionListener() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{47013626-617D-47C6-B736-3F9EC53077B6}") JMediaPlayer_OnDrmConfigHelperClass  : public Androidapi::Jnibridge::IJavaClass 
+{
+	
+};
+
+__interface  INTERFACE_UUID("{C6547DF0-A024-44F9-9762-67315EA095D2}") JMediaPlayer_OnDrmConfigHelper  : public Androidapi::Jnibridge::IJavaInstance 
+{
+	virtual void __cdecl onDrmConfig(_di_JMediaPlayer mp) = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJMediaPlayer_OnDrmConfigHelper : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMediaPlayer_OnDrmConfigHelperClass,_di_JMediaPlayer_OnDrmConfigHelper>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMediaPlayer_OnDrmConfigHelperClass,_di_JMediaPlayer_OnDrmConfigHelper> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJMediaPlayer_OnDrmConfigHelper() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMediaPlayer_OnDrmConfigHelperClass,_di_JMediaPlayer_OnDrmConfigHelper>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJMediaPlayer_OnDrmConfigHelper() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{C0405905-F0CD-4C0C-909C-F12A903F8717}") JMediaPlayer_OnDrmInfoListenerClass  : public Androidapi::Jnibridge::IJavaClass 
+{
+	
+};
+
+__interface  INTERFACE_UUID("{A52CAD0D-77CC-41E7-B55F-854342C155DB}") JMediaPlayer_OnDrmInfoListener  : public Androidapi::Jnibridge::IJavaInstance 
+{
+	virtual void __cdecl onDrmInfo(_di_JMediaPlayer mp, _di_JMediaPlayer_DrmInfo drmInfo) = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJMediaPlayer_OnDrmInfoListener : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMediaPlayer_OnDrmInfoListenerClass,_di_JMediaPlayer_OnDrmInfoListener>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMediaPlayer_OnDrmInfoListenerClass,_di_JMediaPlayer_OnDrmInfoListener> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJMediaPlayer_OnDrmInfoListener() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMediaPlayer_OnDrmInfoListenerClass,_di_JMediaPlayer_OnDrmInfoListener>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJMediaPlayer_OnDrmInfoListener() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{626D4CF5-0478-488A-A0E1-8FD5E23100AD}") JMediaPlayer_OnDrmPreparedListenerClass  : public Androidapi::Jnibridge::IJavaClass 
+{
+	
+};
+
+__interface  INTERFACE_UUID("{82617256-8AD1-4977-8D0F-700CCCCF3545}") JMediaPlayer_OnDrmPreparedListener  : public Androidapi::Jnibridge::IJavaInstance 
+{
+	virtual void __cdecl onDrmPrepared(_di_JMediaPlayer mp, int status) = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJMediaPlayer_OnDrmPreparedListener : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMediaPlayer_OnDrmPreparedListenerClass,_di_JMediaPlayer_OnDrmPreparedListener>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMediaPlayer_OnDrmPreparedListenerClass,_di_JMediaPlayer_OnDrmPreparedListener> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJMediaPlayer_OnDrmPreparedListener() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMediaPlayer_OnDrmPreparedListenerClass,_di_JMediaPlayer_OnDrmPreparedListener>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJMediaPlayer_OnDrmPreparedListener() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{35FC0354-8C2B-4B4B-ABEC-DEBD6B40E6F7}") JMediaPlayer_OnErrorListenerClass  : public Androidapi::Jnibridge::IJavaClass 
+{
+	
+};
+
+__interface  INTERFACE_UUID("{164290D2-CB7D-41A2-94DC-20306173FB5E}") JMediaPlayer_OnErrorListener  : public Androidapi::Jnibridge::IJavaInstance 
+{
+	virtual bool __cdecl onError(_di_JMediaPlayer mp, int what, int extra) = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJMediaPlayer_OnErrorListener : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMediaPlayer_OnErrorListenerClass,_di_JMediaPlayer_OnErrorListener>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMediaPlayer_OnErrorListenerClass,_di_JMediaPlayer_OnErrorListener> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJMediaPlayer_OnErrorListener() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMediaPlayer_OnErrorListenerClass,_di_JMediaPlayer_OnErrorListener>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJMediaPlayer_OnErrorListener() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{7141FE3D-8201-49F6-919F-FF71788DFFED}") JMediaPlayer_OnInfoListenerClass  : public Androidapi::Jnibridge::IJavaClass 
+{
+	
+};
+
+__interface  INTERFACE_UUID("{84CB6D98-5AC9-4787-8411-E5F7A7CAFA84}") JMediaPlayer_OnInfoListener  : public Androidapi::Jnibridge::IJavaInstance 
+{
+	virtual bool __cdecl onInfo(_di_JMediaPlayer mp, int what, int extra) = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJMediaPlayer_OnInfoListener : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMediaPlayer_OnInfoListenerClass,_di_JMediaPlayer_OnInfoListener>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMediaPlayer_OnInfoListenerClass,_di_JMediaPlayer_OnInfoListener> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJMediaPlayer_OnInfoListener() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMediaPlayer_OnInfoListenerClass,_di_JMediaPlayer_OnInfoListener>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJMediaPlayer_OnInfoListener() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{FF67A260-7174-40EF-B53B-DA2BE4CDD72B}") JMediaPlayer_OnPreparedListenerClass  : public Androidapi::Jnibridge::IJavaClass 
+{
+	
+};
+
+__interface  INTERFACE_UUID("{4082D9D4-82AE-4A31-9C58-D8CA78DC1A2B}") JMediaPlayer_OnPreparedListener  : public Androidapi::Jnibridge::IJavaInstance 
+{
+	virtual void __cdecl onPrepared(_di_JMediaPlayer mp) = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJMediaPlayer_OnPreparedListener : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMediaPlayer_OnPreparedListenerClass,_di_JMediaPlayer_OnPreparedListener>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMediaPlayer_OnPreparedListenerClass,_di_JMediaPlayer_OnPreparedListener> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJMediaPlayer_OnPreparedListener() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMediaPlayer_OnPreparedListenerClass,_di_JMediaPlayer_OnPreparedListener>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJMediaPlayer_OnPreparedListener() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{ED9A90D0-F45E-4F82-A31F-A8C9735E2CBE}") JMediaPlayer_OnSeekCompleteListenerClass  : public Androidapi::Jnibridge::IJavaClass 
+{
+	
+};
+
+__interface  INTERFACE_UUID("{2F3ABA30-AB96-4030-9621-3C3A6FEC13AD}") JMediaPlayer_OnSeekCompleteListener  : public Androidapi::Jnibridge::IJavaInstance 
+{
+	virtual void __cdecl onSeekComplete(_di_JMediaPlayer mp) = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJMediaPlayer_OnSeekCompleteListener : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMediaPlayer_OnSeekCompleteListenerClass,_di_JMediaPlayer_OnSeekCompleteListener>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMediaPlayer_OnSeekCompleteListenerClass,_di_JMediaPlayer_OnSeekCompleteListener> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJMediaPlayer_OnSeekCompleteListener() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMediaPlayer_OnSeekCompleteListenerClass,_di_JMediaPlayer_OnSeekCompleteListener>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJMediaPlayer_OnSeekCompleteListener() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{95A5650E-B0EB-4277-8DDF-3D24F435B260}") JMediaPlayer_OnTimedMetaDataAvailableListenerClass  : public Androidapi::Jnibridge::IJavaClass 
+{
+	
+};
+
+__interface  INTERFACE_UUID("{DD4BD518-610B-4DE8-8950-6DD1090F9905}") JMediaPlayer_OnTimedMetaDataAvailableListener  : public Androidapi::Jnibridge::IJavaInstance 
+{
+	virtual void __cdecl onTimedMetaDataAvailable(_di_JMediaPlayer mp, _di_JTimedMetaData data) = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJMediaPlayer_OnTimedMetaDataAvailableListener : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMediaPlayer_OnTimedMetaDataAvailableListenerClass,_di_JMediaPlayer_OnTimedMetaDataAvailableListener>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMediaPlayer_OnTimedMetaDataAvailableListenerClass,_di_JMediaPlayer_OnTimedMetaDataAvailableListener> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJMediaPlayer_OnTimedMetaDataAvailableListener() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMediaPlayer_OnTimedMetaDataAvailableListenerClass,_di_JMediaPlayer_OnTimedMetaDataAvailableListener>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJMediaPlayer_OnTimedMetaDataAvailableListener() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{B1D8CCB6-43D0-4238-85F7-E9A91DA43744}") JMediaPlayer_OnTimedTextListenerClass  : public Androidapi::Jnibridge::IJavaClass 
+{
+	
+};
+
+__interface  INTERFACE_UUID("{0884B998-F061-44F4-BAB4-A31DAF22F162}") JMediaPlayer_OnTimedTextListener  : public Androidapi::Jnibridge::IJavaInstance 
+{
+	virtual void __cdecl onTimedText(_di_JMediaPlayer mp, _di_JTimedText text) = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJMediaPlayer_OnTimedTextListener : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMediaPlayer_OnTimedTextListenerClass,_di_JMediaPlayer_OnTimedTextListener>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMediaPlayer_OnTimedTextListenerClass,_di_JMediaPlayer_OnTimedTextListener> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJMediaPlayer_OnTimedTextListener() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMediaPlayer_OnTimedTextListenerClass,_di_JMediaPlayer_OnTimedTextListener>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJMediaPlayer_OnTimedTextListener() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{3693771D-E38F-4C43-9FC2-AAB16CBF4DA3}") JMediaPlayer_OnVideoSizeChangedListenerClass  : public Androidapi::Jnibridge::IJavaClass 
+{
+	
+};
+
+__interface  INTERFACE_UUID("{37F96835-D256-4DAF-B0F0-17B653F8ECB9}") JMediaPlayer_OnVideoSizeChangedListener  : public Androidapi::Jnibridge::IJavaInstance 
+{
+	virtual void __cdecl onVideoSizeChanged(_di_JMediaPlayer mp, int width, int height) = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJMediaPlayer_OnVideoSizeChangedListener : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMediaPlayer_OnVideoSizeChangedListenerClass,_di_JMediaPlayer_OnVideoSizeChangedListener>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMediaPlayer_OnVideoSizeChangedListenerClass,_di_JMediaPlayer_OnVideoSizeChangedListener> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJMediaPlayer_OnVideoSizeChangedListener() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMediaPlayer_OnVideoSizeChangedListenerClass,_di_JMediaPlayer_OnVideoSizeChangedListener>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJMediaPlayer_OnVideoSizeChangedListener() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{60685296-2ADB-452D-A03A-1EB0AAAEA880}") JMediaPlayer_ProvisioningNetworkErrorExceptionClass  : public JMediaDrmExceptionClass 
+{
+	HIDESBASE virtual _di_JMediaPlayer_ProvisioningNetworkErrorException __cdecl init(Androidapi::Jni::Javatypes::_di_JString detailMessage) = 0 ;
+};
+
+__interface  INTERFACE_UUID("{C0102DEC-8D69-463D-B61F-26448A816FE8}") JMediaPlayer_ProvisioningNetworkErrorException  : public JMediaDrmException 
+{
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJMediaPlayer_ProvisioningNetworkErrorException : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMediaPlayer_ProvisioningNetworkErrorExceptionClass,_di_JMediaPlayer_ProvisioningNetworkErrorException>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMediaPlayer_ProvisioningNetworkErrorExceptionClass,_di_JMediaPlayer_ProvisioningNetworkErrorException> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJMediaPlayer_ProvisioningNetworkErrorException() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMediaPlayer_ProvisioningNetworkErrorExceptionClass,_di_JMediaPlayer_ProvisioningNetworkErrorException>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJMediaPlayer_ProvisioningNetworkErrorException() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{2F23C344-2AB6-4533-ABF5-A40C3DF6C7D9}") JMediaPlayer_ProvisioningServerErrorExceptionClass  : public JMediaDrmExceptionClass 
+{
+	HIDESBASE virtual _di_JMediaPlayer_ProvisioningServerErrorException __cdecl init(Androidapi::Jni::Javatypes::_di_JString detailMessage) = 0 ;
+};
+
+__interface  INTERFACE_UUID("{092A1106-D577-4EF0-B348-126B4E3EEB3B}") JMediaPlayer_ProvisioningServerErrorException  : public JMediaDrmException 
+{
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJMediaPlayer_ProvisioningServerErrorException : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMediaPlayer_ProvisioningServerErrorExceptionClass,_di_JMediaPlayer_ProvisioningServerErrorException>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMediaPlayer_ProvisioningServerErrorExceptionClass,_di_JMediaPlayer_ProvisioningServerErrorException> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJMediaPlayer_ProvisioningServerErrorException() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMediaPlayer_ProvisioningServerErrorExceptionClass,_di_JMediaPlayer_ProvisioningServerErrorException>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJMediaPlayer_ProvisioningServerErrorException() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{D7B4E7F5-E306-471E-8F77-ADBDB9B94282}") JMediaPlayer_TrackInfoClass  : public Androidapi::Jni::Javatypes::JObjectClass 
+{
+	virtual int __cdecl _GetMEDIA_TRACK_TYPE_AUDIO() = 0 ;
+	virtual int __cdecl _GetMEDIA_TRACK_TYPE_METADATA() = 0 ;
+	virtual int __cdecl _GetMEDIA_TRACK_TYPE_SUBTITLE() = 0 ;
+	virtual int __cdecl _GetMEDIA_TRACK_TYPE_TIMEDTEXT() = 0 ;
+	virtual int __cdecl _GetMEDIA_TRACK_TYPE_UNKNOWN() = 0 ;
+	virtual int __cdecl _GetMEDIA_TRACK_TYPE_VIDEO() = 0 ;
+	__property int MEDIA_TRACK_TYPE_AUDIO = {read=_GetMEDIA_TRACK_TYPE_AUDIO};
+	__property int MEDIA_TRACK_TYPE_METADATA = {read=_GetMEDIA_TRACK_TYPE_METADATA};
+	__property int MEDIA_TRACK_TYPE_SUBTITLE = {read=_GetMEDIA_TRACK_TYPE_SUBTITLE};
+	__property int MEDIA_TRACK_TYPE_TIMEDTEXT = {read=_GetMEDIA_TRACK_TYPE_TIMEDTEXT};
+	__property int MEDIA_TRACK_TYPE_UNKNOWN = {read=_GetMEDIA_TRACK_TYPE_UNKNOWN};
+	__property int MEDIA_TRACK_TYPE_VIDEO = {read=_GetMEDIA_TRACK_TYPE_VIDEO};
+};
+
+__interface  INTERFACE_UUID("{488EB87A-19D3-4231-BEE0-01414518C163}") JMediaPlayer_TrackInfo  : public Androidapi::Jni::Javatypes::JObject 
+{
+	virtual int __cdecl describeContents() = 0 ;
+	virtual _di_JMediaFormat __cdecl getFormat() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl getLanguage() = 0 ;
+	virtual int __cdecl getTrackType() = 0 ;
+	HIDESBASE virtual Androidapi::Jni::Javatypes::_di_JString __cdecl toString() = 0 ;
+	virtual void __cdecl writeToParcel(Androidapi::Jni::Os::_di_JParcel dest, int flags) = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJMediaPlayer_TrackInfo : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMediaPlayer_TrackInfoClass,_di_JMediaPlayer_TrackInfo>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMediaPlayer_TrackInfoClass,_di_JMediaPlayer_TrackInfo> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJMediaPlayer_TrackInfo() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMediaPlayer_TrackInfoClass,_di_JMediaPlayer_TrackInfo>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJMediaPlayer_TrackInfo() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{C70673D1-3BC5-4951-8C84-3023833CD3CE}") JMediaRecorderClass  : public Androidapi::Jni::Javatypes::JObjectClass 
+{
+	virtual int __cdecl _GetMEDIA_ERROR_SERVER_DIED() = 0 ;
+	virtual int __cdecl _GetMEDIA_RECORDER_ERROR_UNKNOWN() = 0 ;
+	virtual int __cdecl _GetMEDIA_RECORDER_INFO_MAX_DURATION_REACHED() = 0 ;
+	virtual int __cdecl _GetMEDIA_RECORDER_INFO_MAX_FILESIZE_APPROACHING() = 0 ;
+	virtual int __cdecl _GetMEDIA_RECORDER_INFO_MAX_FILESIZE_REACHED() = 0 ;
+	virtual int __cdecl _GetMEDIA_RECORDER_INFO_NEXT_OUTPUT_FILE_STARTED() = 0 ;
+	virtual int __cdecl _GetMEDIA_RECORDER_INFO_UNKNOWN() = 0 ;
+	HIDESBASE virtual _di_JMediaRecorder __cdecl init() = 0 ;
+	virtual int __cdecl getAudioSourceMax() = 0 ;
+	__property int MEDIA_ERROR_SERVER_DIED = {read=_GetMEDIA_ERROR_SERVER_DIED};
+	__property int MEDIA_RECORDER_ERROR_UNKNOWN = {read=_GetMEDIA_RECORDER_ERROR_UNKNOWN};
+	__property int MEDIA_RECORDER_INFO_MAX_DURATION_REACHED = {read=_GetMEDIA_RECORDER_INFO_MAX_DURATION_REACHED};
+	__property int MEDIA_RECORDER_INFO_MAX_FILESIZE_APPROACHING = {read=_GetMEDIA_RECORDER_INFO_MAX_FILESIZE_APPROACHING};
+	__property int MEDIA_RECORDER_INFO_MAX_FILESIZE_REACHED = {read=_GetMEDIA_RECORDER_INFO_MAX_FILESIZE_REACHED};
+	__property int MEDIA_RECORDER_INFO_NEXT_OUTPUT_FILE_STARTED = {read=_GetMEDIA_RECORDER_INFO_NEXT_OUTPUT_FILE_STARTED};
+	__property int MEDIA_RECORDER_INFO_UNKNOWN = {read=_GetMEDIA_RECORDER_INFO_UNKNOWN};
+};
+
+__interface  INTERFACE_UUID("{39D29E60-05D8-4B2C-A0F5-EF03FD1E0E20}") JMediaRecorder  : public Androidapi::Jni::Javatypes::JObject 
+{
+	virtual int __cdecl getMaxAmplitude() = 0 ;
+	virtual Androidapi::Jni::Os::_di_JPersistableBundle __cdecl getMetrics() = 0 ;
+	virtual Androidapi::Jni::Graphicscontentviewtext::_di_JSurface __cdecl getSurface() = 0 ;
+	virtual void __cdecl pause() = 0 ;
+	virtual void __cdecl prepare() = 0 ;
+	virtual void __cdecl release() = 0 ;
+	virtual void __cdecl reset() = 0 ;
+	virtual void __cdecl resume() = 0 ;
+	virtual void __cdecl setAudioChannels(int numChannels) = 0 ;
+	virtual void __cdecl setAudioEncoder(int audio_encoder) = 0 ;
+	virtual void __cdecl setAudioEncodingBitRate(int bitRate) = 0 ;
+	virtual void __cdecl setAudioSamplingRate(int samplingRate) = 0 ;
+	virtual void __cdecl setAudioSource(int audio_source) = 0 ;
+	virtual void __cdecl setCamera(Androidapi::Jni::Hardware::_di_JCamera c) = 0 ;
+	virtual void __cdecl setCaptureRate(double fps) = 0 ;
+	virtual void __cdecl setInputSurface(Androidapi::Jni::Graphicscontentviewtext::_di_JSurface surface) = 0 ;
+	virtual void __cdecl setLocation(float latitude, float longitude) = 0 ;
+	virtual void __cdecl setMaxDuration(int max_duration_ms) = 0 ;
+	virtual void __cdecl setMaxFileSize(__int64 max_filesize_bytes) = 0 ;
+	virtual void __cdecl setNextOutputFile(Androidapi::Jni::Javatypes::_di_JFileDescriptor fd) = 0 /* overload */;
+	virtual void __cdecl setNextOutputFile(Androidapi::Jni::Javatypes::_di_JFile file_) = 0 /* overload */;
+	virtual void __cdecl setOnErrorListener(_di_JMediaRecorder_OnErrorListener l) = 0 ;
+	virtual void __cdecl setOnInfoListener(_di_JMediaRecorder_OnInfoListener listener) = 0 ;
+	virtual void __cdecl setOrientationHint(int degrees) = 0 ;
+	virtual void __cdecl setOutputFile(Androidapi::Jni::Javatypes::_di_JFileDescriptor fd) = 0 /* overload */;
+	virtual void __cdecl setOutputFile(Androidapi::Jni::Javatypes::_di_JFile file_) = 0 /* overload */;
+	virtual void __cdecl setOutputFile(Androidapi::Jni::Javatypes::_di_JString path) = 0 /* overload */;
+	virtual void __cdecl setOutputFormat(int output_format) = 0 ;
+	virtual void __cdecl setPreviewDisplay(Androidapi::Jni::Graphicscontentviewtext::_di_JSurface sv) = 0 ;
+	virtual void __cdecl setProfile(_di_JCamcorderProfile profile) = 0 ;
+	virtual void __cdecl setVideoEncoder(int video_encoder) = 0 ;
+	virtual void __cdecl setVideoEncodingBitRate(int bitRate) = 0 ;
+	virtual void __cdecl setVideoEncodingProfileLevel(int profile, int level) = 0 ;
+	virtual void __cdecl setVideoFrameRate(int rate) = 0 ;
+	virtual void __cdecl setVideoSize(int width, int height) = 0 ;
+	virtual void __cdecl setVideoSource(int video_source) = 0 ;
+	virtual void __cdecl start() = 0 ;
+	virtual void __cdecl stop() = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJMediaRecorder : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMediaRecorderClass,_di_JMediaRecorder>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMediaRecorderClass,_di_JMediaRecorder> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJMediaRecorder() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMediaRecorderClass,_di_JMediaRecorder>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJMediaRecorder() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{60BE0488-31F9-4C18-8DF8-ED6D05525906}") JMediaRecorder_AudioEncoderClass  : public Androidapi::Jni::Javatypes::JObjectClass 
+{
+	virtual int __cdecl _GetAAC() = 0 ;
+	virtual int __cdecl _GetAAC_ELD() = 0 ;
+	virtual int __cdecl _GetAMR_NB() = 0 ;
+	virtual int __cdecl _GetAMR_WB() = 0 ;
+	virtual int __cdecl _GetDEFAULT() = 0 ;
+	virtual int __cdecl _GetHE_AAC() = 0 ;
+	virtual int __cdecl _GetVORBIS() = 0 ;
+	__property int AAC = {read=_GetAAC};
+	__property int AAC_ELD = {read=_GetAAC_ELD};
+	__property int AMR_NB = {read=_GetAMR_NB};
+	__property int AMR_WB = {read=_GetAMR_WB};
+	__property int DEFAULT = {read=_GetDEFAULT};
+	__property int HE_AAC = {read=_GetHE_AAC};
+	__property int VORBIS = {read=_GetVORBIS};
+};
+
+__interface  INTERFACE_UUID("{A827A239-F905-460F-850D-633F3C370A44}") JMediaRecorder_AudioEncoder  : public Androidapi::Jni::Javatypes::JObject 
+{
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJMediaRecorder_AudioEncoder : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMediaRecorder_AudioEncoderClass,_di_JMediaRecorder_AudioEncoder>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMediaRecorder_AudioEncoderClass,_di_JMediaRecorder_AudioEncoder> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJMediaRecorder_AudioEncoder() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMediaRecorder_AudioEncoderClass,_di_JMediaRecorder_AudioEncoder>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJMediaRecorder_AudioEncoder() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{A2ACA9E4-86BA-483F-B173-9AC32C457B5B}") JMediaRecorder_AudioSourceClass  : public Androidapi::Jni::Javatypes::JObjectClass 
+{
+	virtual int __cdecl _GetCAMCORDER() = 0 ;
+	virtual int __cdecl _GetDEFAULT() = 0 ;
+	virtual int __cdecl _GetMIC() = 0 ;
+	virtual int __cdecl _GetREMOTE_SUBMIX() = 0 ;
+	virtual int __cdecl _GetUNPROCESSED() = 0 ;
+	virtual int __cdecl _GetVOICE_CALL() = 0 ;
+	virtual int __cdecl _GetVOICE_COMMUNICATION() = 0 ;
+	virtual int __cdecl _GetVOICE_DOWNLINK() = 0 ;
+	virtual int __cdecl _GetVOICE_RECOGNITION() = 0 ;
+	virtual int __cdecl _GetVOICE_UPLINK() = 0 ;
+	__property int CAMCORDER = {read=_GetCAMCORDER};
+	__property int DEFAULT = {read=_GetDEFAULT};
+	__property int MIC = {read=_GetMIC};
+	__property int REMOTE_SUBMIX = {read=_GetREMOTE_SUBMIX};
+	__property int UNPROCESSED = {read=_GetUNPROCESSED};
+	__property int VOICE_CALL = {read=_GetVOICE_CALL};
+	__property int VOICE_COMMUNICATION = {read=_GetVOICE_COMMUNICATION};
+	__property int VOICE_DOWNLINK = {read=_GetVOICE_DOWNLINK};
+	__property int VOICE_RECOGNITION = {read=_GetVOICE_RECOGNITION};
+	__property int VOICE_UPLINK = {read=_GetVOICE_UPLINK};
+};
+
+__interface  INTERFACE_UUID("{32A3494D-269C-4635-83D3-8C8E42C03557}") JMediaRecorder_AudioSource  : public Androidapi::Jni::Javatypes::JObject 
+{
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJMediaRecorder_AudioSource : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMediaRecorder_AudioSourceClass,_di_JMediaRecorder_AudioSource>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMediaRecorder_AudioSourceClass,_di_JMediaRecorder_AudioSource> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJMediaRecorder_AudioSource() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMediaRecorder_AudioSourceClass,_di_JMediaRecorder_AudioSource>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJMediaRecorder_AudioSource() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{BA1DDE9D-F3FD-4FB3-8684-DF3507840EB9}") JMediaRecorder_MetricsConstantsClass  : public Androidapi::Jni::Javatypes::JObjectClass 
+{
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetAUDIO_BITRATE() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetAUDIO_CHANNELS() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetAUDIO_SAMPLERATE() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetAUDIO_TIMESCALE() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetCAPTURE_FPS() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetCAPTURE_FPS_ENABLE() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetFRAMERATE() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetHEIGHT() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetMOVIE_TIMESCALE() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetROTATION() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetVIDEO_BITRATE() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetVIDEO_IFRAME_INTERVAL() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetVIDEO_LEVEL() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetVIDEO_PROFILE() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetVIDEO_TIMESCALE() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetWIDTH() = 0 ;
+	__property Androidapi::Jni::Javatypes::_di_JString AUDIO_BITRATE = {read=_GetAUDIO_BITRATE};
+	__property Androidapi::Jni::Javatypes::_di_JString AUDIO_CHANNELS = {read=_GetAUDIO_CHANNELS};
+	__property Androidapi::Jni::Javatypes::_di_JString AUDIO_SAMPLERATE = {read=_GetAUDIO_SAMPLERATE};
+	__property Androidapi::Jni::Javatypes::_di_JString AUDIO_TIMESCALE = {read=_GetAUDIO_TIMESCALE};
+	__property Androidapi::Jni::Javatypes::_di_JString CAPTURE_FPS = {read=_GetCAPTURE_FPS};
+	__property Androidapi::Jni::Javatypes::_di_JString CAPTURE_FPS_ENABLE = {read=_GetCAPTURE_FPS_ENABLE};
+	__property Androidapi::Jni::Javatypes::_di_JString FRAMERATE = {read=_GetFRAMERATE};
+	__property Androidapi::Jni::Javatypes::_di_JString HEIGHT = {read=_GetHEIGHT};
+	__property Androidapi::Jni::Javatypes::_di_JString MOVIE_TIMESCALE = {read=_GetMOVIE_TIMESCALE};
+	__property Androidapi::Jni::Javatypes::_di_JString ROTATION = {read=_GetROTATION};
+	__property Androidapi::Jni::Javatypes::_di_JString VIDEO_BITRATE = {read=_GetVIDEO_BITRATE};
+	__property Androidapi::Jni::Javatypes::_di_JString VIDEO_IFRAME_INTERVAL = {read=_GetVIDEO_IFRAME_INTERVAL};
+	__property Androidapi::Jni::Javatypes::_di_JString VIDEO_LEVEL = {read=_GetVIDEO_LEVEL};
+	__property Androidapi::Jni::Javatypes::_di_JString VIDEO_PROFILE = {read=_GetVIDEO_PROFILE};
+	__property Androidapi::Jni::Javatypes::_di_JString VIDEO_TIMESCALE = {read=_GetVIDEO_TIMESCALE};
+	__property Androidapi::Jni::Javatypes::_di_JString WIDTH = {read=_GetWIDTH};
+};
+
+__interface  INTERFACE_UUID("{1682FBB8-0F50-4C73-B287-82C7CCC459C6}") JMediaRecorder_MetricsConstants  : public Androidapi::Jni::Javatypes::JObject 
+{
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJMediaRecorder_MetricsConstants : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMediaRecorder_MetricsConstantsClass,_di_JMediaRecorder_MetricsConstants>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMediaRecorder_MetricsConstantsClass,_di_JMediaRecorder_MetricsConstants> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJMediaRecorder_MetricsConstants() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMediaRecorder_MetricsConstantsClass,_di_JMediaRecorder_MetricsConstants>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJMediaRecorder_MetricsConstants() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{61C1AC3C-6F4E-4513-B98A-7CFDD07FE71B}") JMediaRecorder_OnErrorListenerClass  : public Androidapi::Jnibridge::IJavaClass 
+{
+	
+};
+
+__interface  INTERFACE_UUID("{E36B1187-DCC1-48EF-994A-4AB4C6FBE5AF}") JMediaRecorder_OnErrorListener  : public Androidapi::Jnibridge::IJavaInstance 
+{
+	virtual void __cdecl onError(_di_JMediaRecorder mr, int what, int extra) = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJMediaRecorder_OnErrorListener : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMediaRecorder_OnErrorListenerClass,_di_JMediaRecorder_OnErrorListener>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMediaRecorder_OnErrorListenerClass,_di_JMediaRecorder_OnErrorListener> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJMediaRecorder_OnErrorListener() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMediaRecorder_OnErrorListenerClass,_di_JMediaRecorder_OnErrorListener>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJMediaRecorder_OnErrorListener() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{2243D66B-0BD1-49F1-8031-1432CC3EBBD6}") JMediaRecorder_OnInfoListenerClass  : public Androidapi::Jnibridge::IJavaClass 
+{
+	
+};
+
+__interface  INTERFACE_UUID("{49627774-9F01-4122-B7F3-62ED95C7DD6B}") JMediaRecorder_OnInfoListener  : public Androidapi::Jnibridge::IJavaInstance 
+{
+	virtual void __cdecl onInfo(_di_JMediaRecorder mr, int what, int extra) = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJMediaRecorder_OnInfoListener : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMediaRecorder_OnInfoListenerClass,_di_JMediaRecorder_OnInfoListener>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMediaRecorder_OnInfoListenerClass,_di_JMediaRecorder_OnInfoListener> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJMediaRecorder_OnInfoListener() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMediaRecorder_OnInfoListenerClass,_di_JMediaRecorder_OnInfoListener>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJMediaRecorder_OnInfoListener() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{E5FB95FA-4387-4454-9464-8F93A2FB550A}") JMediaRecorder_OutputFormatClass  : public Androidapi::Jni::Javatypes::JObjectClass 
+{
+	virtual int __cdecl _GetAAC_ADTS() = 0 ;
+	virtual int __cdecl _GetAMR_NB() = 0 ;
+	virtual int __cdecl _GetAMR_WB() = 0 ;
+	virtual int __cdecl _GetDEFAULT() = 0 ;
+	virtual int __cdecl _GetMPEG_2_TS() = 0 ;
+	virtual int __cdecl _GetMPEG_4() = 0 ;
+	virtual int __cdecl _GetRAW_AMR() = 0 ;
+	virtual int __cdecl _GetTHREE_GPP() = 0 ;
+	virtual int __cdecl _GetWEBM() = 0 ;
+	__property int AAC_ADTS = {read=_GetAAC_ADTS};
+	__property int AMR_NB = {read=_GetAMR_NB};
+	__property int AMR_WB = {read=_GetAMR_WB};
+	__property int DEFAULT = {read=_GetDEFAULT};
+	__property int MPEG_2_TS = {read=_GetMPEG_2_TS};
+	__property int MPEG_4 = {read=_GetMPEG_4};
+	__property int RAW_AMR = {read=_GetRAW_AMR};
+	__property int THREE_GPP = {read=_GetTHREE_GPP};
+	__property int WEBM = {read=_GetWEBM};
+};
+
+__interface  INTERFACE_UUID("{3988D375-2062-46A4-8DA6-145374E051D9}") JMediaRecorder_OutputFormat  : public Androidapi::Jni::Javatypes::JObject 
+{
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJMediaRecorder_OutputFormat : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMediaRecorder_OutputFormatClass,_di_JMediaRecorder_OutputFormat>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMediaRecorder_OutputFormatClass,_di_JMediaRecorder_OutputFormat> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJMediaRecorder_OutputFormat() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMediaRecorder_OutputFormatClass,_di_JMediaRecorder_OutputFormat>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJMediaRecorder_OutputFormat() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{CAC0CF12-4686-461C-AB83-FF52102278BF}") JMediaRecorder_VideoEncoderClass  : public Androidapi::Jni::Javatypes::JObjectClass 
+{
+	virtual int __cdecl _GetDEFAULT() = 0 ;
+	virtual int __cdecl _GetH263() = 0 ;
+	virtual int __cdecl _GetH264() = 0 ;
+	virtual int __cdecl _GetHEVC() = 0 ;
+	virtual int __cdecl _GetMPEG_4_SP() = 0 ;
+	virtual int __cdecl _GetVP8() = 0 ;
+	__property int DEFAULT = {read=_GetDEFAULT};
+	__property int H263 = {read=_GetH263};
+	__property int H264 = {read=_GetH264};
+	__property int HEVC = {read=_GetHEVC};
+	__property int MPEG_4_SP = {read=_GetMPEG_4_SP};
+	__property int VP8 = {read=_GetVP8};
+};
+
+__interface  INTERFACE_UUID("{7790955C-286A-4B61-B266-A95E1774953A}") JMediaRecorder_VideoEncoder  : public Androidapi::Jni::Javatypes::JObject 
+{
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJMediaRecorder_VideoEncoder : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMediaRecorder_VideoEncoderClass,_di_JMediaRecorder_VideoEncoder>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMediaRecorder_VideoEncoderClass,_di_JMediaRecorder_VideoEncoder> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJMediaRecorder_VideoEncoder() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMediaRecorder_VideoEncoderClass,_di_JMediaRecorder_VideoEncoder>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJMediaRecorder_VideoEncoder() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{007242EA-B501-4179-BE6F-3D7641C9A412}") JMediaRecorder_VideoSourceClass  : public Androidapi::Jni::Javatypes::JObjectClass 
+{
+	virtual int __cdecl _GetCAMERA() = 0 ;
+	virtual int __cdecl _GetDEFAULT() = 0 ;
+	virtual int __cdecl _GetSURFACE() = 0 ;
+	__property int CAMERA = {read=_GetCAMERA};
+	__property int DEFAULT = {read=_GetDEFAULT};
+	__property int SURFACE = {read=_GetSURFACE};
+};
+
+__interface  INTERFACE_UUID("{E14FEC4B-01A8-4E23-B9F2-63464382FE92}") JMediaRecorder_VideoSource  : public Androidapi::Jni::Javatypes::JObject 
+{
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJMediaRecorder_VideoSource : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMediaRecorder_VideoSourceClass,_di_JMediaRecorder_VideoSource>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMediaRecorder_VideoSourceClass,_di_JMediaRecorder_VideoSource> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJMediaRecorder_VideoSource() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMediaRecorder_VideoSourceClass,_di_JMediaRecorder_VideoSource>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJMediaRecorder_VideoSource() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{BE499891-CFC7-47BB-946C-E633641DEA6F}") JMediaRouterClass  : public Androidapi::Jni::Javatypes::JObjectClass 
+{
+	virtual int __cdecl _GetCALLBACK_FLAG_PERFORM_ACTIVE_SCAN() = 0 ;
+	virtual int __cdecl _GetCALLBACK_FLAG_UNFILTERED_EVENTS() = 0 ;
+	virtual int __cdecl _GetROUTE_TYPE_LIVE_AUDIO() = 0 ;
+	virtual int __cdecl _GetROUTE_TYPE_LIVE_VIDEO() = 0 ;
+	virtual int __cdecl _GetROUTE_TYPE_USER() = 0 ;
+	__property int CALLBACK_FLAG_PERFORM_ACTIVE_SCAN = {read=_GetCALLBACK_FLAG_PERFORM_ACTIVE_SCAN};
+	__property int CALLBACK_FLAG_UNFILTERED_EVENTS = {read=_GetCALLBACK_FLAG_UNFILTERED_EVENTS};
+	__property int ROUTE_TYPE_LIVE_AUDIO = {read=_GetROUTE_TYPE_LIVE_AUDIO};
+	__property int ROUTE_TYPE_LIVE_VIDEO = {read=_GetROUTE_TYPE_LIVE_VIDEO};
+	__property int ROUTE_TYPE_USER = {read=_GetROUTE_TYPE_USER};
+};
+
+__interface  INTERFACE_UUID("{461EECED-4158-4A87-87AD-568D08569170}") JMediaRouter  : public Androidapi::Jni::Javatypes::JObject 
+{
+	virtual void __cdecl addCallback(int types, _di_JMediaRouter_Callback cb) = 0 /* overload */;
+	virtual void __cdecl addCallback(int types, _di_JMediaRouter_Callback cb, int flags) = 0 /* overload */;
+	virtual void __cdecl addUserRoute(_di_JMediaRouter_UserRouteInfo info) = 0 ;
+	virtual void __cdecl clearUserRoutes() = 0 ;
+	virtual _di_JMediaRouter_RouteCategory __cdecl createRouteCategory(Androidapi::Jni::Javatypes::_di_JCharSequence name, bool isGroupable) = 0 /* overload */;
+	virtual _di_JMediaRouter_RouteCategory __cdecl createRouteCategory(int nameResId, bool isGroupable) = 0 /* overload */;
+	virtual _di_JMediaRouter_UserRouteInfo __cdecl createUserRoute(_di_JMediaRouter_RouteCategory category) = 0 ;
+	virtual _di_JMediaRouter_RouteCategory __cdecl getCategoryAt(int index) = 0 ;
+	virtual int __cdecl getCategoryCount() = 0 ;
+	virtual _di_JMediaRouter_RouteInfo __cdecl getDefaultRoute() = 0 ;
+	virtual _di_JMediaRouter_RouteInfo __cdecl getRouteAt(int index) = 0 ;
+	virtual int __cdecl getRouteCount() = 0 ;
+	virtual _di_JMediaRouter_RouteInfo __cdecl getSelectedRoute(int type_) = 0 ;
+	virtual void __cdecl removeCallback(_di_JMediaRouter_Callback cb) = 0 ;
+	virtual void __cdecl removeUserRoute(_di_JMediaRouter_UserRouteInfo info) = 0 ;
+	virtual void __cdecl selectRoute(int types, _di_JMediaRouter_RouteInfo route) = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJMediaRouter : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMediaRouterClass,_di_JMediaRouter>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMediaRouterClass,_di_JMediaRouter> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJMediaRouter() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMediaRouterClass,_di_JMediaRouter>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJMediaRouter() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{CE16DA8F-E295-40D7-BDB9-90B613FEF489}") JMediaRouter_CallbackClass  : public Androidapi::Jni::Javatypes::JObjectClass 
+{
+	HIDESBASE virtual _di_JMediaRouter_Callback __cdecl init() = 0 ;
+};
+
+__interface  INTERFACE_UUID("{4B9C5746-9823-437E-8109-AE475A504BA9}") JMediaRouter_Callback  : public Androidapi::Jni::Javatypes::JObject 
+{
+	virtual void __cdecl onRouteAdded(_di_JMediaRouter router, _di_JMediaRouter_RouteInfo info) = 0 ;
+	virtual void __cdecl onRouteChanged(_di_JMediaRouter router, _di_JMediaRouter_RouteInfo info) = 0 ;
+	virtual void __cdecl onRouteGrouped(_di_JMediaRouter router, _di_JMediaRouter_RouteInfo info, _di_JMediaRouter_RouteGroup group, int index) = 0 ;
+	virtual void __cdecl onRoutePresentationDisplayChanged(_di_JMediaRouter router, _di_JMediaRouter_RouteInfo info) = 0 ;
+	virtual void __cdecl onRouteRemoved(_di_JMediaRouter router, _di_JMediaRouter_RouteInfo info) = 0 ;
+	virtual void __cdecl onRouteSelected(_di_JMediaRouter router, int type_, _di_JMediaRouter_RouteInfo info) = 0 ;
+	virtual void __cdecl onRouteUngrouped(_di_JMediaRouter router, _di_JMediaRouter_RouteInfo info, _di_JMediaRouter_RouteGroup group) = 0 ;
+	virtual void __cdecl onRouteUnselected(_di_JMediaRouter router, int type_, _di_JMediaRouter_RouteInfo info) = 0 ;
+	virtual void __cdecl onRouteVolumeChanged(_di_JMediaRouter router, _di_JMediaRouter_RouteInfo info) = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJMediaRouter_Callback : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMediaRouter_CallbackClass,_di_JMediaRouter_Callback>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMediaRouter_CallbackClass,_di_JMediaRouter_Callback> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJMediaRouter_Callback() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMediaRouter_CallbackClass,_di_JMediaRouter_Callback>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJMediaRouter_Callback() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{CB0B2500-99F0-4F30-AC54-0BED238E7560}") JMediaRouter_RouteCategoryClass  : public Androidapi::Jni::Javatypes::JObjectClass 
+{
+	
+};
+
+__interface  INTERFACE_UUID("{C2544513-A0C0-4452-8046-95530994926B}") JMediaRouter_RouteCategory  : public Androidapi::Jni::Javatypes::JObject 
+{
+	virtual Androidapi::Jni::Javatypes::_di_JCharSequence __cdecl getName() = 0 /* overload */;
+	virtual Androidapi::Jni::Javatypes::_di_JCharSequence __cdecl getName(Androidapi::Jni::Graphicscontentviewtext::_di_JContext context) = 0 /* overload */;
+	virtual Androidapi::Jni::Javatypes::_di_JList __cdecl getRoutes(Androidapi::Jni::Javatypes::_di_JList out_) = 0 ;
+	virtual int __cdecl getSupportedTypes() = 0 ;
+	virtual bool __cdecl isGroupable() = 0 ;
+	HIDESBASE virtual Androidapi::Jni::Javatypes::_di_JString __cdecl toString() = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJMediaRouter_RouteCategory : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMediaRouter_RouteCategoryClass,_di_JMediaRouter_RouteCategory>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMediaRouter_RouteCategoryClass,_di_JMediaRouter_RouteCategory> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJMediaRouter_RouteCategory() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMediaRouter_RouteCategoryClass,_di_JMediaRouter_RouteCategory>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJMediaRouter_RouteCategory() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{AEC0CEF3-E779-45E4-A633-3453115EDCE5}") JMediaRouter_RouteInfoClass  : public Androidapi::Jni::Javatypes::JObjectClass 
+{
+	virtual int __cdecl _GetDEVICE_TYPE_BLUETOOTH() = 0 ;
+	virtual int __cdecl _GetDEVICE_TYPE_SPEAKER() = 0 ;
+	virtual int __cdecl _GetDEVICE_TYPE_TV() = 0 ;
+	virtual int __cdecl _GetDEVICE_TYPE_UNKNOWN() = 0 ;
+	virtual int __cdecl _GetPLAYBACK_TYPE_LOCAL() = 0 ;
+	virtual int __cdecl _GetPLAYBACK_TYPE_REMOTE() = 0 ;
+	virtual int __cdecl _GetPLAYBACK_VOLUME_FIXED() = 0 ;
+	virtual int __cdecl _GetPLAYBACK_VOLUME_VARIABLE() = 0 ;
+	__property int DEVICE_TYPE_BLUETOOTH = {read=_GetDEVICE_TYPE_BLUETOOTH};
+	__property int DEVICE_TYPE_SPEAKER = {read=_GetDEVICE_TYPE_SPEAKER};
+	__property int DEVICE_TYPE_TV = {read=_GetDEVICE_TYPE_TV};
+	__property int DEVICE_TYPE_UNKNOWN = {read=_GetDEVICE_TYPE_UNKNOWN};
+	__property int PLAYBACK_TYPE_LOCAL = {read=_GetPLAYBACK_TYPE_LOCAL};
+	__property int PLAYBACK_TYPE_REMOTE = {read=_GetPLAYBACK_TYPE_REMOTE};
+	__property int PLAYBACK_VOLUME_FIXED = {read=_GetPLAYBACK_VOLUME_FIXED};
+	__property int PLAYBACK_VOLUME_VARIABLE = {read=_GetPLAYBACK_VOLUME_VARIABLE};
+};
+
+__interface  INTERFACE_UUID("{D009A403-61AD-4006-AB7A-292CDB8562E2}") JMediaRouter_RouteInfo  : public Androidapi::Jni::Javatypes::JObject 
+{
+	virtual _di_JMediaRouter_RouteCategory __cdecl getCategory() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JCharSequence __cdecl getDescription() = 0 ;
+	virtual int __cdecl getDeviceType() = 0 ;
+	virtual _di_JMediaRouter_RouteGroup __cdecl getGroup() = 0 ;
+	virtual Androidapi::Jni::Graphicscontentviewtext::_di_JDrawable __cdecl getIconDrawable() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JCharSequence __cdecl getName() = 0 /* overload */;
+	virtual Androidapi::Jni::Javatypes::_di_JCharSequence __cdecl getName(Androidapi::Jni::Graphicscontentviewtext::_di_JContext context) = 0 /* overload */;
+	virtual int __cdecl getPlaybackStream() = 0 ;
+	virtual int __cdecl getPlaybackType() = 0 ;
+	virtual Androidapi::Jni::Graphicscontentviewtext::_di_JDisplay __cdecl getPresentationDisplay() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JCharSequence __cdecl getStatus() = 0 ;
+	virtual int __cdecl getSupportedTypes() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JObject __cdecl getTag() = 0 ;
+	virtual int __cdecl getVolume() = 0 ;
+	virtual int __cdecl getVolumeHandling() = 0 ;
+	virtual int __cdecl getVolumeMax() = 0 ;
+	virtual bool __cdecl isConnecting() = 0 ;
+	virtual bool __cdecl isEnabled() = 0 ;
+	virtual void __cdecl requestSetVolume(int volume) = 0 ;
+	virtual void __cdecl requestUpdateVolume(int direction) = 0 ;
+	virtual void __cdecl setTag(Androidapi::Jni::Javatypes::_di_JObject tag) = 0 ;
+	HIDESBASE virtual Androidapi::Jni::Javatypes::_di_JString __cdecl toString() = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJMediaRouter_RouteInfo : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMediaRouter_RouteInfoClass,_di_JMediaRouter_RouteInfo>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMediaRouter_RouteInfoClass,_di_JMediaRouter_RouteInfo> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJMediaRouter_RouteInfo() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMediaRouter_RouteInfoClass,_di_JMediaRouter_RouteInfo>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJMediaRouter_RouteInfo() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{6B4C631F-9D54-4FC0-9B20-A52A75CB5ACC}") JMediaRouter_RouteGroupClass  : public JMediaRouter_RouteInfoClass 
+{
+	
+};
+
+__interface  INTERFACE_UUID("{D55DC4A2-A487-467A-A3C0-873B2BF10409}") JMediaRouter_RouteGroup  : public JMediaRouter_RouteInfo 
+{
+	virtual void __cdecl addRoute(_di_JMediaRouter_RouteInfo route) = 0 /* overload */;
+	virtual void __cdecl addRoute(_di_JMediaRouter_RouteInfo route, int insertAt) = 0 /* overload */;
+	virtual _di_JMediaRouter_RouteInfo __cdecl getRouteAt(int index) = 0 ;
+	virtual int __cdecl getRouteCount() = 0 ;
+	virtual void __cdecl removeRoute(_di_JMediaRouter_RouteInfo route) = 0 /* overload */;
+	virtual void __cdecl removeRoute(int index) = 0 /* overload */;
+	HIDESBASE virtual void __cdecl requestSetVolume(int volume) = 0 ;
+	HIDESBASE virtual void __cdecl requestUpdateVolume(int direction) = 0 ;
+	virtual void __cdecl setIconDrawable(Androidapi::Jni::Graphicscontentviewtext::_di_JDrawable icon) = 0 ;
+	virtual void __cdecl setIconResource(int resId) = 0 ;
+	HIDESBASE virtual Androidapi::Jni::Javatypes::_di_JString __cdecl toString() = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJMediaRouter_RouteGroup : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMediaRouter_RouteGroupClass,_di_JMediaRouter_RouteGroup>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMediaRouter_RouteGroupClass,_di_JMediaRouter_RouteGroup> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJMediaRouter_RouteGroup() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMediaRouter_RouteGroupClass,_di_JMediaRouter_RouteGroup>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJMediaRouter_RouteGroup() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{FE51271A-3E43-46CC-B7C7-1642F6906114}") JMediaRouter_SimpleCallbackClass  : public JMediaRouter_CallbackClass 
+{
+	HIDESBASE virtual _di_JMediaRouter_SimpleCallback __cdecl init() = 0 ;
+};
+
+__interface  INTERFACE_UUID("{7CA629D1-D9D7-4F6A-85BA-4C3F81C87BD8}") JMediaRouter_SimpleCallback  : public JMediaRouter_Callback 
+{
+	HIDESBASE virtual void __cdecl onRouteAdded(_di_JMediaRouter router, _di_JMediaRouter_RouteInfo info) = 0 ;
+	HIDESBASE virtual void __cdecl onRouteChanged(_di_JMediaRouter router, _di_JMediaRouter_RouteInfo info) = 0 ;
+	HIDESBASE virtual void __cdecl onRouteGrouped(_di_JMediaRouter router, _di_JMediaRouter_RouteInfo info, _di_JMediaRouter_RouteGroup group, int index) = 0 ;
+	HIDESBASE virtual void __cdecl onRouteRemoved(_di_JMediaRouter router, _di_JMediaRouter_RouteInfo info) = 0 ;
+	HIDESBASE virtual void __cdecl onRouteSelected(_di_JMediaRouter router, int type_, _di_JMediaRouter_RouteInfo info) = 0 ;
+	HIDESBASE virtual void __cdecl onRouteUngrouped(_di_JMediaRouter router, _di_JMediaRouter_RouteInfo info, _di_JMediaRouter_RouteGroup group) = 0 ;
+	HIDESBASE virtual void __cdecl onRouteUnselected(_di_JMediaRouter router, int type_, _di_JMediaRouter_RouteInfo info) = 0 ;
+	HIDESBASE virtual void __cdecl onRouteVolumeChanged(_di_JMediaRouter router, _di_JMediaRouter_RouteInfo info) = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJMediaRouter_SimpleCallback : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMediaRouter_SimpleCallbackClass,_di_JMediaRouter_SimpleCallback>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMediaRouter_SimpleCallbackClass,_di_JMediaRouter_SimpleCallback> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJMediaRouter_SimpleCallback() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMediaRouter_SimpleCallbackClass,_di_JMediaRouter_SimpleCallback>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJMediaRouter_SimpleCallback() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{E9430B96-BDA5-4EEA-BC9B-AB818A32EF7A}") JMediaRouter_UserRouteInfoClass  : public JMediaRouter_RouteInfoClass 
+{
+	
+};
+
+__interface  INTERFACE_UUID("{A7AD5F99-15D8-439D-9A45-2E6E013F6FA0}") JMediaRouter_UserRouteInfo  : public JMediaRouter_RouteInfo 
+{
+	virtual _di_JRemoteControlClient __cdecl getRemoteControlClient() = 0 ;
+	HIDESBASE virtual void __cdecl requestSetVolume(int volume) = 0 ;
+	HIDESBASE virtual void __cdecl requestUpdateVolume(int direction) = 0 ;
+	virtual void __cdecl setDescription(Androidapi::Jni::Javatypes::_di_JCharSequence description) = 0 ;
+	virtual void __cdecl setIconDrawable(Androidapi::Jni::Graphicscontentviewtext::_di_JDrawable icon) = 0 ;
+	virtual void __cdecl setIconResource(int resId) = 0 ;
+	virtual void __cdecl setName(Androidapi::Jni::Javatypes::_di_JCharSequence name) = 0 /* overload */;
+	virtual void __cdecl setName(int resId) = 0 /* overload */;
+	virtual void __cdecl setPlaybackStream(int stream) = 0 ;
+	virtual void __cdecl setPlaybackType(int type_) = 0 ;
+	virtual void __cdecl setRemoteControlClient(_di_JRemoteControlClient rcc) = 0 ;
+	virtual void __cdecl setStatus(Androidapi::Jni::Javatypes::_di_JCharSequence status) = 0 ;
+	virtual void __cdecl setVolume(int volume) = 0 ;
+	virtual void __cdecl setVolumeCallback(_di_JMediaRouter_VolumeCallback vcb) = 0 ;
+	virtual void __cdecl setVolumeHandling(int volumeHandling) = 0 ;
+	virtual void __cdecl setVolumeMax(int volumeMax) = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJMediaRouter_UserRouteInfo : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMediaRouter_UserRouteInfoClass,_di_JMediaRouter_UserRouteInfo>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMediaRouter_UserRouteInfoClass,_di_JMediaRouter_UserRouteInfo> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJMediaRouter_UserRouteInfo() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMediaRouter_UserRouteInfoClass,_di_JMediaRouter_UserRouteInfo>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJMediaRouter_UserRouteInfo() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{F2ABA613-70F4-47B1-B5F4-D1CD8AB94202}") JMediaRouter_VolumeCallbackClass  : public Androidapi::Jni::Javatypes::JObjectClass 
+{
+	HIDESBASE virtual _di_JMediaRouter_VolumeCallback __cdecl init() = 0 ;
+};
+
+__interface  INTERFACE_UUID("{9D096802-5425-4970-BCBE-B112A7E4C19E}") JMediaRouter_VolumeCallback  : public Androidapi::Jni::Javatypes::JObject 
+{
+	virtual void __cdecl onVolumeSetRequest(_di_JMediaRouter_RouteInfo info, int volume) = 0 ;
+	virtual void __cdecl onVolumeUpdateRequest(_di_JMediaRouter_RouteInfo info, int direction) = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJMediaRouter_VolumeCallback : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMediaRouter_VolumeCallbackClass,_di_JMediaRouter_VolumeCallback>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMediaRouter_VolumeCallbackClass,_di_JMediaRouter_VolumeCallback> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJMediaRouter_VolumeCallback() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMediaRouter_VolumeCallbackClass,_di_JMediaRouter_VolumeCallback>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJMediaRouter_VolumeCallback() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{B3D9C29E-B436-469D-B694-181060E571DC}") JMediaScannerConnectionClass  : public Androidapi::Jni::Javatypes::JObjectClass 
+{
+	HIDESBASE virtual _di_JMediaScannerConnection __cdecl init(Androidapi::Jni::Graphicscontentviewtext::_di_JContext context, _di_JMediaScannerConnection_MediaScannerConnectionClient client) = 0 ;
+	virtual void __cdecl scanFile(Androidapi::Jni::Graphicscontentviewtext::_di_JContext context, Androidapi::Jnibridge::TJavaObjectArray__1<Androidapi::Jni::Javatypes::_di_JString>* paths, Androidapi::Jnibridge::TJavaObjectArray__1<Androidapi::Jni::Javatypes::_di_JString>* mimeTypes, _di_JMediaScannerConnection_OnScanCompletedListener callback) = 0 /* overload */;
+};
+
+__interface  INTERFACE_UUID("{CB9CBD70-C6AD-4FB5-8359-07F04747FB02}") JMediaScannerConnection  : public Androidapi::Jni::Javatypes::JObject 
+{
+	virtual void __cdecl connect() = 0 ;
+	virtual void __cdecl disconnect() = 0 ;
+	virtual bool __cdecl isConnected() = 0 ;
+	virtual void __cdecl onServiceConnected(Androidapi::Jni::Graphicscontentviewtext::_di_JComponentName className, Androidapi::Jni::Os::_di_JIBinder service) = 0 ;
+	virtual void __cdecl onServiceDisconnected(Androidapi::Jni::Graphicscontentviewtext::_di_JComponentName className) = 0 ;
+	virtual void __cdecl scanFile(Androidapi::Jni::Javatypes::_di_JString path, Androidapi::Jni::Javatypes::_di_JString mimeType) = 0 /* overload */;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJMediaScannerConnection : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMediaScannerConnectionClass,_di_JMediaScannerConnection>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMediaScannerConnectionClass,_di_JMediaScannerConnection> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJMediaScannerConnection() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMediaScannerConnectionClass,_di_JMediaScannerConnection>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJMediaScannerConnection() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{743ED55A-4735-41E1-AE1A-E0D4023F8AA5}") JMediaScannerConnection_OnScanCompletedListenerClass  : public Androidapi::Jnibridge::IJavaClass 
+{
+	
+};
+
+__interface  INTERFACE_UUID("{67909CB7-D7EA-4870-9461-7394752675F3}") JMediaScannerConnection_OnScanCompletedListener  : public Androidapi::Jnibridge::IJavaInstance 
+{
+	virtual void __cdecl onScanCompleted(Androidapi::Jni::Javatypes::_di_JString path, Androidapi::Jni::Net::_di_Jnet_Uri uri) = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJMediaScannerConnection_OnScanCompletedListener : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMediaScannerConnection_OnScanCompletedListenerClass,_di_JMediaScannerConnection_OnScanCompletedListener>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMediaScannerConnection_OnScanCompletedListenerClass,_di_JMediaScannerConnection_OnScanCompletedListener> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJMediaScannerConnection_OnScanCompletedListener() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMediaScannerConnection_OnScanCompletedListenerClass,_di_JMediaScannerConnection_OnScanCompletedListener>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJMediaScannerConnection_OnScanCompletedListener() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{BA6A6FBB-C272-4BFF-986D-6DD9ABB7EE36}") JMediaScannerConnection_MediaScannerConnectionClientClass  : public JMediaScannerConnection_OnScanCompletedListenerClass 
+{
+	
+};
+
+__interface  INTERFACE_UUID("{02CB4035-E2C0-4C2D-9250-5805C45E789D}") JMediaScannerConnection_MediaScannerConnectionClient  : public JMediaScannerConnection_OnScanCompletedListener 
+{
+	virtual void __cdecl onMediaScannerConnected() = 0 ;
+	HIDESBASE virtual void __cdecl onScanCompleted(Androidapi::Jni::Javatypes::_di_JString path, Androidapi::Jni::Net::_di_Jnet_Uri uri) = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJMediaScannerConnection_MediaScannerConnectionClient : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMediaScannerConnection_MediaScannerConnectionClientClass,_di_JMediaScannerConnection_MediaScannerConnectionClient>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMediaScannerConnection_MediaScannerConnectionClientClass,_di_JMediaScannerConnection_MediaScannerConnectionClient> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJMediaScannerConnection_MediaScannerConnectionClient() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMediaScannerConnection_MediaScannerConnectionClientClass,_di_JMediaScannerConnection_MediaScannerConnectionClient>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJMediaScannerConnection_MediaScannerConnectionClient() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{3EF721E1-8B59-4388-8A0F-9132A386A927}") JMediaSyncClass  : public Androidapi::Jni::Javatypes::JObjectClass 
+{
+	virtual int __cdecl _GetMEDIASYNC_ERROR_AUDIOTRACK_FAIL() = 0 ;
+	virtual int __cdecl _GetMEDIASYNC_ERROR_SURFACE_FAIL() = 0 ;
+	HIDESBASE virtual _di_JMediaSync __cdecl init() = 0 ;
+	__property int MEDIASYNC_ERROR_AUDIOTRACK_FAIL = {read=_GetMEDIASYNC_ERROR_AUDIOTRACK_FAIL};
+	__property int MEDIASYNC_ERROR_SURFACE_FAIL = {read=_GetMEDIASYNC_ERROR_SURFACE_FAIL};
+};
+
+__interface  INTERFACE_UUID("{47A10A95-2462-4977-8F99-16FCC4BC603C}") JMediaSync  : public Androidapi::Jni::Javatypes::JObject 
+{
+	virtual Androidapi::Jni::Graphicscontentviewtext::_di_JSurface __cdecl createInputSurface() = 0 ;
+	virtual void __cdecl flush() = 0 ;
+	virtual _di_JPlaybackParams __cdecl getPlaybackParams() = 0 ;
+	virtual _di_JSyncParams __cdecl getSyncParams() = 0 ;
+	virtual _di_JMediaTimestamp __cdecl getTimestamp() = 0 ;
+	virtual void __cdecl queueAudio(Androidapi::Jni::Javatypes::_di_JByteBuffer audioData, int bufferId, __int64 presentationTimeUs) = 0 ;
+	virtual void __cdecl release() = 0 ;
+	virtual void __cdecl setAudioTrack(_di_JAudioTrack audioTrack) = 0 ;
+	virtual void __cdecl setCallback(_di_JMediaSync_Callback cb, Androidapi::Jni::Os::_di_JHandler handler) = 0 ;
+	virtual void __cdecl setOnErrorListener(_di_JMediaSync_OnErrorListener listener, Androidapi::Jni::Os::_di_JHandler handler) = 0 ;
+	virtual void __cdecl setPlaybackParams(_di_JPlaybackParams params) = 0 ;
+	virtual void __cdecl setSurface(Androidapi::Jni::Graphicscontentviewtext::_di_JSurface surface) = 0 ;
+	virtual void __cdecl setSyncParams(_di_JSyncParams params) = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJMediaSync : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMediaSyncClass,_di_JMediaSync>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMediaSyncClass,_di_JMediaSync> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJMediaSync() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMediaSyncClass,_di_JMediaSync>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJMediaSync() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{DA4E8F9E-2A48-4B1D-A8BC-625A70FFCBC4}") JMediaSync_CallbackClass  : public Androidapi::Jni::Javatypes::JObjectClass 
+{
+	HIDESBASE virtual _di_JMediaSync_Callback __cdecl init() = 0 ;
+};
+
+__interface  INTERFACE_UUID("{CB27A785-4A0F-4947-9E43-E661FF9201EB}") JMediaSync_Callback  : public Androidapi::Jni::Javatypes::JObject 
+{
+	virtual void __cdecl onAudioBufferConsumed(_di_JMediaSync sync, Androidapi::Jni::Javatypes::_di_JByteBuffer audioBuffer, int bufferId) = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJMediaSync_Callback : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMediaSync_CallbackClass,_di_JMediaSync_Callback>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMediaSync_CallbackClass,_di_JMediaSync_Callback> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJMediaSync_Callback() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMediaSync_CallbackClass,_di_JMediaSync_Callback>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJMediaSync_Callback() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{D69A54A3-1797-4EF4-A6C8-F7BAD055EBF0}") JMediaSync_OnErrorListenerClass  : public Androidapi::Jnibridge::IJavaClass 
+{
+	
+};
+
+__interface  INTERFACE_UUID("{437602CE-BF44-4A64-8735-F76FD6A39839}") JMediaSync_OnErrorListener  : public Androidapi::Jnibridge::IJavaInstance 
+{
+	virtual void __cdecl onError(_di_JMediaSync sync, int what, int extra) = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJMediaSync_OnErrorListener : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMediaSync_OnErrorListenerClass,_di_JMediaSync_OnErrorListener>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMediaSync_OnErrorListenerClass,_di_JMediaSync_OnErrorListener> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJMediaSync_OnErrorListener() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMediaSync_OnErrorListenerClass,_di_JMediaSync_OnErrorListener>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJMediaSync_OnErrorListener() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{79525AAA-24FE-4FE9-BBA4-E887C710A091}") JMediaSyncEventClass  : public Androidapi::Jni::Javatypes::JObjectClass 
+{
+	virtual int __cdecl _GetSYNC_EVENT_NONE() = 0 ;
+	virtual int __cdecl _GetSYNC_EVENT_PRESENTATION_COMPLETE() = 0 ;
+	virtual _di_JMediaSyncEvent __cdecl createEvent(int eventType) = 0 ;
+	__property int SYNC_EVENT_NONE = {read=_GetSYNC_EVENT_NONE};
+	__property int SYNC_EVENT_PRESENTATION_COMPLETE = {read=_GetSYNC_EVENT_PRESENTATION_COMPLETE};
+};
+
+__interface  INTERFACE_UUID("{13BEE748-33EE-423F-9C9B-9C570F9C3A9A}") JMediaSyncEvent  : public Androidapi::Jni::Javatypes::JObject 
+{
+	virtual int __cdecl getAudioSessionId() = 0 ;
+	virtual int __cdecl getType() = 0 ;
+	virtual _di_JMediaSyncEvent __cdecl setAudioSessionId(int audioSessionId) = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJMediaSyncEvent : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMediaSyncEventClass,_di_JMediaSyncEvent>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMediaSyncEventClass,_di_JMediaSyncEvent> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJMediaSyncEvent() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMediaSyncEventClass,_di_JMediaSyncEvent>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJMediaSyncEvent() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{D0C42509-9397-490A-9F63-C9E08B213D74}") JMediaTimestampClass  : public Androidapi::Jni::Javatypes::JObjectClass 
+{
+	
+};
+
+__interface  INTERFACE_UUID("{DFDC1617-2E31-4D19-9BBC-2DFF1DF2AB89}") JMediaTimestamp  : public Androidapi::Jni::Javatypes::JObject 
+{
+	virtual __int64 __cdecl getAnchorMediaTimeUs() = 0 ;
+	virtual __int64 __cdecl getAnchorSytemNanoTime() = 0 ;
+	virtual float __cdecl getMediaClockRate() = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJMediaTimestamp : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMediaTimestampClass,_di_JMediaTimestamp>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMediaTimestampClass,_di_JMediaTimestamp> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJMediaTimestamp() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMediaTimestampClass,_di_JMediaTimestamp>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJMediaTimestamp() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{1B9BB475-6595-4C0D-99B9-5038AF25E58F}") JNotProvisionedExceptionClass  : public JMediaDrmExceptionClass 
+{
+	HIDESBASE virtual _di_JNotProvisionedException __cdecl init(Androidapi::Jni::Javatypes::_di_JString detailMessage) = 0 ;
+};
+
+__interface  INTERFACE_UUID("{09338289-B2A4-4772-BE68-5B0670C840E5}") JNotProvisionedException  : public JMediaDrmException 
+{
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJNotProvisionedException : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JNotProvisionedExceptionClass,_di_JNotProvisionedException>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JNotProvisionedExceptionClass,_di_JNotProvisionedException> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJNotProvisionedException() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JNotProvisionedExceptionClass,_di_JNotProvisionedException>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJNotProvisionedException() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{493A1111-6306-4CAC-B53E-D51784B0C3FA}") JPlaybackParamsClass  : public Androidapi::Jni::Javatypes::JObjectClass 
+{
+	virtual int __cdecl _GetAUDIO_FALLBACK_MODE_DEFAULT() = 0 ;
+	virtual int __cdecl _GetAUDIO_FALLBACK_MODE_FAIL() = 0 ;
+	virtual int __cdecl _GetAUDIO_FALLBACK_MODE_MUTE() = 0 ;
+	virtual Androidapi::Jni::Os::_di_JParcelable_Creator __cdecl _GetCREATOR() = 0 ;
+	HIDESBASE virtual _di_JPlaybackParams __cdecl init() = 0 ;
+	__property int AUDIO_FALLBACK_MODE_DEFAULT = {read=_GetAUDIO_FALLBACK_MODE_DEFAULT};
+	__property int AUDIO_FALLBACK_MODE_FAIL = {read=_GetAUDIO_FALLBACK_MODE_FAIL};
+	__property int AUDIO_FALLBACK_MODE_MUTE = {read=_GetAUDIO_FALLBACK_MODE_MUTE};
+	__property Androidapi::Jni::Os::_di_JParcelable_Creator CREATOR = {read=_GetCREATOR};
+};
+
+__interface  INTERFACE_UUID("{C941D1D6-2452-4A43-9D8E-52F7ACA064B3}") JPlaybackParams  : public Androidapi::Jni::Javatypes::JObject 
+{
+	virtual _di_JPlaybackParams __cdecl allowDefaults() = 0 ;
+	virtual int __cdecl describeContents() = 0 ;
+	virtual int __cdecl getAudioFallbackMode() = 0 ;
+	virtual float __cdecl getPitch() = 0 ;
+	virtual float __cdecl getSpeed() = 0 ;
+	virtual _di_JPlaybackParams __cdecl setAudioFallbackMode(int audioFallbackMode) = 0 ;
+	virtual _di_JPlaybackParams __cdecl setPitch(float pitch) = 0 ;
+	virtual _di_JPlaybackParams __cdecl setSpeed(float speed) = 0 ;
+	virtual void __cdecl writeToParcel(Androidapi::Jni::Os::_di_JParcel dest, int flags) = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJPlaybackParams : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JPlaybackParamsClass,_di_JPlaybackParams>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JPlaybackParamsClass,_di_JPlaybackParams> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJPlaybackParams() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JPlaybackParamsClass,_di_JPlaybackParams>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJPlaybackParams() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{2609B2B6-9F21-4FB9-994F-98CDABAB861A}") JRatingClass  : public Androidapi::Jni::Javatypes::JObjectClass 
+{
+	virtual Androidapi::Jni::Os::_di_JParcelable_Creator __cdecl _GetCREATOR() = 0 ;
+	virtual int __cdecl _GetRATING_3_STARS() = 0 ;
+	virtual int __cdecl _GetRATING_4_STARS() = 0 ;
+	virtual int __cdecl _GetRATING_5_STARS() = 0 ;
+	virtual int __cdecl _GetRATING_HEART() = 0 ;
+	virtual int __cdecl _GetRATING_NONE() = 0 ;
+	virtual int __cdecl _GetRATING_PERCENTAGE() = 0 ;
+	virtual int __cdecl _GetRATING_THUMB_UP_DOWN() = 0 ;
+	virtual _di_JRating __cdecl newHeartRating(bool hasHeart) = 0 ;
+	virtual _di_JRating __cdecl newPercentageRating(float percent) = 0 ;
+	virtual _di_JRating __cdecl newStarRating(int starRatingStyle, float starRating) = 0 ;
+	virtual _di_JRating __cdecl newThumbRating(bool thumbIsUp) = 0 ;
+	virtual _di_JRating __cdecl newUnratedRating(int ratingStyle) = 0 ;
+	__property Androidapi::Jni::Os::_di_JParcelable_Creator CREATOR = {read=_GetCREATOR};
+	__property int RATING_3_STARS = {read=_GetRATING_3_STARS};
+	__property int RATING_4_STARS = {read=_GetRATING_4_STARS};
+	__property int RATING_5_STARS = {read=_GetRATING_5_STARS};
+	__property int RATING_HEART = {read=_GetRATING_HEART};
+	__property int RATING_NONE = {read=_GetRATING_NONE};
+	__property int RATING_PERCENTAGE = {read=_GetRATING_PERCENTAGE};
+	__property int RATING_THUMB_UP_DOWN = {read=_GetRATING_THUMB_UP_DOWN};
+};
+
+__interface  INTERFACE_UUID("{D4D1A891-BFB2-4643-97CE-C19A57AA921F}") JRating  : public Androidapi::Jni::Javatypes::JObject 
+{
+	virtual int __cdecl describeContents() = 0 ;
+	virtual float __cdecl getPercentRating() = 0 ;
+	virtual int __cdecl getRatingStyle() = 0 ;
+	virtual float __cdecl getStarRating() = 0 ;
+	virtual bool __cdecl hasHeart() = 0 ;
+	virtual bool __cdecl isRated() = 0 ;
+	virtual bool __cdecl isThumbUp() = 0 ;
+	HIDESBASE virtual Androidapi::Jni::Javatypes::_di_JString __cdecl toString() = 0 ;
+	virtual void __cdecl writeToParcel(Androidapi::Jni::Os::_di_JParcel dest, int flags) = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJRating : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JRatingClass,_di_JRating>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JRatingClass,_di_JRating> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJRating() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JRatingClass,_di_JRating>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJRating() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{3BCB8D6B-7F9E-4559-97A5-FD7A0B386EBA}") JRemoteControlClientClass  : public Androidapi::Jni::Javatypes::JObjectClass 
+{
+	virtual int __cdecl _GetFLAG_KEY_MEDIA_FAST_FORWARD() = 0 ;
+	virtual int __cdecl _GetFLAG_KEY_MEDIA_NEXT() = 0 ;
+	virtual int __cdecl _GetFLAG_KEY_MEDIA_PAUSE() = 0 ;
+	virtual int __cdecl _GetFLAG_KEY_MEDIA_PLAY() = 0 ;
+	virtual int __cdecl _GetFLAG_KEY_MEDIA_PLAY_PAUSE() = 0 ;
+	virtual int __cdecl _GetFLAG_KEY_MEDIA_POSITION_UPDATE() = 0 ;
+	virtual int __cdecl _GetFLAG_KEY_MEDIA_PREVIOUS() = 0 ;
+	virtual int __cdecl _GetFLAG_KEY_MEDIA_RATING() = 0 ;
+	virtual int __cdecl _GetFLAG_KEY_MEDIA_REWIND() = 0 ;
+	virtual int __cdecl _GetFLAG_KEY_MEDIA_STOP() = 0 ;
+	virtual int __cdecl _GetPLAYSTATE_BUFFERING() = 0 ;
+	virtual int __cdecl _GetPLAYSTATE_ERROR() = 0 ;
+	virtual int __cdecl _GetPLAYSTATE_FAST_FORWARDING() = 0 ;
+	virtual int __cdecl _GetPLAYSTATE_PAUSED() = 0 ;
+	virtual int __cdecl _GetPLAYSTATE_PLAYING() = 0 ;
+	virtual int __cdecl _GetPLAYSTATE_REWINDING() = 0 ;
+	virtual int __cdecl _GetPLAYSTATE_SKIPPING_BACKWARDS() = 0 ;
+	virtual int __cdecl _GetPLAYSTATE_SKIPPING_FORWARDS() = 0 ;
+	virtual int __cdecl _GetPLAYSTATE_STOPPED() = 0 ;
+	HIDESBASE virtual _di_JRemoteControlClient __cdecl init(Androidapi::Jni::App::_di_JPendingIntent mediaButtonIntent) = 0 /* overload */;
+	HIDESBASE virtual _di_JRemoteControlClient __cdecl init(Androidapi::Jni::App::_di_JPendingIntent mediaButtonIntent, Androidapi::Jni::Os::_di_JLooper looper) = 0 /* overload */;
+	__property int FLAG_KEY_MEDIA_FAST_FORWARD = {read=_GetFLAG_KEY_MEDIA_FAST_FORWARD};
+	__property int FLAG_KEY_MEDIA_NEXT = {read=_GetFLAG_KEY_MEDIA_NEXT};
+	__property int FLAG_KEY_MEDIA_PAUSE = {read=_GetFLAG_KEY_MEDIA_PAUSE};
+	__property int FLAG_KEY_MEDIA_PLAY = {read=_GetFLAG_KEY_MEDIA_PLAY};
+	__property int FLAG_KEY_MEDIA_PLAY_PAUSE = {read=_GetFLAG_KEY_MEDIA_PLAY_PAUSE};
+	__property int FLAG_KEY_MEDIA_POSITION_UPDATE = {read=_GetFLAG_KEY_MEDIA_POSITION_UPDATE};
+	__property int FLAG_KEY_MEDIA_PREVIOUS = {read=_GetFLAG_KEY_MEDIA_PREVIOUS};
+	__property int FLAG_KEY_MEDIA_RATING = {read=_GetFLAG_KEY_MEDIA_RATING};
+	__property int FLAG_KEY_MEDIA_REWIND = {read=_GetFLAG_KEY_MEDIA_REWIND};
+	__property int FLAG_KEY_MEDIA_STOP = {read=_GetFLAG_KEY_MEDIA_STOP};
+	__property int PLAYSTATE_BUFFERING = {read=_GetPLAYSTATE_BUFFERING};
+	__property int PLAYSTATE_ERROR = {read=_GetPLAYSTATE_ERROR};
+	__property int PLAYSTATE_FAST_FORWARDING = {read=_GetPLAYSTATE_FAST_FORWARDING};
+	__property int PLAYSTATE_PAUSED = {read=_GetPLAYSTATE_PAUSED};
+	__property int PLAYSTATE_PLAYING = {read=_GetPLAYSTATE_PLAYING};
+	__property int PLAYSTATE_REWINDING = {read=_GetPLAYSTATE_REWINDING};
+	__property int PLAYSTATE_SKIPPING_BACKWARDS = {read=_GetPLAYSTATE_SKIPPING_BACKWARDS};
+	__property int PLAYSTATE_SKIPPING_FORWARDS = {read=_GetPLAYSTATE_SKIPPING_FORWARDS};
+	__property int PLAYSTATE_STOPPED = {read=_GetPLAYSTATE_STOPPED};
+};
+
+__interface  INTERFACE_UUID("{63280B1B-0F55-4FE3-B931-E5E8DE0591E3}") JRemoteControlClient  : public Androidapi::Jni::Javatypes::JObject 
+{
+	virtual _di_JRemoteControlClient_MetadataEditor __cdecl editMetadata(bool startEmpty) = 0 ;
+	virtual _di_JMediaSession __cdecl getMediaSession() = 0 ;
+	virtual void __cdecl setMetadataUpdateListener(_di_JRemoteControlClient_OnMetadataUpdateListener l) = 0 ;
+	virtual void __cdecl setOnGetPlaybackPositionListener(_di_JRemoteControlClient_OnGetPlaybackPositionListener l) = 0 ;
+	virtual void __cdecl setPlaybackPositionUpdateListener(_di_JRemoteControlClient_OnPlaybackPositionUpdateListener l) = 0 ;
+	virtual void __cdecl setPlaybackState(int state) = 0 /* overload */;
+	virtual void __cdecl setPlaybackState(int state, __int64 timeInMs, float playbackSpeed) = 0 /* overload */;
+	virtual void __cdecl setTransportControlFlags(int transportControlFlags) = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJRemoteControlClient : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JRemoteControlClientClass,_di_JRemoteControlClient>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JRemoteControlClientClass,_di_JRemoteControlClient> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJRemoteControlClient() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JRemoteControlClientClass,_di_JRemoteControlClient>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJRemoteControlClient() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{C27FF739-A30D-4355-82E4-E29C5068899F}") JRemoteControlClient_MetadataEditorClass  : public JMediaMetadataEditorClass 
+{
+	HIDESBASE virtual int __cdecl _GetBITMAP_KEY_ARTWORK() = 0 ;
+};
+
+__interface  INTERFACE_UUID("{C73C0E46-3442-440C-8A3D-E583A926B37B}") JRemoteControlClient_MetadataEditor  : public JMediaMetadataEditor 
+{
+	HIDESBASE virtual void __cdecl apply() = 0 ;
+	HIDESBASE virtual void __cdecl clear() = 0 ;
+	HIDESBASE virtual _di_JRemoteControlClient_MetadataEditor __cdecl putBitmap(int key, Androidapi::Jni::Graphicscontentviewtext::_di_JBitmap bitmap) = 0 ;
+	HIDESBASE virtual _di_JRemoteControlClient_MetadataEditor __cdecl putLong(int key, __int64 value) = 0 ;
+	HIDESBASE virtual _di_JRemoteControlClient_MetadataEditor __cdecl putObject(int key, Androidapi::Jni::Javatypes::_di_JObject object_) = 0 ;
+	HIDESBASE virtual _di_JRemoteControlClient_MetadataEditor __cdecl putString(int key, Androidapi::Jni::Javatypes::_di_JString value) = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJRemoteControlClient_MetadataEditor : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JRemoteControlClient_MetadataEditorClass,_di_JRemoteControlClient_MetadataEditor>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JRemoteControlClient_MetadataEditorClass,_di_JRemoteControlClient_MetadataEditor> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJRemoteControlClient_MetadataEditor() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JRemoteControlClient_MetadataEditorClass,_di_JRemoteControlClient_MetadataEditor>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJRemoteControlClient_MetadataEditor() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{3DD2FCE3-BD30-4B1A-95BA-9A4494C1ADED}") JRemoteControlClient_OnGetPlaybackPositionListenerClass  : public Androidapi::Jnibridge::IJavaClass 
+{
+	
+};
+
+__interface  INTERFACE_UUID("{210D9E54-4FAE-4441-AD6C-F9DE9014C4CE}") JRemoteControlClient_OnGetPlaybackPositionListener  : public Androidapi::Jnibridge::IJavaInstance 
+{
+	virtual __int64 __cdecl onGetPlaybackPosition() = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJRemoteControlClient_OnGetPlaybackPositionListener : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JRemoteControlClient_OnGetPlaybackPositionListenerClass,_di_JRemoteControlClient_OnGetPlaybackPositionListener>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JRemoteControlClient_OnGetPlaybackPositionListenerClass,_di_JRemoteControlClient_OnGetPlaybackPositionListener> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJRemoteControlClient_OnGetPlaybackPositionListener() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JRemoteControlClient_OnGetPlaybackPositionListenerClass,_di_JRemoteControlClient_OnGetPlaybackPositionListener>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJRemoteControlClient_OnGetPlaybackPositionListener() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{EDBAED8D-4EC5-44C9-8CA7-38ECF1F1B55D}") JRemoteControlClient_OnMetadataUpdateListenerClass  : public Androidapi::Jnibridge::IJavaClass 
+{
+	
+};
+
+__interface  INTERFACE_UUID("{F8C8778D-2E0B-4D30-930F-FE967265EBBA}") JRemoteControlClient_OnMetadataUpdateListener  : public Androidapi::Jnibridge::IJavaInstance 
+{
+	virtual void __cdecl onMetadataUpdate(int key, Androidapi::Jni::Javatypes::_di_JObject newValue) = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJRemoteControlClient_OnMetadataUpdateListener : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JRemoteControlClient_OnMetadataUpdateListenerClass,_di_JRemoteControlClient_OnMetadataUpdateListener>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JRemoteControlClient_OnMetadataUpdateListenerClass,_di_JRemoteControlClient_OnMetadataUpdateListener> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJRemoteControlClient_OnMetadataUpdateListener() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JRemoteControlClient_OnMetadataUpdateListenerClass,_di_JRemoteControlClient_OnMetadataUpdateListener>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJRemoteControlClient_OnMetadataUpdateListener() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{B6AB2D0B-3338-4567-9F36-13EB4B72FEAA}") JRemoteControlClient_OnPlaybackPositionUpdateListenerClass  : public Androidapi::Jnibridge::IJavaClass 
+{
+	
+};
+
+__interface  INTERFACE_UUID("{6107D444-F76C-419B-9D19-46FAFB46F6A2}") JRemoteControlClient_OnPlaybackPositionUpdateListener  : public Androidapi::Jnibridge::IJavaInstance 
+{
+	virtual void __cdecl onPlaybackPositionUpdate(__int64 newPositionMs) = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJRemoteControlClient_OnPlaybackPositionUpdateListener : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JRemoteControlClient_OnPlaybackPositionUpdateListenerClass,_di_JRemoteControlClient_OnPlaybackPositionUpdateListener>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JRemoteControlClient_OnPlaybackPositionUpdateListenerClass,_di_JRemoteControlClient_OnPlaybackPositionUpdateListener> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJRemoteControlClient_OnPlaybackPositionUpdateListener() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JRemoteControlClient_OnPlaybackPositionUpdateListenerClass,_di_JRemoteControlClient_OnPlaybackPositionUpdateListener>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJRemoteControlClient_OnPlaybackPositionUpdateListener() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{BB8681BE-C85D-4997-8406-D09160330A6B}") JRemoteControllerClass  : public Androidapi::Jni::Javatypes::JObjectClass 
+{
+	virtual int __cdecl _GetPOSITION_SYNCHRONIZATION_CHECK() = 0 ;
+	virtual int __cdecl _GetPOSITION_SYNCHRONIZATION_NONE() = 0 ;
+	HIDESBASE virtual _di_JRemoteController __cdecl init(Androidapi::Jni::Graphicscontentviewtext::_di_JContext context, _di_JRemoteController_OnClientUpdateListener updateListener) = 0 /* overload */;
+	HIDESBASE virtual _di_JRemoteController __cdecl init(Androidapi::Jni::Graphicscontentviewtext::_di_JContext context, _di_JRemoteController_OnClientUpdateListener updateListener, Androidapi::Jni::Os::_di_JLooper looper) = 0 /* overload */;
+	__property int POSITION_SYNCHRONIZATION_CHECK = {read=_GetPOSITION_SYNCHRONIZATION_CHECK};
+	__property int POSITION_SYNCHRONIZATION_NONE = {read=_GetPOSITION_SYNCHRONIZATION_NONE};
+};
+
+__interface  INTERFACE_UUID("{7360A8B9-F9E1-42E3-A6DA-6EAE3DF805E8}") JRemoteController  : public Androidapi::Jni::Javatypes::JObject 
+{
+	virtual bool __cdecl clearArtworkConfiguration() = 0 ;
+	virtual _di_JRemoteController_MetadataEditor __cdecl editMetadata() = 0 ;
+	virtual __int64 __cdecl getEstimatedMediaPosition() = 0 ;
+	virtual bool __cdecl seekTo(__int64 timeMs) = 0 ;
+	virtual bool __cdecl sendMediaKeyEvent(Androidapi::Jni::Graphicscontentviewtext::_di_JKeyEvent keyEvent) = 0 ;
+	virtual bool __cdecl setArtworkConfiguration(int width, int height) = 0 ;
+	virtual bool __cdecl setSynchronizationMode(int sync) = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJRemoteController : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JRemoteControllerClass,_di_JRemoteController>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JRemoteControllerClass,_di_JRemoteController> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJRemoteController() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JRemoteControllerClass,_di_JRemoteController>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJRemoteController() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{17EB3909-923B-4004-BA1D-6A8D3AC0FC99}") JRemoteController_MetadataEditorClass  : public JMediaMetadataEditorClass 
+{
+	
+};
+
+__interface  INTERFACE_UUID("{CFE1A6CE-B7CF-407A-8ED2-02AEA5BB398B}") JRemoteController_MetadataEditor  : public JMediaMetadataEditor 
+{
+	HIDESBASE virtual void __cdecl apply() = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJRemoteController_MetadataEditor : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JRemoteController_MetadataEditorClass,_di_JRemoteController_MetadataEditor>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JRemoteController_MetadataEditorClass,_di_JRemoteController_MetadataEditor> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJRemoteController_MetadataEditor() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JRemoteController_MetadataEditorClass,_di_JRemoteController_MetadataEditor>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJRemoteController_MetadataEditor() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{F3FA280A-BF61-42DE-BF2C-1BA2A9648A8B}") JRemoteController_OnClientUpdateListenerClass  : public Androidapi::Jnibridge::IJavaClass 
+{
+	
+};
+
+__interface  INTERFACE_UUID("{8322F220-C3E9-4663-9726-6DC6DBD7B939}") JRemoteController_OnClientUpdateListener  : public Androidapi::Jnibridge::IJavaInstance 
+{
+	virtual void __cdecl onClientChange(bool clearing) = 0 ;
+	virtual void __cdecl onClientMetadataUpdate(_di_JRemoteController_MetadataEditor metadataEditor) = 0 ;
+	virtual void __cdecl onClientPlaybackStateUpdate(int state) = 0 /* overload */;
+	virtual void __cdecl onClientPlaybackStateUpdate(int state, __int64 stateChangeTimeMs, __int64 currentPosMs, float speed) = 0 /* overload */;
+	virtual void __cdecl onClientTransportControlUpdate(int transportControlFlags) = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJRemoteController_OnClientUpdateListener : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JRemoteController_OnClientUpdateListenerClass,_di_JRemoteController_OnClientUpdateListener>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JRemoteController_OnClientUpdateListenerClass,_di_JRemoteController_OnClientUpdateListener> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJRemoteController_OnClientUpdateListener() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JRemoteController_OnClientUpdateListenerClass,_di_JRemoteController_OnClientUpdateListener>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJRemoteController_OnClientUpdateListener() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{F93F9FE6-C578-4379-BC55-06E8CFAE9A8D}") JResourceBusyExceptionClass  : public JMediaDrmExceptionClass 
+{
+	HIDESBASE virtual _di_JResourceBusyException __cdecl init(Androidapi::Jni::Javatypes::_di_JString detailMessage) = 0 ;
+};
+
+__interface  INTERFACE_UUID("{2C491FA7-0602-4D59-9C98-D83FF4AE1EA3}") JResourceBusyException  : public JMediaDrmException 
+{
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJResourceBusyException : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JResourceBusyExceptionClass,_di_JResourceBusyException>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JResourceBusyExceptionClass,_di_JResourceBusyException> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJResourceBusyException() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JResourceBusyExceptionClass,_di_JResourceBusyException>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJResourceBusyException() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{C62E030E-5189-47DF-963A-BCA873D1865B}") JRingtoneClass  : public Androidapi::Jni::Javatypes::JObjectClass 
+{
+	
+};
+
+__interface  INTERFACE_UUID("{D08C2112-5F37-4665-BA84-4DC9848539CC}") JRingtone  : public Androidapi::Jni::Javatypes::JObject 
+{
+	virtual _di_JAudioAttributes __cdecl getAudioAttributes() = 0 ;
+	virtual int __cdecl getStreamType() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl getTitle(Androidapi::Jni::Graphicscontentviewtext::_di_JContext context) = 0 ;
+	virtual bool __cdecl isPlaying() = 0 ;
+	virtual void __cdecl play() = 0 ;
+	virtual void __cdecl setAudioAttributes(_di_JAudioAttributes attributes) = 0 ;
+	virtual void __cdecl setStreamType(int streamType) = 0 ;
+	virtual void __cdecl stop() = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJRingtone : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JRingtoneClass,_di_JRingtone>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JRingtoneClass,_di_JRingtone> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJRingtone() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JRingtoneClass,_di_JRingtone>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJRingtone() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{8AFA6E70-C245-4694-8B7E-72C5D436FD94}") JRingtoneManagerClass  : public Androidapi::Jni::Javatypes::JObjectClass 
+{
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetACTION_RINGTONE_PICKER() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetEXTRA_RINGTONE_DEFAULT_URI() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetEXTRA_RINGTONE_EXISTING_URI() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetEXTRA_RINGTONE_INCLUDE_DRM() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetEXTRA_RINGTONE_PICKED_URI() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetEXTRA_RINGTONE_SHOW_DEFAULT() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetEXTRA_RINGTONE_SHOW_SILENT() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetEXTRA_RINGTONE_TITLE() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetEXTRA_RINGTONE_TYPE() = 0 ;
+	virtual int __cdecl _GetID_COLUMN_INDEX() = 0 ;
+	virtual int __cdecl _GetTITLE_COLUMN_INDEX() = 0 ;
+	virtual int __cdecl _GetTYPE_ALARM() = 0 ;
+	virtual int __cdecl _GetTYPE_ALL() = 0 ;
+	virtual int __cdecl _GetTYPE_NOTIFICATION() = 0 ;
+	virtual int __cdecl _GetTYPE_RINGTONE() = 0 ;
+	virtual int __cdecl _GetURI_COLUMN_INDEX() = 0 ;
+	HIDESBASE virtual _di_JRingtoneManager __cdecl init(Androidapi::Jni::App::_di_JActivity activity) = 0 /* overload */;
+	HIDESBASE virtual _di_JRingtoneManager __cdecl init(Androidapi::Jni::Graphicscontentviewtext::_di_JContext context) = 0 /* overload */;
+	virtual Androidapi::Jni::Net::_di_Jnet_Uri __cdecl getActualDefaultRingtoneUri(Androidapi::Jni::Graphicscontentviewtext::_di_JContext context, int type_) = 0 ;
+	virtual int __cdecl getDefaultType(Androidapi::Jni::Net::_di_Jnet_Uri defaultRingtoneUri) = 0 ;
+	virtual Androidapi::Jni::Net::_di_Jnet_Uri __cdecl getDefaultUri(int type_) = 0 ;
+	virtual _di_JRingtone __cdecl getRingtone(Androidapi::Jni::Graphicscontentviewtext::_di_JContext context, Androidapi::Jni::Net::_di_Jnet_Uri ringtoneUri) = 0 /* overload */;
+	virtual Androidapi::Jni::Net::_di_Jnet_Uri __cdecl getValidRingtoneUri(Androidapi::Jni::Graphicscontentviewtext::_di_JContext context) = 0 ;
+	virtual bool __cdecl isDefault(Androidapi::Jni::Net::_di_Jnet_Uri ringtoneUri) = 0 ;
+	virtual void __cdecl setActualDefaultRingtoneUri(Androidapi::Jni::Graphicscontentviewtext::_di_JContext context, int type_, Androidapi::Jni::Net::_di_Jnet_Uri ringtoneUri) = 0 ;
+	__property Androidapi::Jni::Javatypes::_di_JString ACTION_RINGTONE_PICKER = {read=_GetACTION_RINGTONE_PICKER};
+	__property Androidapi::Jni::Javatypes::_di_JString EXTRA_RINGTONE_DEFAULT_URI = {read=_GetEXTRA_RINGTONE_DEFAULT_URI};
+	__property Androidapi::Jni::Javatypes::_di_JString EXTRA_RINGTONE_EXISTING_URI = {read=_GetEXTRA_RINGTONE_EXISTING_URI};
+	__property Androidapi::Jni::Javatypes::_di_JString EXTRA_RINGTONE_INCLUDE_DRM = {read=_GetEXTRA_RINGTONE_INCLUDE_DRM};
+	__property Androidapi::Jni::Javatypes::_di_JString EXTRA_RINGTONE_PICKED_URI = {read=_GetEXTRA_RINGTONE_PICKED_URI};
+	__property Androidapi::Jni::Javatypes::_di_JString EXTRA_RINGTONE_SHOW_DEFAULT = {read=_GetEXTRA_RINGTONE_SHOW_DEFAULT};
+	__property Androidapi::Jni::Javatypes::_di_JString EXTRA_RINGTONE_SHOW_SILENT = {read=_GetEXTRA_RINGTONE_SHOW_SILENT};
+	__property Androidapi::Jni::Javatypes::_di_JString EXTRA_RINGTONE_TITLE = {read=_GetEXTRA_RINGTONE_TITLE};
+	__property Androidapi::Jni::Javatypes::_di_JString EXTRA_RINGTONE_TYPE = {read=_GetEXTRA_RINGTONE_TYPE};
+	__property int ID_COLUMN_INDEX = {read=_GetID_COLUMN_INDEX};
+	__property int TITLE_COLUMN_INDEX = {read=_GetTITLE_COLUMN_INDEX};
+	__property int TYPE_ALARM = {read=_GetTYPE_ALARM};
+	__property int TYPE_ALL = {read=_GetTYPE_ALL};
+	__property int TYPE_NOTIFICATION = {read=_GetTYPE_NOTIFICATION};
+	__property int TYPE_RINGTONE = {read=_GetTYPE_RINGTONE};
+	__property int URI_COLUMN_INDEX = {read=_GetURI_COLUMN_INDEX};
+};
+
+__interface  INTERFACE_UUID("{1BD04E09-7368-4024-9231-7C23D839447C}") JRingtoneManager  : public Androidapi::Jni::Javatypes::JObject 
+{
+	virtual Androidapi::Jni::Graphicscontentviewtext::_di_JCursor __cdecl getCursor() = 0 ;
+	virtual bool __cdecl getIncludeDrm() = 0 ;
+	virtual _di_JRingtone __cdecl getRingtone(int position) = 0 /* overload */;
+	virtual int __cdecl getRingtonePosition(Androidapi::Jni::Net::_di_Jnet_Uri ringtoneUri) = 0 ;
+	virtual Androidapi::Jni::Net::_di_Jnet_Uri __cdecl getRingtoneUri(int position) = 0 ;
+	virtual bool __cdecl getStopPreviousRingtone() = 0 ;
+	virtual int __cdecl inferStreamType() = 0 ;
+	virtual void __cdecl setIncludeDrm(bool includeDrm) = 0 ;
+	virtual void __cdecl setStopPreviousRingtone(bool stopPreviousRingtone) = 0 ;
+	virtual void __cdecl setType(int type_) = 0 ;
+	virtual void __cdecl stopPreviousRingtone() = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJRingtoneManager : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JRingtoneManagerClass,_di_JRingtoneManager>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JRingtoneManagerClass,_di_JRingtoneManager> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJRingtoneManager() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JRingtoneManagerClass,_di_JRingtoneManager>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJRingtoneManager() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{DFFA6151-B321-4111-A703-864E406FDA28}") JSoundPoolClass  : public Androidapi::Jni::Javatypes::JObjectClass 
+{
+	HIDESBASE virtual _di_JSoundPool __cdecl init(int maxStreams, int streamType, int srcQuality) = 0 ;
+};
+
+__interface  INTERFACE_UUID("{923ACDC6-1C0D-437A-9A44-D43B0BA82522}") JSoundPool  : public Androidapi::Jni::Javatypes::JObject 
+{
+	virtual void __cdecl autoPause() = 0 ;
+	virtual void __cdecl autoResume() = 0 ;
+	virtual int __cdecl load(Androidapi::Jni::Javatypes::_di_JString path, int priority) = 0 /* overload */;
+	virtual int __cdecl load(Androidapi::Jni::Graphicscontentviewtext::_di_JContext context, int resId, int priority) = 0 /* overload */;
+	virtual int __cdecl load(Androidapi::Jni::Graphicscontentviewtext::_di_JAssetFileDescriptor afd, int priority) = 0 /* overload */;
+	virtual int __cdecl load(Androidapi::Jni::Javatypes::_di_JFileDescriptor fd, __int64 offset, __int64 length, int priority) = 0 /* overload */;
+	virtual void __cdecl pause(int streamID) = 0 ;
+	virtual int __cdecl play(int soundID, float leftVolume, float rightVolume, int priority, int loop, float rate) = 0 ;
+	virtual void __cdecl release() = 0 ;
+	virtual void __cdecl resume(int streamID) = 0 ;
+	virtual void __cdecl setLoop(int streamID, int loop) = 0 ;
+	virtual void __cdecl setOnLoadCompleteListener(_di_JSoundPool_OnLoadCompleteListener listener) = 0 ;
+	virtual void __cdecl setPriority(int streamID, int priority) = 0 ;
+	virtual void __cdecl setRate(int streamID, float rate) = 0 ;
+	virtual void __cdecl setVolume(int streamID, float leftVolume, float rightVolume) = 0 ;
+	virtual void __cdecl stop(int streamID) = 0 ;
+	virtual bool __cdecl unload(int soundID) = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJSoundPool : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JSoundPoolClass,_di_JSoundPool>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JSoundPoolClass,_di_JSoundPool> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJSoundPool() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JSoundPoolClass,_di_JSoundPool>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJSoundPool() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{88397C0D-2A54-48B3-B39F-7035F19C8670}") JSoundPool_BuilderClass  : public Androidapi::Jni::Javatypes::JObjectClass 
+{
+	HIDESBASE virtual _di_JSoundPool_Builder __cdecl init() = 0 ;
+};
+
+__interface  INTERFACE_UUID("{8571A1CE-EBF2-4461-953E-23F5B5F1CC4A}") JSoundPool_Builder  : public Androidapi::Jni::Javatypes::JObject 
+{
+	virtual _di_JSoundPool __cdecl build() = 0 ;
+	virtual _di_JSoundPool_Builder __cdecl setAudioAttributes(_di_JAudioAttributes attributes) = 0 ;
+	virtual _di_JSoundPool_Builder __cdecl setMaxStreams(int maxStreams) = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJSoundPool_Builder : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JSoundPool_BuilderClass,_di_JSoundPool_Builder>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JSoundPool_BuilderClass,_di_JSoundPool_Builder> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJSoundPool_Builder() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JSoundPool_BuilderClass,_di_JSoundPool_Builder>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJSoundPool_Builder() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{3BB55DBE-8614-4445-BA79-3EB818241E8C}") JSoundPool_OnLoadCompleteListenerClass  : public Androidapi::Jnibridge::IJavaClass 
+{
+	
+};
+
+__interface  INTERFACE_UUID("{E0F6A95C-27EF-4865-9C1C-DDD2664D58BD}") JSoundPool_OnLoadCompleteListener  : public Androidapi::Jnibridge::IJavaInstance 
+{
+	virtual void __cdecl onLoadComplete(_di_JSoundPool soundPool, int sampleId, int status) = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJSoundPool_OnLoadCompleteListener : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JSoundPool_OnLoadCompleteListenerClass,_di_JSoundPool_OnLoadCompleteListener>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JSoundPool_OnLoadCompleteListenerClass,_di_JSoundPool_OnLoadCompleteListener> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJSoundPool_OnLoadCompleteListener() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JSoundPool_OnLoadCompleteListenerClass,_di_JSoundPool_OnLoadCompleteListener>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJSoundPool_OnLoadCompleteListener() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{602D3104-4D7E-4424-A005-D365AA8B5A1D}") JSyncParamsClass  : public Androidapi::Jni::Javatypes::JObjectClass 
+{
+	virtual int __cdecl _GetAUDIO_ADJUST_MODE_DEFAULT() = 0 ;
+	virtual int __cdecl _GetAUDIO_ADJUST_MODE_RESAMPLE() = 0 ;
+	virtual int __cdecl _GetAUDIO_ADJUST_MODE_STRETCH() = 0 ;
+	virtual int __cdecl _GetSYNC_SOURCE_AUDIO() = 0 ;
+	virtual int __cdecl _GetSYNC_SOURCE_DEFAULT() = 0 ;
+	virtual int __cdecl _GetSYNC_SOURCE_SYSTEM_CLOCK() = 0 ;
+	virtual int __cdecl _GetSYNC_SOURCE_VSYNC() = 0 ;
+	HIDESBASE virtual _di_JSyncParams __cdecl init() = 0 ;
+	__property int AUDIO_ADJUST_MODE_DEFAULT = {read=_GetAUDIO_ADJUST_MODE_DEFAULT};
+	__property int AUDIO_ADJUST_MODE_RESAMPLE = {read=_GetAUDIO_ADJUST_MODE_RESAMPLE};
+	__property int AUDIO_ADJUST_MODE_STRETCH = {read=_GetAUDIO_ADJUST_MODE_STRETCH};
+	__property int SYNC_SOURCE_AUDIO = {read=_GetSYNC_SOURCE_AUDIO};
+	__property int SYNC_SOURCE_DEFAULT = {read=_GetSYNC_SOURCE_DEFAULT};
+	__property int SYNC_SOURCE_SYSTEM_CLOCK = {read=_GetSYNC_SOURCE_SYSTEM_CLOCK};
+	__property int SYNC_SOURCE_VSYNC = {read=_GetSYNC_SOURCE_VSYNC};
+};
+
+__interface  INTERFACE_UUID("{2F176C77-E881-4CDB-95CC-1A233A604C45}") JSyncParams  : public Androidapi::Jni::Javatypes::JObject 
+{
+	virtual _di_JSyncParams __cdecl allowDefaults() = 0 ;
+	virtual int __cdecl getAudioAdjustMode() = 0 ;
+	virtual float __cdecl getFrameRate() = 0 ;
+	virtual int __cdecl getSyncSource() = 0 ;
+	virtual float __cdecl getTolerance() = 0 ;
+	virtual _di_JSyncParams __cdecl setAudioAdjustMode(int audioAdjustMode) = 0 ;
+	virtual _di_JSyncParams __cdecl setFrameRate(float frameRate) = 0 ;
+	virtual _di_JSyncParams __cdecl setSyncSource(int syncSource) = 0 ;
+	virtual _di_JSyncParams __cdecl setTolerance(float tolerance) = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJSyncParams : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JSyncParamsClass,_di_JSyncParams>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JSyncParamsClass,_di_JSyncParams> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJSyncParams() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JSyncParamsClass,_di_JSyncParams>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJSyncParams() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{5D772E54-5912-4CF0-A97D-0A4B171E7EF7}") JThumbnailUtilsClass  : public Androidapi::Jni::Javatypes::JObjectClass 
+{
+	virtual int __cdecl _GetOPTIONS_RECYCLE_INPUT() = 0 ;
+	HIDESBASE virtual _di_JThumbnailUtils __cdecl init() = 0 ;
+	virtual Androidapi::Jni::Graphicscontentviewtext::_di_JBitmap __cdecl createVideoThumbnail(Androidapi::Jni::Javatypes::_di_JString filePath, int kind) = 0 ;
+	virtual Androidapi::Jni::Graphicscontentviewtext::_di_JBitmap __cdecl extractThumbnail(Androidapi::Jni::Graphicscontentviewtext::_di_JBitmap source, int width, int height) = 0 /* overload */;
+	virtual Androidapi::Jni::Graphicscontentviewtext::_di_JBitmap __cdecl extractThumbnail(Androidapi::Jni::Graphicscontentviewtext::_di_JBitmap source, int width, int height, int options) = 0 /* overload */;
+	__property int OPTIONS_RECYCLE_INPUT = {read=_GetOPTIONS_RECYCLE_INPUT};
+};
+
+__interface  INTERFACE_UUID("{EF230179-DF54-4876-A9BC-5D982DF95E21}") JThumbnailUtils  : public Androidapi::Jni::Javatypes::JObject 
+{
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJThumbnailUtils : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JThumbnailUtilsClass,_di_JThumbnailUtils>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JThumbnailUtilsClass,_di_JThumbnailUtils> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJThumbnailUtils() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JThumbnailUtilsClass,_di_JThumbnailUtils>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJThumbnailUtils() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{3D32D7E0-820D-41F7-9203-171A2563A6E4}") JTimedMetaDataClass  : public Androidapi::Jni::Javatypes::JObjectClass 
+{
+	
+};
+
+__interface  INTERFACE_UUID("{F0277382-AC54-4B77-A115-1AC93D5308ED}") JTimedMetaData  : public Androidapi::Jni::Javatypes::JObject 
+{
+	virtual Androidapi::Jnibridge::TJavaArray__1<System::Byte>* __cdecl getMetaData() = 0 ;
+	virtual __int64 __cdecl getTimestamp() = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJTimedMetaData : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JTimedMetaDataClass,_di_JTimedMetaData>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JTimedMetaDataClass,_di_JTimedMetaData> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJTimedMetaData() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JTimedMetaDataClass,_di_JTimedMetaData>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJTimedMetaData() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{1C368248-EC42-4D7E-9CBF-4C9910FD9C67}") JTimedTextClass  : public Androidapi::Jni::Javatypes::JObjectClass 
+{
+	
+};
+
+__interface  INTERFACE_UUID("{9240B2F5-1767-4D67-9C9D-780021A81BAE}") JTimedText  : public Androidapi::Jni::Javatypes::JObject 
+{
+	virtual Androidapi::Jni::Graphicscontentviewtext::_di_JRect __cdecl getBounds() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl getText() = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJTimedText : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JTimedTextClass,_di_JTimedText>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JTimedTextClass,_di_JTimedText> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJTimedText() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JTimedTextClass,_di_JTimedText>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJTimedText() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{2E43AD5A-F8CC-439A-B70E-78EAC7415740}") JToneGeneratorClass  : public Androidapi::Jni::Javatypes::JObjectClass 
+{
+	virtual int __cdecl _GetMAX_VOLUME() = 0 ;
+	virtual int __cdecl _GetMIN_VOLUME() = 0 ;
+	virtual int __cdecl _GetTONE_CDMA_ABBR_ALERT() = 0 ;
+	virtual int __cdecl _GetTONE_CDMA_ABBR_INTERCEPT() = 0 ;
+	virtual int __cdecl _GetTONE_CDMA_ABBR_REORDER() = 0 ;
+	virtual int __cdecl _GetTONE_CDMA_ALERT_AUTOREDIAL_LITE() = 0 ;
+	virtual int __cdecl _GetTONE_CDMA_ALERT_CALL_GUARD() = 0 ;
+	virtual int __cdecl _GetTONE_CDMA_ALERT_INCALL_LITE() = 0 ;
+	virtual int __cdecl _GetTONE_CDMA_ALERT_NETWORK_LITE() = 0 ;
+	virtual int __cdecl _GetTONE_CDMA_ANSWER() = 0 ;
+	virtual int __cdecl _GetTONE_CDMA_CALLDROP_LITE() = 0 ;
+	virtual int __cdecl _GetTONE_CDMA_CALL_SIGNAL_ISDN_INTERGROUP() = 0 ;
+	virtual int __cdecl _GetTONE_CDMA_CALL_SIGNAL_ISDN_NORMAL() = 0 ;
+	virtual int __cdecl _GetTONE_CDMA_CALL_SIGNAL_ISDN_PAT3() = 0 ;
+	virtual int __cdecl _GetTONE_CDMA_CALL_SIGNAL_ISDN_PAT5() = 0 ;
+	virtual int __cdecl _GetTONE_CDMA_CALL_SIGNAL_ISDN_PAT6() = 0 ;
+	virtual int __cdecl _GetTONE_CDMA_CALL_SIGNAL_ISDN_PAT7() = 0 ;
+	virtual int __cdecl _GetTONE_CDMA_CALL_SIGNAL_ISDN_PING_RING() = 0 ;
+	virtual int __cdecl _GetTONE_CDMA_CALL_SIGNAL_ISDN_SP_PRI() = 0 ;
+	virtual int __cdecl _GetTONE_CDMA_CONFIRM() = 0 ;
+	virtual int __cdecl _GetTONE_CDMA_DIAL_TONE_LITE() = 0 ;
+	virtual int __cdecl _GetTONE_CDMA_EMERGENCY_RINGBACK() = 0 ;
+	virtual int __cdecl _GetTONE_CDMA_HIGH_L() = 0 ;
+	virtual int __cdecl _GetTONE_CDMA_HIGH_PBX_L() = 0 ;
+	virtual int __cdecl _GetTONE_CDMA_HIGH_PBX_SLS() = 0 ;
+	virtual int __cdecl _GetTONE_CDMA_HIGH_PBX_SS() = 0 ;
+	virtual int __cdecl _GetTONE_CDMA_HIGH_PBX_SSL() = 0 ;
+	virtual int __cdecl _GetTONE_CDMA_HIGH_PBX_S_X4() = 0 ;
+	virtual int __cdecl _GetTONE_CDMA_HIGH_SLS() = 0 ;
+	virtual int __cdecl _GetTONE_CDMA_HIGH_SS() = 0 ;
+	virtual int __cdecl _GetTONE_CDMA_HIGH_SSL() = 0 ;
+	virtual int __cdecl _GetTONE_CDMA_HIGH_SS_2() = 0 ;
+	virtual int __cdecl _GetTONE_CDMA_HIGH_S_X4() = 0 ;
+	virtual int __cdecl _GetTONE_CDMA_INTERCEPT() = 0 ;
+	virtual int __cdecl _GetTONE_CDMA_KEYPAD_VOLUME_KEY_LITE() = 0 ;
+	virtual int __cdecl _GetTONE_CDMA_LOW_L() = 0 ;
+	virtual int __cdecl _GetTONE_CDMA_LOW_PBX_L() = 0 ;
+	virtual int __cdecl _GetTONE_CDMA_LOW_PBX_SLS() = 0 ;
+	virtual int __cdecl _GetTONE_CDMA_LOW_PBX_SS() = 0 ;
+	virtual int __cdecl _GetTONE_CDMA_LOW_PBX_SSL() = 0 ;
+	virtual int __cdecl _GetTONE_CDMA_LOW_PBX_S_X4() = 0 ;
+	virtual int __cdecl _GetTONE_CDMA_LOW_SLS() = 0 ;
+	virtual int __cdecl _GetTONE_CDMA_LOW_SS() = 0 ;
+	virtual int __cdecl _GetTONE_CDMA_LOW_SSL() = 0 ;
+	virtual int __cdecl _GetTONE_CDMA_LOW_SS_2() = 0 ;
+	virtual int __cdecl _GetTONE_CDMA_LOW_S_X4() = 0 ;
+	virtual int __cdecl _GetTONE_CDMA_MED_L() = 0 ;
+	virtual int __cdecl _GetTONE_CDMA_MED_PBX_L() = 0 ;
+	virtual int __cdecl _GetTONE_CDMA_MED_PBX_SLS() = 0 ;
+	virtual int __cdecl _GetTONE_CDMA_MED_PBX_SS() = 0 ;
+	virtual int __cdecl _GetTONE_CDMA_MED_PBX_SSL() = 0 ;
+	virtual int __cdecl _GetTONE_CDMA_MED_PBX_S_X4() = 0 ;
+	virtual int __cdecl _GetTONE_CDMA_MED_SLS() = 0 ;
+	virtual int __cdecl _GetTONE_CDMA_MED_SS() = 0 ;
+	virtual int __cdecl _GetTONE_CDMA_MED_SSL() = 0 ;
+	virtual int __cdecl _GetTONE_CDMA_MED_SS_2() = 0 ;
+	virtual int __cdecl _GetTONE_CDMA_MED_S_X4() = 0 ;
+	virtual int __cdecl _GetTONE_CDMA_NETWORK_BUSY() = 0 ;
+	virtual int __cdecl _GetTONE_CDMA_NETWORK_BUSY_ONE_SHOT() = 0 ;
+	virtual int __cdecl _GetTONE_CDMA_NETWORK_CALLWAITING() = 0 ;
+	virtual int __cdecl _GetTONE_CDMA_NETWORK_USA_RINGBACK() = 0 ;
+	virtual int __cdecl _GetTONE_CDMA_ONE_MIN_BEEP() = 0 ;
+	virtual int __cdecl _GetTONE_CDMA_PIP() = 0 ;
+	virtual int __cdecl _GetTONE_CDMA_PRESSHOLDKEY_LITE() = 0 ;
+	virtual int __cdecl _GetTONE_CDMA_REORDER() = 0 ;
+	virtual int __cdecl _GetTONE_CDMA_SIGNAL_OFF() = 0 ;
+	virtual int __cdecl _GetTONE_CDMA_SOFT_ERROR_LITE() = 0 ;
+	virtual int __cdecl _GetTONE_DTMF_0() = 0 ;
+	virtual int __cdecl _GetTONE_DTMF_1() = 0 ;
+	virtual int __cdecl _GetTONE_DTMF_2() = 0 ;
+	virtual int __cdecl _GetTONE_DTMF_3() = 0 ;
+	virtual int __cdecl _GetTONE_DTMF_4() = 0 ;
+	virtual int __cdecl _GetTONE_DTMF_5() = 0 ;
+	virtual int __cdecl _GetTONE_DTMF_6() = 0 ;
+	virtual int __cdecl _GetTONE_DTMF_7() = 0 ;
+	virtual int __cdecl _GetTONE_DTMF_8() = 0 ;
+	virtual int __cdecl _GetTONE_DTMF_9() = 0 ;
+	virtual int __cdecl _GetTONE_DTMF_A() = 0 ;
+	virtual int __cdecl _GetTONE_DTMF_B() = 0 ;
+	virtual int __cdecl _GetTONE_DTMF_C() = 0 ;
+	virtual int __cdecl _GetTONE_DTMF_D() = 0 ;
+	virtual int __cdecl _GetTONE_DTMF_P() = 0 ;
+	virtual int __cdecl _GetTONE_DTMF_S() = 0 ;
+	virtual int __cdecl _GetTONE_PROP_ACK() = 0 ;
+	virtual int __cdecl _GetTONE_PROP_BEEP() = 0 ;
+	virtual int __cdecl _GetTONE_PROP_BEEP2() = 0 ;
+	virtual int __cdecl _GetTONE_PROP_NACK() = 0 ;
+	virtual int __cdecl _GetTONE_PROP_PROMPT() = 0 ;
+	virtual int __cdecl _GetTONE_SUP_BUSY() = 0 ;
+	virtual int __cdecl _GetTONE_SUP_CALL_WAITING() = 0 ;
+	virtual int __cdecl _GetTONE_SUP_CONFIRM() = 0 ;
+	virtual int __cdecl _GetTONE_SUP_CONGESTION() = 0 ;
+	virtual int __cdecl _GetTONE_SUP_CONGESTION_ABBREV() = 0 ;
+	virtual int __cdecl _GetTONE_SUP_DIAL() = 0 ;
+	virtual int __cdecl _GetTONE_SUP_ERROR() = 0 ;
+	virtual int __cdecl _GetTONE_SUP_INTERCEPT() = 0 ;
+	virtual int __cdecl _GetTONE_SUP_INTERCEPT_ABBREV() = 0 ;
+	virtual int __cdecl _GetTONE_SUP_PIP() = 0 ;
+	virtual int __cdecl _GetTONE_SUP_RADIO_ACK() = 0 ;
+	virtual int __cdecl _GetTONE_SUP_RADIO_NOTAVAIL() = 0 ;
+	virtual int __cdecl _GetTONE_SUP_RINGTONE() = 0 ;
+	HIDESBASE virtual _di_JToneGenerator __cdecl init(int streamType, int volume) = 0 ;
+	__property int MAX_VOLUME = {read=_GetMAX_VOLUME};
+	__property int MIN_VOLUME = {read=_GetMIN_VOLUME};
+	__property int TONE_CDMA_ABBR_ALERT = {read=_GetTONE_CDMA_ABBR_ALERT};
+	__property int TONE_CDMA_ABBR_INTERCEPT = {read=_GetTONE_CDMA_ABBR_INTERCEPT};
+	__property int TONE_CDMA_ABBR_REORDER = {read=_GetTONE_CDMA_ABBR_REORDER};
+	__property int TONE_CDMA_ALERT_AUTOREDIAL_LITE = {read=_GetTONE_CDMA_ALERT_AUTOREDIAL_LITE};
+	__property int TONE_CDMA_ALERT_CALL_GUARD = {read=_GetTONE_CDMA_ALERT_CALL_GUARD};
+	__property int TONE_CDMA_ALERT_INCALL_LITE = {read=_GetTONE_CDMA_ALERT_INCALL_LITE};
+	__property int TONE_CDMA_ALERT_NETWORK_LITE = {read=_GetTONE_CDMA_ALERT_NETWORK_LITE};
+	__property int TONE_CDMA_ANSWER = {read=_GetTONE_CDMA_ANSWER};
+	__property int TONE_CDMA_CALLDROP_LITE = {read=_GetTONE_CDMA_CALLDROP_LITE};
+	__property int TONE_CDMA_CALL_SIGNAL_ISDN_INTERGROUP = {read=_GetTONE_CDMA_CALL_SIGNAL_ISDN_INTERGROUP};
+	__property int TONE_CDMA_CALL_SIGNAL_ISDN_NORMAL = {read=_GetTONE_CDMA_CALL_SIGNAL_ISDN_NORMAL};
+	__property int TONE_CDMA_CALL_SIGNAL_ISDN_PAT3 = {read=_GetTONE_CDMA_CALL_SIGNAL_ISDN_PAT3};
+	__property int TONE_CDMA_CALL_SIGNAL_ISDN_PAT5 = {read=_GetTONE_CDMA_CALL_SIGNAL_ISDN_PAT5};
+	__property int TONE_CDMA_CALL_SIGNAL_ISDN_PAT6 = {read=_GetTONE_CDMA_CALL_SIGNAL_ISDN_PAT6};
+	__property int TONE_CDMA_CALL_SIGNAL_ISDN_PAT7 = {read=_GetTONE_CDMA_CALL_SIGNAL_ISDN_PAT7};
+	__property int TONE_CDMA_CALL_SIGNAL_ISDN_PING_RING = {read=_GetTONE_CDMA_CALL_SIGNAL_ISDN_PING_RING};
+	__property int TONE_CDMA_CALL_SIGNAL_ISDN_SP_PRI = {read=_GetTONE_CDMA_CALL_SIGNAL_ISDN_SP_PRI};
+	__property int TONE_CDMA_CONFIRM = {read=_GetTONE_CDMA_CONFIRM};
+	__property int TONE_CDMA_DIAL_TONE_LITE = {read=_GetTONE_CDMA_DIAL_TONE_LITE};
+	__property int TONE_CDMA_EMERGENCY_RINGBACK = {read=_GetTONE_CDMA_EMERGENCY_RINGBACK};
+	__property int TONE_CDMA_HIGH_L = {read=_GetTONE_CDMA_HIGH_L};
+	__property int TONE_CDMA_HIGH_PBX_L = {read=_GetTONE_CDMA_HIGH_PBX_L};
+	__property int TONE_CDMA_HIGH_PBX_SLS = {read=_GetTONE_CDMA_HIGH_PBX_SLS};
+	__property int TONE_CDMA_HIGH_PBX_SS = {read=_GetTONE_CDMA_HIGH_PBX_SS};
+	__property int TONE_CDMA_HIGH_PBX_SSL = {read=_GetTONE_CDMA_HIGH_PBX_SSL};
+	__property int TONE_CDMA_HIGH_PBX_S_X4 = {read=_GetTONE_CDMA_HIGH_PBX_S_X4};
+	__property int TONE_CDMA_HIGH_SLS = {read=_GetTONE_CDMA_HIGH_SLS};
+	__property int TONE_CDMA_HIGH_SS = {read=_GetTONE_CDMA_HIGH_SS};
+	__property int TONE_CDMA_HIGH_SSL = {read=_GetTONE_CDMA_HIGH_SSL};
+	__property int TONE_CDMA_HIGH_SS_2 = {read=_GetTONE_CDMA_HIGH_SS_2};
+	__property int TONE_CDMA_HIGH_S_X4 = {read=_GetTONE_CDMA_HIGH_S_X4};
+	__property int TONE_CDMA_INTERCEPT = {read=_GetTONE_CDMA_INTERCEPT};
+	__property int TONE_CDMA_KEYPAD_VOLUME_KEY_LITE = {read=_GetTONE_CDMA_KEYPAD_VOLUME_KEY_LITE};
+	__property int TONE_CDMA_LOW_L = {read=_GetTONE_CDMA_LOW_L};
+	__property int TONE_CDMA_LOW_PBX_L = {read=_GetTONE_CDMA_LOW_PBX_L};
+	__property int TONE_CDMA_LOW_PBX_SLS = {read=_GetTONE_CDMA_LOW_PBX_SLS};
+	__property int TONE_CDMA_LOW_PBX_SS = {read=_GetTONE_CDMA_LOW_PBX_SS};
+	__property int TONE_CDMA_LOW_PBX_SSL = {read=_GetTONE_CDMA_LOW_PBX_SSL};
+	__property int TONE_CDMA_LOW_PBX_S_X4 = {read=_GetTONE_CDMA_LOW_PBX_S_X4};
+	__property int TONE_CDMA_LOW_SLS = {read=_GetTONE_CDMA_LOW_SLS};
+	__property int TONE_CDMA_LOW_SS = {read=_GetTONE_CDMA_LOW_SS};
+	__property int TONE_CDMA_LOW_SSL = {read=_GetTONE_CDMA_LOW_SSL};
+	__property int TONE_CDMA_LOW_SS_2 = {read=_GetTONE_CDMA_LOW_SS_2};
+	__property int TONE_CDMA_LOW_S_X4 = {read=_GetTONE_CDMA_LOW_S_X4};
+	__property int TONE_CDMA_MED_L = {read=_GetTONE_CDMA_MED_L};
+	__property int TONE_CDMA_MED_PBX_L = {read=_GetTONE_CDMA_MED_PBX_L};
+	__property int TONE_CDMA_MED_PBX_SLS = {read=_GetTONE_CDMA_MED_PBX_SLS};
+	__property int TONE_CDMA_MED_PBX_SS = {read=_GetTONE_CDMA_MED_PBX_SS};
+	__property int TONE_CDMA_MED_PBX_SSL = {read=_GetTONE_CDMA_MED_PBX_SSL};
+	__property int TONE_CDMA_MED_PBX_S_X4 = {read=_GetTONE_CDMA_MED_PBX_S_X4};
+	__property int TONE_CDMA_MED_SLS = {read=_GetTONE_CDMA_MED_SLS};
+	__property int TONE_CDMA_MED_SS = {read=_GetTONE_CDMA_MED_SS};
+	__property int TONE_CDMA_MED_SSL = {read=_GetTONE_CDMA_MED_SSL};
+	__property int TONE_CDMA_MED_SS_2 = {read=_GetTONE_CDMA_MED_SS_2};
+	__property int TONE_CDMA_MED_S_X4 = {read=_GetTONE_CDMA_MED_S_X4};
+	__property int TONE_CDMA_NETWORK_BUSY = {read=_GetTONE_CDMA_NETWORK_BUSY};
+	__property int TONE_CDMA_NETWORK_BUSY_ONE_SHOT = {read=_GetTONE_CDMA_NETWORK_BUSY_ONE_SHOT};
+	__property int TONE_CDMA_NETWORK_CALLWAITING = {read=_GetTONE_CDMA_NETWORK_CALLWAITING};
+	__property int TONE_CDMA_NETWORK_USA_RINGBACK = {read=_GetTONE_CDMA_NETWORK_USA_RINGBACK};
+	__property int TONE_CDMA_ONE_MIN_BEEP = {read=_GetTONE_CDMA_ONE_MIN_BEEP};
+	__property int TONE_CDMA_PIP = {read=_GetTONE_CDMA_PIP};
+	__property int TONE_CDMA_PRESSHOLDKEY_LITE = {read=_GetTONE_CDMA_PRESSHOLDKEY_LITE};
+	__property int TONE_CDMA_REORDER = {read=_GetTONE_CDMA_REORDER};
+	__property int TONE_CDMA_SIGNAL_OFF = {read=_GetTONE_CDMA_SIGNAL_OFF};
+	__property int TONE_CDMA_SOFT_ERROR_LITE = {read=_GetTONE_CDMA_SOFT_ERROR_LITE};
+	__property int TONE_DTMF_0 = {read=_GetTONE_DTMF_0};
+	__property int TONE_DTMF_1 = {read=_GetTONE_DTMF_1};
+	__property int TONE_DTMF_2 = {read=_GetTONE_DTMF_2};
+	__property int TONE_DTMF_3 = {read=_GetTONE_DTMF_3};
+	__property int TONE_DTMF_4 = {read=_GetTONE_DTMF_4};
+	__property int TONE_DTMF_5 = {read=_GetTONE_DTMF_5};
+	__property int TONE_DTMF_6 = {read=_GetTONE_DTMF_6};
+	__property int TONE_DTMF_7 = {read=_GetTONE_DTMF_7};
+	__property int TONE_DTMF_8 = {read=_GetTONE_DTMF_8};
+	__property int TONE_DTMF_9 = {read=_GetTONE_DTMF_9};
+	__property int TONE_DTMF_A = {read=_GetTONE_DTMF_A};
+	__property int TONE_DTMF_B = {read=_GetTONE_DTMF_B};
+	__property int TONE_DTMF_C = {read=_GetTONE_DTMF_C};
+	__property int TONE_DTMF_D = {read=_GetTONE_DTMF_D};
+	__property int TONE_DTMF_P = {read=_GetTONE_DTMF_P};
+	__property int TONE_DTMF_S = {read=_GetTONE_DTMF_S};
+	__property int TONE_PROP_ACK = {read=_GetTONE_PROP_ACK};
+	__property int TONE_PROP_BEEP = {read=_GetTONE_PROP_BEEP};
+	__property int TONE_PROP_BEEP2 = {read=_GetTONE_PROP_BEEP2};
+	__property int TONE_PROP_NACK = {read=_GetTONE_PROP_NACK};
+	__property int TONE_PROP_PROMPT = {read=_GetTONE_PROP_PROMPT};
+	__property int TONE_SUP_BUSY = {read=_GetTONE_SUP_BUSY};
+	__property int TONE_SUP_CALL_WAITING = {read=_GetTONE_SUP_CALL_WAITING};
+	__property int TONE_SUP_CONFIRM = {read=_GetTONE_SUP_CONFIRM};
+	__property int TONE_SUP_CONGESTION = {read=_GetTONE_SUP_CONGESTION};
+	__property int TONE_SUP_CONGESTION_ABBREV = {read=_GetTONE_SUP_CONGESTION_ABBREV};
+	__property int TONE_SUP_DIAL = {read=_GetTONE_SUP_DIAL};
+	__property int TONE_SUP_ERROR = {read=_GetTONE_SUP_ERROR};
+	__property int TONE_SUP_INTERCEPT = {read=_GetTONE_SUP_INTERCEPT};
+	__property int TONE_SUP_INTERCEPT_ABBREV = {read=_GetTONE_SUP_INTERCEPT_ABBREV};
+	__property int TONE_SUP_PIP = {read=_GetTONE_SUP_PIP};
+	__property int TONE_SUP_RADIO_ACK = {read=_GetTONE_SUP_RADIO_ACK};
+	__property int TONE_SUP_RADIO_NOTAVAIL = {read=_GetTONE_SUP_RADIO_NOTAVAIL};
+	__property int TONE_SUP_RINGTONE = {read=_GetTONE_SUP_RINGTONE};
+};
+
+__interface  INTERFACE_UUID("{F31E2BEF-7899-4B50-8ED2-13547C7AA405}") JToneGenerator  : public Androidapi::Jni::Javatypes::JObject 
+{
+	virtual int __cdecl getAudioSessionId() = 0 ;
+	virtual void __cdecl release() = 0 ;
+	virtual bool __cdecl startTone(int toneType) = 0 /* overload */;
+	virtual bool __cdecl startTone(int toneType, int durationMs) = 0 /* overload */;
+	virtual void __cdecl stopTone() = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJToneGenerator : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JToneGeneratorClass,_di_JToneGenerator>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JToneGeneratorClass,_di_JToneGenerator> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJToneGenerator() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JToneGeneratorClass,_di_JToneGenerator>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJToneGenerator() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{D5DA0D0E-66A6-4CF4-A98D-A01F66C3E877}") JUnsupportedSchemeExceptionClass  : public JMediaDrmExceptionClass 
+{
+	HIDESBASE virtual _di_JUnsupportedSchemeException __cdecl init(Androidapi::Jni::Javatypes::_di_JString detailMessage) = 0 ;
+};
+
+__interface  INTERFACE_UUID("{B6A003FA-B91A-46B9-83E4-9654A849903C}") JUnsupportedSchemeException  : public JMediaDrmException 
+{
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJUnsupportedSchemeException : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JUnsupportedSchemeExceptionClass,_di_JUnsupportedSchemeException>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JUnsupportedSchemeExceptionClass,_di_JUnsupportedSchemeException> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJUnsupportedSchemeException() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JUnsupportedSchemeExceptionClass,_di_JUnsupportedSchemeException>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJUnsupportedSchemeException() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{920B8AE0-9E4E-43DD-A7C1-FF6D170C7E23}") JVolumeAutomationClass  : public Androidapi::Jnibridge::IJavaClass 
+{
+	
+};
+
+__interface  INTERFACE_UUID("{51234154-AF39-4C14-B992-3A05FAE0CC77}") JVolumeAutomation  : public Androidapi::Jnibridge::IJavaInstance 
+{
+	virtual _di_JVolumeShaper __cdecl createVolumeShaper(_di_JVolumeShaper_Configuration configuration) = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJVolumeAutomation : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JVolumeAutomationClass,_di_JVolumeAutomation>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JVolumeAutomationClass,_di_JVolumeAutomation> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJVolumeAutomation() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JVolumeAutomationClass,_di_JVolumeAutomation>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJVolumeAutomation() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{178BD28B-46A3-452D-B274-B226800793E4}") JVolumeProviderClass  : public Androidapi::Jni::Javatypes::JObjectClass 
+{
+	virtual int __cdecl _GetVOLUME_CONTROL_ABSOLUTE() = 0 ;
+	virtual int __cdecl _GetVOLUME_CONTROL_FIXED() = 0 ;
+	virtual int __cdecl _GetVOLUME_CONTROL_RELATIVE() = 0 ;
+	HIDESBASE virtual _di_JVolumeProvider __cdecl init(int volumeControl, int maxVolume, int currentVolume) = 0 ;
+	__property int VOLUME_CONTROL_ABSOLUTE = {read=_GetVOLUME_CONTROL_ABSOLUTE};
+	__property int VOLUME_CONTROL_FIXED = {read=_GetVOLUME_CONTROL_FIXED};
+	__property int VOLUME_CONTROL_RELATIVE = {read=_GetVOLUME_CONTROL_RELATIVE};
+};
+
+__interface  INTERFACE_UUID("{528B083C-AD72-4845-9AED-186F0347D369}") JVolumeProvider  : public Androidapi::Jni::Javatypes::JObject 
+{
+	virtual int __cdecl getCurrentVolume() = 0 ;
+	virtual int __cdecl getMaxVolume() = 0 ;
+	virtual int __cdecl getVolumeControl() = 0 ;
+	virtual void __cdecl onAdjustVolume(int direction) = 0 ;
+	virtual void __cdecl onSetVolumeTo(int volume) = 0 ;
+	virtual void __cdecl setCurrentVolume(int currentVolume) = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJVolumeProvider : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JVolumeProviderClass,_di_JVolumeProvider>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JVolumeProviderClass,_di_JVolumeProvider> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJVolumeProvider() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JVolumeProviderClass,_di_JVolumeProvider>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJVolumeProvider() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{EBBFA8BC-6B9D-4A06-968F-AEDFB268EFD0}") JVolumeShaperClass  : public Androidapi::Jni::Javatypes::JObjectClass 
+{
+	
+};
+
+__interface  INTERFACE_UUID("{17FEB9A6-ECCB-45E5-ABEF-67B582F9F243}") JVolumeShaper  : public Androidapi::Jni::Javatypes::JObject 
+{
+	virtual void __cdecl apply(_di_JVolumeShaper_Operation operation) = 0 ;
+	virtual void __cdecl close() = 0 ;
+	virtual float __cdecl getVolume() = 0 ;
+	virtual void __cdecl replace(_di_JVolumeShaper_Configuration configuration, _di_JVolumeShaper_Operation operation, bool join) = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJVolumeShaper : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JVolumeShaperClass,_di_JVolumeShaper>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JVolumeShaperClass,_di_JVolumeShaper> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJVolumeShaper() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JVolumeShaperClass,_di_JVolumeShaper>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJVolumeShaper() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{72C94BBC-D387-4C62-91F9-4E0D380C6EA5}") JVolumeShaper_ConfigurationClass  : public Androidapi::Jni::Javatypes::JObjectClass 
+{
+	virtual Androidapi::Jni::Os::_di_JParcelable_Creator __cdecl _GetCREATOR() = 0 ;
+	virtual _di_JVolumeShaper_Configuration __cdecl _GetCUBIC_RAMP() = 0 ;
+	virtual int __cdecl _GetINTERPOLATOR_TYPE_CUBIC() = 0 ;
+	virtual int __cdecl _GetINTERPOLATOR_TYPE_CUBIC_MONOTONIC() = 0 ;
+	virtual int __cdecl _GetINTERPOLATOR_TYPE_LINEAR() = 0 ;
+	virtual int __cdecl _GetINTERPOLATOR_TYPE_STEP() = 0 ;
+	virtual _di_JVolumeShaper_Configuration __cdecl _GetLINEAR_RAMP() = 0 ;
+	virtual _di_JVolumeShaper_Configuration __cdecl _GetSCURVE_RAMP() = 0 ;
+	virtual _di_JVolumeShaper_Configuration __cdecl _GetSINE_RAMP() = 0 ;
+	virtual int __cdecl getMaximumCurvePoints() = 0 ;
+	__property Androidapi::Jni::Os::_di_JParcelable_Creator CREATOR = {read=_GetCREATOR};
+	__property _di_JVolumeShaper_Configuration CUBIC_RAMP = {read=_GetCUBIC_RAMP};
+	__property int INTERPOLATOR_TYPE_CUBIC = {read=_GetINTERPOLATOR_TYPE_CUBIC};
+	__property int INTERPOLATOR_TYPE_CUBIC_MONOTONIC = {read=_GetINTERPOLATOR_TYPE_CUBIC_MONOTONIC};
+	__property int INTERPOLATOR_TYPE_LINEAR = {read=_GetINTERPOLATOR_TYPE_LINEAR};
+	__property int INTERPOLATOR_TYPE_STEP = {read=_GetINTERPOLATOR_TYPE_STEP};
+	__property _di_JVolumeShaper_Configuration LINEAR_RAMP = {read=_GetLINEAR_RAMP};
+	__property _di_JVolumeShaper_Configuration SCURVE_RAMP = {read=_GetSCURVE_RAMP};
+	__property _di_JVolumeShaper_Configuration SINE_RAMP = {read=_GetSINE_RAMP};
+};
+
+__interface  INTERFACE_UUID("{52AA2ABF-F3D3-4264-ABDD-7DD7624071E9}") JVolumeShaper_Configuration  : public Androidapi::Jni::Javatypes::JObject 
+{
+	virtual int __cdecl describeContents() = 0 ;
+	HIDESBASE virtual bool __cdecl equals(Androidapi::Jni::Javatypes::_di_JObject o) = 0 ;
+	virtual __int64 __cdecl getDuration() = 0 ;
+	virtual int __cdecl getInterpolatorType() = 0 ;
+	virtual Androidapi::Jnibridge::TJavaArray__1<float>* __cdecl getTimes() = 0 ;
+	virtual Androidapi::Jnibridge::TJavaArray__1<float>* __cdecl getVolumes() = 0 ;
+	HIDESBASE virtual int __cdecl hashCode() = 0 ;
+	HIDESBASE virtual Androidapi::Jni::Javatypes::_di_JString __cdecl toString() = 0 ;
+	virtual void __cdecl writeToParcel(Androidapi::Jni::Os::_di_JParcel dest, int flags) = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJVolumeShaper_Configuration : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JVolumeShaper_ConfigurationClass,_di_JVolumeShaper_Configuration>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JVolumeShaper_ConfigurationClass,_di_JVolumeShaper_Configuration> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJVolumeShaper_Configuration() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JVolumeShaper_ConfigurationClass,_di_JVolumeShaper_Configuration>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJVolumeShaper_Configuration() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{A69C3563-6702-4DEC-94DD-395B2650C6F7}") JConfiguration_BuilderClass  : public Androidapi::Jni::Javatypes::JObjectClass 
+{
+	HIDESBASE virtual _di_JConfiguration_Builder __cdecl init() = 0 /* overload */;
+	HIDESBASE virtual _di_JConfiguration_Builder __cdecl init(_di_JVolumeShaper_Configuration configuration) = 0 /* overload */;
+};
+
+__interface  INTERFACE_UUID("{2B398F44-4296-49C1-8A5F-499762F8FE9B}") JConfiguration_Builder  : public Androidapi::Jni::Javatypes::JObject 
+{
+	virtual _di_JVolumeShaper_Configuration __cdecl build() = 0 ;
+	virtual _di_JConfiguration_Builder __cdecl invertVolumes() = 0 ;
+	virtual _di_JConfiguration_Builder __cdecl reflectTimes() = 0 ;
+	virtual _di_JConfiguration_Builder __cdecl scaleToEndVolume(float volume) = 0 ;
+	virtual _di_JConfiguration_Builder __cdecl scaleToStartVolume(float volume) = 0 ;
+	virtual _di_JConfiguration_Builder __cdecl setCurve(Androidapi::Jnibridge::TJavaArray__1<float>* times, Androidapi::Jnibridge::TJavaArray__1<float>* volumes) = 0 ;
+	virtual _di_JConfiguration_Builder __cdecl setDuration(__int64 durationMillis) = 0 ;
+	virtual _di_JConfiguration_Builder __cdecl setInterpolatorType(int interpolatorType) = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJConfiguration_Builder : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JConfiguration_BuilderClass,_di_JConfiguration_Builder>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JConfiguration_BuilderClass,_di_JConfiguration_Builder> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJConfiguration_Builder() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JConfiguration_BuilderClass,_di_JConfiguration_Builder>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJConfiguration_Builder() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{32982ADE-AFD9-4175-929C-178A4E566B2C}") JVolumeShaper_OperationClass  : public Androidapi::Jni::Javatypes::JObjectClass 
+{
+	virtual Androidapi::Jni::Os::_di_JParcelable_Creator __cdecl _GetCREATOR() = 0 ;
+	virtual _di_JVolumeShaper_Operation __cdecl _GetPLAY() = 0 ;
+	virtual _di_JVolumeShaper_Operation __cdecl _GetREVERSE() = 0 ;
+	__property Androidapi::Jni::Os::_di_JParcelable_Creator CREATOR = {read=_GetCREATOR};
+	__property _di_JVolumeShaper_Operation PLAY = {read=_GetPLAY};
+	__property _di_JVolumeShaper_Operation REVERSE = {read=_GetREVERSE};
+};
+
+__interface  INTERFACE_UUID("{38745E27-771D-4724-AD22-8BF683DBE668}") JVolumeShaper_Operation  : public Androidapi::Jni::Javatypes::JObject 
+{
+	virtual int __cdecl describeContents() = 0 ;
+	HIDESBASE virtual bool __cdecl equals(Androidapi::Jni::Javatypes::_di_JObject o) = 0 ;
+	HIDESBASE virtual int __cdecl hashCode() = 0 ;
+	HIDESBASE virtual Androidapi::Jni::Javatypes::_di_JString __cdecl toString() = 0 ;
+	virtual void __cdecl writeToParcel(Androidapi::Jni::Os::_di_JParcel dest, int flags) = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJVolumeShaper_Operation : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JVolumeShaper_OperationClass,_di_JVolumeShaper_Operation>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JVolumeShaper_OperationClass,_di_JVolumeShaper_Operation> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJVolumeShaper_Operation() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JVolumeShaper_OperationClass,_di_JVolumeShaper_Operation>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJVolumeShaper_Operation() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{13CBADC9-1D73-46D0-9D39-50F50F8E5EE5}") JAudioEffectClass  : public Androidapi::Jni::Javatypes::JObjectClass 
+{
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetACTION_CLOSE_AUDIO_EFFECT_CONTROL_SESSION() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetACTION_DISPLAY_AUDIO_EFFECT_CONTROL_PANEL() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetACTION_OPEN_AUDIO_EFFECT_CONTROL_SESSION() = 0 ;
+	virtual int __cdecl _GetALREADY_EXISTS() = 0 ;
+	virtual int __cdecl _GetCONTENT_TYPE_GAME() = 0 ;
+	virtual int __cdecl _GetCONTENT_TYPE_MOVIE() = 0 ;
+	virtual int __cdecl _GetCONTENT_TYPE_MUSIC() = 0 ;
+	virtual int __cdecl _GetCONTENT_TYPE_VOICE() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetEFFECT_AUXILIARY() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetEFFECT_INSERT() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JUUID __cdecl _GetEFFECT_TYPE_AEC() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JUUID __cdecl _GetEFFECT_TYPE_AGC() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JUUID __cdecl _GetEFFECT_TYPE_BASS_BOOST() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JUUID __cdecl _GetEFFECT_TYPE_ENV_REVERB() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JUUID __cdecl _GetEFFECT_TYPE_EQUALIZER() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JUUID __cdecl _GetEFFECT_TYPE_LOUDNESS_ENHANCER() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JUUID __cdecl _GetEFFECT_TYPE_NS() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JUUID __cdecl _GetEFFECT_TYPE_PRESET_REVERB() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JUUID __cdecl _GetEFFECT_TYPE_VIRTUALIZER() = 0 ;
+	virtual int __cdecl _GetERROR() = 0 ;
+	virtual int __cdecl _GetERROR_BAD_VALUE() = 0 ;
+	virtual int __cdecl _GetERROR_DEAD_OBJECT() = 0 ;
+	virtual int __cdecl _GetERROR_INVALID_OPERATION() = 0 ;
+	virtual int __cdecl _GetERROR_NO_INIT() = 0 ;
+	virtual int __cdecl _GetERROR_NO_MEMORY() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetEXTRA_AUDIO_SESSION() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetEXTRA_CONTENT_TYPE() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetEXTRA_PACKAGE_NAME() = 0 ;
+	virtual int __cdecl _GetSUCCESS() = 0 ;
+	virtual Androidapi::Jnibridge::TJavaObjectArray__1<_di_JAudioEffect_Descriptor>* __cdecl queryEffects() = 0 ;
+	__property Androidapi::Jni::Javatypes::_di_JString ACTION_CLOSE_AUDIO_EFFECT_CONTROL_SESSION = {read=_GetACTION_CLOSE_AUDIO_EFFECT_CONTROL_SESSION};
+	__property Androidapi::Jni::Javatypes::_di_JString ACTION_DISPLAY_AUDIO_EFFECT_CONTROL_PANEL = {read=_GetACTION_DISPLAY_AUDIO_EFFECT_CONTROL_PANEL};
+	__property Androidapi::Jni::Javatypes::_di_JString ACTION_OPEN_AUDIO_EFFECT_CONTROL_SESSION = {read=_GetACTION_OPEN_AUDIO_EFFECT_CONTROL_SESSION};
+	__property int ALREADY_EXISTS = {read=_GetALREADY_EXISTS};
+	__property int CONTENT_TYPE_GAME = {read=_GetCONTENT_TYPE_GAME};
+	__property int CONTENT_TYPE_MOVIE = {read=_GetCONTENT_TYPE_MOVIE};
+	__property int CONTENT_TYPE_MUSIC = {read=_GetCONTENT_TYPE_MUSIC};
+	__property int CONTENT_TYPE_VOICE = {read=_GetCONTENT_TYPE_VOICE};
+	__property Androidapi::Jni::Javatypes::_di_JString EFFECT_AUXILIARY = {read=_GetEFFECT_AUXILIARY};
+	__property Androidapi::Jni::Javatypes::_di_JString EFFECT_INSERT = {read=_GetEFFECT_INSERT};
+	__property Androidapi::Jni::Javatypes::_di_JUUID EFFECT_TYPE_AEC = {read=_GetEFFECT_TYPE_AEC};
+	__property Androidapi::Jni::Javatypes::_di_JUUID EFFECT_TYPE_AGC = {read=_GetEFFECT_TYPE_AGC};
+	__property Androidapi::Jni::Javatypes::_di_JUUID EFFECT_TYPE_BASS_BOOST = {read=_GetEFFECT_TYPE_BASS_BOOST};
+	__property Androidapi::Jni::Javatypes::_di_JUUID EFFECT_TYPE_ENV_REVERB = {read=_GetEFFECT_TYPE_ENV_REVERB};
+	__property Androidapi::Jni::Javatypes::_di_JUUID EFFECT_TYPE_EQUALIZER = {read=_GetEFFECT_TYPE_EQUALIZER};
+	__property Androidapi::Jni::Javatypes::_di_JUUID EFFECT_TYPE_LOUDNESS_ENHANCER = {read=_GetEFFECT_TYPE_LOUDNESS_ENHANCER};
+	__property Androidapi::Jni::Javatypes::_di_JUUID EFFECT_TYPE_NS = {read=_GetEFFECT_TYPE_NS};
+	__property Androidapi::Jni::Javatypes::_di_JUUID EFFECT_TYPE_PRESET_REVERB = {read=_GetEFFECT_TYPE_PRESET_REVERB};
+	__property Androidapi::Jni::Javatypes::_di_JUUID EFFECT_TYPE_VIRTUALIZER = {read=_GetEFFECT_TYPE_VIRTUALIZER};
+	__property int ERROR = {read=_GetERROR};
+	__property int ERROR_BAD_VALUE = {read=_GetERROR_BAD_VALUE};
+	__property int ERROR_DEAD_OBJECT = {read=_GetERROR_DEAD_OBJECT};
+	__property int ERROR_INVALID_OPERATION = {read=_GetERROR_INVALID_OPERATION};
+	__property int ERROR_NO_INIT = {read=_GetERROR_NO_INIT};
+	__property int ERROR_NO_MEMORY = {read=_GetERROR_NO_MEMORY};
+	__property Androidapi::Jni::Javatypes::_di_JString EXTRA_AUDIO_SESSION = {read=_GetEXTRA_AUDIO_SESSION};
+	__property Androidapi::Jni::Javatypes::_di_JString EXTRA_CONTENT_TYPE = {read=_GetEXTRA_CONTENT_TYPE};
+	__property Androidapi::Jni::Javatypes::_di_JString EXTRA_PACKAGE_NAME = {read=_GetEXTRA_PACKAGE_NAME};
+	__property int SUCCESS = {read=_GetSUCCESS};
+};
+
+__interface  INTERFACE_UUID("{B494B3B3-1965-4831-9006-E22DC339A6C9}") JAudioEffect  : public Androidapi::Jni::Javatypes::JObject 
+{
+	virtual _di_JAudioEffect_Descriptor __cdecl getDescriptor() = 0 ;
+	virtual bool __cdecl getEnabled() = 0 ;
+	virtual int __cdecl getId() = 0 ;
+	virtual bool __cdecl hasControl() = 0 ;
+	virtual void __cdecl release() = 0 ;
+	virtual void __cdecl setControlStatusListener(_di_JAudioEffect_OnControlStatusChangeListener listener) = 0 ;
+	virtual void __cdecl setEnableStatusListener(_di_JAudioEffect_OnEnableStatusChangeListener listener) = 0 ;
+	virtual int __cdecl setEnabled(bool enabled) = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJAudioEffect : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JAudioEffectClass,_di_JAudioEffect>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JAudioEffectClass,_di_JAudioEffect> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJAudioEffect() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JAudioEffectClass,_di_JAudioEffect>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJAudioEffect() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{460A7A72-477C-497E-8D78-1BC0E9A71276}") JAcousticEchoCancelerClass  : public JAudioEffectClass 
+{
+	virtual _di_JAcousticEchoCanceler __cdecl create(int audioSession) = 0 ;
+	virtual bool __cdecl isAvailable() = 0 ;
+};
+
+__interface  INTERFACE_UUID("{DD17BEFF-C337-4979-A5DA-7A5B51C8BED5}") JAcousticEchoCanceler  : public JAudioEffect 
+{
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJAcousticEchoCanceler : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JAcousticEchoCancelerClass,_di_JAcousticEchoCanceler>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JAcousticEchoCancelerClass,_di_JAcousticEchoCanceler> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJAcousticEchoCanceler() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JAcousticEchoCancelerClass,_di_JAcousticEchoCanceler>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJAcousticEchoCanceler() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{9A3069D0-C184-480C-B71E-20295F8F478D}") JAudioEffect_DescriptorClass  : public Androidapi::Jni::Javatypes::JObjectClass 
+{
+	HIDESBASE virtual _di_JAudioEffect_Descriptor __cdecl init() = 0 /* overload */;
+	HIDESBASE virtual _di_JAudioEffect_Descriptor __cdecl init(Androidapi::Jni::Javatypes::_di_JString type_, Androidapi::Jni::Javatypes::_di_JString uuid, Androidapi::Jni::Javatypes::_di_JString connectMode, Androidapi::Jni::Javatypes::_di_JString name, Androidapi::Jni::Javatypes::_di_JString implementor) = 0 /* overload */;
+};
+
+__interface  INTERFACE_UUID("{51401F65-35F1-4271-88E5-9991F790D845}") JAudioEffect_Descriptor  : public Androidapi::Jni::Javatypes::JObject 
+{
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetconnectMode() = 0 ;
+	virtual void __cdecl _SetconnectMode(Androidapi::Jni::Javatypes::_di_JString Value) = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _Getimplementor() = 0 ;
+	virtual void __cdecl _Setimplementor(Androidapi::Jni::Javatypes::_di_JString Value) = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _Getname() = 0 ;
+	virtual void __cdecl _Setname(Androidapi::Jni::Javatypes::_di_JString Value) = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JUUID __cdecl _Gettype() = 0 ;
+	virtual void __cdecl _Settype(Androidapi::Jni::Javatypes::_di_JUUID Value) = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JUUID __cdecl _Getuuid() = 0 ;
+	virtual void __cdecl _Setuuid(Androidapi::Jni::Javatypes::_di_JUUID Value) = 0 ;
+	__property Androidapi::Jni::Javatypes::_di_JString connectMode = {read=_GetconnectMode, write=_SetconnectMode};
+	__property Androidapi::Jni::Javatypes::_di_JString implementor = {read=_Getimplementor, write=_Setimplementor};
+	__property Androidapi::Jni::Javatypes::_di_JString name = {read=_Getname, write=_Setname};
+	__property Androidapi::Jni::Javatypes::_di_JUUID type = {read=_Gettype, write=_Settype};
+	__property Androidapi::Jni::Javatypes::_di_JUUID uuid = {read=_Getuuid, write=_Setuuid};
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJAudioEffect_Descriptor : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JAudioEffect_DescriptorClass,_di_JAudioEffect_Descriptor>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JAudioEffect_DescriptorClass,_di_JAudioEffect_Descriptor> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJAudioEffect_Descriptor() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JAudioEffect_DescriptorClass,_di_JAudioEffect_Descriptor>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJAudioEffect_Descriptor() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{77DA1E79-25E0-48F3-B55B-9D716AE5D500}") JAudioEffect_OnControlStatusChangeListenerClass  : public Androidapi::Jnibridge::IJavaClass 
+{
+	
+};
+
+__interface  INTERFACE_UUID("{C3C4A416-A600-46BB-8710-0FCFEFA42076}") JAudioEffect_OnControlStatusChangeListener  : public Androidapi::Jnibridge::IJavaInstance 
+{
+	virtual void __cdecl onControlStatusChange(_di_JAudioEffect effect, bool controlGranted) = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJAudioEffect_OnControlStatusChangeListener : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JAudioEffect_OnControlStatusChangeListenerClass,_di_JAudioEffect_OnControlStatusChangeListener>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JAudioEffect_OnControlStatusChangeListenerClass,_di_JAudioEffect_OnControlStatusChangeListener> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJAudioEffect_OnControlStatusChangeListener() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JAudioEffect_OnControlStatusChangeListenerClass,_di_JAudioEffect_OnControlStatusChangeListener>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJAudioEffect_OnControlStatusChangeListener() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{98D458F7-D2B6-412A-BE43-6825ACA42EA8}") JAudioEffect_OnEnableStatusChangeListenerClass  : public Androidapi::Jnibridge::IJavaClass 
+{
+	
+};
+
+__interface  INTERFACE_UUID("{F2A3F549-058B-4354-A8B2-508B65EC88AF}") JAudioEffect_OnEnableStatusChangeListener  : public Androidapi::Jnibridge::IJavaInstance 
+{
+	virtual void __cdecl onEnableStatusChange(_di_JAudioEffect effect, bool enabled) = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJAudioEffect_OnEnableStatusChangeListener : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JAudioEffect_OnEnableStatusChangeListenerClass,_di_JAudioEffect_OnEnableStatusChangeListener>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JAudioEffect_OnEnableStatusChangeListenerClass,_di_JAudioEffect_OnEnableStatusChangeListener> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJAudioEffect_OnEnableStatusChangeListener() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JAudioEffect_OnEnableStatusChangeListenerClass,_di_JAudioEffect_OnEnableStatusChangeListener>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJAudioEffect_OnEnableStatusChangeListener() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{D3C90786-5E89-4FF8-8D7E-9E79A05CBB6A}") JAutomaticGainControlClass  : public JAudioEffectClass 
+{
+	virtual _di_JAutomaticGainControl __cdecl create(int audioSession) = 0 ;
+	virtual bool __cdecl isAvailable() = 0 ;
+};
+
+__interface  INTERFACE_UUID("{36F93C00-2A45-4AD0-B880-F79B56FE4096}") JAutomaticGainControl  : public JAudioEffect 
+{
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJAutomaticGainControl : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JAutomaticGainControlClass,_di_JAutomaticGainControl>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JAutomaticGainControlClass,_di_JAutomaticGainControl> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJAutomaticGainControl() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JAutomaticGainControlClass,_di_JAutomaticGainControl>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJAutomaticGainControl() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{A209500F-399B-4AD4-B8BB-7D8E574B745E}") JBassBoostClass  : public JAudioEffectClass 
+{
+	virtual int __cdecl _GetPARAM_STRENGTH() = 0 ;
+	virtual int __cdecl _GetPARAM_STRENGTH_SUPPORTED() = 0 ;
+	HIDESBASE virtual _di_JBassBoost __cdecl init(int priority, int audioSession) = 0 ;
+	__property int PARAM_STRENGTH = {read=_GetPARAM_STRENGTH};
+	__property int PARAM_STRENGTH_SUPPORTED = {read=_GetPARAM_STRENGTH_SUPPORTED};
+};
+
+__interface  INTERFACE_UUID("{38228576-3D9D-42B1-82AD-30EA32654FDD}") JBassBoost  : public JAudioEffect 
+{
+	virtual _di_JBassBoost_Settings __cdecl getProperties() = 0 ;
+	virtual short __cdecl getRoundedStrength() = 0 ;
+	virtual bool __cdecl getStrengthSupported() = 0 ;
+	virtual void __cdecl setParameterListener(_di_JBassBoost_OnParameterChangeListener listener) = 0 ;
+	virtual void __cdecl setProperties(_di_JBassBoost_Settings settings) = 0 ;
+	virtual void __cdecl setStrength(short strength) = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJBassBoost : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JBassBoostClass,_di_JBassBoost>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JBassBoostClass,_di_JBassBoost> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJBassBoost() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JBassBoostClass,_di_JBassBoost>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJBassBoost() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{BFF4F1F8-5F21-47A9-BBB5-3EEE6066B689}") JBassBoost_OnParameterChangeListenerClass  : public Androidapi::Jnibridge::IJavaClass 
+{
+	
+};
+
+__interface  INTERFACE_UUID("{CF34C515-408C-4ED9-8D9A-C1F73EA0CDAB}") JBassBoost_OnParameterChangeListener  : public Androidapi::Jnibridge::IJavaInstance 
+{
+	virtual void __cdecl onParameterChange(_di_JBassBoost effect, int status, int param, short value) = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJBassBoost_OnParameterChangeListener : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JBassBoost_OnParameterChangeListenerClass,_di_JBassBoost_OnParameterChangeListener>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JBassBoost_OnParameterChangeListenerClass,_di_JBassBoost_OnParameterChangeListener> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJBassBoost_OnParameterChangeListener() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JBassBoost_OnParameterChangeListenerClass,_di_JBassBoost_OnParameterChangeListener>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJBassBoost_OnParameterChangeListener() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{16961C98-3B24-451A-A990-83E334394621}") JBassBoost_SettingsClass  : public Androidapi::Jni::Javatypes::JObjectClass 
+{
+	HIDESBASE virtual _di_JBassBoost_Settings __cdecl init() = 0 /* overload */;
+	HIDESBASE virtual _di_JBassBoost_Settings __cdecl init(Androidapi::Jni::Javatypes::_di_JString settings) = 0 /* overload */;
+};
+
+__interface  INTERFACE_UUID("{126672AC-6E3E-4118-85C0-52A19083384F}") JBassBoost_Settings  : public Androidapi::Jni::Javatypes::JObject 
+{
+	virtual short __cdecl _Getstrength() = 0 ;
+	virtual void __cdecl _Setstrength(short Value) = 0 ;
+	HIDESBASE virtual Androidapi::Jni::Javatypes::_di_JString __cdecl toString() = 0 ;
+	__property short strength = {read=_Getstrength, write=_Setstrength};
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJBassBoost_Settings : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JBassBoost_SettingsClass,_di_JBassBoost_Settings>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JBassBoost_SettingsClass,_di_JBassBoost_Settings> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJBassBoost_Settings() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JBassBoost_SettingsClass,_di_JBassBoost_Settings>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJBassBoost_Settings() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{6BDA0E80-3384-4B98-8145-F15D5728C3A6}") JEnvironmentalReverbClass  : public JAudioEffectClass 
+{
+	virtual int __cdecl _GetPARAM_DECAY_HF_RATIO() = 0 ;
+	virtual int __cdecl _GetPARAM_DECAY_TIME() = 0 ;
+	virtual int __cdecl _GetPARAM_DENSITY() = 0 ;
+	virtual int __cdecl _GetPARAM_DIFFUSION() = 0 ;
+	virtual int __cdecl _GetPARAM_REFLECTIONS_DELAY() = 0 ;
+	virtual int __cdecl _GetPARAM_REFLECTIONS_LEVEL() = 0 ;
+	virtual int __cdecl _GetPARAM_REVERB_DELAY() = 0 ;
+	virtual int __cdecl _GetPARAM_REVERB_LEVEL() = 0 ;
+	virtual int __cdecl _GetPARAM_ROOM_HF_LEVEL() = 0 ;
+	virtual int __cdecl _GetPARAM_ROOM_LEVEL() = 0 ;
+	HIDESBASE virtual _di_JEnvironmentalReverb __cdecl init(int priority, int audioSession) = 0 ;
+	__property int PARAM_DECAY_HF_RATIO = {read=_GetPARAM_DECAY_HF_RATIO};
+	__property int PARAM_DECAY_TIME = {read=_GetPARAM_DECAY_TIME};
+	__property int PARAM_DENSITY = {read=_GetPARAM_DENSITY};
+	__property int PARAM_DIFFUSION = {read=_GetPARAM_DIFFUSION};
+	__property int PARAM_REFLECTIONS_DELAY = {read=_GetPARAM_REFLECTIONS_DELAY};
+	__property int PARAM_REFLECTIONS_LEVEL = {read=_GetPARAM_REFLECTIONS_LEVEL};
+	__property int PARAM_REVERB_DELAY = {read=_GetPARAM_REVERB_DELAY};
+	__property int PARAM_REVERB_LEVEL = {read=_GetPARAM_REVERB_LEVEL};
+	__property int PARAM_ROOM_HF_LEVEL = {read=_GetPARAM_ROOM_HF_LEVEL};
+	__property int PARAM_ROOM_LEVEL = {read=_GetPARAM_ROOM_LEVEL};
+};
+
+__interface  INTERFACE_UUID("{94A98733-66B8-4C17-B49C-5AD18808F3DB}") JEnvironmentalReverb  : public JAudioEffect 
+{
+	virtual short __cdecl getDecayHFRatio() = 0 ;
+	virtual int __cdecl getDecayTime() = 0 ;
+	virtual short __cdecl getDensity() = 0 ;
+	virtual short __cdecl getDiffusion() = 0 ;
+	virtual _di_JEnvironmentalReverb_Settings __cdecl getProperties() = 0 ;
+	virtual int __cdecl getReflectionsDelay() = 0 ;
+	virtual short __cdecl getReflectionsLevel() = 0 ;
+	virtual int __cdecl getReverbDelay() = 0 ;
+	virtual short __cdecl getReverbLevel() = 0 ;
+	virtual short __cdecl getRoomHFLevel() = 0 ;
+	virtual short __cdecl getRoomLevel() = 0 ;
+	virtual void __cdecl setDecayHFRatio(short decayHFRatio) = 0 ;
+	virtual void __cdecl setDecayTime(int decayTime) = 0 ;
+	virtual void __cdecl setDensity(short density) = 0 ;
+	virtual void __cdecl setDiffusion(short diffusion) = 0 ;
+	virtual void __cdecl setParameterListener(_di_JEnvironmentalReverb_OnParameterChangeListener listener) = 0 ;
+	virtual void __cdecl setProperties(_di_JEnvironmentalReverb_Settings settings) = 0 ;
+	virtual void __cdecl setReflectionsDelay(int reflectionsDelay) = 0 ;
+	virtual void __cdecl setReflectionsLevel(short reflectionsLevel) = 0 ;
+	virtual void __cdecl setReverbDelay(int reverbDelay) = 0 ;
+	virtual void __cdecl setReverbLevel(short reverbLevel) = 0 ;
+	virtual void __cdecl setRoomHFLevel(short roomHF) = 0 ;
+	virtual void __cdecl setRoomLevel(short room) = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJEnvironmentalReverb : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JEnvironmentalReverbClass,_di_JEnvironmentalReverb>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JEnvironmentalReverbClass,_di_JEnvironmentalReverb> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJEnvironmentalReverb() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JEnvironmentalReverbClass,_di_JEnvironmentalReverb>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJEnvironmentalReverb() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{51B7A404-EFBC-402C-AEA7-59B0E9ADABEE}") JEnvironmentalReverb_OnParameterChangeListenerClass  : public Androidapi::Jnibridge::IJavaClass 
+{
+	
+};
+
+__interface  INTERFACE_UUID("{2D4E8354-BD92-4AC9-8907-0B63369AA1CF}") JEnvironmentalReverb_OnParameterChangeListener  : public Androidapi::Jnibridge::IJavaInstance 
+{
+	virtual void __cdecl onParameterChange(_di_JEnvironmentalReverb effect, int status, int param, int value) = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJEnvironmentalReverb_OnParameterChangeListener : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JEnvironmentalReverb_OnParameterChangeListenerClass,_di_JEnvironmentalReverb_OnParameterChangeListener>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JEnvironmentalReverb_OnParameterChangeListenerClass,_di_JEnvironmentalReverb_OnParameterChangeListener> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJEnvironmentalReverb_OnParameterChangeListener() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JEnvironmentalReverb_OnParameterChangeListenerClass,_di_JEnvironmentalReverb_OnParameterChangeListener>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJEnvironmentalReverb_OnParameterChangeListener() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{552A5CB8-6E2A-4F05-ABCB-0C4947BADB69}") JEnvironmentalReverb_SettingsClass  : public Androidapi::Jni::Javatypes::JObjectClass 
+{
+	HIDESBASE virtual _di_JEnvironmentalReverb_Settings __cdecl init() = 0 /* overload */;
+	HIDESBASE virtual _di_JEnvironmentalReverb_Settings __cdecl init(Androidapi::Jni::Javatypes::_di_JString settings) = 0 /* overload */;
+};
+
+__interface  INTERFACE_UUID("{8456E091-3040-4D39-A819-68433D6B5C08}") JEnvironmentalReverb_Settings  : public Androidapi::Jni::Javatypes::JObject 
+{
+	virtual short __cdecl _GetdecayHFRatio() = 0 ;
+	virtual void __cdecl _SetdecayHFRatio(short Value) = 0 ;
+	virtual int __cdecl _GetdecayTime() = 0 ;
+	virtual void __cdecl _SetdecayTime(int Value) = 0 ;
+	virtual short __cdecl _Getdensity() = 0 ;
+	virtual void __cdecl _Setdensity(short Value) = 0 ;
+	virtual short __cdecl _Getdiffusion() = 0 ;
+	virtual void __cdecl _Setdiffusion(short Value) = 0 ;
+	virtual int __cdecl _GetreflectionsDelay() = 0 ;
+	virtual void __cdecl _SetreflectionsDelay(int Value) = 0 ;
+	virtual short __cdecl _GetreflectionsLevel() = 0 ;
+	virtual void __cdecl _SetreflectionsLevel(short Value) = 0 ;
+	virtual int __cdecl _GetreverbDelay() = 0 ;
+	virtual void __cdecl _SetreverbDelay(int Value) = 0 ;
+	virtual short __cdecl _GetreverbLevel() = 0 ;
+	virtual void __cdecl _SetreverbLevel(short Value) = 0 ;
+	virtual short __cdecl _GetroomHFLevel() = 0 ;
+	virtual void __cdecl _SetroomHFLevel(short Value) = 0 ;
+	virtual short __cdecl _GetroomLevel() = 0 ;
+	virtual void __cdecl _SetroomLevel(short Value) = 0 ;
+	HIDESBASE virtual Androidapi::Jni::Javatypes::_di_JString __cdecl toString() = 0 ;
+	__property short decayHFRatio = {read=_GetdecayHFRatio, write=_SetdecayHFRatio};
+	__property int decayTime = {read=_GetdecayTime, write=_SetdecayTime};
+	__property short density = {read=_Getdensity, write=_Setdensity};
+	__property short diffusion = {read=_Getdiffusion, write=_Setdiffusion};
+	__property int reflectionsDelay = {read=_GetreflectionsDelay, write=_SetreflectionsDelay};
+	__property short reflectionsLevel = {read=_GetreflectionsLevel, write=_SetreflectionsLevel};
+	__property int reverbDelay = {read=_GetreverbDelay, write=_SetreverbDelay};
+	__property short reverbLevel = {read=_GetreverbLevel, write=_SetreverbLevel};
+	__property short roomHFLevel = {read=_GetroomHFLevel, write=_SetroomHFLevel};
+	__property short roomLevel = {read=_GetroomLevel, write=_SetroomLevel};
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJEnvironmentalReverb_Settings : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JEnvironmentalReverb_SettingsClass,_di_JEnvironmentalReverb_Settings>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JEnvironmentalReverb_SettingsClass,_di_JEnvironmentalReverb_Settings> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJEnvironmentalReverb_Settings() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JEnvironmentalReverb_SettingsClass,_di_JEnvironmentalReverb_Settings>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJEnvironmentalReverb_Settings() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{C4A093C1-0B55-4362-850E-FD34701A91F6}") JEqualizerClass  : public JAudioEffectClass 
+{
+	virtual int __cdecl _GetPARAM_BAND_FREQ_RANGE() = 0 ;
+	virtual int __cdecl _GetPARAM_BAND_LEVEL() = 0 ;
+	virtual int __cdecl _GetPARAM_CENTER_FREQ() = 0 ;
+	virtual int __cdecl _GetPARAM_CURRENT_PRESET() = 0 ;
+	virtual int __cdecl _GetPARAM_GET_BAND() = 0 ;
+	virtual int __cdecl _GetPARAM_GET_NUM_OF_PRESETS() = 0 ;
+	virtual int __cdecl _GetPARAM_GET_PRESET_NAME() = 0 ;
+	virtual int __cdecl _GetPARAM_LEVEL_RANGE() = 0 ;
+	virtual int __cdecl _GetPARAM_NUM_BANDS() = 0 ;
+	virtual int __cdecl _GetPARAM_STRING_SIZE_MAX() = 0 ;
+	HIDESBASE virtual _di_JEqualizer __cdecl init(int priority, int audioSession) = 0 ;
+	__property int PARAM_BAND_FREQ_RANGE = {read=_GetPARAM_BAND_FREQ_RANGE};
+	__property int PARAM_BAND_LEVEL = {read=_GetPARAM_BAND_LEVEL};
+	__property int PARAM_CENTER_FREQ = {read=_GetPARAM_CENTER_FREQ};
+	__property int PARAM_CURRENT_PRESET = {read=_GetPARAM_CURRENT_PRESET};
+	__property int PARAM_GET_BAND = {read=_GetPARAM_GET_BAND};
+	__property int PARAM_GET_NUM_OF_PRESETS = {read=_GetPARAM_GET_NUM_OF_PRESETS};
+	__property int PARAM_GET_PRESET_NAME = {read=_GetPARAM_GET_PRESET_NAME};
+	__property int PARAM_LEVEL_RANGE = {read=_GetPARAM_LEVEL_RANGE};
+	__property int PARAM_NUM_BANDS = {read=_GetPARAM_NUM_BANDS};
+	__property int PARAM_STRING_SIZE_MAX = {read=_GetPARAM_STRING_SIZE_MAX};
+};
+
+__interface  INTERFACE_UUID("{AFA7DCA7-C3EA-4D50-811D-1788E9648023}") JEqualizer  : public JAudioEffect 
+{
+	virtual short __cdecl getBand(int frequency) = 0 ;
+	virtual Androidapi::Jnibridge::TJavaArray__1<int>* __cdecl getBandFreqRange(short band) = 0 ;
+	virtual short __cdecl getBandLevel(short band) = 0 ;
+	virtual Androidapi::Jnibridge::TJavaArray__1<short>* __cdecl getBandLevelRange() = 0 ;
+	virtual int __cdecl getCenterFreq(short band) = 0 ;
+	virtual short __cdecl getCurrentPreset() = 0 ;
+	virtual short __cdecl getNumberOfBands() = 0 ;
+	virtual short __cdecl getNumberOfPresets() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl getPresetName(short preset) = 0 ;
+	virtual _di_JEqualizer_Settings __cdecl getProperties() = 0 ;
+	virtual void __cdecl setBandLevel(short band, short level) = 0 ;
+	virtual void __cdecl setParameterListener(_di_JEqualizer_OnParameterChangeListener listener) = 0 ;
+	virtual void __cdecl setProperties(_di_JEqualizer_Settings settings) = 0 ;
+	virtual void __cdecl usePreset(short preset) = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJEqualizer : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JEqualizerClass,_di_JEqualizer>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JEqualizerClass,_di_JEqualizer> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJEqualizer() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JEqualizerClass,_di_JEqualizer>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJEqualizer() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{E9CD9590-C15D-4BF5-8EC8-0459C90DF626}") JEqualizer_OnParameterChangeListenerClass  : public Androidapi::Jnibridge::IJavaClass 
+{
+	
+};
+
+__interface  INTERFACE_UUID("{9C53A56E-58B3-477F-8B7A-40972ADDBC15}") JEqualizer_OnParameterChangeListener  : public Androidapi::Jnibridge::IJavaInstance 
+{
+	virtual void __cdecl onParameterChange(_di_JEqualizer effect, int status, int param1, int param2, int value) = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJEqualizer_OnParameterChangeListener : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JEqualizer_OnParameterChangeListenerClass,_di_JEqualizer_OnParameterChangeListener>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JEqualizer_OnParameterChangeListenerClass,_di_JEqualizer_OnParameterChangeListener> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJEqualizer_OnParameterChangeListener() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JEqualizer_OnParameterChangeListenerClass,_di_JEqualizer_OnParameterChangeListener>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJEqualizer_OnParameterChangeListener() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{23304420-D186-451A-B6DC-5846218AA62D}") JEqualizer_SettingsClass  : public Androidapi::Jni::Javatypes::JObjectClass 
+{
+	HIDESBASE virtual _di_JEqualizer_Settings __cdecl init() = 0 /* overload */;
+	HIDESBASE virtual _di_JEqualizer_Settings __cdecl init(Androidapi::Jni::Javatypes::_di_JString settings) = 0 /* overload */;
+};
+
+__interface  INTERFACE_UUID("{F4F67A0D-3F81-4AE7-80BE-21154E40D5A1}") JEqualizer_Settings  : public Androidapi::Jni::Javatypes::JObject 
+{
+	virtual Androidapi::Jnibridge::TJavaArray__1<short>* __cdecl _GetbandLevels() = 0 ;
+	virtual void __cdecl _SetbandLevels(Androidapi::Jnibridge::TJavaArray__1<short>* Value) = 0 ;
+	virtual short __cdecl _GetcurPreset() = 0 ;
+	virtual void __cdecl _SetcurPreset(short Value) = 0 ;
+	virtual short __cdecl _GetnumBands() = 0 ;
+	virtual void __cdecl _SetnumBands(short Value) = 0 ;
+	HIDESBASE virtual Androidapi::Jni::Javatypes::_di_JString __cdecl toString() = 0 ;
+	__property Androidapi::Jnibridge::TJavaArray__1<short>* bandLevels = {read=_GetbandLevels, write=_SetbandLevels};
+	__property short curPreset = {read=_GetcurPreset, write=_SetcurPreset};
+	__property short numBands = {read=_GetnumBands, write=_SetnumBands};
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJEqualizer_Settings : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JEqualizer_SettingsClass,_di_JEqualizer_Settings>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JEqualizer_SettingsClass,_di_JEqualizer_Settings> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJEqualizer_Settings() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JEqualizer_SettingsClass,_di_JEqualizer_Settings>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJEqualizer_Settings() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{0E17F2B9-AEFE-48A2-B880-85E8DF6022B1}") JLoudnessEnhancerClass  : public JAudioEffectClass 
+{
+	virtual int __cdecl _GetPARAM_TARGET_GAIN_MB() = 0 ;
+	HIDESBASE virtual _di_JLoudnessEnhancer __cdecl init(int audioSession) = 0 ;
+	__property int PARAM_TARGET_GAIN_MB = {read=_GetPARAM_TARGET_GAIN_MB};
+};
+
+__interface  INTERFACE_UUID("{F3CFDC54-299C-4774-B4F1-BD348CA08827}") JLoudnessEnhancer  : public JAudioEffect 
+{
+	virtual float __cdecl getTargetGain() = 0 ;
+	virtual void __cdecl setTargetGain(int gainmB) = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJLoudnessEnhancer : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JLoudnessEnhancerClass,_di_JLoudnessEnhancer>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JLoudnessEnhancerClass,_di_JLoudnessEnhancer> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJLoudnessEnhancer() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JLoudnessEnhancerClass,_di_JLoudnessEnhancer>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJLoudnessEnhancer() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{F7824EA5-778F-46DC-8D0C-FB914FE0B3AA}") JNoiseSuppressorClass  : public JAudioEffectClass 
+{
+	virtual _di_JNoiseSuppressor __cdecl create(int audioSession) = 0 ;
+	virtual bool __cdecl isAvailable() = 0 ;
+};
+
+__interface  INTERFACE_UUID("{2B24295A-1361-400E-9ECF-75B5A696A150}") JNoiseSuppressor  : public JAudioEffect 
+{
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJNoiseSuppressor : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JNoiseSuppressorClass,_di_JNoiseSuppressor>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JNoiseSuppressorClass,_di_JNoiseSuppressor> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJNoiseSuppressor() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JNoiseSuppressorClass,_di_JNoiseSuppressor>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJNoiseSuppressor() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{E6BDD7E1-087C-4BEF-BBCC-001619236297}") JPresetReverbClass  : public JAudioEffectClass 
+{
+	virtual int __cdecl _GetPARAM_PRESET() = 0 ;
+	virtual short __cdecl _GetPRESET_LARGEHALL() = 0 ;
+	virtual short __cdecl _GetPRESET_LARGEROOM() = 0 ;
+	virtual short __cdecl _GetPRESET_MEDIUMHALL() = 0 ;
+	virtual short __cdecl _GetPRESET_MEDIUMROOM() = 0 ;
+	virtual short __cdecl _GetPRESET_NONE() = 0 ;
+	virtual short __cdecl _GetPRESET_PLATE() = 0 ;
+	virtual short __cdecl _GetPRESET_SMALLROOM() = 0 ;
+	HIDESBASE virtual _di_JPresetReverb __cdecl init(int priority, int audioSession) = 0 ;
+	__property int PARAM_PRESET = {read=_GetPARAM_PRESET};
+	__property short PRESET_LARGEHALL = {read=_GetPRESET_LARGEHALL};
+	__property short PRESET_LARGEROOM = {read=_GetPRESET_LARGEROOM};
+	__property short PRESET_MEDIUMHALL = {read=_GetPRESET_MEDIUMHALL};
+	__property short PRESET_MEDIUMROOM = {read=_GetPRESET_MEDIUMROOM};
+	__property short PRESET_NONE = {read=_GetPRESET_NONE};
+	__property short PRESET_PLATE = {read=_GetPRESET_PLATE};
+	__property short PRESET_SMALLROOM = {read=_GetPRESET_SMALLROOM};
+};
+
+__interface  INTERFACE_UUID("{86BA2002-A4F4-4B7F-8EB0-9DE5F08D9893}") JPresetReverb  : public JAudioEffect 
+{
+	virtual short __cdecl getPreset() = 0 ;
+	virtual _di_JPresetReverb_Settings __cdecl getProperties() = 0 ;
+	virtual void __cdecl setParameterListener(_di_JPresetReverb_OnParameterChangeListener listener) = 0 ;
+	virtual void __cdecl setPreset(short preset) = 0 ;
+	virtual void __cdecl setProperties(_di_JPresetReverb_Settings settings) = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJPresetReverb : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JPresetReverbClass,_di_JPresetReverb>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JPresetReverbClass,_di_JPresetReverb> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJPresetReverb() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JPresetReverbClass,_di_JPresetReverb>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJPresetReverb() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{CF4131D1-77D9-444D-B8B5-FD871FF14C33}") JPresetReverb_OnParameterChangeListenerClass  : public Androidapi::Jnibridge::IJavaClass 
+{
+	
+};
+
+__interface  INTERFACE_UUID("{737B2E06-FD75-46B4-938E-E8DD6530E263}") JPresetReverb_OnParameterChangeListener  : public Androidapi::Jnibridge::IJavaInstance 
+{
+	virtual void __cdecl onParameterChange(_di_JPresetReverb effect, int status, int param, short value) = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJPresetReverb_OnParameterChangeListener : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JPresetReverb_OnParameterChangeListenerClass,_di_JPresetReverb_OnParameterChangeListener>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JPresetReverb_OnParameterChangeListenerClass,_di_JPresetReverb_OnParameterChangeListener> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJPresetReverb_OnParameterChangeListener() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JPresetReverb_OnParameterChangeListenerClass,_di_JPresetReverb_OnParameterChangeListener>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJPresetReverb_OnParameterChangeListener() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{DF5566DC-55CD-4C26-9AB8-520F698491CC}") JPresetReverb_SettingsClass  : public Androidapi::Jni::Javatypes::JObjectClass 
+{
+	HIDESBASE virtual _di_JPresetReverb_Settings __cdecl init() = 0 /* overload */;
+	HIDESBASE virtual _di_JPresetReverb_Settings __cdecl init(Androidapi::Jni::Javatypes::_di_JString settings) = 0 /* overload */;
+};
+
+__interface  INTERFACE_UUID("{F57B0B89-4CDE-451E-BF10-43518B99BB08}") JPresetReverb_Settings  : public Androidapi::Jni::Javatypes::JObject 
+{
+	virtual short __cdecl _Getpreset() = 0 ;
+	virtual void __cdecl _Setpreset(short Value) = 0 ;
+	HIDESBASE virtual Androidapi::Jni::Javatypes::_di_JString __cdecl toString() = 0 ;
+	__property short preset = {read=_Getpreset, write=_Setpreset};
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJPresetReverb_Settings : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JPresetReverb_SettingsClass,_di_JPresetReverb_Settings>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JPresetReverb_SettingsClass,_di_JPresetReverb_Settings> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJPresetReverb_Settings() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JPresetReverb_SettingsClass,_di_JPresetReverb_Settings>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJPresetReverb_Settings() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{FD870DEA-E35B-48C4-B8D9-FFFEC73F5AEC}") JVirtualizerClass  : public JAudioEffectClass 
+{
+	virtual int __cdecl _GetPARAM_STRENGTH() = 0 ;
+	virtual int __cdecl _GetPARAM_STRENGTH_SUPPORTED() = 0 ;
+	virtual int __cdecl _GetVIRTUALIZATION_MODE_AUTO() = 0 ;
+	virtual int __cdecl _GetVIRTUALIZATION_MODE_BINAURAL() = 0 ;
+	virtual int __cdecl _GetVIRTUALIZATION_MODE_OFF() = 0 ;
+	virtual int __cdecl _GetVIRTUALIZATION_MODE_TRANSAURAL() = 0 ;
+	HIDESBASE virtual _di_JVirtualizer __cdecl init(int priority, int audioSession) = 0 ;
+	__property int PARAM_STRENGTH = {read=_GetPARAM_STRENGTH};
+	__property int PARAM_STRENGTH_SUPPORTED = {read=_GetPARAM_STRENGTH_SUPPORTED};
+	__property int VIRTUALIZATION_MODE_AUTO = {read=_GetVIRTUALIZATION_MODE_AUTO};
+	__property int VIRTUALIZATION_MODE_BINAURAL = {read=_GetVIRTUALIZATION_MODE_BINAURAL};
+	__property int VIRTUALIZATION_MODE_OFF = {read=_GetVIRTUALIZATION_MODE_OFF};
+	__property int VIRTUALIZATION_MODE_TRANSAURAL = {read=_GetVIRTUALIZATION_MODE_TRANSAURAL};
+};
+
+__interface  INTERFACE_UUID("{29728474-34B6-43F2-8D30-D42C4D3C1B9D}") JVirtualizer  : public JAudioEffect 
+{
+	virtual bool __cdecl canVirtualize(int inputChannelMask, int virtualizationMode) = 0 ;
+	virtual bool __cdecl forceVirtualizationMode(int virtualizationMode) = 0 ;
+	virtual _di_JVirtualizer_Settings __cdecl getProperties() = 0 ;
+	virtual short __cdecl getRoundedStrength() = 0 ;
+	virtual bool __cdecl getSpeakerAngles(int inputChannelMask, int virtualizationMode, Androidapi::Jnibridge::TJavaArray__1<int>* angles) = 0 ;
+	virtual bool __cdecl getStrengthSupported() = 0 ;
+	virtual int __cdecl getVirtualizationMode() = 0 ;
+	virtual void __cdecl setParameterListener(_di_JVirtualizer_OnParameterChangeListener listener) = 0 ;
+	virtual void __cdecl setProperties(_di_JVirtualizer_Settings settings) = 0 ;
+	virtual void __cdecl setStrength(short strength) = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJVirtualizer : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JVirtualizerClass,_di_JVirtualizer>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JVirtualizerClass,_di_JVirtualizer> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJVirtualizer() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JVirtualizerClass,_di_JVirtualizer>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJVirtualizer() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{0B91AE60-FB61-4425-BC9E-E025BB1AB698}") JVirtualizer_OnParameterChangeListenerClass  : public Androidapi::Jnibridge::IJavaClass 
+{
+	
+};
+
+__interface  INTERFACE_UUID("{B1BC6069-30E3-40E7-937C-AE8A51C12405}") JVirtualizer_OnParameterChangeListener  : public Androidapi::Jnibridge::IJavaInstance 
+{
+	virtual void __cdecl onParameterChange(_di_JVirtualizer effect, int status, int param, short value) = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJVirtualizer_OnParameterChangeListener : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JVirtualizer_OnParameterChangeListenerClass,_di_JVirtualizer_OnParameterChangeListener>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JVirtualizer_OnParameterChangeListenerClass,_di_JVirtualizer_OnParameterChangeListener> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJVirtualizer_OnParameterChangeListener() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JVirtualizer_OnParameterChangeListenerClass,_di_JVirtualizer_OnParameterChangeListener>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJVirtualizer_OnParameterChangeListener() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{B9BC83BF-D598-46EB-985D-C2155AF80A53}") JVirtualizer_SettingsClass  : public Androidapi::Jni::Javatypes::JObjectClass 
+{
+	HIDESBASE virtual _di_JVirtualizer_Settings __cdecl init() = 0 /* overload */;
+	HIDESBASE virtual _di_JVirtualizer_Settings __cdecl init(Androidapi::Jni::Javatypes::_di_JString settings) = 0 /* overload */;
+};
+
+__interface  INTERFACE_UUID("{664E4688-59A7-42AC-B5D0-A63571A56A5A}") JVirtualizer_Settings  : public Androidapi::Jni::Javatypes::JObject 
+{
+	virtual short __cdecl _Getstrength() = 0 ;
+	virtual void __cdecl _Setstrength(short Value) = 0 ;
+	HIDESBASE virtual Androidapi::Jni::Javatypes::_di_JString __cdecl toString() = 0 ;
+	__property short strength = {read=_Getstrength, write=_Setstrength};
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJVirtualizer_Settings : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JVirtualizer_SettingsClass,_di_JVirtualizer_Settings>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JVirtualizer_SettingsClass,_di_JVirtualizer_Settings> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJVirtualizer_Settings() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JVirtualizer_SettingsClass,_di_JVirtualizer_Settings>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJVirtualizer_Settings() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{8DBB66F3-CE56-4034-8FCA-1D4D88599192}") JVisualizerClass  : public Androidapi::Jni::Javatypes::JObjectClass 
+{
+	virtual int __cdecl _GetALREADY_EXISTS() = 0 ;
+	virtual int __cdecl _GetERROR() = 0 ;
+	virtual int __cdecl _GetERROR_BAD_VALUE() = 0 ;
+	virtual int __cdecl _GetERROR_DEAD_OBJECT() = 0 ;
+	virtual int __cdecl _GetERROR_INVALID_OPERATION() = 0 ;
+	virtual int __cdecl _GetERROR_NO_INIT() = 0 ;
+	virtual int __cdecl _GetERROR_NO_MEMORY() = 0 ;
+	virtual int __cdecl _GetMEASUREMENT_MODE_NONE() = 0 ;
+	virtual int __cdecl _GetMEASUREMENT_MODE_PEAK_RMS() = 0 ;
+	virtual int __cdecl _GetSCALING_MODE_AS_PLAYED() = 0 ;
+	virtual int __cdecl _GetSCALING_MODE_NORMALIZED() = 0 ;
+	virtual int __cdecl _GetSTATE_ENABLED() = 0 ;
+	virtual int __cdecl _GetSTATE_INITIALIZED() = 0 ;
+	virtual int __cdecl _GetSTATE_UNINITIALIZED() = 0 ;
+	virtual int __cdecl _GetSUCCESS() = 0 ;
+	HIDESBASE virtual _di_JVisualizer __cdecl init(int audioSession) = 0 ;
+	virtual Androidapi::Jnibridge::TJavaArray__1<int>* __cdecl getCaptureSizeRange() = 0 ;
+	virtual int __cdecl getMaxCaptureRate() = 0 ;
+	__property int ALREADY_EXISTS = {read=_GetALREADY_EXISTS};
+	__property int ERROR = {read=_GetERROR};
+	__property int ERROR_BAD_VALUE = {read=_GetERROR_BAD_VALUE};
+	__property int ERROR_DEAD_OBJECT = {read=_GetERROR_DEAD_OBJECT};
+	__property int ERROR_INVALID_OPERATION = {read=_GetERROR_INVALID_OPERATION};
+	__property int ERROR_NO_INIT = {read=_GetERROR_NO_INIT};
+	__property int ERROR_NO_MEMORY = {read=_GetERROR_NO_MEMORY};
+	__property int MEASUREMENT_MODE_NONE = {read=_GetMEASUREMENT_MODE_NONE};
+	__property int MEASUREMENT_MODE_PEAK_RMS = {read=_GetMEASUREMENT_MODE_PEAK_RMS};
+	__property int SCALING_MODE_AS_PLAYED = {read=_GetSCALING_MODE_AS_PLAYED};
+	__property int SCALING_MODE_NORMALIZED = {read=_GetSCALING_MODE_NORMALIZED};
+	__property int STATE_ENABLED = {read=_GetSTATE_ENABLED};
+	__property int STATE_INITIALIZED = {read=_GetSTATE_INITIALIZED};
+	__property int STATE_UNINITIALIZED = {read=_GetSTATE_UNINITIALIZED};
+	__property int SUCCESS = {read=_GetSUCCESS};
+};
+
+__interface  INTERFACE_UUID("{6796AEB3-D2B1-4840-9182-92C09375E8E6}") JVisualizer  : public Androidapi::Jni::Javatypes::JObject 
+{
+	virtual int __cdecl getCaptureSize() = 0 ;
+	virtual bool __cdecl getEnabled() = 0 ;
+	virtual int __cdecl getFft(Androidapi::Jnibridge::TJavaArray__1<System::Byte>* fft) = 0 ;
+	virtual int __cdecl getMeasurementMode() = 0 ;
+	virtual int __cdecl getMeasurementPeakRms(_di_JVisualizer_MeasurementPeakRms measurement) = 0 ;
+	virtual int __cdecl getSamplingRate() = 0 ;
+	virtual int __cdecl getScalingMode() = 0 ;
+	virtual int __cdecl getWaveForm(Androidapi::Jnibridge::TJavaArray__1<System::Byte>* waveform) = 0 ;
+	virtual void __cdecl release() = 0 ;
+	virtual int __cdecl setCaptureSize(int size) = 0 ;
+	virtual int __cdecl setDataCaptureListener(_di_JVisualizer_OnDataCaptureListener listener, int rate, bool waveform, bool fft) = 0 ;
+	virtual int __cdecl setEnabled(bool enabled) = 0 ;
+	virtual int __cdecl setMeasurementMode(int mode) = 0 ;
+	virtual int __cdecl setScalingMode(int mode) = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJVisualizer : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JVisualizerClass,_di_JVisualizer>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JVisualizerClass,_di_JVisualizer> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJVisualizer() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JVisualizerClass,_di_JVisualizer>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJVisualizer() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{341FCA1D-109E-4A2D-8D12-3EC49D2BAD41}") JVisualizer_MeasurementPeakRmsClass  : public Androidapi::Jni::Javatypes::JObjectClass 
+{
+	HIDESBASE virtual _di_JVisualizer_MeasurementPeakRms __cdecl init() = 0 ;
+};
+
+__interface  INTERFACE_UUID("{D76E370A-7352-414D-B880-5E4F6BF28DE4}") JVisualizer_MeasurementPeakRms  : public Androidapi::Jni::Javatypes::JObject 
+{
+	virtual int __cdecl _GetmPeak() = 0 ;
+	virtual void __cdecl _SetmPeak(int Value) = 0 ;
+	virtual int __cdecl _GetmRms() = 0 ;
+	virtual void __cdecl _SetmRms(int Value) = 0 ;
+	__property int mPeak = {read=_GetmPeak, write=_SetmPeak};
+	__property int mRms = {read=_GetmRms, write=_SetmRms};
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJVisualizer_MeasurementPeakRms : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JVisualizer_MeasurementPeakRmsClass,_di_JVisualizer_MeasurementPeakRms>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JVisualizer_MeasurementPeakRmsClass,_di_JVisualizer_MeasurementPeakRms> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJVisualizer_MeasurementPeakRms() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JVisualizer_MeasurementPeakRmsClass,_di_JVisualizer_MeasurementPeakRms>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJVisualizer_MeasurementPeakRms() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{3CCB3AC2-5737-486B-987E-88C328277426}") JVisualizer_OnDataCaptureListenerClass  : public Androidapi::Jnibridge::IJavaClass 
+{
+	
+};
+
+__interface  INTERFACE_UUID("{092C4DEF-238A-4053-A59B-04136A5C3820}") JVisualizer_OnDataCaptureListener  : public Androidapi::Jnibridge::IJavaInstance 
+{
+	virtual void __cdecl onFftDataCapture(_di_JVisualizer visualizer, Androidapi::Jnibridge::TJavaArray__1<System::Byte>* fft, int samplingRate) = 0 ;
+	virtual void __cdecl onWaveFormDataCapture(_di_JVisualizer visualizer, Androidapi::Jnibridge::TJavaArray__1<System::Byte>* waveform, int samplingRate) = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJVisualizer_OnDataCaptureListener : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JVisualizer_OnDataCaptureListenerClass,_di_JVisualizer_OnDataCaptureListener>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JVisualizer_OnDataCaptureListenerClass,_di_JVisualizer_OnDataCaptureListener> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJVisualizer_OnDataCaptureListener() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JVisualizer_OnDataCaptureListenerClass,_di_JVisualizer_OnDataCaptureListener>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJVisualizer_OnDataCaptureListener() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{6552C201-45F9-47D4-85B2-39C16DAD58D3}") JMediaBrowserClass  : public Androidapi::Jni::Javatypes::JObjectClass 
+{
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetEXTRA_PAGE() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetEXTRA_PAGE_SIZE() = 0 ;
+	HIDESBASE virtual _di_JMediaBrowser __cdecl init(Androidapi::Jni::Graphicscontentviewtext::_di_JContext context, Androidapi::Jni::Graphicscontentviewtext::_di_JComponentName serviceComponent, _di_JMediaBrowser_ConnectionCallback callback, Androidapi::Jni::Os::_di_JBundle rootHints) = 0 ;
+	__property Androidapi::Jni::Javatypes::_di_JString EXTRA_PAGE = {read=_GetEXTRA_PAGE};
+	__property Androidapi::Jni::Javatypes::_di_JString EXTRA_PAGE_SIZE = {read=_GetEXTRA_PAGE_SIZE};
+};
+
+__interface  INTERFACE_UUID("{40A5A57D-F070-4DB9-B804-13CC7DC1B533}") JMediaBrowser  : public Androidapi::Jni::Javatypes::JObject 
+{
+	virtual void __cdecl connect() = 0 ;
+	virtual void __cdecl disconnect() = 0 ;
+	virtual Androidapi::Jni::Os::_di_JBundle __cdecl getExtras() = 0 ;
+	virtual void __cdecl getItem(Androidapi::Jni::Javatypes::_di_JString mediaId, _di_JMediaBrowser_ItemCallback cb) = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl getRoot() = 0 ;
+	virtual Androidapi::Jni::Graphicscontentviewtext::_di_JComponentName __cdecl getServiceComponent() = 0 ;
+	virtual _di_JMediaSession_Token __cdecl getSessionToken() = 0 ;
+	virtual bool __cdecl isConnected() = 0 ;
+	virtual void __cdecl subscribe(Androidapi::Jni::Javatypes::_di_JString parentId, _di_JMediaBrowser_SubscriptionCallback callback) = 0 /* overload */;
+	virtual void __cdecl subscribe(Androidapi::Jni::Javatypes::_di_JString parentId, Androidapi::Jni::Os::_di_JBundle options, _di_JMediaBrowser_SubscriptionCallback callback) = 0 /* overload */;
+	virtual void __cdecl unsubscribe(Androidapi::Jni::Javatypes::_di_JString parentId) = 0 /* overload */;
+	virtual void __cdecl unsubscribe(Androidapi::Jni::Javatypes::_di_JString parentId, _di_JMediaBrowser_SubscriptionCallback callback) = 0 /* overload */;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJMediaBrowser : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMediaBrowserClass,_di_JMediaBrowser>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMediaBrowserClass,_di_JMediaBrowser> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJMediaBrowser() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMediaBrowserClass,_di_JMediaBrowser>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJMediaBrowser() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{F1BB4681-70EB-4DD9-9121-ED461DE8B22D}") JMediaBrowser_ConnectionCallbackClass  : public Androidapi::Jni::Javatypes::JObjectClass 
+{
+	HIDESBASE virtual _di_JMediaBrowser_ConnectionCallback __cdecl init() = 0 ;
+};
+
+__interface  INTERFACE_UUID("{15C3E8C9-C306-4A51-A741-7D920D45FFC2}") JMediaBrowser_ConnectionCallback  : public Androidapi::Jni::Javatypes::JObject 
+{
+	virtual void __cdecl onConnected() = 0 ;
+	virtual void __cdecl onConnectionFailed() = 0 ;
+	virtual void __cdecl onConnectionSuspended() = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJMediaBrowser_ConnectionCallback : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMediaBrowser_ConnectionCallbackClass,_di_JMediaBrowser_ConnectionCallback>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMediaBrowser_ConnectionCallbackClass,_di_JMediaBrowser_ConnectionCallback> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJMediaBrowser_ConnectionCallback() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMediaBrowser_ConnectionCallbackClass,_di_JMediaBrowser_ConnectionCallback>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJMediaBrowser_ConnectionCallback() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{4166CDF8-B35A-4977-A0FB-46484BC62B67}") JMediaBrowser_ItemCallbackClass  : public Androidapi::Jni::Javatypes::JObjectClass 
+{
+	HIDESBASE virtual _di_JMediaBrowser_ItemCallback __cdecl init() = 0 ;
+};
+
+__interface  INTERFACE_UUID("{14AF3FEC-0A8C-474B-AA81-00409CEFA6A7}") JMediaBrowser_ItemCallback  : public Androidapi::Jni::Javatypes::JObject 
+{
+	virtual void __cdecl onError(Androidapi::Jni::Javatypes::_di_JString mediaId) = 0 ;
+	virtual void __cdecl onItemLoaded(_di_JMediaBrowser_MediaItem item) = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJMediaBrowser_ItemCallback : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMediaBrowser_ItemCallbackClass,_di_JMediaBrowser_ItemCallback>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMediaBrowser_ItemCallbackClass,_di_JMediaBrowser_ItemCallback> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJMediaBrowser_ItemCallback() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMediaBrowser_ItemCallbackClass,_di_JMediaBrowser_ItemCallback>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJMediaBrowser_ItemCallback() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{B2A448F7-2C51-451E-AA53-8C4AA885A103}") JMediaBrowser_MediaItemClass  : public Androidapi::Jni::Javatypes::JObjectClass 
+{
+	virtual Androidapi::Jni::Os::_di_JParcelable_Creator __cdecl _GetCREATOR() = 0 ;
+	virtual int __cdecl _GetFLAG_BROWSABLE() = 0 ;
+	virtual int __cdecl _GetFLAG_PLAYABLE() = 0 ;
+	HIDESBASE virtual _di_JMediaBrowser_MediaItem __cdecl init(_di_JMediaDescription description, int flags) = 0 ;
+	__property Androidapi::Jni::Os::_di_JParcelable_Creator CREATOR = {read=_GetCREATOR};
+	__property int FLAG_BROWSABLE = {read=_GetFLAG_BROWSABLE};
+	__property int FLAG_PLAYABLE = {read=_GetFLAG_PLAYABLE};
+};
+
+__interface  INTERFACE_UUID("{40213ADA-1585-41A5-9D7D-1AAB4F1218BC}") JMediaBrowser_MediaItem  : public Androidapi::Jni::Javatypes::JObject 
+{
+	virtual int __cdecl describeContents() = 0 ;
+	virtual _di_JMediaDescription __cdecl getDescription() = 0 ;
+	virtual int __cdecl getFlags() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl getMediaId() = 0 ;
+	virtual bool __cdecl isBrowsable() = 0 ;
+	virtual bool __cdecl isPlayable() = 0 ;
+	HIDESBASE virtual Androidapi::Jni::Javatypes::_di_JString __cdecl toString() = 0 ;
+	virtual void __cdecl writeToParcel(Androidapi::Jni::Os::_di_JParcel out_, int flags) = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJMediaBrowser_MediaItem : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMediaBrowser_MediaItemClass,_di_JMediaBrowser_MediaItem>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMediaBrowser_MediaItemClass,_di_JMediaBrowser_MediaItem> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJMediaBrowser_MediaItem() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMediaBrowser_MediaItemClass,_di_JMediaBrowser_MediaItem>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJMediaBrowser_MediaItem() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{FE60B928-3734-4E3C-B2F2-BD99DF0AEF3D}") JMediaBrowser_SubscriptionCallbackClass  : public Androidapi::Jni::Javatypes::JObjectClass 
+{
+	HIDESBASE virtual _di_JMediaBrowser_SubscriptionCallback __cdecl init() = 0 ;
+};
+
+__interface  INTERFACE_UUID("{400905BB-C3DA-4475-A8FA-FD22EF4A9383}") JMediaBrowser_SubscriptionCallback  : public Androidapi::Jni::Javatypes::JObject 
+{
+	virtual void __cdecl onChildrenLoaded(Androidapi::Jni::Javatypes::_di_JString parentId, Androidapi::Jni::Javatypes::_di_JList children) = 0 /* overload */;
+	virtual void __cdecl onChildrenLoaded(Androidapi::Jni::Javatypes::_di_JString parentId, Androidapi::Jni::Javatypes::_di_JList children, Androidapi::Jni::Os::_di_JBundle options) = 0 /* overload */;
+	virtual void __cdecl onError(Androidapi::Jni::Javatypes::_di_JString parentId) = 0 /* overload */;
+	virtual void __cdecl onError(Androidapi::Jni::Javatypes::_di_JString parentId, Androidapi::Jni::Os::_di_JBundle options) = 0 /* overload */;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJMediaBrowser_SubscriptionCallback : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMediaBrowser_SubscriptionCallbackClass,_di_JMediaBrowser_SubscriptionCallback>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMediaBrowser_SubscriptionCallbackClass,_di_JMediaBrowser_SubscriptionCallback> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJMediaBrowser_SubscriptionCallback() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMediaBrowser_SubscriptionCallbackClass,_di_JMediaBrowser_SubscriptionCallback>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJMediaBrowser_SubscriptionCallback() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{DC62EAE5-6D58-4DEC-B60B-CE5890CC3CDF}") JEffectClass  : public Androidapi::Jni::Javatypes::JObjectClass 
+{
+	HIDESBASE virtual _di_JEffect __cdecl init() = 0 ;
+};
+
+__interface  INTERFACE_UUID("{B0029DD4-ED95-41AD-9F14-3E81375B7DC6}") JEffect  : public Androidapi::Jni::Javatypes::JObject 
+{
+	virtual void __cdecl apply(int inputTexId, int width, int height, int outputTexId) = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl getName() = 0 ;
+	virtual void __cdecl release() = 0 ;
+	virtual void __cdecl setParameter(Androidapi::Jni::Javatypes::_di_JString parameterKey, Androidapi::Jni::Javatypes::_di_JObject value) = 0 ;
+	virtual void __cdecl setUpdateListener(_di_JEffectUpdateListener listener) = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJEffect : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JEffectClass,_di_JEffect>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JEffectClass,_di_JEffect> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJEffect() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JEffectClass,_di_JEffect>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJEffect() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{D74230AA-9EF6-439C-A03C-B6D0B03D9821}") JEffectContextClass  : public Androidapi::Jni::Javatypes::JObjectClass 
+{
+	virtual _di_JEffectContext __cdecl createWithCurrentGlContext() = 0 ;
+};
+
+__interface  INTERFACE_UUID("{C963ECA3-2F09-44E5-948B-A564A49BBB5E}") JEffectContext  : public Androidapi::Jni::Javatypes::JObject 
+{
+	virtual _di_JEffectFactory __cdecl getFactory() = 0 ;
+	virtual void __cdecl release() = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJEffectContext : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JEffectContextClass,_di_JEffectContext>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JEffectContextClass,_di_JEffectContext> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJEffectContext() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JEffectContextClass,_di_JEffectContext>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJEffectContext() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{14E2D166-0AC1-4491-BF2B-962F24BAB38A}") JEffectFactoryClass  : public Androidapi::Jni::Javatypes::JObjectClass 
+{
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetEFFECT_AUTOFIX() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetEFFECT_BACKDROPPER() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetEFFECT_BITMAPOVERLAY() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetEFFECT_BLACKWHITE() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetEFFECT_BRIGHTNESS() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetEFFECT_CONTRAST() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetEFFECT_CROP() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetEFFECT_CROSSPROCESS() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetEFFECT_DOCUMENTARY() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetEFFECT_DUOTONE() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetEFFECT_FILLLIGHT() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetEFFECT_FISHEYE() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetEFFECT_FLIP() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetEFFECT_GRAIN() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetEFFECT_GRAYSCALE() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetEFFECT_LOMOISH() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetEFFECT_NEGATIVE() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetEFFECT_POSTERIZE() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetEFFECT_REDEYE() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetEFFECT_ROTATE() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetEFFECT_SATURATE() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetEFFECT_SEPIA() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetEFFECT_SHARPEN() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetEFFECT_STRAIGHTEN() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetEFFECT_TEMPERATURE() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetEFFECT_TINT() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetEFFECT_VIGNETTE() = 0 ;
+	virtual bool __cdecl isEffectSupported(Androidapi::Jni::Javatypes::_di_JString effectName) = 0 ;
+	__property Androidapi::Jni::Javatypes::_di_JString EFFECT_AUTOFIX = {read=_GetEFFECT_AUTOFIX};
+	__property Androidapi::Jni::Javatypes::_di_JString EFFECT_BACKDROPPER = {read=_GetEFFECT_BACKDROPPER};
+	__property Androidapi::Jni::Javatypes::_di_JString EFFECT_BITMAPOVERLAY = {read=_GetEFFECT_BITMAPOVERLAY};
+	__property Androidapi::Jni::Javatypes::_di_JString EFFECT_BLACKWHITE = {read=_GetEFFECT_BLACKWHITE};
+	__property Androidapi::Jni::Javatypes::_di_JString EFFECT_BRIGHTNESS = {read=_GetEFFECT_BRIGHTNESS};
+	__property Androidapi::Jni::Javatypes::_di_JString EFFECT_CONTRAST = {read=_GetEFFECT_CONTRAST};
+	__property Androidapi::Jni::Javatypes::_di_JString EFFECT_CROP = {read=_GetEFFECT_CROP};
+	__property Androidapi::Jni::Javatypes::_di_JString EFFECT_CROSSPROCESS = {read=_GetEFFECT_CROSSPROCESS};
+	__property Androidapi::Jni::Javatypes::_di_JString EFFECT_DOCUMENTARY = {read=_GetEFFECT_DOCUMENTARY};
+	__property Androidapi::Jni::Javatypes::_di_JString EFFECT_DUOTONE = {read=_GetEFFECT_DUOTONE};
+	__property Androidapi::Jni::Javatypes::_di_JString EFFECT_FILLLIGHT = {read=_GetEFFECT_FILLLIGHT};
+	__property Androidapi::Jni::Javatypes::_di_JString EFFECT_FISHEYE = {read=_GetEFFECT_FISHEYE};
+	__property Androidapi::Jni::Javatypes::_di_JString EFFECT_FLIP = {read=_GetEFFECT_FLIP};
+	__property Androidapi::Jni::Javatypes::_di_JString EFFECT_GRAIN = {read=_GetEFFECT_GRAIN};
+	__property Androidapi::Jni::Javatypes::_di_JString EFFECT_GRAYSCALE = {read=_GetEFFECT_GRAYSCALE};
+	__property Androidapi::Jni::Javatypes::_di_JString EFFECT_LOMOISH = {read=_GetEFFECT_LOMOISH};
+	__property Androidapi::Jni::Javatypes::_di_JString EFFECT_NEGATIVE = {read=_GetEFFECT_NEGATIVE};
+	__property Androidapi::Jni::Javatypes::_di_JString EFFECT_POSTERIZE = {read=_GetEFFECT_POSTERIZE};
+	__property Androidapi::Jni::Javatypes::_di_JString EFFECT_REDEYE = {read=_GetEFFECT_REDEYE};
+	__property Androidapi::Jni::Javatypes::_di_JString EFFECT_ROTATE = {read=_GetEFFECT_ROTATE};
+	__property Androidapi::Jni::Javatypes::_di_JString EFFECT_SATURATE = {read=_GetEFFECT_SATURATE};
+	__property Androidapi::Jni::Javatypes::_di_JString EFFECT_SEPIA = {read=_GetEFFECT_SEPIA};
+	__property Androidapi::Jni::Javatypes::_di_JString EFFECT_SHARPEN = {read=_GetEFFECT_SHARPEN};
+	__property Androidapi::Jni::Javatypes::_di_JString EFFECT_STRAIGHTEN = {read=_GetEFFECT_STRAIGHTEN};
+	__property Androidapi::Jni::Javatypes::_di_JString EFFECT_TEMPERATURE = {read=_GetEFFECT_TEMPERATURE};
+	__property Androidapi::Jni::Javatypes::_di_JString EFFECT_TINT = {read=_GetEFFECT_TINT};
+	__property Androidapi::Jni::Javatypes::_di_JString EFFECT_VIGNETTE = {read=_GetEFFECT_VIGNETTE};
+};
+
+__interface  INTERFACE_UUID("{BABFFFB3-AB4C-4626-86FE-BAD146F6C251}") JEffectFactory  : public Androidapi::Jni::Javatypes::JObject 
+{
+	virtual _di_JEffect __cdecl createEffect(Androidapi::Jni::Javatypes::_di_JString effectName) = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJEffectFactory : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JEffectFactoryClass,_di_JEffectFactory>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JEffectFactoryClass,_di_JEffectFactory> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJEffectFactory() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JEffectFactoryClass,_di_JEffectFactory>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJEffectFactory() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{B38D8A57-D3AB-4F58-AE3A-A9A7D8EE612B}") JEffectUpdateListenerClass  : public Androidapi::Jnibridge::IJavaClass 
+{
+	
+};
+
+__interface  INTERFACE_UUID("{FF287CF5-5208-4CF5-A0EF-8F76D144AF71}") JEffectUpdateListener  : public Androidapi::Jnibridge::IJavaInstance 
+{
+	virtual void __cdecl onEffectUpdated(_di_JEffect effect, Androidapi::Jni::Javatypes::_di_JObject info) = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJEffectUpdateListener : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JEffectUpdateListenerClass,_di_JEffectUpdateListener>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JEffectUpdateListenerClass,_di_JEffectUpdateListener> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJEffectUpdateListener() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JEffectUpdateListenerClass,_di_JEffectUpdateListener>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJEffectUpdateListener() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{395FA5A0-52C7-4532-8A6F-C2B4F031EE7D}") JMidiDeviceClass  : public Androidapi::Jni::Javatypes::JObjectClass 
+{
+	
+};
+
+__interface  INTERFACE_UUID("{1F5DB79E-580C-4FD3-A0C4-7F4237B6CF4B}") JMidiDevice  : public Androidapi::Jni::Javatypes::JObject 
+{
+	virtual void __cdecl close() = 0 ;
+	virtual _di_JMidiDevice_MidiConnection __cdecl connectPorts(_di_JMidiInputPort inputPort, int outputPortNumber) = 0 ;
+	virtual _di_JMidiDeviceInfo __cdecl getInfo() = 0 ;
+	virtual _di_JMidiInputPort __cdecl openInputPort(int portNumber) = 0 ;
+	virtual _di_JMidiOutputPort __cdecl openOutputPort(int portNumber) = 0 ;
+	HIDESBASE virtual Androidapi::Jni::Javatypes::_di_JString __cdecl toString() = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJMidiDevice : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMidiDeviceClass,_di_JMidiDevice>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMidiDeviceClass,_di_JMidiDevice> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJMidiDevice() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMidiDeviceClass,_di_JMidiDevice>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJMidiDevice() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{672B6D66-8E49-4400-9BF5-8F43850FB5D2}") JMidiDevice_MidiConnectionClass  : public Androidapi::Jni::Javatypes::JObjectClass 
+{
+	
+};
+
+__interface  INTERFACE_UUID("{961BABB4-CCF5-482C-AAC7-61EA15822464}") JMidiDevice_MidiConnection  : public Androidapi::Jni::Javatypes::JObject 
+{
+	virtual void __cdecl close() = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJMidiDevice_MidiConnection : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMidiDevice_MidiConnectionClass,_di_JMidiDevice_MidiConnection>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMidiDevice_MidiConnectionClass,_di_JMidiDevice_MidiConnection> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJMidiDevice_MidiConnection() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMidiDevice_MidiConnectionClass,_di_JMidiDevice_MidiConnection>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJMidiDevice_MidiConnection() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{A465A5A3-B299-469D-A4BC-F3EEBC8084E0}") JMidiDeviceInfoClass  : public Androidapi::Jni::Javatypes::JObjectClass 
+{
+	virtual Androidapi::Jni::Os::_di_JParcelable_Creator __cdecl _GetCREATOR() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetPROPERTY_BLUETOOTH_DEVICE() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetPROPERTY_MANUFACTURER() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetPROPERTY_NAME() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetPROPERTY_PRODUCT() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetPROPERTY_SERIAL_NUMBER() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetPROPERTY_USB_DEVICE() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetPROPERTY_VERSION() = 0 ;
+	virtual int __cdecl _GetTYPE_BLUETOOTH() = 0 ;
+	virtual int __cdecl _GetTYPE_USB() = 0 ;
+	virtual int __cdecl _GetTYPE_VIRTUAL() = 0 ;
+	__property Androidapi::Jni::Os::_di_JParcelable_Creator CREATOR = {read=_GetCREATOR};
+	__property Androidapi::Jni::Javatypes::_di_JString PROPERTY_BLUETOOTH_DEVICE = {read=_GetPROPERTY_BLUETOOTH_DEVICE};
+	__property Androidapi::Jni::Javatypes::_di_JString PROPERTY_MANUFACTURER = {read=_GetPROPERTY_MANUFACTURER};
+	__property Androidapi::Jni::Javatypes::_di_JString PROPERTY_NAME = {read=_GetPROPERTY_NAME};
+	__property Androidapi::Jni::Javatypes::_di_JString PROPERTY_PRODUCT = {read=_GetPROPERTY_PRODUCT};
+	__property Androidapi::Jni::Javatypes::_di_JString PROPERTY_SERIAL_NUMBER = {read=_GetPROPERTY_SERIAL_NUMBER};
+	__property Androidapi::Jni::Javatypes::_di_JString PROPERTY_USB_DEVICE = {read=_GetPROPERTY_USB_DEVICE};
+	__property Androidapi::Jni::Javatypes::_di_JString PROPERTY_VERSION = {read=_GetPROPERTY_VERSION};
+	__property int TYPE_BLUETOOTH = {read=_GetTYPE_BLUETOOTH};
+	__property int TYPE_USB = {read=_GetTYPE_USB};
+	__property int TYPE_VIRTUAL = {read=_GetTYPE_VIRTUAL};
+};
+
+__interface  INTERFACE_UUID("{E9950E7C-BCA4-424A-90A7-23BAA66CDBE1}") JMidiDeviceInfo  : public Androidapi::Jni::Javatypes::JObject 
+{
+	virtual int __cdecl describeContents() = 0 ;
+	HIDESBASE virtual bool __cdecl equals(Androidapi::Jni::Javatypes::_di_JObject o) = 0 ;
+	virtual int __cdecl getId() = 0 ;
+	virtual int __cdecl getInputPortCount() = 0 ;
+	virtual int __cdecl getOutputPortCount() = 0 ;
+	virtual Androidapi::Jnibridge::TJavaObjectArray__1<_di_JMidiDeviceInfo_PortInfo>* __cdecl getPorts() = 0 ;
+	virtual Androidapi::Jni::Os::_di_JBundle __cdecl getProperties() = 0 ;
+	virtual int __cdecl getType() = 0 ;
+	HIDESBASE virtual int __cdecl hashCode() = 0 ;
+	virtual bool __cdecl isPrivate() = 0 ;
+	HIDESBASE virtual Androidapi::Jni::Javatypes::_di_JString __cdecl toString() = 0 ;
+	virtual void __cdecl writeToParcel(Androidapi::Jni::Os::_di_JParcel parcel, int flags) = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJMidiDeviceInfo : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMidiDeviceInfoClass,_di_JMidiDeviceInfo>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMidiDeviceInfoClass,_di_JMidiDeviceInfo> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJMidiDeviceInfo() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMidiDeviceInfoClass,_di_JMidiDeviceInfo>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJMidiDeviceInfo() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{FE15B908-45EF-47EC-89C9-66CE40E67449}") JMidiDeviceInfo_PortInfoClass  : public Androidapi::Jni::Javatypes::JObjectClass 
+{
+	virtual int __cdecl _GetTYPE_INPUT() = 0 ;
+	virtual int __cdecl _GetTYPE_OUTPUT() = 0 ;
+	__property int TYPE_INPUT = {read=_GetTYPE_INPUT};
+	__property int TYPE_OUTPUT = {read=_GetTYPE_OUTPUT};
+};
+
+__interface  INTERFACE_UUID("{6B280CEB-8BC6-4C87-BFAF-55F37D385E52}") JMidiDeviceInfo_PortInfo  : public Androidapi::Jni::Javatypes::JObject 
+{
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl getName() = 0 ;
+	virtual int __cdecl getPortNumber() = 0 ;
+	virtual int __cdecl getType() = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJMidiDeviceInfo_PortInfo : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMidiDeviceInfo_PortInfoClass,_di_JMidiDeviceInfo_PortInfo>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMidiDeviceInfo_PortInfoClass,_di_JMidiDeviceInfo_PortInfo> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJMidiDeviceInfo_PortInfo() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMidiDeviceInfo_PortInfoClass,_di_JMidiDeviceInfo_PortInfo>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJMidiDeviceInfo_PortInfo() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{4DC0AA9B-13CB-4098-830D-11670B16E6C7}") JMidiDeviceServiceClass  : public Androidapi::Jni::App::JServiceClass 
+{
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetSERVICE_INTERFACE() = 0 ;
+	HIDESBASE virtual _di_JMidiDeviceService __cdecl init() = 0 ;
+	__property Androidapi::Jni::Javatypes::_di_JString SERVICE_INTERFACE = {read=_GetSERVICE_INTERFACE};
+};
+
+__interface  INTERFACE_UUID("{8C34974B-A4F0-44DC-B96B-17775C4A4990}") JMidiDeviceService  : public Androidapi::Jni::App::JService 
+{
+	virtual _di_JMidiDeviceInfo __cdecl getDeviceInfo() = 0 ;
+	virtual Androidapi::Jnibridge::TJavaObjectArray__1<_di_JMidiReceiver>* __cdecl getOutputPortReceivers() = 0 ;
+	HIDESBASE virtual Androidapi::Jni::Os::_di_JIBinder __cdecl onBind(Androidapi::Jni::Graphicscontentviewtext::_di_JIntent intent) = 0 ;
+	virtual void __cdecl onClose() = 0 ;
+	HIDESBASE virtual void __cdecl onCreate() = 0 ;
+	virtual void __cdecl onDeviceStatusChanged(_di_JMidiDeviceStatus status) = 0 ;
+	virtual Androidapi::Jnibridge::TJavaObjectArray__1<_di_JMidiReceiver>* __cdecl onGetInputPortReceivers() = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJMidiDeviceService : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMidiDeviceServiceClass,_di_JMidiDeviceService>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMidiDeviceServiceClass,_di_JMidiDeviceService> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJMidiDeviceService() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMidiDeviceServiceClass,_di_JMidiDeviceService>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJMidiDeviceService() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{FDC237D2-56BB-4B92-9013-B8B9995CB04A}") JMidiDeviceStatusClass  : public Androidapi::Jni::Javatypes::JObjectClass 
+{
+	virtual Androidapi::Jni::Os::_di_JParcelable_Creator __cdecl _GetCREATOR() = 0 ;
+	__property Androidapi::Jni::Os::_di_JParcelable_Creator CREATOR = {read=_GetCREATOR};
+};
+
+__interface  INTERFACE_UUID("{7E4A9DAE-9C77-429F-B52D-FB2C55459A56}") JMidiDeviceStatus  : public Androidapi::Jni::Javatypes::JObject 
+{
+	virtual int __cdecl describeContents() = 0 ;
+	virtual _di_JMidiDeviceInfo __cdecl getDeviceInfo() = 0 ;
+	virtual int __cdecl getOutputPortOpenCount(int portNumber) = 0 ;
+	virtual bool __cdecl isInputPortOpen(int portNumber) = 0 ;
+	HIDESBASE virtual Androidapi::Jni::Javatypes::_di_JString __cdecl toString() = 0 ;
+	virtual void __cdecl writeToParcel(Androidapi::Jni::Os::_di_JParcel parcel, int flags) = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJMidiDeviceStatus : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMidiDeviceStatusClass,_di_JMidiDeviceStatus>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMidiDeviceStatusClass,_di_JMidiDeviceStatus> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJMidiDeviceStatus() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMidiDeviceStatusClass,_di_JMidiDeviceStatus>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJMidiDeviceStatus() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{0CCECD67-D5F2-45C0-A49A-443CE99311DC}") JMidiReceiverClass  : public Androidapi::Jni::Javatypes::JObjectClass 
+{
+	HIDESBASE virtual _di_JMidiReceiver __cdecl init() = 0 /* overload */;
+	HIDESBASE virtual _di_JMidiReceiver __cdecl init(int maxMessageSize) = 0 /* overload */;
+};
+
+__interface  INTERFACE_UUID("{1685B7DB-BD4A-4C6B-AB17-E234E834B69C}") JMidiReceiver  : public Androidapi::Jni::Javatypes::JObject 
+{
+	virtual void __cdecl flush() = 0 ;
+	virtual int __cdecl getMaxMessageSize() = 0 ;
+	virtual void __cdecl onFlush() = 0 ;
+	virtual void __cdecl onSend(Androidapi::Jnibridge::TJavaArray__1<System::Byte>* msg, int offset, int count, __int64 timestamp) = 0 ;
+	virtual void __cdecl send(Androidapi::Jnibridge::TJavaArray__1<System::Byte>* msg, int offset, int count) = 0 /* overload */;
+	virtual void __cdecl send(Androidapi::Jnibridge::TJavaArray__1<System::Byte>* msg, int offset, int count, __int64 timestamp) = 0 /* overload */;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJMidiReceiver : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMidiReceiverClass,_di_JMidiReceiver>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMidiReceiverClass,_di_JMidiReceiver> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJMidiReceiver() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMidiReceiverClass,_di_JMidiReceiver>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJMidiReceiver() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{0E3E4890-4690-48CA-97E6-77F1B750612D}") JMidiInputPortClass  : public JMidiReceiverClass 
+{
+	
+};
+
+__interface  INTERFACE_UUID("{D27C6ACE-6CF0-41BD-BE63-F829B56793C0}") JMidiInputPort  : public JMidiReceiver 
+{
+	virtual void __cdecl close() = 0 ;
+	virtual int __cdecl getPortNumber() = 0 ;
+	HIDESBASE virtual void __cdecl onFlush() = 0 ;
+	HIDESBASE virtual void __cdecl onSend(Androidapi::Jnibridge::TJavaArray__1<System::Byte>* msg, int offset, int count, __int64 timestamp) = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJMidiInputPort : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMidiInputPortClass,_di_JMidiInputPort>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMidiInputPortClass,_di_JMidiInputPort> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJMidiInputPort() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMidiInputPortClass,_di_JMidiInputPort>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJMidiInputPort() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{49DB445C-C786-4316-B589-8411C19B2355}") JMidiManagerClass  : public Androidapi::Jni::Javatypes::JObjectClass 
+{
+	
+};
+
+__interface  INTERFACE_UUID("{AB859D24-0EFE-4B95-AAE3-82CB8AC52ED1}") JMidiManager  : public Androidapi::Jni::Javatypes::JObject 
+{
+	virtual Androidapi::Jnibridge::TJavaObjectArray__1<_di_JMidiDeviceInfo>* __cdecl getDevices() = 0 ;
+	virtual void __cdecl openBluetoothDevice(Androidapi::Jni::Bluetooth::_di_JBluetoothDevice bluetoothDevice, _di_JMidiManager_OnDeviceOpenedListener listener, Androidapi::Jni::Os::_di_JHandler handler) = 0 ;
+	virtual void __cdecl openDevice(_di_JMidiDeviceInfo deviceInfo, _di_JMidiManager_OnDeviceOpenedListener listener, Androidapi::Jni::Os::_di_JHandler handler) = 0 ;
+	virtual void __cdecl registerDeviceCallback(_di_JMidiManager_DeviceCallback callback, Androidapi::Jni::Os::_di_JHandler handler) = 0 ;
+	virtual void __cdecl unregisterDeviceCallback(_di_JMidiManager_DeviceCallback callback) = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJMidiManager : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMidiManagerClass,_di_JMidiManager>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMidiManagerClass,_di_JMidiManager> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJMidiManager() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMidiManagerClass,_di_JMidiManager>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJMidiManager() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{4FAAAC9C-7841-4CDD-86EF-0BFF98A8B580}") JMidiManager_DeviceCallbackClass  : public Androidapi::Jni::Javatypes::JObjectClass 
+{
+	HIDESBASE virtual _di_JMidiManager_DeviceCallback __cdecl init() = 0 ;
+};
+
+__interface  INTERFACE_UUID("{654B6030-ECA2-4BF6-B923-83EFDDC26C45}") JMidiManager_DeviceCallback  : public Androidapi::Jni::Javatypes::JObject 
+{
+	virtual void __cdecl onDeviceAdded(_di_JMidiDeviceInfo device) = 0 ;
+	virtual void __cdecl onDeviceRemoved(_di_JMidiDeviceInfo device) = 0 ;
+	virtual void __cdecl onDeviceStatusChanged(_di_JMidiDeviceStatus status) = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJMidiManager_DeviceCallback : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMidiManager_DeviceCallbackClass,_di_JMidiManager_DeviceCallback>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMidiManager_DeviceCallbackClass,_di_JMidiManager_DeviceCallback> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJMidiManager_DeviceCallback() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMidiManager_DeviceCallbackClass,_di_JMidiManager_DeviceCallback>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJMidiManager_DeviceCallback() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{11DABDDC-283F-4AC7-B440-9A60A0798191}") JMidiManager_OnDeviceOpenedListenerClass  : public Androidapi::Jnibridge::IJavaClass 
+{
+	
+};
+
+__interface  INTERFACE_UUID("{9FF14636-1673-454D-B7A3-B5D3E47DF991}") JMidiManager_OnDeviceOpenedListener  : public Androidapi::Jnibridge::IJavaInstance 
+{
+	virtual void __cdecl onDeviceOpened(_di_JMidiDevice device) = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJMidiManager_OnDeviceOpenedListener : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMidiManager_OnDeviceOpenedListenerClass,_di_JMidiManager_OnDeviceOpenedListener>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMidiManager_OnDeviceOpenedListenerClass,_di_JMidiManager_OnDeviceOpenedListener> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJMidiManager_OnDeviceOpenedListener() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMidiManager_OnDeviceOpenedListenerClass,_di_JMidiManager_OnDeviceOpenedListener>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJMidiManager_OnDeviceOpenedListener() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{6F9809BD-BCB7-44A7-9C71-DB3A8F9CFE9A}") JMidiSenderClass  : public Androidapi::Jni::Javatypes::JObjectClass 
+{
+	HIDESBASE virtual _di_JMidiSender __cdecl init() = 0 ;
+};
+
+__interface  INTERFACE_UUID("{09B5168E-98B6-4814-A172-6507C1E2F60E}") JMidiSender  : public Androidapi::Jni::Javatypes::JObject 
+{
+	virtual void __cdecl connect(_di_JMidiReceiver receiver) = 0 ;
+	virtual void __cdecl disconnect(_di_JMidiReceiver receiver) = 0 ;
+	virtual void __cdecl onConnect(_di_JMidiReceiver receiver) = 0 ;
+	virtual void __cdecl onDisconnect(_di_JMidiReceiver receiver) = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJMidiSender : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMidiSenderClass,_di_JMidiSender>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMidiSenderClass,_di_JMidiSender> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJMidiSender() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMidiSenderClass,_di_JMidiSender>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJMidiSender() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{54BEF4BB-E2DC-45BA-8877-0DB9A03566CB}") JMidiOutputPortClass  : public JMidiSenderClass 
+{
+	
+};
+
+__interface  INTERFACE_UUID("{27269721-B1EE-4372-959B-58584ED3B1DC}") JMidiOutputPort  : public JMidiSender 
+{
+	virtual void __cdecl close() = 0 ;
+	virtual int __cdecl getPortNumber() = 0 ;
+	HIDESBASE virtual void __cdecl onConnect(_di_JMidiReceiver receiver) = 0 ;
+	HIDESBASE virtual void __cdecl onDisconnect(_di_JMidiReceiver receiver) = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJMidiOutputPort : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMidiOutputPortClass,_di_JMidiOutputPort>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMidiOutputPortClass,_di_JMidiOutputPort> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJMidiOutputPort() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMidiOutputPortClass,_di_JMidiOutputPort>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJMidiOutputPort() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{671A8337-74A8-47BB-9752-5F6AC9CB340B}") JMediaProjectionClass  : public Androidapi::Jni::Javatypes::JObjectClass 
+{
+	
+};
+
+__interface  INTERFACE_UUID("{7C231C86-6D5D-4179-A8D4-A6577D7BE0D0}") JMediaProjection  : public Androidapi::Jni::Javatypes::JObject 
+{
+	virtual Androidapi::Jni::Hardware::_di_JVirtualDisplay __cdecl createVirtualDisplay(Androidapi::Jni::Javatypes::_di_JString name, int width, int height, int dpi, int flags, Androidapi::Jni::Graphicscontentviewtext::_di_JSurface surface, Androidapi::Jni::Hardware::_di_JVirtualDisplay_Callback callback, Androidapi::Jni::Os::_di_JHandler handler) = 0 ;
+	virtual void __cdecl registerCallback(_di_JMediaProjection_Callback callback, Androidapi::Jni::Os::_di_JHandler handler) = 0 ;
+	virtual void __cdecl stop() = 0 ;
+	virtual void __cdecl unregisterCallback(_di_JMediaProjection_Callback callback) = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJMediaProjection : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMediaProjectionClass,_di_JMediaProjection>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMediaProjectionClass,_di_JMediaProjection> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJMediaProjection() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMediaProjectionClass,_di_JMediaProjection>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJMediaProjection() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{F10259FF-6EB2-422C-8CCD-D729A406206D}") JMediaProjection_CallbackClass  : public Androidapi::Jni::Javatypes::JObjectClass 
+{
+	HIDESBASE virtual _di_JMediaProjection_Callback __cdecl init() = 0 ;
+};
+
+__interface  INTERFACE_UUID("{75A3C800-92FC-4E1E-B0A9-52D1144EC066}") JMediaProjection_Callback  : public Androidapi::Jni::Javatypes::JObject 
+{
+	virtual void __cdecl onStop() = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJMediaProjection_Callback : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMediaProjection_CallbackClass,_di_JMediaProjection_Callback>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMediaProjection_CallbackClass,_di_JMediaProjection_Callback> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJMediaProjection_Callback() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMediaProjection_CallbackClass,_di_JMediaProjection_Callback>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJMediaProjection_Callback() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{311A788C-E5D4-40F1-ABE2-32B15EAD8B35}") JMediaProjectionManagerClass  : public Androidapi::Jni::Javatypes::JObjectClass 
+{
+	
+};
+
+__interface  INTERFACE_UUID("{8EF00E7E-ECE6-48D7-A512-52CE3704B0FF}") JMediaProjectionManager  : public Androidapi::Jni::Javatypes::JObject 
+{
+	virtual Androidapi::Jni::Graphicscontentviewtext::_di_JIntent __cdecl createScreenCaptureIntent() = 0 ;
+	virtual _di_JMediaProjection __cdecl getMediaProjection(int resultCode, Androidapi::Jni::Graphicscontentviewtext::_di_JIntent resultData) = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJMediaProjectionManager : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMediaProjectionManagerClass,_di_JMediaProjectionManager>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMediaProjectionManagerClass,_di_JMediaProjectionManager> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJMediaProjectionManager() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMediaProjectionManagerClass,_di_JMediaProjectionManager>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJMediaProjectionManager() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{CDC93E33-2AE5-406F-B30A-6024E04CF5B1}") Jsession_MediaControllerClass  : public Androidapi::Jni::Javatypes::JObjectClass 
+{
+	
+};
+
+__interface  INTERFACE_UUID("{91D95F61-AC6D-4A3F-BB23-61C5FFC68662}") Jsession_MediaController  : public Androidapi::Jni::Javatypes::JObject 
+{
+	virtual void __cdecl adjustVolume(int direction, int flags) = 0 ;
+	virtual bool __cdecl dispatchMediaButtonEvent(Androidapi::Jni::Graphicscontentviewtext::_di_JKeyEvent keyEvent) = 0 ;
+	virtual Androidapi::Jni::Os::_di_JBundle __cdecl getExtras() = 0 ;
+	virtual __int64 __cdecl getFlags() = 0 ;
+	virtual _di_Jmedia_MediaMetadata __cdecl getMetadata() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl getPackageName() = 0 ;
+	virtual _di_JMediaController_PlaybackInfo __cdecl getPlaybackInfo() = 0 ;
+	virtual _di_JPlaybackState __cdecl getPlaybackState() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JList __cdecl getQueue() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JCharSequence __cdecl getQueueTitle() = 0 ;
+	virtual int __cdecl getRatingType() = 0 ;
+	virtual Androidapi::Jni::App::_di_JPendingIntent __cdecl getSessionActivity() = 0 ;
+	virtual _di_JMediaSession_Token __cdecl getSessionToken() = 0 ;
+	virtual _di_JMediaController_TransportControls __cdecl getTransportControls() = 0 ;
+	virtual void __cdecl registerCallback(_di_JMediaController_Callback callback) = 0 /* overload */;
+	virtual void __cdecl registerCallback(_di_JMediaController_Callback callback, Androidapi::Jni::Os::_di_JHandler handler) = 0 /* overload */;
+	virtual void __cdecl sendCommand(Androidapi::Jni::Javatypes::_di_JString command, Androidapi::Jni::Os::_di_JBundle args, Androidapi::Jni::Os::_di_JResultReceiver cb) = 0 ;
+	virtual void __cdecl setVolumeTo(int value, int flags) = 0 ;
+	virtual void __cdecl unregisterCallback(_di_JMediaController_Callback callback) = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJsession_MediaController : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_Jsession_MediaControllerClass,_di_Jsession_MediaController>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_Jsession_MediaControllerClass,_di_Jsession_MediaController> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJsession_MediaController() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_Jsession_MediaControllerClass,_di_Jsession_MediaController>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJsession_MediaController() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{686A7C71-CE1C-4A03-AA1A-A9E8B5BB561C}") JMediaController_CallbackClass  : public Androidapi::Jni::Javatypes::JObjectClass 
+{
+	HIDESBASE virtual _di_JMediaController_Callback __cdecl init() = 0 ;
+};
+
+__interface  INTERFACE_UUID("{173EA302-3941-4BB0-B5EC-AF19CCD30021}") JMediaController_Callback  : public Androidapi::Jni::Javatypes::JObject 
+{
+	virtual void __cdecl onAudioInfoChanged(_di_JMediaController_PlaybackInfo info) = 0 ;
+	virtual void __cdecl onExtrasChanged(Androidapi::Jni::Os::_di_JBundle extras) = 0 ;
+	virtual void __cdecl onMetadataChanged(_di_Jmedia_MediaMetadata metadata) = 0 ;
+	virtual void __cdecl onPlaybackStateChanged(_di_JPlaybackState state) = 0 ;
+	virtual void __cdecl onQueueChanged(Androidapi::Jni::Javatypes::_di_JList queue) = 0 ;
+	virtual void __cdecl onQueueTitleChanged(Androidapi::Jni::Javatypes::_di_JCharSequence title) = 0 ;
+	virtual void __cdecl onSessionDestroyed() = 0 ;
+	virtual void __cdecl onSessionEvent(Androidapi::Jni::Javatypes::_di_JString event, Androidapi::Jni::Os::_di_JBundle extras) = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJMediaController_Callback : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMediaController_CallbackClass,_di_JMediaController_Callback>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMediaController_CallbackClass,_di_JMediaController_Callback> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJMediaController_Callback() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMediaController_CallbackClass,_di_JMediaController_Callback>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJMediaController_Callback() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{196168F7-B750-484F-AC9C-F8D93E782B78}") JMediaController_PlaybackInfoClass  : public Androidapi::Jni::Javatypes::JObjectClass 
+{
+	virtual int __cdecl _GetPLAYBACK_TYPE_LOCAL() = 0 ;
+	virtual int __cdecl _GetPLAYBACK_TYPE_REMOTE() = 0 ;
+	__property int PLAYBACK_TYPE_LOCAL = {read=_GetPLAYBACK_TYPE_LOCAL};
+	__property int PLAYBACK_TYPE_REMOTE = {read=_GetPLAYBACK_TYPE_REMOTE};
+};
+
+__interface  INTERFACE_UUID("{B536C5C0-26C8-4487-AB17-98886C9C53B4}") JMediaController_PlaybackInfo  : public Androidapi::Jni::Javatypes::JObject 
+{
+	virtual _di_JAudioAttributes __cdecl getAudioAttributes() = 0 ;
+	virtual int __cdecl getCurrentVolume() = 0 ;
+	virtual int __cdecl getMaxVolume() = 0 ;
+	virtual int __cdecl getPlaybackType() = 0 ;
+	virtual int __cdecl getVolumeControl() = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJMediaController_PlaybackInfo : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMediaController_PlaybackInfoClass,_di_JMediaController_PlaybackInfo>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMediaController_PlaybackInfoClass,_di_JMediaController_PlaybackInfo> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJMediaController_PlaybackInfo() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMediaController_PlaybackInfoClass,_di_JMediaController_PlaybackInfo>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJMediaController_PlaybackInfo() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{9C224A90-7858-46AE-A728-7DB7AB3F5867}") JMediaController_TransportControlsClass  : public Androidapi::Jni::Javatypes::JObjectClass 
+{
+	
+};
+
+__interface  INTERFACE_UUID("{1EDA0FD8-309C-4CA0-81D1-D71C546688D5}") JMediaController_TransportControls  : public Androidapi::Jni::Javatypes::JObject 
+{
+	virtual void __cdecl fastForward() = 0 ;
+	virtual void __cdecl pause() = 0 ;
+	virtual void __cdecl play() = 0 ;
+	virtual void __cdecl playFromMediaId(Androidapi::Jni::Javatypes::_di_JString mediaId, Androidapi::Jni::Os::_di_JBundle extras) = 0 ;
+	virtual void __cdecl playFromSearch(Androidapi::Jni::Javatypes::_di_JString query, Androidapi::Jni::Os::_di_JBundle extras) = 0 ;
+	virtual void __cdecl playFromUri(Androidapi::Jni::Net::_di_Jnet_Uri uri, Androidapi::Jni::Os::_di_JBundle extras) = 0 ;
+	virtual void __cdecl prepare() = 0 ;
+	virtual void __cdecl prepareFromMediaId(Androidapi::Jni::Javatypes::_di_JString mediaId, Androidapi::Jni::Os::_di_JBundle extras) = 0 ;
+	virtual void __cdecl prepareFromSearch(Androidapi::Jni::Javatypes::_di_JString query, Androidapi::Jni::Os::_di_JBundle extras) = 0 ;
+	virtual void __cdecl prepareFromUri(Androidapi::Jni::Net::_di_Jnet_Uri uri, Androidapi::Jni::Os::_di_JBundle extras) = 0 ;
+	virtual void __cdecl rewind() = 0 ;
+	virtual void __cdecl seekTo(__int64 pos) = 0 ;
+	virtual void __cdecl sendCustomAction(_di_JPlaybackState_CustomAction customAction, Androidapi::Jni::Os::_di_JBundle args) = 0 /* overload */;
+	virtual void __cdecl sendCustomAction(Androidapi::Jni::Javatypes::_di_JString action, Androidapi::Jni::Os::_di_JBundle args) = 0 /* overload */;
+	virtual void __cdecl setRating(_di_JRating rating) = 0 ;
+	virtual void __cdecl skipToNext() = 0 ;
+	virtual void __cdecl skipToPrevious() = 0 ;
+	virtual void __cdecl skipToQueueItem(__int64 id) = 0 ;
+	virtual void __cdecl stop() = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJMediaController_TransportControls : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMediaController_TransportControlsClass,_di_JMediaController_TransportControls>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMediaController_TransportControlsClass,_di_JMediaController_TransportControls> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJMediaController_TransportControls() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMediaController_TransportControlsClass,_di_JMediaController_TransportControls>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJMediaController_TransportControls() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{DD2E1A91-EAE6-43F0-996D-C35A3405ED42}") JMediaSessionClass  : public Androidapi::Jni::Javatypes::JObjectClass 
+{
+	virtual int __cdecl _GetFLAG_HANDLES_MEDIA_BUTTONS() = 0 ;
+	virtual int __cdecl _GetFLAG_HANDLES_TRANSPORT_CONTROLS() = 0 ;
+	HIDESBASE virtual _di_JMediaSession __cdecl init(Androidapi::Jni::Graphicscontentviewtext::_di_JContext context, Androidapi::Jni::Javatypes::_di_JString tag) = 0 ;
+	__property int FLAG_HANDLES_MEDIA_BUTTONS = {read=_GetFLAG_HANDLES_MEDIA_BUTTONS};
+	__property int FLAG_HANDLES_TRANSPORT_CONTROLS = {read=_GetFLAG_HANDLES_TRANSPORT_CONTROLS};
+};
+
+__interface  INTERFACE_UUID("{3A86CFAB-1B2A-44A4-9C12-39AF616344FE}") JMediaSession  : public Androidapi::Jni::Javatypes::JObject 
+{
+	virtual _di_Jsession_MediaController __cdecl getController() = 0 ;
+	virtual _di_JMediaSession_Token __cdecl getSessionToken() = 0 ;
+	virtual bool __cdecl isActive() = 0 ;
+	virtual void __cdecl release() = 0 ;
+	virtual void __cdecl sendSessionEvent(Androidapi::Jni::Javatypes::_di_JString event, Androidapi::Jni::Os::_di_JBundle extras) = 0 ;
+	virtual void __cdecl setActive(bool active) = 0 ;
+	virtual void __cdecl setCallback(_di_JMediaSession_Callback callback) = 0 /* overload */;
+	virtual void __cdecl setCallback(_di_JMediaSession_Callback callback, Androidapi::Jni::Os::_di_JHandler handler) = 0 /* overload */;
+	virtual void __cdecl setExtras(Androidapi::Jni::Os::_di_JBundle extras) = 0 ;
+	virtual void __cdecl setFlags(int flags) = 0 ;
+	virtual void __cdecl setMediaButtonReceiver(Androidapi::Jni::App::_di_JPendingIntent mbr) = 0 ;
+	virtual void __cdecl setMetadata(_di_Jmedia_MediaMetadata metadata) = 0 ;
+	virtual void __cdecl setPlaybackState(_di_JPlaybackState state) = 0 ;
+	virtual void __cdecl setPlaybackToLocal(_di_JAudioAttributes attributes) = 0 ;
+	virtual void __cdecl setPlaybackToRemote(_di_JVolumeProvider volumeProvider) = 0 ;
+	virtual void __cdecl setQueue(Androidapi::Jni::Javatypes::_di_JList queue) = 0 ;
+	virtual void __cdecl setQueueTitle(Androidapi::Jni::Javatypes::_di_JCharSequence title) = 0 ;
+	virtual void __cdecl setRatingType(int type_) = 0 ;
+	virtual void __cdecl setSessionActivity(Androidapi::Jni::App::_di_JPendingIntent pi) = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJMediaSession : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMediaSessionClass,_di_JMediaSession>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMediaSessionClass,_di_JMediaSession> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJMediaSession() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMediaSessionClass,_di_JMediaSession>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJMediaSession() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{CDDCA65C-DD26-4BF7-A564-F86D96EA0B61}") JMediaSession_CallbackClass  : public Androidapi::Jni::Javatypes::JObjectClass 
+{
+	HIDESBASE virtual _di_JMediaSession_Callback __cdecl init() = 0 ;
+};
+
+__interface  INTERFACE_UUID("{B67D467F-4EB4-4B43-84FC-4FDC8EDFFBD9}") JMediaSession_Callback  : public Androidapi::Jni::Javatypes::JObject 
+{
+	virtual void __cdecl onCommand(Androidapi::Jni::Javatypes::_di_JString command, Androidapi::Jni::Os::_di_JBundle args, Androidapi::Jni::Os::_di_JResultReceiver cb) = 0 ;
+	virtual void __cdecl onCustomAction(Androidapi::Jni::Javatypes::_di_JString action, Androidapi::Jni::Os::_di_JBundle extras) = 0 ;
+	virtual void __cdecl onFastForward() = 0 ;
+	virtual bool __cdecl onMediaButtonEvent(Androidapi::Jni::Graphicscontentviewtext::_di_JIntent mediaButtonIntent) = 0 ;
+	virtual void __cdecl onPause() = 0 ;
+	virtual void __cdecl onPlay() = 0 ;
+	virtual void __cdecl onPlayFromMediaId(Androidapi::Jni::Javatypes::_di_JString mediaId, Androidapi::Jni::Os::_di_JBundle extras) = 0 ;
+	virtual void __cdecl onPlayFromSearch(Androidapi::Jni::Javatypes::_di_JString query, Androidapi::Jni::Os::_di_JBundle extras) = 0 ;
+	virtual void __cdecl onPlayFromUri(Androidapi::Jni::Net::_di_Jnet_Uri uri, Androidapi::Jni::Os::_di_JBundle extras) = 0 ;
+	virtual void __cdecl onPrepare() = 0 ;
+	virtual void __cdecl onPrepareFromMediaId(Androidapi::Jni::Javatypes::_di_JString mediaId, Androidapi::Jni::Os::_di_JBundle extras) = 0 ;
+	virtual void __cdecl onPrepareFromSearch(Androidapi::Jni::Javatypes::_di_JString query, Androidapi::Jni::Os::_di_JBundle extras) = 0 ;
+	virtual void __cdecl onPrepareFromUri(Androidapi::Jni::Net::_di_Jnet_Uri uri, Androidapi::Jni::Os::_di_JBundle extras) = 0 ;
+	virtual void __cdecl onRewind() = 0 ;
+	virtual void __cdecl onSeekTo(__int64 pos) = 0 ;
+	virtual void __cdecl onSetRating(_di_JRating rating) = 0 ;
+	virtual void __cdecl onSkipToNext() = 0 ;
+	virtual void __cdecl onSkipToPrevious() = 0 ;
+	virtual void __cdecl onSkipToQueueItem(__int64 id) = 0 ;
+	virtual void __cdecl onStop() = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJMediaSession_Callback : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMediaSession_CallbackClass,_di_JMediaSession_Callback>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMediaSession_CallbackClass,_di_JMediaSession_Callback> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJMediaSession_Callback() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMediaSession_CallbackClass,_di_JMediaSession_Callback>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJMediaSession_Callback() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{304E802E-0D8D-4697-8F1E-66D714C5A54B}") JMediaSession_QueueItemClass  : public Androidapi::Jni::Javatypes::JObjectClass 
+{
+	virtual Androidapi::Jni::Os::_di_JParcelable_Creator __cdecl _GetCREATOR() = 0 ;
+	virtual int __cdecl _GetUNKNOWN_ID() = 0 ;
+	HIDESBASE virtual _di_JMediaSession_QueueItem __cdecl init(_di_JMediaDescription description, __int64 id) = 0 ;
+	__property Androidapi::Jni::Os::_di_JParcelable_Creator CREATOR = {read=_GetCREATOR};
+	__property int UNKNOWN_ID = {read=_GetUNKNOWN_ID};
+};
+
+__interface  INTERFACE_UUID("{A8131EBF-3607-4920-956C-2D45F3157333}") JMediaSession_QueueItem  : public Androidapi::Jni::Javatypes::JObject 
+{
+	virtual int __cdecl describeContents() = 0 ;
+	HIDESBASE virtual bool __cdecl equals(Androidapi::Jni::Javatypes::_di_JObject o) = 0 ;
+	virtual _di_JMediaDescription __cdecl getDescription() = 0 ;
+	virtual __int64 __cdecl getQueueId() = 0 ;
+	HIDESBASE virtual Androidapi::Jni::Javatypes::_di_JString __cdecl toString() = 0 ;
+	virtual void __cdecl writeToParcel(Androidapi::Jni::Os::_di_JParcel dest, int flags) = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJMediaSession_QueueItem : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMediaSession_QueueItemClass,_di_JMediaSession_QueueItem>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMediaSession_QueueItemClass,_di_JMediaSession_QueueItem> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJMediaSession_QueueItem() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMediaSession_QueueItemClass,_di_JMediaSession_QueueItem>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJMediaSession_QueueItem() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{BFA0DAE9-C1CB-4828-AD44-1FA0BA0E383F}") JMediaSession_TokenClass  : public Androidapi::Jni::Javatypes::JObjectClass 
+{
+	virtual Androidapi::Jni::Os::_di_JParcelable_Creator __cdecl _GetCREATOR() = 0 ;
+	__property Androidapi::Jni::Os::_di_JParcelable_Creator CREATOR = {read=_GetCREATOR};
+};
+
+__interface  INTERFACE_UUID("{9C7698F8-8021-4746-9E3A-B2BBE336167E}") JMediaSession_Token  : public Androidapi::Jni::Javatypes::JObject 
+{
+	virtual int __cdecl describeContents() = 0 ;
+	HIDESBASE virtual bool __cdecl equals(Androidapi::Jni::Javatypes::_di_JObject obj) = 0 ;
+	HIDESBASE virtual int __cdecl hashCode() = 0 ;
+	virtual void __cdecl writeToParcel(Androidapi::Jni::Os::_di_JParcel dest, int flags) = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJMediaSession_Token : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMediaSession_TokenClass,_di_JMediaSession_Token>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMediaSession_TokenClass,_di_JMediaSession_Token> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJMediaSession_Token() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMediaSession_TokenClass,_di_JMediaSession_Token>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJMediaSession_Token() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{7A9C7CBC-ABA5-4BF3-BF59-C4F5A807102D}") JMediaSessionManagerClass  : public Androidapi::Jni::Javatypes::JObjectClass 
+{
+	
+};
+
+__interface  INTERFACE_UUID("{0BB154FE-A0E4-46DE-8702-A37590C31A4F}") JMediaSessionManager  : public Androidapi::Jni::Javatypes::JObject 
+{
+	virtual void __cdecl addOnActiveSessionsChangedListener(_di_JMediaSessionManager_OnActiveSessionsChangedListener sessionListener, Androidapi::Jni::Graphicscontentviewtext::_di_JComponentName notificationListener) = 0 /* overload */;
+	virtual void __cdecl addOnActiveSessionsChangedListener(_di_JMediaSessionManager_OnActiveSessionsChangedListener sessionListener, Androidapi::Jni::Graphicscontentviewtext::_di_JComponentName notificationListener, Androidapi::Jni::Os::_di_JHandler handler) = 0 /* overload */;
+	virtual Androidapi::Jni::Javatypes::_di_JList __cdecl getActiveSessions(Androidapi::Jni::Graphicscontentviewtext::_di_JComponentName notificationListener) = 0 ;
+	virtual void __cdecl removeOnActiveSessionsChangedListener(_di_JMediaSessionManager_OnActiveSessionsChangedListener listener) = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJMediaSessionManager : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMediaSessionManagerClass,_di_JMediaSessionManager>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMediaSessionManagerClass,_di_JMediaSessionManager> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJMediaSessionManager() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMediaSessionManagerClass,_di_JMediaSessionManager>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJMediaSessionManager() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{AEA2EEF3-9628-4332-B2D5-F4D55D4429FA}") JMediaSessionManager_OnActiveSessionsChangedListenerClass  : public Androidapi::Jnibridge::IJavaClass 
+{
+	
+};
+
+__interface  INTERFACE_UUID("{12307A91-67D5-4491-BDC3-8CCBF4134D68}") JMediaSessionManager_OnActiveSessionsChangedListener  : public Androidapi::Jnibridge::IJavaInstance 
+{
+	virtual void __cdecl onActiveSessionsChanged(Androidapi::Jni::Javatypes::_di_JList controllers) = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJMediaSessionManager_OnActiveSessionsChangedListener : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMediaSessionManager_OnActiveSessionsChangedListenerClass,_di_JMediaSessionManager_OnActiveSessionsChangedListener>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMediaSessionManager_OnActiveSessionsChangedListenerClass,_di_JMediaSessionManager_OnActiveSessionsChangedListener> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJMediaSessionManager_OnActiveSessionsChangedListener() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMediaSessionManager_OnActiveSessionsChangedListenerClass,_di_JMediaSessionManager_OnActiveSessionsChangedListener>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJMediaSessionManager_OnActiveSessionsChangedListener() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{1FCAA0BE-7E3C-4F33-8F8F-C15B994F0B44}") JPlaybackStateClass  : public Androidapi::Jni::Javatypes::JObjectClass 
+{
+	virtual __int64 __cdecl _GetACTION_FAST_FORWARD() = 0 ;
+	virtual __int64 __cdecl _GetACTION_PAUSE() = 0 ;
+	virtual __int64 __cdecl _GetACTION_PLAY() = 0 ;
+	virtual __int64 __cdecl _GetACTION_PLAY_FROM_MEDIA_ID() = 0 ;
+	virtual __int64 __cdecl _GetACTION_PLAY_FROM_SEARCH() = 0 ;
+	virtual __int64 __cdecl _GetACTION_PLAY_FROM_URI() = 0 ;
+	virtual __int64 __cdecl _GetACTION_PLAY_PAUSE() = 0 ;
+	virtual __int64 __cdecl _GetACTION_PREPARE() = 0 ;
+	virtual __int64 __cdecl _GetACTION_PREPARE_FROM_MEDIA_ID() = 0 ;
+	virtual __int64 __cdecl _GetACTION_PREPARE_FROM_SEARCH() = 0 ;
+	virtual __int64 __cdecl _GetACTION_PREPARE_FROM_URI() = 0 ;
+	virtual __int64 __cdecl _GetACTION_REWIND() = 0 ;
+	virtual __int64 __cdecl _GetACTION_SEEK_TO() = 0 ;
+	virtual __int64 __cdecl _GetACTION_SET_RATING() = 0 ;
+	virtual __int64 __cdecl _GetACTION_SKIP_TO_NEXT() = 0 ;
+	virtual __int64 __cdecl _GetACTION_SKIP_TO_PREVIOUS() = 0 ;
+	virtual __int64 __cdecl _GetACTION_SKIP_TO_QUEUE_ITEM() = 0 ;
+	virtual __int64 __cdecl _GetACTION_STOP() = 0 ;
+	virtual Androidapi::Jni::Os::_di_JParcelable_Creator __cdecl _GetCREATOR() = 0 ;
+	virtual __int64 __cdecl _GetPLAYBACK_POSITION_UNKNOWN() = 0 ;
+	virtual int __cdecl _GetSTATE_BUFFERING() = 0 ;
+	virtual int __cdecl _GetSTATE_CONNECTING() = 0 ;
+	virtual int __cdecl _GetSTATE_ERROR() = 0 ;
+	virtual int __cdecl _GetSTATE_FAST_FORWARDING() = 0 ;
+	virtual int __cdecl _GetSTATE_NONE() = 0 ;
+	virtual int __cdecl _GetSTATE_PAUSED() = 0 ;
+	virtual int __cdecl _GetSTATE_PLAYING() = 0 ;
+	virtual int __cdecl _GetSTATE_REWINDING() = 0 ;
+	virtual int __cdecl _GetSTATE_SKIPPING_TO_NEXT() = 0 ;
+	virtual int __cdecl _GetSTATE_SKIPPING_TO_PREVIOUS() = 0 ;
+	virtual int __cdecl _GetSTATE_SKIPPING_TO_QUEUE_ITEM() = 0 ;
+	virtual int __cdecl _GetSTATE_STOPPED() = 0 ;
+	__property __int64 ACTION_FAST_FORWARD = {read=_GetACTION_FAST_FORWARD};
+	__property __int64 ACTION_PAUSE = {read=_GetACTION_PAUSE};
+	__property __int64 ACTION_PLAY = {read=_GetACTION_PLAY};
+	__property __int64 ACTION_PLAY_FROM_MEDIA_ID = {read=_GetACTION_PLAY_FROM_MEDIA_ID};
+	__property __int64 ACTION_PLAY_FROM_SEARCH = {read=_GetACTION_PLAY_FROM_SEARCH};
+	__property __int64 ACTION_PLAY_FROM_URI = {read=_GetACTION_PLAY_FROM_URI};
+	__property __int64 ACTION_PLAY_PAUSE = {read=_GetACTION_PLAY_PAUSE};
+	__property __int64 ACTION_PREPARE = {read=_GetACTION_PREPARE};
+	__property __int64 ACTION_PREPARE_FROM_MEDIA_ID = {read=_GetACTION_PREPARE_FROM_MEDIA_ID};
+	__property __int64 ACTION_PREPARE_FROM_SEARCH = {read=_GetACTION_PREPARE_FROM_SEARCH};
+	__property __int64 ACTION_PREPARE_FROM_URI = {read=_GetACTION_PREPARE_FROM_URI};
+	__property __int64 ACTION_REWIND = {read=_GetACTION_REWIND};
+	__property __int64 ACTION_SEEK_TO = {read=_GetACTION_SEEK_TO};
+	__property __int64 ACTION_SET_RATING = {read=_GetACTION_SET_RATING};
+	__property __int64 ACTION_SKIP_TO_NEXT = {read=_GetACTION_SKIP_TO_NEXT};
+	__property __int64 ACTION_SKIP_TO_PREVIOUS = {read=_GetACTION_SKIP_TO_PREVIOUS};
+	__property __int64 ACTION_SKIP_TO_QUEUE_ITEM = {read=_GetACTION_SKIP_TO_QUEUE_ITEM};
+	__property __int64 ACTION_STOP = {read=_GetACTION_STOP};
+	__property Androidapi::Jni::Os::_di_JParcelable_Creator CREATOR = {read=_GetCREATOR};
+	__property __int64 PLAYBACK_POSITION_UNKNOWN = {read=_GetPLAYBACK_POSITION_UNKNOWN};
+	__property int STATE_BUFFERING = {read=_GetSTATE_BUFFERING};
+	__property int STATE_CONNECTING = {read=_GetSTATE_CONNECTING};
+	__property int STATE_ERROR = {read=_GetSTATE_ERROR};
+	__property int STATE_FAST_FORWARDING = {read=_GetSTATE_FAST_FORWARDING};
+	__property int STATE_NONE = {read=_GetSTATE_NONE};
+	__property int STATE_PAUSED = {read=_GetSTATE_PAUSED};
+	__property int STATE_PLAYING = {read=_GetSTATE_PLAYING};
+	__property int STATE_REWINDING = {read=_GetSTATE_REWINDING};
+	__property int STATE_SKIPPING_TO_NEXT = {read=_GetSTATE_SKIPPING_TO_NEXT};
+	__property int STATE_SKIPPING_TO_PREVIOUS = {read=_GetSTATE_SKIPPING_TO_PREVIOUS};
+	__property int STATE_SKIPPING_TO_QUEUE_ITEM = {read=_GetSTATE_SKIPPING_TO_QUEUE_ITEM};
+	__property int STATE_STOPPED = {read=_GetSTATE_STOPPED};
+};
+
+__interface  INTERFACE_UUID("{430F777C-C978-47EC-BA10-DFB49F2339C7}") JPlaybackState  : public Androidapi::Jni::Javatypes::JObject 
+{
+	virtual int __cdecl describeContents() = 0 ;
+	virtual __int64 __cdecl getActions() = 0 ;
+	virtual __int64 __cdecl getActiveQueueItemId() = 0 ;
+	virtual __int64 __cdecl getBufferedPosition() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JList __cdecl getCustomActions() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JCharSequence __cdecl getErrorMessage() = 0 ;
+	virtual Androidapi::Jni::Os::_di_JBundle __cdecl getExtras() = 0 ;
+	virtual __int64 __cdecl getLastPositionUpdateTime() = 0 ;
+	virtual float __cdecl getPlaybackSpeed() = 0 ;
+	virtual __int64 __cdecl getPosition() = 0 ;
+	virtual int __cdecl getState() = 0 ;
+	HIDESBASE virtual Androidapi::Jni::Javatypes::_di_JString __cdecl toString() = 0 ;
+	virtual void __cdecl writeToParcel(Androidapi::Jni::Os::_di_JParcel dest, int flags) = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJPlaybackState : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JPlaybackStateClass,_di_JPlaybackState>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JPlaybackStateClass,_di_JPlaybackState> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJPlaybackState() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JPlaybackStateClass,_di_JPlaybackState>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJPlaybackState() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{14CEB35A-9DEA-487E-8205-E6A9D52F5FA7}") JPlaybackState_BuilderClass  : public Androidapi::Jni::Javatypes::JObjectClass 
+{
+	HIDESBASE virtual _di_JPlaybackState_Builder __cdecl init() = 0 /* overload */;
+	HIDESBASE virtual _di_JPlaybackState_Builder __cdecl init(_di_JPlaybackState from) = 0 /* overload */;
+};
+
+__interface  INTERFACE_UUID("{C2583FAC-5C63-4A81-827F-25B6471F9C97}") JPlaybackState_Builder  : public Androidapi::Jni::Javatypes::JObject 
+{
+	virtual _di_JPlaybackState_Builder __cdecl addCustomAction(Androidapi::Jni::Javatypes::_di_JString action, Androidapi::Jni::Javatypes::_di_JString name, int icon) = 0 /* overload */;
+	virtual _di_JPlaybackState_Builder __cdecl addCustomAction(_di_JPlaybackState_CustomAction customAction) = 0 /* overload */;
+	virtual _di_JPlaybackState __cdecl build() = 0 ;
+	virtual _di_JPlaybackState_Builder __cdecl setActions(__int64 actions) = 0 ;
+	virtual _di_JPlaybackState_Builder __cdecl setActiveQueueItemId(__int64 id) = 0 ;
+	virtual _di_JPlaybackState_Builder __cdecl setBufferedPosition(__int64 bufferedPosition) = 0 ;
+	virtual _di_JPlaybackState_Builder __cdecl setErrorMessage(Androidapi::Jni::Javatypes::_di_JCharSequence error) = 0 ;
+	virtual _di_JPlaybackState_Builder __cdecl setExtras(Androidapi::Jni::Os::_di_JBundle extras) = 0 ;
+	virtual _di_JPlaybackState_Builder __cdecl setState(int state, __int64 position, float playbackSpeed, __int64 updateTime) = 0 /* overload */;
+	virtual _di_JPlaybackState_Builder __cdecl setState(int state, __int64 position, float playbackSpeed) = 0 /* overload */;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJPlaybackState_Builder : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JPlaybackState_BuilderClass,_di_JPlaybackState_Builder>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JPlaybackState_BuilderClass,_di_JPlaybackState_Builder> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJPlaybackState_Builder() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JPlaybackState_BuilderClass,_di_JPlaybackState_Builder>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJPlaybackState_Builder() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{FD5442D6-8F41-4A9E-8702-74E630E56EEB}") JPlaybackState_CustomActionClass  : public Androidapi::Jni::Javatypes::JObjectClass 
+{
+	virtual Androidapi::Jni::Os::_di_JParcelable_Creator __cdecl _GetCREATOR() = 0 ;
+	__property Androidapi::Jni::Os::_di_JParcelable_Creator CREATOR = {read=_GetCREATOR};
+};
+
+__interface  INTERFACE_UUID("{ACAD5494-DA7A-41AE-9935-0A6C476501CD}") JPlaybackState_CustomAction  : public Androidapi::Jni::Javatypes::JObject 
+{
+	virtual int __cdecl describeContents() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl getAction() = 0 ;
+	virtual Androidapi::Jni::Os::_di_JBundle __cdecl getExtras() = 0 ;
+	virtual int __cdecl getIcon() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JCharSequence __cdecl getName() = 0 ;
+	HIDESBASE virtual Androidapi::Jni::Javatypes::_di_JString __cdecl toString() = 0 ;
+	virtual void __cdecl writeToParcel(Androidapi::Jni::Os::_di_JParcel dest, int flags) = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJPlaybackState_CustomAction : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JPlaybackState_CustomActionClass,_di_JPlaybackState_CustomAction>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JPlaybackState_CustomActionClass,_di_JPlaybackState_CustomAction> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJPlaybackState_CustomAction() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JPlaybackState_CustomActionClass,_di_JPlaybackState_CustomAction>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJPlaybackState_CustomAction() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{D9170974-7483-47AF-AC08-72555BEFF1E3}") JCustomAction_BuilderClass  : public Androidapi::Jni::Javatypes::JObjectClass 
+{
+	HIDESBASE virtual _di_JCustomAction_Builder __cdecl init(Androidapi::Jni::Javatypes::_di_JString action, Androidapi::Jni::Javatypes::_di_JCharSequence name, int icon) = 0 ;
+};
+
+__interface  INTERFACE_UUID("{27EAB325-4358-4187-A188-60DDBD0B0388}") JCustomAction_Builder  : public Androidapi::Jni::Javatypes::JObject 
+{
+	virtual _di_JPlaybackState_CustomAction __cdecl build() = 0 ;
+	virtual _di_JCustomAction_Builder __cdecl setExtras(Androidapi::Jni::Os::_di_JBundle extras) = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJCustomAction_Builder : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JCustomAction_BuilderClass,_di_JCustomAction_Builder>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JCustomAction_BuilderClass,_di_JCustomAction_Builder> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJCustomAction_Builder() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JCustomAction_BuilderClass,_di_JCustomAction_Builder>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJCustomAction_Builder() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{322A526D-0620-49C6-A73B-16724301A4DC}") JTvContentRatingClass  : public Androidapi::Jni::Javatypes::JObjectClass 
+{
+	virtual _di_JTvContentRating __cdecl _GetUNRATED() = 0 ;
+	virtual _di_JTvContentRating __cdecl unflattenFromString(Androidapi::Jni::Javatypes::_di_JString ratingString) = 0 ;
+	__property _di_JTvContentRating UNRATED = {read=_GetUNRATED};
+};
+
+__interface  INTERFACE_UUID("{85AA8AA2-F223-4815-A478-8D37FC54A1BC}") JTvContentRating  : public Androidapi::Jni::Javatypes::JObject 
+{
+	virtual bool __cdecl contains(_di_JTvContentRating rating) = 0 ;
+	HIDESBASE virtual bool __cdecl equals(Androidapi::Jni::Javatypes::_di_JObject obj) = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl flattenToString() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl getDomain() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl getMainRating() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl getRatingSystem() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JList __cdecl getSubRatings() = 0 ;
+	HIDESBASE virtual int __cdecl hashCode() = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJTvContentRating : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JTvContentRatingClass,_di_JTvContentRating>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JTvContentRatingClass,_di_JTvContentRating> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJTvContentRating() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JTvContentRatingClass,_di_JTvContentRating>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJTvContentRating() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{617DCE60-1641-4F75-8B1B-F9459334F3B3}") JTvContractClass  : public Androidapi::Jni::Javatypes::JObjectClass 
+{
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetACTION_INITIALIZE_PROGRAMS() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetACTION_PREVIEW_PROGRAM_ADDED_TO_WATCH_NEXT() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetACTION_PREVIEW_PROGRAM_BROWSABLE_DISABLED() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetACTION_REQUEST_CHANNEL_BROWSABLE() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetACTION_WATCH_NEXT_PROGRAM_BROWSABLE_DISABLED() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetAUTHORITY() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetEXTRA_CHANNEL_ID() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetEXTRA_PREVIEW_PROGRAM_ID() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetEXTRA_WATCH_NEXT_PROGRAM_ID() = 0 ;
+	virtual Androidapi::Jni::Net::_di_Jnet_Uri __cdecl buildChannelLogoUri(__int64 channelId) = 0 /* overload */;
+	virtual Androidapi::Jni::Net::_di_Jnet_Uri __cdecl buildChannelLogoUri(Androidapi::Jni::Net::_di_Jnet_Uri channelUri) = 0 /* overload */;
+	virtual Androidapi::Jni::Net::_di_Jnet_Uri __cdecl buildChannelUri(__int64 channelId) = 0 ;
+	virtual Androidapi::Jni::Net::_di_Jnet_Uri __cdecl buildChannelUriForPassthroughInput(Androidapi::Jni::Javatypes::_di_JString inputId) = 0 ;
+	virtual Androidapi::Jni::Net::_di_Jnet_Uri __cdecl buildChannelsUriForInput(Androidapi::Jni::Javatypes::_di_JString inputId) = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl buildInputId(Androidapi::Jni::Graphicscontentviewtext::_di_JComponentName name) = 0 ;
+	virtual Androidapi::Jni::Net::_di_Jnet_Uri __cdecl buildPreviewProgramUri(__int64 previewProgramId) = 0 ;
+	virtual Androidapi::Jni::Net::_di_Jnet_Uri __cdecl buildPreviewProgramsUriForChannel(__int64 channelId) = 0 /* overload */;
+	virtual Androidapi::Jni::Net::_di_Jnet_Uri __cdecl buildPreviewProgramsUriForChannel(Androidapi::Jni::Net::_di_Jnet_Uri channelUri) = 0 /* overload */;
+	virtual Androidapi::Jni::Net::_di_Jnet_Uri __cdecl buildProgramUri(__int64 programId) = 0 ;
+	virtual Androidapi::Jni::Net::_di_Jnet_Uri __cdecl buildProgramsUriForChannel(__int64 channelId) = 0 /* overload */;
+	virtual Androidapi::Jni::Net::_di_Jnet_Uri __cdecl buildProgramsUriForChannel(Androidapi::Jni::Net::_di_Jnet_Uri channelUri) = 0 /* overload */;
+	virtual Androidapi::Jni::Net::_di_Jnet_Uri __cdecl buildProgramsUriForChannel(__int64 channelId, __int64 startTime, __int64 endTime) = 0 /* overload */;
+	virtual Androidapi::Jni::Net::_di_Jnet_Uri __cdecl buildProgramsUriForChannel(Androidapi::Jni::Net::_di_Jnet_Uri channelUri, __int64 startTime, __int64 endTime) = 0 /* overload */;
+	virtual Androidapi::Jni::Net::_di_Jnet_Uri __cdecl buildRecordedProgramUri(__int64 recordedProgramId) = 0 ;
+	virtual Androidapi::Jni::Net::_di_Jnet_Uri __cdecl buildWatchNextProgramUri(__int64 watchNextProgramId) = 0 ;
+	virtual bool __cdecl isChannelUri(Androidapi::Jni::Net::_di_Jnet_Uri uri) = 0 ;
+	virtual bool __cdecl isChannelUriForPassthroughInput(Androidapi::Jni::Net::_di_Jnet_Uri uri) = 0 ;
+	virtual bool __cdecl isChannelUriForTunerInput(Androidapi::Jni::Net::_di_Jnet_Uri uri) = 0 ;
+	virtual bool __cdecl isProgramUri(Androidapi::Jni::Net::_di_Jnet_Uri uri) = 0 ;
+	virtual void __cdecl requestChannelBrowsable(Androidapi::Jni::Graphicscontentviewtext::_di_JContext context, __int64 channelId) = 0 ;
+	__property Androidapi::Jni::Javatypes::_di_JString ACTION_INITIALIZE_PROGRAMS = {read=_GetACTION_INITIALIZE_PROGRAMS};
+	__property Androidapi::Jni::Javatypes::_di_JString ACTION_PREVIEW_PROGRAM_ADDED_TO_WATCH_NEXT = {read=_GetACTION_PREVIEW_PROGRAM_ADDED_TO_WATCH_NEXT};
+	__property Androidapi::Jni::Javatypes::_di_JString ACTION_PREVIEW_PROGRAM_BROWSABLE_DISABLED = {read=_GetACTION_PREVIEW_PROGRAM_BROWSABLE_DISABLED};
+	__property Androidapi::Jni::Javatypes::_di_JString ACTION_REQUEST_CHANNEL_BROWSABLE = {read=_GetACTION_REQUEST_CHANNEL_BROWSABLE};
+	__property Androidapi::Jni::Javatypes::_di_JString ACTION_WATCH_NEXT_PROGRAM_BROWSABLE_DISABLED = {read=_GetACTION_WATCH_NEXT_PROGRAM_BROWSABLE_DISABLED};
+	__property Androidapi::Jni::Javatypes::_di_JString AUTHORITY = {read=_GetAUTHORITY};
+	__property Androidapi::Jni::Javatypes::_di_JString EXTRA_CHANNEL_ID = {read=_GetEXTRA_CHANNEL_ID};
+	__property Androidapi::Jni::Javatypes::_di_JString EXTRA_PREVIEW_PROGRAM_ID = {read=_GetEXTRA_PREVIEW_PROGRAM_ID};
+	__property Androidapi::Jni::Javatypes::_di_JString EXTRA_WATCH_NEXT_PROGRAM_ID = {read=_GetEXTRA_WATCH_NEXT_PROGRAM_ID};
+};
+
+__interface  INTERFACE_UUID("{4ACA1AE4-AA5E-4A88-9E7A-7D7438F979C3}") JTvContract  : public Androidapi::Jni::Javatypes::JObject 
+{
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJTvContract : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JTvContractClass,_di_JTvContract>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JTvContractClass,_di_JTvContract> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJTvContract() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JTvContractClass,_di_JTvContract>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJTvContract() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{773D31D0-ECF5-480E-B000-9930CA1749AD}") JTvContract_BaseTvColumnsClass  : public Androidapi::Jni::Provider::JBaseColumnsClass 
+{
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetCOLUMN_PACKAGE_NAME() = 0 ;
+	__property Androidapi::Jni::Javatypes::_di_JString COLUMN_PACKAGE_NAME = {read=_GetCOLUMN_PACKAGE_NAME};
+};
+
+__interface  INTERFACE_UUID("{9AD43EBD-F58F-4A5C-B381-862778904287}") JTvContract_BaseTvColumns  : public Androidapi::Jni::Provider::JBaseColumns 
+{
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJTvContract_BaseTvColumns : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JTvContract_BaseTvColumnsClass,_di_JTvContract_BaseTvColumns>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JTvContract_BaseTvColumnsClass,_di_JTvContract_BaseTvColumns> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJTvContract_BaseTvColumns() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JTvContract_BaseTvColumnsClass,_di_JTvContract_BaseTvColumns>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJTvContract_BaseTvColumns() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{76C4883A-633D-4254-B8EB-E52557B19D4C}") JTvContract_ChannelsClass  : public Androidapi::Jni::Javatypes::JObjectClass 
+{
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetCOLUMN_APP_LINK_COLOR() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetCOLUMN_APP_LINK_ICON_URI() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetCOLUMN_APP_LINK_INTENT_URI() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetCOLUMN_APP_LINK_POSTER_ART_URI() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetCOLUMN_APP_LINK_TEXT() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetCOLUMN_BROWSABLE() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetCOLUMN_DESCRIPTION() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetCOLUMN_DISPLAY_NAME() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetCOLUMN_DISPLAY_NUMBER() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetCOLUMN_INPUT_ID() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetCOLUMN_INTERNAL_PROVIDER_DATA() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetCOLUMN_INTERNAL_PROVIDER_FLAG1() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetCOLUMN_INTERNAL_PROVIDER_FLAG2() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetCOLUMN_INTERNAL_PROVIDER_FLAG3() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetCOLUMN_INTERNAL_PROVIDER_FLAG4() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetCOLUMN_INTERNAL_PROVIDER_ID() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetCOLUMN_LOCKED() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetCOLUMN_NETWORK_AFFILIATION() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetCOLUMN_ORIGINAL_NETWORK_ID() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetCOLUMN_SEARCHABLE() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetCOLUMN_SERVICE_ID() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetCOLUMN_SERVICE_TYPE() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetCOLUMN_TRANSIENT() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetCOLUMN_TRANSPORT_STREAM_ID() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetCOLUMN_TYPE() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetCOLUMN_VERSION_NUMBER() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetCOLUMN_VIDEO_FORMAT() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetCONTENT_ITEM_TYPE() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetCONTENT_TYPE() = 0 ;
+	virtual Androidapi::Jni::Net::_di_Jnet_Uri __cdecl _GetCONTENT_URI() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetSERVICE_TYPE_AUDIO() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetSERVICE_TYPE_AUDIO_VIDEO() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetSERVICE_TYPE_OTHER() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetTYPE_1SEG() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetTYPE_ATSC_C() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetTYPE_ATSC_M_H() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetTYPE_ATSC_T() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetTYPE_CMMB() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetTYPE_DTMB() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetTYPE_DVB_C() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetTYPE_DVB_C2() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetTYPE_DVB_H() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetTYPE_DVB_S() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetTYPE_DVB_S2() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetTYPE_DVB_SH() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetTYPE_DVB_T() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetTYPE_DVB_T2() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetTYPE_ISDB_C() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetTYPE_ISDB_S() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetTYPE_ISDB_T() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetTYPE_ISDB_TB() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetTYPE_NTSC() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetTYPE_OTHER() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetTYPE_PAL() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetTYPE_PREVIEW() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetTYPE_SECAM() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetTYPE_S_DMB() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetTYPE_T_DMB() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetVIDEO_FORMAT_1080I() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetVIDEO_FORMAT_1080P() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetVIDEO_FORMAT_2160P() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetVIDEO_FORMAT_240P() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetVIDEO_FORMAT_360P() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetVIDEO_FORMAT_4320P() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetVIDEO_FORMAT_480I() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetVIDEO_FORMAT_480P() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetVIDEO_FORMAT_576I() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetVIDEO_FORMAT_576P() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetVIDEO_FORMAT_720P() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetVIDEO_RESOLUTION_ED() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetVIDEO_RESOLUTION_FHD() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetVIDEO_RESOLUTION_HD() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetVIDEO_RESOLUTION_SD() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetVIDEO_RESOLUTION_UHD() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl getVideoResolution(Androidapi::Jni::Javatypes::_di_JString videoFormat) = 0 ;
+	__property Androidapi::Jni::Javatypes::_di_JString COLUMN_APP_LINK_COLOR = {read=_GetCOLUMN_APP_LINK_COLOR};
+	__property Androidapi::Jni::Javatypes::_di_JString COLUMN_APP_LINK_ICON_URI = {read=_GetCOLUMN_APP_LINK_ICON_URI};
+	__property Androidapi::Jni::Javatypes::_di_JString COLUMN_APP_LINK_INTENT_URI = {read=_GetCOLUMN_APP_LINK_INTENT_URI};
+	__property Androidapi::Jni::Javatypes::_di_JString COLUMN_APP_LINK_POSTER_ART_URI = {read=_GetCOLUMN_APP_LINK_POSTER_ART_URI};
+	__property Androidapi::Jni::Javatypes::_di_JString COLUMN_APP_LINK_TEXT = {read=_GetCOLUMN_APP_LINK_TEXT};
+	__property Androidapi::Jni::Javatypes::_di_JString COLUMN_BROWSABLE = {read=_GetCOLUMN_BROWSABLE};
+	__property Androidapi::Jni::Javatypes::_di_JString COLUMN_DESCRIPTION = {read=_GetCOLUMN_DESCRIPTION};
+	__property Androidapi::Jni::Javatypes::_di_JString COLUMN_DISPLAY_NAME = {read=_GetCOLUMN_DISPLAY_NAME};
+	__property Androidapi::Jni::Javatypes::_di_JString COLUMN_DISPLAY_NUMBER = {read=_GetCOLUMN_DISPLAY_NUMBER};
+	__property Androidapi::Jni::Javatypes::_di_JString COLUMN_INPUT_ID = {read=_GetCOLUMN_INPUT_ID};
+	__property Androidapi::Jni::Javatypes::_di_JString COLUMN_INTERNAL_PROVIDER_DATA = {read=_GetCOLUMN_INTERNAL_PROVIDER_DATA};
+	__property Androidapi::Jni::Javatypes::_di_JString COLUMN_INTERNAL_PROVIDER_FLAG1 = {read=_GetCOLUMN_INTERNAL_PROVIDER_FLAG1};
+	__property Androidapi::Jni::Javatypes::_di_JString COLUMN_INTERNAL_PROVIDER_FLAG2 = {read=_GetCOLUMN_INTERNAL_PROVIDER_FLAG2};
+	__property Androidapi::Jni::Javatypes::_di_JString COLUMN_INTERNAL_PROVIDER_FLAG3 = {read=_GetCOLUMN_INTERNAL_PROVIDER_FLAG3};
+	__property Androidapi::Jni::Javatypes::_di_JString COLUMN_INTERNAL_PROVIDER_FLAG4 = {read=_GetCOLUMN_INTERNAL_PROVIDER_FLAG4};
+	__property Androidapi::Jni::Javatypes::_di_JString COLUMN_INTERNAL_PROVIDER_ID = {read=_GetCOLUMN_INTERNAL_PROVIDER_ID};
+	__property Androidapi::Jni::Javatypes::_di_JString COLUMN_LOCKED = {read=_GetCOLUMN_LOCKED};
+	__property Androidapi::Jni::Javatypes::_di_JString COLUMN_NETWORK_AFFILIATION = {read=_GetCOLUMN_NETWORK_AFFILIATION};
+	__property Androidapi::Jni::Javatypes::_di_JString COLUMN_ORIGINAL_NETWORK_ID = {read=_GetCOLUMN_ORIGINAL_NETWORK_ID};
+	__property Androidapi::Jni::Javatypes::_di_JString COLUMN_SEARCHABLE = {read=_GetCOLUMN_SEARCHABLE};
+	__property Androidapi::Jni::Javatypes::_di_JString COLUMN_SERVICE_ID = {read=_GetCOLUMN_SERVICE_ID};
+	__property Androidapi::Jni::Javatypes::_di_JString COLUMN_SERVICE_TYPE = {read=_GetCOLUMN_SERVICE_TYPE};
+	__property Androidapi::Jni::Javatypes::_di_JString COLUMN_TRANSIENT = {read=_GetCOLUMN_TRANSIENT};
+	__property Androidapi::Jni::Javatypes::_di_JString COLUMN_TRANSPORT_STREAM_ID = {read=_GetCOLUMN_TRANSPORT_STREAM_ID};
+	__property Androidapi::Jni::Javatypes::_di_JString COLUMN_TYPE = {read=_GetCOLUMN_TYPE};
+	__property Androidapi::Jni::Javatypes::_di_JString COLUMN_VERSION_NUMBER = {read=_GetCOLUMN_VERSION_NUMBER};
+	__property Androidapi::Jni::Javatypes::_di_JString COLUMN_VIDEO_FORMAT = {read=_GetCOLUMN_VIDEO_FORMAT};
+	__property Androidapi::Jni::Javatypes::_di_JString CONTENT_ITEM_TYPE = {read=_GetCONTENT_ITEM_TYPE};
+	__property Androidapi::Jni::Javatypes::_di_JString CONTENT_TYPE = {read=_GetCONTENT_TYPE};
+	__property Androidapi::Jni::Net::_di_Jnet_Uri CONTENT_URI = {read=_GetCONTENT_URI};
+	__property Androidapi::Jni::Javatypes::_di_JString SERVICE_TYPE_AUDIO = {read=_GetSERVICE_TYPE_AUDIO};
+	__property Androidapi::Jni::Javatypes::_di_JString SERVICE_TYPE_AUDIO_VIDEO = {read=_GetSERVICE_TYPE_AUDIO_VIDEO};
+	__property Androidapi::Jni::Javatypes::_di_JString SERVICE_TYPE_OTHER = {read=_GetSERVICE_TYPE_OTHER};
+	__property Androidapi::Jni::Javatypes::_di_JString TYPE_1SEG = {read=_GetTYPE_1SEG};
+	__property Androidapi::Jni::Javatypes::_di_JString TYPE_ATSC_C = {read=_GetTYPE_ATSC_C};
+	__property Androidapi::Jni::Javatypes::_di_JString TYPE_ATSC_M_H = {read=_GetTYPE_ATSC_M_H};
+	__property Androidapi::Jni::Javatypes::_di_JString TYPE_ATSC_T = {read=_GetTYPE_ATSC_T};
+	__property Androidapi::Jni::Javatypes::_di_JString TYPE_CMMB = {read=_GetTYPE_CMMB};
+	__property Androidapi::Jni::Javatypes::_di_JString TYPE_DTMB = {read=_GetTYPE_DTMB};
+	__property Androidapi::Jni::Javatypes::_di_JString TYPE_DVB_C = {read=_GetTYPE_DVB_C};
+	__property Androidapi::Jni::Javatypes::_di_JString TYPE_DVB_C2 = {read=_GetTYPE_DVB_C2};
+	__property Androidapi::Jni::Javatypes::_di_JString TYPE_DVB_H = {read=_GetTYPE_DVB_H};
+	__property Androidapi::Jni::Javatypes::_di_JString TYPE_DVB_S = {read=_GetTYPE_DVB_S};
+	__property Androidapi::Jni::Javatypes::_di_JString TYPE_DVB_S2 = {read=_GetTYPE_DVB_S2};
+	__property Androidapi::Jni::Javatypes::_di_JString TYPE_DVB_SH = {read=_GetTYPE_DVB_SH};
+	__property Androidapi::Jni::Javatypes::_di_JString TYPE_DVB_T = {read=_GetTYPE_DVB_T};
+	__property Androidapi::Jni::Javatypes::_di_JString TYPE_DVB_T2 = {read=_GetTYPE_DVB_T2};
+	__property Androidapi::Jni::Javatypes::_di_JString TYPE_ISDB_C = {read=_GetTYPE_ISDB_C};
+	__property Androidapi::Jni::Javatypes::_di_JString TYPE_ISDB_S = {read=_GetTYPE_ISDB_S};
+	__property Androidapi::Jni::Javatypes::_di_JString TYPE_ISDB_T = {read=_GetTYPE_ISDB_T};
+	__property Androidapi::Jni::Javatypes::_di_JString TYPE_ISDB_TB = {read=_GetTYPE_ISDB_TB};
+	__property Androidapi::Jni::Javatypes::_di_JString TYPE_NTSC = {read=_GetTYPE_NTSC};
+	__property Androidapi::Jni::Javatypes::_di_JString TYPE_OTHER = {read=_GetTYPE_OTHER};
+	__property Androidapi::Jni::Javatypes::_di_JString TYPE_PAL = {read=_GetTYPE_PAL};
+	__property Androidapi::Jni::Javatypes::_di_JString TYPE_PREVIEW = {read=_GetTYPE_PREVIEW};
+	__property Androidapi::Jni::Javatypes::_di_JString TYPE_SECAM = {read=_GetTYPE_SECAM};
+	__property Androidapi::Jni::Javatypes::_di_JString TYPE_S_DMB = {read=_GetTYPE_S_DMB};
+	__property Androidapi::Jni::Javatypes::_di_JString TYPE_T_DMB = {read=_GetTYPE_T_DMB};
+	__property Androidapi::Jni::Javatypes::_di_JString VIDEO_FORMAT_1080I = {read=_GetVIDEO_FORMAT_1080I};
+	__property Androidapi::Jni::Javatypes::_di_JString VIDEO_FORMAT_1080P = {read=_GetVIDEO_FORMAT_1080P};
+	__property Androidapi::Jni::Javatypes::_di_JString VIDEO_FORMAT_2160P = {read=_GetVIDEO_FORMAT_2160P};
+	__property Androidapi::Jni::Javatypes::_di_JString VIDEO_FORMAT_240P = {read=_GetVIDEO_FORMAT_240P};
+	__property Androidapi::Jni::Javatypes::_di_JString VIDEO_FORMAT_360P = {read=_GetVIDEO_FORMAT_360P};
+	__property Androidapi::Jni::Javatypes::_di_JString VIDEO_FORMAT_4320P = {read=_GetVIDEO_FORMAT_4320P};
+	__property Androidapi::Jni::Javatypes::_di_JString VIDEO_FORMAT_480I = {read=_GetVIDEO_FORMAT_480I};
+	__property Androidapi::Jni::Javatypes::_di_JString VIDEO_FORMAT_480P = {read=_GetVIDEO_FORMAT_480P};
+	__property Androidapi::Jni::Javatypes::_di_JString VIDEO_FORMAT_576I = {read=_GetVIDEO_FORMAT_576I};
+	__property Androidapi::Jni::Javatypes::_di_JString VIDEO_FORMAT_576P = {read=_GetVIDEO_FORMAT_576P};
+	__property Androidapi::Jni::Javatypes::_di_JString VIDEO_FORMAT_720P = {read=_GetVIDEO_FORMAT_720P};
+	__property Androidapi::Jni::Javatypes::_di_JString VIDEO_RESOLUTION_ED = {read=_GetVIDEO_RESOLUTION_ED};
+	__property Androidapi::Jni::Javatypes::_di_JString VIDEO_RESOLUTION_FHD = {read=_GetVIDEO_RESOLUTION_FHD};
+	__property Androidapi::Jni::Javatypes::_di_JString VIDEO_RESOLUTION_HD = {read=_GetVIDEO_RESOLUTION_HD};
+	__property Androidapi::Jni::Javatypes::_di_JString VIDEO_RESOLUTION_SD = {read=_GetVIDEO_RESOLUTION_SD};
+	__property Androidapi::Jni::Javatypes::_di_JString VIDEO_RESOLUTION_UHD = {read=_GetVIDEO_RESOLUTION_UHD};
+};
+
+__interface  INTERFACE_UUID("{8F0208EC-F865-465C-BF58-4968AB36CBB3}") JTvContract_Channels  : public Androidapi::Jni::Javatypes::JObject 
+{
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJTvContract_Channels : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JTvContract_ChannelsClass,_di_JTvContract_Channels>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JTvContract_ChannelsClass,_di_JTvContract_Channels> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJTvContract_Channels() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JTvContract_ChannelsClass,_di_JTvContract_Channels>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJTvContract_Channels() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{A6F017D2-0D15-400D-9540-660ACD5ACCE1}") JChannels_LogoClass  : public Androidapi::Jni::Javatypes::JObjectClass 
+{
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetCONTENT_DIRECTORY() = 0 ;
+	__property Androidapi::Jni::Javatypes::_di_JString CONTENT_DIRECTORY = {read=_GetCONTENT_DIRECTORY};
+};
+
+__interface  INTERFACE_UUID("{03642B44-015D-4ED5-B535-147A886E2855}") JChannels_Logo  : public Androidapi::Jni::Javatypes::JObject 
+{
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJChannels_Logo : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JChannels_LogoClass,_di_JChannels_Logo>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JChannels_LogoClass,_di_JChannels_Logo> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJChannels_Logo() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JChannels_LogoClass,_di_JChannels_Logo>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJChannels_Logo() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{8B175386-CD3B-497A-9516-BC275B02CAA6}") JTvContract_PreviewProgramsClass  : public Androidapi::Jni::Javatypes::JObjectClass 
+{
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetCOLUMN_CHANNEL_ID() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetCOLUMN_WEIGHT() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetCONTENT_ITEM_TYPE() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetCONTENT_TYPE() = 0 ;
+	virtual Androidapi::Jni::Net::_di_Jnet_Uri __cdecl _GetCONTENT_URI() = 0 ;
+	__property Androidapi::Jni::Javatypes::_di_JString COLUMN_CHANNEL_ID = {read=_GetCOLUMN_CHANNEL_ID};
+	__property Androidapi::Jni::Javatypes::_di_JString COLUMN_WEIGHT = {read=_GetCOLUMN_WEIGHT};
+	__property Androidapi::Jni::Javatypes::_di_JString CONTENT_ITEM_TYPE = {read=_GetCONTENT_ITEM_TYPE};
+	__property Androidapi::Jni::Javatypes::_di_JString CONTENT_TYPE = {read=_GetCONTENT_TYPE};
+	__property Androidapi::Jni::Net::_di_Jnet_Uri CONTENT_URI = {read=_GetCONTENT_URI};
+};
+
+__interface  INTERFACE_UUID("{D5FDD761-0E4A-49DC-98B0-2E9EDD971622}") JTvContract_PreviewPrograms  : public Androidapi::Jni::Javatypes::JObject 
+{
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJTvContract_PreviewPrograms : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JTvContract_PreviewProgramsClass,_di_JTvContract_PreviewPrograms>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JTvContract_PreviewProgramsClass,_di_JTvContract_PreviewPrograms> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJTvContract_PreviewPrograms() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JTvContract_PreviewProgramsClass,_di_JTvContract_PreviewPrograms>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJTvContract_PreviewPrograms() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{3EB71005-2470-41FB-9ACD-6E7A895BB5AF}") JTvContract_ProgramsClass  : public Androidapi::Jni::Javatypes::JObjectClass 
+{
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetCOLUMN_BROADCAST_GENRE() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetCOLUMN_CHANNEL_ID() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetCOLUMN_END_TIME_UTC_MILLIS() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetCOLUMN_EPISODE_NUMBER() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetCOLUMN_RECORDING_PROHIBITED() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetCOLUMN_SEASON_NUMBER() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetCOLUMN_START_TIME_UTC_MILLIS() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetCONTENT_ITEM_TYPE() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetCONTENT_TYPE() = 0 ;
+	virtual Androidapi::Jni::Net::_di_Jnet_Uri __cdecl _GetCONTENT_URI() = 0 ;
+	__property Androidapi::Jni::Javatypes::_di_JString COLUMN_BROADCAST_GENRE = {read=_GetCOLUMN_BROADCAST_GENRE};
+	__property Androidapi::Jni::Javatypes::_di_JString COLUMN_CHANNEL_ID = {read=_GetCOLUMN_CHANNEL_ID};
+	__property Androidapi::Jni::Javatypes::_di_JString COLUMN_END_TIME_UTC_MILLIS = {read=_GetCOLUMN_END_TIME_UTC_MILLIS};
+	__property Androidapi::Jni::Javatypes::_di_JString COLUMN_EPISODE_NUMBER = {read=_GetCOLUMN_EPISODE_NUMBER};
+	__property Androidapi::Jni::Javatypes::_di_JString COLUMN_RECORDING_PROHIBITED = {read=_GetCOLUMN_RECORDING_PROHIBITED};
+	__property Androidapi::Jni::Javatypes::_di_JString COLUMN_SEASON_NUMBER = {read=_GetCOLUMN_SEASON_NUMBER};
+	__property Androidapi::Jni::Javatypes::_di_JString COLUMN_START_TIME_UTC_MILLIS = {read=_GetCOLUMN_START_TIME_UTC_MILLIS};
+	__property Androidapi::Jni::Javatypes::_di_JString CONTENT_ITEM_TYPE = {read=_GetCONTENT_ITEM_TYPE};
+	__property Androidapi::Jni::Javatypes::_di_JString CONTENT_TYPE = {read=_GetCONTENT_TYPE};
+	__property Androidapi::Jni::Net::_di_Jnet_Uri CONTENT_URI = {read=_GetCONTENT_URI};
+};
+
+__interface  INTERFACE_UUID("{B064AE97-B755-45D2-9B2F-265D7E8AEC97}") JTvContract_Programs  : public Androidapi::Jni::Javatypes::JObject 
+{
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJTvContract_Programs : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JTvContract_ProgramsClass,_di_JTvContract_Programs>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JTvContract_ProgramsClass,_di_JTvContract_Programs> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJTvContract_Programs() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JTvContract_ProgramsClass,_di_JTvContract_Programs>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJTvContract_Programs() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{9D7EC7A4-1F0D-4D52-8C2A-AA2828C7BE3F}") JPrograms_GenresClass  : public Androidapi::Jni::Javatypes::JObjectClass 
+{
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetANIMAL_WILDLIFE() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetARTS() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetCOMEDY() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetDRAMA() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetEDUCATION() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetENTERTAINMENT() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetFAMILY_KIDS() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetGAMING() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetLIFE_STYLE() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetMOVIES() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetMUSIC() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetNEWS() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetPREMIER() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetSHOPPING() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetSPORTS() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetTECH_SCIENCE() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetTRAVEL() = 0 ;
+	virtual Androidapi::Jnibridge::TJavaObjectArray__1<Androidapi::Jni::Javatypes::_di_JString>* __cdecl decode(Androidapi::Jni::Javatypes::_di_JString genres) = 0 ;
+	virtual bool __cdecl isCanonical(Androidapi::Jni::Javatypes::_di_JString genre) = 0 ;
+	__property Androidapi::Jni::Javatypes::_di_JString ANIMAL_WILDLIFE = {read=_GetANIMAL_WILDLIFE};
+	__property Androidapi::Jni::Javatypes::_di_JString ARTS = {read=_GetARTS};
+	__property Androidapi::Jni::Javatypes::_di_JString COMEDY = {read=_GetCOMEDY};
+	__property Androidapi::Jni::Javatypes::_di_JString DRAMA = {read=_GetDRAMA};
+	__property Androidapi::Jni::Javatypes::_di_JString EDUCATION = {read=_GetEDUCATION};
+	__property Androidapi::Jni::Javatypes::_di_JString ENTERTAINMENT = {read=_GetENTERTAINMENT};
+	__property Androidapi::Jni::Javatypes::_di_JString FAMILY_KIDS = {read=_GetFAMILY_KIDS};
+	__property Androidapi::Jni::Javatypes::_di_JString GAMING = {read=_GetGAMING};
+	__property Androidapi::Jni::Javatypes::_di_JString LIFE_STYLE = {read=_GetLIFE_STYLE};
+	__property Androidapi::Jni::Javatypes::_di_JString MOVIES = {read=_GetMOVIES};
+	__property Androidapi::Jni::Javatypes::_di_JString MUSIC = {read=_GetMUSIC};
+	__property Androidapi::Jni::Javatypes::_di_JString NEWS = {read=_GetNEWS};
+	__property Androidapi::Jni::Javatypes::_di_JString PREMIER = {read=_GetPREMIER};
+	__property Androidapi::Jni::Javatypes::_di_JString SHOPPING = {read=_GetSHOPPING};
+	__property Androidapi::Jni::Javatypes::_di_JString SPORTS = {read=_GetSPORTS};
+	__property Androidapi::Jni::Javatypes::_di_JString TECH_SCIENCE = {read=_GetTECH_SCIENCE};
+	__property Androidapi::Jni::Javatypes::_di_JString TRAVEL = {read=_GetTRAVEL};
+};
+
+__interface  INTERFACE_UUID("{AC4CFBA3-F369-40A6-A2E6-0C5C7C525692}") JPrograms_Genres  : public Androidapi::Jni::Javatypes::JObject 
+{
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJPrograms_Genres : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JPrograms_GenresClass,_di_JPrograms_Genres>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JPrograms_GenresClass,_di_JPrograms_Genres> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJPrograms_Genres() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JPrograms_GenresClass,_di_JPrograms_Genres>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJPrograms_Genres() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{0C587FB9-4A1E-4767-8E40-2C13FCE50E78}") JTvContract_RecordedProgramsClass  : public Androidapi::Jni::Javatypes::JObjectClass 
+{
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetCOLUMN_BROADCAST_GENRE() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetCOLUMN_CHANNEL_ID() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetCOLUMN_END_TIME_UTC_MILLIS() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetCOLUMN_INPUT_ID() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetCOLUMN_RECORDING_DATA_BYTES() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetCOLUMN_RECORDING_DATA_URI() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetCOLUMN_RECORDING_DURATION_MILLIS() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetCOLUMN_RECORDING_EXPIRE_TIME_UTC_MILLIS() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetCOLUMN_START_TIME_UTC_MILLIS() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetCONTENT_ITEM_TYPE() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetCONTENT_TYPE() = 0 ;
+	virtual Androidapi::Jni::Net::_di_Jnet_Uri __cdecl _GetCONTENT_URI() = 0 ;
+	__property Androidapi::Jni::Javatypes::_di_JString COLUMN_BROADCAST_GENRE = {read=_GetCOLUMN_BROADCAST_GENRE};
+	__property Androidapi::Jni::Javatypes::_di_JString COLUMN_CHANNEL_ID = {read=_GetCOLUMN_CHANNEL_ID};
+	__property Androidapi::Jni::Javatypes::_di_JString COLUMN_END_TIME_UTC_MILLIS = {read=_GetCOLUMN_END_TIME_UTC_MILLIS};
+	__property Androidapi::Jni::Javatypes::_di_JString COLUMN_INPUT_ID = {read=_GetCOLUMN_INPUT_ID};
+	__property Androidapi::Jni::Javatypes::_di_JString COLUMN_RECORDING_DATA_BYTES = {read=_GetCOLUMN_RECORDING_DATA_BYTES};
+	__property Androidapi::Jni::Javatypes::_di_JString COLUMN_RECORDING_DATA_URI = {read=_GetCOLUMN_RECORDING_DATA_URI};
+	__property Androidapi::Jni::Javatypes::_di_JString COLUMN_RECORDING_DURATION_MILLIS = {read=_GetCOLUMN_RECORDING_DURATION_MILLIS};
+	__property Androidapi::Jni::Javatypes::_di_JString COLUMN_RECORDING_EXPIRE_TIME_UTC_MILLIS = {read=_GetCOLUMN_RECORDING_EXPIRE_TIME_UTC_MILLIS};
+	__property Androidapi::Jni::Javatypes::_di_JString COLUMN_START_TIME_UTC_MILLIS = {read=_GetCOLUMN_START_TIME_UTC_MILLIS};
+	__property Androidapi::Jni::Javatypes::_di_JString CONTENT_ITEM_TYPE = {read=_GetCONTENT_ITEM_TYPE};
+	__property Androidapi::Jni::Javatypes::_di_JString CONTENT_TYPE = {read=_GetCONTENT_TYPE};
+	__property Androidapi::Jni::Net::_di_Jnet_Uri CONTENT_URI = {read=_GetCONTENT_URI};
+};
+
+__interface  INTERFACE_UUID("{310012F2-3ADE-4C79-99B2-D7A38B1820FA}") JTvContract_RecordedPrograms  : public Androidapi::Jni::Javatypes::JObject 
+{
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJTvContract_RecordedPrograms : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JTvContract_RecordedProgramsClass,_di_JTvContract_RecordedPrograms>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JTvContract_RecordedProgramsClass,_di_JTvContract_RecordedPrograms> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJTvContract_RecordedPrograms() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JTvContract_RecordedProgramsClass,_di_JTvContract_RecordedPrograms>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJTvContract_RecordedPrograms() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{1C9BED9E-BD16-458B-BD48-8572E4052D50}") JTvContract_WatchNextProgramsClass  : public Androidapi::Jni::Javatypes::JObjectClass 
+{
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetCOLUMN_LAST_ENGAGEMENT_TIME_UTC_MILLIS() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetCOLUMN_WATCH_NEXT_TYPE() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetCONTENT_ITEM_TYPE() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetCONTENT_TYPE() = 0 ;
+	virtual Androidapi::Jni::Net::_di_Jnet_Uri __cdecl _GetCONTENT_URI() = 0 ;
+	virtual int __cdecl _GetWATCH_NEXT_TYPE_CONTINUE() = 0 ;
+	virtual int __cdecl _GetWATCH_NEXT_TYPE_NEW() = 0 ;
+	virtual int __cdecl _GetWATCH_NEXT_TYPE_NEXT() = 0 ;
+	virtual int __cdecl _GetWATCH_NEXT_TYPE_WATCHLIST() = 0 ;
+	__property Androidapi::Jni::Javatypes::_di_JString COLUMN_LAST_ENGAGEMENT_TIME_UTC_MILLIS = {read=_GetCOLUMN_LAST_ENGAGEMENT_TIME_UTC_MILLIS};
+	__property Androidapi::Jni::Javatypes::_di_JString COLUMN_WATCH_NEXT_TYPE = {read=_GetCOLUMN_WATCH_NEXT_TYPE};
+	__property Androidapi::Jni::Javatypes::_di_JString CONTENT_ITEM_TYPE = {read=_GetCONTENT_ITEM_TYPE};
+	__property Androidapi::Jni::Javatypes::_di_JString CONTENT_TYPE = {read=_GetCONTENT_TYPE};
+	__property Androidapi::Jni::Net::_di_Jnet_Uri CONTENT_URI = {read=_GetCONTENT_URI};
+	__property int WATCH_NEXT_TYPE_CONTINUE = {read=_GetWATCH_NEXT_TYPE_CONTINUE};
+	__property int WATCH_NEXT_TYPE_NEW = {read=_GetWATCH_NEXT_TYPE_NEW};
+	__property int WATCH_NEXT_TYPE_NEXT = {read=_GetWATCH_NEXT_TYPE_NEXT};
+	__property int WATCH_NEXT_TYPE_WATCHLIST = {read=_GetWATCH_NEXT_TYPE_WATCHLIST};
+};
+
+__interface  INTERFACE_UUID("{D3CD3AEA-1768-4668-A3F0-05911384A88D}") JTvContract_WatchNextPrograms  : public Androidapi::Jni::Javatypes::JObject 
+{
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJTvContract_WatchNextPrograms : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JTvContract_WatchNextProgramsClass,_di_JTvContract_WatchNextPrograms>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JTvContract_WatchNextProgramsClass,_di_JTvContract_WatchNextPrograms> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJTvContract_WatchNextPrograms() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JTvContract_WatchNextProgramsClass,_di_JTvContract_WatchNextPrograms>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJTvContract_WatchNextPrograms() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{81E0FF25-09BF-46FE-A01F-5072D8601912}") JTvInputInfoClass  : public Androidapi::Jni::Javatypes::JObjectClass 
+{
+	virtual Androidapi::Jni::Os::_di_JParcelable_Creator __cdecl _GetCREATOR() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetEXTRA_INPUT_ID() = 0 ;
+	virtual int __cdecl _GetTYPE_COMPONENT() = 0 ;
+	virtual int __cdecl _GetTYPE_COMPOSITE() = 0 ;
+	virtual int __cdecl _GetTYPE_DISPLAY_PORT() = 0 ;
+	virtual int __cdecl _GetTYPE_DVI() = 0 ;
+	virtual int __cdecl _GetTYPE_HDMI() = 0 ;
+	virtual int __cdecl _GetTYPE_OTHER() = 0 ;
+	virtual int __cdecl _GetTYPE_SCART() = 0 ;
+	virtual int __cdecl _GetTYPE_SVIDEO() = 0 ;
+	virtual int __cdecl _GetTYPE_TUNER() = 0 ;
+	virtual int __cdecl _GetTYPE_VGA() = 0 ;
+	__property Androidapi::Jni::Os::_di_JParcelable_Creator CREATOR = {read=_GetCREATOR};
+	__property Androidapi::Jni::Javatypes::_di_JString EXTRA_INPUT_ID = {read=_GetEXTRA_INPUT_ID};
+	__property int TYPE_COMPONENT = {read=_GetTYPE_COMPONENT};
+	__property int TYPE_COMPOSITE = {read=_GetTYPE_COMPOSITE};
+	__property int TYPE_DISPLAY_PORT = {read=_GetTYPE_DISPLAY_PORT};
+	__property int TYPE_DVI = {read=_GetTYPE_DVI};
+	__property int TYPE_HDMI = {read=_GetTYPE_HDMI};
+	__property int TYPE_OTHER = {read=_GetTYPE_OTHER};
+	__property int TYPE_SCART = {read=_GetTYPE_SCART};
+	__property int TYPE_SVIDEO = {read=_GetTYPE_SVIDEO};
+	__property int TYPE_TUNER = {read=_GetTYPE_TUNER};
+	__property int TYPE_VGA = {read=_GetTYPE_VGA};
+};
+
+__interface  INTERFACE_UUID("{206FA923-F42B-4278-9959-163CBFABCC99}") JTvInputInfo  : public Androidapi::Jni::Javatypes::JObject 
+{
+	virtual bool __cdecl canRecord() = 0 ;
+	virtual Androidapi::Jni::Graphicscontentviewtext::_di_JIntent __cdecl createSettingsIntent() = 0 ;
+	virtual Androidapi::Jni::Graphicscontentviewtext::_di_JIntent __cdecl createSetupIntent() = 0 ;
+	virtual int __cdecl describeContents() = 0 ;
+	HIDESBASE virtual bool __cdecl equals(Androidapi::Jni::Javatypes::_di_JObject o) = 0 ;
+	virtual Androidapi::Jni::Os::_di_JBundle __cdecl getExtras() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl getId() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl getParentId() = 0 ;
+	virtual Androidapi::Jni::Graphicscontentviewtext::_di_JServiceInfo __cdecl getServiceInfo() = 0 ;
+	virtual int __cdecl getTunerCount() = 0 ;
+	virtual int __cdecl getType() = 0 ;
+	HIDESBASE virtual int __cdecl hashCode() = 0 ;
+	virtual bool __cdecl isHidden(Androidapi::Jni::Graphicscontentviewtext::_di_JContext context) = 0 ;
+	virtual bool __cdecl isPassthroughInput() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JCharSequence __cdecl loadCustomLabel(Androidapi::Jni::Graphicscontentviewtext::_di_JContext context) = 0 ;
+	virtual Androidapi::Jni::Graphicscontentviewtext::_di_JDrawable __cdecl loadIcon(Androidapi::Jni::Graphicscontentviewtext::_di_JContext context) = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JCharSequence __cdecl loadLabel(Androidapi::Jni::Graphicscontentviewtext::_di_JContext context) = 0 ;
+	HIDESBASE virtual Androidapi::Jni::Javatypes::_di_JString __cdecl toString() = 0 ;
+	virtual void __cdecl writeToParcel(Androidapi::Jni::Os::_di_JParcel dest, int flags) = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJTvInputInfo : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JTvInputInfoClass,_di_JTvInputInfo>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JTvInputInfoClass,_di_JTvInputInfo> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJTvInputInfo() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JTvInputInfoClass,_di_JTvInputInfo>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJTvInputInfo() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{8317F876-A695-4E46-8FE6-98415E615D2E}") JTvInputInfo_BuilderClass  : public Androidapi::Jni::Javatypes::JObjectClass 
+{
+	HIDESBASE virtual _di_JTvInputInfo_Builder __cdecl init(Androidapi::Jni::Graphicscontentviewtext::_di_JContext context, Androidapi::Jni::Graphicscontentviewtext::_di_JComponentName component) = 0 ;
+};
+
+__interface  INTERFACE_UUID("{4F28AA75-8FCB-45A7-B109-D86C4373887C}") JTvInputInfo_Builder  : public Androidapi::Jni::Javatypes::JObject 
+{
+	virtual _di_JTvInputInfo __cdecl build() = 0 ;
+	virtual _di_JTvInputInfo_Builder __cdecl setCanRecord(bool canRecord) = 0 ;
+	virtual _di_JTvInputInfo_Builder __cdecl setExtras(Androidapi::Jni::Os::_di_JBundle extras) = 0 ;
+	virtual _di_JTvInputInfo_Builder __cdecl setTunerCount(int tunerCount) = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJTvInputInfo_Builder : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JTvInputInfo_BuilderClass,_di_JTvInputInfo_Builder>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JTvInputInfo_BuilderClass,_di_JTvInputInfo_Builder> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJTvInputInfo_Builder() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JTvInputInfo_BuilderClass,_di_JTvInputInfo_Builder>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJTvInputInfo_Builder() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{0408BC0B-DD35-43AE-A248-8CAEAA39BE8A}") JTvInputManagerClass  : public Androidapi::Jni::Javatypes::JObjectClass 
+{
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetACTION_BLOCKED_RATINGS_CHANGED() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetACTION_PARENTAL_CONTROLS_ENABLED_CHANGED() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetACTION_QUERY_CONTENT_RATING_SYSTEMS() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetACTION_SETUP_INPUTS() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetACTION_VIEW_RECORDING_SCHEDULES() = 0 ;
+	virtual int __cdecl _GetINPUT_STATE_CONNECTED() = 0 ;
+	virtual int __cdecl _GetINPUT_STATE_CONNECTED_STANDBY() = 0 ;
+	virtual int __cdecl _GetINPUT_STATE_DISCONNECTED() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetMETA_DATA_CONTENT_RATING_SYSTEMS() = 0 ;
+	virtual int __cdecl _GetRECORDING_ERROR_INSUFFICIENT_SPACE() = 0 ;
+	virtual int __cdecl _GetRECORDING_ERROR_RESOURCE_BUSY() = 0 ;
+	virtual int __cdecl _GetRECORDING_ERROR_UNKNOWN() = 0 ;
+	virtual __int64 __cdecl _GetTIME_SHIFT_INVALID_TIME() = 0 ;
+	virtual int __cdecl _GetTIME_SHIFT_STATUS_AVAILABLE() = 0 ;
+	virtual int __cdecl _GetTIME_SHIFT_STATUS_UNAVAILABLE() = 0 ;
+	virtual int __cdecl _GetTIME_SHIFT_STATUS_UNKNOWN() = 0 ;
+	virtual int __cdecl _GetTIME_SHIFT_STATUS_UNSUPPORTED() = 0 ;
+	virtual int __cdecl _GetVIDEO_UNAVAILABLE_REASON_AUDIO_ONLY() = 0 ;
+	virtual int __cdecl _GetVIDEO_UNAVAILABLE_REASON_BUFFERING() = 0 ;
+	virtual int __cdecl _GetVIDEO_UNAVAILABLE_REASON_TUNING() = 0 ;
+	virtual int __cdecl _GetVIDEO_UNAVAILABLE_REASON_UNKNOWN() = 0 ;
+	virtual int __cdecl _GetVIDEO_UNAVAILABLE_REASON_WEAK_SIGNAL() = 0 ;
+	__property Androidapi::Jni::Javatypes::_di_JString ACTION_BLOCKED_RATINGS_CHANGED = {read=_GetACTION_BLOCKED_RATINGS_CHANGED};
+	__property Androidapi::Jni::Javatypes::_di_JString ACTION_PARENTAL_CONTROLS_ENABLED_CHANGED = {read=_GetACTION_PARENTAL_CONTROLS_ENABLED_CHANGED};
+	__property Androidapi::Jni::Javatypes::_di_JString ACTION_QUERY_CONTENT_RATING_SYSTEMS = {read=_GetACTION_QUERY_CONTENT_RATING_SYSTEMS};
+	__property Androidapi::Jni::Javatypes::_di_JString ACTION_SETUP_INPUTS = {read=_GetACTION_SETUP_INPUTS};
+	__property Androidapi::Jni::Javatypes::_di_JString ACTION_VIEW_RECORDING_SCHEDULES = {read=_GetACTION_VIEW_RECORDING_SCHEDULES};
+	__property int INPUT_STATE_CONNECTED = {read=_GetINPUT_STATE_CONNECTED};
+	__property int INPUT_STATE_CONNECTED_STANDBY = {read=_GetINPUT_STATE_CONNECTED_STANDBY};
+	__property int INPUT_STATE_DISCONNECTED = {read=_GetINPUT_STATE_DISCONNECTED};
+	__property Androidapi::Jni::Javatypes::_di_JString META_DATA_CONTENT_RATING_SYSTEMS = {read=_GetMETA_DATA_CONTENT_RATING_SYSTEMS};
+	__property int RECORDING_ERROR_INSUFFICIENT_SPACE = {read=_GetRECORDING_ERROR_INSUFFICIENT_SPACE};
+	__property int RECORDING_ERROR_RESOURCE_BUSY = {read=_GetRECORDING_ERROR_RESOURCE_BUSY};
+	__property int RECORDING_ERROR_UNKNOWN = {read=_GetRECORDING_ERROR_UNKNOWN};
+	__property __int64 TIME_SHIFT_INVALID_TIME = {read=_GetTIME_SHIFT_INVALID_TIME};
+	__property int TIME_SHIFT_STATUS_AVAILABLE = {read=_GetTIME_SHIFT_STATUS_AVAILABLE};
+	__property int TIME_SHIFT_STATUS_UNAVAILABLE = {read=_GetTIME_SHIFT_STATUS_UNAVAILABLE};
+	__property int TIME_SHIFT_STATUS_UNKNOWN = {read=_GetTIME_SHIFT_STATUS_UNKNOWN};
+	__property int TIME_SHIFT_STATUS_UNSUPPORTED = {read=_GetTIME_SHIFT_STATUS_UNSUPPORTED};
+	__property int VIDEO_UNAVAILABLE_REASON_AUDIO_ONLY = {read=_GetVIDEO_UNAVAILABLE_REASON_AUDIO_ONLY};
+	__property int VIDEO_UNAVAILABLE_REASON_BUFFERING = {read=_GetVIDEO_UNAVAILABLE_REASON_BUFFERING};
+	__property int VIDEO_UNAVAILABLE_REASON_TUNING = {read=_GetVIDEO_UNAVAILABLE_REASON_TUNING};
+	__property int VIDEO_UNAVAILABLE_REASON_UNKNOWN = {read=_GetVIDEO_UNAVAILABLE_REASON_UNKNOWN};
+	__property int VIDEO_UNAVAILABLE_REASON_WEAK_SIGNAL = {read=_GetVIDEO_UNAVAILABLE_REASON_WEAK_SIGNAL};
+};
+
+__interface  INTERFACE_UUID("{2F97DA50-5475-45F3-870F-0F88E3F1F901}") JTvInputManager  : public Androidapi::Jni::Javatypes::JObject 
+{
+	virtual Androidapi::Jni::Javatypes::_di_JObject __cdecl acquireTvInputHardware(int deviceId, Androidapi::Jni::Javatypes::_di_JObject callback, _di_JTvInputInfo info) = 0 ;
+	virtual int __cdecl getInputState(Androidapi::Jni::Javatypes::_di_JString inputId) = 0 ;
+	virtual _di_JTvInputInfo __cdecl getTvInputInfo(Androidapi::Jni::Javatypes::_di_JString inputId) = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JList __cdecl getTvInputList() = 0 ;
+	virtual bool __cdecl isParentalControlsEnabled() = 0 ;
+	virtual bool __cdecl isRatingBlocked(_di_JTvContentRating rating) = 0 ;
+	virtual void __cdecl registerCallback(_di_JTvInputManager_TvInputCallback callback, Androidapi::Jni::Os::_di_JHandler handler) = 0 ;
+	virtual void __cdecl unregisterCallback(_di_JTvInputManager_TvInputCallback callback) = 0 ;
+	virtual void __cdecl updateTvInputInfo(_di_JTvInputInfo inputInfo) = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJTvInputManager : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JTvInputManagerClass,_di_JTvInputManager>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JTvInputManagerClass,_di_JTvInputManager> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJTvInputManager() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JTvInputManagerClass,_di_JTvInputManager>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJTvInputManager() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{73BCF37E-F9C0-46D5-924E-2A6FD6CEE78A}") JTvInputManager_TvInputCallbackClass  : public Androidapi::Jni::Javatypes::JObjectClass 
+{
+	HIDESBASE virtual _di_JTvInputManager_TvInputCallback __cdecl init() = 0 ;
+};
+
+__interface  INTERFACE_UUID("{415CBDB9-7B2D-42AD-BB14-425C8126E960}") JTvInputManager_TvInputCallback  : public Androidapi::Jni::Javatypes::JObject 
+{
+	virtual void __cdecl onInputAdded(Androidapi::Jni::Javatypes::_di_JString inputId) = 0 ;
+	virtual void __cdecl onInputRemoved(Androidapi::Jni::Javatypes::_di_JString inputId) = 0 ;
+	virtual void __cdecl onInputStateChanged(Androidapi::Jni::Javatypes::_di_JString inputId, int state) = 0 ;
+	virtual void __cdecl onInputUpdated(Androidapi::Jni::Javatypes::_di_JString inputId) = 0 ;
+	virtual void __cdecl onTvInputInfoUpdated(_di_JTvInputInfo inputInfo) = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJTvInputManager_TvInputCallback : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JTvInputManager_TvInputCallbackClass,_di_JTvInputManager_TvInputCallback>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JTvInputManager_TvInputCallbackClass,_di_JTvInputManager_TvInputCallback> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJTvInputManager_TvInputCallback() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JTvInputManager_TvInputCallbackClass,_di_JTvInputManager_TvInputCallback>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJTvInputManager_TvInputCallback() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{002C4996-4C27-470F-BEF9-203BC0268E40}") JTvInputServiceClass  : public Androidapi::Jni::App::JServiceClass 
+{
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetSERVICE_INTERFACE() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetSERVICE_META_DATA() = 0 ;
+	HIDESBASE virtual _di_JTvInputService __cdecl init() = 0 ;
+	__property Androidapi::Jni::Javatypes::_di_JString SERVICE_INTERFACE = {read=_GetSERVICE_INTERFACE};
+	__property Androidapi::Jni::Javatypes::_di_JString SERVICE_META_DATA = {read=_GetSERVICE_META_DATA};
+};
+
+__interface  INTERFACE_UUID("{A2933D84-5B2E-46DE-8304-1B58E41D802F}") JTvInputService  : public Androidapi::Jni::App::JService 
+{
+	HIDESBASE virtual Androidapi::Jni::Os::_di_JIBinder __cdecl onBind(Androidapi::Jni::Graphicscontentviewtext::_di_JIntent intent) = 0 ;
+	virtual _di_JTvInputService_RecordingSession __cdecl onCreateRecordingSession(Androidapi::Jni::Javatypes::_di_JString inputId) = 0 ;
+	virtual _di_JTvInputService_Session __cdecl onCreateSession(Androidapi::Jni::Javatypes::_di_JString inputId) = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJTvInputService : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JTvInputServiceClass,_di_JTvInputService>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JTvInputServiceClass,_di_JTvInputService> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJTvInputService() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JTvInputServiceClass,_di_JTvInputService>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJTvInputService() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{C859B4C2-FADD-414D-BA6B-BFA3FC36FEBB}") JTvInputService_SessionClass  : public Androidapi::Jni::Javatypes::JObjectClass 
+{
+	HIDESBASE virtual _di_JTvInputService_Session __cdecl init(Androidapi::Jni::Graphicscontentviewtext::_di_JContext context) = 0 ;
+};
+
+__interface  INTERFACE_UUID("{8CE3F272-32C1-4046-A7CF-4A22D119B39C}") JTvInputService_Session  : public Androidapi::Jni::Javatypes::JObject 
+{
+	virtual void __cdecl layoutSurface(int left, int top, int right, int bottom) = 0 ;
+	virtual void __cdecl notifyChannelRetuned(Androidapi::Jni::Net::_di_Jnet_Uri channelUri) = 0 ;
+	virtual void __cdecl notifyContentAllowed() = 0 ;
+	virtual void __cdecl notifyContentBlocked(_di_JTvContentRating rating) = 0 ;
+	virtual void __cdecl notifyTimeShiftStatusChanged(int status) = 0 ;
+	virtual void __cdecl notifyTrackSelected(int type_, Androidapi::Jni::Javatypes::_di_JString trackId) = 0 ;
+	virtual void __cdecl notifyTracksChanged(Androidapi::Jni::Javatypes::_di_JList tracks) = 0 ;
+	virtual void __cdecl notifyVideoAvailable() = 0 ;
+	virtual void __cdecl notifyVideoUnavailable(int reason) = 0 ;
+	virtual void __cdecl onAppPrivateCommand(Androidapi::Jni::Javatypes::_di_JString action, Androidapi::Jni::Os::_di_JBundle data) = 0 ;
+	virtual Androidapi::Jni::Graphicscontentviewtext::_di_JView __cdecl onCreateOverlayView() = 0 ;
+	virtual bool __cdecl onGenericMotionEvent(Androidapi::Jni::Graphicscontentviewtext::_di_JMotionEvent event) = 0 ;
+	virtual bool __cdecl onKeyDown(int keyCode, Androidapi::Jni::Graphicscontentviewtext::_di_JKeyEvent event) = 0 ;
+	virtual bool __cdecl onKeyLongPress(int keyCode, Androidapi::Jni::Graphicscontentviewtext::_di_JKeyEvent event) = 0 ;
+	virtual bool __cdecl onKeyMultiple(int keyCode, int count, Androidapi::Jni::Graphicscontentviewtext::_di_JKeyEvent event) = 0 ;
+	virtual bool __cdecl onKeyUp(int keyCode, Androidapi::Jni::Graphicscontentviewtext::_di_JKeyEvent event) = 0 ;
+	virtual void __cdecl onOverlayViewSizeChanged(int width, int height) = 0 ;
+	virtual void __cdecl onRelease() = 0 ;
+	virtual bool __cdecl onSelectTrack(int type_, Androidapi::Jni::Javatypes::_di_JString trackId) = 0 ;
+	virtual void __cdecl onSetCaptionEnabled(bool enabled) = 0 ;
+	virtual void __cdecl onSetStreamVolume(float volume) = 0 ;
+	virtual bool __cdecl onSetSurface(Androidapi::Jni::Graphicscontentviewtext::_di_JSurface surface) = 0 ;
+	virtual void __cdecl onSurfaceChanged(int format, int width, int height) = 0 ;
+	virtual __int64 __cdecl onTimeShiftGetCurrentPosition() = 0 ;
+	virtual __int64 __cdecl onTimeShiftGetStartPosition() = 0 ;
+	virtual void __cdecl onTimeShiftPause() = 0 ;
+	virtual void __cdecl onTimeShiftPlay(Androidapi::Jni::Net::_di_Jnet_Uri recordedProgramUri) = 0 ;
+	virtual void __cdecl onTimeShiftResume() = 0 ;
+	virtual void __cdecl onTimeShiftSeekTo(__int64 timeMs) = 0 ;
+	virtual void __cdecl onTimeShiftSetPlaybackParams(_di_JPlaybackParams params) = 0 ;
+	virtual bool __cdecl onTouchEvent(Androidapi::Jni::Graphicscontentviewtext::_di_JMotionEvent event) = 0 ;
+	virtual bool __cdecl onTrackballEvent(Androidapi::Jni::Graphicscontentviewtext::_di_JMotionEvent event) = 0 ;
+	virtual bool __cdecl onTune(Androidapi::Jni::Net::_di_Jnet_Uri channelUri) = 0 /* overload */;
+	virtual bool __cdecl onTune(Androidapi::Jni::Net::_di_Jnet_Uri channelUri, Androidapi::Jni::Os::_di_JBundle params) = 0 /* overload */;
+	virtual void __cdecl onUnblockContent(_di_JTvContentRating unblockedRating) = 0 ;
+	virtual void __cdecl setOverlayViewEnabled(bool enable) = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJTvInputService_Session : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JTvInputService_SessionClass,_di_JTvInputService_Session>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JTvInputService_SessionClass,_di_JTvInputService_Session> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJTvInputService_Session() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JTvInputService_SessionClass,_di_JTvInputService_Session>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJTvInputService_Session() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{32192DCC-DBC8-4AB8-8F2B-26202F542994}") JTvInputService_HardwareSessionClass  : public JTvInputService_SessionClass 
+{
+	HIDESBASE virtual _di_JTvInputService_HardwareSession __cdecl init(Androidapi::Jni::Graphicscontentviewtext::_di_JContext context) = 0 ;
+};
+
+__interface  INTERFACE_UUID("{FF431494-707A-4084-8945-D32CAFFF2B21}") JTvInputService_HardwareSession  : public JTvInputService_Session 
+{
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl getHardwareInputId() = 0 ;
+	virtual void __cdecl onHardwareVideoAvailable() = 0 ;
+	virtual void __cdecl onHardwareVideoUnavailable(int reason) = 0 ;
+	HIDESBASE virtual bool __cdecl onSetSurface(Androidapi::Jni::Graphicscontentviewtext::_di_JSurface surface) = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJTvInputService_HardwareSession : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JTvInputService_HardwareSessionClass,_di_JTvInputService_HardwareSession>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JTvInputService_HardwareSessionClass,_di_JTvInputService_HardwareSession> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJTvInputService_HardwareSession() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JTvInputService_HardwareSessionClass,_di_JTvInputService_HardwareSession>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJTvInputService_HardwareSession() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{A11A921A-2290-4E77-B3FB-E5CD7BA830EA}") JTvInputService_RecordingSessionClass  : public Androidapi::Jni::Javatypes::JObjectClass 
+{
+	HIDESBASE virtual _di_JTvInputService_RecordingSession __cdecl init(Androidapi::Jni::Graphicscontentviewtext::_di_JContext context) = 0 ;
+};
+
+__interface  INTERFACE_UUID("{0516994F-8A30-4F23-8B07-94DEC938B495}") JTvInputService_RecordingSession  : public Androidapi::Jni::Javatypes::JObject 
+{
+	virtual void __cdecl notifyError(int error) = 0 ;
+	virtual void __cdecl notifyRecordingStopped(Androidapi::Jni::Net::_di_Jnet_Uri recordedProgramUri) = 0 ;
+	virtual void __cdecl notifyTuned(Androidapi::Jni::Net::_di_Jnet_Uri channelUri) = 0 ;
+	virtual void __cdecl onAppPrivateCommand(Androidapi::Jni::Javatypes::_di_JString action, Androidapi::Jni::Os::_di_JBundle data) = 0 ;
+	virtual void __cdecl onRelease() = 0 ;
+	virtual void __cdecl onStartRecording(Androidapi::Jni::Net::_di_Jnet_Uri programUri) = 0 ;
+	virtual void __cdecl onStopRecording() = 0 ;
+	virtual void __cdecl onTune(Androidapi::Jni::Net::_di_Jnet_Uri channelUri) = 0 /* overload */;
+	virtual void __cdecl onTune(Androidapi::Jni::Net::_di_Jnet_Uri channelUri, Androidapi::Jni::Os::_di_JBundle params) = 0 /* overload */;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJTvInputService_RecordingSession : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JTvInputService_RecordingSessionClass,_di_JTvInputService_RecordingSession>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JTvInputService_RecordingSessionClass,_di_JTvInputService_RecordingSession> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJTvInputService_RecordingSession() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JTvInputService_RecordingSessionClass,_di_JTvInputService_RecordingSession>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJTvInputService_RecordingSession() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{98B43F32-2FE9-4F5A-AFB8-2423ACA60844}") JTvRecordingClientClass  : public Androidapi::Jni::Javatypes::JObjectClass 
+{
+	HIDESBASE virtual _di_JTvRecordingClient __cdecl init(Androidapi::Jni::Graphicscontentviewtext::_di_JContext context, Androidapi::Jni::Javatypes::_di_JString tag, _di_JTvRecordingClient_RecordingCallback callback, Androidapi::Jni::Os::_di_JHandler handler) = 0 ;
+};
+
+__interface  INTERFACE_UUID("{4A5A06B6-8697-4EC9-A769-EA36AD5F9458}") JTvRecordingClient  : public Androidapi::Jni::Javatypes::JObject 
+{
+	virtual void __cdecl release() = 0 ;
+	virtual void __cdecl sendAppPrivateCommand(Androidapi::Jni::Javatypes::_di_JString action, Androidapi::Jni::Os::_di_JBundle data) = 0 ;
+	virtual void __cdecl startRecording(Androidapi::Jni::Net::_di_Jnet_Uri programUri) = 0 ;
+	virtual void __cdecl stopRecording() = 0 ;
+	virtual void __cdecl tune(Androidapi::Jni::Javatypes::_di_JString inputId, Androidapi::Jni::Net::_di_Jnet_Uri channelUri) = 0 /* overload */;
+	virtual void __cdecl tune(Androidapi::Jni::Javatypes::_di_JString inputId, Androidapi::Jni::Net::_di_Jnet_Uri channelUri, Androidapi::Jni::Os::_di_JBundle params) = 0 /* overload */;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJTvRecordingClient : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JTvRecordingClientClass,_di_JTvRecordingClient>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JTvRecordingClientClass,_di_JTvRecordingClient> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJTvRecordingClient() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JTvRecordingClientClass,_di_JTvRecordingClient>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJTvRecordingClient() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{0C92867E-2F37-4812-868E-012EDB26608E}") JTvRecordingClient_RecordingCallbackClass  : public Androidapi::Jni::Javatypes::JObjectClass 
+{
+	HIDESBASE virtual _di_JTvRecordingClient_RecordingCallback __cdecl init() = 0 ;
+};
+
+__interface  INTERFACE_UUID("{00BF0B28-B785-49C4-B8D4-1E723C7B0B70}") JTvRecordingClient_RecordingCallback  : public Androidapi::Jni::Javatypes::JObject 
+{
+	virtual void __cdecl onConnectionFailed(Androidapi::Jni::Javatypes::_di_JString inputId) = 0 ;
+	virtual void __cdecl onDisconnected(Androidapi::Jni::Javatypes::_di_JString inputId) = 0 ;
+	virtual void __cdecl onError(int error) = 0 ;
+	virtual void __cdecl onRecordingStopped(Androidapi::Jni::Net::_di_Jnet_Uri recordedProgramUri) = 0 ;
+	virtual void __cdecl onTuned(Androidapi::Jni::Net::_di_Jnet_Uri channelUri) = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJTvRecordingClient_RecordingCallback : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JTvRecordingClient_RecordingCallbackClass,_di_JTvRecordingClient_RecordingCallback>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JTvRecordingClient_RecordingCallbackClass,_di_JTvRecordingClient_RecordingCallback> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJTvRecordingClient_RecordingCallback() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JTvRecordingClient_RecordingCallbackClass,_di_JTvRecordingClient_RecordingCallback>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJTvRecordingClient_RecordingCallback() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{B3355E4A-BA42-4397-97C6-357204A82C02}") JTvTrackInfoClass  : public Androidapi::Jni::Javatypes::JObjectClass 
+{
+	virtual Androidapi::Jni::Os::_di_JParcelable_Creator __cdecl _GetCREATOR() = 0 ;
+	virtual int __cdecl _GetTYPE_AUDIO() = 0 ;
+	virtual int __cdecl _GetTYPE_SUBTITLE() = 0 ;
+	virtual int __cdecl _GetTYPE_VIDEO() = 0 ;
+	__property Androidapi::Jni::Os::_di_JParcelable_Creator CREATOR = {read=_GetCREATOR};
+	__property int TYPE_AUDIO = {read=_GetTYPE_AUDIO};
+	__property int TYPE_SUBTITLE = {read=_GetTYPE_SUBTITLE};
+	__property int TYPE_VIDEO = {read=_GetTYPE_VIDEO};
+};
+
+__interface  INTERFACE_UUID("{31CD4871-2999-46C0-BBB9-C4B0CC905984}") JTvTrackInfo  : public Androidapi::Jni::Javatypes::JObject 
+{
+	virtual int __cdecl describeContents() = 0 ;
+	HIDESBASE virtual bool __cdecl equals(Androidapi::Jni::Javatypes::_di_JObject o) = 0 ;
+	virtual int __cdecl getAudioChannelCount() = 0 ;
+	virtual int __cdecl getAudioSampleRate() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JCharSequence __cdecl getDescription() = 0 ;
+	virtual Androidapi::Jni::Os::_di_JBundle __cdecl getExtra() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl getId() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl getLanguage() = 0 ;
+	virtual int __cdecl getType() = 0 ;
+	virtual System::Byte __cdecl getVideoActiveFormatDescription() = 0 ;
+	virtual float __cdecl getVideoFrameRate() = 0 ;
+	virtual int __cdecl getVideoHeight() = 0 ;
+	virtual float __cdecl getVideoPixelAspectRatio() = 0 ;
+	virtual int __cdecl getVideoWidth() = 0 ;
+	HIDESBASE virtual int __cdecl hashCode() = 0 ;
+	virtual void __cdecl writeToParcel(Androidapi::Jni::Os::_di_JParcel dest, int flags) = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJTvTrackInfo : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JTvTrackInfoClass,_di_JTvTrackInfo>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JTvTrackInfoClass,_di_JTvTrackInfo> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJTvTrackInfo() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JTvTrackInfoClass,_di_JTvTrackInfo>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJTvTrackInfo() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{7891AE9E-B5FD-4C99-A0C9-EADF7B6EC469}") JTvTrackInfo_BuilderClass  : public Androidapi::Jni::Javatypes::JObjectClass 
+{
+	HIDESBASE virtual _di_JTvTrackInfo_Builder __cdecl init(int type_, Androidapi::Jni::Javatypes::_di_JString id) = 0 ;
+};
+
+__interface  INTERFACE_UUID("{9A0A4558-407E-44ED-BCC4-1FFD78D5F176}") JTvTrackInfo_Builder  : public Androidapi::Jni::Javatypes::JObject 
+{
+	virtual _di_JTvTrackInfo __cdecl build() = 0 ;
+	virtual _di_JTvTrackInfo_Builder __cdecl setAudioChannelCount(int audioChannelCount) = 0 ;
+	virtual _di_JTvTrackInfo_Builder __cdecl setAudioSampleRate(int audioSampleRate) = 0 ;
+	virtual _di_JTvTrackInfo_Builder __cdecl setDescription(Androidapi::Jni::Javatypes::_di_JCharSequence description) = 0 ;
+	virtual _di_JTvTrackInfo_Builder __cdecl setExtra(Androidapi::Jni::Os::_di_JBundle extra) = 0 ;
+	virtual _di_JTvTrackInfo_Builder __cdecl setLanguage(Androidapi::Jni::Javatypes::_di_JString language) = 0 ;
+	virtual _di_JTvTrackInfo_Builder __cdecl setVideoActiveFormatDescription(System::Byte videoActiveFormatDescription) = 0 ;
+	virtual _di_JTvTrackInfo_Builder __cdecl setVideoFrameRate(float videoFrameRate) = 0 ;
+	virtual _di_JTvTrackInfo_Builder __cdecl setVideoHeight(int videoHeight) = 0 ;
+	virtual _di_JTvTrackInfo_Builder __cdecl setVideoPixelAspectRatio(float videoPixelAspectRatio) = 0 ;
+	virtual _di_JTvTrackInfo_Builder __cdecl setVideoWidth(int videoWidth) = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJTvTrackInfo_Builder : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JTvTrackInfo_BuilderClass,_di_JTvTrackInfo_Builder>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JTvTrackInfo_BuilderClass,_di_JTvTrackInfo_Builder> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJTvTrackInfo_Builder() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JTvTrackInfo_BuilderClass,_di_JTvTrackInfo_Builder>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJTvTrackInfo_Builder() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{2B409DB0-46DC-4873-A9D3-FE5856C49C2D}") JTvViewClass  : public Androidapi::Jni::Graphicscontentviewtext::JViewGroupClass 
+{
+	HIDESBASE virtual _di_JTvView __cdecl init(Androidapi::Jni::Graphicscontentviewtext::_di_JContext context) = 0 /* overload */;
+	HIDESBASE virtual _di_JTvView __cdecl init(Androidapi::Jni::Graphicscontentviewtext::_di_JContext context, Androidapi::Jni::Util::_di_JAttributeSet attrs) = 0 /* overload */;
+	HIDESBASE virtual _di_JTvView __cdecl init(Androidapi::Jni::Graphicscontentviewtext::_di_JContext context, Androidapi::Jni::Util::_di_JAttributeSet attrs, int defStyleAttr) = 0 /* overload */;
+};
+
+__interface  INTERFACE_UUID("{9EBA8B84-51BF-44F3-B454-FF6662C2E6E7}") JTvView  : public Androidapi::Jni::Graphicscontentviewtext::JViewGroup 
+{
+	HIDESBASE virtual bool __cdecl dispatchGenericMotionEvent(Androidapi::Jni::Graphicscontentviewtext::_di_JMotionEvent event) = 0 ;
+	HIDESBASE virtual bool __cdecl dispatchKeyEvent(Androidapi::Jni::Graphicscontentviewtext::_di_JKeyEvent event) = 0 ;
+	HIDESBASE virtual bool __cdecl dispatchTouchEvent(Androidapi::Jni::Graphicscontentviewtext::_di_JMotionEvent event) = 0 ;
+	HIDESBASE virtual bool __cdecl dispatchTrackballEvent(Androidapi::Jni::Graphicscontentviewtext::_di_JMotionEvent event) = 0 ;
+	virtual bool __cdecl dispatchUnhandledInputEvent(Androidapi::Jni::Graphicscontentviewtext::_di_JInputEvent event) = 0 ;
+	HIDESBASE virtual void __cdecl dispatchWindowFocusChanged(bool hasFocus) = 0 ;
+	HIDESBASE virtual void __cdecl draw(Androidapi::Jni::Graphicscontentviewtext::_di_JCanvas canvas) = 0 ;
+	HIDESBASE virtual bool __cdecl gatherTransparentRegion(Androidapi::Jni::Graphicscontentviewtext::_di_JRegion region) = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl getSelectedTrack(int type_) = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JList __cdecl getTracks(int type_) = 0 ;
+	virtual bool __cdecl onUnhandledInputEvent(Androidapi::Jni::Graphicscontentviewtext::_di_JInputEvent event) = 0 ;
+	virtual void __cdecl requestUnblockContent(_di_JTvContentRating unblockedRating) = 0 ;
+	virtual void __cdecl reset() = 0 ;
+	virtual void __cdecl selectTrack(int type_, Androidapi::Jni::Javatypes::_di_JString trackId) = 0 ;
+	virtual void __cdecl sendAppPrivateCommand(Androidapi::Jni::Javatypes::_di_JString action, Androidapi::Jni::Os::_di_JBundle data) = 0 ;
+	virtual void __cdecl setCallback(_di_JTvView_TvInputCallback callback) = 0 ;
+	virtual void __cdecl setCaptionEnabled(bool enabled) = 0 ;
+	virtual void __cdecl setOnUnhandledInputEventListener(_di_JTvView_OnUnhandledInputEventListener listener) = 0 ;
+	virtual void __cdecl setStreamVolume(float volume) = 0 ;
+	virtual void __cdecl setTimeShiftPositionCallback(_di_JTvView_TimeShiftPositionCallback callback) = 0 ;
+	virtual void __cdecl setZOrderMediaOverlay(bool isMediaOverlay) = 0 ;
+	virtual void __cdecl setZOrderOnTop(bool onTop) = 0 ;
+	virtual void __cdecl timeShiftPause() = 0 ;
+	virtual void __cdecl timeShiftPlay(Androidapi::Jni::Javatypes::_di_JString inputId, Androidapi::Jni::Net::_di_Jnet_Uri recordedProgramUri) = 0 ;
+	virtual void __cdecl timeShiftResume() = 0 ;
+	virtual void __cdecl timeShiftSeekTo(__int64 timeMs) = 0 ;
+	virtual void __cdecl timeShiftSetPlaybackParams(_di_JPlaybackParams params) = 0 ;
+	virtual void __cdecl tune(Androidapi::Jni::Javatypes::_di_JString inputId, Androidapi::Jni::Net::_di_Jnet_Uri channelUri) = 0 /* overload */;
+	virtual void __cdecl tune(Androidapi::Jni::Javatypes::_di_JString inputId, Androidapi::Jni::Net::_di_Jnet_Uri channelUri, Androidapi::Jni::Os::_di_JBundle params) = 0 /* overload */;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJTvView : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JTvViewClass,_di_JTvView>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JTvViewClass,_di_JTvView> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJTvView() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JTvViewClass,_di_JTvView>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJTvView() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{21A432E7-1563-455A-93E1-A750F30AE95A}") JTvView_OnUnhandledInputEventListenerClass  : public Androidapi::Jnibridge::IJavaClass 
+{
+	
+};
+
+__interface  INTERFACE_UUID("{A8A53C52-4272-49B2-9655-66E388EFDED7}") JTvView_OnUnhandledInputEventListener  : public Androidapi::Jnibridge::IJavaInstance 
+{
+	virtual bool __cdecl onUnhandledInputEvent(Androidapi::Jni::Graphicscontentviewtext::_di_JInputEvent event) = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJTvView_OnUnhandledInputEventListener : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JTvView_OnUnhandledInputEventListenerClass,_di_JTvView_OnUnhandledInputEventListener>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JTvView_OnUnhandledInputEventListenerClass,_di_JTvView_OnUnhandledInputEventListener> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJTvView_OnUnhandledInputEventListener() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JTvView_OnUnhandledInputEventListenerClass,_di_JTvView_OnUnhandledInputEventListener>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJTvView_OnUnhandledInputEventListener() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{630A26E4-D26E-4A25-A4B0-6D4EB45C6640}") JTvView_TimeShiftPositionCallbackClass  : public Androidapi::Jni::Javatypes::JObjectClass 
+{
+	HIDESBASE virtual _di_JTvView_TimeShiftPositionCallback __cdecl init() = 0 ;
+};
+
+__interface  INTERFACE_UUID("{016695D7-41AF-4EF2-8A9C-7F326F9B14A0}") JTvView_TimeShiftPositionCallback  : public Androidapi::Jni::Javatypes::JObject 
+{
+	virtual void __cdecl onTimeShiftCurrentPositionChanged(Androidapi::Jni::Javatypes::_di_JString inputId, __int64 timeMs) = 0 ;
+	virtual void __cdecl onTimeShiftStartPositionChanged(Androidapi::Jni::Javatypes::_di_JString inputId, __int64 timeMs) = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJTvView_TimeShiftPositionCallback : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JTvView_TimeShiftPositionCallbackClass,_di_JTvView_TimeShiftPositionCallback>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JTvView_TimeShiftPositionCallbackClass,_di_JTvView_TimeShiftPositionCallback> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJTvView_TimeShiftPositionCallback() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JTvView_TimeShiftPositionCallbackClass,_di_JTvView_TimeShiftPositionCallback>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJTvView_TimeShiftPositionCallback() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{7EA53B6D-A4B0-4022-8198-C2E6262246DA}") JTvView_TvInputCallbackClass  : public Androidapi::Jni::Javatypes::JObjectClass 
+{
+	HIDESBASE virtual _di_JTvView_TvInputCallback __cdecl init() = 0 ;
+};
+
+__interface  INTERFACE_UUID("{40DF20F4-D8BE-4E16-AF7E-F780D5E7C701}") JTvView_TvInputCallback  : public Androidapi::Jni::Javatypes::JObject 
+{
+	virtual void __cdecl onChannelRetuned(Androidapi::Jni::Javatypes::_di_JString inputId, Androidapi::Jni::Net::_di_Jnet_Uri channelUri) = 0 ;
+	virtual void __cdecl onConnectionFailed(Androidapi::Jni::Javatypes::_di_JString inputId) = 0 ;
+	virtual void __cdecl onContentAllowed(Androidapi::Jni::Javatypes::_di_JString inputId) = 0 ;
+	virtual void __cdecl onContentBlocked(Androidapi::Jni::Javatypes::_di_JString inputId, _di_JTvContentRating rating) = 0 ;
+	virtual void __cdecl onDisconnected(Androidapi::Jni::Javatypes::_di_JString inputId) = 0 ;
+	virtual void __cdecl onTimeShiftStatusChanged(Androidapi::Jni::Javatypes::_di_JString inputId, int status) = 0 ;
+	virtual void __cdecl onTrackSelected(Androidapi::Jni::Javatypes::_di_JString inputId, int type_, Androidapi::Jni::Javatypes::_di_JString trackId) = 0 ;
+	virtual void __cdecl onTracksChanged(Androidapi::Jni::Javatypes::_di_JString inputId, Androidapi::Jni::Javatypes::_di_JList tracks) = 0 ;
+	virtual void __cdecl onVideoAvailable(Androidapi::Jni::Javatypes::_di_JString inputId) = 0 ;
+	virtual void __cdecl onVideoSizeChanged(Androidapi::Jni::Javatypes::_di_JString inputId, int width, int height) = 0 ;
+	virtual void __cdecl onVideoUnavailable(Androidapi::Jni::Javatypes::_di_JString inputId, int reason) = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJTvView_TvInputCallback : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JTvView_TvInputCallbackClass,_di_JTvView_TvInputCallback>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JTvView_TvInputCallbackClass,_di_JTvView_TvInputCallback> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJTvView_TvInputCallback() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JTvView_TvInputCallbackClass,_di_JTvView_TvInputCallback>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJTvView_TvInputCallback() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+//-- var, const, procedure ---------------------------------------------------
+}	/* namespace Media */
+}	/* namespace Jni */
+}	/* namespace Androidapi */
+#if !defined(DELPHIHEADER_NO_IMPLICIT_NAMESPACE_USE) && !defined(NO_USING_NAMESPACE_ANDROIDAPI_JNI_MEDIA)
+using namespace Androidapi::Jni::Media;
+#endif
+#if !defined(DELPHIHEADER_NO_IMPLICIT_NAMESPACE_USE) && !defined(NO_USING_NAMESPACE_ANDROIDAPI_JNI)
+using namespace Androidapi::Jni;
+#endif
+#if !defined(DELPHIHEADER_NO_IMPLICIT_NAMESPACE_USE) && !defined(NO_USING_NAMESPACE_ANDROIDAPI)
+using namespace Androidapi;
+#endif
+#pragma pack(pop)
+#pragma option pop
+
+#pragma delphiheader end.
+//-- end unit ----------------------------------------------------------------
+#endif	// Androidapi_Jni_MediaHPP

@@ -1,0 +1,13770 @@
+﻿// CodeGear C++Builder
+// Copyright (c) 1995, 2021 by Embarcadero Technologies, Inc.
+// All rights reserved
+
+// (DO NOT EDIT: machine generated header) 'Androidapi.JNI.PlayServices.pas' rev: 34.00 (Android)
+
+#ifndef Androidapi_Jni_PlayservicesHPP
+#define Androidapi_Jni_PlayservicesHPP
+
+#pragma delphiheader begin
+#pragma option push
+#pragma option -w-      // All warnings off
+#pragma option -Vx      // Zero-length empty class member 
+#pragma pack(push,8)
+#include <System.hpp>
+#include <SysInit.hpp>
+#include <Androidapi.JNIBridge.hpp>
+#include <Androidapi.JNI.Accounts.hpp>
+#include <Androidapi.JNI.App.hpp>
+#include <Androidapi.JNI.GraphicsContentViewText.hpp>
+#include <Androidapi.JNI.Java.Net.hpp>
+#include <Androidapi.JNI.JavaTypes.hpp>
+#include <Androidapi.JNI.Location.hpp>
+#include <Androidapi.JNI.Net.hpp>
+#include <Androidapi.JNI.Os.hpp>
+#include <Androidapi.JNI.Support.hpp>
+#include <Androidapi.JNI.Util.hpp>
+#include <Androidapi.JNI.Widget.hpp>
+#include <Androidapi.Jni.hpp>
+#include <System.Rtti.hpp>
+
+//-- user supplied -----------------------------------------------------------
+
+namespace Androidapi
+{
+namespace Jni
+{
+namespace Playservices
+{
+//-- forward type declarations -----------------------------------------------
+__interface DELPHIINTERFACE Janalytics_CampaignTrackingReceiverClass;
+typedef System::DelphiInterface<Janalytics_CampaignTrackingReceiverClass> _di_Janalytics_CampaignTrackingReceiverClass;
+__interface DELPHIINTERFACE Janalytics_CampaignTrackingReceiver;
+typedef System::DelphiInterface<Janalytics_CampaignTrackingReceiver> _di_Janalytics_CampaignTrackingReceiver;
+class DELPHICLASS TJanalytics_CampaignTrackingReceiver;
+__interface DELPHIINTERFACE Janalytics_CampaignTrackingServiceClass;
+typedef System::DelphiInterface<Janalytics_CampaignTrackingServiceClass> _di_Janalytics_CampaignTrackingServiceClass;
+__interface DELPHIINTERFACE Janalytics_CampaignTrackingService;
+typedef System::DelphiInterface<Janalytics_CampaignTrackingService> _di_Janalytics_CampaignTrackingService;
+class DELPHICLASS TJanalytics_CampaignTrackingService;
+__interface DELPHIINTERFACE Janalytics_ExceptionParserClass;
+typedef System::DelphiInterface<Janalytics_ExceptionParserClass> _di_Janalytics_ExceptionParserClass;
+__interface DELPHIINTERFACE Janalytics_ExceptionParser;
+typedef System::DelphiInterface<Janalytics_ExceptionParser> _di_Janalytics_ExceptionParser;
+class DELPHICLASS TJanalytics_ExceptionParser;
+__interface DELPHIINTERFACE Janalytics_ExceptionReporterClass;
+typedef System::DelphiInterface<Janalytics_ExceptionReporterClass> _di_Janalytics_ExceptionReporterClass;
+__interface DELPHIINTERFACE Janalytics_ExceptionReporter;
+typedef System::DelphiInterface<Janalytics_ExceptionReporter> _di_Janalytics_ExceptionReporter;
+class DELPHICLASS TJanalytics_ExceptionReporter;
+__interface DELPHIINTERFACE JTrackerHandlerClass;
+typedef System::DelphiInterface<JTrackerHandlerClass> _di_JTrackerHandlerClass;
+__interface DELPHIINTERFACE JTrackerHandler;
+typedef System::DelphiInterface<JTrackerHandler> _di_JTrackerHandler;
+class DELPHICLASS TJTrackerHandler;
+__interface DELPHIINTERFACE Janalytics_GoogleAnalyticsClass;
+typedef System::DelphiInterface<Janalytics_GoogleAnalyticsClass> _di_Janalytics_GoogleAnalyticsClass;
+__interface DELPHIINTERFACE Janalytics_GoogleAnalytics;
+typedef System::DelphiInterface<Janalytics_GoogleAnalytics> _di_Janalytics_GoogleAnalytics;
+class DELPHICLASS TJanalytics_GoogleAnalytics;
+__interface DELPHIINTERFACE JHitBuildersClass;
+typedef System::DelphiInterface<JHitBuildersClass> _di_JHitBuildersClass;
+__interface DELPHIINTERFACE JHitBuilders;
+typedef System::DelphiInterface<JHitBuilders> _di_JHitBuilders;
+class DELPHICLASS TJHitBuilders;
+__interface DELPHIINTERFACE JHitBuilders_HitBuilderClass;
+typedef System::DelphiInterface<JHitBuilders_HitBuilderClass> _di_JHitBuilders_HitBuilderClass;
+__interface DELPHIINTERFACE JHitBuilders_HitBuilder;
+typedef System::DelphiInterface<JHitBuilders_HitBuilder> _di_JHitBuilders_HitBuilder;
+class DELPHICLASS TJHitBuilders_HitBuilder;
+__interface DELPHIINTERFACE JHitBuilders_AppViewBuilderClass;
+typedef System::DelphiInterface<JHitBuilders_AppViewBuilderClass> _di_JHitBuilders_AppViewBuilderClass;
+__interface DELPHIINTERFACE JHitBuilders_AppViewBuilder;
+typedef System::DelphiInterface<JHitBuilders_AppViewBuilder> _di_JHitBuilders_AppViewBuilder;
+class DELPHICLASS TJHitBuilders_AppViewBuilder;
+__interface DELPHIINTERFACE JHitBuilders_EventBuilderClass;
+typedef System::DelphiInterface<JHitBuilders_EventBuilderClass> _di_JHitBuilders_EventBuilderClass;
+__interface DELPHIINTERFACE JHitBuilders_EventBuilder;
+typedef System::DelphiInterface<JHitBuilders_EventBuilder> _di_JHitBuilders_EventBuilder;
+class DELPHICLASS TJHitBuilders_EventBuilder;
+__interface DELPHIINTERFACE JHitBuilders_ExceptionBuilderClass;
+typedef System::DelphiInterface<JHitBuilders_ExceptionBuilderClass> _di_JHitBuilders_ExceptionBuilderClass;
+__interface DELPHIINTERFACE JHitBuilders_ExceptionBuilder;
+typedef System::DelphiInterface<JHitBuilders_ExceptionBuilder> _di_JHitBuilders_ExceptionBuilder;
+class DELPHICLASS TJHitBuilders_ExceptionBuilder;
+__interface DELPHIINTERFACE JHitBuilders_ItemBuilderClass;
+typedef System::DelphiInterface<JHitBuilders_ItemBuilderClass> _di_JHitBuilders_ItemBuilderClass;
+__interface DELPHIINTERFACE JHitBuilders_ItemBuilder;
+typedef System::DelphiInterface<JHitBuilders_ItemBuilder> _di_JHitBuilders_ItemBuilder;
+class DELPHICLASS TJHitBuilders_ItemBuilder;
+__interface DELPHIINTERFACE JHitBuilders_SocialBuilderClass;
+typedef System::DelphiInterface<JHitBuilders_SocialBuilderClass> _di_JHitBuilders_SocialBuilderClass;
+__interface DELPHIINTERFACE JHitBuilders_SocialBuilder;
+typedef System::DelphiInterface<JHitBuilders_SocialBuilder> _di_JHitBuilders_SocialBuilder;
+class DELPHICLASS TJHitBuilders_SocialBuilder;
+__interface DELPHIINTERFACE JHitBuilders_TimingBuilderClass;
+typedef System::DelphiInterface<JHitBuilders_TimingBuilderClass> _di_JHitBuilders_TimingBuilderClass;
+__interface DELPHIINTERFACE JHitBuilders_TimingBuilder;
+typedef System::DelphiInterface<JHitBuilders_TimingBuilder> _di_JHitBuilders_TimingBuilder;
+class DELPHICLASS TJHitBuilders_TimingBuilder;
+__interface DELPHIINTERFACE JHitBuilders_TransactionBuilderClass;
+typedef System::DelphiInterface<JHitBuilders_TransactionBuilderClass> _di_JHitBuilders_TransactionBuilderClass;
+__interface DELPHIINTERFACE JHitBuilders_TransactionBuilder;
+typedef System::DelphiInterface<JHitBuilders_TransactionBuilder> _di_JHitBuilders_TransactionBuilder;
+class DELPHICLASS TJHitBuilders_TransactionBuilder;
+__interface DELPHIINTERFACE Janalytics_LoggerClass;
+typedef System::DelphiInterface<Janalytics_LoggerClass> _di_Janalytics_LoggerClass;
+__interface DELPHIINTERFACE Janalytics_Logger;
+typedef System::DelphiInterface<Janalytics_Logger> _di_Janalytics_Logger;
+class DELPHICLASS TJanalytics_Logger;
+__interface DELPHIINTERFACE JLogger_LogLevelClass;
+typedef System::DelphiInterface<JLogger_LogLevelClass> _di_JLogger_LogLevelClass;
+__interface DELPHIINTERFACE JLogger_LogLevel;
+typedef System::DelphiInterface<JLogger_LogLevel> _di_JLogger_LogLevel;
+class DELPHICLASS TJLogger_LogLevel;
+__interface DELPHIINTERFACE Janalytics_StandardExceptionParserClass;
+typedef System::DelphiInterface<Janalytics_StandardExceptionParserClass> _di_Janalytics_StandardExceptionParserClass;
+__interface DELPHIINTERFACE Janalytics_StandardExceptionParser;
+typedef System::DelphiInterface<Janalytics_StandardExceptionParser> _di_Janalytics_StandardExceptionParser;
+class DELPHICLASS TJanalytics_StandardExceptionParser;
+__interface DELPHIINTERFACE Janalytics_TrackerClass;
+typedef System::DelphiInterface<Janalytics_TrackerClass> _di_Janalytics_TrackerClass;
+__interface DELPHIINTERFACE Janalytics_Tracker;
+typedef System::DelphiInterface<Janalytics_Tracker> _di_Janalytics_Tracker;
+class DELPHICLASS TJanalytics_Tracker;
+__interface DELPHIINTERFACE JFreezableClass;
+typedef System::DelphiInterface<JFreezableClass> _di_JFreezableClass;
+__interface DELPHIINTERFACE JFreezable;
+typedef System::DelphiInterface<JFreezable> _di_JFreezable;
+class DELPHICLASS TJFreezable;
+__interface DELPHIINTERFACE JAppStateClass;
+typedef System::DelphiInterface<JAppStateClass> _di_JAppStateClass;
+__interface DELPHIINTERFACE JAppState;
+typedef System::DelphiInterface<JAppState> _di_JAppState;
+class DELPHICLASS TJAppState;
+__interface DELPHIINTERFACE JDataBufferClass;
+typedef System::DelphiInterface<JDataBufferClass> _di_JDataBufferClass;
+__interface DELPHIINTERFACE JDataBuffer;
+typedef System::DelphiInterface<JDataBuffer> _di_JDataBuffer;
+class DELPHICLASS TJDataBuffer;
+__interface DELPHIINTERFACE JAppStateBufferClass;
+typedef System::DelphiInterface<JAppStateBufferClass> _di_JAppStateBufferClass;
+__interface DELPHIINTERFACE JAppStateBuffer;
+typedef System::DelphiInterface<JAppStateBuffer> _di_JAppStateBuffer;
+class DELPHICLASS TJAppStateBuffer;
+__interface DELPHIINTERFACE JAppStateManagerClass;
+typedef System::DelphiInterface<JAppStateManagerClass> _di_JAppStateManagerClass;
+__interface DELPHIINTERFACE JAppStateManager;
+typedef System::DelphiInterface<JAppStateManager> _di_JAppStateManager;
+class DELPHICLASS TJAppStateManager;
+__interface DELPHIINTERFACE JReleasableClass;
+typedef System::DelphiInterface<JReleasableClass> _di_JReleasableClass;
+__interface DELPHIINTERFACE JReleasable;
+typedef System::DelphiInterface<JReleasable> _di_JReleasable;
+class DELPHICLASS TJReleasable;
+__interface DELPHIINTERFACE JAppStateManager_StateConflictResultClass;
+typedef System::DelphiInterface<JAppStateManager_StateConflictResultClass> _di_JAppStateManager_StateConflictResultClass;
+__interface DELPHIINTERFACE JAppStateManager_StateConflictResult;
+typedef System::DelphiInterface<JAppStateManager_StateConflictResult> _di_JAppStateManager_StateConflictResult;
+class DELPHICLASS TJAppStateManager_StateConflictResult;
+__interface DELPHIINTERFACE Japi_ResultClass;
+typedef System::DelphiInterface<Japi_ResultClass> _di_Japi_ResultClass;
+__interface DELPHIINTERFACE Japi_Result;
+typedef System::DelphiInterface<Japi_Result> _di_Japi_Result;
+class DELPHICLASS TJapi_Result;
+__interface DELPHIINTERFACE JAppStateManager_StateDeletedResultClass;
+typedef System::DelphiInterface<JAppStateManager_StateDeletedResultClass> _di_JAppStateManager_StateDeletedResultClass;
+__interface DELPHIINTERFACE JAppStateManager_StateDeletedResult;
+typedef System::DelphiInterface<JAppStateManager_StateDeletedResult> _di_JAppStateManager_StateDeletedResult;
+class DELPHICLASS TJAppStateManager_StateDeletedResult;
+__interface DELPHIINTERFACE JAppStateManager_StateListResultClass;
+typedef System::DelphiInterface<JAppStateManager_StateListResultClass> _di_JAppStateManager_StateListResultClass;
+__interface DELPHIINTERFACE JAppStateManager_StateListResult;
+typedef System::DelphiInterface<JAppStateManager_StateListResult> _di_JAppStateManager_StateListResult;
+class DELPHICLASS TJAppStateManager_StateListResult;
+__interface DELPHIINTERFACE JAppStateManager_StateLoadedResultClass;
+typedef System::DelphiInterface<JAppStateManager_StateLoadedResultClass> _di_JAppStateManager_StateLoadedResultClass;
+__interface DELPHIINTERFACE JAppStateManager_StateLoadedResult;
+typedef System::DelphiInterface<JAppStateManager_StateLoadedResult> _di_JAppStateManager_StateLoadedResult;
+class DELPHICLASS TJAppStateManager_StateLoadedResult;
+__interface DELPHIINTERFACE JAppStateManager_StateResultClass;
+typedef System::DelphiInterface<JAppStateManager_StateResultClass> _di_JAppStateManager_StateResultClass;
+__interface DELPHIINTERFACE JAppStateManager_StateResult;
+typedef System::DelphiInterface<JAppStateManager_StateResult> _di_JAppStateManager_StateResult;
+class DELPHICLASS TJAppStateManager_StateResult;
+__interface DELPHIINTERFACE JAppStateStatusCodesClass;
+typedef System::DelphiInterface<JAppStateStatusCodesClass> _di_JAppStateStatusCodesClass;
+__interface DELPHIINTERFACE JAppStateStatusCodes;
+typedef System::DelphiInterface<JAppStateStatusCodes> _di_JAppStateStatusCodes;
+class DELPHICLASS TJAppStateStatusCodes;
+__interface DELPHIINTERFACE JGoogleAuthExceptionClass;
+typedef System::DelphiInterface<JGoogleAuthExceptionClass> _di_JGoogleAuthExceptionClass;
+__interface DELPHIINTERFACE JGoogleAuthException;
+typedef System::DelphiInterface<JGoogleAuthException> _di_JGoogleAuthException;
+class DELPHICLASS TJGoogleAuthException;
+__interface DELPHIINTERFACE JGoogleAuthUtilClass;
+typedef System::DelphiInterface<JGoogleAuthUtilClass> _di_JGoogleAuthUtilClass;
+__interface DELPHIINTERFACE JGoogleAuthUtil;
+typedef System::DelphiInterface<JGoogleAuthUtil> _di_JGoogleAuthUtil;
+class DELPHICLASS TJGoogleAuthUtil;
+__interface DELPHIINTERFACE JUserRecoverableAuthExceptionClass;
+typedef System::DelphiInterface<JUserRecoverableAuthExceptionClass> _di_JUserRecoverableAuthExceptionClass;
+__interface DELPHIINTERFACE JUserRecoverableAuthException;
+typedef System::DelphiInterface<JUserRecoverableAuthException> _di_JUserRecoverableAuthException;
+class DELPHICLASS TJUserRecoverableAuthException;
+__interface DELPHIINTERFACE JGooglePlayServicesAvailabilityExceptionClass;
+typedef System::DelphiInterface<JGooglePlayServicesAvailabilityExceptionClass> _di_JGooglePlayServicesAvailabilityExceptionClass;
+__interface DELPHIINTERFACE JGooglePlayServicesAvailabilityException;
+typedef System::DelphiInterface<JGooglePlayServicesAvailabilityException> _di_JGooglePlayServicesAvailabilityException;
+class DELPHICLASS TJGooglePlayServicesAvailabilityException;
+__interface DELPHIINTERFACE JUserRecoverableNotifiedExceptionClass;
+typedef System::DelphiInterface<JUserRecoverableNotifiedExceptionClass> _di_JUserRecoverableNotifiedExceptionClass;
+__interface DELPHIINTERFACE JUserRecoverableNotifiedException;
+typedef System::DelphiInterface<JUserRecoverableNotifiedException> _di_JUserRecoverableNotifiedException;
+class DELPHICLASS TJUserRecoverableNotifiedException;
+__interface DELPHIINTERFACE JApplicationMetadataClass;
+typedef System::DelphiInterface<JApplicationMetadataClass> _di_JApplicationMetadataClass;
+__interface DELPHIINTERFACE JApplicationMetadata;
+typedef System::DelphiInterface<JApplicationMetadata> _di_JApplicationMetadata;
+class DELPHICLASS TJApplicationMetadata;
+__interface DELPHIINTERFACE JCastClass;
+typedef System::DelphiInterface<JCastClass> _di_JCastClass;
+__interface DELPHIINTERFACE JCast;
+typedef System::DelphiInterface<JCast> _di_JCast;
+class DELPHICLASS TJCast;
+__interface DELPHIINTERFACE JCast_ApplicationConnectionResultClass;
+typedef System::DelphiInterface<JCast_ApplicationConnectionResultClass> _di_JCast_ApplicationConnectionResultClass;
+__interface DELPHIINTERFACE JCast_ApplicationConnectionResult;
+typedef System::DelphiInterface<JCast_ApplicationConnectionResult> _di_JCast_ApplicationConnectionResult;
+class DELPHICLASS TJCast_ApplicationConnectionResult;
+__interface DELPHIINTERFACE JCast_CastApiClass;
+typedef System::DelphiInterface<JCast_CastApiClass> _di_JCast_CastApiClass;
+__interface DELPHIINTERFACE JCast_CastApi;
+typedef System::DelphiInterface<JCast_CastApi> _di_JCast_CastApi;
+class DELPHICLASS TJCast_CastApi;
+__interface DELPHIINTERFACE JCast_CastOptionsClass;
+typedef System::DelphiInterface<JCast_CastOptionsClass> _di_JCast_CastOptionsClass;
+__interface DELPHIINTERFACE JCast_CastOptions;
+typedef System::DelphiInterface<JCast_CastOptions> _di_JCast_CastOptions;
+class DELPHICLASS TJCast_CastOptions;
+__interface DELPHIINTERFACE JCastOptions_BuilderClass;
+typedef System::DelphiInterface<JCastOptions_BuilderClass> _di_JCastOptions_BuilderClass;
+__interface DELPHIINTERFACE JCastOptions_Builder;
+typedef System::DelphiInterface<JCastOptions_Builder> _di_JCastOptions_Builder;
+class DELPHICLASS TJCastOptions_Builder;
+__interface DELPHIINTERFACE JCast_ListenerClass;
+typedef System::DelphiInterface<JCast_ListenerClass> _di_JCast_ListenerClass;
+__interface DELPHIINTERFACE JCast_Listener;
+typedef System::DelphiInterface<JCast_Listener> _di_JCast_Listener;
+class DELPHICLASS TJCast_Listener;
+__interface DELPHIINTERFACE JCast_MessageReceivedCallbackClass;
+typedef System::DelphiInterface<JCast_MessageReceivedCallbackClass> _di_JCast_MessageReceivedCallbackClass;
+__interface DELPHIINTERFACE JCast_MessageReceivedCallback;
+typedef System::DelphiInterface<JCast_MessageReceivedCallback> _di_JCast_MessageReceivedCallback;
+class DELPHICLASS TJCast_MessageReceivedCallback;
+__interface DELPHIINTERFACE JCastDeviceClass;
+typedef System::DelphiInterface<JCastDeviceClass> _di_JCastDeviceClass;
+__interface DELPHIINTERFACE JCastDevice;
+typedef System::DelphiInterface<JCastDevice> _di_JCastDevice;
+class DELPHICLASS TJCastDevice;
+__interface DELPHIINTERFACE JCastMediaControlIntentClass;
+typedef System::DelphiInterface<JCastMediaControlIntentClass> _di_JCastMediaControlIntentClass;
+__interface DELPHIINTERFACE JCastMediaControlIntent;
+typedef System::DelphiInterface<JCastMediaControlIntent> _di_JCastMediaControlIntent;
+class DELPHICLASS TJCastMediaControlIntent;
+__interface DELPHIINTERFACE JCastStatusCodesClass;
+typedef System::DelphiInterface<JCastStatusCodesClass> _di_JCastStatusCodesClass;
+__interface DELPHIINTERFACE JCastStatusCodes;
+typedef System::DelphiInterface<JCastStatusCodes> _di_JCastStatusCodes;
+class DELPHICLASS TJCastStatusCodes;
+__interface DELPHIINTERFACE JMediaInfoClass;
+typedef System::DelphiInterface<JMediaInfoClass> _di_JMediaInfoClass;
+__interface DELPHIINTERFACE JMediaInfo;
+typedef System::DelphiInterface<JMediaInfo> _di_JMediaInfo;
+class DELPHICLASS TJMediaInfo;
+__interface DELPHIINTERFACE JMediaInfo_BuilderClass;
+typedef System::DelphiInterface<JMediaInfo_BuilderClass> _di_JMediaInfo_BuilderClass;
+__interface DELPHIINTERFACE JMediaInfo_Builder;
+typedef System::DelphiInterface<JMediaInfo_Builder> _di_JMediaInfo_Builder;
+class DELPHICLASS TJMediaInfo_Builder;
+__interface DELPHIINTERFACE JMediaMetadataClass;
+typedef System::DelphiInterface<JMediaMetadataClass> _di_JMediaMetadataClass;
+__interface DELPHIINTERFACE JMediaMetadata;
+typedef System::DelphiInterface<JMediaMetadata> _di_JMediaMetadata;
+class DELPHICLASS TJMediaMetadata;
+__interface DELPHIINTERFACE JMediaMetadata_aClass;
+typedef System::DelphiInterface<JMediaMetadata_aClass> _di_JMediaMetadata_aClass;
+__interface DELPHIINTERFACE JMediaMetadata_a;
+typedef System::DelphiInterface<JMediaMetadata_a> _di_JMediaMetadata_a;
+class DELPHICLASS TJMediaMetadata_a;
+__interface DELPHIINTERFACE JMediaStatusClass;
+typedef System::DelphiInterface<JMediaStatusClass> _di_JMediaStatusClass;
+__interface DELPHIINTERFACE JMediaStatus;
+typedef System::DelphiInterface<JMediaStatus> _di_JMediaStatus;
+class DELPHICLASS TJMediaStatus;
+__interface DELPHIINTERFACE JRemoteMediaPlayerClass;
+typedef System::DelphiInterface<JRemoteMediaPlayerClass> _di_JRemoteMediaPlayerClass;
+__interface DELPHIINTERFACE JRemoteMediaPlayer;
+typedef System::DelphiInterface<JRemoteMediaPlayer> _di_JRemoteMediaPlayer;
+class DELPHICLASS TJRemoteMediaPlayer;
+__interface DELPHIINTERFACE JRemoteMediaPlayer_MediaChannelResultClass;
+typedef System::DelphiInterface<JRemoteMediaPlayer_MediaChannelResultClass> _di_JRemoteMediaPlayer_MediaChannelResultClass;
+__interface DELPHIINTERFACE JRemoteMediaPlayer_MediaChannelResult;
+typedef System::DelphiInterface<JRemoteMediaPlayer_MediaChannelResult> _di_JRemoteMediaPlayer_MediaChannelResult;
+class DELPHICLASS TJRemoteMediaPlayer_MediaChannelResult;
+__interface DELPHIINTERFACE JRemoteMediaPlayer_OnMetadataUpdatedListenerClass;
+typedef System::DelphiInterface<JRemoteMediaPlayer_OnMetadataUpdatedListenerClass> _di_JRemoteMediaPlayer_OnMetadataUpdatedListenerClass;
+__interface DELPHIINTERFACE JRemoteMediaPlayer_OnMetadataUpdatedListener;
+typedef System::DelphiInterface<JRemoteMediaPlayer_OnMetadataUpdatedListener> _di_JRemoteMediaPlayer_OnMetadataUpdatedListener;
+class DELPHICLASS TJRemoteMediaPlayer_OnMetadataUpdatedListener;
+__interface DELPHIINTERFACE JRemoteMediaPlayer_OnStatusUpdatedListenerClass;
+typedef System::DelphiInterface<JRemoteMediaPlayer_OnStatusUpdatedListenerClass> _di_JRemoteMediaPlayer_OnStatusUpdatedListenerClass;
+__interface DELPHIINTERFACE JRemoteMediaPlayer_OnStatusUpdatedListener;
+typedef System::DelphiInterface<JRemoteMediaPlayer_OnStatusUpdatedListener> _di_JRemoteMediaPlayer_OnStatusUpdatedListener;
+class DELPHICLASS TJRemoteMediaPlayer_OnStatusUpdatedListener;
+__interface DELPHIINTERFACE JAccountPickerClass;
+typedef System::DelphiInterface<JAccountPickerClass> _di_JAccountPickerClass;
+__interface DELPHIINTERFACE JAccountPicker;
+typedef System::DelphiInterface<JAccountPicker> _di_JAccountPicker;
+class DELPHICLASS TJAccountPicker;
+__interface DELPHIINTERFACE JConnectionResultClass;
+typedef System::DelphiInterface<JConnectionResultClass> _di_JConnectionResultClass;
+__interface DELPHIINTERFACE JConnectionResult;
+typedef System::DelphiInterface<JConnectionResult> _di_JConnectionResult;
+class DELPHICLASS TJConnectionResult;
+__interface DELPHIINTERFACE JErrorDialogFragmentClass;
+typedef System::DelphiInterface<JErrorDialogFragmentClass> _di_JErrorDialogFragmentClass;
+__interface DELPHIINTERFACE JErrorDialogFragment;
+typedef System::DelphiInterface<JErrorDialogFragment> _di_JErrorDialogFragment;
+class DELPHICLASS TJErrorDialogFragment;
+__interface DELPHIINTERFACE JGooglePlayServicesClientClass;
+typedef System::DelphiInterface<JGooglePlayServicesClientClass> _di_JGooglePlayServicesClientClass;
+__interface DELPHIINTERFACE JGooglePlayServicesClient;
+typedef System::DelphiInterface<JGooglePlayServicesClient> _di_JGooglePlayServicesClient;
+class DELPHICLASS TJGooglePlayServicesClient;
+__interface DELPHIINTERFACE JGooglePlayServicesClient_ConnectionCallbacksClass;
+typedef System::DelphiInterface<JGooglePlayServicesClient_ConnectionCallbacksClass> _di_JGooglePlayServicesClient_ConnectionCallbacksClass;
+__interface DELPHIINTERFACE JGooglePlayServicesClient_ConnectionCallbacks;
+typedef System::DelphiInterface<JGooglePlayServicesClient_ConnectionCallbacks> _di_JGooglePlayServicesClient_ConnectionCallbacks;
+class DELPHICLASS TJGooglePlayServicesClient_ConnectionCallbacks;
+__interface DELPHIINTERFACE JGooglePlayServicesClient_OnConnectionFailedListenerClass;
+typedef System::DelphiInterface<JGooglePlayServicesClient_OnConnectionFailedListenerClass> _di_JGooglePlayServicesClient_OnConnectionFailedListenerClass;
+__interface DELPHIINTERFACE JGooglePlayServicesClient_OnConnectionFailedListener;
+typedef System::DelphiInterface<JGooglePlayServicesClient_OnConnectionFailedListener> _di_JGooglePlayServicesClient_OnConnectionFailedListener;
+class DELPHICLASS TJGooglePlayServicesClient_OnConnectionFailedListener;
+__interface DELPHIINTERFACE JGooglePlayServicesNotAvailableExceptionClass;
+typedef System::DelphiInterface<JGooglePlayServicesNotAvailableExceptionClass> _di_JGooglePlayServicesNotAvailableExceptionClass;
+__interface DELPHIINTERFACE JGooglePlayServicesNotAvailableException;
+typedef System::DelphiInterface<JGooglePlayServicesNotAvailableException> _di_JGooglePlayServicesNotAvailableException;
+class DELPHICLASS TJGooglePlayServicesNotAvailableException;
+__interface DELPHIINTERFACE JUserRecoverableExceptionClass;
+typedef System::DelphiInterface<JUserRecoverableExceptionClass> _di_JUserRecoverableExceptionClass;
+__interface DELPHIINTERFACE JUserRecoverableException;
+typedef System::DelphiInterface<JUserRecoverableException> _di_JUserRecoverableException;
+class DELPHICLASS TJUserRecoverableException;
+__interface DELPHIINTERFACE JGooglePlayServicesRepairableExceptionClass;
+typedef System::DelphiInterface<JGooglePlayServicesRepairableExceptionClass> _di_JGooglePlayServicesRepairableExceptionClass;
+__interface DELPHIINTERFACE JGooglePlayServicesRepairableException;
+typedef System::DelphiInterface<JGooglePlayServicesRepairableException> _di_JGooglePlayServicesRepairableException;
+class DELPHICLASS TJGooglePlayServicesRepairableException;
+__interface DELPHIINTERFACE JGooglePlayServicesUtilClass;
+typedef System::DelphiInterface<JGooglePlayServicesUtilClass> _di_JGooglePlayServicesUtilClass;
+__interface DELPHIINTERFACE JGooglePlayServicesUtil;
+typedef System::DelphiInterface<JGooglePlayServicesUtil> _di_JGooglePlayServicesUtil;
+class DELPHICLASS TJGooglePlayServicesUtil;
+__interface DELPHIINTERFACE JScopesClass;
+typedef System::DelphiInterface<JScopesClass> _di_JScopesClass;
+__interface DELPHIINTERFACE JScopes;
+typedef System::DelphiInterface<JScopes> _di_JScopes;
+class DELPHICLASS TJScopes;
+__interface DELPHIINTERFACE JSignInButtonClass;
+typedef System::DelphiInterface<JSignInButtonClass> _di_JSignInButtonClass;
+__interface DELPHIINTERFACE JSignInButton;
+typedef System::DelphiInterface<JSignInButton> _di_JSignInButton;
+class DELPHICLASS TJSignInButton;
+__interface DELPHIINTERFACE JKeepNameClass;
+typedef System::DelphiInterface<JKeepNameClass> _di_JKeepNameClass;
+__interface DELPHIINTERFACE JKeepName;
+typedef System::DelphiInterface<JKeepName> _di_JKeepName;
+class DELPHICLASS TJKeepName;
+__interface DELPHIINTERFACE JCommonStatusCodesClass;
+typedef System::DelphiInterface<JCommonStatusCodesClass> _di_JCommonStatusCodesClass;
+__interface DELPHIINTERFACE JCommonStatusCodes;
+typedef System::DelphiInterface<JCommonStatusCodes> _di_JCommonStatusCodes;
+class DELPHICLASS TJCommonStatusCodes;
+__interface DELPHIINTERFACE JGoogleApiClientClass;
+typedef System::DelphiInterface<JGoogleApiClientClass> _di_JGoogleApiClientClass;
+__interface DELPHIINTERFACE JGoogleApiClient;
+typedef System::DelphiInterface<JGoogleApiClient> _di_JGoogleApiClient;
+class DELPHICLASS TJGoogleApiClient;
+__interface DELPHIINTERFACE JGoogleApiClient_ApiOptionsClass;
+typedef System::DelphiInterface<JGoogleApiClient_ApiOptionsClass> _di_JGoogleApiClient_ApiOptionsClass;
+__interface DELPHIINTERFACE JGoogleApiClient_ApiOptions;
+typedef System::DelphiInterface<JGoogleApiClient_ApiOptions> _di_JGoogleApiClient_ApiOptions;
+class DELPHICLASS TJGoogleApiClient_ApiOptions;
+__interface DELPHIINTERFACE JGoogleApiClient_BuilderClass;
+typedef System::DelphiInterface<JGoogleApiClient_BuilderClass> _di_JGoogleApiClient_BuilderClass;
+__interface DELPHIINTERFACE JGoogleApiClient_Builder;
+typedef System::DelphiInterface<JGoogleApiClient_Builder> _di_JGoogleApiClient_Builder;
+class DELPHICLASS TJGoogleApiClient_Builder;
+__interface DELPHIINTERFACE JGoogleApiClient_ConnectionCallbacksClass;
+typedef System::DelphiInterface<JGoogleApiClient_ConnectionCallbacksClass> _di_JGoogleApiClient_ConnectionCallbacksClass;
+__interface DELPHIINTERFACE JGoogleApiClient_ConnectionCallbacks;
+typedef System::DelphiInterface<JGoogleApiClient_ConnectionCallbacks> _di_JGoogleApiClient_ConnectionCallbacks;
+class DELPHICLASS TJGoogleApiClient_ConnectionCallbacks;
+__interface DELPHIINTERFACE JGoogleApiClient_OnConnectionFailedListenerClass;
+typedef System::DelphiInterface<JGoogleApiClient_OnConnectionFailedListenerClass> _di_JGoogleApiClient_OnConnectionFailedListenerClass;
+__interface DELPHIINTERFACE JGoogleApiClient_OnConnectionFailedListener;
+typedef System::DelphiInterface<JGoogleApiClient_OnConnectionFailedListener> _di_JGoogleApiClient_OnConnectionFailedListener;
+class DELPHICLASS TJGoogleApiClient_OnConnectionFailedListener;
+__interface DELPHIINTERFACE JPendingResultClass;
+typedef System::DelphiInterface<JPendingResultClass> _di_JPendingResultClass;
+__interface DELPHIINTERFACE JPendingResult;
+typedef System::DelphiInterface<JPendingResult> _di_JPendingResult;
+class DELPHICLASS TJPendingResult;
+__interface DELPHIINTERFACE JResultCallbackClass;
+typedef System::DelphiInterface<JResultCallbackClass> _di_JResultCallbackClass;
+__interface DELPHIINTERFACE JResultCallback;
+typedef System::DelphiInterface<JResultCallback> _di_JResultCallback;
+class DELPHICLASS TJResultCallback;
+__interface DELPHIINTERFACE JScopeClass;
+typedef System::DelphiInterface<JScopeClass> _di_JScopeClass;
+__interface DELPHIINTERFACE JScope;
+typedef System::DelphiInterface<JScope> _di_JScope;
+class DELPHICLASS TJScope;
+__interface DELPHIINTERFACE JStatusClass;
+typedef System::DelphiInterface<JStatusClass> _di_JStatusClass;
+__interface DELPHIINTERFACE JStatus;
+typedef System::DelphiInterface<JStatus> _di_JStatus;
+class DELPHICLASS TJStatus;
+__interface DELPHIINTERFACE JStatusCreatorClass;
+typedef System::DelphiInterface<JStatusCreatorClass> _di_JStatusCreatorClass;
+__interface DELPHIINTERFACE JStatusCreator;
+typedef System::DelphiInterface<JStatusCreator> _di_JStatusCreator;
+class DELPHICLASS TJStatusCreator;
+__interface DELPHIINTERFACE JDataBufferUtilsClass;
+typedef System::DelphiInterface<JDataBufferUtilsClass> _di_JDataBufferUtilsClass;
+__interface DELPHIINTERFACE JDataBufferUtils;
+typedef System::DelphiInterface<JDataBufferUtils> _di_JDataBufferUtils;
+class DELPHICLASS TJDataBufferUtils;
+__interface DELPHIINTERFACE JDataHolderClass;
+typedef System::DelphiInterface<JDataHolderClass> _di_JDataHolderClass;
+__interface DELPHIINTERFACE JDataHolder;
+typedef System::DelphiInterface<JDataHolder> _di_JDataHolder;
+class DELPHICLASS TJDataHolder;
+__interface DELPHIINTERFACE JDataHolder_BuilderClass;
+typedef System::DelphiInterface<JDataHolder_BuilderClass> _di_JDataHolder_BuilderClass;
+__interface DELPHIINTERFACE JDataHolder_Builder;
+typedef System::DelphiInterface<JDataHolder_Builder> _di_JDataHolder_Builder;
+class DELPHICLASS TJDataHolder_Builder;
+__interface DELPHIINTERFACE JDataHolderCreatorClass;
+typedef System::DelphiInterface<JDataHolderCreatorClass> _di_JDataHolderCreatorClass;
+__interface DELPHIINTERFACE JDataHolderCreator;
+typedef System::DelphiInterface<JDataHolderCreator> _di_JDataHolderCreator;
+class DELPHICLASS TJDataHolderCreator;
+__interface DELPHIINTERFACE JFilteredDataBufferClass;
+typedef System::DelphiInterface<JFilteredDataBufferClass> _di_JFilteredDataBufferClass;
+__interface DELPHIINTERFACE JFilteredDataBuffer;
+typedef System::DelphiInterface<JFilteredDataBuffer> _di_JFilteredDataBuffer;
+class DELPHICLASS TJFilteredDataBuffer;
+__interface DELPHIINTERFACE JFreezableUtilsClass;
+typedef System::DelphiInterface<JFreezableUtilsClass> _di_JFreezableUtilsClass;
+__interface DELPHIINTERFACE JFreezableUtils;
+typedef System::DelphiInterface<JFreezableUtils> _di_JFreezableUtils;
+class DELPHICLASS TJFreezableUtils;
+__interface DELPHIINTERFACE JImageManagerClass;
+typedef System::DelphiInterface<JImageManagerClass> _di_JImageManagerClass;
+__interface DELPHIINTERFACE JImageManager;
+typedef System::DelphiInterface<JImageManager> _di_JImageManager;
+class DELPHICLASS TJImageManager;
+__interface DELPHIINTERFACE JImageManager_ImageReceiverClass;
+typedef System::DelphiInterface<JImageManager_ImageReceiverClass> _di_JImageManager_ImageReceiverClass;
+__interface DELPHIINTERFACE JImageManager_ImageReceiver;
+typedef System::DelphiInterface<JImageManager_ImageReceiver> _di_JImageManager_ImageReceiver;
+class DELPHICLASS TJImageManager_ImageReceiver;
+__interface DELPHIINTERFACE JImageManager_OnImageLoadedListenerClass;
+typedef System::DelphiInterface<JImageManager_OnImageLoadedListenerClass> _di_JImageManager_OnImageLoadedListenerClass;
+__interface DELPHIINTERFACE JImageManager_OnImageLoadedListener;
+typedef System::DelphiInterface<JImageManager_OnImageLoadedListener> _di_JImageManager_OnImageLoadedListener;
+class DELPHICLASS TJImageManager_OnImageLoadedListener;
+__interface DELPHIINTERFACE JWebImageClass;
+typedef System::DelphiInterface<JWebImageClass> _di_JWebImageClass;
+__interface DELPHIINTERFACE JWebImage;
+typedef System::DelphiInterface<JWebImage> _di_JWebImage;
+class DELPHICLASS TJWebImage;
+__interface DELPHIINTERFACE JSafeParcelableClass;
+typedef System::DelphiInterface<JSafeParcelableClass> _di_JSafeParcelableClass;
+__interface DELPHIINTERFACE JSafeParcelable;
+typedef System::DelphiInterface<JSafeParcelable> _di_JSafeParcelable;
+class DELPHICLASS TJSafeParcelable;
+__interface DELPHIINTERFACE JContentsClass;
+typedef System::DelphiInterface<JContentsClass> _di_JContentsClass;
+__interface DELPHIINTERFACE JContents;
+typedef System::DelphiInterface<JContents> _di_JContents;
+class DELPHICLASS TJContents;
+__interface DELPHIINTERFACE JCreateFileActivityBuilderClass;
+typedef System::DelphiInterface<JCreateFileActivityBuilderClass> _di_JCreateFileActivityBuilderClass;
+__interface DELPHIINTERFACE JCreateFileActivityBuilder;
+typedef System::DelphiInterface<JCreateFileActivityBuilder> _di_JCreateFileActivityBuilder;
+class DELPHICLASS TJCreateFileActivityBuilder;
+__interface DELPHIINTERFACE JDriveClass;
+typedef System::DelphiInterface<JDriveClass> _di_JDriveClass;
+__interface DELPHIINTERFACE JDrive;
+typedef System::DelphiInterface<JDrive> _di_JDrive;
+class DELPHICLASS TJDrive;
+__interface DELPHIINTERFACE JDriveApiClass;
+typedef System::DelphiInterface<JDriveApiClass> _di_JDriveApiClass;
+__interface DELPHIINTERFACE JDriveApi;
+typedef System::DelphiInterface<JDriveApi> _di_JDriveApi;
+class DELPHICLASS TJDriveApi;
+__interface DELPHIINTERFACE JDriveApi_ContentsResultClass;
+typedef System::DelphiInterface<JDriveApi_ContentsResultClass> _di_JDriveApi_ContentsResultClass;
+__interface DELPHIINTERFACE JDriveApi_ContentsResult;
+typedef System::DelphiInterface<JDriveApi_ContentsResult> _di_JDriveApi_ContentsResult;
+class DELPHICLASS TJDriveApi_ContentsResult;
+__interface DELPHIINTERFACE JDriveApi_DriveIdResultClass;
+typedef System::DelphiInterface<JDriveApi_DriveIdResultClass> _di_JDriveApi_DriveIdResultClass;
+__interface DELPHIINTERFACE JDriveApi_DriveIdResult;
+typedef System::DelphiInterface<JDriveApi_DriveIdResult> _di_JDriveApi_DriveIdResult;
+class DELPHICLASS TJDriveApi_DriveIdResult;
+__interface DELPHIINTERFACE JDriveApi_IntentSenderResultClass;
+typedef System::DelphiInterface<JDriveApi_IntentSenderResultClass> _di_JDriveApi_IntentSenderResultClass;
+__interface DELPHIINTERFACE JDriveApi_IntentSenderResult;
+typedef System::DelphiInterface<JDriveApi_IntentSenderResult> _di_JDriveApi_IntentSenderResult;
+class DELPHICLASS TJDriveApi_IntentSenderResult;
+__interface DELPHIINTERFACE JDriveApi_MetadataBufferResultClass;
+typedef System::DelphiInterface<JDriveApi_MetadataBufferResultClass> _di_JDriveApi_MetadataBufferResultClass;
+__interface DELPHIINTERFACE JDriveApi_MetadataBufferResult;
+typedef System::DelphiInterface<JDriveApi_MetadataBufferResult> _di_JDriveApi_MetadataBufferResult;
+class DELPHICLASS TJDriveApi_MetadataBufferResult;
+__interface DELPHIINTERFACE JDriveApi_OnSyncFinishCallbackClass;
+typedef System::DelphiInterface<JDriveApi_OnSyncFinishCallbackClass> _di_JDriveApi_OnSyncFinishCallbackClass;
+__interface DELPHIINTERFACE JDriveApi_OnSyncFinishCallback;
+typedef System::DelphiInterface<JDriveApi_OnSyncFinishCallback> _di_JDriveApi_OnSyncFinishCallback;
+class DELPHICLASS TJDriveApi_OnSyncFinishCallback;
+__interface DELPHIINTERFACE JDriveResourceClass;
+typedef System::DelphiInterface<JDriveResourceClass> _di_JDriveResourceClass;
+__interface DELPHIINTERFACE JDriveResource;
+typedef System::DelphiInterface<JDriveResource> _di_JDriveResource;
+class DELPHICLASS TJDriveResource;
+__interface DELPHIINTERFACE JDriveFileClass;
+typedef System::DelphiInterface<JDriveFileClass> _di_JDriveFileClass;
+__interface DELPHIINTERFACE JDriveFile;
+typedef System::DelphiInterface<JDriveFile> _di_JDriveFile;
+class DELPHICLASS TJDriveFile;
+__interface DELPHIINTERFACE JDriveFile_DownloadProgressListenerClass;
+typedef System::DelphiInterface<JDriveFile_DownloadProgressListenerClass> _di_JDriveFile_DownloadProgressListenerClass;
+__interface DELPHIINTERFACE JDriveFile_DownloadProgressListener;
+typedef System::DelphiInterface<JDriveFile_DownloadProgressListener> _di_JDriveFile_DownloadProgressListener;
+class DELPHICLASS TJDriveFile_DownloadProgressListener;
+__interface DELPHIINTERFACE JDriveFolderClass;
+typedef System::DelphiInterface<JDriveFolderClass> _di_JDriveFolderClass;
+__interface DELPHIINTERFACE JDriveFolder;
+typedef System::DelphiInterface<JDriveFolder> _di_JDriveFolder;
+class DELPHICLASS TJDriveFolder;
+__interface DELPHIINTERFACE JDriveFolder_DriveFileResultClass;
+typedef System::DelphiInterface<JDriveFolder_DriveFileResultClass> _di_JDriveFolder_DriveFileResultClass;
+__interface DELPHIINTERFACE JDriveFolder_DriveFileResult;
+typedef System::DelphiInterface<JDriveFolder_DriveFileResult> _di_JDriveFolder_DriveFileResult;
+class DELPHICLASS TJDriveFolder_DriveFileResult;
+__interface DELPHIINTERFACE JDriveFolder_DriveFolderResultClass;
+typedef System::DelphiInterface<JDriveFolder_DriveFolderResultClass> _di_JDriveFolder_DriveFolderResultClass;
+__interface DELPHIINTERFACE JDriveFolder_DriveFolderResult;
+typedef System::DelphiInterface<JDriveFolder_DriveFolderResult> _di_JDriveFolder_DriveFolderResult;
+class DELPHICLASS TJDriveFolder_DriveFolderResult;
+__interface DELPHIINTERFACE JDriveIdClass;
+typedef System::DelphiInterface<JDriveIdClass> _di_JDriveIdClass;
+__interface DELPHIINTERFACE JDriveId;
+typedef System::DelphiInterface<JDriveId> _di_JDriveId;
+class DELPHICLASS TJDriveId;
+__interface DELPHIINTERFACE JDriveResource_MetadataResultClass;
+typedef System::DelphiInterface<JDriveResource_MetadataResultClass> _di_JDriveResource_MetadataResultClass;
+__interface DELPHIINTERFACE JDriveResource_MetadataResult;
+typedef System::DelphiInterface<JDriveResource_MetadataResult> _di_JDriveResource_MetadataResult;
+class DELPHICLASS TJDriveResource_MetadataResult;
+__interface DELPHIINTERFACE JDriveStatusCodesClass;
+typedef System::DelphiInterface<JDriveStatusCodesClass> _di_JDriveStatusCodesClass;
+__interface DELPHIINTERFACE JDriveStatusCodes;
+typedef System::DelphiInterface<JDriveStatusCodes> _di_JDriveStatusCodes;
+class DELPHICLASS TJDriveStatusCodes;
+__interface DELPHIINTERFACE JMetadataClass;
+typedef System::DelphiInterface<JMetadataClass> _di_JMetadataClass;
+__interface DELPHIINTERFACE JMetadata;
+typedef System::DelphiInterface<JMetadata> _di_JMetadata;
+class DELPHICLASS TJMetadata;
+__interface DELPHIINTERFACE JMetadataBufferClass;
+typedef System::DelphiInterface<JMetadataBufferClass> _di_JMetadataBufferClass;
+__interface DELPHIINTERFACE JMetadataBuffer;
+typedef System::DelphiInterface<JMetadataBuffer> _di_JMetadataBuffer;
+class DELPHICLASS TJMetadataBuffer;
+__interface DELPHIINTERFACE JMetadataChangeSetClass;
+typedef System::DelphiInterface<JMetadataChangeSetClass> _di_JMetadataChangeSetClass;
+__interface DELPHIINTERFACE JMetadataChangeSet;
+typedef System::DelphiInterface<JMetadataChangeSet> _di_JMetadataChangeSet;
+class DELPHICLASS TJMetadataChangeSet;
+__interface DELPHIINTERFACE JMetadataChangeSet_BuilderClass;
+typedef System::DelphiInterface<JMetadataChangeSet_BuilderClass> _di_JMetadataChangeSet_BuilderClass;
+__interface DELPHIINTERFACE JMetadataChangeSet_Builder;
+typedef System::DelphiInterface<JMetadataChangeSet_Builder> _di_JMetadataChangeSet_Builder;
+class DELPHICLASS TJMetadataChangeSet_Builder;
+__interface DELPHIINTERFACE JOpenFileActivityBuilderClass;
+typedef System::DelphiInterface<JOpenFileActivityBuilderClass> _di_JOpenFileActivityBuilderClass;
+__interface DELPHIINTERFACE JOpenFileActivityBuilder;
+typedef System::DelphiInterface<JOpenFileActivityBuilder> _di_JOpenFileActivityBuilder;
+class DELPHICLASS TJOpenFileActivityBuilder;
+__interface DELPHIINTERFACE JChangeEventClass;
+typedef System::DelphiInterface<JChangeEventClass> _di_JChangeEventClass;
+__interface DELPHIINTERFACE JChangeEvent;
+typedef System::DelphiInterface<JChangeEvent> _di_JChangeEvent;
+class DELPHICLASS TJChangeEvent;
+__interface DELPHIINTERFACE JConflictEventClass;
+typedef System::DelphiInterface<JConflictEventClass> _di_JConflictEventClass;
+__interface DELPHIINTERFACE JConflictEvent;
+typedef System::DelphiInterface<JConflictEvent> _di_JConflictEvent;
+class DELPHICLASS TJConflictEvent;
+__interface DELPHIINTERFACE JDriveEventClass;
+typedef System::DelphiInterface<JDriveEventClass> _di_JDriveEventClass;
+__interface DELPHIINTERFACE JDriveEvent;
+typedef System::DelphiInterface<JDriveEvent> _di_JDriveEvent;
+class DELPHICLASS TJDriveEvent;
+__interface DELPHIINTERFACE JDriveEvent_ListenerClass;
+typedef System::DelphiInterface<JDriveEvent_ListenerClass> _di_JDriveEvent_ListenerClass;
+__interface DELPHIINTERFACE JDriveEvent_Listener;
+typedef System::DelphiInterface<JDriveEvent_Listener> _di_JDriveEvent_Listener;
+class DELPHICLASS TJDriveEvent_Listener;
+__interface DELPHIINTERFACE JResourceEventClass;
+typedef System::DelphiInterface<JResourceEventClass> _di_JResourceEventClass;
+__interface DELPHIINTERFACE JResourceEvent;
+typedef System::DelphiInterface<JResourceEvent> _di_JResourceEvent;
+class DELPHICLASS TJResourceEvent;
+__interface DELPHIINTERFACE JAuthorizeAccessRequestClass;
+typedef System::DelphiInterface<JAuthorizeAccessRequestClass> _di_JAuthorizeAccessRequestClass;
+__interface DELPHIINTERFACE JAuthorizeAccessRequest;
+typedef System::DelphiInterface<JAuthorizeAccessRequest> _di_JAuthorizeAccessRequest;
+class DELPHICLASS TJAuthorizeAccessRequest;
+__interface DELPHIINTERFACE JCloseContentsAndUpdateMetadataRequestClass;
+typedef System::DelphiInterface<JCloseContentsAndUpdateMetadataRequestClass> _di_JCloseContentsAndUpdateMetadataRequestClass;
+__interface DELPHIINTERFACE JCloseContentsAndUpdateMetadataRequest;
+typedef System::DelphiInterface<JCloseContentsAndUpdateMetadataRequest> _di_JCloseContentsAndUpdateMetadataRequest;
+class DELPHICLASS TJCloseContentsAndUpdateMetadataRequest;
+__interface DELPHIINTERFACE JCloseContentsRequestClass;
+typedef System::DelphiInterface<JCloseContentsRequestClass> _di_JCloseContentsRequestClass;
+__interface DELPHIINTERFACE JCloseContentsRequest;
+typedef System::DelphiInterface<JCloseContentsRequest> _di_JCloseContentsRequest;
+class DELPHICLASS TJCloseContentsRequest;
+__interface DELPHIINTERFACE JCreateContentsRequestClass;
+typedef System::DelphiInterface<JCreateContentsRequestClass> _di_JCreateContentsRequestClass;
+__interface DELPHIINTERFACE JCreateContentsRequest;
+typedef System::DelphiInterface<JCreateContentsRequest> _di_JCreateContentsRequest;
+class DELPHICLASS TJCreateContentsRequest;
+__interface DELPHIINTERFACE JCreateFileIntentSenderRequestClass;
+typedef System::DelphiInterface<JCreateFileIntentSenderRequestClass> _di_JCreateFileIntentSenderRequestClass;
+__interface DELPHIINTERFACE JCreateFileIntentSenderRequest;
+typedef System::DelphiInterface<JCreateFileIntentSenderRequest> _di_JCreateFileIntentSenderRequest;
+class DELPHICLASS TJCreateFileIntentSenderRequest;
+__interface DELPHIINTERFACE JCreateFileRequestClass;
+typedef System::DelphiInterface<JCreateFileRequestClass> _di_JCreateFileRequestClass;
+__interface DELPHIINTERFACE JCreateFileRequest;
+typedef System::DelphiInterface<JCreateFileRequest> _di_JCreateFileRequest;
+class DELPHICLASS TJCreateFileRequest;
+__interface DELPHIINTERFACE JCreateFolderRequestClass;
+typedef System::DelphiInterface<JCreateFolderRequestClass> _di_JCreateFolderRequestClass;
+__interface DELPHIINTERFACE JCreateFolderRequest;
+typedef System::DelphiInterface<JCreateFolderRequest> _di_JCreateFolderRequest;
+class DELPHICLASS TJCreateFolderRequest;
+__interface DELPHIINTERFACE JDisconnectRequestClass;
+typedef System::DelphiInterface<JDisconnectRequestClass> _di_JDisconnectRequestClass;
+__interface DELPHIINTERFACE JDisconnectRequest;
+typedef System::DelphiInterface<JDisconnectRequest> _di_JDisconnectRequest;
+class DELPHICLASS TJDisconnectRequest;
+__interface DELPHIINTERFACE JGetMetadataRequestClass;
+typedef System::DelphiInterface<JGetMetadataRequestClass> _di_JGetMetadataRequestClass;
+__interface DELPHIINTERFACE JGetMetadataRequest;
+typedef System::DelphiInterface<JGetMetadataRequest> _di_JGetMetadataRequest;
+class DELPHICLASS TJGetMetadataRequest;
+__interface DELPHIINTERFACE JListParentsRequestClass;
+typedef System::DelphiInterface<JListParentsRequestClass> _di_JListParentsRequestClass;
+__interface DELPHIINTERFACE JListParentsRequest;
+typedef System::DelphiInterface<JListParentsRequest> _di_JListParentsRequest;
+class DELPHICLASS TJListParentsRequest;
+__interface DELPHIINTERFACE JOnContentsResponseClass;
+typedef System::DelphiInterface<JOnContentsResponseClass> _di_JOnContentsResponseClass;
+__interface DELPHIINTERFACE JOnContentsResponse;
+typedef System::DelphiInterface<JOnContentsResponse> _di_JOnContentsResponse;
+class DELPHICLASS TJOnContentsResponse;
+__interface DELPHIINTERFACE JOnDownloadProgressResponseClass;
+typedef System::DelphiInterface<JOnDownloadProgressResponseClass> _di_JOnDownloadProgressResponseClass;
+__interface DELPHIINTERFACE JOnDownloadProgressResponse;
+typedef System::DelphiInterface<JOnDownloadProgressResponse> _di_JOnDownloadProgressResponse;
+class DELPHICLASS TJOnDownloadProgressResponse;
+__interface DELPHIINTERFACE JOnDriveIdResponseClass;
+typedef System::DelphiInterface<JOnDriveIdResponseClass> _di_JOnDriveIdResponseClass;
+__interface DELPHIINTERFACE JOnDriveIdResponse;
+typedef System::DelphiInterface<JOnDriveIdResponse> _di_JOnDriveIdResponse;
+class DELPHICLASS TJOnDriveIdResponse;
+__interface DELPHIINTERFACE JOnEventResponseClass;
+typedef System::DelphiInterface<JOnEventResponseClass> _di_JOnEventResponseClass;
+__interface DELPHIINTERFACE JOnEventResponse;
+typedef System::DelphiInterface<JOnEventResponse> _di_JOnEventResponse;
+class DELPHICLASS TJOnEventResponse;
+__interface DELPHIINTERFACE JOnListEntriesResponseClass;
+typedef System::DelphiInterface<JOnListEntriesResponseClass> _di_JOnListEntriesResponseClass;
+__interface DELPHIINTERFACE JOnListEntriesResponse;
+typedef System::DelphiInterface<JOnListEntriesResponse> _di_JOnListEntriesResponse;
+class DELPHICLASS TJOnListEntriesResponse;
+__interface DELPHIINTERFACE JOnListParentsResponseClass;
+typedef System::DelphiInterface<JOnListParentsResponseClass> _di_JOnListParentsResponseClass;
+__interface DELPHIINTERFACE JOnListParentsResponse;
+typedef System::DelphiInterface<JOnListParentsResponse> _di_JOnListParentsResponse;
+class DELPHICLASS TJOnListParentsResponse;
+__interface DELPHIINTERFACE JOnMetadataResponseClass;
+typedef System::DelphiInterface<JOnMetadataResponseClass> _di_JOnMetadataResponseClass;
+__interface DELPHIINTERFACE JOnMetadataResponse;
+typedef System::DelphiInterface<JOnMetadataResponse> _di_JOnMetadataResponse;
+class DELPHICLASS TJOnMetadataResponse;
+__interface DELPHIINTERFACE JOpenContentsRequestClass;
+typedef System::DelphiInterface<JOpenContentsRequestClass> _di_JOpenContentsRequestClass;
+__interface DELPHIINTERFACE JOpenContentsRequest;
+typedef System::DelphiInterface<JOpenContentsRequest> _di_JOpenContentsRequest;
+class DELPHICLASS TJOpenContentsRequest;
+__interface DELPHIINTERFACE JOpenFileIntentSenderRequestClass;
+typedef System::DelphiInterface<JOpenFileIntentSenderRequestClass> _di_JOpenFileIntentSenderRequestClass;
+__interface DELPHIINTERFACE JOpenFileIntentSenderRequest;
+typedef System::DelphiInterface<JOpenFileIntentSenderRequest> _di_JOpenFileIntentSenderRequest;
+class DELPHICLASS TJOpenFileIntentSenderRequest;
+__interface DELPHIINTERFACE JQueryRequestClass;
+typedef System::DelphiInterface<JQueryRequestClass> _di_JQueryRequestClass;
+__interface DELPHIINTERFACE JQueryRequest;
+typedef System::DelphiInterface<JQueryRequest> _di_JQueryRequest;
+class DELPHICLASS TJQueryRequest;
+__interface DELPHIINTERFACE JRemoveEventListenerRequestClass;
+typedef System::DelphiInterface<JRemoveEventListenerRequestClass> _di_JRemoveEventListenerRequestClass;
+__interface DELPHIINTERFACE JRemoveEventListenerRequest;
+typedef System::DelphiInterface<JRemoveEventListenerRequest> _di_JRemoveEventListenerRequest;
+class DELPHICLASS TJRemoveEventListenerRequest;
+__interface DELPHIINTERFACE JTrashResourceRequestClass;
+typedef System::DelphiInterface<JTrashResourceRequestClass> _di_JTrashResourceRequestClass;
+__interface DELPHIINTERFACE JTrashResourceRequest;
+typedef System::DelphiInterface<JTrashResourceRequest> _di_JTrashResourceRequest;
+class DELPHICLASS TJTrashResourceRequest;
+__interface DELPHIINTERFACE JUpdateMetadataRequestClass;
+typedef System::DelphiInterface<JUpdateMetadataRequestClass> _di_JUpdateMetadataRequestClass;
+__interface DELPHIINTERFACE JUpdateMetadataRequest;
+typedef System::DelphiInterface<JUpdateMetadataRequest> _di_JUpdateMetadataRequest;
+class DELPHICLASS TJUpdateMetadataRequest;
+__interface DELPHIINTERFACE JMetadataFieldClass;
+typedef System::DelphiInterface<JMetadataFieldClass> _di_JMetadataFieldClass;
+__interface DELPHIINTERFACE JMetadataField;
+typedef System::DelphiInterface<JMetadataField> _di_JMetadataField;
+class DELPHICLASS TJMetadataField;
+__interface DELPHIINTERFACE JCollectionMetadataFieldClass;
+typedef System::DelphiInterface<JCollectionMetadataFieldClass> _di_JCollectionMetadataFieldClass;
+__interface DELPHIINTERFACE JCollectionMetadataField;
+typedef System::DelphiInterface<JCollectionMetadataField> _di_JCollectionMetadataField;
+class DELPHICLASS TJCollectionMetadataField;
+__interface DELPHIINTERFACE JOrderedMetadataFieldClass;
+typedef System::DelphiInterface<JOrderedMetadataFieldClass> _di_JOrderedMetadataFieldClass;
+__interface DELPHIINTERFACE JOrderedMetadataField;
+typedef System::DelphiInterface<JOrderedMetadataField> _di_JOrderedMetadataField;
+class DELPHICLASS TJOrderedMetadataField;
+__interface DELPHIINTERFACE JMetadataBundleClass;
+typedef System::DelphiInterface<JMetadataBundleClass> _di_JMetadataBundleClass;
+__interface DELPHIINTERFACE JMetadataBundle;
+typedef System::DelphiInterface<JMetadataBundle> _di_JMetadataBundle;
+class DELPHICLASS TJMetadataBundle;
+__interface DELPHIINTERFACE Jquery_FilterClass;
+typedef System::DelphiInterface<Jquery_FilterClass> _di_Jquery_FilterClass;
+__interface DELPHIINTERFACE Jquery_Filter;
+typedef System::DelphiInterface<Jquery_Filter> _di_Jquery_Filter;
+class DELPHICLASS TJquery_Filter;
+__interface DELPHIINTERFACE JFiltersClass;
+typedef System::DelphiInterface<JFiltersClass> _di_JFiltersClass;
+__interface DELPHIINTERFACE JFilters;
+typedef System::DelphiInterface<JFilters> _di_JFilters;
+class DELPHICLASS TJFilters;
+__interface DELPHIINTERFACE JQueryClass;
+typedef System::DelphiInterface<JQueryClass> _di_JQueryClass;
+__interface DELPHIINTERFACE JQuery;
+typedef System::DelphiInterface<JQuery> _di_JQuery;
+class DELPHICLASS TJQuery;
+__interface DELPHIINTERFACE JQuery_BuilderClass;
+typedef System::DelphiInterface<JQuery_BuilderClass> _di_JQuery_BuilderClass;
+__interface DELPHIINTERFACE JQuery_Builder;
+typedef System::DelphiInterface<JQuery_Builder> _di_JQuery_Builder;
+class DELPHICLASS TJQuery_Builder;
+__interface DELPHIINTERFACE JSearchableFieldClass;
+typedef System::DelphiInterface<JSearchableFieldClass> _di_JSearchableFieldClass;
+__interface DELPHIINTERFACE JSearchableField;
+typedef System::DelphiInterface<JSearchableField> _di_JSearchableField;
+class DELPHICLASS TJSearchableField;
+__interface DELPHIINTERFACE JComparisonFilterClass;
+typedef System::DelphiInterface<JComparisonFilterClass> _di_JComparisonFilterClass;
+__interface DELPHIINTERFACE JComparisonFilter;
+typedef System::DelphiInterface<JComparisonFilter> _di_JComparisonFilter;
+class DELPHICLASS TJComparisonFilter;
+__interface DELPHIINTERFACE JFieldOnlyFilterClass;
+typedef System::DelphiInterface<JFieldOnlyFilterClass> _di_JFieldOnlyFilterClass;
+__interface DELPHIINTERFACE JFieldOnlyFilter;
+typedef System::DelphiInterface<JFieldOnlyFilter> _di_JFieldOnlyFilter;
+class DELPHICLASS TJFieldOnlyFilter;
+__interface DELPHIINTERFACE JFilterHolderClass;
+typedef System::DelphiInterface<JFilterHolderClass> _di_JFilterHolderClass;
+__interface DELPHIINTERFACE JFilterHolder;
+typedef System::DelphiInterface<JFilterHolder> _di_JFilterHolder;
+class DELPHICLASS TJFilterHolder;
+__interface DELPHIINTERFACE JInFilterClass;
+typedef System::DelphiInterface<JInFilterClass> _di_JInFilterClass;
+__interface DELPHIINTERFACE JInFilter;
+typedef System::DelphiInterface<JInFilter> _di_JInFilter;
+class DELPHICLASS TJInFilter;
+__interface DELPHIINTERFACE JLogicalFilterClass;
+typedef System::DelphiInterface<JLogicalFilterClass> _di_JLogicalFilterClass;
+__interface DELPHIINTERFACE JLogicalFilter;
+typedef System::DelphiInterface<JLogicalFilter> _di_JLogicalFilter;
+class DELPHICLASS TJLogicalFilter;
+__interface DELPHIINTERFACE JNotFilterClass;
+typedef System::DelphiInterface<JNotFilterClass> _di_JNotFilterClass;
+__interface DELPHIINTERFACE JNotFilter;
+typedef System::DelphiInterface<JNotFilter> _di_JNotFilter;
+class DELPHICLASS TJNotFilter;
+__interface DELPHIINTERFACE JOperatorClass;
+typedef System::DelphiInterface<JOperatorClass> _di_JOperatorClass;
+__interface DELPHIINTERFACE JOperator;
+typedef System::DelphiInterface<JOperator> _di_JOperator;
+class DELPHICLASS TJOperator;
+__interface DELPHIINTERFACE JDataBufferAdapterClass;
+typedef System::DelphiInterface<JDataBufferAdapterClass> _di_JDataBufferAdapterClass;
+__interface DELPHIINTERFACE JDataBufferAdapter;
+typedef System::DelphiInterface<JDataBufferAdapter> _di_JDataBufferAdapter;
+class DELPHICLASS TJDataBufferAdapter;
+__interface DELPHIINTERFACE JLifecycleDelegateClass;
+typedef System::DelphiInterface<JLifecycleDelegateClass> _di_JLifecycleDelegateClass;
+__interface DELPHIINTERFACE JLifecycleDelegate;
+typedef System::DelphiInterface<JLifecycleDelegate> _di_JLifecycleDelegate;
+class DELPHICLASS TJLifecycleDelegate;
+__interface DELPHIINTERFACE JGameClass;
+typedef System::DelphiInterface<JGameClass> _di_JGameClass;
+__interface DELPHIINTERFACE JGame;
+typedef System::DelphiInterface<JGame> _di_JGame;
+class DELPHICLASS TJGame;
+__interface DELPHIINTERFACE JGameBufferClass;
+typedef System::DelphiInterface<JGameBufferClass> _di_JGameBufferClass;
+__interface DELPHIINTERFACE JGameBuffer;
+typedef System::DelphiInterface<JGameBuffer> _di_JGameBuffer;
+class DELPHICLASS TJGameBuffer;
+__interface DELPHIINTERFACE JGamesClass;
+typedef System::DelphiInterface<JGamesClass> _di_JGamesClass;
+__interface DELPHIINTERFACE JGames;
+typedef System::DelphiInterface<JGames> _di_JGames;
+class DELPHICLASS TJGames;
+__interface DELPHIINTERFACE JGames_GamesOptionsClass;
+typedef System::DelphiInterface<JGames_GamesOptionsClass> _di_JGames_GamesOptionsClass;
+__interface DELPHIINTERFACE JGames_GamesOptions;
+typedef System::DelphiInterface<JGames_GamesOptions> _di_JGames_GamesOptions;
+class DELPHICLASS TJGames_GamesOptions;
+__interface DELPHIINTERFACE JGamesOptions_BuilderClass;
+typedef System::DelphiInterface<JGamesOptions_BuilderClass> _di_JGamesOptions_BuilderClass;
+__interface DELPHIINTERFACE JGamesOptions_Builder;
+typedef System::DelphiInterface<JGamesOptions_Builder> _di_JGamesOptions_Builder;
+class DELPHICLASS TJGamesOptions_Builder;
+__interface DELPHIINTERFACE JGamesActivityResultCodesClass;
+typedef System::DelphiInterface<JGamesActivityResultCodesClass> _di_JGamesActivityResultCodesClass;
+__interface DELPHIINTERFACE JGamesActivityResultCodes;
+typedef System::DelphiInterface<JGamesActivityResultCodes> _di_JGamesActivityResultCodes;
+class DELPHICLASS TJGamesActivityResultCodes;
+__interface DELPHIINTERFACE JGamesMetadataClass;
+typedef System::DelphiInterface<JGamesMetadataClass> _di_JGamesMetadataClass;
+__interface DELPHIINTERFACE JGamesMetadata;
+typedef System::DelphiInterface<JGamesMetadata> _di_JGamesMetadata;
+class DELPHICLASS TJGamesMetadata;
+__interface DELPHIINTERFACE JGamesMetadata_LoadGamesResultClass;
+typedef System::DelphiInterface<JGamesMetadata_LoadGamesResultClass> _di_JGamesMetadata_LoadGamesResultClass;
+__interface DELPHIINTERFACE JGamesMetadata_LoadGamesResult;
+typedef System::DelphiInterface<JGamesMetadata_LoadGamesResult> _di_JGamesMetadata_LoadGamesResult;
+class DELPHICLASS TJGamesMetadata_LoadGamesResult;
+__interface DELPHIINTERFACE JGamesStatusCodesClass;
+typedef System::DelphiInterface<JGamesStatusCodesClass> _di_JGamesStatusCodesClass;
+__interface DELPHIINTERFACE JGamesStatusCodes;
+typedef System::DelphiInterface<JGamesStatusCodes> _di_JGamesStatusCodes;
+class DELPHICLASS TJGamesStatusCodes;
+__interface DELPHIINTERFACE JNotificationsClass;
+typedef System::DelphiInterface<JNotificationsClass> _di_JNotificationsClass;
+__interface DELPHIINTERFACE JNotifications;
+typedef System::DelphiInterface<JNotifications> _di_JNotifications;
+class DELPHICLASS TJNotifications;
+__interface DELPHIINTERFACE JPageDirectionClass;
+typedef System::DelphiInterface<JPageDirectionClass> _di_JPageDirectionClass;
+__interface DELPHIINTERFACE JPageDirection;
+typedef System::DelphiInterface<JPageDirection> _di_JPageDirection;
+class DELPHICLASS TJPageDirection;
+__interface DELPHIINTERFACE JPlayerClass;
+typedef System::DelphiInterface<JPlayerClass> _di_JPlayerClass;
+__interface DELPHIINTERFACE JPlayer;
+typedef System::DelphiInterface<JPlayer> _di_JPlayer;
+class DELPHICLASS TJPlayer;
+__interface DELPHIINTERFACE JPlayerBufferClass;
+typedef System::DelphiInterface<JPlayerBufferClass> _di_JPlayerBufferClass;
+__interface DELPHIINTERFACE JPlayerBuffer;
+typedef System::DelphiInterface<JPlayerBuffer> _di_JPlayerBuffer;
+class DELPHICLASS TJPlayerBuffer;
+__interface DELPHIINTERFACE JPlayersClass;
+typedef System::DelphiInterface<JPlayersClass> _di_JPlayersClass;
+__interface DELPHIINTERFACE JPlayers;
+typedef System::DelphiInterface<JPlayers> _di_JPlayers;
+class DELPHICLASS TJPlayers;
+__interface DELPHIINTERFACE JPlayers_LoadPlayersResultClass;
+typedef System::DelphiInterface<JPlayers_LoadPlayersResultClass> _di_JPlayers_LoadPlayersResultClass;
+__interface DELPHIINTERFACE JPlayers_LoadPlayersResult;
+typedef System::DelphiInterface<JPlayers_LoadPlayersResult> _di_JPlayers_LoadPlayersResult;
+class DELPHICLASS TJPlayers_LoadPlayersResult;
+__interface DELPHIINTERFACE JAchievementClass;
+typedef System::DelphiInterface<JAchievementClass> _di_JAchievementClass;
+__interface DELPHIINTERFACE JAchievement;
+typedef System::DelphiInterface<JAchievement> _di_JAchievement;
+class DELPHICLASS TJAchievement;
+__interface DELPHIINTERFACE JAchievementBufferClass;
+typedef System::DelphiInterface<JAchievementBufferClass> _di_JAchievementBufferClass;
+__interface DELPHIINTERFACE JAchievementBuffer;
+typedef System::DelphiInterface<JAchievementBuffer> _di_JAchievementBuffer;
+class DELPHICLASS TJAchievementBuffer;
+__interface DELPHIINTERFACE JAchievementsClass;
+typedef System::DelphiInterface<JAchievementsClass> _di_JAchievementsClass;
+__interface DELPHIINTERFACE JAchievements;
+typedef System::DelphiInterface<JAchievements> _di_JAchievements;
+class DELPHICLASS TJAchievements;
+__interface DELPHIINTERFACE JAchievements_LoadAchievementsResultClass;
+typedef System::DelphiInterface<JAchievements_LoadAchievementsResultClass> _di_JAchievements_LoadAchievementsResultClass;
+__interface DELPHIINTERFACE JAchievements_LoadAchievementsResult;
+typedef System::DelphiInterface<JAchievements_LoadAchievementsResult> _di_JAchievements_LoadAchievementsResult;
+class DELPHICLASS TJAchievements_LoadAchievementsResult;
+__interface DELPHIINTERFACE JAchievements_UpdateAchievementResultClass;
+typedef System::DelphiInterface<JAchievements_UpdateAchievementResultClass> _di_JAchievements_UpdateAchievementResultClass;
+__interface DELPHIINTERFACE JAchievements_UpdateAchievementResult;
+typedef System::DelphiInterface<JAchievements_UpdateAchievementResult> _di_JAchievements_UpdateAchievementResult;
+class DELPHICLASS TJAchievements_UpdateAchievementResult;
+__interface DELPHIINTERFACE JLeaderboardClass;
+typedef System::DelphiInterface<JLeaderboardClass> _di_JLeaderboardClass;
+__interface DELPHIINTERFACE JLeaderboard;
+typedef System::DelphiInterface<JLeaderboard> _di_JLeaderboard;
+class DELPHICLASS TJLeaderboard;
+__interface DELPHIINTERFACE JLeaderboardScoreClass;
+typedef System::DelphiInterface<JLeaderboardScoreClass> _di_JLeaderboardScoreClass;
+__interface DELPHIINTERFACE JLeaderboardScore;
+typedef System::DelphiInterface<JLeaderboardScore> _di_JLeaderboardScore;
+class DELPHICLASS TJLeaderboardScore;
+__interface DELPHIINTERFACE JLeaderboardScoreBufferClass;
+typedef System::DelphiInterface<JLeaderboardScoreBufferClass> _di_JLeaderboardScoreBufferClass;
+__interface DELPHIINTERFACE JLeaderboardScoreBuffer;
+typedef System::DelphiInterface<JLeaderboardScoreBuffer> _di_JLeaderboardScoreBuffer;
+class DELPHICLASS TJLeaderboardScoreBuffer;
+__interface DELPHIINTERFACE JLeaderboardVariantClass;
+typedef System::DelphiInterface<JLeaderboardVariantClass> _di_JLeaderboardVariantClass;
+__interface DELPHIINTERFACE JLeaderboardVariant;
+typedef System::DelphiInterface<JLeaderboardVariant> _di_JLeaderboardVariant;
+class DELPHICLASS TJLeaderboardVariant;
+__interface DELPHIINTERFACE JLeaderboardsClass;
+typedef System::DelphiInterface<JLeaderboardsClass> _di_JLeaderboardsClass;
+__interface DELPHIINTERFACE JLeaderboards;
+typedef System::DelphiInterface<JLeaderboards> _di_JLeaderboards;
+class DELPHICLASS TJLeaderboards;
+__interface DELPHIINTERFACE JLeaderboards_LeaderboardMetadataResultClass;
+typedef System::DelphiInterface<JLeaderboards_LeaderboardMetadataResultClass> _di_JLeaderboards_LeaderboardMetadataResultClass;
+__interface DELPHIINTERFACE JLeaderboards_LeaderboardMetadataResult;
+typedef System::DelphiInterface<JLeaderboards_LeaderboardMetadataResult> _di_JLeaderboards_LeaderboardMetadataResult;
+class DELPHICLASS TJLeaderboards_LeaderboardMetadataResult;
+__interface DELPHIINTERFACE JLeaderboards_LoadPlayerScoreResultClass;
+typedef System::DelphiInterface<JLeaderboards_LoadPlayerScoreResultClass> _di_JLeaderboards_LoadPlayerScoreResultClass;
+__interface DELPHIINTERFACE JLeaderboards_LoadPlayerScoreResult;
+typedef System::DelphiInterface<JLeaderboards_LoadPlayerScoreResult> _di_JLeaderboards_LoadPlayerScoreResult;
+class DELPHICLASS TJLeaderboards_LoadPlayerScoreResult;
+__interface DELPHIINTERFACE JLeaderboards_LoadScoresResultClass;
+typedef System::DelphiInterface<JLeaderboards_LoadScoresResultClass> _di_JLeaderboards_LoadScoresResultClass;
+__interface DELPHIINTERFACE JLeaderboards_LoadScoresResult;
+typedef System::DelphiInterface<JLeaderboards_LoadScoresResult> _di_JLeaderboards_LoadScoresResult;
+class DELPHICLASS TJLeaderboards_LoadScoresResult;
+__interface DELPHIINTERFACE JLeaderboards_SubmitScoreResultClass;
+typedef System::DelphiInterface<JLeaderboards_SubmitScoreResultClass> _di_JLeaderboards_SubmitScoreResultClass;
+__interface DELPHIINTERFACE JLeaderboards_SubmitScoreResult;
+typedef System::DelphiInterface<JLeaderboards_SubmitScoreResult> _di_JLeaderboards_SubmitScoreResult;
+class DELPHICLASS TJLeaderboards_SubmitScoreResult;
+__interface DELPHIINTERFACE JScoreSubmissionDataClass;
+typedef System::DelphiInterface<JScoreSubmissionDataClass> _di_JScoreSubmissionDataClass;
+__interface DELPHIINTERFACE JScoreSubmissionData;
+typedef System::DelphiInterface<JScoreSubmissionData> _di_JScoreSubmissionData;
+class DELPHICLASS TJScoreSubmissionData;
+__interface DELPHIINTERFACE JScoreSubmissionData_ResultClass;
+typedef System::DelphiInterface<JScoreSubmissionData_ResultClass> _di_JScoreSubmissionData_ResultClass;
+__interface DELPHIINTERFACE JScoreSubmissionData_Result;
+typedef System::DelphiInterface<JScoreSubmissionData_Result> _di_JScoreSubmissionData_Result;
+class DELPHICLASS TJScoreSubmissionData_Result;
+__interface DELPHIINTERFACE JInvitationClass;
+typedef System::DelphiInterface<JInvitationClass> _di_JInvitationClass;
+__interface DELPHIINTERFACE JInvitation;
+typedef System::DelphiInterface<JInvitation> _di_JInvitation;
+class DELPHICLASS TJInvitation;
+__interface DELPHIINTERFACE JInvitationsClass;
+typedef System::DelphiInterface<JInvitationsClass> _di_JInvitationsClass;
+__interface DELPHIINTERFACE JInvitations;
+typedef System::DelphiInterface<JInvitations> _di_JInvitations;
+class DELPHICLASS TJInvitations;
+__interface DELPHIINTERFACE JInvitations_LoadInvitationsResultClass;
+typedef System::DelphiInterface<JInvitations_LoadInvitationsResultClass> _di_JInvitations_LoadInvitationsResultClass;
+__interface DELPHIINTERFACE JInvitations_LoadInvitationsResult;
+typedef System::DelphiInterface<JInvitations_LoadInvitationsResult> _di_JInvitations_LoadInvitationsResult;
+class DELPHICLASS TJInvitations_LoadInvitationsResult;
+__interface DELPHIINTERFACE JMultiplayerClass;
+typedef System::DelphiInterface<JMultiplayerClass> _di_JMultiplayerClass;
+__interface DELPHIINTERFACE JMultiplayer;
+typedef System::DelphiInterface<JMultiplayer> _di_JMultiplayer;
+class DELPHICLASS TJMultiplayer;
+__interface DELPHIINTERFACE JOnInvitationReceivedListenerClass;
+typedef System::DelphiInterface<JOnInvitationReceivedListenerClass> _di_JOnInvitationReceivedListenerClass;
+__interface DELPHIINTERFACE JOnInvitationReceivedListener;
+typedef System::DelphiInterface<JOnInvitationReceivedListener> _di_JOnInvitationReceivedListener;
+class DELPHICLASS TJOnInvitationReceivedListener;
+__interface DELPHIINTERFACE JParticipantClass;
+typedef System::DelphiInterface<JParticipantClass> _di_JParticipantClass;
+__interface DELPHIINTERFACE JParticipant;
+typedef System::DelphiInterface<JParticipant> _di_JParticipant;
+class DELPHICLASS TJParticipant;
+__interface DELPHIINTERFACE JParticipantBufferClass;
+typedef System::DelphiInterface<JParticipantBufferClass> _di_JParticipantBufferClass;
+__interface DELPHIINTERFACE JParticipantBuffer;
+typedef System::DelphiInterface<JParticipantBuffer> _di_JParticipantBuffer;
+class DELPHICLASS TJParticipantBuffer;
+__interface DELPHIINTERFACE JParticipantResultClass;
+typedef System::DelphiInterface<JParticipantResultClass> _di_JParticipantResultClass;
+__interface DELPHIINTERFACE JParticipantResult;
+typedef System::DelphiInterface<JParticipantResult> _di_JParticipantResult;
+class DELPHICLASS TJParticipantResult;
+__interface DELPHIINTERFACE JParticipantResultCreatorClass;
+typedef System::DelphiInterface<JParticipantResultCreatorClass> _di_JParticipantResultCreatorClass;
+__interface DELPHIINTERFACE JParticipantResultCreator;
+typedef System::DelphiInterface<JParticipantResultCreator> _di_JParticipantResultCreator;
+class DELPHICLASS TJParticipantResultCreator;
+__interface DELPHIINTERFACE JParticipantUtilsClass;
+typedef System::DelphiInterface<JParticipantUtilsClass> _di_JParticipantUtilsClass;
+__interface DELPHIINTERFACE JParticipantUtils;
+typedef System::DelphiInterface<JParticipantUtils> _di_JParticipantUtils;
+class DELPHICLASS TJParticipantUtils;
+__interface DELPHIINTERFACE JParticipatableClass;
+typedef System::DelphiInterface<JParticipatableClass> _di_JParticipatableClass;
+__interface DELPHIINTERFACE JParticipatable;
+typedef System::DelphiInterface<JParticipatable> _di_JParticipatable;
+class DELPHICLASS TJParticipatable;
+__interface DELPHIINTERFACE JRealTimeMessageClass;
+typedef System::DelphiInterface<JRealTimeMessageClass> _di_JRealTimeMessageClass;
+__interface DELPHIINTERFACE JRealTimeMessage;
+typedef System::DelphiInterface<JRealTimeMessage> _di_JRealTimeMessage;
+class DELPHICLASS TJRealTimeMessage;
+__interface DELPHIINTERFACE JRealTimeMessageReceivedListenerClass;
+typedef System::DelphiInterface<JRealTimeMessageReceivedListenerClass> _di_JRealTimeMessageReceivedListenerClass;
+__interface DELPHIINTERFACE JRealTimeMessageReceivedListener;
+typedef System::DelphiInterface<JRealTimeMessageReceivedListener> _di_JRealTimeMessageReceivedListener;
+class DELPHICLASS TJRealTimeMessageReceivedListener;
+__interface DELPHIINTERFACE JRealTimeMultiplayerClass;
+typedef System::DelphiInterface<JRealTimeMultiplayerClass> _di_JRealTimeMultiplayerClass;
+__interface DELPHIINTERFACE JRealTimeMultiplayer;
+typedef System::DelphiInterface<JRealTimeMultiplayer> _di_JRealTimeMultiplayer;
+class DELPHICLASS TJRealTimeMultiplayer;
+__interface DELPHIINTERFACE JRealTimeMultiplayer_ReliableMessageSentCallbackClass;
+typedef System::DelphiInterface<JRealTimeMultiplayer_ReliableMessageSentCallbackClass> _di_JRealTimeMultiplayer_ReliableMessageSentCallbackClass;
+__interface DELPHIINTERFACE JRealTimeMultiplayer_ReliableMessageSentCallback;
+typedef System::DelphiInterface<JRealTimeMultiplayer_ReliableMessageSentCallback> _di_JRealTimeMultiplayer_ReliableMessageSentCallback;
+class DELPHICLASS TJRealTimeMultiplayer_ReliableMessageSentCallback;
+__interface DELPHIINTERFACE Jrealtime_RealTimeSocketClass;
+typedef System::DelphiInterface<Jrealtime_RealTimeSocketClass> _di_Jrealtime_RealTimeSocketClass;
+__interface DELPHIINTERFACE Jrealtime_RealTimeSocket;
+typedef System::DelphiInterface<Jrealtime_RealTimeSocket> _di_Jrealtime_RealTimeSocket;
+class DELPHICLASS TJrealtime_RealTimeSocket;
+__interface DELPHIINTERFACE JRoomClass;
+typedef System::DelphiInterface<JRoomClass> _di_JRoomClass;
+__interface DELPHIINTERFACE JRoom;
+typedef System::DelphiInterface<JRoom> _di_JRoom;
+class DELPHICLASS TJRoom;
+__interface DELPHIINTERFACE JRoomConfigClass;
+typedef System::DelphiInterface<JRoomConfigClass> _di_JRoomConfigClass;
+__interface DELPHIINTERFACE JRoomConfig;
+typedef System::DelphiInterface<JRoomConfig> _di_JRoomConfig;
+class DELPHICLASS TJRoomConfig;
+__interface DELPHIINTERFACE JRoomConfig_BuilderClass;
+typedef System::DelphiInterface<JRoomConfig_BuilderClass> _di_JRoomConfig_BuilderClass;
+__interface DELPHIINTERFACE JRoomConfig_Builder;
+typedef System::DelphiInterface<JRoomConfig_Builder> _di_JRoomConfig_Builder;
+class DELPHICLASS TJRoomConfig_Builder;
+__interface DELPHIINTERFACE JRoomStatusUpdateListenerClass;
+typedef System::DelphiInterface<JRoomStatusUpdateListenerClass> _di_JRoomStatusUpdateListenerClass;
+__interface DELPHIINTERFACE JRoomStatusUpdateListener;
+typedef System::DelphiInterface<JRoomStatusUpdateListener> _di_JRoomStatusUpdateListener;
+class DELPHICLASS TJRoomStatusUpdateListener;
+__interface DELPHIINTERFACE JRoomUpdateListenerClass;
+typedef System::DelphiInterface<JRoomUpdateListenerClass> _di_JRoomUpdateListenerClass;
+__interface DELPHIINTERFACE JRoomUpdateListener;
+typedef System::DelphiInterface<JRoomUpdateListener> _di_JRoomUpdateListener;
+class DELPHICLASS TJRoomUpdateListener;
+__interface DELPHIINTERFACE JLoadMatchesResponseClass;
+typedef System::DelphiInterface<JLoadMatchesResponseClass> _di_JLoadMatchesResponseClass;
+__interface DELPHIINTERFACE JLoadMatchesResponse;
+typedef System::DelphiInterface<JLoadMatchesResponse> _di_JLoadMatchesResponse;
+class DELPHICLASS TJLoadMatchesResponse;
+__interface DELPHIINTERFACE JOnTurnBasedMatchUpdateReceivedListenerClass;
+typedef System::DelphiInterface<JOnTurnBasedMatchUpdateReceivedListenerClass> _di_JOnTurnBasedMatchUpdateReceivedListenerClass;
+__interface DELPHIINTERFACE JOnTurnBasedMatchUpdateReceivedListener;
+typedef System::DelphiInterface<JOnTurnBasedMatchUpdateReceivedListener> _di_JOnTurnBasedMatchUpdateReceivedListener;
+class DELPHICLASS TJOnTurnBasedMatchUpdateReceivedListener;
+__interface DELPHIINTERFACE JTurnBasedMatchClass;
+typedef System::DelphiInterface<JTurnBasedMatchClass> _di_JTurnBasedMatchClass;
+__interface DELPHIINTERFACE JTurnBasedMatch;
+typedef System::DelphiInterface<JTurnBasedMatch> _di_JTurnBasedMatch;
+class DELPHICLASS TJTurnBasedMatch;
+__interface DELPHIINTERFACE JTurnBasedMatchConfigClass;
+typedef System::DelphiInterface<JTurnBasedMatchConfigClass> _di_JTurnBasedMatchConfigClass;
+__interface DELPHIINTERFACE JTurnBasedMatchConfig;
+typedef System::DelphiInterface<JTurnBasedMatchConfig> _di_JTurnBasedMatchConfig;
+class DELPHICLASS TJTurnBasedMatchConfig;
+__interface DELPHIINTERFACE JTurnBasedMatchConfig_1Class;
+typedef System::DelphiInterface<JTurnBasedMatchConfig_1Class> _di_JTurnBasedMatchConfig_1Class;
+__interface DELPHIINTERFACE JTurnBasedMatchConfig_1;
+typedef System::DelphiInterface<JTurnBasedMatchConfig_1> _di_JTurnBasedMatchConfig_1;
+class DELPHICLASS TJTurnBasedMatchConfig_1;
+__interface DELPHIINTERFACE JTurnBasedMatchConfig_BuilderClass;
+typedef System::DelphiInterface<JTurnBasedMatchConfig_BuilderClass> _di_JTurnBasedMatchConfig_BuilderClass;
+__interface DELPHIINTERFACE JTurnBasedMatchConfig_Builder;
+typedef System::DelphiInterface<JTurnBasedMatchConfig_Builder> _di_JTurnBasedMatchConfig_Builder;
+class DELPHICLASS TJTurnBasedMatchConfig_Builder;
+__interface DELPHIINTERFACE JTurnBasedMatchEntityClass;
+typedef System::DelphiInterface<JTurnBasedMatchEntityClass> _di_JTurnBasedMatchEntityClass;
+__interface DELPHIINTERFACE JTurnBasedMatchEntity;
+typedef System::DelphiInterface<JTurnBasedMatchEntity> _di_JTurnBasedMatchEntity;
+class DELPHICLASS TJTurnBasedMatchEntity;
+__interface DELPHIINTERFACE JTurnBasedMatchEntityCreatorClass;
+typedef System::DelphiInterface<JTurnBasedMatchEntityCreatorClass> _di_JTurnBasedMatchEntityCreatorClass;
+__interface DELPHIINTERFACE JTurnBasedMatchEntityCreator;
+typedef System::DelphiInterface<JTurnBasedMatchEntityCreator> _di_JTurnBasedMatchEntityCreator;
+class DELPHICLASS TJTurnBasedMatchEntityCreator;
+__interface DELPHIINTERFACE JTurnBasedMultiplayerClass;
+typedef System::DelphiInterface<JTurnBasedMultiplayerClass> _di_JTurnBasedMultiplayerClass;
+__interface DELPHIINTERFACE JTurnBasedMultiplayer;
+typedef System::DelphiInterface<JTurnBasedMultiplayer> _di_JTurnBasedMultiplayer;
+class DELPHICLASS TJTurnBasedMultiplayer;
+__interface DELPHIINTERFACE JTurnBasedMultiplayer_CancelMatchResultClass;
+typedef System::DelphiInterface<JTurnBasedMultiplayer_CancelMatchResultClass> _di_JTurnBasedMultiplayer_CancelMatchResultClass;
+__interface DELPHIINTERFACE JTurnBasedMultiplayer_CancelMatchResult;
+typedef System::DelphiInterface<JTurnBasedMultiplayer_CancelMatchResult> _di_JTurnBasedMultiplayer_CancelMatchResult;
+class DELPHICLASS TJTurnBasedMultiplayer_CancelMatchResult;
+__interface DELPHIINTERFACE JTurnBasedMultiplayer_InitiateMatchResultClass;
+typedef System::DelphiInterface<JTurnBasedMultiplayer_InitiateMatchResultClass> _di_JTurnBasedMultiplayer_InitiateMatchResultClass;
+__interface DELPHIINTERFACE JTurnBasedMultiplayer_InitiateMatchResult;
+typedef System::DelphiInterface<JTurnBasedMultiplayer_InitiateMatchResult> _di_JTurnBasedMultiplayer_InitiateMatchResult;
+class DELPHICLASS TJTurnBasedMultiplayer_InitiateMatchResult;
+__interface DELPHIINTERFACE JTurnBasedMultiplayer_LeaveMatchResultClass;
+typedef System::DelphiInterface<JTurnBasedMultiplayer_LeaveMatchResultClass> _di_JTurnBasedMultiplayer_LeaveMatchResultClass;
+__interface DELPHIINTERFACE JTurnBasedMultiplayer_LeaveMatchResult;
+typedef System::DelphiInterface<JTurnBasedMultiplayer_LeaveMatchResult> _di_JTurnBasedMultiplayer_LeaveMatchResult;
+class DELPHICLASS TJTurnBasedMultiplayer_LeaveMatchResult;
+__interface DELPHIINTERFACE JTurnBasedMultiplayer_LoadMatchResultClass;
+typedef System::DelphiInterface<JTurnBasedMultiplayer_LoadMatchResultClass> _di_JTurnBasedMultiplayer_LoadMatchResultClass;
+__interface DELPHIINTERFACE JTurnBasedMultiplayer_LoadMatchResult;
+typedef System::DelphiInterface<JTurnBasedMultiplayer_LoadMatchResult> _di_JTurnBasedMultiplayer_LoadMatchResult;
+class DELPHICLASS TJTurnBasedMultiplayer_LoadMatchResult;
+__interface DELPHIINTERFACE JTurnBasedMultiplayer_LoadMatchesResultClass;
+typedef System::DelphiInterface<JTurnBasedMultiplayer_LoadMatchesResultClass> _di_JTurnBasedMultiplayer_LoadMatchesResultClass;
+__interface DELPHIINTERFACE JTurnBasedMultiplayer_LoadMatchesResult;
+typedef System::DelphiInterface<JTurnBasedMultiplayer_LoadMatchesResult> _di_JTurnBasedMultiplayer_LoadMatchesResult;
+class DELPHICLASS TJTurnBasedMultiplayer_LoadMatchesResult;
+__interface DELPHIINTERFACE JTurnBasedMultiplayer_UpdateMatchResultClass;
+typedef System::DelphiInterface<JTurnBasedMultiplayer_UpdateMatchResultClass> _di_JTurnBasedMultiplayer_UpdateMatchResultClass;
+__interface DELPHIINTERFACE JTurnBasedMultiplayer_UpdateMatchResult;
+typedef System::DelphiInterface<JTurnBasedMultiplayer_UpdateMatchResult> _di_JTurnBasedMultiplayer_UpdateMatchResult;
+class DELPHICLASS TJTurnBasedMultiplayer_UpdateMatchResult;
+__interface DELPHIINTERFACE JGameRequestClass;
+typedef System::DelphiInterface<JGameRequestClass> _di_JGameRequestClass;
+__interface DELPHIINTERFACE JGameRequest;
+typedef System::DelphiInterface<JGameRequest> _di_JGameRequest;
+class DELPHICLASS TJGameRequest;
+__interface DELPHIINTERFACE JGameRequestEntityClass;
+typedef System::DelphiInterface<JGameRequestEntityClass> _di_JGameRequestEntityClass;
+__interface DELPHIINTERFACE JGameRequestEntity;
+typedef System::DelphiInterface<JGameRequestEntity> _di_JGameRequestEntity;
+class DELPHICLASS TJGameRequestEntity;
+__interface DELPHIINTERFACE JGameRequestEntityCreatorClass;
+typedef System::DelphiInterface<JGameRequestEntityCreatorClass> _di_JGameRequestEntityCreatorClass;
+__interface DELPHIINTERFACE JGameRequestEntityCreator;
+typedef System::DelphiInterface<JGameRequestEntityCreator> _di_JGameRequestEntityCreator;
+class DELPHICLASS TJGameRequestEntityCreator;
+__interface DELPHIINTERFACE JOnRequestReceivedListenerClass;
+typedef System::DelphiInterface<JOnRequestReceivedListenerClass> _di_JOnRequestReceivedListenerClass;
+__interface DELPHIINTERFACE JOnRequestReceivedListener;
+typedef System::DelphiInterface<JOnRequestReceivedListener> _di_JOnRequestReceivedListener;
+class DELPHICLASS TJOnRequestReceivedListener;
+__interface DELPHIINTERFACE JRequestsClass;
+typedef System::DelphiInterface<JRequestsClass> _di_JRequestsClass;
+__interface DELPHIINTERFACE JRequests;
+typedef System::DelphiInterface<JRequests> _di_JRequests;
+class DELPHICLASS TJRequests;
+__interface DELPHIINTERFACE JRequests_LoadRequestsResultClass;
+typedef System::DelphiInterface<JRequests_LoadRequestsResultClass> _di_JRequests_LoadRequestsResultClass;
+__interface DELPHIINTERFACE JRequests_LoadRequestsResult;
+typedef System::DelphiInterface<JRequests_LoadRequestsResult> _di_JRequests_LoadRequestsResult;
+class DELPHICLASS TJRequests_LoadRequestsResult;
+__interface DELPHIINTERFACE JRequests_UpdateRequestsResultClass;
+typedef System::DelphiInterface<JRequests_UpdateRequestsResultClass> _di_JRequests_UpdateRequestsResultClass;
+__interface DELPHIINTERFACE JRequests_UpdateRequestsResult;
+typedef System::DelphiInterface<JRequests_UpdateRequestsResult> _di_JRequests_UpdateRequestsResult;
+class DELPHICLASS TJRequests_UpdateRequestsResult;
+__interface DELPHIINTERFACE JGoogleCloudMessagingClass;
+typedef System::DelphiInterface<JGoogleCloudMessagingClass> _di_JGoogleCloudMessagingClass;
+__interface DELPHIINTERFACE JGoogleCloudMessaging;
+typedef System::DelphiInterface<JGoogleCloudMessaging> _di_JGoogleCloudMessaging;
+class DELPHICLASS TJGoogleCloudMessaging;
+__interface DELPHIINTERFACE Jintents_AddressClass;
+typedef System::DelphiInterface<Jintents_AddressClass> _di_Jintents_AddressClass;
+__interface DELPHIINTERFACE Jintents_Address;
+typedef System::DelphiInterface<Jintents_Address> _di_Jintents_Address;
+class DELPHICLASS TJintents_Address;
+__interface DELPHIINTERFACE JAddress_AddressOptionsClass;
+typedef System::DelphiInterface<JAddress_AddressOptionsClass> _di_JAddress_AddressOptionsClass;
+__interface DELPHIINTERFACE JAddress_AddressOptions;
+typedef System::DelphiInterface<JAddress_AddressOptions> _di_JAddress_AddressOptions;
+class DELPHICLASS TJAddress_AddressOptions;
+__interface DELPHIINTERFACE JAddressConstantsClass;
+typedef System::DelphiInterface<JAddressConstantsClass> _di_JAddressConstantsClass;
+__interface DELPHIINTERFACE JAddressConstants;
+typedef System::DelphiInterface<JAddressConstants> _di_JAddressConstants;
+class DELPHICLASS TJAddressConstants;
+__interface DELPHIINTERFACE JAddressConstants_ErrorCodesClass;
+typedef System::DelphiInterface<JAddressConstants_ErrorCodesClass> _di_JAddressConstants_ErrorCodesClass;
+__interface DELPHIINTERFACE JAddressConstants_ErrorCodes;
+typedef System::DelphiInterface<JAddressConstants_ErrorCodes> _di_JAddressConstants_ErrorCodes;
+class DELPHICLASS TJAddressConstants_ErrorCodes;
+__interface DELPHIINTERFACE JAddressConstants_ExtrasClass;
+typedef System::DelphiInterface<JAddressConstants_ExtrasClass> _di_JAddressConstants_ExtrasClass;
+__interface DELPHIINTERFACE JAddressConstants_Extras;
+typedef System::DelphiInterface<JAddressConstants_Extras> _di_JAddressConstants_Extras;
+class DELPHICLASS TJAddressConstants_Extras;
+__interface DELPHIINTERFACE JAddressConstants_ResultCodesClass;
+typedef System::DelphiInterface<JAddressConstants_ResultCodesClass> _di_JAddressConstants_ResultCodesClass;
+__interface DELPHIINTERFACE JAddressConstants_ResultCodes;
+typedef System::DelphiInterface<JAddressConstants_ResultCodes> _di_JAddressConstants_ResultCodes;
+class DELPHICLASS TJAddressConstants_ResultCodes;
+__interface DELPHIINTERFACE JAddressConstants_ThemesClass;
+typedef System::DelphiInterface<JAddressConstants_ThemesClass> _di_JAddressConstants_ThemesClass;
+__interface DELPHIINTERFACE JAddressConstants_Themes;
+typedef System::DelphiInterface<JAddressConstants_Themes> _di_JAddressConstants_Themes;
+class DELPHICLASS TJAddressConstants_Themes;
+__interface DELPHIINTERFACE JUserAddressRequestClass;
+typedef System::DelphiInterface<JUserAddressRequestClass> _di_JUserAddressRequestClass;
+__interface DELPHIINTERFACE JUserAddressRequest;
+typedef System::DelphiInterface<JUserAddressRequest> _di_JUserAddressRequest;
+class DELPHICLASS TJUserAddressRequest;
+__interface DELPHIINTERFACE JUserAddressRequest_BuilderClass;
+typedef System::DelphiInterface<JUserAddressRequest_BuilderClass> _di_JUserAddressRequest_BuilderClass;
+__interface DELPHIINTERFACE JUserAddressRequest_Builder;
+typedef System::DelphiInterface<JUserAddressRequest_Builder> _di_JUserAddressRequest_Builder;
+class DELPHICLASS TJUserAddressRequest_Builder;
+__interface DELPHIINTERFACE JCountrySpecificationClass;
+typedef System::DelphiInterface<JCountrySpecificationClass> _di_JCountrySpecificationClass;
+__interface DELPHIINTERFACE JCountrySpecification;
+typedef System::DelphiInterface<JCountrySpecification> _di_JCountrySpecification;
+class DELPHICLASS TJCountrySpecification;
+__interface DELPHIINTERFACE JUserAddressClass;
+typedef System::DelphiInterface<JUserAddressClass> _di_JUserAddressClass;
+__interface DELPHIINTERFACE JUserAddress;
+typedef System::DelphiInterface<JUserAddress> _di_JUserAddress;
+class DELPHICLASS TJUserAddress;
+__interface DELPHIINTERFACE JActivityRecognitionClientClass;
+typedef System::DelphiInterface<JActivityRecognitionClientClass> _di_JActivityRecognitionClientClass;
+__interface DELPHIINTERFACE JActivityRecognitionClient;
+typedef System::DelphiInterface<JActivityRecognitionClient> _di_JActivityRecognitionClient;
+class DELPHICLASS TJActivityRecognitionClient;
+__interface DELPHIINTERFACE JActivityRecognitionResultClass;
+typedef System::DelphiInterface<JActivityRecognitionResultClass> _di_JActivityRecognitionResultClass;
+__interface DELPHIINTERFACE JActivityRecognitionResult;
+typedef System::DelphiInterface<JActivityRecognitionResult> _di_JActivityRecognitionResult;
+class DELPHICLASS TJActivityRecognitionResult;
+__interface DELPHIINTERFACE JActivityRecognitionResultCreatorClass;
+typedef System::DelphiInterface<JActivityRecognitionResultCreatorClass> _di_JActivityRecognitionResultCreatorClass;
+__interface DELPHIINTERFACE JActivityRecognitionResultCreator;
+typedef System::DelphiInterface<JActivityRecognitionResultCreator> _di_JActivityRecognitionResultCreator;
+class DELPHICLASS TJActivityRecognitionResultCreator;
+__interface DELPHIINTERFACE JDetectedActivityClass;
+typedef System::DelphiInterface<JDetectedActivityClass> _di_JDetectedActivityClass;
+__interface DELPHIINTERFACE JDetectedActivity;
+typedef System::DelphiInterface<JDetectedActivity> _di_JDetectedActivity;
+class DELPHICLASS TJDetectedActivity;
+__interface DELPHIINTERFACE JDetectedActivityCreatorClass;
+typedef System::DelphiInterface<JDetectedActivityCreatorClass> _di_JDetectedActivityCreatorClass;
+__interface DELPHIINTERFACE JDetectedActivityCreator;
+typedef System::DelphiInterface<JDetectedActivityCreator> _di_JDetectedActivityCreator;
+class DELPHICLASS TJDetectedActivityCreator;
+__interface DELPHIINTERFACE JGeofenceClass;
+typedef System::DelphiInterface<JGeofenceClass> _di_JGeofenceClass;
+__interface DELPHIINTERFACE JGeofence;
+typedef System::DelphiInterface<JGeofence> _di_JGeofence;
+class DELPHICLASS TJGeofence;
+__interface DELPHIINTERFACE JGeofence_BuilderClass;
+typedef System::DelphiInterface<JGeofence_BuilderClass> _di_JGeofence_BuilderClass;
+__interface DELPHIINTERFACE JGeofence_Builder;
+typedef System::DelphiInterface<JGeofence_Builder> _di_JGeofence_Builder;
+class DELPHICLASS TJGeofence_Builder;
+__interface DELPHIINTERFACE JGeofenceStatusCodesClass;
+typedef System::DelphiInterface<JGeofenceStatusCodesClass> _di_JGeofenceStatusCodesClass;
+__interface DELPHIINTERFACE JGeofenceStatusCodes;
+typedef System::DelphiInterface<JGeofenceStatusCodes> _di_JGeofenceStatusCodes;
+class DELPHICLASS TJGeofenceStatusCodes;
+__interface DELPHIINTERFACE JLocationClientClass;
+typedef System::DelphiInterface<JLocationClientClass> _di_JLocationClientClass;
+__interface DELPHIINTERFACE JLocationClient;
+typedef System::DelphiInterface<JLocationClient> _di_JLocationClient;
+class DELPHICLASS TJLocationClient;
+__interface DELPHIINTERFACE JLocationClient_OnAddGeofencesResultListenerClass;
+typedef System::DelphiInterface<JLocationClient_OnAddGeofencesResultListenerClass> _di_JLocationClient_OnAddGeofencesResultListenerClass;
+__interface DELPHIINTERFACE JLocationClient_OnAddGeofencesResultListener;
+typedef System::DelphiInterface<JLocationClient_OnAddGeofencesResultListener> _di_JLocationClient_OnAddGeofencesResultListener;
+class DELPHICLASS TJLocationClient_OnAddGeofencesResultListener;
+__interface DELPHIINTERFACE JLocationClient_OnRemoveGeofencesResultListenerClass;
+typedef System::DelphiInterface<JLocationClient_OnRemoveGeofencesResultListenerClass> _di_JLocationClient_OnRemoveGeofencesResultListenerClass;
+__interface DELPHIINTERFACE JLocationClient_OnRemoveGeofencesResultListener;
+typedef System::DelphiInterface<JLocationClient_OnRemoveGeofencesResultListener> _di_JLocationClient_OnRemoveGeofencesResultListener;
+class DELPHICLASS TJLocationClient_OnRemoveGeofencesResultListener;
+__interface DELPHIINTERFACE Jlocation_LocationListenerClass;
+typedef System::DelphiInterface<Jlocation_LocationListenerClass> _di_Jlocation_LocationListenerClass;
+__interface DELPHIINTERFACE Jlocation_LocationListener;
+typedef System::DelphiInterface<Jlocation_LocationListener> _di_Jlocation_LocationListener;
+class DELPHICLASS TJlocation_LocationListener;
+__interface DELPHIINTERFACE JLocationRequestClass;
+typedef System::DelphiInterface<JLocationRequestClass> _di_JLocationRequestClass;
+__interface DELPHIINTERFACE JLocationRequest;
+typedef System::DelphiInterface<JLocationRequest> _di_JLocationRequest;
+class DELPHICLASS TJLocationRequest;
+__interface DELPHIINTERFACE JLocationRequestCreatorClass;
+typedef System::DelphiInterface<JLocationRequestCreatorClass> _di_JLocationRequestCreatorClass;
+__interface DELPHIINTERFACE JLocationRequestCreator;
+typedef System::DelphiInterface<JLocationRequestCreator> _di_JLocationRequestCreator;
+class DELPHICLASS TJLocationRequestCreator;
+__interface DELPHIINTERFACE JLocationStatusCodesClass;
+typedef System::DelphiInterface<JLocationStatusCodesClass> _di_JLocationStatusCodesClass;
+__interface DELPHIINTERFACE JLocationStatusCodes;
+typedef System::DelphiInterface<JLocationStatusCodes> _di_JLocationStatusCodes;
+class DELPHICLASS TJLocationStatusCodes;
+__interface DELPHIINTERFACE JPanoramaClass;
+typedef System::DelphiInterface<JPanoramaClass> _di_JPanoramaClass;
+__interface DELPHIINTERFACE JPanorama;
+typedef System::DelphiInterface<JPanorama> _di_JPanorama;
+class DELPHICLASS TJPanorama;
+__interface DELPHIINTERFACE JPanorama_PanoramaResultClass;
+typedef System::DelphiInterface<JPanorama_PanoramaResultClass> _di_JPanorama_PanoramaResultClass;
+__interface DELPHIINTERFACE JPanorama_PanoramaResult;
+typedef System::DelphiInterface<JPanorama_PanoramaResult> _di_JPanorama_PanoramaResult;
+class DELPHICLASS TJPanorama_PanoramaResult;
+__interface DELPHIINTERFACE JPanoramaClientClass;
+typedef System::DelphiInterface<JPanoramaClientClass> _di_JPanoramaClientClass;
+__interface DELPHIINTERFACE JPanoramaClient;
+typedef System::DelphiInterface<JPanoramaClient> _di_JPanoramaClient;
+class DELPHICLASS TJPanoramaClient;
+__interface DELPHIINTERFACE JPanoramaClient_OnPanoramaInfoLoadedListenerClass;
+typedef System::DelphiInterface<JPanoramaClient_OnPanoramaInfoLoadedListenerClass> _di_JPanoramaClient_OnPanoramaInfoLoadedListenerClass;
+__interface DELPHIINTERFACE JPanoramaClient_OnPanoramaInfoLoadedListener;
+typedef System::DelphiInterface<JPanoramaClient_OnPanoramaInfoLoadedListener> _di_JPanoramaClient_OnPanoramaInfoLoadedListener;
+class DELPHICLASS TJPanoramaClient_OnPanoramaInfoLoadedListener;
+__interface DELPHIINTERFACE Jplus_AccountClass;
+typedef System::DelphiInterface<Jplus_AccountClass> _di_Jplus_AccountClass;
+__interface DELPHIINTERFACE Jplus_Account;
+typedef System::DelphiInterface<Jplus_Account> _di_Jplus_Account;
+class DELPHICLASS TJplus_Account;
+__interface DELPHIINTERFACE JMomentsClass;
+typedef System::DelphiInterface<JMomentsClass> _di_JMomentsClass;
+__interface DELPHIINTERFACE JMoments;
+typedef System::DelphiInterface<JMoments> _di_JMoments;
+class DELPHICLASS TJMoments;
+__interface DELPHIINTERFACE JMoments_LoadMomentsResultClass;
+typedef System::DelphiInterface<JMoments_LoadMomentsResultClass> _di_JMoments_LoadMomentsResultClass;
+__interface DELPHIINTERFACE JMoments_LoadMomentsResult;
+typedef System::DelphiInterface<JMoments_LoadMomentsResult> _di_JMoments_LoadMomentsResult;
+class DELPHICLASS TJMoments_LoadMomentsResult;
+__interface DELPHIINTERFACE JPeopleClass;
+typedef System::DelphiInterface<JPeopleClass> _di_JPeopleClass;
+__interface DELPHIINTERFACE JPeople;
+typedef System::DelphiInterface<JPeople> _di_JPeople;
+class DELPHICLASS TJPeople;
+__interface DELPHIINTERFACE JPeople_LoadPeopleResultClass;
+typedef System::DelphiInterface<JPeople_LoadPeopleResultClass> _di_JPeople_LoadPeopleResultClass;
+__interface DELPHIINTERFACE JPeople_LoadPeopleResult;
+typedef System::DelphiInterface<JPeople_LoadPeopleResult> _di_JPeople_LoadPeopleResult;
+class DELPHICLASS TJPeople_LoadPeopleResult;
+__interface DELPHIINTERFACE JPeople_OrderByClass;
+typedef System::DelphiInterface<JPeople_OrderByClass> _di_JPeople_OrderByClass;
+__interface DELPHIINTERFACE JPeople_OrderBy;
+typedef System::DelphiInterface<JPeople_OrderBy> _di_JPeople_OrderBy;
+class DELPHICLASS TJPeople_OrderBy;
+__interface DELPHIINTERFACE JPlusClass;
+typedef System::DelphiInterface<JPlusClass> _di_JPlusClass;
+__interface DELPHIINTERFACE JPlus;
+typedef System::DelphiInterface<JPlus> _di_JPlus;
+class DELPHICLASS TJPlus;
+__interface DELPHIINTERFACE JPlus_PlusOptionsClass;
+typedef System::DelphiInterface<JPlus_PlusOptionsClass> _di_JPlus_PlusOptionsClass;
+__interface DELPHIINTERFACE JPlus_PlusOptions;
+typedef System::DelphiInterface<JPlus_PlusOptions> _di_JPlus_PlusOptions;
+class DELPHICLASS TJPlus_PlusOptions;
+__interface DELPHIINTERFACE JPlusOptions_BuilderClass;
+typedef System::DelphiInterface<JPlusOptions_BuilderClass> _di_JPlusOptions_BuilderClass;
+__interface DELPHIINTERFACE JPlusOptions_Builder;
+typedef System::DelphiInterface<JPlusOptions_Builder> _di_JPlusOptions_Builder;
+class DELPHICLASS TJPlusOptions_Builder;
+__interface DELPHIINTERFACE JPlusClientClass;
+typedef System::DelphiInterface<JPlusClientClass> _di_JPlusClientClass;
+__interface DELPHIINTERFACE JPlusClient;
+typedef System::DelphiInterface<JPlusClient> _di_JPlusClient;
+class DELPHICLASS TJPlusClient;
+__interface DELPHIINTERFACE JPlusClient_BuilderClass;
+typedef System::DelphiInterface<JPlusClient_BuilderClass> _di_JPlusClient_BuilderClass;
+__interface DELPHIINTERFACE JPlusClient_Builder;
+typedef System::DelphiInterface<JPlusClient_Builder> _di_JPlusClient_Builder;
+class DELPHICLASS TJPlusClient_Builder;
+__interface DELPHIINTERFACE JPlusClient_OnAccessRevokedListenerClass;
+typedef System::DelphiInterface<JPlusClient_OnAccessRevokedListenerClass> _di_JPlusClient_OnAccessRevokedListenerClass;
+__interface DELPHIINTERFACE JPlusClient_OnAccessRevokedListener;
+typedef System::DelphiInterface<JPlusClient_OnAccessRevokedListener> _di_JPlusClient_OnAccessRevokedListener;
+class DELPHICLASS TJPlusClient_OnAccessRevokedListener;
+__interface DELPHIINTERFACE JPlusClient_OnMomentsLoadedListenerClass;
+typedef System::DelphiInterface<JPlusClient_OnMomentsLoadedListenerClass> _di_JPlusClient_OnMomentsLoadedListenerClass;
+__interface DELPHIINTERFACE JPlusClient_OnMomentsLoadedListener;
+typedef System::DelphiInterface<JPlusClient_OnMomentsLoadedListener> _di_JPlusClient_OnMomentsLoadedListener;
+class DELPHICLASS TJPlusClient_OnMomentsLoadedListener;
+__interface DELPHIINTERFACE JPlusClient_OnPeopleLoadedListenerClass;
+typedef System::DelphiInterface<JPlusClient_OnPeopleLoadedListenerClass> _di_JPlusClient_OnPeopleLoadedListenerClass;
+__interface DELPHIINTERFACE JPlusClient_OnPeopleLoadedListener;
+typedef System::DelphiInterface<JPlusClient_OnPeopleLoadedListener> _di_JPlusClient_OnPeopleLoadedListener;
+class DELPHICLASS TJPlusClient_OnPeopleLoadedListener;
+__interface DELPHIINTERFACE JPlusClient_OrderByClass;
+typedef System::DelphiInterface<JPlusClient_OrderByClass> _di_JPlusClient_OrderByClass;
+__interface DELPHIINTERFACE JPlusClient_OrderBy;
+typedef System::DelphiInterface<JPlusClient_OrderBy> _di_JPlusClient_OrderBy;
+class DELPHICLASS TJPlusClient_OrderBy;
+__interface DELPHIINTERFACE JPlusOneButtonClass;
+typedef System::DelphiInterface<JPlusOneButtonClass> _di_JPlusOneButtonClass;
+__interface DELPHIINTERFACE JPlusOneButton;
+typedef System::DelphiInterface<JPlusOneButton> _di_JPlusOneButton;
+class DELPHICLASS TJPlusOneButton;
+__interface DELPHIINTERFACE JPlusOneButton_DefaultOnPlusOneClickListenerClass;
+typedef System::DelphiInterface<JPlusOneButton_DefaultOnPlusOneClickListenerClass> _di_JPlusOneButton_DefaultOnPlusOneClickListenerClass;
+__interface DELPHIINTERFACE JPlusOneButton_DefaultOnPlusOneClickListener;
+typedef System::DelphiInterface<JPlusOneButton_DefaultOnPlusOneClickListener> _di_JPlusOneButton_DefaultOnPlusOneClickListener;
+class DELPHICLASS TJPlusOneButton_DefaultOnPlusOneClickListener;
+__interface DELPHIINTERFACE JPlusOneButton_OnPlusOneClickListenerClass;
+typedef System::DelphiInterface<JPlusOneButton_OnPlusOneClickListenerClass> _di_JPlusOneButton_OnPlusOneClickListenerClass;
+__interface DELPHIINTERFACE JPlusOneButton_OnPlusOneClickListener;
+typedef System::DelphiInterface<JPlusOneButton_OnPlusOneClickListener> _di_JPlusOneButton_OnPlusOneClickListener;
+class DELPHICLASS TJPlusOneButton_OnPlusOneClickListener;
+__interface DELPHIINTERFACE JPlusOneDummyViewClass;
+typedef System::DelphiInterface<JPlusOneDummyViewClass> _di_JPlusOneDummyViewClass;
+__interface DELPHIINTERFACE JPlusOneDummyView;
+typedef System::DelphiInterface<JPlusOneDummyView> _di_JPlusOneDummyView;
+class DELPHICLASS TJPlusOneDummyView;
+__interface DELPHIINTERFACE JPlusShareClass;
+typedef System::DelphiInterface<JPlusShareClass> _di_JPlusShareClass;
+__interface DELPHIINTERFACE JPlusShare;
+typedef System::DelphiInterface<JPlusShare> _di_JPlusShare;
+class DELPHICLASS TJPlusShare;
+__interface DELPHIINTERFACE JPlusShare_BuilderClass;
+typedef System::DelphiInterface<JPlusShare_BuilderClass> _di_JPlusShare_BuilderClass;
+__interface DELPHIINTERFACE JPlusShare_Builder;
+typedef System::DelphiInterface<JPlusShare_Builder> _di_JPlusShare_Builder;
+class DELPHICLASS TJPlusShare_Builder;
+__interface DELPHIINTERFACE JPlusCommonExtrasClass;
+typedef System::DelphiInterface<JPlusCommonExtrasClass> _di_JPlusCommonExtrasClass;
+__interface DELPHIINTERFACE JPlusCommonExtras;
+typedef System::DelphiInterface<JPlusCommonExtras> _di_JPlusCommonExtras;
+class DELPHICLASS TJPlusCommonExtras;
+__interface DELPHIINTERFACE JItemScopeClass;
+typedef System::DelphiInterface<JItemScopeClass> _di_JItemScopeClass;
+__interface DELPHIINTERFACE JItemScope;
+typedef System::DelphiInterface<JItemScope> _di_JItemScope;
+class DELPHICLASS TJItemScope;
+__interface DELPHIINTERFACE JItemScope_BuilderClass;
+typedef System::DelphiInterface<JItemScope_BuilderClass> _di_JItemScope_BuilderClass;
+__interface DELPHIINTERFACE JItemScope_Builder;
+typedef System::DelphiInterface<JItemScope_Builder> _di_JItemScope_Builder;
+class DELPHICLASS TJItemScope_Builder;
+__interface DELPHIINTERFACE JMomentClass;
+typedef System::DelphiInterface<JMomentClass> _di_JMomentClass;
+__interface DELPHIINTERFACE JMoment;
+typedef System::DelphiInterface<JMoment> _di_JMoment;
+class DELPHICLASS TJMoment;
+__interface DELPHIINTERFACE JMoment_BuilderClass;
+typedef System::DelphiInterface<JMoment_BuilderClass> _di_JMoment_BuilderClass;
+__interface DELPHIINTERFACE JMoment_Builder;
+typedef System::DelphiInterface<JMoment_Builder> _di_JMoment_Builder;
+class DELPHICLASS TJMoment_Builder;
+__interface DELPHIINTERFACE JMomentBufferClass;
+typedef System::DelphiInterface<JMomentBufferClass> _di_JMomentBufferClass;
+__interface DELPHIINTERFACE JMomentBuffer;
+typedef System::DelphiInterface<JMomentBuffer> _di_JMomentBuffer;
+class DELPHICLASS TJMomentBuffer;
+__interface DELPHIINTERFACE JPersonClass;
+typedef System::DelphiInterface<JPersonClass> _di_JPersonClass;
+__interface DELPHIINTERFACE JPerson;
+typedef System::DelphiInterface<JPerson> _di_JPerson;
+class DELPHICLASS TJPerson;
+__interface DELPHIINTERFACE JPerson_AgeRangeClass;
+typedef System::DelphiInterface<JPerson_AgeRangeClass> _di_JPerson_AgeRangeClass;
+__interface DELPHIINTERFACE JPerson_AgeRange;
+typedef System::DelphiInterface<JPerson_AgeRange> _di_JPerson_AgeRange;
+class DELPHICLASS TJPerson_AgeRange;
+__interface DELPHIINTERFACE JPerson_CoverClass;
+typedef System::DelphiInterface<JPerson_CoverClass> _di_JPerson_CoverClass;
+__interface DELPHIINTERFACE JPerson_Cover;
+typedef System::DelphiInterface<JPerson_Cover> _di_JPerson_Cover;
+class DELPHICLASS TJPerson_Cover;
+__interface DELPHIINTERFACE JCover_CoverInfoClass;
+typedef System::DelphiInterface<JCover_CoverInfoClass> _di_JCover_CoverInfoClass;
+__interface DELPHIINTERFACE JCover_CoverInfo;
+typedef System::DelphiInterface<JCover_CoverInfo> _di_JCover_CoverInfo;
+class DELPHICLASS TJCover_CoverInfo;
+__interface DELPHIINTERFACE JCover_CoverPhotoClass;
+typedef System::DelphiInterface<JCover_CoverPhotoClass> _di_JCover_CoverPhotoClass;
+__interface DELPHIINTERFACE JCover_CoverPhoto;
+typedef System::DelphiInterface<JCover_CoverPhoto> _di_JCover_CoverPhoto;
+class DELPHICLASS TJCover_CoverPhoto;
+__interface DELPHIINTERFACE JCover_LayoutClass;
+typedef System::DelphiInterface<JCover_LayoutClass> _di_JCover_LayoutClass;
+__interface DELPHIINTERFACE JCover_Layout;
+typedef System::DelphiInterface<JCover_Layout> _di_JCover_Layout;
+class DELPHICLASS TJCover_Layout;
+__interface DELPHIINTERFACE JPerson_GenderClass;
+typedef System::DelphiInterface<JPerson_GenderClass> _di_JPerson_GenderClass;
+__interface DELPHIINTERFACE JPerson_Gender;
+typedef System::DelphiInterface<JPerson_Gender> _di_JPerson_Gender;
+class DELPHICLASS TJPerson_Gender;
+__interface DELPHIINTERFACE JPerson_ImageClass;
+typedef System::DelphiInterface<JPerson_ImageClass> _di_JPerson_ImageClass;
+__interface DELPHIINTERFACE JPerson_Image;
+typedef System::DelphiInterface<JPerson_Image> _di_JPerson_Image;
+class DELPHICLASS TJPerson_Image;
+__interface DELPHIINTERFACE JPerson_NameClass;
+typedef System::DelphiInterface<JPerson_NameClass> _di_JPerson_NameClass;
+__interface DELPHIINTERFACE JPerson_Name;
+typedef System::DelphiInterface<JPerson_Name> _di_JPerson_Name;
+class DELPHICLASS TJPerson_Name;
+__interface DELPHIINTERFACE JPerson_ObjectTypeClass;
+typedef System::DelphiInterface<JPerson_ObjectTypeClass> _di_JPerson_ObjectTypeClass;
+__interface DELPHIINTERFACE JPerson_ObjectType;
+typedef System::DelphiInterface<JPerson_ObjectType> _di_JPerson_ObjectType;
+class DELPHICLASS TJPerson_ObjectType;
+__interface DELPHIINTERFACE JPerson_OrganizationsClass;
+typedef System::DelphiInterface<JPerson_OrganizationsClass> _di_JPerson_OrganizationsClass;
+__interface DELPHIINTERFACE JPerson_Organizations;
+typedef System::DelphiInterface<JPerson_Organizations> _di_JPerson_Organizations;
+class DELPHICLASS TJPerson_Organizations;
+__interface DELPHIINTERFACE JOrganizations_TypeClass;
+typedef System::DelphiInterface<JOrganizations_TypeClass> _di_JOrganizations_TypeClass;
+__interface DELPHIINTERFACE JOrganizations_Type;
+typedef System::DelphiInterface<JOrganizations_Type> _di_JOrganizations_Type;
+class DELPHICLASS TJOrganizations_Type;
+__interface DELPHIINTERFACE JPerson_PlacesLivedClass;
+typedef System::DelphiInterface<JPerson_PlacesLivedClass> _di_JPerson_PlacesLivedClass;
+__interface DELPHIINTERFACE JPerson_PlacesLived;
+typedef System::DelphiInterface<JPerson_PlacesLived> _di_JPerson_PlacesLived;
+class DELPHICLASS TJPerson_PlacesLived;
+__interface DELPHIINTERFACE JPerson_RelationshipStatusClass;
+typedef System::DelphiInterface<JPerson_RelationshipStatusClass> _di_JPerson_RelationshipStatusClass;
+__interface DELPHIINTERFACE JPerson_RelationshipStatus;
+typedef System::DelphiInterface<JPerson_RelationshipStatus> _di_JPerson_RelationshipStatus;
+class DELPHICLASS TJPerson_RelationshipStatus;
+__interface DELPHIINTERFACE JPerson_UrlsClass;
+typedef System::DelphiInterface<JPerson_UrlsClass> _di_JPerson_UrlsClass;
+__interface DELPHIINTERFACE JPerson_Urls;
+typedef System::DelphiInterface<JPerson_Urls> _di_JPerson_Urls;
+class DELPHICLASS TJPerson_Urls;
+__interface DELPHIINTERFACE JUrls_TypeClass;
+typedef System::DelphiInterface<JUrls_TypeClass> _di_JUrls_TypeClass;
+__interface DELPHIINTERFACE JUrls_Type;
+typedef System::DelphiInterface<JUrls_Type> _di_JUrls_Type;
+class DELPHICLASS TJUrls_Type;
+__interface DELPHIINTERFACE JPersonBufferClass;
+typedef System::DelphiInterface<JPersonBufferClass> _di_JPersonBufferClass;
+__interface DELPHIINTERFACE JPersonBuffer;
+typedef System::DelphiInterface<JPersonBuffer> _di_JPersonBuffer;
+class DELPHICLASS TJPersonBuffer;
+__interface DELPHIINTERFACE JContainerClass;
+typedef System::DelphiInterface<JContainerClass> _di_JContainerClass;
+__interface DELPHIINTERFACE JContainer;
+typedef System::DelphiInterface<JContainer> _di_JContainer;
+class DELPHICLASS TJContainer;
+__interface DELPHIINTERFACE JContainer_FunctionCallMacroCallbackClass;
+typedef System::DelphiInterface<JContainer_FunctionCallMacroCallbackClass> _di_JContainer_FunctionCallMacroCallbackClass;
+__interface DELPHIINTERFACE JContainer_FunctionCallMacroCallback;
+typedef System::DelphiInterface<JContainer_FunctionCallMacroCallback> _di_JContainer_FunctionCallMacroCallback;
+class DELPHICLASS TJContainer_FunctionCallMacroCallback;
+__interface DELPHIINTERFACE JContainer_FunctionCallTagCallbackClass;
+typedef System::DelphiInterface<JContainer_FunctionCallTagCallbackClass> _di_JContainer_FunctionCallTagCallbackClass;
+__interface DELPHIINTERFACE JContainer_FunctionCallTagCallback;
+typedef System::DelphiInterface<JContainer_FunctionCallTagCallback> _di_JContainer_FunctionCallTagCallback;
+class DELPHICLASS TJContainer_FunctionCallTagCallback;
+__interface DELPHIINTERFACE JContainerHolderClass;
+typedef System::DelphiInterface<JContainerHolderClass> _di_JContainerHolderClass;
+__interface DELPHIINTERFACE JContainerHolder;
+typedef System::DelphiInterface<JContainerHolder> _di_JContainerHolder;
+class DELPHICLASS TJContainerHolder;
+__interface DELPHIINTERFACE JContainerHolder_ContainerAvailableListenerClass;
+typedef System::DelphiInterface<JContainerHolder_ContainerAvailableListenerClass> _di_JContainerHolder_ContainerAvailableListenerClass;
+__interface DELPHIINTERFACE JContainerHolder_ContainerAvailableListener;
+typedef System::DelphiInterface<JContainerHolder_ContainerAvailableListener> _di_JContainerHolder_ContainerAvailableListener;
+class DELPHICLASS TJContainerHolder_ContainerAvailableListener;
+__interface DELPHIINTERFACE JDataLayerClass;
+typedef System::DelphiInterface<JDataLayerClass> _di_JDataLayerClass;
+__interface DELPHIINTERFACE JDataLayer;
+typedef System::DelphiInterface<JDataLayer> _di_JDataLayer;
+class DELPHICLASS TJDataLayer;
+__interface DELPHIINTERFACE JInstallReferrerReceiverClass;
+typedef System::DelphiInterface<JInstallReferrerReceiverClass> _di_JInstallReferrerReceiverClass;
+__interface DELPHIINTERFACE JInstallReferrerReceiver;
+typedef System::DelphiInterface<JInstallReferrerReceiver> _di_JInstallReferrerReceiver;
+class DELPHICLASS TJInstallReferrerReceiver;
+__interface DELPHIINTERFACE JInstallReferrerServiceClass;
+typedef System::DelphiInterface<JInstallReferrerServiceClass> _di_JInstallReferrerServiceClass;
+__interface DELPHIINTERFACE JInstallReferrerService;
+typedef System::DelphiInterface<JInstallReferrerService> _di_JInstallReferrerService;
+class DELPHICLASS TJInstallReferrerService;
+__interface DELPHIINTERFACE JPreviewActivityClass;
+typedef System::DelphiInterface<JPreviewActivityClass> _di_JPreviewActivityClass;
+__interface DELPHIINTERFACE JPreviewActivity;
+typedef System::DelphiInterface<JPreviewActivity> _di_JPreviewActivity;
+class DELPHICLASS TJPreviewActivity;
+__interface DELPHIINTERFACE JTagManagerClass;
+typedef System::DelphiInterface<JTagManagerClass> _di_JTagManagerClass;
+__interface DELPHIINTERFACE JTagManager;
+typedef System::DelphiInterface<JTagManager> _di_JTagManager;
+class DELPHICLASS TJTagManager;
+__interface DELPHIINTERFACE Jwallet_AddressClass;
+typedef System::DelphiInterface<Jwallet_AddressClass> _di_Jwallet_AddressClass;
+__interface DELPHIINTERFACE Jwallet_Address;
+typedef System::DelphiInterface<Jwallet_Address> _di_Jwallet_Address;
+class DELPHICLASS TJwallet_Address;
+__interface DELPHIINTERFACE JCartClass;
+typedef System::DelphiInterface<JCartClass> _di_JCartClass;
+__interface DELPHIINTERFACE JCart;
+typedef System::DelphiInterface<JCart> _di_JCart;
+class DELPHICLASS TJCart;
+__interface DELPHIINTERFACE JCart_BuilderClass;
+typedef System::DelphiInterface<JCart_BuilderClass> _di_JCart_BuilderClass;
+__interface DELPHIINTERFACE JCart_Builder;
+typedef System::DelphiInterface<JCart_Builder> _di_JCart_Builder;
+class DELPHICLASS TJCart_Builder;
+__interface DELPHIINTERFACE Jwallet_CountrySpecificationClass;
+typedef System::DelphiInterface<Jwallet_CountrySpecificationClass> _di_Jwallet_CountrySpecificationClass;
+__interface DELPHIINTERFACE Jwallet_CountrySpecification;
+typedef System::DelphiInterface<Jwallet_CountrySpecification> _di_Jwallet_CountrySpecification;
+class DELPHICLASS TJwallet_CountrySpecification;
+__interface DELPHIINTERFACE JEnableWalletOptimizationReceiverClass;
+typedef System::DelphiInterface<JEnableWalletOptimizationReceiverClass> _di_JEnableWalletOptimizationReceiverClass;
+__interface DELPHIINTERFACE JEnableWalletOptimizationReceiver;
+typedef System::DelphiInterface<JEnableWalletOptimizationReceiver> _di_JEnableWalletOptimizationReceiver;
+class DELPHICLASS TJEnableWalletOptimizationReceiver;
+__interface DELPHIINTERFACE JFullWalletClass;
+typedef System::DelphiInterface<JFullWalletClass> _di_JFullWalletClass;
+__interface DELPHIINTERFACE JFullWallet;
+typedef System::DelphiInterface<JFullWallet> _di_JFullWallet;
+class DELPHICLASS TJFullWallet;
+__interface DELPHIINTERFACE JFullWalletRequestClass;
+typedef System::DelphiInterface<JFullWalletRequestClass> _di_JFullWalletRequestClass;
+__interface DELPHIINTERFACE JFullWalletRequest;
+typedef System::DelphiInterface<JFullWalletRequest> _di_JFullWalletRequest;
+class DELPHICLASS TJFullWalletRequest;
+__interface DELPHIINTERFACE JFullWalletRequest_BuilderClass;
+typedef System::DelphiInterface<JFullWalletRequest_BuilderClass> _di_JFullWalletRequest_BuilderClass;
+__interface DELPHIINTERFACE JFullWalletRequest_Builder;
+typedef System::DelphiInterface<JFullWalletRequest_Builder> _di_JFullWalletRequest_Builder;
+class DELPHICLASS TJFullWalletRequest_Builder;
+__interface DELPHIINTERFACE JInstrumentInfoClass;
+typedef System::DelphiInterface<JInstrumentInfoClass> _di_JInstrumentInfoClass;
+__interface DELPHIINTERFACE JInstrumentInfo;
+typedef System::DelphiInterface<JInstrumentInfo> _di_JInstrumentInfo;
+class DELPHICLASS TJInstrumentInfo;
+__interface DELPHIINTERFACE JLineItemClass;
+typedef System::DelphiInterface<JLineItemClass> _di_JLineItemClass;
+__interface DELPHIINTERFACE JLineItem;
+typedef System::DelphiInterface<JLineItem> _di_JLineItem;
+class DELPHICLASS TJLineItem;
+__interface DELPHIINTERFACE JLineItem_BuilderClass;
+typedef System::DelphiInterface<JLineItem_BuilderClass> _di_JLineItem_BuilderClass;
+__interface DELPHIINTERFACE JLineItem_Builder;
+typedef System::DelphiInterface<JLineItem_Builder> _di_JLineItem_Builder;
+class DELPHICLASS TJLineItem_Builder;
+__interface DELPHIINTERFACE JLineItem_RoleClass;
+typedef System::DelphiInterface<JLineItem_RoleClass> _di_JLineItem_RoleClass;
+__interface DELPHIINTERFACE JLineItem_Role;
+typedef System::DelphiInterface<JLineItem_Role> _di_JLineItem_Role;
+class DELPHICLASS TJLineItem_Role;
+__interface DELPHIINTERFACE JLoyaltyWalletObjectClass;
+typedef System::DelphiInterface<JLoyaltyWalletObjectClass> _di_JLoyaltyWalletObjectClass;
+__interface DELPHIINTERFACE JLoyaltyWalletObject;
+typedef System::DelphiInterface<JLoyaltyWalletObject> _di_JLoyaltyWalletObject;
+class DELPHICLASS TJLoyaltyWalletObject;
+__interface DELPHIINTERFACE JMaskedWalletClass;
+typedef System::DelphiInterface<JMaskedWalletClass> _di_JMaskedWalletClass;
+__interface DELPHIINTERFACE JMaskedWallet;
+typedef System::DelphiInterface<JMaskedWallet> _di_JMaskedWallet;
+class DELPHICLASS TJMaskedWallet;
+__interface DELPHIINTERFACE JMaskedWalletRequestClass;
+typedef System::DelphiInterface<JMaskedWalletRequestClass> _di_JMaskedWalletRequestClass;
+__interface DELPHIINTERFACE JMaskedWalletRequest;
+typedef System::DelphiInterface<JMaskedWalletRequest> _di_JMaskedWalletRequest;
+class DELPHICLASS TJMaskedWalletRequest;
+__interface DELPHIINTERFACE JMaskedWalletRequest_BuilderClass;
+typedef System::DelphiInterface<JMaskedWalletRequest_BuilderClass> _di_JMaskedWalletRequest_BuilderClass;
+__interface DELPHIINTERFACE JMaskedWalletRequest_Builder;
+typedef System::DelphiInterface<JMaskedWalletRequest_Builder> _di_JMaskedWalletRequest_Builder;
+class DELPHICLASS TJMaskedWalletRequest_Builder;
+__interface DELPHIINTERFACE JNotifyTransactionStatusRequestClass;
+typedef System::DelphiInterface<JNotifyTransactionStatusRequestClass> _di_JNotifyTransactionStatusRequestClass;
+__interface DELPHIINTERFACE JNotifyTransactionStatusRequest;
+typedef System::DelphiInterface<JNotifyTransactionStatusRequest> _di_JNotifyTransactionStatusRequest;
+class DELPHICLASS TJNotifyTransactionStatusRequest;
+__interface DELPHIINTERFACE JNotifyTransactionStatusRequest_BuilderClass;
+typedef System::DelphiInterface<JNotifyTransactionStatusRequest_BuilderClass> _di_JNotifyTransactionStatusRequest_BuilderClass;
+__interface DELPHIINTERFACE JNotifyTransactionStatusRequest_Builder;
+typedef System::DelphiInterface<JNotifyTransactionStatusRequest_Builder> _di_JNotifyTransactionStatusRequest_Builder;
+class DELPHICLASS TJNotifyTransactionStatusRequest_Builder;
+__interface DELPHIINTERFACE JNotifyTransactionStatusRequest_StatusClass;
+typedef System::DelphiInterface<JNotifyTransactionStatusRequest_StatusClass> _di_JNotifyTransactionStatusRequest_StatusClass;
+__interface DELPHIINTERFACE JNotifyTransactionStatusRequest_Status;
+typedef System::DelphiInterface<JNotifyTransactionStatusRequest_Status> _di_JNotifyTransactionStatusRequest_Status;
+class DELPHICLASS TJNotifyTransactionStatusRequest_Status;
+__interface DELPHIINTERFACE JStatus_ErrorClass;
+typedef System::DelphiInterface<JStatus_ErrorClass> _di_JStatus_ErrorClass;
+__interface DELPHIINTERFACE JStatus_Error;
+typedef System::DelphiInterface<JStatus_Error> _di_JStatus_Error;
+class DELPHICLASS TJStatus_Error;
+__interface DELPHIINTERFACE JOfferWalletObjectClass;
+typedef System::DelphiInterface<JOfferWalletObjectClass> _di_JOfferWalletObjectClass;
+__interface DELPHIINTERFACE JOfferWalletObject;
+typedef System::DelphiInterface<JOfferWalletObject> _di_JOfferWalletObject;
+class DELPHICLASS TJOfferWalletObject;
+__interface DELPHIINTERFACE JProxyCardClass;
+typedef System::DelphiInterface<JProxyCardClass> _di_JProxyCardClass;
+__interface DELPHIINTERFACE JProxyCard;
+typedef System::DelphiInterface<JProxyCard> _di_JProxyCard;
+class DELPHICLASS TJProxyCard;
+__interface DELPHIINTERFACE JWalletClass;
+typedef System::DelphiInterface<JWalletClass> _di_JWalletClass;
+__interface DELPHIINTERFACE JWallet;
+typedef System::DelphiInterface<JWallet> _di_JWallet;
+class DELPHICLASS TJWallet;
+__interface DELPHIINTERFACE JWallet_WalletOptionsClass;
+typedef System::DelphiInterface<JWallet_WalletOptionsClass> _di_JWallet_WalletOptionsClass;
+__interface DELPHIINTERFACE JWallet_WalletOptions;
+typedef System::DelphiInterface<JWallet_WalletOptions> _di_JWallet_WalletOptions;
+class DELPHICLASS TJWallet_WalletOptions;
+__interface DELPHIINTERFACE JWalletOptions_BuilderClass;
+typedef System::DelphiInterface<JWalletOptions_BuilderClass> _di_JWalletOptions_BuilderClass;
+__interface DELPHIINTERFACE JWalletOptions_Builder;
+typedef System::DelphiInterface<JWalletOptions_Builder> _di_JWalletOptions_Builder;
+class DELPHICLASS TJWalletOptions_Builder;
+__interface DELPHIINTERFACE JWalletClientClass;
+typedef System::DelphiInterface<JWalletClientClass> _di_JWalletClientClass;
+__interface DELPHIINTERFACE JWalletClient;
+typedef System::DelphiInterface<JWalletClient> _di_JWalletClient;
+class DELPHICLASS TJWalletClient;
+__interface DELPHIINTERFACE JWalletConstantsClass;
+typedef System::DelphiInterface<JWalletConstantsClass> _di_JWalletConstantsClass;
+__interface DELPHIINTERFACE JWalletConstants;
+typedef System::DelphiInterface<JWalletConstants> _di_JWalletConstants;
+class DELPHICLASS TJWalletConstants;
+//-- type declarations -------------------------------------------------------
+__interface  INTERFACE_UUID("{F3E58606-AF48-4E21-98FE-ABE70196526B}") Janalytics_CampaignTrackingReceiverClass  : public Androidapi::Jni::Graphicscontentviewtext::JBroadcastReceiverClass 
+{
+	HIDESBASE virtual _di_Janalytics_CampaignTrackingReceiver __cdecl init() = 0 ;
+};
+
+__interface  INTERFACE_UUID("{98DF24D4-3030-40D4-8B77-D2F81984DDB2}") Janalytics_CampaignTrackingReceiver  : public Androidapi::Jni::Graphicscontentviewtext::JBroadcastReceiver 
+{
+	HIDESBASE virtual void __cdecl onReceive(Androidapi::Jni::Graphicscontentviewtext::_di_JContext ctx, Androidapi::Jni::Graphicscontentviewtext::_di_JIntent intent) = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJanalytics_CampaignTrackingReceiver : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_Janalytics_CampaignTrackingReceiverClass,_di_Janalytics_CampaignTrackingReceiver>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_Janalytics_CampaignTrackingReceiverClass,_di_Janalytics_CampaignTrackingReceiver> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJanalytics_CampaignTrackingReceiver() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_Janalytics_CampaignTrackingReceiverClass,_di_Janalytics_CampaignTrackingReceiver>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJanalytics_CampaignTrackingReceiver() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{A23838F9-0337-4A01-92EC-8D480F1A97CC}") Janalytics_CampaignTrackingServiceClass  : public Androidapi::Jni::App::JIntentServiceClass 
+{
+	HIDESBASE virtual _di_Janalytics_CampaignTrackingService __cdecl init() = 0 /* overload */;
+	HIDESBASE virtual _di_Janalytics_CampaignTrackingService __cdecl init(Androidapi::Jni::Javatypes::_di_JString name) = 0 /* overload */;
+};
+
+__interface  INTERFACE_UUID("{47DE91BE-55C4-40B9-8B34-05752E464C0A}") Janalytics_CampaignTrackingService  : public Androidapi::Jni::App::JIntentService 
+{
+	virtual void __cdecl onHandleIntent(Androidapi::Jni::Graphicscontentviewtext::_di_JIntent intent) = 0 ;
+	virtual void __cdecl processIntent(Androidapi::Jni::Graphicscontentviewtext::_di_JContext context, Androidapi::Jni::Graphicscontentviewtext::_di_JIntent intent) = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJanalytics_CampaignTrackingService : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_Janalytics_CampaignTrackingServiceClass,_di_Janalytics_CampaignTrackingService>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_Janalytics_CampaignTrackingServiceClass,_di_Janalytics_CampaignTrackingService> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJanalytics_CampaignTrackingService() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_Janalytics_CampaignTrackingServiceClass,_di_Janalytics_CampaignTrackingService>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJanalytics_CampaignTrackingService() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{9CAB938F-3B8C-4C6F-94FB-ED558C8F8114}") Janalytics_ExceptionParserClass  : public Androidapi::Jnibridge::IJavaClass 
+{
+	
+};
+
+__interface  INTERFACE_UUID("{D718F45D-2BCA-4AEE-A3AF-78B396CA181E}") Janalytics_ExceptionParser  : public Androidapi::Jnibridge::IJavaInstance 
+{
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl getDescription(Androidapi::Jni::Javatypes::_di_JString P1, Androidapi::Jni::Javatypes::_di_JThrowable P2) = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJanalytics_ExceptionParser : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_Janalytics_ExceptionParserClass,_di_Janalytics_ExceptionParser>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_Janalytics_ExceptionParserClass,_di_Janalytics_ExceptionParser> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJanalytics_ExceptionParser() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_Janalytics_ExceptionParserClass,_di_Janalytics_ExceptionParser>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJanalytics_ExceptionParser() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{4D7709D2-6B3D-4441-89DE-2EC4617DF77F}") Janalytics_ExceptionReporterClass  : public Androidapi::Jni::Javatypes::JObjectClass 
+{
+	HIDESBASE virtual _di_Janalytics_ExceptionReporter __cdecl init(_di_Janalytics_Tracker tracker, Androidapi::Jni::Javatypes::_di_JThread_UncaughtExceptionHandler originalHandler, Androidapi::Jni::Graphicscontentviewtext::_di_JContext context) = 0 ;
+};
+
+__interface  INTERFACE_UUID("{B9BA7D69-40D6-4C13-A3CB-C9D07F52E9F6}") Janalytics_ExceptionReporter  : public Androidapi::Jni::Javatypes::JObject 
+{
+	virtual _di_Janalytics_ExceptionParser __cdecl getExceptionParser() = 0 ;
+	virtual void __cdecl setExceptionParser(_di_Janalytics_ExceptionParser exceptionParser) = 0 ;
+	virtual void __cdecl uncaughtException(Androidapi::Jni::Javatypes::_di_JThread t, Androidapi::Jni::Javatypes::_di_JThrowable e) = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJanalytics_ExceptionReporter : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_Janalytics_ExceptionReporterClass,_di_Janalytics_ExceptionReporter>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_Janalytics_ExceptionReporterClass,_di_Janalytics_ExceptionReporter> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJanalytics_ExceptionReporter() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_Janalytics_ExceptionReporterClass,_di_Janalytics_ExceptionReporter>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJanalytics_ExceptionReporter() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{51B0872E-67AE-433D-8D58-2E70A31AB57C}") JTrackerHandlerClass  : public Androidapi::Jni::Javatypes::JObjectClass 
+{
+	
+};
+
+__interface  INTERFACE_UUID("{1F0E87C7-6891-4163-8807-B20D4B21D886}") JTrackerHandler  : public Androidapi::Jni::Javatypes::JObject 
+{
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJTrackerHandler : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JTrackerHandlerClass,_di_JTrackerHandler>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JTrackerHandlerClass,_di_JTrackerHandler> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJTrackerHandler() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JTrackerHandlerClass,_di_JTrackerHandler>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJTrackerHandler() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{F2E3C326-B039-4287-A4F0-9E245B3CEB58}") Janalytics_GoogleAnalyticsClass  : public JTrackerHandlerClass 
+{
+	virtual _di_Janalytics_GoogleAnalytics __cdecl getInstance(Androidapi::Jni::Graphicscontentviewtext::_di_JContext context) = 0 ;
+};
+
+__interface  INTERFACE_UUID("{33FBE395-24D8-4CB8-B8B5-FE0236155B42}") Janalytics_GoogleAnalytics  : public JTrackerHandler 
+{
+	virtual void __cdecl dispatchLocalHits() = 0 ;
+	virtual void __cdecl enableAutoActivityReports(Androidapi::Jni::App::_di_JApplication application) = 0 ;
+	virtual bool __cdecl getAppOptOut() = 0 ;
+	virtual _di_Janalytics_Logger __cdecl getLogger() = 0 ;
+	virtual bool __cdecl isDryRunEnabled() = 0 ;
+	virtual _di_Janalytics_Tracker __cdecl newTracker(Androidapi::Jni::Javatypes::_di_JString trackingId) = 0 /* overload */;
+	virtual _di_Janalytics_Tracker __cdecl newTracker(int configResId) = 0 /* overload */;
+	virtual void __cdecl reportActivityStart(Androidapi::Jni::App::_di_JActivity activity) = 0 ;
+	virtual void __cdecl reportActivityStop(Androidapi::Jni::App::_di_JActivity activity) = 0 ;
+	virtual void __cdecl setAppOptOut(bool optOut) = 0 ;
+	virtual void __cdecl setDryRun(bool dryRun) = 0 ;
+	virtual void __cdecl setLocalDispatchPeriod(int dispatchPeriodInSeconds) = 0 ;
+	virtual void __cdecl setLogger(_di_Janalytics_Logger logger) = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJanalytics_GoogleAnalytics : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_Janalytics_GoogleAnalyticsClass,_di_Janalytics_GoogleAnalytics>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_Janalytics_GoogleAnalyticsClass,_di_Janalytics_GoogleAnalytics> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJanalytics_GoogleAnalytics() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_Janalytics_GoogleAnalyticsClass,_di_Janalytics_GoogleAnalytics>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJanalytics_GoogleAnalytics() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{2A9508B9-261E-440C-A0EA-44BC063C4451}") JHitBuildersClass  : public Androidapi::Jni::Javatypes::JObjectClass 
+{
+	HIDESBASE virtual _di_JHitBuilders __cdecl init() = 0 ;
+};
+
+__interface  INTERFACE_UUID("{DF12701C-F5AC-47BD-96D3-02771A242CA2}") JHitBuilders  : public Androidapi::Jni::Javatypes::JObject 
+{
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJHitBuilders : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JHitBuildersClass,_di_JHitBuilders>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JHitBuildersClass,_di_JHitBuilders> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJHitBuilders() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JHitBuildersClass,_di_JHitBuilders>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJHitBuilders() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{99EB8BD6-4CF8-4069-BDF1-86908E209537}") JHitBuilders_HitBuilderClass  : public Androidapi::Jni::Javatypes::JObjectClass 
+{
+	
+};
+
+__interface  INTERFACE_UUID("{B3538B0F-637F-4D53-ABBB-A3AF6BAA50AE}") JHitBuilders_HitBuilder  : public Androidapi::Jni::Javatypes::JObject 
+{
+	virtual Androidapi::Jni::Javatypes::_di_JMap __cdecl build() = 0 ;
+	virtual _di_JHitBuilders_HitBuilder __cdecl set(Androidapi::Jni::Javatypes::_di_JString paramName, Androidapi::Jni::Javatypes::_di_JString paramValue) = 0 ;
+	virtual _di_JHitBuilders_HitBuilder __cdecl setAll(Androidapi::Jni::Javatypes::_di_JMap params) = 0 ;
+	virtual _di_JHitBuilders_HitBuilder __cdecl setCampaignParamsFromUrl(Androidapi::Jni::Javatypes::_di_JString utmParams) = 0 ;
+	virtual _di_JHitBuilders_HitBuilder __cdecl setCustomDimension(int index, Androidapi::Jni::Javatypes::_di_JString dimension) = 0 ;
+	virtual _di_JHitBuilders_HitBuilder __cdecl setCustomMetric(int index, float metric) = 0 ;
+	virtual _di_JHitBuilders_HitBuilder __cdecl setNewSession() = 0 ;
+	virtual _di_JHitBuilders_HitBuilder __cdecl setNonInteraction(bool nonInteraction) = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJHitBuilders_HitBuilder : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JHitBuilders_HitBuilderClass,_di_JHitBuilders_HitBuilder>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JHitBuilders_HitBuilderClass,_di_JHitBuilders_HitBuilder> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJHitBuilders_HitBuilder() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JHitBuilders_HitBuilderClass,_di_JHitBuilders_HitBuilder>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJHitBuilders_HitBuilder() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{7DFC88F1-8A99-442D-9B88-4FA390782347}") JHitBuilders_AppViewBuilderClass  : public JHitBuilders_HitBuilderClass 
+{
+	HIDESBASE virtual _di_JHitBuilders_AppViewBuilder __cdecl init() = 0 ;
+};
+
+__interface  INTERFACE_UUID("{F0B7724E-19B5-4B30-8453-40C0FC96D2C4}") JHitBuilders_AppViewBuilder  : public JHitBuilders_HitBuilder 
+{
+	HIDESBASE virtual Androidapi::Jni::Javatypes::_di_JMap __cdecl build() = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJHitBuilders_AppViewBuilder : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JHitBuilders_AppViewBuilderClass,_di_JHitBuilders_AppViewBuilder>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JHitBuilders_AppViewBuilderClass,_di_JHitBuilders_AppViewBuilder> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJHitBuilders_AppViewBuilder() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JHitBuilders_AppViewBuilderClass,_di_JHitBuilders_AppViewBuilder>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJHitBuilders_AppViewBuilder() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{0AD926F1-65A0-4D75-9E47-E79DBF9ADCB3}") JHitBuilders_EventBuilderClass  : public JHitBuilders_HitBuilderClass 
+{
+	HIDESBASE virtual _di_JHitBuilders_EventBuilder __cdecl init() = 0 /* overload */;
+	HIDESBASE virtual _di_JHitBuilders_EventBuilder __cdecl init(Androidapi::Jni::Javatypes::_di_JString category, Androidapi::Jni::Javatypes::_di_JString action) = 0 /* overload */;
+};
+
+__interface  INTERFACE_UUID("{0958D4F8-7BA4-46E0-8241-47821CDECF52}") JHitBuilders_EventBuilder  : public JHitBuilders_HitBuilder 
+{
+	HIDESBASE virtual Androidapi::Jni::Javatypes::_di_JMap __cdecl build() = 0 ;
+	virtual _di_JHitBuilders_EventBuilder __cdecl setAction(Androidapi::Jni::Javatypes::_di_JString action) = 0 ;
+	virtual _di_JHitBuilders_EventBuilder __cdecl setCategory(Androidapi::Jni::Javatypes::_di_JString category) = 0 ;
+	virtual _di_JHitBuilders_EventBuilder __cdecl setLabel(Androidapi::Jni::Javatypes::_di_JString label_) = 0 ;
+	virtual _di_JHitBuilders_EventBuilder __cdecl setValue(__int64 value) = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJHitBuilders_EventBuilder : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JHitBuilders_EventBuilderClass,_di_JHitBuilders_EventBuilder>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JHitBuilders_EventBuilderClass,_di_JHitBuilders_EventBuilder> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJHitBuilders_EventBuilder() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JHitBuilders_EventBuilderClass,_di_JHitBuilders_EventBuilder>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJHitBuilders_EventBuilder() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{AFF3A07C-BC10-4793-8602-D12E46C6F24B}") JHitBuilders_ExceptionBuilderClass  : public JHitBuilders_HitBuilderClass 
+{
+	HIDESBASE virtual _di_JHitBuilders_ExceptionBuilder __cdecl init() = 0 ;
+};
+
+__interface  INTERFACE_UUID("{EF322E05-72F4-4D94-A9CF-4ED675A45886}") JHitBuilders_ExceptionBuilder  : public JHitBuilders_HitBuilder 
+{
+	HIDESBASE virtual Androidapi::Jni::Javatypes::_di_JMap __cdecl build() = 0 ;
+	virtual _di_JHitBuilders_ExceptionBuilder __cdecl setDescription(Androidapi::Jni::Javatypes::_di_JString description) = 0 ;
+	virtual _di_JHitBuilders_ExceptionBuilder __cdecl setFatal(bool fatal) = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJHitBuilders_ExceptionBuilder : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JHitBuilders_ExceptionBuilderClass,_di_JHitBuilders_ExceptionBuilder>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JHitBuilders_ExceptionBuilderClass,_di_JHitBuilders_ExceptionBuilder> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJHitBuilders_ExceptionBuilder() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JHitBuilders_ExceptionBuilderClass,_di_JHitBuilders_ExceptionBuilder>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJHitBuilders_ExceptionBuilder() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{44DAF5BC-01B3-4F6F-BAC7-FE9665C28514}") JHitBuilders_ItemBuilderClass  : public JHitBuilders_HitBuilderClass 
+{
+	HIDESBASE virtual _di_JHitBuilders_ItemBuilder __cdecl init() = 0 ;
+};
+
+__interface  INTERFACE_UUID("{D953FEE8-FF17-41BF-9B31-AD8D17CDB8BC}") JHitBuilders_ItemBuilder  : public JHitBuilders_HitBuilder 
+{
+	HIDESBASE virtual Androidapi::Jni::Javatypes::_di_JMap __cdecl build() = 0 ;
+	virtual _di_JHitBuilders_ItemBuilder __cdecl setCategory(Androidapi::Jni::Javatypes::_di_JString category) = 0 ;
+	virtual _di_JHitBuilders_ItemBuilder __cdecl setCurrencyCode(Androidapi::Jni::Javatypes::_di_JString currencyCode) = 0 ;
+	virtual _di_JHitBuilders_ItemBuilder __cdecl setName(Androidapi::Jni::Javatypes::_di_JString name) = 0 ;
+	virtual _di_JHitBuilders_ItemBuilder __cdecl setPrice(double price) = 0 ;
+	virtual _di_JHitBuilders_ItemBuilder __cdecl setQuantity(__int64 quantity) = 0 ;
+	virtual _di_JHitBuilders_ItemBuilder __cdecl setSku(Androidapi::Jni::Javatypes::_di_JString sku) = 0 ;
+	virtual _di_JHitBuilders_ItemBuilder __cdecl setTransactionId(Androidapi::Jni::Javatypes::_di_JString transactionid) = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJHitBuilders_ItemBuilder : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JHitBuilders_ItemBuilderClass,_di_JHitBuilders_ItemBuilder>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JHitBuilders_ItemBuilderClass,_di_JHitBuilders_ItemBuilder> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJHitBuilders_ItemBuilder() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JHitBuilders_ItemBuilderClass,_di_JHitBuilders_ItemBuilder>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJHitBuilders_ItemBuilder() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{CED624DA-C396-4D11-8683-DA696F34D7F3}") JHitBuilders_SocialBuilderClass  : public JHitBuilders_HitBuilderClass 
+{
+	HIDESBASE virtual _di_JHitBuilders_SocialBuilder __cdecl init() = 0 ;
+};
+
+__interface  INTERFACE_UUID("{E5B73637-91CE-4980-A170-AB95D0B5C138}") JHitBuilders_SocialBuilder  : public JHitBuilders_HitBuilder 
+{
+	HIDESBASE virtual Androidapi::Jni::Javatypes::_di_JMap __cdecl build() = 0 ;
+	virtual _di_JHitBuilders_SocialBuilder __cdecl setAction(Androidapi::Jni::Javatypes::_di_JString action) = 0 ;
+	virtual _di_JHitBuilders_SocialBuilder __cdecl setNetwork(Androidapi::Jni::Javatypes::_di_JString network) = 0 ;
+	virtual _di_JHitBuilders_SocialBuilder __cdecl setTarget(Androidapi::Jni::Javatypes::_di_JString target) = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJHitBuilders_SocialBuilder : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JHitBuilders_SocialBuilderClass,_di_JHitBuilders_SocialBuilder>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JHitBuilders_SocialBuilderClass,_di_JHitBuilders_SocialBuilder> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJHitBuilders_SocialBuilder() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JHitBuilders_SocialBuilderClass,_di_JHitBuilders_SocialBuilder>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJHitBuilders_SocialBuilder() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{F86D2F79-0988-45AC-8411-DD1526EB02DF}") JHitBuilders_TimingBuilderClass  : public JHitBuilders_HitBuilderClass 
+{
+	HIDESBASE virtual _di_JHitBuilders_TimingBuilder __cdecl init() = 0 /* overload */;
+	HIDESBASE virtual _di_JHitBuilders_TimingBuilder __cdecl init(Androidapi::Jni::Javatypes::_di_JString category, Androidapi::Jni::Javatypes::_di_JString variable, __int64 value) = 0 /* overload */;
+};
+
+__interface  INTERFACE_UUID("{0DB1CBEB-D31A-46D5-BB9E-B4AC64CE511F}") JHitBuilders_TimingBuilder  : public JHitBuilders_HitBuilder 
+{
+	HIDESBASE virtual Androidapi::Jni::Javatypes::_di_JMap __cdecl build() = 0 ;
+	virtual _di_JHitBuilders_TimingBuilder __cdecl setCategory(Androidapi::Jni::Javatypes::_di_JString category) = 0 ;
+	virtual _di_JHitBuilders_TimingBuilder __cdecl setLabel(Androidapi::Jni::Javatypes::_di_JString label_) = 0 ;
+	virtual _di_JHitBuilders_TimingBuilder __cdecl setValue(__int64 value) = 0 ;
+	virtual _di_JHitBuilders_TimingBuilder __cdecl setVariable(Androidapi::Jni::Javatypes::_di_JString variable) = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJHitBuilders_TimingBuilder : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JHitBuilders_TimingBuilderClass,_di_JHitBuilders_TimingBuilder>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JHitBuilders_TimingBuilderClass,_di_JHitBuilders_TimingBuilder> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJHitBuilders_TimingBuilder() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JHitBuilders_TimingBuilderClass,_di_JHitBuilders_TimingBuilder>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJHitBuilders_TimingBuilder() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{B745F1C2-B442-4C10-8D4D-DF4D47D91B12}") JHitBuilders_TransactionBuilderClass  : public JHitBuilders_HitBuilderClass 
+{
+	HIDESBASE virtual _di_JHitBuilders_TransactionBuilder __cdecl init() = 0 ;
+};
+
+__interface  INTERFACE_UUID("{95FE4E3A-1875-4DA7-8BD2-B9997D1EA686}") JHitBuilders_TransactionBuilder  : public JHitBuilders_HitBuilder 
+{
+	HIDESBASE virtual Androidapi::Jni::Javatypes::_di_JMap __cdecl build() = 0 ;
+	virtual _di_JHitBuilders_TransactionBuilder __cdecl setAffiliation(Androidapi::Jni::Javatypes::_di_JString affiliation) = 0 ;
+	virtual _di_JHitBuilders_TransactionBuilder __cdecl setCurrencyCode(Androidapi::Jni::Javatypes::_di_JString currencyCode) = 0 ;
+	virtual _di_JHitBuilders_TransactionBuilder __cdecl setRevenue(double revenue) = 0 ;
+	virtual _di_JHitBuilders_TransactionBuilder __cdecl setShipping(double shipping) = 0 ;
+	virtual _di_JHitBuilders_TransactionBuilder __cdecl setTax(double tax) = 0 ;
+	virtual _di_JHitBuilders_TransactionBuilder __cdecl setTransactionId(Androidapi::Jni::Javatypes::_di_JString transactionid) = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJHitBuilders_TransactionBuilder : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JHitBuilders_TransactionBuilderClass,_di_JHitBuilders_TransactionBuilder>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JHitBuilders_TransactionBuilderClass,_di_JHitBuilders_TransactionBuilder> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJHitBuilders_TransactionBuilder() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JHitBuilders_TransactionBuilderClass,_di_JHitBuilders_TransactionBuilder>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJHitBuilders_TransactionBuilder() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{7E767281-4B84-4A42-9037-5566624BA119}") Janalytics_LoggerClass  : public Androidapi::Jnibridge::IJavaClass 
+{
+	
+};
+
+__interface  INTERFACE_UUID("{6A8D0DBC-F547-40CA-B928-6C2010E259B9}") Janalytics_Logger  : public Androidapi::Jnibridge::IJavaInstance 
+{
+	virtual void __cdecl error(Androidapi::Jni::Javatypes::_di_JException P1) = 0 /* overload */;
+	virtual void __cdecl error(Androidapi::Jni::Javatypes::_di_JString P1) = 0 /* overload */;
+	virtual int __cdecl getLogLevel() = 0 ;
+	virtual void __cdecl info(Androidapi::Jni::Javatypes::_di_JString P1) = 0 ;
+	virtual void __cdecl setLogLevel(int P1) = 0 ;
+	virtual void __cdecl verbose(Androidapi::Jni::Javatypes::_di_JString P1) = 0 ;
+	virtual void __cdecl warn(Androidapi::Jni::Javatypes::_di_JString P1) = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJanalytics_Logger : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_Janalytics_LoggerClass,_di_Janalytics_Logger>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_Janalytics_LoggerClass,_di_Janalytics_Logger> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJanalytics_Logger() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_Janalytics_LoggerClass,_di_Janalytics_Logger>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJanalytics_Logger() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{3AC05087-151B-4E3D-AA61-CB981515BD67}") JLogger_LogLevelClass  : public Androidapi::Jni::Javatypes::JObjectClass 
+{
+	virtual int __cdecl _GetERROR() = 0 ;
+	virtual int __cdecl _GetINFO() = 0 ;
+	virtual int __cdecl _GetVERBOSE() = 0 ;
+	virtual int __cdecl _GetWARNING() = 0 ;
+	HIDESBASE virtual _di_JLogger_LogLevel __cdecl init() = 0 ;
+	__property int ERROR = {read=_GetERROR};
+	__property int INFO = {read=_GetINFO};
+	__property int VERBOSE = {read=_GetVERBOSE};
+	__property int WARNING = {read=_GetWARNING};
+};
+
+__interface  INTERFACE_UUID("{75FD636D-B99D-46AF-83E3-4E7A508D94F4}") JLogger_LogLevel  : public Androidapi::Jni::Javatypes::JObject 
+{
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJLogger_LogLevel : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JLogger_LogLevelClass,_di_JLogger_LogLevel>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JLogger_LogLevelClass,_di_JLogger_LogLevel> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJLogger_LogLevel() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JLogger_LogLevelClass,_di_JLogger_LogLevel>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJLogger_LogLevel() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{830E5A8D-5DEA-41E8-BF80-157BD3994FA8}") Janalytics_StandardExceptionParserClass  : public Androidapi::Jni::Javatypes::JObjectClass 
+{
+	HIDESBASE virtual _di_Janalytics_StandardExceptionParser __cdecl init(Androidapi::Jni::Graphicscontentviewtext::_di_JContext context, Androidapi::Jni::Javatypes::_di_JCollection additionalPackages) = 0 ;
+};
+
+__interface  INTERFACE_UUID("{93243A7E-563E-4240-8E3E-1AC7E0155A3A}") Janalytics_StandardExceptionParser  : public Androidapi::Jni::Javatypes::JObject 
+{
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl getDescription(Androidapi::Jni::Javatypes::_di_JString threadName, Androidapi::Jni::Javatypes::_di_JThrowable t) = 0 /* overload */;
+	virtual void __cdecl setIncludedPackages(Androidapi::Jni::Graphicscontentviewtext::_di_JContext context, Androidapi::Jni::Javatypes::_di_JCollection additionalPackages) = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJanalytics_StandardExceptionParser : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_Janalytics_StandardExceptionParserClass,_di_Janalytics_StandardExceptionParser>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_Janalytics_StandardExceptionParserClass,_di_Janalytics_StandardExceptionParser> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJanalytics_StandardExceptionParser() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_Janalytics_StandardExceptionParserClass,_di_Janalytics_StandardExceptionParser>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJanalytics_StandardExceptionParser() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{4BF50FD9-0FE9-458A-A4FE-72FE63EFECE6}") Janalytics_TrackerClass  : public Androidapi::Jni::Javatypes::JObjectClass 
+{
+	
+};
+
+__interface  INTERFACE_UUID("{F5746171-0AC3-4EC9-9AB3-64E84C74B915}") Janalytics_Tracker  : public Androidapi::Jni::Javatypes::JObject 
+{
+	virtual void __cdecl enableAdvertisingIdCollection(bool enabled) = 0 ;
+	virtual void __cdecl enableAutoActivityTracking(bool enabled) = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl get(Androidapi::Jni::Javatypes::_di_JString key) = 0 ;
+	virtual void __cdecl send(Androidapi::Jni::Javatypes::_di_JMap params) = 0 ;
+	virtual void __cdecl set(Androidapi::Jni::Javatypes::_di_JString key, Androidapi::Jni::Javatypes::_di_JString value) = 0 ;
+	virtual void __cdecl setAnonymizeIp(bool anonymize) = 0 ;
+	virtual void __cdecl setAppId(Androidapi::Jni::Javatypes::_di_JString appId) = 0 ;
+	virtual void __cdecl setAppInstallerId(Androidapi::Jni::Javatypes::_di_JString appInstallerId) = 0 ;
+	virtual void __cdecl setAppName(Androidapi::Jni::Javatypes::_di_JString appName) = 0 ;
+	virtual void __cdecl setAppVersion(Androidapi::Jni::Javatypes::_di_JString appVersion) = 0 ;
+	virtual void __cdecl setClientId(Androidapi::Jni::Javatypes::_di_JString clientId) = 0 ;
+	virtual void __cdecl setEncoding(Androidapi::Jni::Javatypes::_di_JString encoding) = 0 ;
+	virtual void __cdecl setHostname(Androidapi::Jni::Javatypes::_di_JString hostname) = 0 ;
+	virtual void __cdecl setLanguage(Androidapi::Jni::Javatypes::_di_JString language) = 0 ;
+	virtual void __cdecl setLocation(Androidapi::Jni::Javatypes::_di_JString location) = 0 ;
+	virtual void __cdecl setPage(Androidapi::Jni::Javatypes::_di_JString page) = 0 ;
+	virtual void __cdecl setReferrer(Androidapi::Jni::Javatypes::_di_JString referrer) = 0 ;
+	virtual void __cdecl setSampleRate(double sampleRate) = 0 ;
+	virtual void __cdecl setScreenColors(Androidapi::Jni::Javatypes::_di_JString screenColors) = 0 ;
+	virtual void __cdecl setScreenName(Androidapi::Jni::Javatypes::_di_JString screenName) = 0 ;
+	virtual void __cdecl setScreenResolution(int width, int height) = 0 ;
+	virtual void __cdecl setSessionTimeout(__int64 sessionTimeout) = 0 ;
+	virtual void __cdecl setTitle(Androidapi::Jni::Javatypes::_di_JString title) = 0 ;
+	virtual void __cdecl setUseSecure(bool useSecure) = 0 ;
+	virtual void __cdecl setViewportSize(Androidapi::Jni::Javatypes::_di_JString viewportSize) = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJanalytics_Tracker : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_Janalytics_TrackerClass,_di_Janalytics_Tracker>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_Janalytics_TrackerClass,_di_Janalytics_Tracker> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJanalytics_Tracker() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_Janalytics_TrackerClass,_di_Janalytics_Tracker>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJanalytics_Tracker() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{7F96F79F-1482-4695-8F2F-F9B3ECD4D9C5}") JFreezableClass  : public Androidapi::Jnibridge::IJavaClass 
+{
+	
+};
+
+__interface  INTERFACE_UUID("{B39CBE77-7C0F-4FD9-BA32-ADA3BC739705}") JFreezable  : public Androidapi::Jnibridge::IJavaInstance 
+{
+	virtual Androidapi::Jni::Javatypes::_di_JObject __cdecl freeze() = 0 ;
+	virtual bool __cdecl isDataValid() = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJFreezable : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JFreezableClass,_di_JFreezable>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JFreezableClass,_di_JFreezable> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJFreezable() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JFreezableClass,_di_JFreezable>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJFreezable() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{320912A0-C62F-4708-9F27-96135CE528C3}") JAppStateClass  : public JFreezableClass 
+{
+	
+};
+
+__interface  INTERFACE_UUID("{62158A4D-D6E4-4068-84F6-13B5EFAF242C}") JAppState  : public JFreezable 
+{
+	virtual Androidapi::Jnibridge::TJavaArray__1<System::Byte>* __cdecl getConflictData() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl getConflictVersion() = 0 ;
+	virtual int __cdecl getKey() = 0 ;
+	virtual Androidapi::Jnibridge::TJavaArray__1<System::Byte>* __cdecl getLocalData() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl getLocalVersion() = 0 ;
+	virtual bool __cdecl hasConflict() = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJAppState : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JAppStateClass,_di_JAppState>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JAppStateClass,_di_JAppState> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJAppState() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JAppStateClass,_di_JAppState>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJAppState() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{49C7D692-3653-40EB-B4D9-256184DAFDC3}") JDataBufferClass  : public Androidapi::Jni::Javatypes::JObjectClass 
+{
+	
+};
+
+__interface  INTERFACE_UUID("{E66E2584-412C-4878-B2BF-22E564A67E5B}") JDataBuffer  : public Androidapi::Jni::Javatypes::JObject 
+{
+	virtual void __cdecl close() = 0 ;
+	virtual int __cdecl describeContents() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JObject __cdecl get(int P1) = 0 ;
+	virtual int __cdecl getCount() = 0 ;
+	virtual Androidapi::Jni::Os::_di_JBundle __cdecl getMetadata() = 0 ;
+	virtual bool __cdecl isClosed() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JIterator __cdecl iterator() = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJDataBuffer : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JDataBufferClass,_di_JDataBuffer>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JDataBufferClass,_di_JDataBuffer> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJDataBuffer() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JDataBufferClass,_di_JDataBuffer>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJDataBuffer() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{C12CC577-CE18-4694-884A-1D2F9ECEF29A}") JAppStateBufferClass  : public JDataBufferClass 
+{
+	HIDESBASE virtual _di_JAppStateBuffer __cdecl init(_di_JDataHolder dataHolder) = 0 ;
+};
+
+__interface  INTERFACE_UUID("{1568FAAC-8015-41E6-9533-29837363DE96}") JAppStateBuffer  : public JDataBuffer 
+{
+	HIDESBASE virtual _di_JAppState __cdecl get(int position) = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJAppStateBuffer : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JAppStateBufferClass,_di_JAppStateBuffer>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JAppStateBufferClass,_di_JAppStateBuffer> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJAppStateBuffer() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JAppStateBufferClass,_di_JAppStateBuffer>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJAppStateBuffer() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{06185675-0342-4669-B5F1-D39C44BA5067}") JAppStateManagerClass  : public Androidapi::Jni::Javatypes::JObjectClass 
+{
+	virtual _di_JScope __cdecl _GetSCOPE_APP_STATE() = 0 ;
+	virtual _di_JPendingResult __cdecl Delete(_di_JGoogleApiClient googleApiClient, int stateKey) = 0 ;
+	virtual int __cdecl getMaxNumKeys(_di_JGoogleApiClient googleApiClient) = 0 ;
+	virtual int __cdecl getMaxStateSize(_di_JGoogleApiClient googleApiClient) = 0 ;
+	virtual _di_JPendingResult __cdecl list(_di_JGoogleApiClient googleApiClient) = 0 ;
+	virtual _di_JPendingResult __cdecl load(_di_JGoogleApiClient googleApiClient, int stateKey) = 0 ;
+	virtual _di_JPendingResult __cdecl resolve(_di_JGoogleApiClient googleApiClient, int stateKey, Androidapi::Jni::Javatypes::_di_JString resolvedVersion, Androidapi::Jnibridge::TJavaArray__1<System::Byte>* resolvedData) = 0 ;
+	virtual _di_JPendingResult __cdecl signOut(_di_JGoogleApiClient googleApiClient) = 0 ;
+	virtual void __cdecl update(_di_JGoogleApiClient googleApiClient, int stateKey, Androidapi::Jnibridge::TJavaArray__1<System::Byte>* data) = 0 ;
+	virtual _di_JPendingResult __cdecl updateImmediate(_di_JGoogleApiClient googleApiClient, int stateKey, Androidapi::Jnibridge::TJavaArray__1<System::Byte>* data) = 0 ;
+	__property _di_JScope SCOPE_APP_STATE = {read=_GetSCOPE_APP_STATE};
+};
+
+__interface  INTERFACE_UUID("{FD1D5764-0FED-4EDD-9494-FB6CD109D574}") JAppStateManager  : public Androidapi::Jni::Javatypes::JObject 
+{
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJAppStateManager : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JAppStateManagerClass,_di_JAppStateManager>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JAppStateManagerClass,_di_JAppStateManager> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJAppStateManager() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JAppStateManagerClass,_di_JAppStateManager>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJAppStateManager() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{5E17D634-822C-4CDE-8F5F-B9316E345B3D}") JReleasableClass  : public Androidapi::Jnibridge::IJavaClass 
+{
+	
+};
+
+__interface  INTERFACE_UUID("{9D70CB2A-6A75-4B67-9D01-AA61C573F79D}") JReleasable  : public Androidapi::Jnibridge::IJavaInstance 
+{
+	virtual void __cdecl release() = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJReleasable : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JReleasableClass,_di_JReleasable>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JReleasableClass,_di_JReleasable> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJReleasable() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JReleasableClass,_di_JReleasable>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJReleasable() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{2BDB023E-8465-4B69-9E2A-0C91AE4832DD}") JAppStateManager_StateConflictResultClass  : public JReleasableClass 
+{
+	
+};
+
+__interface  INTERFACE_UUID("{7081B7FA-F7C6-4814-A285-2A707EE34B89}") JAppStateManager_StateConflictResult  : public JReleasable 
+{
+	virtual Androidapi::Jnibridge::TJavaArray__1<System::Byte>* __cdecl getLocalData() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl getResolvedVersion() = 0 ;
+	virtual Androidapi::Jnibridge::TJavaArray__1<System::Byte>* __cdecl getServerData() = 0 ;
+	virtual int __cdecl getStateKey() = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJAppStateManager_StateConflictResult : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JAppStateManager_StateConflictResultClass,_di_JAppStateManager_StateConflictResult>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JAppStateManager_StateConflictResultClass,_di_JAppStateManager_StateConflictResult> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJAppStateManager_StateConflictResult() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JAppStateManager_StateConflictResultClass,_di_JAppStateManager_StateConflictResult>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJAppStateManager_StateConflictResult() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{E73B3C27-9EB3-43F6-AEE5-9EE456C0BD14}") Japi_ResultClass  : public Androidapi::Jnibridge::IJavaClass 
+{
+	
+};
+
+__interface  INTERFACE_UUID("{41994536-DC65-4D9F-A76B-8C53C141A5AD}") Japi_Result  : public Androidapi::Jnibridge::IJavaInstance 
+{
+	virtual _di_JStatus __cdecl getStatus() = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJapi_Result : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_Japi_ResultClass,_di_Japi_Result>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_Japi_ResultClass,_di_Japi_Result> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJapi_Result() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_Japi_ResultClass,_di_Japi_Result>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJapi_Result() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{EB1B8D46-F3F5-45E4-AF85-4F3BE419680D}") JAppStateManager_StateDeletedResultClass  : public Japi_ResultClass 
+{
+	
+};
+
+__interface  INTERFACE_UUID("{3143A54B-7A0D-491B-8263-D53B64B067A3}") JAppStateManager_StateDeletedResult  : public Japi_Result 
+{
+	virtual int __cdecl getStateKey() = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJAppStateManager_StateDeletedResult : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JAppStateManager_StateDeletedResultClass,_di_JAppStateManager_StateDeletedResult>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JAppStateManager_StateDeletedResultClass,_di_JAppStateManager_StateDeletedResult> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJAppStateManager_StateDeletedResult() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JAppStateManager_StateDeletedResultClass,_di_JAppStateManager_StateDeletedResult>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJAppStateManager_StateDeletedResult() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{E1900EA9-62E7-4058-9EB9-5897DA95B275}") JAppStateManager_StateListResultClass  : public Japi_ResultClass 
+{
+	
+};
+
+__interface  INTERFACE_UUID("{C624F404-3365-4952-A350-D0B49E538B3D}") JAppStateManager_StateListResult  : public Japi_Result 
+{
+	virtual _di_JAppStateBuffer __cdecl getStateBuffer() = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJAppStateManager_StateListResult : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JAppStateManager_StateListResultClass,_di_JAppStateManager_StateListResult>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JAppStateManager_StateListResultClass,_di_JAppStateManager_StateListResult> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJAppStateManager_StateListResult() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JAppStateManager_StateListResultClass,_di_JAppStateManager_StateListResult>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJAppStateManager_StateListResult() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{50AAE37D-726C-424B-93DA-C2DDE026F808}") JAppStateManager_StateLoadedResultClass  : public JReleasableClass 
+{
+	
+};
+
+__interface  INTERFACE_UUID("{05350D68-3B57-420F-999F-7425697245B6}") JAppStateManager_StateLoadedResult  : public JReleasable 
+{
+	virtual Androidapi::Jnibridge::TJavaArray__1<System::Byte>* __cdecl getLocalData() = 0 ;
+	virtual int __cdecl getStateKey() = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJAppStateManager_StateLoadedResult : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JAppStateManager_StateLoadedResultClass,_di_JAppStateManager_StateLoadedResult>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JAppStateManager_StateLoadedResultClass,_di_JAppStateManager_StateLoadedResult> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJAppStateManager_StateLoadedResult() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JAppStateManager_StateLoadedResultClass,_di_JAppStateManager_StateLoadedResult>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJAppStateManager_StateLoadedResult() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{2227736D-B90C-4397-BAD7-06EDFB2E1F82}") JAppStateManager_StateResultClass  : public JReleasableClass 
+{
+	
+};
+
+__interface  INTERFACE_UUID("{A6A3EB30-919F-4D9D-AF7B-5F0A889890DB}") JAppStateManager_StateResult  : public JReleasable 
+{
+	virtual _di_JAppStateManager_StateConflictResult __cdecl getConflictResult() = 0 ;
+	virtual _di_JAppStateManager_StateLoadedResult __cdecl getLoadedResult() = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJAppStateManager_StateResult : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JAppStateManager_StateResultClass,_di_JAppStateManager_StateResult>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JAppStateManager_StateResultClass,_di_JAppStateManager_StateResult> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJAppStateManager_StateResult() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JAppStateManager_StateResultClass,_di_JAppStateManager_StateResult>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJAppStateManager_StateResult() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{AE94F94B-73F7-4DFC-B89C-0B4D585B35BD}") JAppStateStatusCodesClass  : public Androidapi::Jni::Javatypes::JObjectClass 
+{
+	virtual int __cdecl _GetSTATUS_CLIENT_RECONNECT_REQUIRED() = 0 ;
+	virtual int __cdecl _GetSTATUS_DEVELOPER_ERROR() = 0 ;
+	virtual int __cdecl _GetSTATUS_INTERNAL_ERROR() = 0 ;
+	virtual int __cdecl _GetSTATUS_INTERRUPTED() = 0 ;
+	virtual int __cdecl _GetSTATUS_NETWORK_ERROR_NO_DATA() = 0 ;
+	virtual int __cdecl _GetSTATUS_NETWORK_ERROR_OPERATION_DEFERRED() = 0 ;
+	virtual int __cdecl _GetSTATUS_NETWORK_ERROR_OPERATION_FAILED() = 0 ;
+	virtual int __cdecl _GetSTATUS_NETWORK_ERROR_STALE_DATA() = 0 ;
+	virtual int __cdecl _GetSTATUS_OK() = 0 ;
+	virtual int __cdecl _GetSTATUS_STATE_KEY_LIMIT_EXCEEDED() = 0 ;
+	virtual int __cdecl _GetSTATUS_STATE_KEY_NOT_FOUND() = 0 ;
+	virtual int __cdecl _GetSTATUS_TIMEOUT() = 0 ;
+	virtual int __cdecl _GetSTATUS_WRITE_OUT_OF_DATE_VERSION() = 0 ;
+	virtual int __cdecl _GetSTATUS_WRITE_SIZE_EXCEEDED() = 0 ;
+	__property int STATUS_CLIENT_RECONNECT_REQUIRED = {read=_GetSTATUS_CLIENT_RECONNECT_REQUIRED};
+	__property int STATUS_DEVELOPER_ERROR = {read=_GetSTATUS_DEVELOPER_ERROR};
+	__property int STATUS_INTERNAL_ERROR = {read=_GetSTATUS_INTERNAL_ERROR};
+	__property int STATUS_INTERRUPTED = {read=_GetSTATUS_INTERRUPTED};
+	__property int STATUS_NETWORK_ERROR_NO_DATA = {read=_GetSTATUS_NETWORK_ERROR_NO_DATA};
+	__property int STATUS_NETWORK_ERROR_OPERATION_DEFERRED = {read=_GetSTATUS_NETWORK_ERROR_OPERATION_DEFERRED};
+	__property int STATUS_NETWORK_ERROR_OPERATION_FAILED = {read=_GetSTATUS_NETWORK_ERROR_OPERATION_FAILED};
+	__property int STATUS_NETWORK_ERROR_STALE_DATA = {read=_GetSTATUS_NETWORK_ERROR_STALE_DATA};
+	__property int STATUS_OK = {read=_GetSTATUS_OK};
+	__property int STATUS_STATE_KEY_LIMIT_EXCEEDED = {read=_GetSTATUS_STATE_KEY_LIMIT_EXCEEDED};
+	__property int STATUS_STATE_KEY_NOT_FOUND = {read=_GetSTATUS_STATE_KEY_NOT_FOUND};
+	__property int STATUS_TIMEOUT = {read=_GetSTATUS_TIMEOUT};
+	__property int STATUS_WRITE_OUT_OF_DATE_VERSION = {read=_GetSTATUS_WRITE_OUT_OF_DATE_VERSION};
+	__property int STATUS_WRITE_SIZE_EXCEEDED = {read=_GetSTATUS_WRITE_SIZE_EXCEEDED};
+};
+
+__interface  INTERFACE_UUID("{E554DD0C-0206-45A1-B47D-BFCD9E0EE1C4}") JAppStateStatusCodes  : public Androidapi::Jni::Javatypes::JObject 
+{
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJAppStateStatusCodes : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JAppStateStatusCodesClass,_di_JAppStateStatusCodes>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JAppStateStatusCodesClass,_di_JAppStateStatusCodes> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJAppStateStatusCodes() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JAppStateStatusCodesClass,_di_JAppStateStatusCodes>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJAppStateStatusCodes() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{24885575-796B-42F6-AAB7-585DEF967D34}") JGoogleAuthExceptionClass  : public Androidapi::Jni::Javatypes::JExceptionClass 
+{
+	HIDESBASE virtual _di_JGoogleAuthException __cdecl init(Androidapi::Jni::Javatypes::_di_JString err) = 0 ;
+};
+
+__interface  INTERFACE_UUID("{CD1926C5-141D-497D-87E4-E7D7D978506B}") JGoogleAuthException  : public Androidapi::Jni::Javatypes::JException 
+{
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJGoogleAuthException : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JGoogleAuthExceptionClass,_di_JGoogleAuthException>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JGoogleAuthExceptionClass,_di_JGoogleAuthException> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJGoogleAuthException() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JGoogleAuthExceptionClass,_di_JGoogleAuthException>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJGoogleAuthException() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{3EB073E2-78BC-422D-85BE-E79CE3D7F1A1}") JGoogleAuthUtilClass  : public Androidapi::Jni::Javatypes::JObjectClass 
+{
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetGOOGLE_ACCOUNT_TYPE() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetKEY_ANDROID_PACKAGE_NAME() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetKEY_CALLER_UID() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetKEY_REQUEST_ACTIONS() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetKEY_REQUEST_VISIBLE_ACTIVITIES() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetKEY_SUPPRESS_PROGRESS_SCREEN() = 0 ;
+	virtual void __cdecl clearToken(Androidapi::Jni::Graphicscontentviewtext::_di_JContext context, Androidapi::Jni::Javatypes::_di_JString token) = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl getToken(Androidapi::Jni::Graphicscontentviewtext::_di_JContext context, Androidapi::Jni::Javatypes::_di_JString accountName, Androidapi::Jni::Javatypes::_di_JString scope) = 0 /* overload */;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl getToken(Androidapi::Jni::Graphicscontentviewtext::_di_JContext context, Androidapi::Jni::Javatypes::_di_JString accountName, Androidapi::Jni::Javatypes::_di_JString scope, Androidapi::Jni::Os::_di_JBundle extras) = 0 /* overload */;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl getTokenWithNotification(Androidapi::Jni::Graphicscontentviewtext::_di_JContext context, Androidapi::Jni::Javatypes::_di_JString accountName, Androidapi::Jni::Javatypes::_di_JString scope, Androidapi::Jni::Os::_di_JBundle extras) = 0 /* overload */;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl getTokenWithNotification(Androidapi::Jni::Graphicscontentviewtext::_di_JContext context, Androidapi::Jni::Javatypes::_di_JString accountName, Androidapi::Jni::Javatypes::_di_JString scope, Androidapi::Jni::Os::_di_JBundle extras, Androidapi::Jni::Graphicscontentviewtext::_di_JIntent callback) = 0 /* overload */;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl getTokenWithNotification(Androidapi::Jni::Graphicscontentviewtext::_di_JContext context, Androidapi::Jni::Javatypes::_di_JString accountName, Androidapi::Jni::Javatypes::_di_JString scope, Androidapi::Jni::Os::_di_JBundle extras, Androidapi::Jni::Javatypes::_di_JString authority, Androidapi::Jni::Os::_di_JBundle syncBundle) = 0 /* overload */;
+	virtual void __cdecl invalidateToken(Androidapi::Jni::Graphicscontentviewtext::_di_JContext context, Androidapi::Jni::Javatypes::_di_JString token) = 0 ;
+	__property Androidapi::Jni::Javatypes::_di_JString GOOGLE_ACCOUNT_TYPE = {read=_GetGOOGLE_ACCOUNT_TYPE};
+	__property Androidapi::Jni::Javatypes::_di_JString KEY_ANDROID_PACKAGE_NAME = {read=_GetKEY_ANDROID_PACKAGE_NAME};
+	__property Androidapi::Jni::Javatypes::_di_JString KEY_CALLER_UID = {read=_GetKEY_CALLER_UID};
+	__property Androidapi::Jni::Javatypes::_di_JString KEY_REQUEST_ACTIONS = {read=_GetKEY_REQUEST_ACTIONS};
+	__property Androidapi::Jni::Javatypes::_di_JString KEY_REQUEST_VISIBLE_ACTIVITIES = {read=_GetKEY_REQUEST_VISIBLE_ACTIVITIES};
+	__property Androidapi::Jni::Javatypes::_di_JString KEY_SUPPRESS_PROGRESS_SCREEN = {read=_GetKEY_SUPPRESS_PROGRESS_SCREEN};
+};
+
+__interface  INTERFACE_UUID("{B40125B3-21B6-4B54-893E-DAE1257A7986}") JGoogleAuthUtil  : public Androidapi::Jni::Javatypes::JObject 
+{
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJGoogleAuthUtil : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JGoogleAuthUtilClass,_di_JGoogleAuthUtil>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JGoogleAuthUtilClass,_di_JGoogleAuthUtil> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJGoogleAuthUtil() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JGoogleAuthUtilClass,_di_JGoogleAuthUtil>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJGoogleAuthUtil() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{B0EB85A3-956F-4683-96D6-6DE6F6269EC8}") JUserRecoverableAuthExceptionClass  : public JGoogleAuthExceptionClass 
+{
+	HIDESBASE virtual _di_JUserRecoverableAuthException __cdecl init(Androidapi::Jni::Javatypes::_di_JString msg, Androidapi::Jni::Graphicscontentviewtext::_di_JIntent intent) = 0 ;
+};
+
+__interface  INTERFACE_UUID("{078C9325-3395-4A9E-A68B-06CC6812B83E}") JUserRecoverableAuthException  : public JGoogleAuthException 
+{
+	virtual Androidapi::Jni::Graphicscontentviewtext::_di_JIntent __cdecl getIntent() = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJUserRecoverableAuthException : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JUserRecoverableAuthExceptionClass,_di_JUserRecoverableAuthException>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JUserRecoverableAuthExceptionClass,_di_JUserRecoverableAuthException> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJUserRecoverableAuthException() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JUserRecoverableAuthExceptionClass,_di_JUserRecoverableAuthException>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJUserRecoverableAuthException() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{A620FBE5-CFF1-4458-9E30-C51FD3900597}") JGooglePlayServicesAvailabilityExceptionClass  : public JUserRecoverableAuthExceptionClass 
+{
+	
+};
+
+__interface  INTERFACE_UUID("{46FF4385-2E1E-4195-9018-ED62D4985AB5}") JGooglePlayServicesAvailabilityException  : public JUserRecoverableAuthException 
+{
+	virtual int __cdecl getConnectionStatusCode() = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJGooglePlayServicesAvailabilityException : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JGooglePlayServicesAvailabilityExceptionClass,_di_JGooglePlayServicesAvailabilityException>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JGooglePlayServicesAvailabilityExceptionClass,_di_JGooglePlayServicesAvailabilityException> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJGooglePlayServicesAvailabilityException() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JGooglePlayServicesAvailabilityExceptionClass,_di_JGooglePlayServicesAvailabilityException>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJGooglePlayServicesAvailabilityException() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{039B6304-A9DB-4C6D-AA9A-DC21D7FA51D7}") JUserRecoverableNotifiedExceptionClass  : public JGoogleAuthExceptionClass 
+{
+	HIDESBASE virtual _di_JUserRecoverableNotifiedException __cdecl init(Androidapi::Jni::Javatypes::_di_JString err) = 0 ;
+};
+
+__interface  INTERFACE_UUID("{65AC8DD0-EEDF-41FE-86E0-459D38C0A468}") JUserRecoverableNotifiedException  : public JGoogleAuthException 
+{
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJUserRecoverableNotifiedException : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JUserRecoverableNotifiedExceptionClass,_di_JUserRecoverableNotifiedException>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JUserRecoverableNotifiedExceptionClass,_di_JUserRecoverableNotifiedException> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJUserRecoverableNotifiedException() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JUserRecoverableNotifiedExceptionClass,_di_JUserRecoverableNotifiedException>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJUserRecoverableNotifiedException() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{6E7C58D6-63F2-4689-91A3-E2FAC7573F27}") JApplicationMetadataClass  : public Androidapi::Jni::Javatypes::JObjectClass 
+{
+	virtual Androidapi::Jni::Os::_di_JParcelable_Creator __cdecl _GetCREATOR() = 0 ;
+	__property Androidapi::Jni::Os::_di_JParcelable_Creator CREATOR = {read=_GetCREATOR};
+};
+
+__interface  INTERFACE_UUID("{0664D21F-4983-490D-8DDB-D17A9D9BE8F5}") JApplicationMetadata  : public Androidapi::Jni::Javatypes::JObject 
+{
+	virtual bool __cdecl areNamespacesSupported(Androidapi::Jni::Javatypes::_di_JList namespaces) = 0 ;
+	virtual Androidapi::Jni::Net::_di_Jnet_Uri __cdecl cR() = 0 ;
+	virtual int __cdecl describeContents() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl getApplicationId() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JList __cdecl getImages() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl getName() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl getSenderAppIdentifier() = 0 ;
+	virtual bool __cdecl isNamespaceSupported(Androidapi::Jni::Javatypes::_di_JString Namespace) = 0 ;
+	HIDESBASE virtual Androidapi::Jni::Javatypes::_di_JString __cdecl toString() = 0 ;
+	virtual void __cdecl writeToParcel(Androidapi::Jni::Os::_di_JParcel out_, int flags) = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJApplicationMetadata : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JApplicationMetadataClass,_di_JApplicationMetadata>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JApplicationMetadataClass,_di_JApplicationMetadata> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJApplicationMetadata() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JApplicationMetadataClass,_di_JApplicationMetadata>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJApplicationMetadata() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{AED9839B-2909-46C1-9D4A-D2C1D96AF572}") JCastClass  : public Androidapi::Jni::Javatypes::JObjectClass 
+{
+	virtual _di_JCast_CastApi __cdecl _GetCastApi() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetEXTRA_APP_NO_LONGER_RUNNING() = 0 ;
+	virtual int __cdecl _GetMAX_MESSAGE_LENGTH() = 0 ;
+	virtual int __cdecl _GetMAX_NAMESPACE_LENGTH() = 0 ;
+	__property _di_JCast_CastApi CastApi = {read=_GetCastApi};
+	__property Androidapi::Jni::Javatypes::_di_JString EXTRA_APP_NO_LONGER_RUNNING = {read=_GetEXTRA_APP_NO_LONGER_RUNNING};
+	__property int MAX_MESSAGE_LENGTH = {read=_GetMAX_MESSAGE_LENGTH};
+	__property int MAX_NAMESPACE_LENGTH = {read=_GetMAX_NAMESPACE_LENGTH};
+};
+
+__interface  INTERFACE_UUID("{B563B78D-D4F1-407E-807F-556B11AA8B93}") JCast  : public Androidapi::Jni::Javatypes::JObject 
+{
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJCast : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JCastClass,_di_JCast>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JCastClass,_di_JCast> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJCast() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JCastClass,_di_JCast>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJCast() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{CBDBE9ED-C0F8-468E-A3AF-8370B351807A}") JCast_ApplicationConnectionResultClass  : public Japi_ResultClass 
+{
+	
+};
+
+__interface  INTERFACE_UUID("{8E0A6E27-F4C4-485E-85EE-2579439ECC5B}") JCast_ApplicationConnectionResult  : public Japi_Result 
+{
+	virtual _di_JApplicationMetadata __cdecl getApplicationMetadata() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl getApplicationStatus() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl getSessionId() = 0 ;
+	virtual bool __cdecl getWasLaunched() = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJCast_ApplicationConnectionResult : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JCast_ApplicationConnectionResultClass,_di_JCast_ApplicationConnectionResult>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JCast_ApplicationConnectionResultClass,_di_JCast_ApplicationConnectionResult> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJCast_ApplicationConnectionResult() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JCast_ApplicationConnectionResultClass,_di_JCast_ApplicationConnectionResult>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJCast_ApplicationConnectionResult() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{A90C5FA8-ABC7-48FA-B17C-DAEC6D2C6844}") JCast_CastApiClass  : public Androidapi::Jnibridge::IJavaClass 
+{
+	
+};
+
+__interface  INTERFACE_UUID("{BE686162-7E46-41F7-A0AD-5ADC0A5DD599}") JCast_CastApi  : public Androidapi::Jnibridge::IJavaInstance 
+{
+	virtual _di_JApplicationMetadata __cdecl getApplicationMetadata(_di_JGoogleApiClient P1) = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl getApplicationStatus(_di_JGoogleApiClient P1) = 0 ;
+	virtual double __cdecl getVolume(_di_JGoogleApiClient P1) = 0 ;
+	virtual bool __cdecl isMute(_di_JGoogleApiClient P1) = 0 ;
+	virtual _di_JPendingResult __cdecl joinApplication(_di_JGoogleApiClient P1) = 0 /* overload */;
+	virtual _di_JPendingResult __cdecl joinApplication(_di_JGoogleApiClient P1, Androidapi::Jni::Javatypes::_di_JString P2) = 0 /* overload */;
+	virtual _di_JPendingResult __cdecl joinApplication(_di_JGoogleApiClient P1, Androidapi::Jni::Javatypes::_di_JString P2, Androidapi::Jni::Javatypes::_di_JString P3) = 0 /* overload */;
+	virtual _di_JPendingResult __cdecl launchApplication(_di_JGoogleApiClient P1, Androidapi::Jni::Javatypes::_di_JString P2) = 0 /* overload */;
+	virtual _di_JPendingResult __cdecl launchApplication(_di_JGoogleApiClient P1, Androidapi::Jni::Javatypes::_di_JString P2, bool P3) = 0 /* overload */;
+	virtual _di_JPendingResult __cdecl leaveApplication(_di_JGoogleApiClient P1) = 0 ;
+	virtual void __cdecl removeMessageReceivedCallbacks(_di_JGoogleApiClient P1, Androidapi::Jni::Javatypes::_di_JString P2) = 0 ;
+	virtual void __cdecl requestStatus(_di_JGoogleApiClient P1) = 0 ;
+	virtual _di_JPendingResult __cdecl sendMessage(_di_JGoogleApiClient P1, Androidapi::Jni::Javatypes::_di_JString P2, Androidapi::Jni::Javatypes::_di_JString P3) = 0 ;
+	virtual void __cdecl setMessageReceivedCallbacks(_di_JGoogleApiClient P1, Androidapi::Jni::Javatypes::_di_JString P2, _di_JCast_MessageReceivedCallback P3) = 0 ;
+	virtual void __cdecl setMute(_di_JGoogleApiClient P1, bool P2) = 0 ;
+	virtual void __cdecl setVolume(_di_JGoogleApiClient P1, double P2) = 0 ;
+	virtual _di_JPendingResult __cdecl stopApplication(_di_JGoogleApiClient P1) = 0 /* overload */;
+	virtual _di_JPendingResult __cdecl stopApplication(_di_JGoogleApiClient P1, Androidapi::Jni::Javatypes::_di_JString P2) = 0 /* overload */;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJCast_CastApi : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JCast_CastApiClass,_di_JCast_CastApi>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JCast_CastApiClass,_di_JCast_CastApi> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJCast_CastApi() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JCast_CastApiClass,_di_JCast_CastApi>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJCast_CastApi() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{B7A38F42-EBDD-4E2A-AD70-5D07EFDECC37}") JCast_CastOptionsClass  : public Androidapi::Jni::Javatypes::JObjectClass 
+{
+	virtual _di_JCastOptions_Builder __cdecl builder(_di_JCastDevice castDevice, _di_JCast_Listener castListener) = 0 ;
+};
+
+__interface  INTERFACE_UUID("{B26B134E-DBD1-4B98-8445-C3CD491AC82E}") JCast_CastOptions  : public Androidapi::Jni::Javatypes::JObject 
+{
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJCast_CastOptions : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JCast_CastOptionsClass,_di_JCast_CastOptions>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JCast_CastOptionsClass,_di_JCast_CastOptions> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJCast_CastOptions() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JCast_CastOptionsClass,_di_JCast_CastOptions>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJCast_CastOptions() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{541C795A-4CD5-47A6-ADF3-AC34FD7EDE4A}") JCastOptions_BuilderClass  : public Androidapi::Jni::Javatypes::JObjectClass 
+{
+	
+};
+
+__interface  INTERFACE_UUID("{E665E5F1-D850-41A5-9656-772FC1C5E83F}") JCastOptions_Builder  : public Androidapi::Jni::Javatypes::JObject 
+{
+	virtual _di_JCast_CastOptions __cdecl build() = 0 ;
+	virtual _di_JCastOptions_Builder __cdecl setVerboseLoggingEnabled(bool enabled) = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJCastOptions_Builder : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JCastOptions_BuilderClass,_di_JCastOptions_Builder>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JCastOptions_BuilderClass,_di_JCastOptions_Builder> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJCastOptions_Builder() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JCastOptions_BuilderClass,_di_JCastOptions_Builder>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJCastOptions_Builder() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{440CFD20-1BC8-4E18-BF40-F4E03CAFF604}") JCast_ListenerClass  : public Androidapi::Jni::Javatypes::JObjectClass 
+{
+	HIDESBASE virtual _di_JCast_Listener __cdecl init() = 0 ;
+};
+
+__interface  INTERFACE_UUID("{BA2193D0-0399-4C8A-824E-9EF6E1AB8332}") JCast_Listener  : public Androidapi::Jni::Javatypes::JObject 
+{
+	virtual void __cdecl onApplicationDisconnected(int statusCode) = 0 ;
+	virtual void __cdecl onApplicationStatusChanged() = 0 ;
+	virtual void __cdecl onVolumeChanged() = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJCast_Listener : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JCast_ListenerClass,_di_JCast_Listener>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JCast_ListenerClass,_di_JCast_Listener> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJCast_Listener() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JCast_ListenerClass,_di_JCast_Listener>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJCast_Listener() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{7711C874-51FF-44CC-AB54-A6CA46578326}") JCast_MessageReceivedCallbackClass  : public Androidapi::Jnibridge::IJavaClass 
+{
+	
+};
+
+__interface  INTERFACE_UUID("{16EE604E-4328-4614-A44A-C5C5D160DBC5}") JCast_MessageReceivedCallback  : public Androidapi::Jnibridge::IJavaInstance 
+{
+	virtual void __cdecl onMessageReceived(_di_JCastDevice P1, Androidapi::Jni::Javatypes::_di_JString P2, Androidapi::Jni::Javatypes::_di_JString P3) = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJCast_MessageReceivedCallback : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JCast_MessageReceivedCallbackClass,_di_JCast_MessageReceivedCallback>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JCast_MessageReceivedCallbackClass,_di_JCast_MessageReceivedCallback> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJCast_MessageReceivedCallback() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JCast_MessageReceivedCallbackClass,_di_JCast_MessageReceivedCallback>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJCast_MessageReceivedCallback() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{5C124F97-0E2B-4E05-A963-BF78C3C6B269}") JCastDeviceClass  : public Androidapi::Jni::Javatypes::JObjectClass 
+{
+	virtual Androidapi::Jni::Os::_di_JParcelable_Creator __cdecl _GetCREATOR() = 0 ;
+	virtual _di_JCastDevice __cdecl getFromBundle(Androidapi::Jni::Os::_di_JBundle extras) = 0 ;
+	__property Androidapi::Jni::Os::_di_JParcelable_Creator CREATOR = {read=_GetCREATOR};
+};
+
+__interface  INTERFACE_UUID("{990D34D2-8B42-4E93-9AC3-0A2A08063620}") JCastDevice  : public Androidapi::Jni::Javatypes::JObject 
+{
+	virtual int __cdecl describeContents() = 0 ;
+	HIDESBASE virtual bool __cdecl equals(Androidapi::Jni::Javatypes::_di_JObject obj) = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl getDeviceId() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl getDeviceVersion() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl getFriendlyName() = 0 ;
+	virtual _di_JWebImage __cdecl getIcon(int preferredWidth, int preferredHeight) = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JList __cdecl getIcons() = 0 ;
+	virtual Androidapi::Jni::Java::Net::_di_JInet4Address __cdecl getIpAddress() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl getModelName() = 0 ;
+	virtual int __cdecl getServicePort() = 0 ;
+	virtual bool __cdecl hasIcons() = 0 ;
+	HIDESBASE virtual int __cdecl hashCode() = 0 ;
+	virtual bool __cdecl isSameDevice(_di_JCastDevice castDevice) = 0 ;
+	virtual void __cdecl putInBundle(Androidapi::Jni::Os::_di_JBundle bundle) = 0 ;
+	HIDESBASE virtual Androidapi::Jni::Javatypes::_di_JString __cdecl toString() = 0 ;
+	virtual void __cdecl writeToParcel(Androidapi::Jni::Os::_di_JParcel out_, int flags) = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJCastDevice : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JCastDeviceClass,_di_JCastDevice>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JCastDeviceClass,_di_JCastDevice> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJCastDevice() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JCastDeviceClass,_di_JCastDevice>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJCastDevice() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{0AF86901-D449-434C-B945-D5504E32D63E}") JCastMediaControlIntentClass  : public Androidapi::Jni::Javatypes::JObjectClass 
+{
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetACTION_SYNC_STATUS() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetCATEGORY_CAST() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetDEFAULT_MEDIA_RECEIVER_APPLICATION_ID() = 0 ;
+	virtual int __cdecl _GetERROR_CODE_REQUEST_FAILED() = 0 ;
+	virtual int __cdecl _GetERROR_CODE_SESSION_START_FAILED() = 0 ;
+	virtual int __cdecl _GetERROR_CODE_TEMPORARILY_DISCONNECTED() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetEXTRA_CAST_APPLICATION_ID() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetEXTRA_CAST_RELAUNCH_APPLICATION() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetEXTRA_CAST_STOP_APPLICATION_WHEN_SESSION_ENDS() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetEXTRA_CUSTOM_DATA() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetEXTRA_DEBUG_LOGGING_ENABLED() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetEXTRA_ERROR_CODE() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl categoryForCast(Androidapi::Jni::Javatypes::_di_JCollection namespaces) = 0 /* overload */;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl categoryForCast(Androidapi::Jni::Javatypes::_di_JString applicationId) = 0 /* overload */;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl categoryForCast(Androidapi::Jni::Javatypes::_di_JString applicationId, Androidapi::Jni::Javatypes::_di_JCollection namespaces) = 0 /* overload */;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl categoryForRemotePlayback() = 0 /* overload */;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl categoryForRemotePlayback(Androidapi::Jni::Javatypes::_di_JString applicationId) = 0 /* overload */;
+	__property Androidapi::Jni::Javatypes::_di_JString ACTION_SYNC_STATUS = {read=_GetACTION_SYNC_STATUS};
+	__property Androidapi::Jni::Javatypes::_di_JString CATEGORY_CAST = {read=_GetCATEGORY_CAST};
+	__property Androidapi::Jni::Javatypes::_di_JString DEFAULT_MEDIA_RECEIVER_APPLICATION_ID = {read=_GetDEFAULT_MEDIA_RECEIVER_APPLICATION_ID};
+	__property int ERROR_CODE_REQUEST_FAILED = {read=_GetERROR_CODE_REQUEST_FAILED};
+	__property int ERROR_CODE_SESSION_START_FAILED = {read=_GetERROR_CODE_SESSION_START_FAILED};
+	__property int ERROR_CODE_TEMPORARILY_DISCONNECTED = {read=_GetERROR_CODE_TEMPORARILY_DISCONNECTED};
+	__property Androidapi::Jni::Javatypes::_di_JString EXTRA_CAST_APPLICATION_ID = {read=_GetEXTRA_CAST_APPLICATION_ID};
+	__property Androidapi::Jni::Javatypes::_di_JString EXTRA_CAST_RELAUNCH_APPLICATION = {read=_GetEXTRA_CAST_RELAUNCH_APPLICATION};
+	__property Androidapi::Jni::Javatypes::_di_JString EXTRA_CAST_STOP_APPLICATION_WHEN_SESSION_ENDS = {read=_GetEXTRA_CAST_STOP_APPLICATION_WHEN_SESSION_ENDS};
+	__property Androidapi::Jni::Javatypes::_di_JString EXTRA_CUSTOM_DATA = {read=_GetEXTRA_CUSTOM_DATA};
+	__property Androidapi::Jni::Javatypes::_di_JString EXTRA_DEBUG_LOGGING_ENABLED = {read=_GetEXTRA_DEBUG_LOGGING_ENABLED};
+	__property Androidapi::Jni::Javatypes::_di_JString EXTRA_ERROR_CODE = {read=_GetEXTRA_ERROR_CODE};
+};
+
+__interface  INTERFACE_UUID("{AB265802-4D4F-4DC1-AC8F-E6F744523975}") JCastMediaControlIntent  : public Androidapi::Jni::Javatypes::JObject 
+{
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJCastMediaControlIntent : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JCastMediaControlIntentClass,_di_JCastMediaControlIntent>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JCastMediaControlIntentClass,_di_JCastMediaControlIntent> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJCastMediaControlIntent() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JCastMediaControlIntentClass,_di_JCastMediaControlIntent>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJCastMediaControlIntent() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{B9DBD5E3-7FF4-45D3-A2C0-67D3701D02F7}") JCastStatusCodesClass  : public Androidapi::Jni::Javatypes::JObjectClass 
+{
+	virtual int __cdecl _GetAPPLICATION_NOT_FOUND() = 0 ;
+	virtual int __cdecl _GetAPPLICATION_NOT_RUNNING() = 0 ;
+	virtual int __cdecl _GetAUTHENTICATION_FAILED() = 0 ;
+	virtual int __cdecl _GetCANCELED() = 0 ;
+	virtual int __cdecl _GetINTERNAL_ERROR() = 0 ;
+	virtual int __cdecl _GetINTERRUPTED() = 0 ;
+	virtual int __cdecl _GetINVALID_REQUEST() = 0 ;
+	virtual int __cdecl _GetMESSAGE_SEND_BUFFER_TOO_FULL() = 0 ;
+	virtual int __cdecl _GetMESSAGE_TOO_LARGE() = 0 ;
+	virtual int __cdecl _GetNETWORK_ERROR() = 0 ;
+	virtual int __cdecl _GetNOT_ALLOWED() = 0 ;
+	virtual int __cdecl _GetSUCCESS() = 0 ;
+	virtual int __cdecl _GetTIMEOUT() = 0 ;
+	virtual int __cdecl _GetUNKNOWN_ERROR() = 0 ;
+	__property int APPLICATION_NOT_FOUND = {read=_GetAPPLICATION_NOT_FOUND};
+	__property int APPLICATION_NOT_RUNNING = {read=_GetAPPLICATION_NOT_RUNNING};
+	__property int AUTHENTICATION_FAILED = {read=_GetAUTHENTICATION_FAILED};
+	__property int CANCELED = {read=_GetCANCELED};
+	__property int INTERNAL_ERROR = {read=_GetINTERNAL_ERROR};
+	__property int INTERRUPTED = {read=_GetINTERRUPTED};
+	__property int INVALID_REQUEST = {read=_GetINVALID_REQUEST};
+	__property int MESSAGE_SEND_BUFFER_TOO_FULL = {read=_GetMESSAGE_SEND_BUFFER_TOO_FULL};
+	__property int MESSAGE_TOO_LARGE = {read=_GetMESSAGE_TOO_LARGE};
+	__property int NETWORK_ERROR = {read=_GetNETWORK_ERROR};
+	__property int NOT_ALLOWED = {read=_GetNOT_ALLOWED};
+	__property int SUCCESS = {read=_GetSUCCESS};
+	__property int TIMEOUT = {read=_GetTIMEOUT};
+	__property int UNKNOWN_ERROR = {read=_GetUNKNOWN_ERROR};
+};
+
+__interface  INTERFACE_UUID("{A2B1BAC2-BC25-4BDC-A3B3-46D0CC87A64F}") JCastStatusCodes  : public Androidapi::Jni::Javatypes::JObject 
+{
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJCastStatusCodes : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JCastStatusCodesClass,_di_JCastStatusCodes>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JCastStatusCodesClass,_di_JCastStatusCodes> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJCastStatusCodes() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JCastStatusCodesClass,_di_JCastStatusCodes>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJCastStatusCodes() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{4C5AF59B-5590-42AA-B036-147628231C70}") JMediaInfoClass  : public Androidapi::Jni::Javatypes::JObjectClass 
+{
+	virtual int __cdecl _GetSTREAM_TYPE_BUFFERED() = 0 ;
+	virtual int __cdecl _GetSTREAM_TYPE_INVALID() = 0 ;
+	virtual int __cdecl _GetSTREAM_TYPE_LIVE() = 0 ;
+	virtual int __cdecl _GetSTREAM_TYPE_NONE() = 0 ;
+	__property int STREAM_TYPE_BUFFERED = {read=_GetSTREAM_TYPE_BUFFERED};
+	__property int STREAM_TYPE_INVALID = {read=_GetSTREAM_TYPE_INVALID};
+	__property int STREAM_TYPE_LIVE = {read=_GetSTREAM_TYPE_LIVE};
+	__property int STREAM_TYPE_NONE = {read=_GetSTREAM_TYPE_NONE};
+};
+
+__interface  INTERFACE_UUID("{25136F20-C7C0-4872-A2CD-68D451D1E862}") JMediaInfo  : public Androidapi::Jni::Javatypes::JObject 
+{
+	virtual Androidapi::Jni::Javatypes::_di_JJSONObject __cdecl cT() = 0 ;
+	HIDESBASE virtual bool __cdecl equals(Androidapi::Jni::Javatypes::_di_JObject other) = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl getContentId() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl getContentType() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JJSONObject __cdecl getCustomData() = 0 ;
+	virtual _di_JMediaMetadata __cdecl getMetadata() = 0 ;
+	virtual __int64 __cdecl getStreamDuration() = 0 ;
+	virtual int __cdecl getStreamType() = 0 ;
+	HIDESBASE virtual int __cdecl hashCode() = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJMediaInfo : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMediaInfoClass,_di_JMediaInfo>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMediaInfoClass,_di_JMediaInfo> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJMediaInfo() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMediaInfoClass,_di_JMediaInfo>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJMediaInfo() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{079C1A24-F256-47EC-88AE-0E27CF79C220}") JMediaInfo_BuilderClass  : public Androidapi::Jni::Javatypes::JObjectClass 
+{
+	HIDESBASE virtual _di_JMediaInfo_Builder __cdecl init(Androidapi::Jni::Javatypes::_di_JString contentId) = 0 ;
+};
+
+__interface  INTERFACE_UUID("{AA043ED1-1216-4065-B542-683FAED2490D}") JMediaInfo_Builder  : public Androidapi::Jni::Javatypes::JObject 
+{
+	virtual _di_JMediaInfo __cdecl build() = 0 ;
+	virtual _di_JMediaInfo_Builder __cdecl setContentType(Androidapi::Jni::Javatypes::_di_JString contentType) = 0 ;
+	virtual _di_JMediaInfo_Builder __cdecl setCustomData(Androidapi::Jni::Javatypes::_di_JJSONObject customData) = 0 ;
+	virtual _di_JMediaInfo_Builder __cdecl setMetadata(_di_JMediaMetadata metadata) = 0 ;
+	virtual _di_JMediaInfo_Builder __cdecl setStreamDuration(__int64 duration) = 0 ;
+	virtual _di_JMediaInfo_Builder __cdecl setStreamType(int streamType) = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJMediaInfo_Builder : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMediaInfo_BuilderClass,_di_JMediaInfo_Builder>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMediaInfo_BuilderClass,_di_JMediaInfo_Builder> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJMediaInfo_Builder() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMediaInfo_BuilderClass,_di_JMediaInfo_Builder>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJMediaInfo_Builder() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{51F15DFD-1B91-43AD-B028-57DFF7CBB5E9}") JMediaMetadataClass  : public Androidapi::Jni::Javatypes::JObjectClass 
+{
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetKEY_ALBUM_ARTIST() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetKEY_ALBUM_TITLE() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetKEY_ARTIST() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetKEY_BROADCAST_DATE() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetKEY_COMPOSER() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetKEY_CREATION_DATE() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetKEY_DISC_NUMBER() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetKEY_EPISODE_NUMBER() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetKEY_HEIGHT() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetKEY_LOCATION_LATITUDE() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetKEY_LOCATION_LONGITUDE() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetKEY_LOCATION_NAME() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetKEY_RELEASE_DATE() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetKEY_SEASON_NUMBER() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetKEY_SERIES_TITLE() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetKEY_STUDIO() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetKEY_SUBTITLE() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetKEY_TITLE() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetKEY_TRACK_NUMBER() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetKEY_WIDTH() = 0 ;
+	virtual int __cdecl _GetMEDIA_TYPE_GENERIC() = 0 ;
+	virtual int __cdecl _GetMEDIA_TYPE_MOVIE() = 0 ;
+	virtual int __cdecl _GetMEDIA_TYPE_MUSIC_TRACK() = 0 ;
+	virtual int __cdecl _GetMEDIA_TYPE_PHOTO() = 0 ;
+	virtual int __cdecl _GetMEDIA_TYPE_TV_SHOW() = 0 ;
+	virtual int __cdecl _GetMEDIA_TYPE_USER() = 0 ;
+	HIDESBASE virtual _di_JMediaMetadata __cdecl init() = 0 /* overload */;
+	HIDESBASE virtual _di_JMediaMetadata __cdecl init(int mediaType) = 0 /* overload */;
+	__property Androidapi::Jni::Javatypes::_di_JString KEY_ALBUM_ARTIST = {read=_GetKEY_ALBUM_ARTIST};
+	__property Androidapi::Jni::Javatypes::_di_JString KEY_ALBUM_TITLE = {read=_GetKEY_ALBUM_TITLE};
+	__property Androidapi::Jni::Javatypes::_di_JString KEY_ARTIST = {read=_GetKEY_ARTIST};
+	__property Androidapi::Jni::Javatypes::_di_JString KEY_BROADCAST_DATE = {read=_GetKEY_BROADCAST_DATE};
+	__property Androidapi::Jni::Javatypes::_di_JString KEY_COMPOSER = {read=_GetKEY_COMPOSER};
+	__property Androidapi::Jni::Javatypes::_di_JString KEY_CREATION_DATE = {read=_GetKEY_CREATION_DATE};
+	__property Androidapi::Jni::Javatypes::_di_JString KEY_DISC_NUMBER = {read=_GetKEY_DISC_NUMBER};
+	__property Androidapi::Jni::Javatypes::_di_JString KEY_EPISODE_NUMBER = {read=_GetKEY_EPISODE_NUMBER};
+	__property Androidapi::Jni::Javatypes::_di_JString KEY_HEIGHT = {read=_GetKEY_HEIGHT};
+	__property Androidapi::Jni::Javatypes::_di_JString KEY_LOCATION_LATITUDE = {read=_GetKEY_LOCATION_LATITUDE};
+	__property Androidapi::Jni::Javatypes::_di_JString KEY_LOCATION_LONGITUDE = {read=_GetKEY_LOCATION_LONGITUDE};
+	__property Androidapi::Jni::Javatypes::_di_JString KEY_LOCATION_NAME = {read=_GetKEY_LOCATION_NAME};
+	__property Androidapi::Jni::Javatypes::_di_JString KEY_RELEASE_DATE = {read=_GetKEY_RELEASE_DATE};
+	__property Androidapi::Jni::Javatypes::_di_JString KEY_SEASON_NUMBER = {read=_GetKEY_SEASON_NUMBER};
+	__property Androidapi::Jni::Javatypes::_di_JString KEY_SERIES_TITLE = {read=_GetKEY_SERIES_TITLE};
+	__property Androidapi::Jni::Javatypes::_di_JString KEY_STUDIO = {read=_GetKEY_STUDIO};
+	__property Androidapi::Jni::Javatypes::_di_JString KEY_SUBTITLE = {read=_GetKEY_SUBTITLE};
+	__property Androidapi::Jni::Javatypes::_di_JString KEY_TITLE = {read=_GetKEY_TITLE};
+	__property Androidapi::Jni::Javatypes::_di_JString KEY_TRACK_NUMBER = {read=_GetKEY_TRACK_NUMBER};
+	__property Androidapi::Jni::Javatypes::_di_JString KEY_WIDTH = {read=_GetKEY_WIDTH};
+	__property int MEDIA_TYPE_GENERIC = {read=_GetMEDIA_TYPE_GENERIC};
+	__property int MEDIA_TYPE_MOVIE = {read=_GetMEDIA_TYPE_MOVIE};
+	__property int MEDIA_TYPE_MUSIC_TRACK = {read=_GetMEDIA_TYPE_MUSIC_TRACK};
+	__property int MEDIA_TYPE_PHOTO = {read=_GetMEDIA_TYPE_PHOTO};
+	__property int MEDIA_TYPE_TV_SHOW = {read=_GetMEDIA_TYPE_TV_SHOW};
+	__property int MEDIA_TYPE_USER = {read=_GetMEDIA_TYPE_USER};
+};
+
+__interface  INTERFACE_UUID("{92FBCB86-A796-4BA0-AB2A-0ED83FD06AA3}") JMediaMetadata  : public Androidapi::Jni::Javatypes::JObject 
+{
+	virtual void __cdecl addImage(_di_JWebImage image) = 0 ;
+	virtual void __cdecl b(Androidapi::Jni::Javatypes::_di_JJSONObject P1) = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JJSONObject __cdecl cT() = 0 ;
+	virtual void __cdecl clear() = 0 ;
+	virtual void __cdecl clearImages() = 0 ;
+	virtual bool __cdecl containsKey(Androidapi::Jni::Javatypes::_di_JString key) = 0 ;
+	HIDESBASE virtual bool __cdecl equals(Androidapi::Jni::Javatypes::_di_JObject other) = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JCalendar __cdecl getDate(Androidapi::Jni::Javatypes::_di_JString key) = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl getDateAsString(Androidapi::Jni::Javatypes::_di_JString key) = 0 ;
+	virtual double __cdecl getDouble(Androidapi::Jni::Javatypes::_di_JString key) = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JList __cdecl getImages() = 0 ;
+	virtual int __cdecl getInt(Androidapi::Jni::Javatypes::_di_JString key) = 0 ;
+	virtual int __cdecl getMediaType() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl getString(Androidapi::Jni::Javatypes::_di_JString key) = 0 ;
+	virtual bool __cdecl hasImages() = 0 ;
+	HIDESBASE virtual int __cdecl hashCode() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JSet __cdecl keySet() = 0 ;
+	virtual void __cdecl putDate(Androidapi::Jni::Javatypes::_di_JString key, Androidapi::Jni::Javatypes::_di_JCalendar value) = 0 ;
+	virtual void __cdecl putDouble(Androidapi::Jni::Javatypes::_di_JString key, double value) = 0 ;
+	virtual void __cdecl putInt(Androidapi::Jni::Javatypes::_di_JString key, int value) = 0 ;
+	virtual void __cdecl putString(Androidapi::Jni::Javatypes::_di_JString key, Androidapi::Jni::Javatypes::_di_JString value) = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJMediaMetadata : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMediaMetadataClass,_di_JMediaMetadata>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMediaMetadataClass,_di_JMediaMetadata> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJMediaMetadata() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMediaMetadataClass,_di_JMediaMetadata>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJMediaMetadata() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{7074DE1A-30F3-4342-98E6-3E7ED4B450C5}") JMediaMetadata_aClass  : public Androidapi::Jni::Javatypes::JObjectClass 
+{
+	HIDESBASE virtual _di_JMediaMetadata_a __cdecl init() = 0 ;
+};
+
+__interface  INTERFACE_UUID("{1E212906-E742-4837-A7FC-8FA036ABF98A}") JMediaMetadata_a  : public Androidapi::Jni::Javatypes::JObject 
+{
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl M(Androidapi::Jni::Javatypes::_di_JString P1) = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl N(Androidapi::Jni::Javatypes::_di_JString P1) = 0 ;
+	virtual int __cdecl O(Androidapi::Jni::Javatypes::_di_JString P1) = 0 ;
+	virtual _di_JMediaMetadata_a __cdecl a(Androidapi::Jni::Javatypes::_di_JString P1, Androidapi::Jni::Javatypes::_di_JString P2, int P3) = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJMediaMetadata_a : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMediaMetadata_aClass,_di_JMediaMetadata_a>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMediaMetadata_aClass,_di_JMediaMetadata_a> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJMediaMetadata_a() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMediaMetadata_aClass,_di_JMediaMetadata_a>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJMediaMetadata_a() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{EEF9568F-8668-4744-9288-199E8AE4C2FD}") JMediaStatusClass  : public Androidapi::Jni::Javatypes::JObjectClass 
+{
+	virtual __int64 __cdecl _GetCOMMAND_PAUSE() = 0 ;
+	virtual __int64 __cdecl _GetCOMMAND_SEEK() = 0 ;
+	virtual __int64 __cdecl _GetCOMMAND_SET_VOLUME() = 0 ;
+	virtual __int64 __cdecl _GetCOMMAND_SKIP_BACKWARD() = 0 ;
+	virtual __int64 __cdecl _GetCOMMAND_SKIP_FORWARD() = 0 ;
+	virtual __int64 __cdecl _GetCOMMAND_TOGGLE_MUTE() = 0 ;
+	virtual int __cdecl _GetIDLE_REASON_CANCELED() = 0 ;
+	virtual int __cdecl _GetIDLE_REASON_ERROR() = 0 ;
+	virtual int __cdecl _GetIDLE_REASON_FINISHED() = 0 ;
+	virtual int __cdecl _GetIDLE_REASON_INTERRUPTED() = 0 ;
+	virtual int __cdecl _GetIDLE_REASON_NONE() = 0 ;
+	virtual int __cdecl _GetPLAYER_STATE_BUFFERING() = 0 ;
+	virtual int __cdecl _GetPLAYER_STATE_IDLE() = 0 ;
+	virtual int __cdecl _GetPLAYER_STATE_PAUSED() = 0 ;
+	virtual int __cdecl _GetPLAYER_STATE_PLAYING() = 0 ;
+	virtual int __cdecl _GetPLAYER_STATE_UNKNOWN() = 0 ;
+	HIDESBASE virtual _di_JMediaStatus __cdecl init(Androidapi::Jni::Javatypes::_di_JJSONObject json) = 0 ;
+	__property __int64 COMMAND_PAUSE = {read=_GetCOMMAND_PAUSE};
+	__property __int64 COMMAND_SEEK = {read=_GetCOMMAND_SEEK};
+	__property __int64 COMMAND_SET_VOLUME = {read=_GetCOMMAND_SET_VOLUME};
+	__property __int64 COMMAND_SKIP_BACKWARD = {read=_GetCOMMAND_SKIP_BACKWARD};
+	__property __int64 COMMAND_SKIP_FORWARD = {read=_GetCOMMAND_SKIP_FORWARD};
+	__property __int64 COMMAND_TOGGLE_MUTE = {read=_GetCOMMAND_TOGGLE_MUTE};
+	__property int IDLE_REASON_CANCELED = {read=_GetIDLE_REASON_CANCELED};
+	__property int IDLE_REASON_ERROR = {read=_GetIDLE_REASON_ERROR};
+	__property int IDLE_REASON_FINISHED = {read=_GetIDLE_REASON_FINISHED};
+	__property int IDLE_REASON_INTERRUPTED = {read=_GetIDLE_REASON_INTERRUPTED};
+	__property int IDLE_REASON_NONE = {read=_GetIDLE_REASON_NONE};
+	__property int PLAYER_STATE_BUFFERING = {read=_GetPLAYER_STATE_BUFFERING};
+	__property int PLAYER_STATE_IDLE = {read=_GetPLAYER_STATE_IDLE};
+	__property int PLAYER_STATE_PAUSED = {read=_GetPLAYER_STATE_PAUSED};
+	__property int PLAYER_STATE_PLAYING = {read=_GetPLAYER_STATE_PLAYING};
+	__property int PLAYER_STATE_UNKNOWN = {read=_GetPLAYER_STATE_UNKNOWN};
+};
+
+__interface  INTERFACE_UUID("{FBC913B4-7CB0-4540-9791-DFF88D16F092}") JMediaStatus  : public Androidapi::Jni::Javatypes::JObject 
+{
+	virtual int __cdecl a(Androidapi::Jni::Javatypes::_di_JJSONObject P1, int P2) = 0 ;
+	virtual __int64 __cdecl cU() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JJSONObject __cdecl getCustomData() = 0 ;
+	virtual int __cdecl getIdleReason() = 0 ;
+	virtual _di_JMediaInfo __cdecl getMediaInfo() = 0 ;
+	virtual double __cdecl getPlaybackRate() = 0 ;
+	virtual int __cdecl getPlayerState() = 0 ;
+	virtual __int64 __cdecl getStreamPosition() = 0 ;
+	virtual double __cdecl getStreamVolume() = 0 ;
+	virtual bool __cdecl isMediaCommandSupported(__int64 mediaCommand) = 0 ;
+	virtual bool __cdecl isMute() = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJMediaStatus : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMediaStatusClass,_di_JMediaStatus>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMediaStatusClass,_di_JMediaStatus> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJMediaStatus() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMediaStatusClass,_di_JMediaStatus>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJMediaStatus() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{978A076F-412D-4AFD-9437-C738014F4FA4}") JRemoteMediaPlayerClass  : public Androidapi::Jni::Javatypes::JObjectClass 
+{
+	virtual int __cdecl _GetRESUME_STATE_PAUSE() = 0 ;
+	virtual int __cdecl _GetRESUME_STATE_PLAY() = 0 ;
+	virtual int __cdecl _GetRESUME_STATE_UNCHANGED() = 0 ;
+	virtual int __cdecl _GetSTATUS_CANCELED() = 0 ;
+	virtual int __cdecl _GetSTATUS_FAILED() = 0 ;
+	virtual int __cdecl _GetSTATUS_REPLACED() = 0 ;
+	virtual int __cdecl _GetSTATUS_SUCCEEDED() = 0 ;
+	virtual int __cdecl _GetSTATUS_TIMED_OUT() = 0 ;
+	HIDESBASE virtual _di_JRemoteMediaPlayer __cdecl init() = 0 ;
+	__property int RESUME_STATE_PAUSE = {read=_GetRESUME_STATE_PAUSE};
+	__property int RESUME_STATE_PLAY = {read=_GetRESUME_STATE_PLAY};
+	__property int RESUME_STATE_UNCHANGED = {read=_GetRESUME_STATE_UNCHANGED};
+	__property int STATUS_CANCELED = {read=_GetSTATUS_CANCELED};
+	__property int STATUS_FAILED = {read=_GetSTATUS_FAILED};
+	__property int STATUS_REPLACED = {read=_GetSTATUS_REPLACED};
+	__property int STATUS_SUCCEEDED = {read=_GetSTATUS_SUCCEEDED};
+	__property int STATUS_TIMED_OUT = {read=_GetSTATUS_TIMED_OUT};
+};
+
+__interface  INTERFACE_UUID("{2A1A9AC4-0B19-4608-81C6-54605C71589C}") JRemoteMediaPlayer  : public Androidapi::Jni::Javatypes::JObject 
+{
+	virtual __int64 __cdecl getApproximateStreamPosition() = 0 ;
+	virtual _di_JMediaInfo __cdecl getMediaInfo() = 0 ;
+	virtual _di_JMediaStatus __cdecl getMediaStatus() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl getNamespace() = 0 ;
+	virtual __int64 __cdecl getStreamDuration() = 0 ;
+	virtual _di_JPendingResult __cdecl load(_di_JGoogleApiClient apiClient, _di_JMediaInfo mediaInfo) = 0 /* overload */;
+	virtual _di_JPendingResult __cdecl load(_di_JGoogleApiClient apiClient, _di_JMediaInfo mediaInfo, bool autoplay) = 0 /* overload */;
+	virtual _di_JPendingResult __cdecl load(_di_JGoogleApiClient apiClient, _di_JMediaInfo mediaInfo, bool autoplay, __int64 playPosition) = 0 /* overload */;
+	virtual _di_JPendingResult __cdecl load(_di_JGoogleApiClient apiClient, _di_JMediaInfo mediaInfo, bool autoplay, __int64 playPosition, Androidapi::Jni::Javatypes::_di_JJSONObject customData) = 0 /* overload */;
+	virtual void __cdecl onMessageReceived(_di_JCastDevice castDevice, Androidapi::Jni::Javatypes::_di_JString Namespace, Androidapi::Jni::Javatypes::_di_JString message) = 0 ;
+	virtual _di_JPendingResult __cdecl pause(_di_JGoogleApiClient apiClient) = 0 /* overload */;
+	virtual _di_JPendingResult __cdecl pause(_di_JGoogleApiClient apiClient, Androidapi::Jni::Javatypes::_di_JJSONObject customData) = 0 /* overload */;
+	virtual _di_JPendingResult __cdecl play(_di_JGoogleApiClient apiClient) = 0 /* overload */;
+	virtual _di_JPendingResult __cdecl play(_di_JGoogleApiClient apiClient, Androidapi::Jni::Javatypes::_di_JJSONObject customData) = 0 /* overload */;
+	virtual _di_JPendingResult __cdecl requestStatus(_di_JGoogleApiClient apiClient) = 0 ;
+	virtual _di_JPendingResult __cdecl seek(_di_JGoogleApiClient apiClient, __int64 position) = 0 /* overload */;
+	virtual _di_JPendingResult __cdecl seek(_di_JGoogleApiClient apiClient, __int64 position, int resumeState) = 0 /* overload */;
+	virtual _di_JPendingResult __cdecl seek(_di_JGoogleApiClient apiClient, __int64 position, int resumeState, Androidapi::Jni::Javatypes::_di_JJSONObject customData) = 0 /* overload */;
+	virtual void __cdecl setOnMetadataUpdatedListener(_di_JRemoteMediaPlayer_OnMetadataUpdatedListener listener) = 0 ;
+	virtual void __cdecl setOnStatusUpdatedListener(_di_JRemoteMediaPlayer_OnStatusUpdatedListener listener) = 0 ;
+	virtual _di_JPendingResult __cdecl setStreamMute(_di_JGoogleApiClient apiClient, bool muteState) = 0 /* overload */;
+	virtual _di_JPendingResult __cdecl setStreamMute(_di_JGoogleApiClient apiClient, bool muteState, Androidapi::Jni::Javatypes::_di_JJSONObject customData) = 0 /* overload */;
+	virtual _di_JPendingResult __cdecl setStreamVolume(_di_JGoogleApiClient apiClient, double volume) = 0 /* overload */;
+	virtual _di_JPendingResult __cdecl setStreamVolume(_di_JGoogleApiClient apiClient, double volume, Androidapi::Jni::Javatypes::_di_JJSONObject customData) = 0 /* overload */;
+	virtual _di_JPendingResult __cdecl stop(_di_JGoogleApiClient apiClient) = 0 /* overload */;
+	virtual _di_JPendingResult __cdecl stop(_di_JGoogleApiClient apiClient, Androidapi::Jni::Javatypes::_di_JJSONObject customData) = 0 /* overload */;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJRemoteMediaPlayer : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JRemoteMediaPlayerClass,_di_JRemoteMediaPlayer>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JRemoteMediaPlayerClass,_di_JRemoteMediaPlayer> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJRemoteMediaPlayer() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JRemoteMediaPlayerClass,_di_JRemoteMediaPlayer>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJRemoteMediaPlayer() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{E961CD75-C1FE-4D75-95F3-3408C266116F}") JRemoteMediaPlayer_MediaChannelResultClass  : public Japi_ResultClass 
+{
+	
+};
+
+__interface  INTERFACE_UUID("{57045A6A-10F1-49DD-B11E-A02C07E359B9}") JRemoteMediaPlayer_MediaChannelResult  : public Japi_Result 
+{
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJRemoteMediaPlayer_MediaChannelResult : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JRemoteMediaPlayer_MediaChannelResultClass,_di_JRemoteMediaPlayer_MediaChannelResult>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JRemoteMediaPlayer_MediaChannelResultClass,_di_JRemoteMediaPlayer_MediaChannelResult> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJRemoteMediaPlayer_MediaChannelResult() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JRemoteMediaPlayer_MediaChannelResultClass,_di_JRemoteMediaPlayer_MediaChannelResult>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJRemoteMediaPlayer_MediaChannelResult() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{73F2FDC3-7B35-4E64-8E8B-313217221771}") JRemoteMediaPlayer_OnMetadataUpdatedListenerClass  : public Androidapi::Jnibridge::IJavaClass 
+{
+	
+};
+
+__interface  INTERFACE_UUID("{FD43EA62-B953-4F95-99F7-D0180F1E14D0}") JRemoteMediaPlayer_OnMetadataUpdatedListener  : public Androidapi::Jnibridge::IJavaInstance 
+{
+	virtual void __cdecl onMetadataUpdated() = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJRemoteMediaPlayer_OnMetadataUpdatedListener : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JRemoteMediaPlayer_OnMetadataUpdatedListenerClass,_di_JRemoteMediaPlayer_OnMetadataUpdatedListener>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JRemoteMediaPlayer_OnMetadataUpdatedListenerClass,_di_JRemoteMediaPlayer_OnMetadataUpdatedListener> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJRemoteMediaPlayer_OnMetadataUpdatedListener() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JRemoteMediaPlayer_OnMetadataUpdatedListenerClass,_di_JRemoteMediaPlayer_OnMetadataUpdatedListener>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJRemoteMediaPlayer_OnMetadataUpdatedListener() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{82854D22-E9C1-448D-BF05-70577D4A8CD5}") JRemoteMediaPlayer_OnStatusUpdatedListenerClass  : public Androidapi::Jnibridge::IJavaClass 
+{
+	
+};
+
+__interface  INTERFACE_UUID("{C1C290AE-2BFE-4887-A287-2F6A357ACA6E}") JRemoteMediaPlayer_OnStatusUpdatedListener  : public Androidapi::Jnibridge::IJavaInstance 
+{
+	virtual void __cdecl onStatusUpdated() = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJRemoteMediaPlayer_OnStatusUpdatedListener : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JRemoteMediaPlayer_OnStatusUpdatedListenerClass,_di_JRemoteMediaPlayer_OnStatusUpdatedListener>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JRemoteMediaPlayer_OnStatusUpdatedListenerClass,_di_JRemoteMediaPlayer_OnStatusUpdatedListener> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJRemoteMediaPlayer_OnStatusUpdatedListener() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JRemoteMediaPlayer_OnStatusUpdatedListenerClass,_di_JRemoteMediaPlayer_OnStatusUpdatedListener>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJRemoteMediaPlayer_OnStatusUpdatedListener() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{911C15A8-C95E-451F-8179-C537DAEEF9D5}") JAccountPickerClass  : public Androidapi::Jni::Javatypes::JObjectClass 
+{
+	virtual Androidapi::Jni::Graphicscontentviewtext::_di_JIntent __cdecl a(Androidapi::Jni::Accounts::_di_JAccount P1, Androidapi::Jni::Javatypes::_di_JArrayList P2, Androidapi::Jnibridge::TJavaObjectArray__1<Androidapi::Jni::Javatypes::_di_JString>* P3, bool P4, Androidapi::Jni::Javatypes::_di_JString P5, Androidapi::Jni::Javatypes::_di_JString P6, Androidapi::Jnibridge::TJavaObjectArray__1<Androidapi::Jni::Javatypes::_di_JString>* P7, Androidapi::Jni::Os::_di_JBundle P8, bool P9) = 0 /* overload */;
+	virtual Androidapi::Jni::Graphicscontentviewtext::_di_JIntent __cdecl a(Androidapi::Jni::Accounts::_di_JAccount P1, Androidapi::Jni::Javatypes::_di_JArrayList P2, Androidapi::Jnibridge::TJavaObjectArray__1<Androidapi::Jni::Javatypes::_di_JString>* P3, bool P4, Androidapi::Jni::Javatypes::_di_JString P5, Androidapi::Jni::Javatypes::_di_JString P6, Androidapi::Jnibridge::TJavaObjectArray__1<Androidapi::Jni::Javatypes::_di_JString>* P7, Androidapi::Jni::Os::_di_JBundle P8, bool P9, int P10, int P11) = 0 /* overload */;
+	virtual Androidapi::Jni::Graphicscontentviewtext::_di_JIntent __cdecl newChooseAccountIntent(Androidapi::Jni::Accounts::_di_JAccount selectedAccount, Androidapi::Jni::Javatypes::_di_JArrayList allowableAccounts, Androidapi::Jnibridge::TJavaObjectArray__1<Androidapi::Jni::Javatypes::_di_JString>* allowableAccountTypes, bool alwaysPromptForAccount, Androidapi::Jni::Javatypes::_di_JString descriptionOverrideText, Androidapi::Jni::Javatypes::_di_JString addAccountAuthTokenType, Androidapi::Jnibridge::TJavaObjectArray__1<Androidapi::Jni::Javatypes::_di_JString>* addAccountRequiredFeatures, Androidapi::Jni::Os::_di_JBundle addAccountOptions) = 0 ;
+};
+
+__interface  INTERFACE_UUID("{B0B75FAA-A0D7-45C1-A0BC-FF63522ED979}") JAccountPicker  : public Androidapi::Jni::Javatypes::JObject 
+{
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJAccountPicker : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JAccountPickerClass,_di_JAccountPicker>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JAccountPickerClass,_di_JAccountPicker> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJAccountPicker() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JAccountPickerClass,_di_JAccountPicker>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJAccountPicker() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{4A2A7E79-F9D7-4636-A3CF-C291BEF18896}") JConnectionResultClass  : public Androidapi::Jni::Javatypes::JObjectClass 
+{
+	virtual int __cdecl _GetCANCELED() = 0 ;
+	virtual int __cdecl _GetDATE_INVALID() = 0 ;
+	virtual int __cdecl _GetDEVELOPER_ERROR() = 0 ;
+	virtual int __cdecl _GetDRIVE_EXTERNAL_STORAGE_REQUIRED() = 0 ;
+	virtual int __cdecl _GetINTERNAL_ERROR() = 0 ;
+	virtual int __cdecl _GetINTERRUPTED() = 0 ;
+	virtual int __cdecl _GetINVALID_ACCOUNT() = 0 ;
+	virtual int __cdecl _GetLICENSE_CHECK_FAILED() = 0 ;
+	virtual int __cdecl _GetNETWORK_ERROR() = 0 ;
+	virtual int __cdecl _GetRESOLUTION_REQUIRED() = 0 ;
+	virtual int __cdecl _GetSERVICE_DISABLED() = 0 ;
+	virtual int __cdecl _GetSERVICE_INVALID() = 0 ;
+	virtual int __cdecl _GetSERVICE_MISSING() = 0 ;
+	virtual int __cdecl _GetSERVICE_VERSION_UPDATE_REQUIRED() = 0 ;
+	virtual int __cdecl _GetSIGN_IN_REQUIRED() = 0 ;
+	virtual int __cdecl _GetSUCCESS() = 0 ;
+	virtual int __cdecl _GetTIMEOUT() = 0 ;
+	virtual _di_JConnectionResult __cdecl _GetyI() = 0 ;
+	HIDESBASE virtual _di_JConnectionResult __cdecl init(int statusCode, Androidapi::Jni::App::_di_JPendingIntent pendingIntent) = 0 ;
+	__property int CANCELED = {read=_GetCANCELED};
+	__property int DATE_INVALID = {read=_GetDATE_INVALID};
+	__property int DEVELOPER_ERROR = {read=_GetDEVELOPER_ERROR};
+	__property int DRIVE_EXTERNAL_STORAGE_REQUIRED = {read=_GetDRIVE_EXTERNAL_STORAGE_REQUIRED};
+	__property int INTERNAL_ERROR = {read=_GetINTERNAL_ERROR};
+	__property int INTERRUPTED = {read=_GetINTERRUPTED};
+	__property int INVALID_ACCOUNT = {read=_GetINVALID_ACCOUNT};
+	__property int LICENSE_CHECK_FAILED = {read=_GetLICENSE_CHECK_FAILED};
+	__property int NETWORK_ERROR = {read=_GetNETWORK_ERROR};
+	__property int RESOLUTION_REQUIRED = {read=_GetRESOLUTION_REQUIRED};
+	__property int SERVICE_DISABLED = {read=_GetSERVICE_DISABLED};
+	__property int SERVICE_INVALID = {read=_GetSERVICE_INVALID};
+	__property int SERVICE_MISSING = {read=_GetSERVICE_MISSING};
+	__property int SERVICE_VERSION_UPDATE_REQUIRED = {read=_GetSERVICE_VERSION_UPDATE_REQUIRED};
+	__property int SIGN_IN_REQUIRED = {read=_GetSIGN_IN_REQUIRED};
+	__property int SUCCESS = {read=_GetSUCCESS};
+	__property int TIMEOUT = {read=_GetTIMEOUT};
+	__property _di_JConnectionResult yI = {read=_GetyI};
+};
+
+__interface  INTERFACE_UUID("{A6C69B94-8D31-4C7B-9001-1DDF4A76D784}") JConnectionResult  : public Androidapi::Jni::Javatypes::JObject 
+{
+	virtual int __cdecl getErrorCode() = 0 ;
+	virtual Androidapi::Jni::App::_di_JPendingIntent __cdecl getResolution() = 0 ;
+	virtual bool __cdecl hasResolution() = 0 ;
+	virtual bool __cdecl isSuccess() = 0 ;
+	virtual void __cdecl startResolutionForResult(Androidapi::Jni::App::_di_JActivity activity, int requestCode) = 0 ;
+	HIDESBASE virtual Androidapi::Jni::Javatypes::_di_JString __cdecl toString() = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJConnectionResult : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JConnectionResultClass,_di_JConnectionResult>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JConnectionResultClass,_di_JConnectionResult> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJConnectionResult() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JConnectionResultClass,_di_JConnectionResult>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJConnectionResult() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{7A49EA83-0965-4F8A-84CE-1754BEBB46E0}") JErrorDialogFragmentClass  : public Androidapi::Jni::App::JDialogFragmentClass 
+{
+	HIDESBASE virtual _di_JErrorDialogFragment __cdecl init() = 0 ;
+	virtual _di_JErrorDialogFragment __cdecl newInstance(Androidapi::Jni::App::_di_JDialog dialog) = 0 /* overload */;
+	virtual _di_JErrorDialogFragment __cdecl newInstance(Androidapi::Jni::App::_di_JDialog dialog, Androidapi::Jni::Graphicscontentviewtext::_di_JDialogInterface_OnCancelListener cancelListener) = 0 /* overload */;
+};
+
+__interface  INTERFACE_UUID("{394601FA-16C0-460F-BB3F-210C6C6F6E5B}") JErrorDialogFragment  : public Androidapi::Jni::App::JDialogFragment 
+{
+	HIDESBASE virtual void __cdecl onCancel(Androidapi::Jni::Graphicscontentviewtext::_di_JDialogInterface dialog) = 0 ;
+	HIDESBASE virtual Androidapi::Jni::App::_di_JDialog __cdecl onCreateDialog(Androidapi::Jni::Os::_di_JBundle savedInstanceState) = 0 ;
+	HIDESBASE virtual void __cdecl show(Androidapi::Jni::App::_di_JFragmentManager manager, Androidapi::Jni::Javatypes::_di_JString tag) = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJErrorDialogFragment : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JErrorDialogFragmentClass,_di_JErrorDialogFragment>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JErrorDialogFragmentClass,_di_JErrorDialogFragment> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJErrorDialogFragment() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JErrorDialogFragmentClass,_di_JErrorDialogFragment>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJErrorDialogFragment() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{9FF85676-EBAE-4D2E-913C-E8EF99D1A388}") JGooglePlayServicesClientClass  : public Androidapi::Jnibridge::IJavaClass 
+{
+	
+};
+
+__interface  INTERFACE_UUID("{70AFC0B8-8BC6-4BEA-88E4-CE8DB7F8F3CB}") JGooglePlayServicesClient  : public Androidapi::Jnibridge::IJavaInstance 
+{
+	virtual void __cdecl connect() = 0 ;
+	virtual void __cdecl disconnect() = 0 ;
+	virtual bool __cdecl isConnected() = 0 ;
+	virtual bool __cdecl isConnecting() = 0 ;
+	virtual bool __cdecl isConnectionCallbacksRegistered(_di_JGooglePlayServicesClient_ConnectionCallbacks P1) = 0 ;
+	virtual bool __cdecl isConnectionFailedListenerRegistered(_di_JGooglePlayServicesClient_OnConnectionFailedListener P1) = 0 ;
+	virtual void __cdecl registerConnectionCallbacks(_di_JGooglePlayServicesClient_ConnectionCallbacks P1) = 0 ;
+	virtual void __cdecl registerConnectionFailedListener(_di_JGooglePlayServicesClient_OnConnectionFailedListener P1) = 0 ;
+	virtual void __cdecl unregisterConnectionCallbacks(_di_JGooglePlayServicesClient_ConnectionCallbacks P1) = 0 ;
+	virtual void __cdecl unregisterConnectionFailedListener(_di_JGooglePlayServicesClient_OnConnectionFailedListener P1) = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJGooglePlayServicesClient : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JGooglePlayServicesClientClass,_di_JGooglePlayServicesClient>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JGooglePlayServicesClientClass,_di_JGooglePlayServicesClient> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJGooglePlayServicesClient() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JGooglePlayServicesClientClass,_di_JGooglePlayServicesClient>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJGooglePlayServicesClient() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{2830C271-7F66-4DA7-AD93-026E416C3FCC}") JGooglePlayServicesClient_ConnectionCallbacksClass  : public Androidapi::Jnibridge::IJavaClass 
+{
+	
+};
+
+__interface  INTERFACE_UUID("{4FB49886-F762-4DB3-A74C-75B5AF669744}") JGooglePlayServicesClient_ConnectionCallbacks  : public Androidapi::Jnibridge::IJavaInstance 
+{
+	virtual void __cdecl onConnected(Androidapi::Jni::Os::_di_JBundle P1) = 0 ;
+	virtual void __cdecl onDisconnected() = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJGooglePlayServicesClient_ConnectionCallbacks : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JGooglePlayServicesClient_ConnectionCallbacksClass,_di_JGooglePlayServicesClient_ConnectionCallbacks>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JGooglePlayServicesClient_ConnectionCallbacksClass,_di_JGooglePlayServicesClient_ConnectionCallbacks> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJGooglePlayServicesClient_ConnectionCallbacks() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JGooglePlayServicesClient_ConnectionCallbacksClass,_di_JGooglePlayServicesClient_ConnectionCallbacks>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJGooglePlayServicesClient_ConnectionCallbacks() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{76F1132D-CE19-4A91-B88D-15CCD337CEA6}") JGooglePlayServicesClient_OnConnectionFailedListenerClass  : public Androidapi::Jnibridge::IJavaClass 
+{
+	
+};
+
+__interface  INTERFACE_UUID("{00602635-A990-45A8-AE1E-037B00F8AD9B}") JGooglePlayServicesClient_OnConnectionFailedListener  : public Androidapi::Jnibridge::IJavaInstance 
+{
+	virtual void __cdecl onConnectionFailed(_di_JConnectionResult P1) = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJGooglePlayServicesClient_OnConnectionFailedListener : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JGooglePlayServicesClient_OnConnectionFailedListenerClass,_di_JGooglePlayServicesClient_OnConnectionFailedListener>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JGooglePlayServicesClient_OnConnectionFailedListenerClass,_di_JGooglePlayServicesClient_OnConnectionFailedListener> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJGooglePlayServicesClient_OnConnectionFailedListener() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JGooglePlayServicesClient_OnConnectionFailedListenerClass,_di_JGooglePlayServicesClient_OnConnectionFailedListener>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJGooglePlayServicesClient_OnConnectionFailedListener() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{B8297902-69BD-468A-BDB6-9E45162CD60B}") JGooglePlayServicesNotAvailableExceptionClass  : public Androidapi::Jni::Javatypes::JExceptionClass 
+{
+	HIDESBASE virtual _di_JGooglePlayServicesNotAvailableException __cdecl init(int errorCode) = 0 ;
+};
+
+__interface  INTERFACE_UUID("{9F44824B-11B1-42A6-B5B4-D0660A1EA463}") JGooglePlayServicesNotAvailableException  : public Androidapi::Jni::Javatypes::JException 
+{
+	virtual int __cdecl _GeterrorCode() = 0 ;
+	__property int errorCode = {read=_GeterrorCode};
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJGooglePlayServicesNotAvailableException : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JGooglePlayServicesNotAvailableExceptionClass,_di_JGooglePlayServicesNotAvailableException>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JGooglePlayServicesNotAvailableExceptionClass,_di_JGooglePlayServicesNotAvailableException> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJGooglePlayServicesNotAvailableException() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JGooglePlayServicesNotAvailableExceptionClass,_di_JGooglePlayServicesNotAvailableException>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJGooglePlayServicesNotAvailableException() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{9024EA92-BA9C-420C-871B-482511E2E366}") JUserRecoverableExceptionClass  : public Androidapi::Jni::Javatypes::JExceptionClass 
+{
+	HIDESBASE virtual _di_JUserRecoverableException __cdecl init(Androidapi::Jni::Javatypes::_di_JString msg, Androidapi::Jni::Graphicscontentviewtext::_di_JIntent intent) = 0 ;
+};
+
+__interface  INTERFACE_UUID("{7F19F1E5-147E-4690-9C75-F2A7CFE1EAF3}") JUserRecoverableException  : public Androidapi::Jni::Javatypes::JException 
+{
+	virtual Androidapi::Jni::Graphicscontentviewtext::_di_JIntent __cdecl getIntent() = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJUserRecoverableException : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JUserRecoverableExceptionClass,_di_JUserRecoverableException>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JUserRecoverableExceptionClass,_di_JUserRecoverableException> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJUserRecoverableException() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JUserRecoverableExceptionClass,_di_JUserRecoverableException>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJUserRecoverableException() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{18FFB97E-3936-4548-A7B6-0F2D20FF49D5}") JGooglePlayServicesRepairableExceptionClass  : public JUserRecoverableExceptionClass 
+{
+	
+};
+
+__interface  INTERFACE_UUID("{F6CD5C46-329C-424C-B011-DCB95AB209F9}") JGooglePlayServicesRepairableException  : public JUserRecoverableException 
+{
+	virtual int __cdecl getConnectionStatusCode() = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJGooglePlayServicesRepairableException : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JGooglePlayServicesRepairableExceptionClass,_di_JGooglePlayServicesRepairableException>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JGooglePlayServicesRepairableExceptionClass,_di_JGooglePlayServicesRepairableException> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJGooglePlayServicesRepairableException() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JGooglePlayServicesRepairableExceptionClass,_di_JGooglePlayServicesRepairableException>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJGooglePlayServicesRepairableException() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{DEE7FB7C-B1A2-4098-9E42-67A2CF856C16}") JGooglePlayServicesUtilClass  : public Androidapi::Jni::Javatypes::JObjectClass 
+{
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetGMS_ERROR_DIALOG() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetGOOGLE_PLAY_SERVICES_PACKAGE() = 0 ;
+	virtual int __cdecl _GetGOOGLE_PLAY_SERVICES_VERSION_CODE() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetGOOGLE_PLAY_STORE_PACKAGE() = 0 ;
+	virtual bool __cdecl _GetyS() = 0 ;
+	virtual void __cdecl _SetyS(bool Value) = 0 ;
+	virtual bool __cdecl _GetyT() = 0 ;
+	virtual void __cdecl _SetyT(bool Value) = 0 ;
+	virtual bool __cdecl a(Androidapi::Jni::Graphicscontentviewtext::_di_JResources P1) = 0 /* overload */;
+	virtual Androidapi::Jni::Graphicscontentviewtext::_di_JIntent __cdecl a(Androidapi::Jni::Graphicscontentviewtext::_di_JContext P1, int P2, int P3) = 0 /* overload */;
+	virtual Androidapi::Jni::App::_di_JDialog __cdecl a(int P1, Androidapi::Jni::App::_di_JActivity P2, int P3, Androidapi::Jni::Graphicscontentviewtext::_di_JDialogInterface_OnCancelListener P4, int P5) = 0 /* overload */;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl b(Androidapi::Jni::Graphicscontentviewtext::_di_JContext P1, int P2) = 0 /* overload */;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl b(Androidapi::Jni::Graphicscontentviewtext::_di_JContext P1, int P2, int P3) = 0 /* overload */;
+	virtual bool __cdecl Do() = 0 ;
+	virtual Androidapi::Jni::App::_di_JDialog __cdecl getErrorDialog(int errorCode, Androidapi::Jni::App::_di_JActivity activity, int requestCode) = 0 /* overload */;
+	virtual Androidapi::Jni::App::_di_JDialog __cdecl getErrorDialog(int errorCode, Androidapi::Jni::App::_di_JActivity activity, int requestCode, Androidapi::Jni::Graphicscontentviewtext::_di_JDialogInterface_OnCancelListener cancelListener) = 0 /* overload */;
+	virtual Androidapi::Jni::App::_di_JPendingIntent __cdecl getErrorPendingIntent(int errorCode, Androidapi::Jni::Graphicscontentviewtext::_di_JContext context, int requestCode) = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl getErrorString(int errorCode) = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl getOpenSourceSoftwareLicenseInfo(Androidapi::Jni::Graphicscontentviewtext::_di_JContext context) = 0 ;
+	virtual Androidapi::Jni::Graphicscontentviewtext::_di_JContext __cdecl getRemoteContext(Androidapi::Jni::Graphicscontentviewtext::_di_JContext context) = 0 ;
+	virtual Androidapi::Jni::Graphicscontentviewtext::_di_JResources __cdecl getRemoteResource(Androidapi::Jni::Graphicscontentviewtext::_di_JContext context) = 0 ;
+	virtual int __cdecl isGooglePlayServicesAvailable(Androidapi::Jni::Graphicscontentviewtext::_di_JContext context) = 0 ;
+	virtual bool __cdecl isUserRecoverableError(int errorCode) = 0 ;
+	virtual void __cdecl s(Androidapi::Jni::Graphicscontentviewtext::_di_JContext P1) = 0 ;
+	virtual bool __cdecl showErrorDialogFragment(int errorCode, Androidapi::Jni::App::_di_JActivity activity, int requestCode) = 0 /* overload */;
+	virtual bool __cdecl showErrorDialogFragment(int errorCode, Androidapi::Jni::App::_di_JActivity activity, int requestCode, Androidapi::Jni::Graphicscontentviewtext::_di_JDialogInterface_OnCancelListener cancelListener) = 0 /* overload */;
+	__property Androidapi::Jni::Javatypes::_di_JString GMS_ERROR_DIALOG = {read=_GetGMS_ERROR_DIALOG};
+	__property Androidapi::Jni::Javatypes::_di_JString GOOGLE_PLAY_SERVICES_PACKAGE = {read=_GetGOOGLE_PLAY_SERVICES_PACKAGE};
+	__property int GOOGLE_PLAY_SERVICES_VERSION_CODE = {read=_GetGOOGLE_PLAY_SERVICES_VERSION_CODE};
+	__property Androidapi::Jni::Javatypes::_di_JString GOOGLE_PLAY_STORE_PACKAGE = {read=_GetGOOGLE_PLAY_STORE_PACKAGE};
+	__property bool yS = {read=_GetyS, write=_SetyS};
+	__property bool yT = {read=_GetyT, write=_SetyT};
+};
+
+__interface  INTERFACE_UUID("{3549FA2E-E8D1-4F37-A21B-B5E10E6169D1}") JGooglePlayServicesUtil  : public Androidapi::Jni::Javatypes::JObject 
+{
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJGooglePlayServicesUtil : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JGooglePlayServicesUtilClass,_di_JGooglePlayServicesUtil>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JGooglePlayServicesUtilClass,_di_JGooglePlayServicesUtil> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJGooglePlayServicesUtil() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JGooglePlayServicesUtilClass,_di_JGooglePlayServicesUtil>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJGooglePlayServicesUtil() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{1044C4C8-7758-4235-AECE-92D3CD0D433A}") JScopesClass  : public Androidapi::Jni::Javatypes::JObjectClass 
+{
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetAPP_STATE() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetDRIVE_APPFOLDER() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetDRIVE_FILE() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetDRIVE_FULL() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetGAMES() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetPLUS_LOGIN() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetPLUS_ME() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetPROFILE() = 0 ;
+	__property Androidapi::Jni::Javatypes::_di_JString APP_STATE = {read=_GetAPP_STATE};
+	__property Androidapi::Jni::Javatypes::_di_JString DRIVE_APPFOLDER = {read=_GetDRIVE_APPFOLDER};
+	__property Androidapi::Jni::Javatypes::_di_JString DRIVE_FILE = {read=_GetDRIVE_FILE};
+	__property Androidapi::Jni::Javatypes::_di_JString DRIVE_FULL = {read=_GetDRIVE_FULL};
+	__property Androidapi::Jni::Javatypes::_di_JString GAMES = {read=_GetGAMES};
+	__property Androidapi::Jni::Javatypes::_di_JString PLUS_LOGIN = {read=_GetPLUS_LOGIN};
+	__property Androidapi::Jni::Javatypes::_di_JString PLUS_ME = {read=_GetPLUS_ME};
+	__property Androidapi::Jni::Javatypes::_di_JString PROFILE = {read=_GetPROFILE};
+};
+
+__interface  INTERFACE_UUID("{A9A538A4-79B6-4891-B22A-D5487A03C1CF}") JScopes  : public Androidapi::Jni::Javatypes::JObject 
+{
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJScopes : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JScopesClass,_di_JScopes>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JScopesClass,_di_JScopes> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJScopes() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JScopesClass,_di_JScopes>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJScopes() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{E2871683-3AFF-4060-8EA2-30A5CA64273E}") JSignInButtonClass  : public Androidapi::Jni::Widget::JFrameLayoutClass 
+{
+	virtual int __cdecl _GetCOLOR_DARK() = 0 ;
+	virtual int __cdecl _GetCOLOR_LIGHT() = 0 ;
+	virtual int __cdecl _GetSIZE_ICON_ONLY() = 0 ;
+	virtual int __cdecl _GetSIZE_STANDARD() = 0 ;
+	virtual int __cdecl _GetSIZE_WIDE() = 0 ;
+	HIDESBASE virtual _di_JSignInButton __cdecl init(Androidapi::Jni::Graphicscontentviewtext::_di_JContext context) = 0 /* overload */;
+	HIDESBASE virtual _di_JSignInButton __cdecl init(Androidapi::Jni::Graphicscontentviewtext::_di_JContext context, Androidapi::Jni::Util::_di_JAttributeSet attrs) = 0 /* overload */;
+	HIDESBASE virtual _di_JSignInButton __cdecl init(Androidapi::Jni::Graphicscontentviewtext::_di_JContext context, Androidapi::Jni::Util::_di_JAttributeSet attrs, int defStyle) = 0 /* overload */;
+	__property int COLOR_DARK = {read=_GetCOLOR_DARK};
+	__property int COLOR_LIGHT = {read=_GetCOLOR_LIGHT};
+	__property int SIZE_ICON_ONLY = {read=_GetSIZE_ICON_ONLY};
+	__property int SIZE_STANDARD = {read=_GetSIZE_STANDARD};
+	__property int SIZE_WIDE = {read=_GetSIZE_WIDE};
+};
+
+__interface  INTERFACE_UUID("{3E380F90-B958-4997-B949-C77CDACDB789}") JSignInButton  : public Androidapi::Jni::Widget::JFrameLayout 
+{
+	virtual void __cdecl onClick(Androidapi::Jni::Graphicscontentviewtext::_di_JView view) = 0 ;
+	virtual void __cdecl setColorScheme(int colorScheme) = 0 ;
+	HIDESBASE virtual void __cdecl setEnabled(bool enabled) = 0 ;
+	HIDESBASE virtual void __cdecl setOnClickListener(Androidapi::Jni::Graphicscontentviewtext::_di_JView_OnClickListener listener) = 0 ;
+	virtual void __cdecl setSize(int buttonSize) = 0 ;
+	virtual void __cdecl setStyle(int buttonSize, int colorScheme) = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJSignInButton : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JSignInButtonClass,_di_JSignInButton>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JSignInButtonClass,_di_JSignInButton> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJSignInButton() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JSignInButtonClass,_di_JSignInButton>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJSignInButton() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{56B49840-75B9-441A-8A62-C9291B24D047}") JKeepNameClass  : public Androidapi::Jni::Javatypes::JAnnotationClass 
+{
+	
+};
+
+__interface  INTERFACE_UUID("{F3981EBA-3434-44B7-95EF-1512D87F07E2}") JKeepName  : public Androidapi::Jni::Javatypes::JAnnotation 
+{
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJKeepName : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JKeepNameClass,_di_JKeepName>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JKeepNameClass,_di_JKeepName> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJKeepName() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JKeepNameClass,_di_JKeepName>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJKeepName() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{7E439158-D82B-4B03-9A23-6BBB88D90A29}") JCommonStatusCodesClass  : public Androidapi::Jni::Javatypes::JObjectClass 
+{
+	virtual int __cdecl _GetDATE_INVALID() = 0 ;
+	virtual int __cdecl _GetDEVELOPER_ERROR() = 0 ;
+	virtual int __cdecl _GetERROR() = 0 ;
+	virtual int __cdecl _GetINTERNAL_ERROR() = 0 ;
+	virtual int __cdecl _GetINTERRUPTED() = 0 ;
+	virtual int __cdecl _GetINVALID_ACCOUNT() = 0 ;
+	virtual int __cdecl _GetLICENSE_CHECK_FAILED() = 0 ;
+	virtual int __cdecl _GetNETWORK_ERROR() = 0 ;
+	virtual int __cdecl _GetRESOLUTION_REQUIRED() = 0 ;
+	virtual int __cdecl _GetSERVICE_DISABLED() = 0 ;
+	virtual int __cdecl _GetSERVICE_INVALID() = 0 ;
+	virtual int __cdecl _GetSERVICE_MISSING() = 0 ;
+	virtual int __cdecl _GetSERVICE_VERSION_UPDATE_REQUIRED() = 0 ;
+	virtual int __cdecl _GetSIGN_IN_REQUIRED() = 0 ;
+	virtual int __cdecl _GetSUCCESS() = 0 ;
+	virtual int __cdecl _GetSUCCESS_CACHE() = 0 ;
+	virtual int __cdecl _GetTIMEOUT() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl getStatusCodeString(int statusCode) = 0 ;
+	HIDESBASE virtual _di_JCommonStatusCodes __cdecl init() = 0 ;
+	__property int DATE_INVALID = {read=_GetDATE_INVALID};
+	__property int DEVELOPER_ERROR = {read=_GetDEVELOPER_ERROR};
+	__property int ERROR = {read=_GetERROR};
+	__property int INTERNAL_ERROR = {read=_GetINTERNAL_ERROR};
+	__property int INTERRUPTED = {read=_GetINTERRUPTED};
+	__property int INVALID_ACCOUNT = {read=_GetINVALID_ACCOUNT};
+	__property int LICENSE_CHECK_FAILED = {read=_GetLICENSE_CHECK_FAILED};
+	__property int NETWORK_ERROR = {read=_GetNETWORK_ERROR};
+	__property int RESOLUTION_REQUIRED = {read=_GetRESOLUTION_REQUIRED};
+	__property int SERVICE_DISABLED = {read=_GetSERVICE_DISABLED};
+	__property int SERVICE_INVALID = {read=_GetSERVICE_INVALID};
+	__property int SERVICE_MISSING = {read=_GetSERVICE_MISSING};
+	__property int SERVICE_VERSION_UPDATE_REQUIRED = {read=_GetSERVICE_VERSION_UPDATE_REQUIRED};
+	__property int SIGN_IN_REQUIRED = {read=_GetSIGN_IN_REQUIRED};
+	__property int SUCCESS = {read=_GetSUCCESS};
+	__property int SUCCESS_CACHE = {read=_GetSUCCESS_CACHE};
+	__property int TIMEOUT = {read=_GetTIMEOUT};
+};
+
+__interface  INTERFACE_UUID("{BDB21EAA-F613-4B7F-A956-629E7F1F3CC9}") JCommonStatusCodes  : public Androidapi::Jni::Javatypes::JObject 
+{
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJCommonStatusCodes : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JCommonStatusCodesClass,_di_JCommonStatusCodes>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JCommonStatusCodesClass,_di_JCommonStatusCodes> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJCommonStatusCodes() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JCommonStatusCodesClass,_di_JCommonStatusCodes>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJCommonStatusCodes() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{39FBEEC6-35DC-4004-8C87-A46FF41D4B0C}") JGoogleApiClientClass  : public Androidapi::Jnibridge::IJavaClass 
+{
+	
+};
+
+__interface  INTERFACE_UUID("{79A91917-155C-4C04-8E26-2C497F3CE53D}") JGoogleApiClient  : public Androidapi::Jnibridge::IJavaInstance 
+{
+	virtual _di_JConnectionResult __cdecl blockingConnect(__int64 P1, Androidapi::Jni::Javatypes::_di_JTimeUnit P2) = 0 ;
+	virtual void __cdecl connect() = 0 ;
+	virtual void __cdecl disconnect() = 0 ;
+	virtual bool __cdecl isConnected() = 0 ;
+	virtual bool __cdecl isConnecting() = 0 ;
+	virtual bool __cdecl isConnectionCallbacksRegistered(_di_JGoogleApiClient_ConnectionCallbacks P1) = 0 ;
+	virtual bool __cdecl isConnectionFailedListenerRegistered(_di_JGoogleApiClient_OnConnectionFailedListener P1) = 0 ;
+	virtual void __cdecl reconnect() = 0 ;
+	virtual void __cdecl registerConnectionCallbacks(_di_JGoogleApiClient_ConnectionCallbacks P1) = 0 ;
+	virtual void __cdecl registerConnectionFailedListener(_di_JGoogleApiClient_OnConnectionFailedListener P1) = 0 ;
+	virtual void __cdecl unregisterConnectionCallbacks(_di_JGoogleApiClient_ConnectionCallbacks P1) = 0 ;
+	virtual void __cdecl unregisterConnectionFailedListener(_di_JGoogleApiClient_OnConnectionFailedListener P1) = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJGoogleApiClient : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JGoogleApiClientClass,_di_JGoogleApiClient>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JGoogleApiClientClass,_di_JGoogleApiClient> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJGoogleApiClient() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JGoogleApiClientClass,_di_JGoogleApiClient>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJGoogleApiClient() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{FC4A9996-CF91-430F-B365-01D348AD6387}") JGoogleApiClient_ApiOptionsClass  : public Androidapi::Jnibridge::IJavaClass 
+{
+	
+};
+
+__interface  INTERFACE_UUID("{5213FD65-89B7-4BE2-810D-5B59E2605DA5}") JGoogleApiClient_ApiOptions  : public Androidapi::Jnibridge::IJavaInstance 
+{
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJGoogleApiClient_ApiOptions : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JGoogleApiClient_ApiOptionsClass,_di_JGoogleApiClient_ApiOptions>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JGoogleApiClient_ApiOptionsClass,_di_JGoogleApiClient_ApiOptions> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJGoogleApiClient_ApiOptions() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JGoogleApiClient_ApiOptionsClass,_di_JGoogleApiClient_ApiOptions>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJGoogleApiClient_ApiOptions() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{30B91F33-ECE1-497A-AA43-94DD64B81F49}") JGoogleApiClient_BuilderClass  : public Androidapi::Jni::Javatypes::JObjectClass 
+{
+	HIDESBASE virtual _di_JGoogleApiClient_Builder __cdecl init(Androidapi::Jni::Graphicscontentviewtext::_di_JContext context) = 0 /* overload */;
+	HIDESBASE virtual _di_JGoogleApiClient_Builder __cdecl init(Androidapi::Jni::Graphicscontentviewtext::_di_JContext context, _di_JGoogleApiClient_ConnectionCallbacks connectedListener, _di_JGoogleApiClient_OnConnectionFailedListener connectionFailedListener) = 0 /* overload */;
+};
+
+__interface  INTERFACE_UUID("{C40D55BB-AC6D-40FE-BEEB-701588835D98}") JGoogleApiClient_Builder  : public Androidapi::Jni::Javatypes::JObject 
+{
+	virtual _di_JGoogleApiClient_Builder __cdecl addConnectionCallbacks(_di_JGoogleApiClient_ConnectionCallbacks listener) = 0 ;
+	virtual _di_JGoogleApiClient_Builder __cdecl addOnConnectionFailedListener(_di_JGoogleApiClient_OnConnectionFailedListener listener) = 0 ;
+	virtual _di_JGoogleApiClient_Builder __cdecl addScope(_di_JScope scope) = 0 ;
+	virtual _di_JGoogleApiClient __cdecl build() = 0 ;
+	virtual _di_JGoogleApiClient_Builder __cdecl setAccountName(Androidapi::Jni::Javatypes::_di_JString accountName) = 0 ;
+	virtual _di_JGoogleApiClient_Builder __cdecl setGravityForPopups(int gravityForPopups) = 0 ;
+	virtual _di_JGoogleApiClient_Builder __cdecl setHandler(Androidapi::Jni::Os::_di_JHandler handler) = 0 ;
+	virtual _di_JGoogleApiClient_Builder __cdecl setViewForPopups(Androidapi::Jni::Graphicscontentviewtext::_di_JView viewForPopups) = 0 ;
+	virtual _di_JGoogleApiClient_Builder __cdecl useDefaultAccount() = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJGoogleApiClient_Builder : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JGoogleApiClient_BuilderClass,_di_JGoogleApiClient_Builder>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JGoogleApiClient_BuilderClass,_di_JGoogleApiClient_Builder> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJGoogleApiClient_Builder() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JGoogleApiClient_BuilderClass,_di_JGoogleApiClient_Builder>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJGoogleApiClient_Builder() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{800647EA-E521-465F-AD7D-3F374C7BDE6F}") JGoogleApiClient_ConnectionCallbacksClass  : public Androidapi::Jnibridge::IJavaClass 
+{
+	virtual int __cdecl _GetCAUSE_NETWORK_LOST() = 0 ;
+	virtual int __cdecl _GetCAUSE_SERVICE_DISCONNECTED() = 0 ;
+	__property int CAUSE_NETWORK_LOST = {read=_GetCAUSE_NETWORK_LOST};
+	__property int CAUSE_SERVICE_DISCONNECTED = {read=_GetCAUSE_SERVICE_DISCONNECTED};
+};
+
+__interface  INTERFACE_UUID("{927F8504-B4D3-4C1F-A0CC-D1A4239420B1}") JGoogleApiClient_ConnectionCallbacks  : public Androidapi::Jnibridge::IJavaInstance 
+{
+	virtual void __cdecl onConnected(Androidapi::Jni::Os::_di_JBundle P1) = 0 ;
+	virtual void __cdecl onConnectionSuspended(int P1) = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJGoogleApiClient_ConnectionCallbacks : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JGoogleApiClient_ConnectionCallbacksClass,_di_JGoogleApiClient_ConnectionCallbacks>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JGoogleApiClient_ConnectionCallbacksClass,_di_JGoogleApiClient_ConnectionCallbacks> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJGoogleApiClient_ConnectionCallbacks() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JGoogleApiClient_ConnectionCallbacksClass,_di_JGoogleApiClient_ConnectionCallbacks>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJGoogleApiClient_ConnectionCallbacks() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{0C7E36A8-B337-4234-B11A-869737DFC94F}") JGoogleApiClient_OnConnectionFailedListenerClass  : public JGooglePlayServicesClient_OnConnectionFailedListenerClass 
+{
+	
+};
+
+__interface  INTERFACE_UUID("{17324E58-869C-4B80-A558-F0BDCC1E1F92}") JGoogleApiClient_OnConnectionFailedListener  : public JGooglePlayServicesClient_OnConnectionFailedListener 
+{
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJGoogleApiClient_OnConnectionFailedListener : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JGoogleApiClient_OnConnectionFailedListenerClass,_di_JGoogleApiClient_OnConnectionFailedListener>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JGoogleApiClient_OnConnectionFailedListenerClass,_di_JGoogleApiClient_OnConnectionFailedListener> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJGoogleApiClient_OnConnectionFailedListener() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JGoogleApiClient_OnConnectionFailedListenerClass,_di_JGoogleApiClient_OnConnectionFailedListener>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJGoogleApiClient_OnConnectionFailedListener() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{F4D25687-3A3B-4E07-AA64-216112D5EE36}") JPendingResultClass  : public Androidapi::Jnibridge::IJavaClass 
+{
+	
+};
+
+__interface  INTERFACE_UUID("{18CC0862-D22D-4284-8F4F-65AB69D93849}") JPendingResult  : public Androidapi::Jnibridge::IJavaInstance 
+{
+	virtual _di_Japi_Result __cdecl await() = 0 /* overload */;
+	virtual _di_Japi_Result __cdecl await(__int64 P1, Androidapi::Jni::Javatypes::_di_JTimeUnit P2) = 0 /* overload */;
+	virtual void __cdecl setResultCallback(_di_JResultCallback P1) = 0 /* overload */;
+	virtual void __cdecl setResultCallback(_di_JResultCallback P1, __int64 P2, Androidapi::Jni::Javatypes::_di_JTimeUnit P3) = 0 /* overload */;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJPendingResult : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JPendingResultClass,_di_JPendingResult>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JPendingResultClass,_di_JPendingResult> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJPendingResult() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JPendingResultClass,_di_JPendingResult>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJPendingResult() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{5C713C92-DB51-44A3-A818-4B55058050EF}") JResultCallbackClass  : public Androidapi::Jnibridge::IJavaClass 
+{
+	
+};
+
+__interface  INTERFACE_UUID("{2AA7801D-1E93-45C2-A1E1-1B3BA073C3B5}") JResultCallback  : public Androidapi::Jnibridge::IJavaInstance 
+{
+	virtual void __cdecl onResult(_di_Japi_Result P1) = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJResultCallback : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JResultCallbackClass,_di_JResultCallback>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JResultCallbackClass,_di_JResultCallback> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJResultCallback() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JResultCallbackClass,_di_JResultCallback>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJResultCallback() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{92B24AEE-2F21-4421-BEA0-56D622112E1C}") JScopeClass  : public Androidapi::Jni::Javatypes::JObjectClass 
+{
+	HIDESBASE virtual _di_JScope __cdecl init(Androidapi::Jni::Javatypes::_di_JString scopeUri) = 0 ;
+};
+
+__interface  INTERFACE_UUID("{B2FA592B-4FAF-4B58-9C57-C9AF95F95FB9}") JScope  : public Androidapi::Jni::Javatypes::JObject 
+{
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl dD() = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJScope : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JScopeClass,_di_JScope>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JScopeClass,_di_JScope> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJScope() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JScopeClass,_di_JScope>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJScope() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{03D89F5A-D17B-42E3-8CC2-BEEEE74EA2AA}") JStatusClass  : public Androidapi::Jni::Javatypes::JObjectClass 
+{
+	virtual _di_JStatusCreator __cdecl _GetCREATOR() = 0 ;
+	virtual _di_JStatus __cdecl _GetzQ() = 0 ;
+	virtual _di_JStatus __cdecl _GetzR() = 0 ;
+	virtual _di_JStatus __cdecl _GetzS() = 0 ;
+	HIDESBASE virtual _di_JStatus __cdecl init(int statusCode) = 0 /* overload */;
+	HIDESBASE virtual _di_JStatus __cdecl init(int statusCode, Androidapi::Jni::Javatypes::_di_JString statusMessage, Androidapi::Jni::App::_di_JPendingIntent pendingIntent) = 0 /* overload */;
+	__property _di_JStatusCreator CREATOR = {read=_GetCREATOR};
+	__property _di_JStatus zQ = {read=_GetzQ};
+	__property _di_JStatus zR = {read=_GetzR};
+	__property _di_JStatus zS = {read=_GetzS};
+};
+
+__interface  INTERFACE_UUID("{C7D91968-F802-4D4D-971C-299D4112A92F}") JStatus  : public Androidapi::Jni::Javatypes::JObject 
+{
+	virtual _di_JConnectionResult __cdecl dG() = 0 ;
+	virtual int __cdecl describeContents() = 0 ;
+	HIDESBASE virtual bool __cdecl equals(Androidapi::Jni::Javatypes::_di_JObject obj) = 0 ;
+	virtual Androidapi::Jni::App::_di_JPendingIntent __cdecl getResolution() = 0 ;
+	virtual _di_JStatus __cdecl getStatus() = 0 ;
+	virtual int __cdecl getStatusCode() = 0 ;
+	virtual bool __cdecl hasResolution() = 0 ;
+	HIDESBASE virtual int __cdecl hashCode() = 0 ;
+	virtual bool __cdecl isInterrupted() = 0 ;
+	virtual bool __cdecl isSuccess() = 0 ;
+	virtual void __cdecl startResolutionForResult(Androidapi::Jni::App::_di_JActivity activity, int requestCode) = 0 ;
+	HIDESBASE virtual Androidapi::Jni::Javatypes::_di_JString __cdecl toString() = 0 ;
+	virtual void __cdecl writeToParcel(Androidapi::Jni::Os::_di_JParcel out_, int flags) = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJStatus : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JStatusClass,_di_JStatus>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JStatusClass,_di_JStatus> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJStatus() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JStatusClass,_di_JStatus>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJStatus() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{1DC510EB-3EC0-4214-8D7E-863B7712EDFD}") JStatusCreatorClass  : public Androidapi::Jni::Javatypes::JObjectClass 
+{
+	virtual int __cdecl _GetCONTENT_DESCRIPTION() = 0 ;
+	HIDESBASE virtual _di_JStatusCreator __cdecl init() = 0 ;
+	__property int CONTENT_DESCRIPTION = {read=_GetCONTENT_DESCRIPTION};
+};
+
+__interface  INTERFACE_UUID("{C143765D-7BD4-485D-9726-211069CE7258}") JStatusCreator  : public Androidapi::Jni::Javatypes::JObject 
+{
+	virtual _di_JStatus __cdecl createFromParcel(Androidapi::Jni::Os::_di_JParcel parcel) = 0 ;
+	virtual Androidapi::Jnibridge::TJavaObjectArray__1<_di_JStatus>* __cdecl newArray(int size) = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJStatusCreator : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JStatusCreatorClass,_di_JStatusCreator>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JStatusCreatorClass,_di_JStatusCreator> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJStatusCreator() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JStatusCreatorClass,_di_JStatusCreator>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJStatusCreator() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{A6F05052-1AD4-4A5F-9581-E6CD07AE5CA0}") JDataBufferUtilsClass  : public Androidapi::Jni::Javatypes::JObjectClass 
+{
+	virtual Androidapi::Jni::Javatypes::_di_JArrayList __cdecl freezeAndClose(_di_JDataBuffer buffer) = 0 ;
+	virtual bool __cdecl hasNextPage(_di_JDataBuffer buffer) = 0 ;
+	virtual bool __cdecl hasPrevPage(_di_JDataBuffer buffer) = 0 ;
+};
+
+__interface  INTERFACE_UUID("{0E0D0AA8-DA82-4041-83E7-F5D1BC7E12F1}") JDataBufferUtils  : public Androidapi::Jni::Javatypes::JObject 
+{
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJDataBufferUtils : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JDataBufferUtilsClass,_di_JDataBufferUtils>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JDataBufferUtilsClass,_di_JDataBufferUtils> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJDataBufferUtils() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JDataBufferUtilsClass,_di_JDataBufferUtils>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJDataBufferUtils() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{A4454701-C03F-4AEC-B610-92DB2EF77521}") JDataHolderClass  : public Androidapi::Jni::Javatypes::JObjectClass 
+{
+	virtual _di_JDataHolderCreator __cdecl _GetCREATOR() = 0 ;
+	virtual _di_JDataHolder_Builder __cdecl builder(Androidapi::Jnibridge::TJavaObjectArray__1<Androidapi::Jni::Javatypes::_di_JString>* columns) = 0 /* overload */;
+	virtual _di_JDataHolder_Builder __cdecl builder(Androidapi::Jnibridge::TJavaObjectArray__1<Androidapi::Jni::Javatypes::_di_JString>* columns, Androidapi::Jni::Javatypes::_di_JString uniqueColumn) = 0 /* overload */;
+	virtual _di_JDataHolder __cdecl empty(int statusCode) = 0 /* overload */;
+	virtual _di_JDataHolder __cdecl empty(int statusCode, Androidapi::Jni::Os::_di_JBundle metadata) = 0 /* overload */;
+	HIDESBASE virtual _di_JDataHolder __cdecl init(Androidapi::Jni::Graphicscontentviewtext::_di_JAbstractWindowedCursor cursor, int statusCode, Androidapi::Jni::Os::_di_JBundle metadata) = 0 /* overload */;
+	HIDESBASE virtual _di_JDataHolder __cdecl init(Androidapi::Jnibridge::TJavaObjectArray__1<Androidapi::Jni::Javatypes::_di_JString>* columns, Androidapi::Jnibridge::TJavaObjectArray__1<Androidapi::Jni::Graphicscontentviewtext::_di_JCursorWindow>* windows, int statusCode, Androidapi::Jni::Os::_di_JBundle metadata) = 0 /* overload */;
+	__property _di_JDataHolderCreator CREATOR = {read=_GetCREATOR};
+};
+
+__interface  INTERFACE_UUID("{D1CA2B4D-272B-428F-96B7-64EAFB770E51}") JDataHolder  : public Androidapi::Jni::Javatypes::JObject 
+{
+	virtual int __cdecl I(int P1) = 0 ;
+	virtual void __cdecl c(Androidapi::Jni::Javatypes::_di_JObject P1) = 0 ;
+	virtual void __cdecl close() = 0 ;
+	virtual void __cdecl copyToBuffer(Androidapi::Jni::Javatypes::_di_JString column, int row, int windowIndex, Androidapi::Jni::Graphicscontentviewtext::_di_Jdatabase_CharArrayBuffer dataOut) = 0 ;
+	virtual int __cdecl describeContents() = 0 ;
+	virtual bool __cdecl getBoolean(Androidapi::Jni::Javatypes::_di_JString column, int row, int windowIndex) = 0 ;
+	virtual Androidapi::Jnibridge::TJavaArray__1<System::Byte>* __cdecl getByteArray(Androidapi::Jni::Javatypes::_di_JString column, int row, int windowIndex) = 0 ;
+	virtual int __cdecl getCount() = 0 ;
+	virtual int __cdecl getInteger(Androidapi::Jni::Javatypes::_di_JString column, int row, int windowIndex) = 0 ;
+	virtual __int64 __cdecl getLong(Androidapi::Jni::Javatypes::_di_JString column, int row, int windowIndex) = 0 ;
+	virtual Androidapi::Jni::Os::_di_JBundle __cdecl getMetadata() = 0 ;
+	virtual int __cdecl getStatusCode() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl getString(Androidapi::Jni::Javatypes::_di_JString column, int row, int windowIndex) = 0 ;
+	virtual bool __cdecl hasColumn(Androidapi::Jni::Javatypes::_di_JString column) = 0 ;
+	virtual bool __cdecl hasNull(Androidapi::Jni::Javatypes::_di_JString column, int row, int windowIndex) = 0 ;
+	virtual bool __cdecl isClosed() = 0 ;
+	virtual Androidapi::Jni::Net::_di_Jnet_Uri __cdecl parseUri(Androidapi::Jni::Javatypes::_di_JString column, int row, int windowIndex) = 0 ;
+	virtual void __cdecl validateContents() = 0 ;
+	virtual void __cdecl writeToParcel(Androidapi::Jni::Os::_di_JParcel dest, int flags) = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJDataHolder : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JDataHolderClass,_di_JDataHolder>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JDataHolderClass,_di_JDataHolder> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJDataHolder() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JDataHolderClass,_di_JDataHolder>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJDataHolder() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{E93B37D3-B530-4551-A9C3-015AB867E2AF}") JDataHolder_BuilderClass  : public Androidapi::Jni::Javatypes::JObjectClass 
+{
+	
+};
+
+__interface  INTERFACE_UUID("{AC62943F-A09F-4D21-9A7E-28B5EC92D603}") JDataHolder_Builder  : public Androidapi::Jni::Javatypes::JObject 
+{
+	virtual _di_JDataHolder __cdecl build(int statusCode) = 0 /* overload */;
+	virtual _di_JDataHolder __cdecl build(int statusCode, Androidapi::Jni::Os::_di_JBundle metadata) = 0 /* overload */;
+	virtual _di_JDataHolder __cdecl build(int statusCode, Androidapi::Jni::Os::_di_JBundle metadata, int maxResults) = 0 /* overload */;
+	virtual int __cdecl getCount() = 0 ;
+	virtual _di_JDataHolder_Builder __cdecl removeRowsWithValue(Androidapi::Jni::Javatypes::_di_JString column, Androidapi::Jni::Javatypes::_di_JObject value) = 0 ;
+	virtual _di_JDataHolder_Builder __cdecl sort(Androidapi::Jni::Javatypes::_di_JString sortColumn) = 0 ;
+	virtual _di_JDataHolder_Builder __cdecl withRow(Androidapi::Jni::Javatypes::_di_JHashMap row) = 0 /* overload */;
+	virtual _di_JDataHolder_Builder __cdecl withRow(Androidapi::Jni::Graphicscontentviewtext::_di_JContentValues values) = 0 /* overload */;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJDataHolder_Builder : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JDataHolder_BuilderClass,_di_JDataHolder_Builder>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JDataHolder_BuilderClass,_di_JDataHolder_Builder> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJDataHolder_Builder() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JDataHolder_BuilderClass,_di_JDataHolder_Builder>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJDataHolder_Builder() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{C474CAB6-8473-48AA-AF66-88D4A0DCDC38}") JDataHolderCreatorClass  : public Androidapi::Jni::Javatypes::JObjectClass 
+{
+	virtual int __cdecl _GetCONTENT_DESCRIPTION() = 0 ;
+	HIDESBASE virtual _di_JDataHolderCreator __cdecl init() = 0 ;
+	__property int CONTENT_DESCRIPTION = {read=_GetCONTENT_DESCRIPTION};
+};
+
+__interface  INTERFACE_UUID("{928F9B14-D7B1-4F6D-AD7E-FF0B7EEE7679}") JDataHolderCreator  : public Androidapi::Jni::Javatypes::JObject 
+{
+	virtual _di_JDataHolder __cdecl createFromParcel(Androidapi::Jni::Os::_di_JParcel parcel) = 0 ;
+	virtual Androidapi::Jnibridge::TJavaObjectArray__1<_di_JDataHolder>* __cdecl newArray(int size) = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJDataHolderCreator : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JDataHolderCreatorClass,_di_JDataHolderCreator>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JDataHolderCreatorClass,_di_JDataHolderCreator> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJDataHolderCreator() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JDataHolderCreatorClass,_di_JDataHolderCreator>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJDataHolderCreator() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{7EAE6C22-E046-43C4-AA51-F02E9A8FF37D}") JFilteredDataBufferClass  : public JDataBufferClass 
+{
+	HIDESBASE virtual _di_JFilteredDataBuffer __cdecl init(_di_JDataBuffer dataBuffer) = 0 ;
+};
+
+__interface  INTERFACE_UUID("{5092FE96-F7F3-4BDF-A23E-696035318BF6}") JFilteredDataBuffer  : public JDataBuffer 
+{
+	HIDESBASE virtual void __cdecl close() = 0 ;
+	HIDESBASE virtual Androidapi::Jni::Javatypes::_di_JObject __cdecl get(int position) = 0 ;
+	HIDESBASE virtual Androidapi::Jni::Os::_di_JBundle __cdecl getMetadata() = 0 ;
+	HIDESBASE virtual bool __cdecl isClosed() = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJFilteredDataBuffer : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JFilteredDataBufferClass,_di_JFilteredDataBuffer>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JFilteredDataBufferClass,_di_JFilteredDataBuffer> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJFilteredDataBuffer() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JFilteredDataBufferClass,_di_JFilteredDataBuffer>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJFilteredDataBuffer() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{316D03A5-C5F1-4945-9C45-FFCB615A1EB0}") JFreezableUtilsClass  : public Androidapi::Jni::Javatypes::JObjectClass 
+{
+	virtual Androidapi::Jni::Javatypes::_di_JArrayList __cdecl freeze(Androidapi::Jnibridge::TJavaObjectArray__1<_di_JFreezable>* array_) = 0 /* overload */;
+	virtual Androidapi::Jni::Javatypes::_di_JArrayList __cdecl freeze(Androidapi::Jni::Javatypes::_di_JArrayList list) = 0 /* overload */;
+	HIDESBASE virtual _di_JFreezableUtils __cdecl init() = 0 ;
+};
+
+__interface  INTERFACE_UUID("{E1F7BF21-8831-4863-B184-5EF34CE633A9}") JFreezableUtils  : public Androidapi::Jni::Javatypes::JObject 
+{
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJFreezableUtils : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JFreezableUtilsClass,_di_JFreezableUtils>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JFreezableUtilsClass,_di_JFreezableUtils> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJFreezableUtils() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JFreezableUtilsClass,_di_JFreezableUtils>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJFreezableUtils() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{A9B72249-08F9-4577-84D5-2D78D0799E1F}") JImageManagerClass  : public Androidapi::Jni::Javatypes::JObjectClass 
+{
+	virtual _di_JImageManager __cdecl a(Androidapi::Jni::Graphicscontentviewtext::_di_JContext P1, bool P2) = 0 /* overload */;
+	virtual _di_JImageManager __cdecl create(Androidapi::Jni::Graphicscontentviewtext::_di_JContext context) = 0 ;
+};
+
+__interface  INTERFACE_UUID("{87EDA32C-22FC-4A0A-B710-2DA3604AA1DD}") JImageManager  : public Androidapi::Jni::Javatypes::JObject 
+{
+	virtual void __cdecl loadImage(Androidapi::Jni::Widget::_di_JImageView imageView, Androidapi::Jni::Net::_di_Jnet_Uri uri) = 0 /* overload */;
+	virtual void __cdecl loadImage(Androidapi::Jni::Widget::_di_JImageView imageView, int resId) = 0 /* overload */;
+	virtual void __cdecl loadImage(_di_JImageManager_OnImageLoadedListener listener, Androidapi::Jni::Net::_di_Jnet_Uri uri) = 0 /* overload */;
+	virtual void __cdecl loadImage(Androidapi::Jni::Widget::_di_JImageView imageView, Androidapi::Jni::Net::_di_Jnet_Uri uri, int defaultResId) = 0 /* overload */;
+	virtual void __cdecl loadImage(_di_JImageManager_OnImageLoadedListener listener, Androidapi::Jni::Net::_di_Jnet_Uri uri, int defaultResId) = 0 /* overload */;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJImageManager : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JImageManagerClass,_di_JImageManager>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JImageManagerClass,_di_JImageManager> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJImageManager() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JImageManagerClass,_di_JImageManager>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJImageManager() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{1AE0CF58-2E8D-4C75-9A2C-6AC64EE3E1E3}") JImageManager_ImageReceiverClass  : public Androidapi::Jni::Os::JResultReceiverClass 
+{
+	
+};
+
+__interface  INTERFACE_UUID("{0838B663-4DED-43E3-9090-F800D721FD42}") JImageManager_ImageReceiver  : public Androidapi::Jni::Os::JResultReceiver 
+{
+	virtual void __cdecl dN() = 0 ;
+	virtual void __cdecl onReceiveResult(int resultCode, Androidapi::Jni::Os::_di_JBundle resultData) = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJImageManager_ImageReceiver : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JImageManager_ImageReceiverClass,_di_JImageManager_ImageReceiver>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JImageManager_ImageReceiverClass,_di_JImageManager_ImageReceiver> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJImageManager_ImageReceiver() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JImageManager_ImageReceiverClass,_di_JImageManager_ImageReceiver>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJImageManager_ImageReceiver() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{4A5F4833-04FC-4164-99F6-96619A719D1F}") JImageManager_OnImageLoadedListenerClass  : public Androidapi::Jnibridge::IJavaClass 
+{
+	
+};
+
+__interface  INTERFACE_UUID("{332D053E-9E93-4340-B0D6-BEA18CF1E0FF}") JImageManager_OnImageLoadedListener  : public Androidapi::Jnibridge::IJavaInstance 
+{
+	virtual void __cdecl onImageLoaded(Androidapi::Jni::Net::_di_Jnet_Uri P1, Androidapi::Jni::Graphicscontentviewtext::_di_JDrawable P2, bool P3) = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJImageManager_OnImageLoadedListener : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JImageManager_OnImageLoadedListenerClass,_di_JImageManager_OnImageLoadedListener>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JImageManager_OnImageLoadedListenerClass,_di_JImageManager_OnImageLoadedListener> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJImageManager_OnImageLoadedListener() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JImageManager_OnImageLoadedListenerClass,_di_JImageManager_OnImageLoadedListener>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJImageManager_OnImageLoadedListener() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{594BC431-A5C3-422B-9BF6-393B431FF083}") JWebImageClass  : public Androidapi::Jni::Javatypes::JObjectClass 
+{
+	virtual Androidapi::Jni::Os::_di_JParcelable_Creator __cdecl _GetCREATOR() = 0 ;
+	HIDESBASE virtual _di_JWebImage __cdecl init(Androidapi::Jni::Javatypes::_di_JJSONObject json) = 0 /* overload */;
+	HIDESBASE virtual _di_JWebImage __cdecl init(Androidapi::Jni::Net::_di_Jnet_Uri url) = 0 /* overload */;
+	HIDESBASE virtual _di_JWebImage __cdecl init(Androidapi::Jni::Net::_di_Jnet_Uri url, int width, int height) = 0 /* overload */;
+	__property Androidapi::Jni::Os::_di_JParcelable_Creator CREATOR = {read=_GetCREATOR};
+};
+
+__interface  INTERFACE_UUID("{D1CFCDF0-FAA9-49A9-AA82-669DAFFBE12A}") JWebImage  : public Androidapi::Jni::Javatypes::JObject 
+{
+	virtual Androidapi::Jni::Javatypes::_di_JJSONObject __cdecl cT() = 0 ;
+	virtual int __cdecl describeContents() = 0 ;
+	HIDESBASE virtual bool __cdecl equals(Androidapi::Jni::Javatypes::_di_JObject other) = 0 ;
+	virtual int __cdecl getHeight() = 0 ;
+	virtual Androidapi::Jni::Net::_di_Jnet_Uri __cdecl getUrl() = 0 ;
+	virtual int __cdecl getWidth() = 0 ;
+	HIDESBASE virtual int __cdecl hashCode() = 0 ;
+	HIDESBASE virtual Androidapi::Jni::Javatypes::_di_JString __cdecl toString() = 0 ;
+	virtual void __cdecl writeToParcel(Androidapi::Jni::Os::_di_JParcel out_, int flags) = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJWebImage : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JWebImageClass,_di_JWebImage>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JWebImageClass,_di_JWebImage> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJWebImage() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JWebImageClass,_di_JWebImage>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJWebImage() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{865435AB-F2E1-4DEF-B775-17CC0CAC9AED}") JSafeParcelableClass  : public Androidapi::Jni::Os::JParcelableClass 
+{
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetNULL() = 0 ;
+};
+
+__interface  INTERFACE_UUID("{0CBA956D-6EA5-41D8-8AFC-42759ADFD37B}") JSafeParcelable  : public Androidapi::Jni::Os::JParcelable 
+{
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJSafeParcelable : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JSafeParcelableClass,_di_JSafeParcelable>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JSafeParcelableClass,_di_JSafeParcelable> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJSafeParcelable() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JSafeParcelableClass,_di_JSafeParcelable>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJSafeParcelable() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{EAAF17DA-DB45-4A7D-A139-3CA6B7801B34}") JContentsClass  : public Androidapi::Jni::Javatypes::JObjectClass 
+{
+	virtual Androidapi::Jni::Os::_di_JParcelable_Creator __cdecl _GetCREATOR() = 0 ;
+	__property Androidapi::Jni::Os::_di_JParcelable_Creator CREATOR = {read=_GetCREATOR};
+};
+
+__interface  INTERFACE_UUID("{C4F9AA12-244B-4E21-BBC8-0B6669CB32BE}") JContents  : public Androidapi::Jni::Javatypes::JObject 
+{
+	virtual void __cdecl close() = 0 ;
+	virtual int __cdecl describeContents() = 0 ;
+	virtual int __cdecl eP() = 0 ;
+	virtual _di_JDriveId __cdecl getDriveId() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JInputStream __cdecl getInputStream() = 0 ;
+	virtual int __cdecl getMode() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JOutputStream __cdecl getOutputStream() = 0 ;
+	virtual Androidapi::Jni::Os::_di_JParcelFileDescriptor __cdecl getParcelFileDescriptor() = 0 ;
+	virtual void __cdecl writeToParcel(Androidapi::Jni::Os::_di_JParcel dest, int flags) = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJContents : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JContentsClass,_di_JContents>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JContentsClass,_di_JContents> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJContents() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JContentsClass,_di_JContents>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJContents() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{84F65D7D-83BB-4840-BCE1-A12264238278}") JCreateFileActivityBuilderClass  : public Androidapi::Jni::Javatypes::JObjectClass 
+{
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetEXTRA_RESPONSE_DRIVE_ID() = 0 ;
+	HIDESBASE virtual _di_JCreateFileActivityBuilder __cdecl init() = 0 ;
+	__property Androidapi::Jni::Javatypes::_di_JString EXTRA_RESPONSE_DRIVE_ID = {read=_GetEXTRA_RESPONSE_DRIVE_ID};
+};
+
+__interface  INTERFACE_UUID("{37F73C80-E500-4706-A032-CC4720DB2752}") JCreateFileActivityBuilder  : public Androidapi::Jni::Javatypes::JObject 
+{
+	virtual Androidapi::Jni::Graphicscontentviewtext::_di_JIntentSender __cdecl build(_di_JGoogleApiClient apiClient) = 0 ;
+	virtual _di_JCreateFileActivityBuilder __cdecl setActivityStartFolder(_di_JDriveId folder) = 0 ;
+	virtual _di_JCreateFileActivityBuilder __cdecl setActivityTitle(Androidapi::Jni::Javatypes::_di_JString title) = 0 ;
+	virtual _di_JCreateFileActivityBuilder __cdecl setInitialContents(_di_JContents contents) = 0 ;
+	virtual _di_JCreateFileActivityBuilder __cdecl setInitialMetadata(_di_JMetadataChangeSet metadataChangeSet) = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJCreateFileActivityBuilder : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JCreateFileActivityBuilderClass,_di_JCreateFileActivityBuilder>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JCreateFileActivityBuilderClass,_di_JCreateFileActivityBuilder> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJCreateFileActivityBuilder() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JCreateFileActivityBuilderClass,_di_JCreateFileActivityBuilder>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJCreateFileActivityBuilder() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{C9497912-3B5B-442C-AEF3-DE9B903D814F}") JDriveClass  : public Androidapi::Jni::Javatypes::JObjectClass 
+{
+	virtual _di_JScope __cdecl _GetDa() = 0 ;
+	virtual _di_JDriveApi __cdecl _GetDriveApi() = 0 ;
+	virtual _di_JScope __cdecl _GetSCOPE_APPFOLDER() = 0 ;
+	virtual _di_JScope __cdecl _GetSCOPE_FILE() = 0 ;
+	__property _di_JScope Da = {read=_GetDa};
+	__property _di_JDriveApi DriveApi = {read=_GetDriveApi};
+	__property _di_JScope SCOPE_APPFOLDER = {read=_GetSCOPE_APPFOLDER};
+	__property _di_JScope SCOPE_FILE = {read=_GetSCOPE_FILE};
+};
+
+__interface  INTERFACE_UUID("{A1931383-0BA0-4569-A8F0-40E95DD6D13C}") JDrive  : public Androidapi::Jni::Javatypes::JObject 
+{
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJDrive : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JDriveClass,_di_JDrive>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JDriveClass,_di_JDrive> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJDrive() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JDriveClass,_di_JDrive>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJDrive() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{B4FC4923-0F51-4E21-BADF-A08ABFDEC35B}") JDriveApiClass  : public Androidapi::Jnibridge::IJavaClass 
+{
+	
+};
+
+__interface  INTERFACE_UUID("{8146F844-13D5-4CDA-9455-6842EC9ADBCF}") JDriveApi  : public Androidapi::Jnibridge::IJavaInstance 
+{
+	virtual _di_JPendingResult __cdecl discardContents(_di_JGoogleApiClient P1, _di_JContents P2) = 0 ;
+	virtual _di_JPendingResult __cdecl fetchDriveId(_di_JGoogleApiClient P1, Androidapi::Jni::Javatypes::_di_JString P2) = 0 ;
+	virtual _di_JDriveFolder __cdecl getAppFolder(_di_JGoogleApiClient P1) = 0 ;
+	virtual _di_JDriveFile __cdecl getFile(_di_JGoogleApiClient P1, _di_JDriveId P2) = 0 ;
+	virtual _di_JDriveFolder __cdecl getFolder(_di_JGoogleApiClient P1, _di_JDriveId P2) = 0 ;
+	virtual _di_JDriveFolder __cdecl getRootFolder(_di_JGoogleApiClient P1) = 0 ;
+	virtual _di_JPendingResult __cdecl newContents(_di_JGoogleApiClient P1) = 0 ;
+	virtual _di_JCreateFileActivityBuilder __cdecl newCreateFileActivityBuilder() = 0 ;
+	virtual _di_JOpenFileActivityBuilder __cdecl newOpenFileActivityBuilder() = 0 ;
+	virtual _di_JPendingResult __cdecl query(_di_JGoogleApiClient P1, _di_JQuery P2) = 0 ;
+	virtual _di_JPendingResult __cdecl requestSync(_di_JGoogleApiClient P1) = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJDriveApi : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JDriveApiClass,_di_JDriveApi>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JDriveApiClass,_di_JDriveApi> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJDriveApi() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JDriveApiClass,_di_JDriveApi>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJDriveApi() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{13F292CA-48DA-4154-843D-AC3089840539}") JDriveApi_ContentsResultClass  : public Japi_ResultClass 
+{
+	
+};
+
+__interface  INTERFACE_UUID("{BF68FD14-A1A8-400C-91BD-E8AE55598AA6}") JDriveApi_ContentsResult  : public Japi_Result 
+{
+	virtual _di_JContents __cdecl getContents() = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJDriveApi_ContentsResult : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JDriveApi_ContentsResultClass,_di_JDriveApi_ContentsResult>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JDriveApi_ContentsResultClass,_di_JDriveApi_ContentsResult> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJDriveApi_ContentsResult() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JDriveApi_ContentsResultClass,_di_JDriveApi_ContentsResult>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJDriveApi_ContentsResult() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{3D597341-B081-48AA-AECB-20CBF3511ED2}") JDriveApi_DriveIdResultClass  : public Japi_ResultClass 
+{
+	
+};
+
+__interface  INTERFACE_UUID("{415029D4-F53A-415B-9F11-859597659421}") JDriveApi_DriveIdResult  : public Japi_Result 
+{
+	virtual _di_JDriveId __cdecl getDriveId() = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJDriveApi_DriveIdResult : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JDriveApi_DriveIdResultClass,_di_JDriveApi_DriveIdResult>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JDriveApi_DriveIdResultClass,_di_JDriveApi_DriveIdResult> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJDriveApi_DriveIdResult() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JDriveApi_DriveIdResultClass,_di_JDriveApi_DriveIdResult>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJDriveApi_DriveIdResult() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{B9271349-1DD9-4E9A-9017-FB9E3404B1A9}") JDriveApi_IntentSenderResultClass  : public Japi_ResultClass 
+{
+	
+};
+
+__interface  INTERFACE_UUID("{6B897285-9532-4072-A3B3-4626F643417D}") JDriveApi_IntentSenderResult  : public Japi_Result 
+{
+	virtual Androidapi::Jni::Graphicscontentviewtext::_di_JIntentSender __cdecl getIntentSender() = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJDriveApi_IntentSenderResult : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JDriveApi_IntentSenderResultClass,_di_JDriveApi_IntentSenderResult>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JDriveApi_IntentSenderResultClass,_di_JDriveApi_IntentSenderResult> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJDriveApi_IntentSenderResult() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JDriveApi_IntentSenderResultClass,_di_JDriveApi_IntentSenderResult>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJDriveApi_IntentSenderResult() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{3BA42F1A-756F-4553-88C0-23FB4935A466}") JDriveApi_MetadataBufferResultClass  : public Japi_ResultClass 
+{
+	
+};
+
+__interface  INTERFACE_UUID("{3D651B3E-C84E-42F1-ABA8-AE95868C5F3C}") JDriveApi_MetadataBufferResult  : public Japi_Result 
+{
+	virtual _di_JMetadataBuffer __cdecl getMetadataBuffer() = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJDriveApi_MetadataBufferResult : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JDriveApi_MetadataBufferResultClass,_di_JDriveApi_MetadataBufferResult>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JDriveApi_MetadataBufferResultClass,_di_JDriveApi_MetadataBufferResult> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJDriveApi_MetadataBufferResult() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JDriveApi_MetadataBufferResultClass,_di_JDriveApi_MetadataBufferResult>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJDriveApi_MetadataBufferResult() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{A39B7603-7C5B-46B4-A1B3-0289FC8DB078}") JDriveApi_OnSyncFinishCallbackClass  : public Androidapi::Jnibridge::IJavaClass 
+{
+	
+};
+
+__interface  INTERFACE_UUID("{A6E22EEE-E53C-4615-A3F8-E05AC7D66117}") JDriveApi_OnSyncFinishCallback  : public Androidapi::Jnibridge::IJavaInstance 
+{
+	virtual void __cdecl onSyncFinish(_di_JStatus P1) = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJDriveApi_OnSyncFinishCallback : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JDriveApi_OnSyncFinishCallbackClass,_di_JDriveApi_OnSyncFinishCallback>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JDriveApi_OnSyncFinishCallbackClass,_di_JDriveApi_OnSyncFinishCallback> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJDriveApi_OnSyncFinishCallback() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JDriveApi_OnSyncFinishCallbackClass,_di_JDriveApi_OnSyncFinishCallback>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJDriveApi_OnSyncFinishCallback() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{D7539428-9FB3-4A97-B180-506532FED495}") JDriveResourceClass  : public Androidapi::Jnibridge::IJavaClass 
+{
+	
+};
+
+__interface  INTERFACE_UUID("{E76D8E38-4CA0-411F-8D66-6D406069FC5B}") JDriveResource  : public Androidapi::Jnibridge::IJavaInstance 
+{
+	virtual _di_JPendingResult __cdecl addChangeListener(_di_JGoogleApiClient P1, _di_JDriveEvent_Listener P2) = 0 ;
+	virtual _di_JDriveId __cdecl getDriveId() = 0 ;
+	virtual _di_JPendingResult __cdecl getMetadata(_di_JGoogleApiClient P1) = 0 ;
+	virtual _di_JPendingResult __cdecl listParents(_di_JGoogleApiClient P1) = 0 ;
+	virtual _di_JPendingResult __cdecl removeChangeListener(_di_JGoogleApiClient P1, _di_JDriveEvent_Listener P2) = 0 ;
+	virtual _di_JPendingResult __cdecl updateMetadata(_di_JGoogleApiClient P1, _di_JMetadataChangeSet P2) = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJDriveResource : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JDriveResourceClass,_di_JDriveResource>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JDriveResourceClass,_di_JDriveResource> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJDriveResource() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JDriveResourceClass,_di_JDriveResource>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJDriveResource() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{B0B5F653-D513-4097-8E44-FE33744CCC94}") JDriveFileClass  : public JDriveResourceClass 
+{
+	virtual int __cdecl _GetMODE_READ_ONLY() = 0 ;
+	virtual int __cdecl _GetMODE_READ_WRITE() = 0 ;
+	virtual int __cdecl _GetMODE_WRITE_ONLY() = 0 ;
+	__property int MODE_READ_ONLY = {read=_GetMODE_READ_ONLY};
+	__property int MODE_READ_WRITE = {read=_GetMODE_READ_WRITE};
+	__property int MODE_WRITE_ONLY = {read=_GetMODE_WRITE_ONLY};
+};
+
+__interface  INTERFACE_UUID("{76660E31-402B-428F-B8AA-A60E1A9B62CB}") JDriveFile  : public JDriveResource 
+{
+	virtual _di_JPendingResult __cdecl commitAndCloseContents(_di_JGoogleApiClient P1, _di_JContents P2) = 0 /* overload */;
+	virtual _di_JPendingResult __cdecl commitAndCloseContents(_di_JGoogleApiClient P1, _di_JContents P2, _di_JMetadataChangeSet P3) = 0 /* overload */;
+	virtual _di_JPendingResult __cdecl discardContents(_di_JGoogleApiClient P1, _di_JContents P2) = 0 ;
+	virtual _di_JPendingResult __cdecl openContents(_di_JGoogleApiClient P1, int P2, _di_JDriveFile_DownloadProgressListener P3) = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJDriveFile : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JDriveFileClass,_di_JDriveFile>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JDriveFileClass,_di_JDriveFile> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJDriveFile() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JDriveFileClass,_di_JDriveFile>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJDriveFile() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{A4125D98-8BAB-48BF-84C3-B2E42712A819}") JDriveFile_DownloadProgressListenerClass  : public Androidapi::Jnibridge::IJavaClass 
+{
+	
+};
+
+__interface  INTERFACE_UUID("{1F75E4F1-F712-4A63-8DF9-8F33A0C97ED5}") JDriveFile_DownloadProgressListener  : public Androidapi::Jnibridge::IJavaInstance 
+{
+	virtual void __cdecl onProgress(__int64 P1, __int64 P2) = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJDriveFile_DownloadProgressListener : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JDriveFile_DownloadProgressListenerClass,_di_JDriveFile_DownloadProgressListener>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JDriveFile_DownloadProgressListenerClass,_di_JDriveFile_DownloadProgressListener> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJDriveFile_DownloadProgressListener() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JDriveFile_DownloadProgressListenerClass,_di_JDriveFile_DownloadProgressListener>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJDriveFile_DownloadProgressListener() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{EA9D663B-28A8-47C3-9187-004196F2CF01}") JDriveFolderClass  : public JDriveResourceClass 
+{
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetMIME_TYPE() = 0 ;
+	__property Androidapi::Jni::Javatypes::_di_JString MIME_TYPE = {read=_GetMIME_TYPE};
+};
+
+__interface  INTERFACE_UUID("{7204CCCD-8C3D-4785-A619-2C045915467A}") JDriveFolder  : public JDriveResource 
+{
+	virtual _di_JPendingResult __cdecl createFile(_di_JGoogleApiClient P1, _di_JMetadataChangeSet P2, _di_JContents P3) = 0 ;
+	virtual _di_JPendingResult __cdecl createFolder(_di_JGoogleApiClient P1, _di_JMetadataChangeSet P2) = 0 ;
+	virtual _di_JPendingResult __cdecl listChildren(_di_JGoogleApiClient P1) = 0 ;
+	virtual _di_JPendingResult __cdecl queryChildren(_di_JGoogleApiClient P1, _di_JQuery P2) = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJDriveFolder : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JDriveFolderClass,_di_JDriveFolder>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JDriveFolderClass,_di_JDriveFolder> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJDriveFolder() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JDriveFolderClass,_di_JDriveFolder>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJDriveFolder() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{D137D607-2EBB-407C-84A7-3122F6ED410C}") JDriveFolder_DriveFileResultClass  : public Japi_ResultClass 
+{
+	
+};
+
+__interface  INTERFACE_UUID("{927EB119-66A6-40FF-80AF-9756880F1187}") JDriveFolder_DriveFileResult  : public Japi_Result 
+{
+	virtual _di_JDriveFile __cdecl getDriveFile() = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJDriveFolder_DriveFileResult : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JDriveFolder_DriveFileResultClass,_di_JDriveFolder_DriveFileResult>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JDriveFolder_DriveFileResultClass,_di_JDriveFolder_DriveFileResult> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJDriveFolder_DriveFileResult() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JDriveFolder_DriveFileResultClass,_di_JDriveFolder_DriveFileResult>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJDriveFolder_DriveFileResult() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{B3277743-8CD8-4A8B-A061-85A70C97B3B0}") JDriveFolder_DriveFolderResultClass  : public Japi_ResultClass 
+{
+	
+};
+
+__interface  INTERFACE_UUID("{D04ED137-1BE0-486F-A7CB-0D0B727B43B9}") JDriveFolder_DriveFolderResult  : public Japi_Result 
+{
+	virtual _di_JDriveFolder __cdecl getDriveFolder() = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJDriveFolder_DriveFolderResult : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JDriveFolder_DriveFolderResultClass,_di_JDriveFolder_DriveFolderResult>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JDriveFolder_DriveFolderResultClass,_di_JDriveFolder_DriveFolderResult> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJDriveFolder_DriveFolderResult() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JDriveFolder_DriveFolderResultClass,_di_JDriveFolder_DriveFolderResult>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJDriveFolder_DriveFolderResult() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{97E12937-E8A6-4385-817F-C7ED09E9B6FB}") JDriveIdClass  : public Androidapi::Jni::Javatypes::JObjectClass 
+{
+	virtual Androidapi::Jni::Os::_di_JParcelable_Creator __cdecl _GetCREATOR() = 0 ;
+	virtual _di_JDriveId __cdecl aq(Androidapi::Jni::Javatypes::_di_JString P1) = 0 ;
+	virtual _di_JDriveId __cdecl decodeFromString(Androidapi::Jni::Javatypes::_di_JString s) = 0 ;
+	HIDESBASE virtual _di_JDriveId __cdecl init(Androidapi::Jni::Javatypes::_di_JString resourceId, __int64 sqlId, __int64 databaseInstanceId) = 0 /* overload */;
+	__property Androidapi::Jni::Os::_di_JParcelable_Creator CREATOR = {read=_GetCREATOR};
+};
+
+__interface  INTERFACE_UUID("{A00E5948-6744-4B0E-8AC3-19CFE3CBE19B}") JDriveId  : public Androidapi::Jni::Javatypes::JObject 
+{
+	virtual int __cdecl describeContents() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl encodeToString() = 0 ;
+	HIDESBASE virtual bool __cdecl equals(Androidapi::Jni::Javatypes::_di_JObject obj) = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl getResourceId() = 0 ;
+	HIDESBASE virtual int __cdecl hashCode() = 0 ;
+	HIDESBASE virtual Androidapi::Jni::Javatypes::_di_JString __cdecl toString() = 0 ;
+	virtual void __cdecl writeToParcel(Androidapi::Jni::Os::_di_JParcel out_, int flags) = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJDriveId : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JDriveIdClass,_di_JDriveId>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JDriveIdClass,_di_JDriveId> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJDriveId() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JDriveIdClass,_di_JDriveId>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJDriveId() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{B3C77824-61F7-41FA-A0C3-2E72D4F99BE4}") JDriveResource_MetadataResultClass  : public Japi_ResultClass 
+{
+	
+};
+
+__interface  INTERFACE_UUID("{0A42AA3F-F620-419D-A16A-2B7B400BE56B}") JDriveResource_MetadataResult  : public Japi_Result 
+{
+	virtual _di_JMetadata __cdecl getMetadata() = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJDriveResource_MetadataResult : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JDriveResource_MetadataResultClass,_di_JDriveResource_MetadataResult>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JDriveResource_MetadataResultClass,_di_JDriveResource_MetadataResult> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJDriveResource_MetadataResult() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JDriveResource_MetadataResultClass,_di_JDriveResource_MetadataResult>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJDriveResource_MetadataResult() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{36BFD6ED-FCC3-43CF-B439-1FD32AE1B6E7}") JDriveStatusCodesClass  : public JCommonStatusCodesClass 
+{
+	virtual int __cdecl _GetDRIVE_EXTERNAL_STORAGE_REQUIRED() = 0 ;
+	__property int DRIVE_EXTERNAL_STORAGE_REQUIRED = {read=_GetDRIVE_EXTERNAL_STORAGE_REQUIRED};
+};
+
+__interface  INTERFACE_UUID("{50671D89-6846-46E3-BEDD-96D263EA5A86}") JDriveStatusCodes  : public JCommonStatusCodes 
+{
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJDriveStatusCodes : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JDriveStatusCodesClass,_di_JDriveStatusCodes>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JDriveStatusCodesClass,_di_JDriveStatusCodes> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJDriveStatusCodes() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JDriveStatusCodesClass,_di_JDriveStatusCodes>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJDriveStatusCodes() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{BE88B839-5339-4905-9FF3-676606A3848D}") JMetadataClass  : public Androidapi::Jni::Javatypes::JObjectClass 
+{
+	virtual int __cdecl _GetCONTENT_AVAILABLE_LOCALLY() = 0 ;
+	virtual int __cdecl _GetCONTENT_NOT_AVAILABLE_LOCALLY() = 0 ;
+	HIDESBASE virtual _di_JMetadata __cdecl init() = 0 ;
+	__property int CONTENT_AVAILABLE_LOCALLY = {read=_GetCONTENT_AVAILABLE_LOCALLY};
+	__property int CONTENT_NOT_AVAILABLE_LOCALLY = {read=_GetCONTENT_NOT_AVAILABLE_LOCALLY};
+};
+
+__interface  INTERFACE_UUID("{C781BC71-DE69-4C56-9453-4AABECFC9838}") JMetadata  : public Androidapi::Jni::Javatypes::JObject 
+{
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl getAlternateLink() = 0 ;
+	virtual int __cdecl getContentAvailability() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JDate __cdecl getCreatedDate() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl getDescription() = 0 ;
+	virtual _di_JDriveId __cdecl getDriveId() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl getEmbedLink() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl getFileExtension() = 0 ;
+	virtual __int64 __cdecl getFileSize() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JDate __cdecl getLastViewedByMeDate() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl getMimeType() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JDate __cdecl getModifiedByMeDate() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JDate __cdecl getModifiedDate() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl getOriginalFilename() = 0 ;
+	virtual __int64 __cdecl getQuotaBytesUsed() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JDate __cdecl getSharedWithMeDate() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl getTitle() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl getWebContentLink() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl getWebViewLink() = 0 ;
+	virtual bool __cdecl isEditable() = 0 ;
+	virtual bool __cdecl isFolder() = 0 ;
+	virtual bool __cdecl isInAppFolder() = 0 ;
+	virtual bool __cdecl isPinnable() = 0 ;
+	virtual bool __cdecl isPinned() = 0 ;
+	virtual bool __cdecl isRestricted() = 0 ;
+	virtual bool __cdecl isShared() = 0 ;
+	virtual bool __cdecl isStarred() = 0 ;
+	virtual bool __cdecl isTrashed() = 0 ;
+	virtual bool __cdecl isViewed() = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJMetadata : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMetadataClass,_di_JMetadata>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMetadataClass,_di_JMetadata> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJMetadata() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMetadataClass,_di_JMetadata>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJMetadata() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{A448820D-F33B-4770-A339-70FC43CE5ADA}") JMetadataBufferClass  : public JDataBufferClass 
+{
+	HIDESBASE virtual _di_JMetadataBuffer __cdecl init(_di_JDataHolder dataHolder, Androidapi::Jni::Javatypes::_di_JString nextPageToken) = 0 ;
+};
+
+__interface  INTERFACE_UUID("{04C40993-1C15-465A-9596-EF89689BBFFD}") JMetadataBuffer  : public JDataBuffer 
+{
+	HIDESBASE virtual _di_JMetadata __cdecl get(int row) = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl getNextPageToken() = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJMetadataBuffer : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMetadataBufferClass,_di_JMetadataBuffer>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMetadataBufferClass,_di_JMetadataBuffer> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJMetadataBuffer() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMetadataBufferClass,_di_JMetadataBuffer>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJMetadataBuffer() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{8C5A5B57-10D7-452B-9AAF-21097AB39D62}") JMetadataChangeSetClass  : public Androidapi::Jni::Javatypes::JObjectClass 
+{
+	
+};
+
+__interface  INTERFACE_UUID("{B330CDE3-78CB-47E6-A7D3-B8EBA8F63027}") JMetadataChangeSet  : public Androidapi::Jni::Javatypes::JObject 
+{
+	virtual _di_JMetadataBundle __cdecl eS() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl getIndexableText() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JDate __cdecl getLastViewedByMeDate() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl getMimeType() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl getTitle() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JBoolean __cdecl isPinned() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JBoolean __cdecl isStarred() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JBoolean __cdecl isViewed() = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJMetadataChangeSet : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMetadataChangeSetClass,_di_JMetadataChangeSet>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMetadataChangeSetClass,_di_JMetadataChangeSet> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJMetadataChangeSet() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMetadataChangeSetClass,_di_JMetadataChangeSet>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJMetadataChangeSet() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{55EB8050-4CA9-40F0-A09A-26FC59E7499F}") JMetadataChangeSet_BuilderClass  : public Androidapi::Jni::Javatypes::JObjectClass 
+{
+	HIDESBASE virtual _di_JMetadataChangeSet_Builder __cdecl init() = 0 ;
+};
+
+__interface  INTERFACE_UUID("{5A5C927E-9F79-4375-931E-3FFF02799B2B}") JMetadataChangeSet_Builder  : public Androidapi::Jni::Javatypes::JObject 
+{
+	virtual _di_JMetadataChangeSet __cdecl build() = 0 ;
+	virtual _di_JMetadataChangeSet_Builder __cdecl setIndexableText(Androidapi::Jni::Javatypes::_di_JString text) = 0 ;
+	virtual _di_JMetadataChangeSet_Builder __cdecl setLastViewedByMeDate(Androidapi::Jni::Javatypes::_di_JDate date) = 0 ;
+	virtual _di_JMetadataChangeSet_Builder __cdecl setMimeType(Androidapi::Jni::Javatypes::_di_JString mimeType) = 0 ;
+	virtual _di_JMetadataChangeSet_Builder __cdecl setPinned(bool pinned) = 0 ;
+	virtual _di_JMetadataChangeSet_Builder __cdecl setStarred(bool starred) = 0 ;
+	virtual _di_JMetadataChangeSet_Builder __cdecl setTitle(Androidapi::Jni::Javatypes::_di_JString title) = 0 ;
+	virtual _di_JMetadataChangeSet_Builder __cdecl setViewed(bool viewed) = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJMetadataChangeSet_Builder : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMetadataChangeSet_BuilderClass,_di_JMetadataChangeSet_Builder>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMetadataChangeSet_BuilderClass,_di_JMetadataChangeSet_Builder> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJMetadataChangeSet_Builder() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMetadataChangeSet_BuilderClass,_di_JMetadataChangeSet_Builder>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJMetadataChangeSet_Builder() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{15B09E0F-F942-4395-AAA9-DF9F8DF47412}") JOpenFileActivityBuilderClass  : public Androidapi::Jni::Javatypes::JObjectClass 
+{
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetEXTRA_RESPONSE_DRIVE_ID() = 0 ;
+	HIDESBASE virtual _di_JOpenFileActivityBuilder __cdecl init() = 0 ;
+	__property Androidapi::Jni::Javatypes::_di_JString EXTRA_RESPONSE_DRIVE_ID = {read=_GetEXTRA_RESPONSE_DRIVE_ID};
+};
+
+__interface  INTERFACE_UUID("{04221B2A-CB20-4386-AE49-7EFA0011E872}") JOpenFileActivityBuilder  : public Androidapi::Jni::Javatypes::JObject 
+{
+	virtual Androidapi::Jni::Graphicscontentviewtext::_di_JIntentSender __cdecl build(_di_JGoogleApiClient apiClient) = 0 ;
+	virtual _di_JOpenFileActivityBuilder __cdecl setActivityStartFolder(_di_JDriveId folder) = 0 ;
+	virtual _di_JOpenFileActivityBuilder __cdecl setActivityTitle(Androidapi::Jni::Javatypes::_di_JString title) = 0 ;
+	virtual _di_JOpenFileActivityBuilder __cdecl setMimeType(Androidapi::Jnibridge::TJavaObjectArray__1<Androidapi::Jni::Javatypes::_di_JString>* mimeTypes) = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJOpenFileActivityBuilder : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JOpenFileActivityBuilderClass,_di_JOpenFileActivityBuilder>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JOpenFileActivityBuilderClass,_di_JOpenFileActivityBuilder> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJOpenFileActivityBuilder() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JOpenFileActivityBuilderClass,_di_JOpenFileActivityBuilder>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJOpenFileActivityBuilder() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{BCBFFE28-F86B-4D9F-9A6C-B2FE32874243}") JChangeEventClass  : public Androidapi::Jni::Javatypes::JObjectClass 
+{
+	virtual Androidapi::Jni::Os::_di_JParcelable_Creator __cdecl _GetCREATOR() = 0 ;
+	__property Androidapi::Jni::Os::_di_JParcelable_Creator CREATOR = {read=_GetCREATOR};
+};
+
+__interface  INTERFACE_UUID("{6FF0DDE1-05E1-4A62-8074-67C1EF860ECA}") JChangeEvent  : public Androidapi::Jni::Javatypes::JObject 
+{
+	virtual int __cdecl describeContents() = 0 ;
+	virtual _di_JDriveId __cdecl getDriveId() = 0 ;
+	virtual int __cdecl getType() = 0 ;
+	virtual bool __cdecl hasContentChanged() = 0 ;
+	virtual bool __cdecl hasMetadataChanged() = 0 ;
+	HIDESBASE virtual Androidapi::Jni::Javatypes::_di_JString __cdecl toString() = 0 ;
+	virtual void __cdecl writeToParcel(Androidapi::Jni::Os::_di_JParcel dest, int flags) = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJChangeEvent : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JChangeEventClass,_di_JChangeEvent>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JChangeEventClass,_di_JChangeEvent> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJChangeEvent() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JChangeEventClass,_di_JChangeEvent>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJChangeEvent() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{B100249C-AE0A-4B12-801B-A14DEFB2E552}") JConflictEventClass  : public Androidapi::Jni::Javatypes::JObjectClass 
+{
+	virtual Androidapi::Jni::Os::_di_JParcelable_Creator __cdecl _GetCREATOR() = 0 ;
+	__property Androidapi::Jni::Os::_di_JParcelable_Creator CREATOR = {read=_GetCREATOR};
+};
+
+__interface  INTERFACE_UUID("{CBBEB3C6-5792-4B96-A7B3-E9DE5603E5CD}") JConflictEvent  : public Androidapi::Jni::Javatypes::JObject 
+{
+	virtual int __cdecl describeContents() = 0 ;
+	virtual int __cdecl getType() = 0 ;
+	HIDESBASE virtual Androidapi::Jni::Javatypes::_di_JString __cdecl toString() = 0 ;
+	virtual void __cdecl writeToParcel(Androidapi::Jni::Os::_di_JParcel dest, int flags) = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJConflictEvent : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JConflictEventClass,_di_JConflictEvent>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JConflictEventClass,_di_JConflictEvent> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJConflictEvent() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JConflictEventClass,_di_JConflictEvent>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJConflictEvent() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{04E9A822-E6E1-46A0-866F-50F1E3587192}") JDriveEventClass  : public JSafeParcelableClass 
+{
+	virtual int __cdecl _GetTYPE_CHANGE() = 0 ;
+	__property int TYPE_CHANGE = {read=_GetTYPE_CHANGE};
+};
+
+__interface  INTERFACE_UUID("{6E8DAFB0-3D8E-4504-9014-2794E3776288}") JDriveEvent  : public JSafeParcelable 
+{
+	virtual int __cdecl getType() = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJDriveEvent : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JDriveEventClass,_di_JDriveEvent>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JDriveEventClass,_di_JDriveEvent> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJDriveEvent() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JDriveEventClass,_di_JDriveEvent>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJDriveEvent() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{49ABD2CC-0622-4D30-807E-F035F44BF491}") JDriveEvent_ListenerClass  : public Androidapi::Jnibridge::IJavaClass 
+{
+	
+};
+
+__interface  INTERFACE_UUID("{6AE500B2-4C09-49CB-A7A3-78CFC98A5D1A}") JDriveEvent_Listener  : public Androidapi::Jnibridge::IJavaInstance 
+{
+	virtual void __cdecl onEvent(_di_JDriveEvent P1) = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJDriveEvent_Listener : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JDriveEvent_ListenerClass,_di_JDriveEvent_Listener>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JDriveEvent_ListenerClass,_di_JDriveEvent_Listener> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJDriveEvent_Listener() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JDriveEvent_ListenerClass,_di_JDriveEvent_Listener>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJDriveEvent_Listener() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{180F1FFD-E9E0-48B9-9F16-AF42D72DA6B3}") JResourceEventClass  : public JDriveEventClass 
+{
+	
+};
+
+__interface  INTERFACE_UUID("{92F8B1F3-4755-4EFB-9CFC-48EF8A57DD05}") JResourceEvent  : public JDriveEvent 
+{
+	virtual _di_JDriveId __cdecl getDriveId() = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJResourceEvent : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JResourceEventClass,_di_JResourceEvent>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JResourceEventClass,_di_JResourceEvent> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJResourceEvent() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JResourceEventClass,_di_JResourceEvent>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJResourceEvent() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{703BABB1-990B-4BEE-9FC2-426A3AAA6E0C}") JAuthorizeAccessRequestClass  : public Androidapi::Jni::Javatypes::JObjectClass 
+{
+	virtual Androidapi::Jni::Os::_di_JParcelable_Creator __cdecl _GetCREATOR() = 0 ;
+	__property Androidapi::Jni::Os::_di_JParcelable_Creator CREATOR = {read=_GetCREATOR};
+};
+
+__interface  INTERFACE_UUID("{7AC4C1CB-40C6-47C7-8980-F290E6E43F67}") JAuthorizeAccessRequest  : public Androidapi::Jni::Javatypes::JObject 
+{
+	virtual int __cdecl describeContents() = 0 ;
+	virtual void __cdecl writeToParcel(Androidapi::Jni::Os::_di_JParcel dest, int flags) = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJAuthorizeAccessRequest : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JAuthorizeAccessRequestClass,_di_JAuthorizeAccessRequest>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JAuthorizeAccessRequestClass,_di_JAuthorizeAccessRequest> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJAuthorizeAccessRequest() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JAuthorizeAccessRequestClass,_di_JAuthorizeAccessRequest>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJAuthorizeAccessRequest() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{2F8EFD84-129C-4CCE-BF15-22A1D8251A4F}") JCloseContentsAndUpdateMetadataRequestClass  : public Androidapi::Jni::Javatypes::JObjectClass 
+{
+	virtual Androidapi::Jni::Os::_di_JParcelable_Creator __cdecl _GetCREATOR() = 0 ;
+	HIDESBASE virtual _di_JCloseContentsAndUpdateMetadataRequest __cdecl init(_di_JDriveId id, _di_JMetadataBundle metadataChangeSet, _di_JContents contentsReference) = 0 /* overload */;
+	__property Androidapi::Jni::Os::_di_JParcelable_Creator CREATOR = {read=_GetCREATOR};
+};
+
+__interface  INTERFACE_UUID("{A580F1BA-7610-468F-83D8-06349BD77433}") JCloseContentsAndUpdateMetadataRequest  : public Androidapi::Jni::Javatypes::JObject 
+{
+	virtual int __cdecl describeContents() = 0 ;
+	virtual void __cdecl writeToParcel(Androidapi::Jni::Os::_di_JParcel dest, int flags) = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJCloseContentsAndUpdateMetadataRequest : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JCloseContentsAndUpdateMetadataRequestClass,_di_JCloseContentsAndUpdateMetadataRequest>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JCloseContentsAndUpdateMetadataRequestClass,_di_JCloseContentsAndUpdateMetadataRequest> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJCloseContentsAndUpdateMetadataRequest() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JCloseContentsAndUpdateMetadataRequestClass,_di_JCloseContentsAndUpdateMetadataRequest>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJCloseContentsAndUpdateMetadataRequest() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{BD41E91A-D31B-44A1-8D91-0AEEB45F2831}") JCloseContentsRequestClass  : public Androidapi::Jni::Javatypes::JObjectClass 
+{
+	virtual Androidapi::Jni::Os::_di_JParcelable_Creator __cdecl _GetCREATOR() = 0 ;
+	HIDESBASE virtual _di_JCloseContentsRequest __cdecl init(_di_JContents contentsReference, bool saveResults) = 0 /* overload */;
+	__property Androidapi::Jni::Os::_di_JParcelable_Creator CREATOR = {read=_GetCREATOR};
+};
+
+__interface  INTERFACE_UUID("{3F4550FA-80B1-41DB-9638-65F73D211D04}") JCloseContentsRequest  : public Androidapi::Jni::Javatypes::JObject 
+{
+	virtual int __cdecl describeContents() = 0 ;
+	virtual void __cdecl writeToParcel(Androidapi::Jni::Os::_di_JParcel dest, int flags) = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJCloseContentsRequest : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JCloseContentsRequestClass,_di_JCloseContentsRequest>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JCloseContentsRequestClass,_di_JCloseContentsRequest> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJCloseContentsRequest() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JCloseContentsRequestClass,_di_JCloseContentsRequest>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJCloseContentsRequest() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{456083B4-5864-4E15-ADCD-313E4B9CBF60}") JCreateContentsRequestClass  : public Androidapi::Jni::Javatypes::JObjectClass 
+{
+	virtual Androidapi::Jni::Os::_di_JParcelable_Creator __cdecl _GetCREATOR() = 0 ;
+	HIDESBASE virtual _di_JCreateContentsRequest __cdecl init() = 0 /* overload */;
+	__property Androidapi::Jni::Os::_di_JParcelable_Creator CREATOR = {read=_GetCREATOR};
+};
+
+__interface  INTERFACE_UUID("{2EEC8177-2809-4FEC-81E9-A54128D6468D}") JCreateContentsRequest  : public Androidapi::Jni::Javatypes::JObject 
+{
+	virtual int __cdecl describeContents() = 0 ;
+	virtual void __cdecl writeToParcel(Androidapi::Jni::Os::_di_JParcel dest, int flags) = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJCreateContentsRequest : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JCreateContentsRequestClass,_di_JCreateContentsRequest>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JCreateContentsRequestClass,_di_JCreateContentsRequest> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJCreateContentsRequest() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JCreateContentsRequestClass,_di_JCreateContentsRequest>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJCreateContentsRequest() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{43078E19-34EC-4652-B11A-CE88136E9D27}") JCreateFileIntentSenderRequestClass  : public Androidapi::Jni::Javatypes::JObjectClass 
+{
+	virtual Androidapi::Jni::Os::_di_JParcelable_Creator __cdecl _GetCREATOR() = 0 ;
+	HIDESBASE virtual _di_JCreateFileIntentSenderRequest __cdecl init(_di_JMetadataBundle metadata, int requestId, Androidapi::Jni::Javatypes::_di_JString title, _di_JDriveId startFolder) = 0 /* overload */;
+	__property Androidapi::Jni::Os::_di_JParcelable_Creator CREATOR = {read=_GetCREATOR};
+};
+
+__interface  INTERFACE_UUID("{0529CF4C-FDA5-4008-8194-5F88F25D07D3}") JCreateFileIntentSenderRequest  : public Androidapi::Jni::Javatypes::JObject 
+{
+	virtual int __cdecl describeContents() = 0 ;
+	virtual void __cdecl writeToParcel(Androidapi::Jni::Os::_di_JParcel dest, int flags) = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJCreateFileIntentSenderRequest : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JCreateFileIntentSenderRequestClass,_di_JCreateFileIntentSenderRequest>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JCreateFileIntentSenderRequestClass,_di_JCreateFileIntentSenderRequest> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJCreateFileIntentSenderRequest() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JCreateFileIntentSenderRequestClass,_di_JCreateFileIntentSenderRequest>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJCreateFileIntentSenderRequest() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{6C4EF398-4217-469A-8965-1BE7E00DEAAB}") JCreateFileRequestClass  : public Androidapi::Jni::Javatypes::JObjectClass 
+{
+	virtual Androidapi::Jni::Os::_di_JParcelable_Creator __cdecl _GetCREATOR() = 0 ;
+	HIDESBASE virtual _di_JCreateFileRequest __cdecl init(_di_JDriveId parentDriveId, _di_JMetadataBundle metadata, _di_JContents contentsReference) = 0 /* overload */;
+	__property Androidapi::Jni::Os::_di_JParcelable_Creator CREATOR = {read=_GetCREATOR};
+};
+
+__interface  INTERFACE_UUID("{E8116A6B-23F3-498B-969B-9C855AB86666}") JCreateFileRequest  : public Androidapi::Jni::Javatypes::JObject 
+{
+	virtual int __cdecl describeContents() = 0 ;
+	virtual void __cdecl writeToParcel(Androidapi::Jni::Os::_di_JParcel dest, int flags) = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJCreateFileRequest : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JCreateFileRequestClass,_di_JCreateFileRequest>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JCreateFileRequestClass,_di_JCreateFileRequest> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJCreateFileRequest() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JCreateFileRequestClass,_di_JCreateFileRequest>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJCreateFileRequest() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{5E0B5FD4-8565-456E-9369-ED93D7B8CCF5}") JCreateFolderRequestClass  : public Androidapi::Jni::Javatypes::JObjectClass 
+{
+	virtual Androidapi::Jni::Os::_di_JParcelable_Creator __cdecl _GetCREATOR() = 0 ;
+	HIDESBASE virtual _di_JCreateFolderRequest __cdecl init(_di_JDriveId parentDriveId, _di_JMetadataBundle metadata) = 0 /* overload */;
+	__property Androidapi::Jni::Os::_di_JParcelable_Creator CREATOR = {read=_GetCREATOR};
+};
+
+__interface  INTERFACE_UUID("{C6CAB0E8-C3CF-4981-A562-3BB6F9BB21FC}") JCreateFolderRequest  : public Androidapi::Jni::Javatypes::JObject 
+{
+	virtual int __cdecl describeContents() = 0 ;
+	virtual void __cdecl writeToParcel(Androidapi::Jni::Os::_di_JParcel dest, int flags) = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJCreateFolderRequest : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JCreateFolderRequestClass,_di_JCreateFolderRequest>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JCreateFolderRequestClass,_di_JCreateFolderRequest> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJCreateFolderRequest() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JCreateFolderRequestClass,_di_JCreateFolderRequest>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJCreateFolderRequest() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{6FB003C6-9E0D-4FEF-A42E-E6618AC6115F}") JDisconnectRequestClass  : public Androidapi::Jni::Javatypes::JObjectClass 
+{
+	virtual Androidapi::Jni::Os::_di_JParcelable_Creator __cdecl _GetCREATOR() = 0 ;
+	HIDESBASE virtual _di_JDisconnectRequest __cdecl init() = 0 /* overload */;
+	__property Androidapi::Jni::Os::_di_JParcelable_Creator CREATOR = {read=_GetCREATOR};
+};
+
+__interface  INTERFACE_UUID("{3E56F32D-449E-46B8-951B-A9E64672C318}") JDisconnectRequest  : public Androidapi::Jni::Javatypes::JObject 
+{
+	virtual int __cdecl describeContents() = 0 ;
+	virtual void __cdecl writeToParcel(Androidapi::Jni::Os::_di_JParcel dest, int flags) = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJDisconnectRequest : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JDisconnectRequestClass,_di_JDisconnectRequest>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JDisconnectRequestClass,_di_JDisconnectRequest> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJDisconnectRequest() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JDisconnectRequestClass,_di_JDisconnectRequest>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJDisconnectRequest() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{0C3B6DA1-FBCE-4BC5-8981-280C41797919}") JGetMetadataRequestClass  : public Androidapi::Jni::Javatypes::JObjectClass 
+{
+	virtual Androidapi::Jni::Os::_di_JParcelable_Creator __cdecl _GetCREATOR() = 0 ;
+	HIDESBASE virtual _di_JGetMetadataRequest __cdecl init(_di_JDriveId id) = 0 /* overload */;
+	__property Androidapi::Jni::Os::_di_JParcelable_Creator CREATOR = {read=_GetCREATOR};
+};
+
+__interface  INTERFACE_UUID("{A7244965-712E-41BD-AD7C-E44671B6AB25}") JGetMetadataRequest  : public Androidapi::Jni::Javatypes::JObject 
+{
+	virtual int __cdecl describeContents() = 0 ;
+	virtual void __cdecl writeToParcel(Androidapi::Jni::Os::_di_JParcel dest, int flags) = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJGetMetadataRequest : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JGetMetadataRequestClass,_di_JGetMetadataRequest>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JGetMetadataRequestClass,_di_JGetMetadataRequest> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJGetMetadataRequest() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JGetMetadataRequestClass,_di_JGetMetadataRequest>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJGetMetadataRequest() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{BE333F8B-F71B-4397-83FA-CB40CCD6AAC0}") JListParentsRequestClass  : public Androidapi::Jni::Javatypes::JObjectClass 
+{
+	virtual Androidapi::Jni::Os::_di_JParcelable_Creator __cdecl _GetCREATOR() = 0 ;
+	HIDESBASE virtual _di_JListParentsRequest __cdecl init(_di_JDriveId id) = 0 /* overload */;
+	__property Androidapi::Jni::Os::_di_JParcelable_Creator CREATOR = {read=_GetCREATOR};
+};
+
+__interface  INTERFACE_UUID("{DA42E53C-B314-41B0-BD04-EB8593EF4E15}") JListParentsRequest  : public Androidapi::Jni::Javatypes::JObject 
+{
+	virtual int __cdecl describeContents() = 0 ;
+	virtual void __cdecl writeToParcel(Androidapi::Jni::Os::_di_JParcel dest, int flags) = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJListParentsRequest : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JListParentsRequestClass,_di_JListParentsRequest>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JListParentsRequestClass,_di_JListParentsRequest> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJListParentsRequest() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JListParentsRequestClass,_di_JListParentsRequest>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJListParentsRequest() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{4F6303A9-9DE6-4ED4-8FAE-2C19C1FDB835}") JOnContentsResponseClass  : public Androidapi::Jni::Javatypes::JObjectClass 
+{
+	virtual Androidapi::Jni::Os::_di_JParcelable_Creator __cdecl _GetCREATOR() = 0 ;
+	__property Androidapi::Jni::Os::_di_JParcelable_Creator CREATOR = {read=_GetCREATOR};
+};
+
+__interface  INTERFACE_UUID("{54F2EB29-A5C7-4427-9E54-026DFCCC2F51}") JOnContentsResponse  : public Androidapi::Jni::Javatypes::JObject 
+{
+	virtual int __cdecl describeContents() = 0 ;
+	virtual _di_JContents __cdecl eX() = 0 ;
+	virtual void __cdecl writeToParcel(Androidapi::Jni::Os::_di_JParcel dest, int flags) = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJOnContentsResponse : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JOnContentsResponseClass,_di_JOnContentsResponse>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JOnContentsResponseClass,_di_JOnContentsResponse> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJOnContentsResponse() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JOnContentsResponseClass,_di_JOnContentsResponse>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJOnContentsResponse() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{EE5D8E4A-5E3E-42D7-B6B5-FDB4BF02C830}") JOnDownloadProgressResponseClass  : public Androidapi::Jni::Javatypes::JObjectClass 
+{
+	virtual Androidapi::Jni::Os::_di_JParcelable_Creator __cdecl _GetCREATOR() = 0 ;
+	__property Androidapi::Jni::Os::_di_JParcelable_Creator CREATOR = {read=_GetCREATOR};
+};
+
+__interface  INTERFACE_UUID("{C0362567-DB7B-4C6A-8ADE-C67348C46DD9}") JOnDownloadProgressResponse  : public Androidapi::Jni::Javatypes::JObject 
+{
+	virtual int __cdecl describeContents() = 0 ;
+	virtual __int64 __cdecl eY() = 0 ;
+	virtual __int64 __cdecl eZ() = 0 ;
+	virtual void __cdecl writeToParcel(Androidapi::Jni::Os::_di_JParcel dest, int flags) = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJOnDownloadProgressResponse : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JOnDownloadProgressResponseClass,_di_JOnDownloadProgressResponse>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JOnDownloadProgressResponseClass,_di_JOnDownloadProgressResponse> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJOnDownloadProgressResponse() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JOnDownloadProgressResponseClass,_di_JOnDownloadProgressResponse>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJOnDownloadProgressResponse() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{DE318F5B-F089-4917-894A-0A9FB9959927}") JOnDriveIdResponseClass  : public Androidapi::Jni::Javatypes::JObjectClass 
+{
+	virtual Androidapi::Jni::Os::_di_JParcelable_Creator __cdecl _GetCREATOR() = 0 ;
+	__property Androidapi::Jni::Os::_di_JParcelable_Creator CREATOR = {read=_GetCREATOR};
+};
+
+__interface  INTERFACE_UUID("{70AA2449-F37A-42CC-97B6-46637B5AE7B1}") JOnDriveIdResponse  : public Androidapi::Jni::Javatypes::JObject 
+{
+	virtual int __cdecl describeContents() = 0 ;
+	virtual _di_JDriveId __cdecl getDriveId() = 0 ;
+	virtual void __cdecl writeToParcel(Androidapi::Jni::Os::_di_JParcel dest, int flags) = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJOnDriveIdResponse : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JOnDriveIdResponseClass,_di_JOnDriveIdResponse>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JOnDriveIdResponseClass,_di_JOnDriveIdResponse> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJOnDriveIdResponse() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JOnDriveIdResponseClass,_di_JOnDriveIdResponse>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJOnDriveIdResponse() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{B3C654CE-BFC2-4FA4-BD1B-86E2401B46F8}") JOnEventResponseClass  : public Androidapi::Jni::Javatypes::JObjectClass 
+{
+	virtual Androidapi::Jni::Os::_di_JParcelable_Creator __cdecl _GetCREATOR() = 0 ;
+	__property Androidapi::Jni::Os::_di_JParcelable_Creator CREATOR = {read=_GetCREATOR};
+};
+
+__interface  INTERFACE_UUID("{8E845694-F31F-440D-86F0-1A1F87D5F2C8}") JOnEventResponse  : public Androidapi::Jni::Javatypes::JObject 
+{
+	virtual int __cdecl describeContents() = 0 ;
+	virtual _di_JChangeEvent __cdecl fa() = 0 ;
+	virtual _di_JConflictEvent __cdecl fb() = 0 ;
+	virtual int __cdecl getEventType() = 0 ;
+	virtual void __cdecl writeToParcel(Androidapi::Jni::Os::_di_JParcel dest, int flags) = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJOnEventResponse : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JOnEventResponseClass,_di_JOnEventResponse>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JOnEventResponseClass,_di_JOnEventResponse> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJOnEventResponse() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JOnEventResponseClass,_di_JOnEventResponse>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJOnEventResponse() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{FB4B5DB1-E3BF-4D2E-9BC7-5079FCF518AB}") JOnListEntriesResponseClass  : public Androidapi::Jni::Javatypes::JObjectClass 
+{
+	virtual Androidapi::Jni::Os::_di_JParcelable_Creator __cdecl _GetCREATOR() = 0 ;
+	__property Androidapi::Jni::Os::_di_JParcelable_Creator CREATOR = {read=_GetCREATOR};
+};
+
+__interface  INTERFACE_UUID("{016ACAE5-991B-48DB-8A67-0ACEAF78713D}") JOnListEntriesResponse  : public Androidapi::Jni::Javatypes::JObject 
+{
+	virtual int __cdecl describeContents() = 0 ;
+	virtual _di_JDataHolder __cdecl fc() = 0 ;
+	virtual void __cdecl writeToParcel(Androidapi::Jni::Os::_di_JParcel dest, int flags) = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJOnListEntriesResponse : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JOnListEntriesResponseClass,_di_JOnListEntriesResponse>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JOnListEntriesResponseClass,_di_JOnListEntriesResponse> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJOnListEntriesResponse() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JOnListEntriesResponseClass,_di_JOnListEntriesResponse>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJOnListEntriesResponse() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{BDAB4DB6-0B67-4F77-AE2A-BAB40CAD1725}") JOnListParentsResponseClass  : public Androidapi::Jni::Javatypes::JObjectClass 
+{
+	virtual Androidapi::Jni::Os::_di_JParcelable_Creator __cdecl _GetCREATOR() = 0 ;
+	__property Androidapi::Jni::Os::_di_JParcelable_Creator CREATOR = {read=_GetCREATOR};
+};
+
+__interface  INTERFACE_UUID("{87B6201B-7ADD-4529-B8D7-0E5719CE98A0}") JOnListParentsResponse  : public Androidapi::Jni::Javatypes::JObject 
+{
+	virtual int __cdecl describeContents() = 0 ;
+	virtual _di_JDataHolder __cdecl fd() = 0 ;
+	virtual void __cdecl writeToParcel(Androidapi::Jni::Os::_di_JParcel dest, int flags) = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJOnListParentsResponse : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JOnListParentsResponseClass,_di_JOnListParentsResponse>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JOnListParentsResponseClass,_di_JOnListParentsResponse> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJOnListParentsResponse() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JOnListParentsResponseClass,_di_JOnListParentsResponse>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJOnListParentsResponse() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{A61B4397-A59E-4860-88AE-9B94BAED06ED}") JOnMetadataResponseClass  : public Androidapi::Jni::Javatypes::JObjectClass 
+{
+	virtual Androidapi::Jni::Os::_di_JParcelable_Creator __cdecl _GetCREATOR() = 0 ;
+	__property Androidapi::Jni::Os::_di_JParcelable_Creator CREATOR = {read=_GetCREATOR};
+};
+
+__interface  INTERFACE_UUID("{DB9FFE46-D10A-46FB-BB9A-B9100CFA449F}") JOnMetadataResponse  : public Androidapi::Jni::Javatypes::JObject 
+{
+	virtual int __cdecl describeContents() = 0 ;
+	virtual _di_JMetadataBundle __cdecl fe() = 0 ;
+	virtual void __cdecl writeToParcel(Androidapi::Jni::Os::_di_JParcel dest, int flags) = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJOnMetadataResponse : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JOnMetadataResponseClass,_di_JOnMetadataResponse>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JOnMetadataResponseClass,_di_JOnMetadataResponse> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJOnMetadataResponse() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JOnMetadataResponseClass,_di_JOnMetadataResponse>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJOnMetadataResponse() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{2D69DD0E-925D-472B-ACE6-7CDF6563538C}") JOpenContentsRequestClass  : public Androidapi::Jni::Javatypes::JObjectClass 
+{
+	virtual Androidapi::Jni::Os::_di_JParcelable_Creator __cdecl _GetCREATOR() = 0 ;
+	HIDESBASE virtual _di_JOpenContentsRequest __cdecl init(_di_JDriveId id, int mode) = 0 /* overload */;
+	__property Androidapi::Jni::Os::_di_JParcelable_Creator CREATOR = {read=_GetCREATOR};
+};
+
+__interface  INTERFACE_UUID("{8B495FCA-013D-45A2-A0CB-37FAD039AA88}") JOpenContentsRequest  : public Androidapi::Jni::Javatypes::JObject 
+{
+	virtual int __cdecl describeContents() = 0 ;
+	virtual void __cdecl writeToParcel(Androidapi::Jni::Os::_di_JParcel dest, int flags) = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJOpenContentsRequest : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JOpenContentsRequestClass,_di_JOpenContentsRequest>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JOpenContentsRequestClass,_di_JOpenContentsRequest> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJOpenContentsRequest() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JOpenContentsRequestClass,_di_JOpenContentsRequest>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJOpenContentsRequest() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{6C2D23C8-15AB-4D39-8499-C84B8DD04F6E}") JOpenFileIntentSenderRequestClass  : public Androidapi::Jni::Javatypes::JObjectClass 
+{
+	virtual Androidapi::Jni::Os::_di_JParcelable_Creator __cdecl _GetCREATOR() = 0 ;
+	HIDESBASE virtual _di_JOpenFileIntentSenderRequest __cdecl init(Androidapi::Jni::Javatypes::_di_JString title, Androidapi::Jnibridge::TJavaObjectArray__1<Androidapi::Jni::Javatypes::_di_JString>* mimeTypes, _di_JDriveId startFolder) = 0 /* overload */;
+	__property Androidapi::Jni::Os::_di_JParcelable_Creator CREATOR = {read=_GetCREATOR};
+};
+
+__interface  INTERFACE_UUID("{703767B5-473B-4601-95A7-23C3F2D50473}") JOpenFileIntentSenderRequest  : public Androidapi::Jni::Javatypes::JObject 
+{
+	virtual int __cdecl describeContents() = 0 ;
+	virtual void __cdecl writeToParcel(Androidapi::Jni::Os::_di_JParcel dest, int flags) = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJOpenFileIntentSenderRequest : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JOpenFileIntentSenderRequestClass,_di_JOpenFileIntentSenderRequest>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JOpenFileIntentSenderRequestClass,_di_JOpenFileIntentSenderRequest> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJOpenFileIntentSenderRequest() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JOpenFileIntentSenderRequestClass,_di_JOpenFileIntentSenderRequest>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJOpenFileIntentSenderRequest() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{63B50DDA-5E95-4B2C-853E-00D4C93A7AE6}") JQueryRequestClass  : public Androidapi::Jni::Javatypes::JObjectClass 
+{
+	virtual Androidapi::Jni::Os::_di_JParcelable_Creator __cdecl _GetCREATOR() = 0 ;
+	HIDESBASE virtual _di_JQueryRequest __cdecl init(_di_JQuery query) = 0 /* overload */;
+	__property Androidapi::Jni::Os::_di_JParcelable_Creator CREATOR = {read=_GetCREATOR};
+};
+
+__interface  INTERFACE_UUID("{9530A37B-7E92-4D4D-AEE4-5C710F01A936}") JQueryRequest  : public Androidapi::Jni::Javatypes::JObject 
+{
+	virtual int __cdecl describeContents() = 0 ;
+	virtual void __cdecl writeToParcel(Androidapi::Jni::Os::_di_JParcel dest, int flags) = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJQueryRequest : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JQueryRequestClass,_di_JQueryRequest>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JQueryRequestClass,_di_JQueryRequest> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJQueryRequest() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JQueryRequestClass,_di_JQueryRequest>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJQueryRequest() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{783D58C4-C9BC-4DB3-8999-0A50B3487953}") JRemoveEventListenerRequestClass  : public Androidapi::Jni::Javatypes::JObjectClass 
+{
+	virtual Androidapi::Jni::Os::_di_JParcelable_Creator __cdecl _GetCREATOR() = 0 ;
+	HIDESBASE virtual _di_JRemoveEventListenerRequest __cdecl init(_di_JDriveId id, int eventType) = 0 /* overload */;
+	__property Androidapi::Jni::Os::_di_JParcelable_Creator CREATOR = {read=_GetCREATOR};
+};
+
+__interface  INTERFACE_UUID("{A8153B3F-998A-4A95-88BF-FF6C5CA94CAB}") JRemoveEventListenerRequest  : public Androidapi::Jni::Javatypes::JObject 
+{
+	virtual int __cdecl describeContents() = 0 ;
+	virtual void __cdecl writeToParcel(Androidapi::Jni::Os::_di_JParcel dest, int flags) = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJRemoveEventListenerRequest : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JRemoveEventListenerRequestClass,_di_JRemoveEventListenerRequest>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JRemoveEventListenerRequestClass,_di_JRemoveEventListenerRequest> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJRemoveEventListenerRequest() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JRemoveEventListenerRequestClass,_di_JRemoveEventListenerRequest>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJRemoveEventListenerRequest() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{D2456860-25F7-4A04-9AD3-2DDAE58BDA91}") JTrashResourceRequestClass  : public Androidapi::Jni::Javatypes::JObjectClass 
+{
+	virtual Androidapi::Jni::Os::_di_JParcelable_Creator __cdecl _GetCREATOR() = 0 ;
+	__property Androidapi::Jni::Os::_di_JParcelable_Creator CREATOR = {read=_GetCREATOR};
+};
+
+__interface  INTERFACE_UUID("{EEA4D549-6D68-4CEA-BA9A-EF7A2265FC19}") JTrashResourceRequest  : public Androidapi::Jni::Javatypes::JObject 
+{
+	virtual int __cdecl describeContents() = 0 ;
+	virtual void __cdecl writeToParcel(Androidapi::Jni::Os::_di_JParcel dest, int flags) = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJTrashResourceRequest : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JTrashResourceRequestClass,_di_JTrashResourceRequest>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JTrashResourceRequestClass,_di_JTrashResourceRequest> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJTrashResourceRequest() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JTrashResourceRequestClass,_di_JTrashResourceRequest>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJTrashResourceRequest() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{0A136A14-53D0-463E-B134-DABCB87851B4}") JUpdateMetadataRequestClass  : public Androidapi::Jni::Javatypes::JObjectClass 
+{
+	virtual Androidapi::Jni::Os::_di_JParcelable_Creator __cdecl _GetCREATOR() = 0 ;
+	HIDESBASE virtual _di_JUpdateMetadataRequest __cdecl init(_di_JDriveId id, _di_JMetadataBundle metadataChangeSet) = 0 /* overload */;
+	__property Androidapi::Jni::Os::_di_JParcelable_Creator CREATOR = {read=_GetCREATOR};
+};
+
+__interface  INTERFACE_UUID("{72E8AB1A-A122-4191-A116-46F7FC5B9301}") JUpdateMetadataRequest  : public Androidapi::Jni::Javatypes::JObject 
+{
+	virtual int __cdecl describeContents() = 0 ;
+	virtual void __cdecl writeToParcel(Androidapi::Jni::Os::_di_JParcel dest, int flags) = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJUpdateMetadataRequest : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JUpdateMetadataRequestClass,_di_JUpdateMetadataRequest>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JUpdateMetadataRequestClass,_di_JUpdateMetadataRequest> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJUpdateMetadataRequest() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JUpdateMetadataRequestClass,_di_JUpdateMetadataRequest>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJUpdateMetadataRequest() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{F402C732-DD6A-4D5C-AFF4-7CA37A851B59}") JMetadataFieldClass  : public Androidapi::Jni::Javatypes::JObjectClass 
+{
+	
+};
+
+__interface  INTERFACE_UUID("{16D67F4D-AAC3-4270-BADE-E267954B5884}") JMetadataField  : public Androidapi::Jni::Javatypes::JObject 
+{
+	virtual void __cdecl a(Androidapi::Jni::Javatypes::_di_JObject P1, Androidapi::Jni::Os::_di_JBundle P2) = 0 /* overload */;
+	virtual void __cdecl a(_di_JDataHolder P1, _di_JMetadataBundle P2, int P3, int P4) = 0 /* overload */;
+	virtual Androidapi::Jni::Javatypes::_di_JObject __cdecl c(_di_JDataHolder P1, int P2, int P3) = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JObject __cdecl d(Androidapi::Jni::Os::_di_JBundle P1) = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JCollection __cdecl ff() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl getName() = 0 ;
+	virtual int __cdecl getVersionAdded() = 0 ;
+	HIDESBASE virtual Androidapi::Jni::Javatypes::_di_JString __cdecl toString() = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJMetadataField : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMetadataFieldClass,_di_JMetadataField>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMetadataFieldClass,_di_JMetadataField> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJMetadataField() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMetadataFieldClass,_di_JMetadataField>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJMetadataField() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{FE77FCD1-3142-4076-8575-D196DC8E9FE3}") JCollectionMetadataFieldClass  : public JMetadataFieldClass 
+{
+	
+};
+
+__interface  INTERFACE_UUID("{6EA59CB7-FF75-44EA-812E-101E6E902971}") JCollectionMetadataField  : public JMetadataField 
+{
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJCollectionMetadataField : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JCollectionMetadataFieldClass,_di_JCollectionMetadataField>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JCollectionMetadataFieldClass,_di_JCollectionMetadataField> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJCollectionMetadataField() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JCollectionMetadataFieldClass,_di_JCollectionMetadataField>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJCollectionMetadataField() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{0E58ED4B-1EC5-4960-A79F-58770C856663}") JOrderedMetadataFieldClass  : public JMetadataFieldClass 
+{
+	
+};
+
+__interface  INTERFACE_UUID("{4D4DD38D-3999-4C7C-A4B6-BBAFB5F6719F}") JOrderedMetadataField  : public JMetadataField 
+{
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJOrderedMetadataField : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JOrderedMetadataFieldClass,_di_JOrderedMetadataField>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JOrderedMetadataFieldClass,_di_JOrderedMetadataField> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJOrderedMetadataField() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JOrderedMetadataFieldClass,_di_JOrderedMetadataField>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJOrderedMetadataField() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{EEE83F1D-F47E-4D81-A158-D65BD519F6D7}") JMetadataBundleClass  : public Androidapi::Jni::Javatypes::JObjectClass 
+{
+	virtual Androidapi::Jni::Os::_di_JParcelable_Creator __cdecl _GetCREATOR() = 0 ;
+	virtual _di_JMetadataBundle __cdecl a(_di_JMetadataBundle P1) = 0 /* overload */;
+	virtual _di_JMetadataBundle __cdecl a(_di_JMetadataField P1, Androidapi::Jni::Javatypes::_di_JObject P2) = 0 /* overload */;
+	virtual _di_JMetadataBundle __cdecl fh() = 0 ;
+	__property Androidapi::Jni::Os::_di_JParcelable_Creator CREATOR = {read=_GetCREATOR};
+};
+
+__interface  INTERFACE_UUID("{14855C10-FC06-4A7C-8964-CF7BE2AF9BF0}") JMetadataBundle  : public Androidapi::Jni::Javatypes::JObject 
+{
+	virtual Androidapi::Jni::Javatypes::_di_JObject __cdecl a(_di_JMetadataField P1) = 0 /* overload */;
+	virtual void __cdecl b(_di_JMetadataField P1, Androidapi::Jni::Javatypes::_di_JObject P2) = 0 ;
+	virtual int __cdecl describeContents() = 0 ;
+	HIDESBASE virtual bool __cdecl equals(Androidapi::Jni::Javatypes::_di_JObject obj) = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JSet __cdecl fi() = 0 ;
+	HIDESBASE virtual int __cdecl hashCode() = 0 ;
+	HIDESBASE virtual Androidapi::Jni::Javatypes::_di_JString __cdecl toString() = 0 ;
+	virtual void __cdecl writeToParcel(Androidapi::Jni::Os::_di_JParcel dest, int flags) = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJMetadataBundle : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMetadataBundleClass,_di_JMetadataBundle>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMetadataBundleClass,_di_JMetadataBundle> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJMetadataBundle() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMetadataBundleClass,_di_JMetadataBundle>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJMetadataBundle() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{1B69C288-A174-4723-8D53-1121EC0DC54A}") Jquery_FilterClass  : public Androidapi::Jnibridge::IJavaClass 
+{
+	
+};
+
+__interface  INTERFACE_UUID("{D73EA95A-3C8E-4E6F-8590-EED8625D80BC}") Jquery_Filter  : public Androidapi::Jnibridge::IJavaInstance 
+{
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJquery_Filter : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_Jquery_FilterClass,_di_Jquery_Filter>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_Jquery_FilterClass,_di_Jquery_Filter> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJquery_Filter() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_Jquery_FilterClass,_di_Jquery_Filter>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJquery_Filter() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{2437EB61-FF1B-41C0-BC21-9F905D7A4813}") JFiltersClass  : public Androidapi::Jni::Javatypes::JObjectClass 
+{
+	virtual _di_Jquery_Filter __cdecl And(Androidapi::Jni::Javatypes::_di_JIterable filters) = 0 /* overload */;
+	virtual _di_Jquery_Filter __cdecl And(_di_Jquery_Filter filter, Androidapi::Jnibridge::TJavaObjectArray__1<_di_Jquery_Filter>* additionalFilters) = 0 /* overload */;
+	virtual _di_Jquery_Filter __cdecl contains(_di_JMetadataField field, Androidapi::Jni::Javatypes::_di_JString value) = 0 ;
+	virtual _di_Jquery_Filter __cdecl eq(_di_JMetadataField field, Androidapi::Jni::Javatypes::_di_JObject value) = 0 ;
+	virtual _di_Jquery_Filter __cdecl greaterThan(_di_JOrderedMetadataField field, Androidapi::Jni::Javatypes::_di_JComparable value) = 0 ;
+	virtual _di_Jquery_Filter __cdecl greaterThanEquals(_di_JOrderedMetadataField field, Androidapi::Jni::Javatypes::_di_JComparable value) = 0 ;
+	virtual _di_Jquery_Filter __cdecl in(_di_JCollectionMetadataField field, Androidapi::Jni::Javatypes::_di_JObject value) = 0 ;
+	HIDESBASE virtual _di_JFilters __cdecl init() = 0 ;
+	virtual _di_Jquery_Filter __cdecl lessThan(_di_JOrderedMetadataField field, Androidapi::Jni::Javatypes::_di_JComparable value) = 0 ;
+	virtual _di_Jquery_Filter __cdecl lessThanEquals(_di_JOrderedMetadataField field, Androidapi::Jni::Javatypes::_di_JComparable value) = 0 ;
+	virtual _di_Jquery_Filter __cdecl Not(_di_Jquery_Filter toNegate) = 0 ;
+	virtual _di_Jquery_Filter __cdecl Or(Androidapi::Jni::Javatypes::_di_JIterable filters) = 0 /* overload */;
+	virtual _di_Jquery_Filter __cdecl Or(_di_Jquery_Filter filter, Androidapi::Jnibridge::TJavaObjectArray__1<_di_Jquery_Filter>* additionalFilters) = 0 /* overload */;
+	virtual _di_Jquery_Filter __cdecl sharedWithMe() = 0 ;
+};
+
+__interface  INTERFACE_UUID("{8E0DC4EE-D01C-494F-825E-E583D9E57E62}") JFilters  : public Androidapi::Jni::Javatypes::JObject 
+{
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJFilters : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JFiltersClass,_di_JFilters>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JFiltersClass,_di_JFilters> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJFilters() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JFiltersClass,_di_JFilters>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJFilters() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{C6580A44-7023-4873-BA6B-DB0DFCFFD7DC}") JQueryClass  : public Androidapi::Jni::Javatypes::JObjectClass 
+{
+	virtual Androidapi::Jni::Os::_di_JParcelable_Creator __cdecl _GetCREATOR() = 0 ;
+	__property Androidapi::Jni::Os::_di_JParcelable_Creator CREATOR = {read=_GetCREATOR};
+};
+
+__interface  INTERFACE_UUID("{6A47F39B-DDB1-4348-A52D-A8309CE8AA3D}") JQuery  : public Androidapi::Jni::Javatypes::JObject 
+{
+	virtual int __cdecl describeContents() = 0 ;
+	virtual _di_Jquery_Filter __cdecl getFilter() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl getPageToken() = 0 ;
+	virtual void __cdecl writeToParcel(Androidapi::Jni::Os::_di_JParcel out_, int flags) = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJQuery : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JQueryClass,_di_JQuery>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JQueryClass,_di_JQuery> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJQuery() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JQueryClass,_di_JQuery>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJQuery() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{611286E5-5A78-4ABD-A343-66E41CD4C174}") JQuery_BuilderClass  : public Androidapi::Jni::Javatypes::JObjectClass 
+{
+	HIDESBASE virtual _di_JQuery_Builder __cdecl init() = 0 ;
+};
+
+__interface  INTERFACE_UUID("{5D0255C7-F968-4DDB-9FA0-2B9F81052BB7}") JQuery_Builder  : public Androidapi::Jni::Javatypes::JObject 
+{
+	virtual _di_JQuery_Builder __cdecl addFilter(_di_Jquery_Filter filter) = 0 ;
+	virtual _di_JQuery __cdecl build() = 0 ;
+	virtual _di_JQuery_Builder __cdecl setPageToken(Androidapi::Jni::Javatypes::_di_JString token) = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJQuery_Builder : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JQuery_BuilderClass,_di_JQuery_Builder>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JQuery_BuilderClass,_di_JQuery_Builder> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJQuery_Builder() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JQuery_BuilderClass,_di_JQuery_Builder>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJQuery_Builder() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{67D12463-603F-439D-AAFE-5025EAFD3EA0}") JSearchableFieldClass  : public Androidapi::Jni::Javatypes::JObjectClass 
+{
+	virtual _di_JOrderedMetadataField __cdecl _GetEH() = 0 ;
+	virtual _di_JMetadataField __cdecl _GetIS_PINNED() = 0 ;
+	virtual _di_JOrderedMetadataField __cdecl _GetLAST_VIEWED_BY_ME() = 0 ;
+	virtual _di_JMetadataField __cdecl _GetMIME_TYPE() = 0 ;
+	virtual _di_JOrderedMetadataField __cdecl _GetMODIFIED_DATE() = 0 ;
+	virtual _di_JCollectionMetadataField __cdecl _GetPARENTS() = 0 ;
+	virtual _di_JMetadataField __cdecl _GetSTARRED() = 0 ;
+	virtual _di_JMetadataField __cdecl _GetTITLE() = 0 ;
+	virtual _di_JMetadataField __cdecl _GetTRASHED() = 0 ;
+	HIDESBASE virtual _di_JSearchableField __cdecl init() = 0 ;
+	__property _di_JOrderedMetadataField EH = {read=_GetEH};
+	__property _di_JMetadataField IS_PINNED = {read=_GetIS_PINNED};
+	__property _di_JOrderedMetadataField LAST_VIEWED_BY_ME = {read=_GetLAST_VIEWED_BY_ME};
+	__property _di_JMetadataField MIME_TYPE = {read=_GetMIME_TYPE};
+	__property _di_JOrderedMetadataField MODIFIED_DATE = {read=_GetMODIFIED_DATE};
+	__property _di_JCollectionMetadataField PARENTS = {read=_GetPARENTS};
+	__property _di_JMetadataField STARRED = {read=_GetSTARRED};
+	__property _di_JMetadataField TITLE = {read=_GetTITLE};
+	__property _di_JMetadataField TRASHED = {read=_GetTRASHED};
+};
+
+__interface  INTERFACE_UUID("{A16B38F0-A447-4AC2-A814-A7C9EDDEA423}") JSearchableField  : public Androidapi::Jni::Javatypes::JObject 
+{
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJSearchableField : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JSearchableFieldClass,_di_JSearchableField>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JSearchableFieldClass,_di_JSearchableField> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJSearchableField() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JSearchableFieldClass,_di_JSearchableField>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJSearchableField() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{E534AF17-32C2-4A35-A108-F7D9363CB21F}") JComparisonFilterClass  : public Androidapi::Jni::Javatypes::JObjectClass 
+{
+	HIDESBASE virtual _di_JComparisonFilter __cdecl init(_di_JOperator Operator, _di_JMetadataField field, Androidapi::Jni::Javatypes::_di_JObject value) = 0 /* overload */;
+};
+
+__interface  INTERFACE_UUID("{1693B63E-62D3-41A2-BCB7-AE647C66BBD4}") JComparisonFilter  : public Androidapi::Jni::Javatypes::JObject 
+{
+	virtual int __cdecl describeContents() = 0 ;
+	virtual void __cdecl writeToParcel(Androidapi::Jni::Os::_di_JParcel out_, int flags) = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJComparisonFilter : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JComparisonFilterClass,_di_JComparisonFilter>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JComparisonFilterClass,_di_JComparisonFilter> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJComparisonFilter() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JComparisonFilterClass,_di_JComparisonFilter>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJComparisonFilter() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{D89992E0-8BE0-4CF9-9787-F6B6054D2F30}") JFieldOnlyFilterClass  : public Androidapi::Jni::Javatypes::JObjectClass 
+{
+	virtual Androidapi::Jni::Os::_di_JParcelable_Creator __cdecl _GetCREATOR() = 0 ;
+	HIDESBASE virtual _di_JFieldOnlyFilter __cdecl init(_di_JMetadataField field) = 0 /* overload */;
+	__property Androidapi::Jni::Os::_di_JParcelable_Creator CREATOR = {read=_GetCREATOR};
+};
+
+__interface  INTERFACE_UUID("{3B75FB2F-9AA0-4A66-861A-A82E7526E64C}") JFieldOnlyFilter  : public Androidapi::Jni::Javatypes::JObject 
+{
+	virtual int __cdecl describeContents() = 0 ;
+	virtual void __cdecl writeToParcel(Androidapi::Jni::Os::_di_JParcel out_, int flags) = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJFieldOnlyFilter : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JFieldOnlyFilterClass,_di_JFieldOnlyFilter>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JFieldOnlyFilterClass,_di_JFieldOnlyFilter> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJFieldOnlyFilter() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JFieldOnlyFilterClass,_di_JFieldOnlyFilter>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJFieldOnlyFilter() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{5FCE4FFB-50BB-4E71-A49F-1F683F1BA27D}") JFilterHolderClass  : public Androidapi::Jni::Javatypes::JObjectClass 
+{
+	virtual Androidapi::Jni::Os::_di_JParcelable_Creator __cdecl _GetCREATOR() = 0 ;
+	HIDESBASE virtual _di_JFilterHolder __cdecl init(_di_Jquery_Filter filter) = 0 /* overload */;
+	__property Androidapi::Jni::Os::_di_JParcelable_Creator CREATOR = {read=_GetCREATOR};
+};
+
+__interface  INTERFACE_UUID("{E5AB07D1-BD87-4E4C-9CB9-10814214DB90}") JFilterHolder  : public Androidapi::Jni::Javatypes::JObject 
+{
+	virtual int __cdecl describeContents() = 0 ;
+	virtual void __cdecl writeToParcel(Androidapi::Jni::Os::_di_JParcel out_, int flags) = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJFilterHolder : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JFilterHolderClass,_di_JFilterHolder>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JFilterHolderClass,_di_JFilterHolder> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJFilterHolder() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JFilterHolderClass,_di_JFilterHolder>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJFilterHolder() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{1F3C0AED-0409-414F-8873-176A380B2C34}") JInFilterClass  : public Androidapi::Jni::Javatypes::JObjectClass 
+{
+	HIDESBASE virtual _di_JInFilter __cdecl init(_di_JCollectionMetadataField field, Androidapi::Jni::Javatypes::_di_JObject value) = 0 /* overload */;
+};
+
+__interface  INTERFACE_UUID("{CDD012EE-98B2-488F-BADB-72DD701F7947}") JInFilter  : public Androidapi::Jni::Javatypes::JObject 
+{
+	virtual int __cdecl describeContents() = 0 ;
+	virtual void __cdecl writeToParcel(Androidapi::Jni::Os::_di_JParcel out_, int flags) = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJInFilter : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JInFilterClass,_di_JInFilter>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JInFilterClass,_di_JInFilter> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJInFilter() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JInFilterClass,_di_JInFilter>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJInFilter() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{5D123374-D8BB-44E2-A769-49DBFC5D22C4}") JLogicalFilterClass  : public Androidapi::Jni::Javatypes::JObjectClass 
+{
+	virtual Androidapi::Jni::Os::_di_JParcelable_Creator __cdecl _GetCREATOR() = 0 ;
+	HIDESBASE virtual _di_JLogicalFilter __cdecl init(_di_JOperator Operator, Androidapi::Jni::Javatypes::_di_JIterable filters) = 0 /* overload */;
+	HIDESBASE virtual _di_JLogicalFilter __cdecl init(_di_JOperator Operator, _di_Jquery_Filter filter, Androidapi::Jnibridge::TJavaObjectArray__1<_di_Jquery_Filter>* additionalFilters) = 0 /* overload */;
+	__property Androidapi::Jni::Os::_di_JParcelable_Creator CREATOR = {read=_GetCREATOR};
+};
+
+__interface  INTERFACE_UUID("{827965A6-B044-4654-82A6-7ED005813BC0}") JLogicalFilter  : public Androidapi::Jni::Javatypes::JObject 
+{
+	virtual int __cdecl describeContents() = 0 ;
+	virtual void __cdecl writeToParcel(Androidapi::Jni::Os::_di_JParcel out_, int flags) = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJLogicalFilter : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JLogicalFilterClass,_di_JLogicalFilter>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JLogicalFilterClass,_di_JLogicalFilter> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJLogicalFilter() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JLogicalFilterClass,_di_JLogicalFilter>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJLogicalFilter() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{90D2D15A-3474-47CE-9653-059D3B3194C3}") JNotFilterClass  : public Androidapi::Jni::Javatypes::JObjectClass 
+{
+	virtual Androidapi::Jni::Os::_di_JParcelable_Creator __cdecl _GetCREATOR() = 0 ;
+	HIDESBASE virtual _di_JNotFilter __cdecl init(_di_Jquery_Filter toNegate) = 0 /* overload */;
+	__property Androidapi::Jni::Os::_di_JParcelable_Creator CREATOR = {read=_GetCREATOR};
+};
+
+__interface  INTERFACE_UUID("{918A49B6-E3CF-475D-9F03-DFB5906F6D3B}") JNotFilter  : public Androidapi::Jni::Javatypes::JObject 
+{
+	virtual int __cdecl describeContents() = 0 ;
+	virtual void __cdecl writeToParcel(Androidapi::Jni::Os::_di_JParcel out_, int flags) = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJNotFilter : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JNotFilterClass,_di_JNotFilter>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JNotFilterClass,_di_JNotFilter> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJNotFilter() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JNotFilterClass,_di_JNotFilter>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJNotFilter() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{644B403B-5A04-4DCF-86F4-9B679876374C}") JOperatorClass  : public Androidapi::Jni::Javatypes::JObjectClass 
+{
+	virtual Androidapi::Jni::Os::_di_JParcelable_Creator __cdecl _GetCREATOR() = 0 ;
+	virtual _di_JOperator __cdecl _GetFa() = 0 ;
+	virtual _di_JOperator __cdecl _GetFb() = 0 ;
+	virtual _di_JOperator __cdecl _GetFc() = 0 ;
+	virtual _di_JOperator __cdecl _GetFd() = 0 ;
+	virtual _di_JOperator __cdecl _GetFe() = 0 ;
+	virtual _di_JOperator __cdecl _GetFf() = 0 ;
+	virtual _di_JOperator __cdecl _GetFg() = 0 ;
+	virtual _di_JOperator __cdecl _GetFh() = 0 ;
+	virtual _di_JOperator __cdecl _GetFi() = 0 ;
+	__property Androidapi::Jni::Os::_di_JParcelable_Creator CREATOR = {read=_GetCREATOR};
+	__property _di_JOperator Fa = {read=_GetFa};
+	__property _di_JOperator Fb = {read=_GetFb};
+	__property _di_JOperator Fc = {read=_GetFc};
+	__property _di_JOperator Fd = {read=_GetFd};
+	__property _di_JOperator Fe = {read=_GetFe};
+	__property _di_JOperator Ff = {read=_GetFf};
+	__property _di_JOperator Fg = {read=_GetFg};
+	__property _di_JOperator Fh = {read=_GetFh};
+	__property _di_JOperator Fi = {read=_GetFi};
+};
+
+__interface  INTERFACE_UUID("{5495FF92-5AA0-4269-A97D-4A158942B6D6}") JOperator  : public Androidapi::Jni::Javatypes::JObject 
+{
+	virtual int __cdecl describeContents() = 0 ;
+	HIDESBASE virtual bool __cdecl equals(Androidapi::Jni::Javatypes::_di_JObject obj) = 0 ;
+	HIDESBASE virtual int __cdecl hashCode() = 0 ;
+	virtual void __cdecl writeToParcel(Androidapi::Jni::Os::_di_JParcel out_, int flags) = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJOperator : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JOperatorClass,_di_JOperator>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JOperatorClass,_di_JOperator> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJOperator() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JOperatorClass,_di_JOperator>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJOperator() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{D80F64FA-24B0-4D69-A00D-54490FBF7E2B}") JDataBufferAdapterClass  : public Androidapi::Jni::Widget::JBaseAdapterClass 
+{
+	HIDESBASE virtual _di_JDataBufferAdapter __cdecl init(Androidapi::Jni::Graphicscontentviewtext::_di_JContext context, int resource) = 0 /* overload */;
+	HIDESBASE virtual _di_JDataBufferAdapter __cdecl init(Androidapi::Jni::Graphicscontentviewtext::_di_JContext context, int resource, Androidapi::Jni::Javatypes::_di_JList objects) = 0 /* overload */;
+	HIDESBASE virtual _di_JDataBufferAdapter __cdecl init(Androidapi::Jni::Graphicscontentviewtext::_di_JContext context, int resource, Androidapi::Jnibridge::TJavaObjectArray__1<_di_JDataBuffer>* buffers) = 0 /* overload */;
+	HIDESBASE virtual _di_JDataBufferAdapter __cdecl init(Androidapi::Jni::Graphicscontentviewtext::_di_JContext context, int resource, int textViewResourceId) = 0 /* overload */;
+	HIDESBASE virtual _di_JDataBufferAdapter __cdecl init(Androidapi::Jni::Graphicscontentviewtext::_di_JContext context, int resource, int textViewResourceId, Androidapi::Jnibridge::TJavaObjectArray__1<_di_JDataBuffer>* buffers) = 0 /* overload */;
+	HIDESBASE virtual _di_JDataBufferAdapter __cdecl init(Androidapi::Jni::Graphicscontentviewtext::_di_JContext context, int resource, int textViewResourceId, Androidapi::Jni::Javatypes::_di_JList objects) = 0 /* overload */;
+};
+
+__interface  INTERFACE_UUID("{B785E4FF-C57F-43A3-8C48-B2B6F18ED520}") JDataBufferAdapter  : public Androidapi::Jni::Widget::JBaseAdapter 
+{
+	virtual void __cdecl append(_di_JDataBuffer buffer) = 0 ;
+	virtual void __cdecl clear() = 0 ;
+	virtual Androidapi::Jni::Graphicscontentviewtext::_di_JContext __cdecl getContext() = 0 ;
+	virtual int __cdecl getCount() = 0 ;
+	HIDESBASE virtual Androidapi::Jni::Graphicscontentviewtext::_di_JView __cdecl getDropDownView(int position, Androidapi::Jni::Graphicscontentviewtext::_di_JView convertView, Androidapi::Jni::Graphicscontentviewtext::_di_JViewGroup parent) = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JObject __cdecl getItem(int position) = 0 ;
+	virtual __int64 __cdecl getItemId(int position) = 0 ;
+	virtual Androidapi::Jni::Graphicscontentviewtext::_di_JView __cdecl getView(int position, Androidapi::Jni::Graphicscontentviewtext::_di_JView convertView, Androidapi::Jni::Graphicscontentviewtext::_di_JViewGroup parent) = 0 ;
+	HIDESBASE virtual void __cdecl notifyDataSetChanged() = 0 ;
+	virtual void __cdecl setDropDownViewResource(int resource) = 0 ;
+	virtual void __cdecl setNotifyOnChange(bool notifyOnChange) = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJDataBufferAdapter : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JDataBufferAdapterClass,_di_JDataBufferAdapter>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JDataBufferAdapterClass,_di_JDataBufferAdapter> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJDataBufferAdapter() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JDataBufferAdapterClass,_di_JDataBufferAdapter>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJDataBufferAdapter() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{93A34221-28BF-4077-B5D5-49BA16213C08}") JLifecycleDelegateClass  : public Androidapi::Jnibridge::IJavaClass 
+{
+	
+};
+
+__interface  INTERFACE_UUID("{B7E98D3B-4DBE-4ED7-8BB5-0903FBE53E25}") JLifecycleDelegate  : public Androidapi::Jnibridge::IJavaInstance 
+{
+	virtual void __cdecl onCreate(Androidapi::Jni::Os::_di_JBundle P1) = 0 ;
+	virtual Androidapi::Jni::Graphicscontentviewtext::_di_JView __cdecl onCreateView(Androidapi::Jni::Graphicscontentviewtext::_di_JLayoutInflater P1, Androidapi::Jni::Graphicscontentviewtext::_di_JViewGroup P2, Androidapi::Jni::Os::_di_JBundle P3) = 0 ;
+	virtual void __cdecl onDestroy() = 0 ;
+	virtual void __cdecl onDestroyView() = 0 ;
+	virtual void __cdecl onInflate(Androidapi::Jni::App::_di_JActivity P1, Androidapi::Jni::Os::_di_JBundle P2, Androidapi::Jni::Os::_di_JBundle P3) = 0 ;
+	virtual void __cdecl onLowMemory() = 0 ;
+	virtual void __cdecl onPause() = 0 ;
+	virtual void __cdecl onResume() = 0 ;
+	virtual void __cdecl onSaveInstanceState(Androidapi::Jni::Os::_di_JBundle P1) = 0 ;
+	virtual void __cdecl onStart() = 0 ;
+	virtual void __cdecl onStop() = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJLifecycleDelegate : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JLifecycleDelegateClass,_di_JLifecycleDelegate>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JLifecycleDelegateClass,_di_JLifecycleDelegate> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJLifecycleDelegate() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JLifecycleDelegateClass,_di_JLifecycleDelegate>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJLifecycleDelegate() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{5361CB92-B217-41D2-A914-E3E8F3A87693}") JGameClass  : public Androidapi::Jni::Os::JParcelableClass 
+{
+	
+};
+
+__interface  INTERFACE_UUID("{2A83D53C-79C0-44CC-93B8-ECD4B0F08230}") JGame  : public Androidapi::Jni::Os::JParcelable 
+{
+	virtual int __cdecl getAchievementTotalCount() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl getApplicationId() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl getDescription() = 0 /* overload */;
+	virtual void __cdecl getDescription(Androidapi::Jni::Graphicscontentviewtext::_di_Jdatabase_CharArrayBuffer P1) = 0 /* overload */;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl getDeveloperName() = 0 /* overload */;
+	virtual void __cdecl getDeveloperName(Androidapi::Jni::Graphicscontentviewtext::_di_Jdatabase_CharArrayBuffer P1) = 0 /* overload */;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl getDisplayName() = 0 /* overload */;
+	virtual void __cdecl getDisplayName(Androidapi::Jni::Graphicscontentviewtext::_di_Jdatabase_CharArrayBuffer P1) = 0 /* overload */;
+	virtual Androidapi::Jni::Net::_di_Jnet_Uri __cdecl getFeaturedImageUri() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl getFeaturedImageUrl() = 0 ;
+	virtual int __cdecl getGameplayAclStatus() = 0 ;
+	virtual Androidapi::Jni::Net::_di_Jnet_Uri __cdecl getHiResImageUri() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl getHiResImageUrl() = 0 ;
+	virtual Androidapi::Jni::Net::_di_Jnet_Uri __cdecl getIconImageUri() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl getIconImageUrl() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl getInstancePackageName() = 0 ;
+	virtual int __cdecl getLeaderboardCount() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl getPrimaryCategory() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl getSecondaryCategory() = 0 ;
+	virtual bool __cdecl isInstanceInstalled() = 0 ;
+	virtual bool __cdecl isMuted() = 0 ;
+	virtual bool __cdecl isPlayEnabledGame() = 0 ;
+	virtual bool __cdecl isRealTimeMultiplayerEnabled() = 0 ;
+	virtual bool __cdecl isTurnBasedMultiplayerEnabled() = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJGame : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JGameClass,_di_JGame>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JGameClass,_di_JGame> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJGame() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JGameClass,_di_JGame>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJGame() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{C55FFCFE-4032-4AA2-B0DF-15E3988DE884}") JGameBufferClass  : public JDataBufferClass 
+{
+	HIDESBASE virtual _di_JGameBuffer __cdecl init(_di_JDataHolder dataHolder) = 0 ;
+};
+
+__interface  INTERFACE_UUID("{E2BDBCD5-6EF6-4F2B-B81D-215B1B3DB8F0}") JGameBuffer  : public JDataBuffer 
+{
+	HIDESBASE virtual _di_JGame __cdecl get(int position) = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJGameBuffer : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JGameBufferClass,_di_JGameBuffer>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JGameBufferClass,_di_JGameBuffer> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJGameBuffer() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JGameBufferClass,_di_JGameBuffer>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJGameBuffer() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{269C54DC-B954-464E-9ECB-61D4A60D1536}") JGamesClass  : public Androidapi::Jni::Javatypes::JObjectClass 
+{
+	virtual _di_JAchievements __cdecl _GetAchievements() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetEXTRA_PLAYER_IDS() = 0 ;
+	virtual _di_JScope __cdecl _GetFY() = 0 ;
+	virtual _di_JMultiplayer __cdecl _GetGa() = 0 ;
+	virtual _di_JGamesMetadata __cdecl _GetGamesMetadata() = 0 ;
+	virtual _di_JInvitations __cdecl _GetInvitations() = 0 ;
+	virtual _di_JLeaderboards __cdecl _GetLeaderboards() = 0 ;
+	virtual _di_JNotifications __cdecl _GetNotifications() = 0 ;
+	virtual _di_JPlayers __cdecl _GetPlayers() = 0 ;
+	virtual _di_JRealTimeMultiplayer __cdecl _GetRealTimeMultiplayer() = 0 ;
+	virtual _di_JRequests __cdecl _GetRequests() = 0 ;
+	virtual _di_JScope __cdecl _GetSCOPE_GAMES() = 0 ;
+	virtual _di_JTurnBasedMultiplayer __cdecl _GetTurnBasedMultiplayer() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl getAppId(_di_JGoogleApiClient apiClient) = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl getCurrentAccountName(_di_JGoogleApiClient apiClient) = 0 ;
+	virtual int __cdecl getSdkVariant(_di_JGoogleApiClient apiClient) = 0 ;
+	virtual Androidapi::Jni::Graphicscontentviewtext::_di_JIntent __cdecl getSettingsIntent(_di_JGoogleApiClient apiClient) = 0 ;
+	virtual void __cdecl setGravityForPopups(_di_JGoogleApiClient apiClient, int gravity) = 0 ;
+	virtual void __cdecl setViewForPopups(_di_JGoogleApiClient apiClient, Androidapi::Jni::Graphicscontentviewtext::_di_JView gamesContentView) = 0 ;
+	virtual _di_JPendingResult __cdecl signOut(_di_JGoogleApiClient apiClient) = 0 ;
+	__property _di_JAchievements Achievements = {read=_GetAchievements};
+	__property Androidapi::Jni::Javatypes::_di_JString EXTRA_PLAYER_IDS = {read=_GetEXTRA_PLAYER_IDS};
+	__property _di_JScope FY = {read=_GetFY};
+	__property _di_JMultiplayer Ga = {read=_GetGa};
+	__property _di_JGamesMetadata GamesMetadata = {read=_GetGamesMetadata};
+	__property _di_JInvitations Invitations = {read=_GetInvitations};
+	__property _di_JLeaderboards Leaderboards = {read=_GetLeaderboards};
+	__property _di_JNotifications Notifications = {read=_GetNotifications};
+	__property _di_JPlayers Players = {read=_GetPlayers};
+	__property _di_JRealTimeMultiplayer RealTimeMultiplayer = {read=_GetRealTimeMultiplayer};
+	__property _di_JRequests Requests = {read=_GetRequests};
+	__property _di_JScope SCOPE_GAMES = {read=_GetSCOPE_GAMES};
+	__property _di_JTurnBasedMultiplayer TurnBasedMultiplayer = {read=_GetTurnBasedMultiplayer};
+};
+
+__interface  INTERFACE_UUID("{87631019-8EEA-40B4-84F3-2697344780EF}") JGames  : public Androidapi::Jni::Javatypes::JObject 
+{
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJGames : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JGamesClass,_di_JGames>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JGamesClass,_di_JGames> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJGames() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JGamesClass,_di_JGames>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJGames() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{7D29AA6B-95BE-4B8D-952D-1E474669D4BA}") JGames_GamesOptionsClass  : public Androidapi::Jni::Javatypes::JObjectClass 
+{
+	virtual _di_JGamesOptions_Builder __cdecl builder() = 0 ;
+};
+
+__interface  INTERFACE_UUID("{B2AB64B4-920E-4F48-B9E2-6290F83D31EA}") JGames_GamesOptions  : public Androidapi::Jni::Javatypes::JObject 
+{
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJGames_GamesOptions : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JGames_GamesOptionsClass,_di_JGames_GamesOptions>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JGames_GamesOptionsClass,_di_JGames_GamesOptions> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJGames_GamesOptions() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JGames_GamesOptionsClass,_di_JGames_GamesOptions>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJGames_GamesOptions() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{F3DCA98E-BCDA-40D4-AC8C-C4DF603880ED}") JGamesOptions_BuilderClass  : public Androidapi::Jni::Javatypes::JObjectClass 
+{
+	
+};
+
+__interface  INTERFACE_UUID("{1D7C7B1B-8A96-4F7D-B42A-A4A9AE86448A}") JGamesOptions_Builder  : public Androidapi::Jni::Javatypes::JObject 
+{
+	virtual _di_JGames_GamesOptions __cdecl build() = 0 ;
+	virtual _di_JGamesOptions_Builder __cdecl setSdkVariant(int variant) = 0 ;
+	virtual _di_JGamesOptions_Builder __cdecl setShowConnectingPopup(bool showConnectingPopup) = 0 /* overload */;
+	virtual _di_JGamesOptions_Builder __cdecl setShowConnectingPopup(bool showConnectingPopup, int gravity) = 0 /* overload */;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJGamesOptions_Builder : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JGamesOptions_BuilderClass,_di_JGamesOptions_Builder>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JGamesOptions_BuilderClass,_di_JGamesOptions_Builder> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJGamesOptions_Builder() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JGamesOptions_BuilderClass,_di_JGamesOptions_Builder>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJGamesOptions_Builder() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{418F14A8-CD7D-4B64-9DBC-83742127DE67}") JGamesActivityResultCodesClass  : public Androidapi::Jni::Javatypes::JObjectClass 
+{
+	virtual int __cdecl _GetRESULT_APP_MISCONFIGURED() = 0 ;
+	virtual int __cdecl _GetRESULT_LEFT_ROOM() = 0 ;
+	virtual int __cdecl _GetRESULT_LICENSE_FAILED() = 0 ;
+	virtual int __cdecl _GetRESULT_NETWORK_FAILURE() = 0 ;
+	virtual int __cdecl _GetRESULT_RECONNECT_REQUIRED() = 0 ;
+	virtual int __cdecl _GetRESULT_SEND_REQUEST_FAILED() = 0 ;
+	virtual int __cdecl _GetRESULT_SIGN_IN_FAILED() = 0 ;
+	__property int RESULT_APP_MISCONFIGURED = {read=_GetRESULT_APP_MISCONFIGURED};
+	__property int RESULT_LEFT_ROOM = {read=_GetRESULT_LEFT_ROOM};
+	__property int RESULT_LICENSE_FAILED = {read=_GetRESULT_LICENSE_FAILED};
+	__property int RESULT_NETWORK_FAILURE = {read=_GetRESULT_NETWORK_FAILURE};
+	__property int RESULT_RECONNECT_REQUIRED = {read=_GetRESULT_RECONNECT_REQUIRED};
+	__property int RESULT_SEND_REQUEST_FAILED = {read=_GetRESULT_SEND_REQUEST_FAILED};
+	__property int RESULT_SIGN_IN_FAILED = {read=_GetRESULT_SIGN_IN_FAILED};
+};
+
+__interface  INTERFACE_UUID("{1EB938AF-A0DC-4815-9D6A-E8A725450A25}") JGamesActivityResultCodes  : public Androidapi::Jni::Javatypes::JObject 
+{
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJGamesActivityResultCodes : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JGamesActivityResultCodesClass,_di_JGamesActivityResultCodes>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JGamesActivityResultCodesClass,_di_JGamesActivityResultCodes> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJGamesActivityResultCodes() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JGamesActivityResultCodesClass,_di_JGamesActivityResultCodes>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJGamesActivityResultCodes() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{631F557C-E7AF-4D5F-80BE-373E1A9BBBE6}") JGamesMetadataClass  : public Androidapi::Jnibridge::IJavaClass 
+{
+	
+};
+
+__interface  INTERFACE_UUID("{428FE66C-F594-4302-AF4E-26F56160799D}") JGamesMetadata  : public Androidapi::Jnibridge::IJavaInstance 
+{
+	virtual _di_JGame __cdecl getCurrentGame(_di_JGoogleApiClient P1) = 0 ;
+	virtual _di_JPendingResult __cdecl loadGame(_di_JGoogleApiClient P1) = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJGamesMetadata : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JGamesMetadataClass,_di_JGamesMetadata>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JGamesMetadataClass,_di_JGamesMetadata> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJGamesMetadata() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JGamesMetadataClass,_di_JGamesMetadata>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJGamesMetadata() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{EB4CEA92-E1D3-4264-B8E8-22E6ECD69CDF}") JGamesMetadata_LoadGamesResultClass  : public JReleasableClass 
+{
+	
+};
+
+__interface  INTERFACE_UUID("{1C72A026-D3AD-4ACD-8588-13AF795847D0}") JGamesMetadata_LoadGamesResult  : public JReleasable 
+{
+	virtual _di_JGameBuffer __cdecl getGames() = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJGamesMetadata_LoadGamesResult : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JGamesMetadata_LoadGamesResultClass,_di_JGamesMetadata_LoadGamesResult>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JGamesMetadata_LoadGamesResultClass,_di_JGamesMetadata_LoadGamesResult> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJGamesMetadata_LoadGamesResult() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JGamesMetadata_LoadGamesResultClass,_di_JGamesMetadata_LoadGamesResult>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJGamesMetadata_LoadGamesResult() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{DE1E7929-5A2D-47C0-8075-13A92BD5283F}") JGamesStatusCodesClass  : public Androidapi::Jni::Javatypes::JObjectClass 
+{
+	virtual int __cdecl _GetSTATUS_ACHIEVEMENT_NOT_INCREMENTAL() = 0 ;
+	virtual int __cdecl _GetSTATUS_ACHIEVEMENT_UNKNOWN() = 0 ;
+	virtual int __cdecl _GetSTATUS_ACHIEVEMENT_UNLOCKED() = 0 ;
+	virtual int __cdecl _GetSTATUS_ACHIEVEMENT_UNLOCK_FAILURE() = 0 ;
+	virtual int __cdecl _GetSTATUS_APP_MISCONFIGURED() = 0 ;
+	virtual int __cdecl _GetSTATUS_CLIENT_RECONNECT_REQUIRED() = 0 ;
+	virtual int __cdecl _GetSTATUS_GAME_NOT_FOUND() = 0 ;
+	virtual int __cdecl _GetSTATUS_INTERNAL_ERROR() = 0 ;
+	virtual int __cdecl _GetSTATUS_INTERRUPTED() = 0 ;
+	virtual int __cdecl _GetSTATUS_INVALID_REAL_TIME_ROOM_ID() = 0 ;
+	virtual int __cdecl _GetSTATUS_LICENSE_CHECK_FAILED() = 0 ;
+	virtual int __cdecl _GetSTATUS_MATCH_ERROR_ALREADY_REMATCHED() = 0 ;
+	virtual int __cdecl _GetSTATUS_MATCH_ERROR_INACTIVE_MATCH() = 0 ;
+	virtual int __cdecl _GetSTATUS_MATCH_ERROR_INVALID_MATCH_RESULTS() = 0 ;
+	virtual int __cdecl _GetSTATUS_MATCH_ERROR_INVALID_MATCH_STATE() = 0 ;
+	virtual int __cdecl _GetSTATUS_MATCH_ERROR_INVALID_PARTICIPANT_STATE() = 0 ;
+	virtual int __cdecl _GetSTATUS_MATCH_ERROR_LOCALLY_MODIFIED() = 0 ;
+	virtual int __cdecl _GetSTATUS_MATCH_ERROR_OUT_OF_DATE_VERSION() = 0 ;
+	virtual int __cdecl _GetSTATUS_MATCH_NOT_FOUND() = 0 ;
+	virtual int __cdecl _GetSTATUS_MULTIPLAYER_DISABLED() = 0 ;
+	virtual int __cdecl _GetSTATUS_MULTIPLAYER_ERROR_CREATION_NOT_ALLOWED() = 0 ;
+	virtual int __cdecl _GetSTATUS_MULTIPLAYER_ERROR_INVALID_MULTIPLAYER_TYPE() = 0 ;
+	virtual int __cdecl _GetSTATUS_MULTIPLAYER_ERROR_INVALID_OPERATION() = 0 ;
+	virtual int __cdecl _GetSTATUS_MULTIPLAYER_ERROR_NOT_TRUSTED_TESTER() = 0 ;
+	virtual int __cdecl _GetSTATUS_NETWORK_ERROR_NO_DATA() = 0 ;
+	virtual int __cdecl _GetSTATUS_NETWORK_ERROR_OPERATION_DEFERRED() = 0 ;
+	virtual int __cdecl _GetSTATUS_NETWORK_ERROR_OPERATION_FAILED() = 0 ;
+	virtual int __cdecl _GetSTATUS_NETWORK_ERROR_STALE_DATA() = 0 ;
+	virtual int __cdecl _GetSTATUS_OK() = 0 ;
+	virtual int __cdecl _GetSTATUS_OPERATION_IN_FLIGHT() = 0 ;
+	virtual int __cdecl _GetSTATUS_PARTICIPANT_NOT_CONNECTED() = 0 ;
+	virtual int __cdecl _GetSTATUS_REAL_TIME_CONNECTION_FAILED() = 0 ;
+	virtual int __cdecl _GetSTATUS_REAL_TIME_INACTIVE_ROOM() = 0 ;
+	virtual int __cdecl _GetSTATUS_REAL_TIME_MESSAGE_SEND_FAILED() = 0 ;
+	virtual int __cdecl _GetSTATUS_REAL_TIME_ROOM_NOT_JOINED() = 0 ;
+	virtual int __cdecl _GetSTATUS_REQUEST_UPDATE_PARTIAL_SUCCESS() = 0 ;
+	virtual int __cdecl _GetSTATUS_REQUEST_UPDATE_TOTAL_FAILURE() = 0 ;
+	virtual int __cdecl _GetSTATUS_TIMEOUT() = 0 ;
+	__property int STATUS_ACHIEVEMENT_NOT_INCREMENTAL = {read=_GetSTATUS_ACHIEVEMENT_NOT_INCREMENTAL};
+	__property int STATUS_ACHIEVEMENT_UNKNOWN = {read=_GetSTATUS_ACHIEVEMENT_UNKNOWN};
+	__property int STATUS_ACHIEVEMENT_UNLOCKED = {read=_GetSTATUS_ACHIEVEMENT_UNLOCKED};
+	__property int STATUS_ACHIEVEMENT_UNLOCK_FAILURE = {read=_GetSTATUS_ACHIEVEMENT_UNLOCK_FAILURE};
+	__property int STATUS_APP_MISCONFIGURED = {read=_GetSTATUS_APP_MISCONFIGURED};
+	__property int STATUS_CLIENT_RECONNECT_REQUIRED = {read=_GetSTATUS_CLIENT_RECONNECT_REQUIRED};
+	__property int STATUS_GAME_NOT_FOUND = {read=_GetSTATUS_GAME_NOT_FOUND};
+	__property int STATUS_INTERNAL_ERROR = {read=_GetSTATUS_INTERNAL_ERROR};
+	__property int STATUS_INTERRUPTED = {read=_GetSTATUS_INTERRUPTED};
+	__property int STATUS_INVALID_REAL_TIME_ROOM_ID = {read=_GetSTATUS_INVALID_REAL_TIME_ROOM_ID};
+	__property int STATUS_LICENSE_CHECK_FAILED = {read=_GetSTATUS_LICENSE_CHECK_FAILED};
+	__property int STATUS_MATCH_ERROR_ALREADY_REMATCHED = {read=_GetSTATUS_MATCH_ERROR_ALREADY_REMATCHED};
+	__property int STATUS_MATCH_ERROR_INACTIVE_MATCH = {read=_GetSTATUS_MATCH_ERROR_INACTIVE_MATCH};
+	__property int STATUS_MATCH_ERROR_INVALID_MATCH_RESULTS = {read=_GetSTATUS_MATCH_ERROR_INVALID_MATCH_RESULTS};
+	__property int STATUS_MATCH_ERROR_INVALID_MATCH_STATE = {read=_GetSTATUS_MATCH_ERROR_INVALID_MATCH_STATE};
+	__property int STATUS_MATCH_ERROR_INVALID_PARTICIPANT_STATE = {read=_GetSTATUS_MATCH_ERROR_INVALID_PARTICIPANT_STATE};
+	__property int STATUS_MATCH_ERROR_LOCALLY_MODIFIED = {read=_GetSTATUS_MATCH_ERROR_LOCALLY_MODIFIED};
+	__property int STATUS_MATCH_ERROR_OUT_OF_DATE_VERSION = {read=_GetSTATUS_MATCH_ERROR_OUT_OF_DATE_VERSION};
+	__property int STATUS_MATCH_NOT_FOUND = {read=_GetSTATUS_MATCH_NOT_FOUND};
+	__property int STATUS_MULTIPLAYER_DISABLED = {read=_GetSTATUS_MULTIPLAYER_DISABLED};
+	__property int STATUS_MULTIPLAYER_ERROR_CREATION_NOT_ALLOWED = {read=_GetSTATUS_MULTIPLAYER_ERROR_CREATION_NOT_ALLOWED};
+	__property int STATUS_MULTIPLAYER_ERROR_INVALID_MULTIPLAYER_TYPE = {read=_GetSTATUS_MULTIPLAYER_ERROR_INVALID_MULTIPLAYER_TYPE};
+	__property int STATUS_MULTIPLAYER_ERROR_INVALID_OPERATION = {read=_GetSTATUS_MULTIPLAYER_ERROR_INVALID_OPERATION};
+	__property int STATUS_MULTIPLAYER_ERROR_NOT_TRUSTED_TESTER = {read=_GetSTATUS_MULTIPLAYER_ERROR_NOT_TRUSTED_TESTER};
+	__property int STATUS_NETWORK_ERROR_NO_DATA = {read=_GetSTATUS_NETWORK_ERROR_NO_DATA};
+	__property int STATUS_NETWORK_ERROR_OPERATION_DEFERRED = {read=_GetSTATUS_NETWORK_ERROR_OPERATION_DEFERRED};
+	__property int STATUS_NETWORK_ERROR_OPERATION_FAILED = {read=_GetSTATUS_NETWORK_ERROR_OPERATION_FAILED};
+	__property int STATUS_NETWORK_ERROR_STALE_DATA = {read=_GetSTATUS_NETWORK_ERROR_STALE_DATA};
+	__property int STATUS_OK = {read=_GetSTATUS_OK};
+	__property int STATUS_OPERATION_IN_FLIGHT = {read=_GetSTATUS_OPERATION_IN_FLIGHT};
+	__property int STATUS_PARTICIPANT_NOT_CONNECTED = {read=_GetSTATUS_PARTICIPANT_NOT_CONNECTED};
+	__property int STATUS_REAL_TIME_CONNECTION_FAILED = {read=_GetSTATUS_REAL_TIME_CONNECTION_FAILED};
+	__property int STATUS_REAL_TIME_INACTIVE_ROOM = {read=_GetSTATUS_REAL_TIME_INACTIVE_ROOM};
+	__property int STATUS_REAL_TIME_MESSAGE_SEND_FAILED = {read=_GetSTATUS_REAL_TIME_MESSAGE_SEND_FAILED};
+	__property int STATUS_REAL_TIME_ROOM_NOT_JOINED = {read=_GetSTATUS_REAL_TIME_ROOM_NOT_JOINED};
+	__property int STATUS_REQUEST_UPDATE_PARTIAL_SUCCESS = {read=_GetSTATUS_REQUEST_UPDATE_PARTIAL_SUCCESS};
+	__property int STATUS_REQUEST_UPDATE_TOTAL_FAILURE = {read=_GetSTATUS_REQUEST_UPDATE_TOTAL_FAILURE};
+	__property int STATUS_TIMEOUT = {read=_GetSTATUS_TIMEOUT};
+};
+
+__interface  INTERFACE_UUID("{EB8BFF3C-BC22-4FFE-AC43-9CB378D2DEF8}") JGamesStatusCodes  : public Androidapi::Jni::Javatypes::JObject 
+{
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJGamesStatusCodes : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JGamesStatusCodesClass,_di_JGamesStatusCodes>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JGamesStatusCodesClass,_di_JGamesStatusCodes> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJGamesStatusCodes() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JGamesStatusCodesClass,_di_JGamesStatusCodes>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJGamesStatusCodes() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{CB6E269B-8FB7-4AF7-845E-9EE2A7BCF3B4}") JNotificationsClass  : public Androidapi::Jnibridge::IJavaClass 
+{
+	virtual int __cdecl _GetNOTIFICATION_TYPES_ALL() = 0 ;
+	virtual int __cdecl _GetNOTIFICATION_TYPES_MULTIPLAYER() = 0 ;
+	virtual int __cdecl _GetNOTIFICATION_TYPE_INVITATION() = 0 ;
+	virtual int __cdecl _GetNOTIFICATION_TYPE_MATCH_UPDATE() = 0 ;
+	virtual int __cdecl _GetNOTIFICATION_TYPE_REQUEST() = 0 ;
+	__property int NOTIFICATION_TYPES_ALL = {read=_GetNOTIFICATION_TYPES_ALL};
+	__property int NOTIFICATION_TYPES_MULTIPLAYER = {read=_GetNOTIFICATION_TYPES_MULTIPLAYER};
+	__property int NOTIFICATION_TYPE_INVITATION = {read=_GetNOTIFICATION_TYPE_INVITATION};
+	__property int NOTIFICATION_TYPE_MATCH_UPDATE = {read=_GetNOTIFICATION_TYPE_MATCH_UPDATE};
+	__property int NOTIFICATION_TYPE_REQUEST = {read=_GetNOTIFICATION_TYPE_REQUEST};
+};
+
+__interface  INTERFACE_UUID("{47A7E2EC-ADA4-4FFF-8C37-B968CDF5A048}") JNotifications  : public Androidapi::Jnibridge::IJavaInstance 
+{
+	virtual void __cdecl clear(_di_JGoogleApiClient P1, int P2) = 0 ;
+	virtual void __cdecl clearAll(_di_JGoogleApiClient P1) = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJNotifications : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JNotificationsClass,_di_JNotifications>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JNotificationsClass,_di_JNotifications> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJNotifications() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JNotificationsClass,_di_JNotifications>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJNotifications() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{79519738-99BE-4131-987E-B1C3E9648B3C}") JPageDirectionClass  : public Androidapi::Jni::Javatypes::JObjectClass 
+{
+	virtual int __cdecl _GetNEXT() = 0 ;
+	virtual int __cdecl _GetNONE() = 0 ;
+	virtual int __cdecl _GetPREV() = 0 ;
+	__property int NEXT = {read=_GetNEXT};
+	__property int NONE = {read=_GetNONE};
+	__property int PREV = {read=_GetPREV};
+};
+
+__interface  INTERFACE_UUID("{9773AAC5-7C05-4C27-9814-DC5143192F70}") JPageDirection  : public Androidapi::Jni::Javatypes::JObject 
+{
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJPageDirection : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JPageDirectionClass,_di_JPageDirection>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JPageDirectionClass,_di_JPageDirection> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJPageDirection() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JPageDirectionClass,_di_JPageDirection>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJPageDirection() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{9DB5DC9B-3D32-4FBB-A863-6680D495678F}") JPlayerClass  : public Androidapi::Jni::Os::JParcelableClass 
+{
+	
+};
+
+__interface  INTERFACE_UUID("{C4D9E51B-AAC2-45A6-9C13-6C8CBBBDA3ED}") JPlayer  : public Androidapi::Jni::Os::JParcelable 
+{
+	virtual int __cdecl fl() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl getDisplayName() = 0 /* overload */;
+	virtual void __cdecl getDisplayName(Androidapi::Jni::Graphicscontentviewtext::_di_Jdatabase_CharArrayBuffer P1) = 0 /* overload */;
+	virtual Androidapi::Jni::Net::_di_Jnet_Uri __cdecl getHiResImageUri() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl getHiResImageUrl() = 0 ;
+	virtual Androidapi::Jni::Net::_di_Jnet_Uri __cdecl getIconImageUri() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl getIconImageUrl() = 0 ;
+	virtual __int64 __cdecl getLastPlayedWithTimestamp() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl getPlayerId() = 0 ;
+	virtual __int64 __cdecl getRetrievedTimestamp() = 0 ;
+	virtual bool __cdecl hasHiResImage() = 0 ;
+	virtual bool __cdecl hasIconImage() = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJPlayer : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JPlayerClass,_di_JPlayer>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JPlayerClass,_di_JPlayer> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJPlayer() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JPlayerClass,_di_JPlayer>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJPlayer() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{210CFD2D-7964-4993-9337-FD7CBD357CD1}") JPlayerBufferClass  : public JDataBufferClass 
+{
+	HIDESBASE virtual _di_JPlayerBuffer __cdecl init(_di_JDataHolder dataHolder) = 0 ;
+};
+
+__interface  INTERFACE_UUID("{083864F7-7133-4CA0-B40A-8C8511571054}") JPlayerBuffer  : public JDataBuffer 
+{
+	HIDESBASE virtual _di_JPlayer __cdecl get(int position) = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJPlayerBuffer : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JPlayerBufferClass,_di_JPlayerBuffer>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JPlayerBufferClass,_di_JPlayerBuffer> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJPlayerBuffer() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JPlayerBufferClass,_di_JPlayerBuffer>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJPlayerBuffer() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{997DF530-CCA2-4AFF-A5FD-02552539BE3E}") JPlayersClass  : public Androidapi::Jnibridge::IJavaClass 
+{
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetEXTRA_PLAYER_SEARCH_RESULTS() = 0 ;
+	__property Androidapi::Jni::Javatypes::_di_JString EXTRA_PLAYER_SEARCH_RESULTS = {read=_GetEXTRA_PLAYER_SEARCH_RESULTS};
+};
+
+__interface  INTERFACE_UUID("{6EDFECAE-D2BB-41A7-87F1-74D98C6484BC}") JPlayers  : public Androidapi::Jnibridge::IJavaInstance 
+{
+	virtual _di_JPlayer __cdecl getCurrentPlayer(_di_JGoogleApiClient P1) = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl getCurrentPlayerId(_di_JGoogleApiClient P1) = 0 ;
+	virtual Androidapi::Jni::Graphicscontentviewtext::_di_JIntent __cdecl getPlayerSearchIntent(_di_JGoogleApiClient P1) = 0 ;
+	virtual _di_JPendingResult __cdecl loadConnectedPlayers(_di_JGoogleApiClient P1, bool P2) = 0 ;
+	virtual _di_JPendingResult __cdecl loadInvitablePlayers(_di_JGoogleApiClient P1, int P2, bool P3) = 0 ;
+	virtual _di_JPendingResult __cdecl loadMoreInvitablePlayers(_di_JGoogleApiClient P1, int P2) = 0 ;
+	virtual _di_JPendingResult __cdecl loadMoreRecentlyPlayedWithPlayers(_di_JGoogleApiClient P1, int P2) = 0 ;
+	virtual _di_JPendingResult __cdecl loadPlayer(_di_JGoogleApiClient P1, Androidapi::Jni::Javatypes::_di_JString P2) = 0 ;
+	virtual _di_JPendingResult __cdecl loadRecentlyPlayedWithPlayers(_di_JGoogleApiClient P1, int P2, bool P3) = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJPlayers : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JPlayersClass,_di_JPlayers>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JPlayersClass,_di_JPlayers> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJPlayers() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JPlayersClass,_di_JPlayers>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJPlayers() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{E87493CB-BCD0-415E-9060-0BCE54F28F71}") JPlayers_LoadPlayersResultClass  : public JReleasableClass 
+{
+	
+};
+
+__interface  INTERFACE_UUID("{C89D8D08-FC88-477A-BB31-647B5BA24FFB}") JPlayers_LoadPlayersResult  : public JReleasable 
+{
+	virtual _di_JPlayerBuffer __cdecl getPlayers() = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJPlayers_LoadPlayersResult : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JPlayers_LoadPlayersResultClass,_di_JPlayers_LoadPlayersResult>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JPlayers_LoadPlayersResultClass,_di_JPlayers_LoadPlayersResult> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJPlayers_LoadPlayersResult() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JPlayers_LoadPlayersResultClass,_di_JPlayers_LoadPlayersResult>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJPlayers_LoadPlayersResult() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{6C078B6F-C3B1-4E2F-8581-0EE09D429939}") JAchievementClass  : public Androidapi::Jnibridge::IJavaClass 
+{
+	virtual int __cdecl _GetSTATE_HIDDEN() = 0 ;
+	virtual int __cdecl _GetSTATE_REVEALED() = 0 ;
+	virtual int __cdecl _GetSTATE_UNLOCKED() = 0 ;
+	virtual int __cdecl _GetTYPE_INCREMENTAL() = 0 ;
+	virtual int __cdecl _GetTYPE_STANDARD() = 0 ;
+	__property int STATE_HIDDEN = {read=_GetSTATE_HIDDEN};
+	__property int STATE_REVEALED = {read=_GetSTATE_REVEALED};
+	__property int STATE_UNLOCKED = {read=_GetSTATE_UNLOCKED};
+	__property int TYPE_INCREMENTAL = {read=_GetTYPE_INCREMENTAL};
+	__property int TYPE_STANDARD = {read=_GetTYPE_STANDARD};
+};
+
+__interface  INTERFACE_UUID("{D35D3651-5E50-47C1-89DF-3081A179593F}") JAchievement  : public Androidapi::Jnibridge::IJavaInstance 
+{
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl getAchievementId() = 0 ;
+	virtual int __cdecl getCurrentSteps() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl getDescription() = 0 /* overload */;
+	virtual void __cdecl getDescription(Androidapi::Jni::Graphicscontentviewtext::_di_Jdatabase_CharArrayBuffer P1) = 0 /* overload */;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl getFormattedCurrentSteps() = 0 /* overload */;
+	virtual void __cdecl getFormattedCurrentSteps(Androidapi::Jni::Graphicscontentviewtext::_di_Jdatabase_CharArrayBuffer P1) = 0 /* overload */;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl getFormattedTotalSteps() = 0 /* overload */;
+	virtual void __cdecl getFormattedTotalSteps(Androidapi::Jni::Graphicscontentviewtext::_di_Jdatabase_CharArrayBuffer P1) = 0 /* overload */;
+	virtual __int64 __cdecl getLastUpdatedTimestamp() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl getName() = 0 /* overload */;
+	virtual void __cdecl getName(Androidapi::Jni::Graphicscontentviewtext::_di_Jdatabase_CharArrayBuffer P1) = 0 /* overload */;
+	virtual _di_JPlayer __cdecl getPlayer() = 0 ;
+	virtual Androidapi::Jni::Net::_di_Jnet_Uri __cdecl getRevealedImageUri() = 0 ;
+	virtual int __cdecl getState() = 0 ;
+	virtual int __cdecl getTotalSteps() = 0 ;
+	virtual int __cdecl getType() = 0 ;
+	virtual Androidapi::Jni::Net::_di_Jnet_Uri __cdecl getUnlockedImageUri() = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJAchievement : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JAchievementClass,_di_JAchievement>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JAchievementClass,_di_JAchievement> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJAchievement() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JAchievementClass,_di_JAchievement>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJAchievement() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{14DB1E4E-61BF-4F67-9BC4-A300EB9D88A8}") JAchievementBufferClass  : public JDataBufferClass 
+{
+	HIDESBASE virtual _di_JAchievementBuffer __cdecl init(_di_JDataHolder dataHolder) = 0 ;
+};
+
+__interface  INTERFACE_UUID("{F91632A1-72D5-490F-9A8D-244A168006E1}") JAchievementBuffer  : public JDataBuffer 
+{
+	HIDESBASE virtual _di_JAchievement __cdecl get(int position) = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJAchievementBuffer : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JAchievementBufferClass,_di_JAchievementBuffer>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JAchievementBufferClass,_di_JAchievementBuffer> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJAchievementBuffer() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JAchievementBufferClass,_di_JAchievementBuffer>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJAchievementBuffer() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{98E4622F-CC11-4475-89D3-A4F4A8F2691F}") JAchievementsClass  : public Androidapi::Jnibridge::IJavaClass 
+{
+	
+};
+
+__interface  INTERFACE_UUID("{E54FE6A0-807F-4F10-8AC1-8B5BF034E4C9}") JAchievements  : public Androidapi::Jnibridge::IJavaInstance 
+{
+	virtual Androidapi::Jni::Graphicscontentviewtext::_di_JIntent __cdecl getAchievementsIntent(_di_JGoogleApiClient P1) = 0 ;
+	virtual void __cdecl increment(_di_JGoogleApiClient P1, Androidapi::Jni::Javatypes::_di_JString P2, int P3) = 0 ;
+	virtual _di_JPendingResult __cdecl incrementImmediate(_di_JGoogleApiClient P1, Androidapi::Jni::Javatypes::_di_JString P2, int P3) = 0 ;
+	virtual _di_JPendingResult __cdecl load(_di_JGoogleApiClient P1, bool P2) = 0 ;
+	virtual void __cdecl reveal(_di_JGoogleApiClient P1, Androidapi::Jni::Javatypes::_di_JString P2) = 0 ;
+	virtual _di_JPendingResult __cdecl revealImmediate(_di_JGoogleApiClient P1, Androidapi::Jni::Javatypes::_di_JString P2) = 0 ;
+	virtual void __cdecl setSteps(_di_JGoogleApiClient P1, Androidapi::Jni::Javatypes::_di_JString P2, int P3) = 0 ;
+	virtual _di_JPendingResult __cdecl setStepsImmediate(_di_JGoogleApiClient P1, Androidapi::Jni::Javatypes::_di_JString P2, int P3) = 0 ;
+	virtual void __cdecl unlock(_di_JGoogleApiClient P1, Androidapi::Jni::Javatypes::_di_JString P2) = 0 ;
+	virtual _di_JPendingResult __cdecl unlockImmediate(_di_JGoogleApiClient P1, Androidapi::Jni::Javatypes::_di_JString P2) = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJAchievements : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JAchievementsClass,_di_JAchievements>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JAchievementsClass,_di_JAchievements> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJAchievements() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JAchievementsClass,_di_JAchievements>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJAchievements() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{DBF0464C-2C73-43D6-B2E9-F4DA524D818B}") JAchievements_LoadAchievementsResultClass  : public JReleasableClass 
+{
+	
+};
+
+__interface  INTERFACE_UUID("{2453524A-3AAC-44DB-90DA-700254628787}") JAchievements_LoadAchievementsResult  : public JReleasable 
+{
+	virtual _di_JAchievementBuffer __cdecl getAchievements() = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJAchievements_LoadAchievementsResult : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JAchievements_LoadAchievementsResultClass,_di_JAchievements_LoadAchievementsResult>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JAchievements_LoadAchievementsResultClass,_di_JAchievements_LoadAchievementsResult> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJAchievements_LoadAchievementsResult() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JAchievements_LoadAchievementsResultClass,_di_JAchievements_LoadAchievementsResult>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJAchievements_LoadAchievementsResult() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{34994F8B-EF0D-47D2-B3E5-F3E9095DB0AE}") JAchievements_UpdateAchievementResultClass  : public Japi_ResultClass 
+{
+	
+};
+
+__interface  INTERFACE_UUID("{1C10661F-8401-40C7-97BB-76780B2E89A3}") JAchievements_UpdateAchievementResult  : public Japi_Result 
+{
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl getAchievementId() = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJAchievements_UpdateAchievementResult : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JAchievements_UpdateAchievementResultClass,_di_JAchievements_UpdateAchievementResult>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JAchievements_UpdateAchievementResultClass,_di_JAchievements_UpdateAchievementResult> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJAchievements_UpdateAchievementResult() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JAchievements_UpdateAchievementResultClass,_di_JAchievements_UpdateAchievementResult>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJAchievements_UpdateAchievementResult() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{8CB29239-FC13-4DB2-966D-77D576C18DDC}") JLeaderboardClass  : public JFreezableClass 
+{
+	virtual int __cdecl _GetSCORE_ORDER_LARGER_IS_BETTER() = 0 ;
+	virtual int __cdecl _GetSCORE_ORDER_SMALLER_IS_BETTER() = 0 ;
+	__property int SCORE_ORDER_LARGER_IS_BETTER = {read=_GetSCORE_ORDER_LARGER_IS_BETTER};
+	__property int SCORE_ORDER_SMALLER_IS_BETTER = {read=_GetSCORE_ORDER_SMALLER_IS_BETTER};
+};
+
+__interface  INTERFACE_UUID("{353B79AC-19A2-42D4-AD92-A90808137FC3}") JLeaderboard  : public JFreezable 
+{
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl getDisplayName() = 0 /* overload */;
+	virtual void __cdecl getDisplayName(Androidapi::Jni::Graphicscontentviewtext::_di_Jdatabase_CharArrayBuffer P1) = 0 /* overload */;
+	virtual _di_JGame __cdecl getGame() = 0 ;
+	virtual Androidapi::Jni::Net::_di_Jnet_Uri __cdecl getIconImageUri() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl getIconImageUrl() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl getLeaderboardId() = 0 ;
+	virtual int __cdecl getScoreOrder() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JArrayList __cdecl getVariants() = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJLeaderboard : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JLeaderboardClass,_di_JLeaderboard>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JLeaderboardClass,_di_JLeaderboard> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJLeaderboard() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JLeaderboardClass,_di_JLeaderboard>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJLeaderboard() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{0326A2C8-D2D2-4F8D-BE0F-07703BB93916}") JLeaderboardScoreClass  : public JFreezableClass 
+{
+	virtual int __cdecl _GetLEADERBOARD_RANK_UNKNOWN() = 0 ;
+	__property int LEADERBOARD_RANK_UNKNOWN = {read=_GetLEADERBOARD_RANK_UNKNOWN};
+};
+
+__interface  INTERFACE_UUID("{11C06C5D-3D5E-4A10-A455-36A0F06D3206}") JLeaderboardScore  : public JFreezable 
+{
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl getDisplayRank() = 0 /* overload */;
+	virtual void __cdecl getDisplayRank(Androidapi::Jni::Graphicscontentviewtext::_di_Jdatabase_CharArrayBuffer P1) = 0 /* overload */;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl getDisplayScore() = 0 /* overload */;
+	virtual void __cdecl getDisplayScore(Androidapi::Jni::Graphicscontentviewtext::_di_Jdatabase_CharArrayBuffer P1) = 0 /* overload */;
+	virtual __int64 __cdecl getRank() = 0 ;
+	virtual __int64 __cdecl getRawScore() = 0 ;
+	virtual _di_JPlayer __cdecl getScoreHolder() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl getScoreHolderDisplayName() = 0 /* overload */;
+	virtual void __cdecl getScoreHolderDisplayName(Androidapi::Jni::Graphicscontentviewtext::_di_Jdatabase_CharArrayBuffer P1) = 0 /* overload */;
+	virtual Androidapi::Jni::Net::_di_Jnet_Uri __cdecl getScoreHolderHiResImageUri() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl getScoreHolderHiResImageUrl() = 0 ;
+	virtual Androidapi::Jni::Net::_di_Jnet_Uri __cdecl getScoreHolderIconImageUri() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl getScoreHolderIconImageUrl() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl getScoreTag() = 0 ;
+	virtual __int64 __cdecl getTimestampMillis() = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJLeaderboardScore : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JLeaderboardScoreClass,_di_JLeaderboardScore>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JLeaderboardScoreClass,_di_JLeaderboardScore> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJLeaderboardScore() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JLeaderboardScoreClass,_di_JLeaderboardScore>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJLeaderboardScore() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{2170DADE-C803-4F52-9F02-F55510214415}") JLeaderboardScoreBufferClass  : public JDataBufferClass 
+{
+	HIDESBASE virtual _di_JLeaderboardScoreBuffer __cdecl init(_di_JDataHolder dataHolder) = 0 ;
+};
+
+__interface  INTERFACE_UUID("{215A25BB-ACE6-43A5-9B5F-F1D1733A5F78}") JLeaderboardScoreBuffer  : public JDataBuffer 
+{
+	HIDESBASE virtual _di_JLeaderboardScore __cdecl get(int position) = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJLeaderboardScoreBuffer : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JLeaderboardScoreBufferClass,_di_JLeaderboardScoreBuffer>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JLeaderboardScoreBufferClass,_di_JLeaderboardScoreBuffer> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJLeaderboardScoreBuffer() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JLeaderboardScoreBufferClass,_di_JLeaderboardScoreBuffer>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJLeaderboardScoreBuffer() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{3680A21A-CA98-4D19-9A6F-BE9A3BBC67B3}") JLeaderboardVariantClass  : public JFreezableClass 
+{
+	virtual int __cdecl _GetCOLLECTION_PUBLIC() = 0 ;
+	virtual int __cdecl _GetCOLLECTION_SOCIAL() = 0 ;
+	virtual int __cdecl _GetNUM_SCORES_UNKNOWN() = 0 ;
+	virtual int __cdecl _GetNUM_TIME_SPANS() = 0 ;
+	virtual int __cdecl _GetPLAYER_RANK_UNKNOWN() = 0 ;
+	virtual int __cdecl _GetPLAYER_SCORE_UNKNOWN() = 0 ;
+	virtual int __cdecl _GetTIME_SPAN_ALL_TIME() = 0 ;
+	virtual int __cdecl _GetTIME_SPAN_DAILY() = 0 ;
+	virtual int __cdecl _GetTIME_SPAN_WEEKLY() = 0 ;
+	__property int COLLECTION_PUBLIC = {read=_GetCOLLECTION_PUBLIC};
+	__property int COLLECTION_SOCIAL = {read=_GetCOLLECTION_SOCIAL};
+	__property int NUM_SCORES_UNKNOWN = {read=_GetNUM_SCORES_UNKNOWN};
+	__property int NUM_TIME_SPANS = {read=_GetNUM_TIME_SPANS};
+	__property int PLAYER_RANK_UNKNOWN = {read=_GetPLAYER_RANK_UNKNOWN};
+	__property int PLAYER_SCORE_UNKNOWN = {read=_GetPLAYER_SCORE_UNKNOWN};
+	__property int TIME_SPAN_ALL_TIME = {read=_GetTIME_SPAN_ALL_TIME};
+	__property int TIME_SPAN_DAILY = {read=_GetTIME_SPAN_DAILY};
+	__property int TIME_SPAN_WEEKLY = {read=_GetTIME_SPAN_WEEKLY};
+};
+
+__interface  INTERFACE_UUID("{7A5DDBB0-946F-4D3D-BE8D-317984BA5E31}") JLeaderboardVariant  : public JFreezable 
+{
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl ga() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl gb() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl gc() = 0 ;
+	virtual int __cdecl getCollection() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl getDisplayPlayerRank() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl getDisplayPlayerScore() = 0 ;
+	virtual __int64 __cdecl getNumScores() = 0 ;
+	virtual __int64 __cdecl getPlayerRank() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl getPlayerScoreTag() = 0 ;
+	virtual __int64 __cdecl getRawPlayerScore() = 0 ;
+	virtual int __cdecl getTimeSpan() = 0 ;
+	virtual bool __cdecl hasPlayerInfo() = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJLeaderboardVariant : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JLeaderboardVariantClass,_di_JLeaderboardVariant>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JLeaderboardVariantClass,_di_JLeaderboardVariant> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJLeaderboardVariant() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JLeaderboardVariantClass,_di_JLeaderboardVariant>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJLeaderboardVariant() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{927F1A30-2ECB-4E54-9369-D50D2F38DFBF}") JLeaderboardsClass  : public Androidapi::Jnibridge::IJavaClass 
+{
+	
+};
+
+__interface  INTERFACE_UUID("{8EB67E34-0D05-4B8F-99C1-3DCDB5369553}") JLeaderboards  : public Androidapi::Jnibridge::IJavaInstance 
+{
+	virtual Androidapi::Jni::Graphicscontentviewtext::_di_JIntent __cdecl getAllLeaderboardsIntent(_di_JGoogleApiClient P1) = 0 ;
+	virtual Androidapi::Jni::Graphicscontentviewtext::_di_JIntent __cdecl getLeaderboardIntent(_di_JGoogleApiClient P1, Androidapi::Jni::Javatypes::_di_JString P2) = 0 ;
+	virtual _di_JPendingResult __cdecl loadCurrentPlayerLeaderboardScore(_di_JGoogleApiClient P1, Androidapi::Jni::Javatypes::_di_JString P2, int P3, int P4) = 0 ;
+	virtual _di_JPendingResult __cdecl loadLeaderboardMetadata(_di_JGoogleApiClient P1, bool P2) = 0 /* overload */;
+	virtual _di_JPendingResult __cdecl loadLeaderboardMetadata(_di_JGoogleApiClient P1, Androidapi::Jni::Javatypes::_di_JString P2, bool P3) = 0 /* overload */;
+	virtual _di_JPendingResult __cdecl loadMoreScores(_di_JGoogleApiClient P1, _di_JLeaderboardScoreBuffer P2, int P3, int P4) = 0 ;
+	virtual _di_JPendingResult __cdecl loadPlayerCenteredScores(_di_JGoogleApiClient P1, Androidapi::Jni::Javatypes::_di_JString P2, int P3, int P4, int P5) = 0 /* overload */;
+	virtual _di_JPendingResult __cdecl loadPlayerCenteredScores(_di_JGoogleApiClient P1, Androidapi::Jni::Javatypes::_di_JString P2, int P3, int P4, int P5, bool P6) = 0 /* overload */;
+	virtual _di_JPendingResult __cdecl loadTopScores(_di_JGoogleApiClient P1, Androidapi::Jni::Javatypes::_di_JString P2, int P3, int P4, int P5) = 0 /* overload */;
+	virtual _di_JPendingResult __cdecl loadTopScores(_di_JGoogleApiClient P1, Androidapi::Jni::Javatypes::_di_JString P2, int P3, int P4, int P5, bool P6) = 0 /* overload */;
+	virtual void __cdecl submitScore(_di_JGoogleApiClient P1, Androidapi::Jni::Javatypes::_di_JString P2, __int64 P3) = 0 /* overload */;
+	virtual void __cdecl submitScore(_di_JGoogleApiClient P1, Androidapi::Jni::Javatypes::_di_JString P2, __int64 P3, Androidapi::Jni::Javatypes::_di_JString P4) = 0 /* overload */;
+	virtual _di_JPendingResult __cdecl submitScoreImmediate(_di_JGoogleApiClient P1, Androidapi::Jni::Javatypes::_di_JString P2, __int64 P3) = 0 /* overload */;
+	virtual _di_JPendingResult __cdecl submitScoreImmediate(_di_JGoogleApiClient P1, Androidapi::Jni::Javatypes::_di_JString P2, __int64 P3, Androidapi::Jni::Javatypes::_di_JString P4) = 0 /* overload */;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJLeaderboards : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JLeaderboardsClass,_di_JLeaderboards>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JLeaderboardsClass,_di_JLeaderboards> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJLeaderboards() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JLeaderboardsClass,_di_JLeaderboards>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJLeaderboards() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{7BC6F7F7-ABDD-4B01-8669-6007561B59CA}") JLeaderboards_LeaderboardMetadataResultClass  : public JReleasableClass 
+{
+	
+};
+
+__interface  INTERFACE_UUID("{AA65DC7C-E2DF-4A0B-AC01-C02B0B80804B}") JLeaderboards_LeaderboardMetadataResult  : public JReleasable 
+{
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJLeaderboards_LeaderboardMetadataResult : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JLeaderboards_LeaderboardMetadataResultClass,_di_JLeaderboards_LeaderboardMetadataResult>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JLeaderboards_LeaderboardMetadataResultClass,_di_JLeaderboards_LeaderboardMetadataResult> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJLeaderboards_LeaderboardMetadataResult() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JLeaderboards_LeaderboardMetadataResultClass,_di_JLeaderboards_LeaderboardMetadataResult>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJLeaderboards_LeaderboardMetadataResult() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{11E976CD-2F3A-48C3-A115-E3957AB1D7DE}") JLeaderboards_LoadPlayerScoreResultClass  : public Japi_ResultClass 
+{
+	
+};
+
+__interface  INTERFACE_UUID("{D52252A0-6FA5-4058-84C4-F49A442FC48B}") JLeaderboards_LoadPlayerScoreResult  : public Japi_Result 
+{
+	virtual _di_JLeaderboardScore __cdecl getScore() = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJLeaderboards_LoadPlayerScoreResult : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JLeaderboards_LoadPlayerScoreResultClass,_di_JLeaderboards_LoadPlayerScoreResult>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JLeaderboards_LoadPlayerScoreResultClass,_di_JLeaderboards_LoadPlayerScoreResult> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJLeaderboards_LoadPlayerScoreResult() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JLeaderboards_LoadPlayerScoreResultClass,_di_JLeaderboards_LoadPlayerScoreResult>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJLeaderboards_LoadPlayerScoreResult() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{F20A7A11-6E84-470F-A60A-6ABD2B221B7F}") JLeaderboards_LoadScoresResultClass  : public JReleasableClass 
+{
+	
+};
+
+__interface  INTERFACE_UUID("{7A715A42-23B2-49BD-9942-C8D1BD5CC812}") JLeaderboards_LoadScoresResult  : public JReleasable 
+{
+	virtual _di_JLeaderboard __cdecl getLeaderboard() = 0 ;
+	virtual _di_JLeaderboardScoreBuffer __cdecl getScores() = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJLeaderboards_LoadScoresResult : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JLeaderboards_LoadScoresResultClass,_di_JLeaderboards_LoadScoresResult>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JLeaderboards_LoadScoresResultClass,_di_JLeaderboards_LoadScoresResult> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJLeaderboards_LoadScoresResult() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JLeaderboards_LoadScoresResultClass,_di_JLeaderboards_LoadScoresResult>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJLeaderboards_LoadScoresResult() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{0B14FA7B-5E39-41D5-AB15-CD52B83B8F7C}") JLeaderboards_SubmitScoreResultClass  : public JReleasableClass 
+{
+	
+};
+
+__interface  INTERFACE_UUID("{CDE390C9-3897-4747-9A68-D0AB76264310}") JLeaderboards_SubmitScoreResult  : public JReleasable 
+{
+	virtual _di_JScoreSubmissionData __cdecl getScoreData() = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJLeaderboards_SubmitScoreResult : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JLeaderboards_SubmitScoreResultClass,_di_JLeaderboards_SubmitScoreResult>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JLeaderboards_SubmitScoreResultClass,_di_JLeaderboards_SubmitScoreResult> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJLeaderboards_SubmitScoreResult() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JLeaderboards_SubmitScoreResultClass,_di_JLeaderboards_SubmitScoreResult>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJLeaderboards_SubmitScoreResult() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{0EE945FD-3FEB-4BB2-82A9-33440B8BAC04}") JScoreSubmissionDataClass  : public Androidapi::Jni::Javatypes::JObjectClass 
+{
+	HIDESBASE virtual _di_JScoreSubmissionData __cdecl init(_di_JDataHolder dataHolder) = 0 ;
+};
+
+__interface  INTERFACE_UUID("{87391FCC-42A2-489C-97D6-9174BF09CDA3}") JScoreSubmissionData  : public Androidapi::Jni::Javatypes::JObject 
+{
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl getLeaderboardId() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl getPlayerId() = 0 ;
+	virtual _di_JScoreSubmissionData_Result __cdecl getScoreResult(int timeSpan) = 0 ;
+	HIDESBASE virtual Androidapi::Jni::Javatypes::_di_JString __cdecl toString() = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJScoreSubmissionData : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JScoreSubmissionDataClass,_di_JScoreSubmissionData>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JScoreSubmissionDataClass,_di_JScoreSubmissionData> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJScoreSubmissionData() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JScoreSubmissionDataClass,_di_JScoreSubmissionData>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJScoreSubmissionData() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{C15ACFF3-B196-4814-837D-EFABDB1BCA00}") JScoreSubmissionData_ResultClass  : public Androidapi::Jni::Javatypes::JObjectClass 
+{
+	HIDESBASE virtual _di_JScoreSubmissionData_Result __cdecl init(__int64 rawScore, Androidapi::Jni::Javatypes::_di_JString formattedScore, Androidapi::Jni::Javatypes::_di_JString scoreTag, bool newBest) = 0 ;
+};
+
+__interface  INTERFACE_UUID("{A3CFABE0-2EF6-4630-91F3-7E1E73448A24}") JScoreSubmissionData_Result  : public Androidapi::Jni::Javatypes::JObject 
+{
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetformattedScore() = 0 ;
+	virtual bool __cdecl _GetnewBest() = 0 ;
+	virtual __int64 __cdecl _GetrawScore() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetscoreTag() = 0 ;
+	HIDESBASE virtual Androidapi::Jni::Javatypes::_di_JString __cdecl toString() = 0 ;
+	__property Androidapi::Jni::Javatypes::_di_JString formattedScore = {read=_GetformattedScore};
+	__property bool newBest = {read=_GetnewBest};
+	__property __int64 rawScore = {read=_GetrawScore};
+	__property Androidapi::Jni::Javatypes::_di_JString scoreTag = {read=_GetscoreTag};
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJScoreSubmissionData_Result : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JScoreSubmissionData_ResultClass,_di_JScoreSubmissionData_Result>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JScoreSubmissionData_ResultClass,_di_JScoreSubmissionData_Result> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJScoreSubmissionData_Result() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JScoreSubmissionData_ResultClass,_di_JScoreSubmissionData_Result>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJScoreSubmissionData_Result() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{14EB41F9-050E-4B83-B80C-BE0DAC596C38}") JInvitationClass  : public Androidapi::Jni::Os::JParcelableClass 
+{
+	virtual int __cdecl _GetINVITATION_TYPE_REAL_TIME() = 0 ;
+	virtual int __cdecl _GetINVITATION_TYPE_TURN_BASED() = 0 ;
+	__property int INVITATION_TYPE_REAL_TIME = {read=_GetINVITATION_TYPE_REAL_TIME};
+	__property int INVITATION_TYPE_TURN_BASED = {read=_GetINVITATION_TYPE_TURN_BASED};
+};
+
+__interface  INTERFACE_UUID("{2F9236D2-0094-44BE-A00A-41D28EB1C749}") JInvitation  : public Androidapi::Jni::Os::JParcelable 
+{
+	virtual int __cdecl getAvailableAutoMatchSlots() = 0 ;
+	virtual __int64 __cdecl getCreationTimestamp() = 0 ;
+	virtual _di_JGame __cdecl getGame() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl getInvitationId() = 0 ;
+	virtual int __cdecl getInvitationType() = 0 ;
+	virtual _di_JParticipant __cdecl getInviter() = 0 ;
+	virtual int __cdecl getVariant() = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJInvitation : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JInvitationClass,_di_JInvitation>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JInvitationClass,_di_JInvitation> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJInvitation() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JInvitationClass,_di_JInvitation>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJInvitation() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{E9282ACE-D9A7-416B-9FDB-D1AB883D642A}") JInvitationsClass  : public Androidapi::Jnibridge::IJavaClass 
+{
+	
+};
+
+__interface  INTERFACE_UUID("{909B2FC5-1777-46B9-B757-44CE02353042}") JInvitations  : public Androidapi::Jnibridge::IJavaInstance 
+{
+	virtual Androidapi::Jni::Graphicscontentviewtext::_di_JIntent __cdecl getInvitationInboxIntent(_di_JGoogleApiClient P1) = 0 ;
+	virtual _di_JPendingResult __cdecl loadInvitations(_di_JGoogleApiClient P1) = 0 /* overload */;
+	virtual _di_JPendingResult __cdecl loadInvitations(_di_JGoogleApiClient P1, int P2) = 0 /* overload */;
+	virtual void __cdecl registerInvitationListener(_di_JGoogleApiClient P1, _di_JOnInvitationReceivedListener P2) = 0 ;
+	virtual void __cdecl unregisterInvitationListener(_di_JGoogleApiClient P1) = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJInvitations : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JInvitationsClass,_di_JInvitations>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JInvitationsClass,_di_JInvitations> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJInvitations() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JInvitationsClass,_di_JInvitations>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJInvitations() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{B9D258BA-8C77-451E-84EC-1508E80BCB99}") JInvitations_LoadInvitationsResultClass  : public JReleasableClass 
+{
+	
+};
+
+__interface  INTERFACE_UUID("{76A3BBD7-3854-4666-9C29-EA969DA7F5C1}") JInvitations_LoadInvitationsResult  : public JReleasable 
+{
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJInvitations_LoadInvitationsResult : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JInvitations_LoadInvitationsResultClass,_di_JInvitations_LoadInvitationsResult>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JInvitations_LoadInvitationsResultClass,_di_JInvitations_LoadInvitationsResult> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJInvitations_LoadInvitationsResult() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JInvitations_LoadInvitationsResultClass,_di_JInvitations_LoadInvitationsResult>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJInvitations_LoadInvitationsResult() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{E83EC182-095A-41DA-A92D-A7397CCB3D6E}") JMultiplayerClass  : public Androidapi::Jnibridge::IJavaClass 
+{
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetEXTRA_EXCLUSIVE_BIT_MASK() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetEXTRA_INVITATION() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetEXTRA_MAX_AUTOMATCH_PLAYERS() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetEXTRA_MIN_AUTOMATCH_PLAYERS() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetEXTRA_ROOM() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetEXTRA_TURN_BASED_MATCH() = 0 ;
+	virtual int __cdecl _GetMAX_RELIABLE_MESSAGE_LEN() = 0 ;
+	virtual int __cdecl _GetMAX_UNRELIABLE_MESSAGE_LEN() = 0 ;
+	virtual int __cdecl _GetSORT_ORDER_MOST_RECENT_FIRST() = 0 ;
+	virtual int __cdecl _GetSORT_ORDER_SOCIAL_AGGREGATION() = 0 ;
+	__property Androidapi::Jni::Javatypes::_di_JString EXTRA_EXCLUSIVE_BIT_MASK = {read=_GetEXTRA_EXCLUSIVE_BIT_MASK};
+	__property Androidapi::Jni::Javatypes::_di_JString EXTRA_INVITATION = {read=_GetEXTRA_INVITATION};
+	__property Androidapi::Jni::Javatypes::_di_JString EXTRA_MAX_AUTOMATCH_PLAYERS = {read=_GetEXTRA_MAX_AUTOMATCH_PLAYERS};
+	__property Androidapi::Jni::Javatypes::_di_JString EXTRA_MIN_AUTOMATCH_PLAYERS = {read=_GetEXTRA_MIN_AUTOMATCH_PLAYERS};
+	__property Androidapi::Jni::Javatypes::_di_JString EXTRA_ROOM = {read=_GetEXTRA_ROOM};
+	__property Androidapi::Jni::Javatypes::_di_JString EXTRA_TURN_BASED_MATCH = {read=_GetEXTRA_TURN_BASED_MATCH};
+	__property int MAX_RELIABLE_MESSAGE_LEN = {read=_GetMAX_RELIABLE_MESSAGE_LEN};
+	__property int MAX_UNRELIABLE_MESSAGE_LEN = {read=_GetMAX_UNRELIABLE_MESSAGE_LEN};
+	__property int SORT_ORDER_MOST_RECENT_FIRST = {read=_GetSORT_ORDER_MOST_RECENT_FIRST};
+	__property int SORT_ORDER_SOCIAL_AGGREGATION = {read=_GetSORT_ORDER_SOCIAL_AGGREGATION};
+};
+
+__interface  INTERFACE_UUID("{014FC46E-CEEB-41A5-9C98-B9932BB8824A}") JMultiplayer  : public Androidapi::Jnibridge::IJavaInstance 
+{
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJMultiplayer : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMultiplayerClass,_di_JMultiplayer>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMultiplayerClass,_di_JMultiplayer> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJMultiplayer() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMultiplayerClass,_di_JMultiplayer>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJMultiplayer() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{124C239D-5B88-4ED3-911D-F45488ECCB02}") JOnInvitationReceivedListenerClass  : public Androidapi::Jnibridge::IJavaClass 
+{
+	
+};
+
+__interface  INTERFACE_UUID("{6860A363-DEA1-45A1-99C6-328598B0AE2A}") JOnInvitationReceivedListener  : public Androidapi::Jnibridge::IJavaInstance 
+{
+	virtual void __cdecl onInvitationReceived(_di_JInvitation P1) = 0 ;
+	virtual void __cdecl onInvitationRemoved(Androidapi::Jni::Javatypes::_di_JString P1) = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJOnInvitationReceivedListener : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JOnInvitationReceivedListenerClass,_di_JOnInvitationReceivedListener>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JOnInvitationReceivedListenerClass,_di_JOnInvitationReceivedListener> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJOnInvitationReceivedListener() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JOnInvitationReceivedListenerClass,_di_JOnInvitationReceivedListener>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJOnInvitationReceivedListener() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{0BE0B958-105E-4602-B807-5599272EFA4E}") JParticipantClass  : public Androidapi::Jni::Os::JParcelableClass 
+{
+	virtual int __cdecl _GetSTATUS_DECLINED() = 0 ;
+	virtual int __cdecl _GetSTATUS_FINISHED() = 0 ;
+	virtual int __cdecl _GetSTATUS_INVITED() = 0 ;
+	virtual int __cdecl _GetSTATUS_JOINED() = 0 ;
+	virtual int __cdecl _GetSTATUS_LEFT() = 0 ;
+	virtual int __cdecl _GetSTATUS_NOT_INVITED_YET() = 0 ;
+	virtual int __cdecl _GetSTATUS_UNRESPONSIVE() = 0 ;
+	__property int STATUS_DECLINED = {read=_GetSTATUS_DECLINED};
+	__property int STATUS_FINISHED = {read=_GetSTATUS_FINISHED};
+	__property int STATUS_INVITED = {read=_GetSTATUS_INVITED};
+	__property int STATUS_JOINED = {read=_GetSTATUS_JOINED};
+	__property int STATUS_LEFT = {read=_GetSTATUS_LEFT};
+	__property int STATUS_NOT_INVITED_YET = {read=_GetSTATUS_NOT_INVITED_YET};
+	__property int STATUS_UNRESPONSIVE = {read=_GetSTATUS_UNRESPONSIVE};
+};
+
+__interface  INTERFACE_UUID("{DC33E0EF-970D-4D19-97F5-7FAD48261851}") JParticipant  : public Androidapi::Jni::Os::JParcelable 
+{
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl ge() = 0 ;
+	virtual int __cdecl getCapabilities() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl getDisplayName() = 0 /* overload */;
+	virtual void __cdecl getDisplayName(Androidapi::Jni::Graphicscontentviewtext::_di_Jdatabase_CharArrayBuffer P1) = 0 /* overload */;
+	virtual Androidapi::Jni::Net::_di_Jnet_Uri __cdecl getHiResImageUri() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl getHiResImageUrl() = 0 ;
+	virtual Androidapi::Jni::Net::_di_Jnet_Uri __cdecl getIconImageUri() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl getIconImageUrl() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl getParticipantId() = 0 ;
+	virtual _di_JPlayer __cdecl getPlayer() = 0 ;
+	virtual _di_JParticipantResult __cdecl getResult() = 0 ;
+	virtual int __cdecl getStatus() = 0 ;
+	virtual bool __cdecl isConnectedToRoom() = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJParticipant : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JParticipantClass,_di_JParticipant>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JParticipantClass,_di_JParticipant> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJParticipant() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JParticipantClass,_di_JParticipant>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJParticipant() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{AABC49A4-2306-46B2-81E5-99EE05A6DDD5}") JParticipantBufferClass  : public JDataBufferClass 
+{
+	
+};
+
+__interface  INTERFACE_UUID("{F756E11E-5E50-4947-BB3A-33A867A4FC43}") JParticipantBuffer  : public JDataBuffer 
+{
+	HIDESBASE virtual _di_JParticipant __cdecl get(int position) = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJParticipantBuffer : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JParticipantBufferClass,_di_JParticipantBuffer>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JParticipantBufferClass,_di_JParticipantBuffer> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJParticipantBuffer() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JParticipantBufferClass,_di_JParticipantBuffer>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJParticipantBuffer() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{3654CFE0-BB45-4A15-919D-3FE27E6F398C}") JParticipantResultClass  : public Androidapi::Jni::Javatypes::JObjectClass 
+{
+	virtual _di_JParticipantResultCreator __cdecl _GetCREATOR() = 0 ;
+	virtual int __cdecl _GetMATCH_RESULT_DISAGREED() = 0 ;
+	virtual int __cdecl _GetMATCH_RESULT_DISCONNECT() = 0 ;
+	virtual int __cdecl _GetMATCH_RESULT_LOSS() = 0 ;
+	virtual int __cdecl _GetMATCH_RESULT_NONE() = 0 ;
+	virtual int __cdecl _GetMATCH_RESULT_TIE() = 0 ;
+	virtual int __cdecl _GetMATCH_RESULT_UNINITIALIZED() = 0 ;
+	virtual int __cdecl _GetMATCH_RESULT_WIN() = 0 ;
+	virtual int __cdecl _GetPLACING_UNINITIALIZED() = 0 ;
+	HIDESBASE virtual _di_JParticipantResult __cdecl init(Androidapi::Jni::Javatypes::_di_JString participantId, int result, int placing) = 0 /* overload */;
+	HIDESBASE virtual _di_JParticipantResult __cdecl init(int versionCode, Androidapi::Jni::Javatypes::_di_JString participantId, int result, int placing) = 0 /* overload */;
+	__property _di_JParticipantResultCreator CREATOR = {read=_GetCREATOR};
+	__property int MATCH_RESULT_DISAGREED = {read=_GetMATCH_RESULT_DISAGREED};
+	__property int MATCH_RESULT_DISCONNECT = {read=_GetMATCH_RESULT_DISCONNECT};
+	__property int MATCH_RESULT_LOSS = {read=_GetMATCH_RESULT_LOSS};
+	__property int MATCH_RESULT_NONE = {read=_GetMATCH_RESULT_NONE};
+	__property int MATCH_RESULT_TIE = {read=_GetMATCH_RESULT_TIE};
+	__property int MATCH_RESULT_UNINITIALIZED = {read=_GetMATCH_RESULT_UNINITIALIZED};
+	__property int MATCH_RESULT_WIN = {read=_GetMATCH_RESULT_WIN};
+	__property int PLACING_UNINITIALIZED = {read=_GetPLACING_UNINITIALIZED};
+};
+
+__interface  INTERFACE_UUID("{9162B2DC-A07C-472B-AC1E-EACBAA9323B0}") JParticipantResult  : public Androidapi::Jni::Javatypes::JObject 
+{
+	virtual int __cdecl describeContents() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl getParticipantId() = 0 ;
+	virtual int __cdecl getPlacing() = 0 ;
+	virtual int __cdecl getResult() = 0 ;
+	virtual int __cdecl getVersionCode() = 0 ;
+	virtual void __cdecl writeToParcel(Androidapi::Jni::Os::_di_JParcel out_, int flags) = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJParticipantResult : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JParticipantResultClass,_di_JParticipantResult>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JParticipantResultClass,_di_JParticipantResult> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJParticipantResult() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JParticipantResultClass,_di_JParticipantResult>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJParticipantResult() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{79774C21-47E9-4A1C-9181-3737C3885F32}") JParticipantResultCreatorClass  : public Androidapi::Jni::Javatypes::JObjectClass 
+{
+	virtual int __cdecl _GetCONTENT_DESCRIPTION() = 0 ;
+	HIDESBASE virtual _di_JParticipantResultCreator __cdecl init() = 0 ;
+	__property int CONTENT_DESCRIPTION = {read=_GetCONTENT_DESCRIPTION};
+};
+
+__interface  INTERFACE_UUID("{F909A55B-043D-451D-9E55-DA4966A030F4}") JParticipantResultCreator  : public Androidapi::Jni::Javatypes::JObject 
+{
+	virtual _di_JParticipantResult __cdecl createFromParcel(Androidapi::Jni::Os::_di_JParcel parcel) = 0 ;
+	virtual Androidapi::Jnibridge::TJavaObjectArray__1<_di_JParticipantResult>* __cdecl newArray(int size) = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJParticipantResultCreator : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JParticipantResultCreatorClass,_di_JParticipantResultCreator>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JParticipantResultCreatorClass,_di_JParticipantResultCreator> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJParticipantResultCreator() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JParticipantResultCreatorClass,_di_JParticipantResultCreator>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJParticipantResultCreator() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{72CD73A6-E7B1-46F7-9116-7394FDC35A03}") JParticipantUtilsClass  : public Androidapi::Jni::Javatypes::JObjectClass 
+{
+	virtual bool __cdecl aE(Androidapi::Jni::Javatypes::_di_JString P1) = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl getParticipantId(Androidapi::Jni::Javatypes::_di_JArrayList participants, Androidapi::Jni::Javatypes::_di_JString playerId) = 0 ;
+};
+
+__interface  INTERFACE_UUID("{245527FA-DD08-4626-BEDD-5D4976CFF950}") JParticipantUtils  : public Androidapi::Jni::Javatypes::JObject 
+{
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJParticipantUtils : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JParticipantUtilsClass,_di_JParticipantUtils>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JParticipantUtilsClass,_di_JParticipantUtils> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJParticipantUtils() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JParticipantUtilsClass,_di_JParticipantUtils>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJParticipantUtils() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{E9864B4D-9A42-4F31-9DDF-328F7281408D}") JParticipatableClass  : public Androidapi::Jnibridge::IJavaClass 
+{
+	
+};
+
+__interface  INTERFACE_UUID("{0DAC4927-D1B7-40F3-83DF-6C472854EF61}") JParticipatable  : public Androidapi::Jnibridge::IJavaInstance 
+{
+	virtual Androidapi::Jni::Javatypes::_di_JArrayList __cdecl getParticipants() = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJParticipatable : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JParticipatableClass,_di_JParticipatable>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JParticipatableClass,_di_JParticipatable> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJParticipatable() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JParticipatableClass,_di_JParticipatable>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJParticipatable() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{E11642C1-4F49-4298-8B3F-DF46663B9BF2}") JRealTimeMessageClass  : public Androidapi::Jni::Javatypes::JObjectClass 
+{
+	virtual Androidapi::Jni::Os::_di_JParcelable_Creator __cdecl _GetCREATOR() = 0 ;
+	virtual int __cdecl _GetRELIABLE() = 0 ;
+	virtual int __cdecl _GetUNRELIABLE() = 0 ;
+	HIDESBASE virtual _di_JRealTimeMessage __cdecl init(Androidapi::Jni::Javatypes::_di_JString senderParticipantId, Androidapi::Jnibridge::TJavaArray__1<System::Byte>* messageData, int isReliable) = 0 /* overload */;
+	__property Androidapi::Jni::Os::_di_JParcelable_Creator CREATOR = {read=_GetCREATOR};
+	__property int RELIABLE = {read=_GetRELIABLE};
+	__property int UNRELIABLE = {read=_GetUNRELIABLE};
+};
+
+__interface  INTERFACE_UUID("{0CF40854-AF00-4EC0-9922-62E2400A17B0}") JRealTimeMessage  : public Androidapi::Jni::Javatypes::JObject 
+{
+	virtual int __cdecl describeContents() = 0 ;
+	virtual Androidapi::Jnibridge::TJavaArray__1<System::Byte>* __cdecl getMessageData() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl getSenderParticipantId() = 0 ;
+	virtual bool __cdecl isReliable() = 0 ;
+	virtual void __cdecl writeToParcel(Androidapi::Jni::Os::_di_JParcel parcel, int flag) = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJRealTimeMessage : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JRealTimeMessageClass,_di_JRealTimeMessage>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JRealTimeMessageClass,_di_JRealTimeMessage> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJRealTimeMessage() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JRealTimeMessageClass,_di_JRealTimeMessage>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJRealTimeMessage() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{41C291FA-37A2-4F78-B449-E48116C9DD87}") JRealTimeMessageReceivedListenerClass  : public Androidapi::Jnibridge::IJavaClass 
+{
+	
+};
+
+__interface  INTERFACE_UUID("{487EE70C-69D6-46F9-935A-8BC45DD124D5}") JRealTimeMessageReceivedListener  : public Androidapi::Jnibridge::IJavaInstance 
+{
+	virtual void __cdecl onRealTimeMessageReceived(_di_JRealTimeMessage P1) = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJRealTimeMessageReceivedListener : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JRealTimeMessageReceivedListenerClass,_di_JRealTimeMessageReceivedListener>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JRealTimeMessageReceivedListenerClass,_di_JRealTimeMessageReceivedListener> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJRealTimeMessageReceivedListener() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JRealTimeMessageReceivedListenerClass,_di_JRealTimeMessageReceivedListener>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJRealTimeMessageReceivedListener() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{85AF3A85-3968-43A1-99B9-3455DFC448DE}") JRealTimeMultiplayerClass  : public Androidapi::Jnibridge::IJavaClass 
+{
+	virtual int __cdecl _GetREAL_TIME_MESSAGE_FAILED() = 0 ;
+	__property int REAL_TIME_MESSAGE_FAILED = {read=_GetREAL_TIME_MESSAGE_FAILED};
+};
+
+__interface  INTERFACE_UUID("{1377745A-8BD4-4882-930B-9F3D011B7676}") JRealTimeMultiplayer  : public Androidapi::Jnibridge::IJavaInstance 
+{
+	virtual void __cdecl create(_di_JGoogleApiClient P1, _di_JRoomConfig P2) = 0 ;
+	virtual void __cdecl declineInvitation(_di_JGoogleApiClient P1, Androidapi::Jni::Javatypes::_di_JString P2) = 0 ;
+	virtual void __cdecl dismissInvitation(_di_JGoogleApiClient P1, Androidapi::Jni::Javatypes::_di_JString P2) = 0 ;
+	virtual Androidapi::Jni::Graphicscontentviewtext::_di_JIntent __cdecl getSelectOpponentsIntent(_di_JGoogleApiClient P1, int P2, int P3) = 0 /* overload */;
+	virtual Androidapi::Jni::Graphicscontentviewtext::_di_JIntent __cdecl getSelectOpponentsIntent(_di_JGoogleApiClient P1, int P2, int P3, bool P4) = 0 /* overload */;
+	virtual _di_Jrealtime_RealTimeSocket __cdecl getSocketForParticipant(_di_JGoogleApiClient P1, Androidapi::Jni::Javatypes::_di_JString P2, Androidapi::Jni::Javatypes::_di_JString P3) = 0 ;
+	virtual Androidapi::Jni::Graphicscontentviewtext::_di_JIntent __cdecl getWaitingRoomIntent(_di_JGoogleApiClient P1, _di_JRoom P2, int P3) = 0 ;
+	virtual void __cdecl join(_di_JGoogleApiClient P1, _di_JRoomConfig P2) = 0 ;
+	virtual void __cdecl leave(_di_JGoogleApiClient P1, _di_JRoomUpdateListener P2, Androidapi::Jni::Javatypes::_di_JString P3) = 0 ;
+	virtual int __cdecl sendReliableMessage(_di_JGoogleApiClient P1, _di_JRealTimeMultiplayer_ReliableMessageSentCallback P2, Androidapi::Jnibridge::TJavaArray__1<System::Byte>* P3, Androidapi::Jni::Javatypes::_di_JString P4, Androidapi::Jni::Javatypes::_di_JString P5) = 0 ;
+	virtual int __cdecl sendUnreliableMessage(_di_JGoogleApiClient P1, Androidapi::Jnibridge::TJavaArray__1<System::Byte>* P2, Androidapi::Jni::Javatypes::_di_JString P3, Androidapi::Jni::Javatypes::_di_JString P4) = 0 /* overload */;
+	virtual int __cdecl sendUnreliableMessage(_di_JGoogleApiClient P1, Androidapi::Jnibridge::TJavaArray__1<System::Byte>* P2, Androidapi::Jni::Javatypes::_di_JString P3, Androidapi::Jni::Javatypes::_di_JList P4) = 0 /* overload */;
+	virtual int __cdecl sendUnreliableMessageToOthers(_di_JGoogleApiClient P1, Androidapi::Jnibridge::TJavaArray__1<System::Byte>* P2, Androidapi::Jni::Javatypes::_di_JString P3) = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJRealTimeMultiplayer : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JRealTimeMultiplayerClass,_di_JRealTimeMultiplayer>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JRealTimeMultiplayerClass,_di_JRealTimeMultiplayer> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJRealTimeMultiplayer() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JRealTimeMultiplayerClass,_di_JRealTimeMultiplayer>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJRealTimeMultiplayer() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{1A517252-E363-4184-ABC0-A73BF00FC4E2}") JRealTimeMultiplayer_ReliableMessageSentCallbackClass  : public Androidapi::Jnibridge::IJavaClass 
+{
+	
+};
+
+__interface  INTERFACE_UUID("{757B7C6C-6FA6-448D-9AD0-8CD6C3A3B95B}") JRealTimeMultiplayer_ReliableMessageSentCallback  : public Androidapi::Jnibridge::IJavaInstance 
+{
+	virtual void __cdecl onRealTimeMessageSent(int P1, int P2, Androidapi::Jni::Javatypes::_di_JString P3) = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJRealTimeMultiplayer_ReliableMessageSentCallback : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JRealTimeMultiplayer_ReliableMessageSentCallbackClass,_di_JRealTimeMultiplayer_ReliableMessageSentCallback>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JRealTimeMultiplayer_ReliableMessageSentCallbackClass,_di_JRealTimeMultiplayer_ReliableMessageSentCallback> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJRealTimeMultiplayer_ReliableMessageSentCallback() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JRealTimeMultiplayer_ReliableMessageSentCallbackClass,_di_JRealTimeMultiplayer_ReliableMessageSentCallback>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJRealTimeMultiplayer_ReliableMessageSentCallback() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{E903D887-CB5B-40E0-B54C-52E6B1C7ED86}") Jrealtime_RealTimeSocketClass  : public Androidapi::Jnibridge::IJavaClass 
+{
+	
+};
+
+__interface  INTERFACE_UUID("{1D1BD6F8-032B-43F5-8FAE-B8E37E7A3B85}") Jrealtime_RealTimeSocket  : public Androidapi::Jnibridge::IJavaInstance 
+{
+	virtual void __cdecl close() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JInputStream __cdecl getInputStream() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JOutputStream __cdecl getOutputStream() = 0 ;
+	virtual Androidapi::Jni::Os::_di_JParcelFileDescriptor __cdecl getParcelFileDescriptor() = 0 ;
+	virtual bool __cdecl isClosed() = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJrealtime_RealTimeSocket : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_Jrealtime_RealTimeSocketClass,_di_Jrealtime_RealTimeSocket>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_Jrealtime_RealTimeSocketClass,_di_Jrealtime_RealTimeSocket> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJrealtime_RealTimeSocket() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_Jrealtime_RealTimeSocketClass,_di_Jrealtime_RealTimeSocket>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJrealtime_RealTimeSocket() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{A93A517C-84FF-4021-929F-41332F02AA6B}") JRoomClass  : public Androidapi::Jni::Os::JParcelableClass 
+{
+	virtual int __cdecl _GetROOM_STATUS_ACTIVE() = 0 ;
+	virtual int __cdecl _GetROOM_STATUS_AUTO_MATCHING() = 0 ;
+	virtual int __cdecl _GetROOM_STATUS_CONNECTING() = 0 ;
+	virtual int __cdecl _GetROOM_STATUS_INVITING() = 0 ;
+	virtual int __cdecl _GetROOM_VARIANT_DEFAULT() = 0 ;
+	__property int ROOM_STATUS_ACTIVE = {read=_GetROOM_STATUS_ACTIVE};
+	__property int ROOM_STATUS_AUTO_MATCHING = {read=_GetROOM_STATUS_AUTO_MATCHING};
+	__property int ROOM_STATUS_CONNECTING = {read=_GetROOM_STATUS_CONNECTING};
+	__property int ROOM_STATUS_INVITING = {read=_GetROOM_STATUS_INVITING};
+	__property int ROOM_VARIANT_DEFAULT = {read=_GetROOM_VARIANT_DEFAULT};
+};
+
+__interface  INTERFACE_UUID("{2C389670-651B-424F-88E5-93850089A77C}") JRoom  : public Androidapi::Jni::Os::JParcelable 
+{
+	virtual Androidapi::Jni::Os::_di_JBundle __cdecl getAutoMatchCriteria() = 0 ;
+	virtual int __cdecl getAutoMatchWaitEstimateSeconds() = 0 ;
+	virtual __int64 __cdecl getCreationTimestamp() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl getCreatorId() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl getDescription() = 0 /* overload */;
+	virtual void __cdecl getDescription(Androidapi::Jni::Graphicscontentviewtext::_di_Jdatabase_CharArrayBuffer P1) = 0 /* overload */;
+	virtual _di_JParticipant __cdecl getParticipant(Androidapi::Jni::Javatypes::_di_JString P1) = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl getParticipantId(Androidapi::Jni::Javatypes::_di_JString P1) = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JArrayList __cdecl getParticipantIds() = 0 ;
+	virtual int __cdecl getParticipantStatus(Androidapi::Jni::Javatypes::_di_JString P1) = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl getRoomId() = 0 ;
+	virtual int __cdecl getStatus() = 0 ;
+	virtual int __cdecl getVariant() = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJRoom : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JRoomClass,_di_JRoom>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JRoomClass,_di_JRoom> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJRoom() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JRoomClass,_di_JRoom>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJRoom() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{F272FA9D-AE37-41CD-ABD1-62727128BCF8}") JRoomConfigClass  : public Androidapi::Jni::Javatypes::JObjectClass 
+{
+	virtual _di_JRoomConfig_Builder __cdecl builder(_di_JRoomUpdateListener listener) = 0 ;
+	virtual Androidapi::Jni::Os::_di_JBundle __cdecl createAutoMatchCriteria(int minAutoMatchPlayers, int maxAutoMatchPlayers, __int64 exclusiveBitMask) = 0 ;
+};
+
+__interface  INTERFACE_UUID("{CD2AD528-203D-44D5-8DCF-8FAEA3584E38}") JRoomConfig  : public Androidapi::Jni::Javatypes::JObject 
+{
+	virtual Androidapi::Jni::Os::_di_JBundle __cdecl getAutoMatchCriteria() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl getInvitationId() = 0 ;
+	virtual Androidapi::Jnibridge::TJavaObjectArray__1<Androidapi::Jni::Javatypes::_di_JString>* __cdecl getInvitedPlayerIds() = 0 ;
+	virtual _di_JRealTimeMessageReceivedListener __cdecl getMessageReceivedListener() = 0 ;
+	virtual _di_JRoomStatusUpdateListener __cdecl getRoomStatusUpdateListener() = 0 ;
+	virtual _di_JRoomUpdateListener __cdecl getRoomUpdateListener() = 0 ;
+	virtual int __cdecl getVariant() = 0 ;
+	virtual bool __cdecl isSocketEnabled() = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJRoomConfig : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JRoomConfigClass,_di_JRoomConfig>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JRoomConfigClass,_di_JRoomConfig> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJRoomConfig() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JRoomConfigClass,_di_JRoomConfig>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJRoomConfig() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{A8118363-1188-4D23-B562-AA6C45827C8B}") JRoomConfig_BuilderClass  : public Androidapi::Jni::Javatypes::JObjectClass 
+{
+	
+};
+
+__interface  INTERFACE_UUID("{41897BC0-FFF0-4634-90AC-27DDB46B3B48}") JRoomConfig_Builder  : public Androidapi::Jni::Javatypes::JObject 
+{
+	virtual _di_JRoomConfig_Builder __cdecl addPlayersToInvite(Androidapi::Jni::Javatypes::_di_JArrayList playerIds) = 0 /* overload */;
+	virtual _di_JRoomConfig_Builder __cdecl addPlayersToInvite(Androidapi::Jnibridge::TJavaObjectArray__1<Androidapi::Jni::Javatypes::_di_JString>* playerIds) = 0 /* overload */;
+	virtual _di_JRoomConfig __cdecl build() = 0 ;
+	virtual _di_JRoomConfig_Builder __cdecl setAutoMatchCriteria(Androidapi::Jni::Os::_di_JBundle autoMatchCriteria) = 0 ;
+	virtual _di_JRoomConfig_Builder __cdecl setInvitationIdToAccept(Androidapi::Jni::Javatypes::_di_JString invitationId) = 0 ;
+	virtual _di_JRoomConfig_Builder __cdecl setMessageReceivedListener(_di_JRealTimeMessageReceivedListener listener) = 0 ;
+	virtual _di_JRoomConfig_Builder __cdecl setRoomStatusUpdateListener(_di_JRoomStatusUpdateListener listener) = 0 ;
+	virtual _di_JRoomConfig_Builder __cdecl setSocketCommunicationEnabled(bool enableSockets) = 0 ;
+	virtual _di_JRoomConfig_Builder __cdecl setVariant(int variant) = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJRoomConfig_Builder : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JRoomConfig_BuilderClass,_di_JRoomConfig_Builder>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JRoomConfig_BuilderClass,_di_JRoomConfig_Builder> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJRoomConfig_Builder() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JRoomConfig_BuilderClass,_di_JRoomConfig_Builder>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJRoomConfig_Builder() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{EAA3385A-F22C-44E6-B87C-A07AF86EFDF0}") JRoomStatusUpdateListenerClass  : public Androidapi::Jnibridge::IJavaClass 
+{
+	
+};
+
+__interface  INTERFACE_UUID("{4EEDB710-37CA-4B3B-937C-3F109DC26D4C}") JRoomStatusUpdateListener  : public Androidapi::Jnibridge::IJavaInstance 
+{
+	virtual void __cdecl onConnectedToRoom(_di_JRoom P1) = 0 ;
+	virtual void __cdecl onDisconnectedFromRoom(_di_JRoom P1) = 0 ;
+	virtual void __cdecl onP2PConnected(Androidapi::Jni::Javatypes::_di_JString P1) = 0 ;
+	virtual void __cdecl onP2PDisconnected(Androidapi::Jni::Javatypes::_di_JString P1) = 0 ;
+	virtual void __cdecl onPeerDeclined(_di_JRoom P1, Androidapi::Jni::Javatypes::_di_JList P2) = 0 ;
+	virtual void __cdecl onPeerInvitedToRoom(_di_JRoom P1, Androidapi::Jni::Javatypes::_di_JList P2) = 0 ;
+	virtual void __cdecl onPeerJoined(_di_JRoom P1, Androidapi::Jni::Javatypes::_di_JList P2) = 0 ;
+	virtual void __cdecl onPeerLeft(_di_JRoom P1, Androidapi::Jni::Javatypes::_di_JList P2) = 0 ;
+	virtual void __cdecl onPeersConnected(_di_JRoom P1, Androidapi::Jni::Javatypes::_di_JList P2) = 0 ;
+	virtual void __cdecl onPeersDisconnected(_di_JRoom P1, Androidapi::Jni::Javatypes::_di_JList P2) = 0 ;
+	virtual void __cdecl onRoomAutoMatching(_di_JRoom P1) = 0 ;
+	virtual void __cdecl onRoomConnecting(_di_JRoom P1) = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJRoomStatusUpdateListener : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JRoomStatusUpdateListenerClass,_di_JRoomStatusUpdateListener>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JRoomStatusUpdateListenerClass,_di_JRoomStatusUpdateListener> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJRoomStatusUpdateListener() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JRoomStatusUpdateListenerClass,_di_JRoomStatusUpdateListener>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJRoomStatusUpdateListener() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{E5B9F101-A738-4ABE-8733-ACA0A36DFD70}") JRoomUpdateListenerClass  : public Androidapi::Jnibridge::IJavaClass 
+{
+	
+};
+
+__interface  INTERFACE_UUID("{F18EB4D8-5704-4A7D-AD45-1AD615E35C27}") JRoomUpdateListener  : public Androidapi::Jnibridge::IJavaInstance 
+{
+	virtual void __cdecl onJoinedRoom(int P1, _di_JRoom P2) = 0 ;
+	virtual void __cdecl onLeftRoom(int P1, Androidapi::Jni::Javatypes::_di_JString P2) = 0 ;
+	virtual void __cdecl onRoomConnected(int P1, _di_JRoom P2) = 0 ;
+	virtual void __cdecl onRoomCreated(int P1, _di_JRoom P2) = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJRoomUpdateListener : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JRoomUpdateListenerClass,_di_JRoomUpdateListener>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JRoomUpdateListenerClass,_di_JRoomUpdateListener> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJRoomUpdateListener() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JRoomUpdateListenerClass,_di_JRoomUpdateListener>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJRoomUpdateListener() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{B081ABD8-2F53-46B1-B89C-0559E90F4BA9}") JLoadMatchesResponseClass  : public Androidapi::Jni::Javatypes::JObjectClass 
+{
+	HIDESBASE virtual _di_JLoadMatchesResponse __cdecl init(Androidapi::Jni::Os::_di_JBundle matchData) = 0 ;
+};
+
+__interface  INTERFACE_UUID("{F52AA703-4C0A-42D7-A9A1-B3CC13A0D115}") JLoadMatchesResponse  : public Androidapi::Jni::Javatypes::JObject 
+{
+	virtual void __cdecl close() = 0 ;
+	virtual bool __cdecl hasData() = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJLoadMatchesResponse : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JLoadMatchesResponseClass,_di_JLoadMatchesResponse>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JLoadMatchesResponseClass,_di_JLoadMatchesResponse> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJLoadMatchesResponse() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JLoadMatchesResponseClass,_di_JLoadMatchesResponse>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJLoadMatchesResponse() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{2425C5EC-5536-48EC-91A3-0DF8959E4F83}") JOnTurnBasedMatchUpdateReceivedListenerClass  : public Androidapi::Jnibridge::IJavaClass 
+{
+	
+};
+
+__interface  INTERFACE_UUID("{9AEB8301-5B77-43D2-91AC-111E278D4B75}") JOnTurnBasedMatchUpdateReceivedListener  : public Androidapi::Jnibridge::IJavaInstance 
+{
+	virtual void __cdecl onTurnBasedMatchReceived(_di_JTurnBasedMatch P1) = 0 ;
+	virtual void __cdecl onTurnBasedMatchRemoved(Androidapi::Jni::Javatypes::_di_JString P1) = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJOnTurnBasedMatchUpdateReceivedListener : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JOnTurnBasedMatchUpdateReceivedListenerClass,_di_JOnTurnBasedMatchUpdateReceivedListener>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JOnTurnBasedMatchUpdateReceivedListenerClass,_di_JOnTurnBasedMatchUpdateReceivedListener> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJOnTurnBasedMatchUpdateReceivedListener() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JOnTurnBasedMatchUpdateReceivedListenerClass,_di_JOnTurnBasedMatchUpdateReceivedListener>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJOnTurnBasedMatchUpdateReceivedListener() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{FF01CCC0-34A7-4BB3-AD73-DC49D51B24C0}") JTurnBasedMatchClass  : public Androidapi::Jni::Os::JParcelableClass 
+{
+	virtual int __cdecl _GetMATCH_STATUS_ACTIVE() = 0 ;
+	virtual int __cdecl _GetMATCH_STATUS_AUTO_MATCHING() = 0 ;
+	virtual int __cdecl _GetMATCH_STATUS_CANCELED() = 0 ;
+	virtual int __cdecl _GetMATCH_STATUS_COMPLETE() = 0 ;
+	virtual int __cdecl _GetMATCH_STATUS_EXPIRED() = 0 ;
+	virtual Androidapi::Jnibridge::TJavaArray__1<int>* __cdecl _GetMATCH_TURN_STATUS_ALL() = 0 ;
+	virtual int __cdecl _GetMATCH_TURN_STATUS_COMPLETE() = 0 ;
+	virtual int __cdecl _GetMATCH_TURN_STATUS_INVITED() = 0 ;
+	virtual int __cdecl _GetMATCH_TURN_STATUS_MY_TURN() = 0 ;
+	virtual int __cdecl _GetMATCH_TURN_STATUS_THEIR_TURN() = 0 ;
+	virtual int __cdecl _GetMATCH_VARIANT_DEFAULT() = 0 ;
+	__property int MATCH_STATUS_ACTIVE = {read=_GetMATCH_STATUS_ACTIVE};
+	__property int MATCH_STATUS_AUTO_MATCHING = {read=_GetMATCH_STATUS_AUTO_MATCHING};
+	__property int MATCH_STATUS_CANCELED = {read=_GetMATCH_STATUS_CANCELED};
+	__property int MATCH_STATUS_COMPLETE = {read=_GetMATCH_STATUS_COMPLETE};
+	__property int MATCH_STATUS_EXPIRED = {read=_GetMATCH_STATUS_EXPIRED};
+	__property Androidapi::Jnibridge::TJavaArray__1<int>* MATCH_TURN_STATUS_ALL = {read=_GetMATCH_TURN_STATUS_ALL};
+	__property int MATCH_TURN_STATUS_COMPLETE = {read=_GetMATCH_TURN_STATUS_COMPLETE};
+	__property int MATCH_TURN_STATUS_INVITED = {read=_GetMATCH_TURN_STATUS_INVITED};
+	__property int MATCH_TURN_STATUS_MY_TURN = {read=_GetMATCH_TURN_STATUS_MY_TURN};
+	__property int MATCH_TURN_STATUS_THEIR_TURN = {read=_GetMATCH_TURN_STATUS_THEIR_TURN};
+	__property int MATCH_VARIANT_DEFAULT = {read=_GetMATCH_VARIANT_DEFAULT};
+};
+
+__interface  INTERFACE_UUID("{A263A9BE-FFB2-44BF-B8EA-4BB0F67EE96B}") JTurnBasedMatch  : public Androidapi::Jni::Os::JParcelable 
+{
+	virtual bool __cdecl canRematch() = 0 ;
+	virtual Androidapi::Jni::Os::_di_JBundle __cdecl getAutoMatchCriteria() = 0 ;
+	virtual int __cdecl getAvailableAutoMatchSlots() = 0 ;
+	virtual __int64 __cdecl getCreationTimestamp() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl getCreatorId() = 0 ;
+	virtual Androidapi::Jnibridge::TJavaArray__1<System::Byte>* __cdecl getData() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl getDescription() = 0 /* overload */;
+	virtual void __cdecl getDescription(Androidapi::Jni::Graphicscontentviewtext::_di_Jdatabase_CharArrayBuffer P1) = 0 /* overload */;
+	virtual _di_JParticipant __cdecl getDescriptionParticipant() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl getDescriptionParticipantId() = 0 ;
+	virtual _di_JGame __cdecl getGame() = 0 ;
+	virtual __int64 __cdecl getLastUpdatedTimestamp() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl getLastUpdaterId() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl getMatchId() = 0 ;
+	virtual int __cdecl getMatchNumber() = 0 ;
+	virtual _di_JParticipant __cdecl getParticipant(Androidapi::Jni::Javatypes::_di_JString P1) = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl getParticipantId(Androidapi::Jni::Javatypes::_di_JString P1) = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JArrayList __cdecl getParticipantIds() = 0 ;
+	virtual int __cdecl getParticipantStatus(Androidapi::Jni::Javatypes::_di_JString P1) = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl getPendingParticipantId() = 0 ;
+	virtual Androidapi::Jnibridge::TJavaArray__1<System::Byte>* __cdecl getPreviousMatchData() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl getRematchId() = 0 ;
+	virtual int __cdecl getStatus() = 0 ;
+	virtual int __cdecl getTurnStatus() = 0 ;
+	virtual int __cdecl getVariant() = 0 ;
+	virtual int __cdecl getVersion() = 0 ;
+	virtual bool __cdecl isLocallyModified() = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJTurnBasedMatch : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JTurnBasedMatchClass,_di_JTurnBasedMatch>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JTurnBasedMatchClass,_di_JTurnBasedMatch> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJTurnBasedMatch() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JTurnBasedMatchClass,_di_JTurnBasedMatch>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJTurnBasedMatch() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{8FF8916D-1455-4878-8D2D-0A3344617B23}") JTurnBasedMatchConfigClass  : public Androidapi::Jni::Javatypes::JObjectClass 
+{
+	virtual _di_JTurnBasedMatchConfig_Builder __cdecl builder() = 0 ;
+	virtual Androidapi::Jni::Os::_di_JBundle __cdecl createAutoMatchCriteria(int minAutoMatchPlayers, int maxAutoMatchPlayers, __int64 exclusiveBitMask) = 0 ;
+};
+
+__interface  INTERFACE_UUID("{BFB4DCEE-9010-4866-90D2-6B824FD222CF}") JTurnBasedMatchConfig  : public Androidapi::Jni::Javatypes::JObject 
+{
+	virtual Androidapi::Jni::Os::_di_JBundle __cdecl getAutoMatchCriteria() = 0 ;
+	virtual Androidapi::Jnibridge::TJavaObjectArray__1<Androidapi::Jni::Javatypes::_di_JString>* __cdecl getInvitedPlayerIds() = 0 ;
+	virtual int __cdecl getMinPlayers() = 0 ;
+	virtual int __cdecl getVariant() = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJTurnBasedMatchConfig : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JTurnBasedMatchConfigClass,_di_JTurnBasedMatchConfig>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JTurnBasedMatchConfigClass,_di_JTurnBasedMatchConfig> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJTurnBasedMatchConfig() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JTurnBasedMatchConfigClass,_di_JTurnBasedMatchConfig>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJTurnBasedMatchConfig() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{9F69C313-F792-4937-903D-CAD6A5927B36}") JTurnBasedMatchConfig_1Class  : public Androidapi::Jni::Javatypes::JObjectClass 
+{
+	
+};
+
+__interface  INTERFACE_UUID("{53D96BB6-D298-4ECD-B8CF-D35E0A809ED5}") JTurnBasedMatchConfig_1  : public Androidapi::Jni::Javatypes::JObject 
+{
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJTurnBasedMatchConfig_1 : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JTurnBasedMatchConfig_1Class,_di_JTurnBasedMatchConfig_1>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JTurnBasedMatchConfig_1Class,_di_JTurnBasedMatchConfig_1> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJTurnBasedMatchConfig_1() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JTurnBasedMatchConfig_1Class,_di_JTurnBasedMatchConfig_1>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJTurnBasedMatchConfig_1() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{01885C73-E495-4B3E-9ECA-3E0F61297509}") JTurnBasedMatchConfig_BuilderClass  : public Androidapi::Jni::Javatypes::JObjectClass 
+{
+	
+};
+
+__interface  INTERFACE_UUID("{715E0799-55C9-4F73-B30F-02EB83680F6D}") JTurnBasedMatchConfig_Builder  : public Androidapi::Jni::Javatypes::JObject 
+{
+	virtual _di_JTurnBasedMatchConfig_Builder __cdecl addInvitedPlayer(Androidapi::Jni::Javatypes::_di_JString playerId) = 0 ;
+	virtual _di_JTurnBasedMatchConfig_Builder __cdecl addInvitedPlayers(Androidapi::Jni::Javatypes::_di_JArrayList playerIds) = 0 ;
+	virtual _di_JTurnBasedMatchConfig __cdecl build() = 0 ;
+	virtual _di_JTurnBasedMatchConfig_Builder __cdecl setAutoMatchCriteria(Androidapi::Jni::Os::_di_JBundle autoMatchCriteria) = 0 ;
+	virtual _di_JTurnBasedMatchConfig_Builder __cdecl setMinPlayers(int minPlayers) = 0 ;
+	virtual _di_JTurnBasedMatchConfig_Builder __cdecl setVariant(int variant) = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJTurnBasedMatchConfig_Builder : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JTurnBasedMatchConfig_BuilderClass,_di_JTurnBasedMatchConfig_Builder>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JTurnBasedMatchConfig_BuilderClass,_di_JTurnBasedMatchConfig_Builder> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJTurnBasedMatchConfig_Builder() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JTurnBasedMatchConfig_BuilderClass,_di_JTurnBasedMatchConfig_Builder>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJTurnBasedMatchConfig_Builder() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{E1226063-D86E-4EF8-AA31-7249458B537E}") JTurnBasedMatchEntityClass  : public Androidapi::Jni::Javatypes::JObjectClass 
+{
+	virtual _di_JTurnBasedMatchEntityCreator __cdecl _GetCREATOR() = 0 ;
+	HIDESBASE virtual _di_JTurnBasedMatchEntity __cdecl init(_di_JTurnBasedMatch match) = 0 /* overload */;
+	__property _di_JTurnBasedMatchEntityCreator CREATOR = {read=_GetCREATOR};
+};
+
+__interface  INTERFACE_UUID("{37E42546-F34D-4070-BE2E-69F2D85B3120}") JTurnBasedMatchEntity  : public Androidapi::Jni::Javatypes::JObject 
+{
+	virtual bool __cdecl canRematch() = 0 ;
+	virtual int __cdecl describeContents() = 0 ;
+	HIDESBASE virtual bool __cdecl equals(Androidapi::Jni::Javatypes::_di_JObject obj) = 0 ;
+	virtual _di_JTurnBasedMatch __cdecl freeze() = 0 ;
+	virtual Androidapi::Jni::Os::_di_JBundle __cdecl getAutoMatchCriteria() = 0 ;
+	virtual int __cdecl getAvailableAutoMatchSlots() = 0 ;
+	virtual __int64 __cdecl getCreationTimestamp() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl getCreatorId() = 0 ;
+	virtual Androidapi::Jnibridge::TJavaArray__1<System::Byte>* __cdecl getData() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl getDescription() = 0 /* overload */;
+	virtual void __cdecl getDescription(Androidapi::Jni::Graphicscontentviewtext::_di_Jdatabase_CharArrayBuffer dataOut) = 0 /* overload */;
+	virtual _di_JParticipant __cdecl getDescriptionParticipant() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl getDescriptionParticipantId() = 0 ;
+	virtual _di_JGame __cdecl getGame() = 0 ;
+	virtual __int64 __cdecl getLastUpdatedTimestamp() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl getLastUpdaterId() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl getMatchId() = 0 ;
+	virtual int __cdecl getMatchNumber() = 0 ;
+	virtual _di_JParticipant __cdecl getParticipant(Androidapi::Jni::Javatypes::_di_JString participantId) = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl getParticipantId(Androidapi::Jni::Javatypes::_di_JString playerId) = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JArrayList __cdecl getParticipantIds() = 0 ;
+	virtual int __cdecl getParticipantStatus(Androidapi::Jni::Javatypes::_di_JString participantId) = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JArrayList __cdecl getParticipants() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl getPendingParticipantId() = 0 ;
+	virtual Androidapi::Jnibridge::TJavaArray__1<System::Byte>* __cdecl getPreviousMatchData() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl getRematchId() = 0 ;
+	virtual int __cdecl getStatus() = 0 ;
+	virtual int __cdecl getTurnStatus() = 0 ;
+	virtual int __cdecl getVariant() = 0 ;
+	virtual int __cdecl getVersion() = 0 ;
+	virtual int __cdecl getVersionCode() = 0 ;
+	HIDESBASE virtual int __cdecl hashCode() = 0 ;
+	virtual bool __cdecl isDataValid() = 0 ;
+	virtual bool __cdecl isLocallyModified() = 0 ;
+	HIDESBASE virtual Androidapi::Jni::Javatypes::_di_JString __cdecl toString() = 0 ;
+	virtual void __cdecl writeToParcel(Androidapi::Jni::Os::_di_JParcel out_, int flags) = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJTurnBasedMatchEntity : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JTurnBasedMatchEntityClass,_di_JTurnBasedMatchEntity>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JTurnBasedMatchEntityClass,_di_JTurnBasedMatchEntity> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJTurnBasedMatchEntity() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JTurnBasedMatchEntityClass,_di_JTurnBasedMatchEntity>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJTurnBasedMatchEntity() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{6CBB6D8E-2BCE-43E1-BC5D-F3BC19ABAA23}") JTurnBasedMatchEntityCreatorClass  : public Androidapi::Jni::Javatypes::JObjectClass 
+{
+	virtual int __cdecl _GetCONTENT_DESCRIPTION() = 0 ;
+	HIDESBASE virtual _di_JTurnBasedMatchEntityCreator __cdecl init() = 0 ;
+	__property int CONTENT_DESCRIPTION = {read=_GetCONTENT_DESCRIPTION};
+};
+
+__interface  INTERFACE_UUID("{C6B6B6C1-28F6-46AA-9E48-59DCA8E12186}") JTurnBasedMatchEntityCreator  : public Androidapi::Jni::Javatypes::JObject 
+{
+	virtual _di_JTurnBasedMatchEntity __cdecl createFromParcel(Androidapi::Jni::Os::_di_JParcel parcel) = 0 ;
+	virtual Androidapi::Jnibridge::TJavaObjectArray__1<_di_JTurnBasedMatchEntity>* __cdecl newArray(int size) = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJTurnBasedMatchEntityCreator : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JTurnBasedMatchEntityCreatorClass,_di_JTurnBasedMatchEntityCreator>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JTurnBasedMatchEntityCreatorClass,_di_JTurnBasedMatchEntityCreator> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJTurnBasedMatchEntityCreator() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JTurnBasedMatchEntityCreatorClass,_di_JTurnBasedMatchEntityCreator>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJTurnBasedMatchEntityCreator() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{73895C07-5CE5-479E-BA58-67C479B75804}") JTurnBasedMultiplayerClass  : public Androidapi::Jnibridge::IJavaClass 
+{
+	
+};
+
+__interface  INTERFACE_UUID("{4B0DF818-B2DF-4DEE-9380-30DB36D5A740}") JTurnBasedMultiplayer  : public Androidapi::Jnibridge::IJavaInstance 
+{
+	virtual _di_JPendingResult __cdecl acceptInvitation(_di_JGoogleApiClient P1, Androidapi::Jni::Javatypes::_di_JString P2) = 0 ;
+	virtual _di_JPendingResult __cdecl cancelMatch(_di_JGoogleApiClient P1, Androidapi::Jni::Javatypes::_di_JString P2) = 0 ;
+	virtual _di_JPendingResult __cdecl createMatch(_di_JGoogleApiClient P1, _di_JTurnBasedMatchConfig P2) = 0 ;
+	virtual void __cdecl declineInvitation(_di_JGoogleApiClient P1, Androidapi::Jni::Javatypes::_di_JString P2) = 0 ;
+	virtual void __cdecl dismissInvitation(_di_JGoogleApiClient P1, Androidapi::Jni::Javatypes::_di_JString P2) = 0 ;
+	virtual void __cdecl dismissMatch(_di_JGoogleApiClient P1, Androidapi::Jni::Javatypes::_di_JString P2) = 0 ;
+	virtual _di_JPendingResult __cdecl finishMatch(_di_JGoogleApiClient P1, Androidapi::Jni::Javatypes::_di_JString P2) = 0 /* overload */;
+	virtual _di_JPendingResult __cdecl finishMatch(_di_JGoogleApiClient P1, Androidapi::Jni::Javatypes::_di_JString P2, Androidapi::Jnibridge::TJavaArray__1<System::Byte>* P3, Androidapi::Jni::Javatypes::_di_JList P4) = 0 /* overload */;
+	virtual _di_JPendingResult __cdecl finishMatch(_di_JGoogleApiClient P1, Androidapi::Jni::Javatypes::_di_JString P2, Androidapi::Jnibridge::TJavaArray__1<System::Byte>* P3, Androidapi::Jnibridge::TJavaObjectArray__1<_di_JParticipantResult>* P4) = 0 /* overload */;
+	virtual Androidapi::Jni::Graphicscontentviewtext::_di_JIntent __cdecl getInboxIntent(_di_JGoogleApiClient P1) = 0 ;
+	virtual int __cdecl getMaxMatchDataSize(_di_JGoogleApiClient P1) = 0 ;
+	virtual Androidapi::Jni::Graphicscontentviewtext::_di_JIntent __cdecl getSelectOpponentsIntent(_di_JGoogleApiClient P1, int P2, int P3) = 0 /* overload */;
+	virtual Androidapi::Jni::Graphicscontentviewtext::_di_JIntent __cdecl getSelectOpponentsIntent(_di_JGoogleApiClient P1, int P2, int P3, bool P4) = 0 /* overload */;
+	virtual _di_JPendingResult __cdecl leaveMatch(_di_JGoogleApiClient P1, Androidapi::Jni::Javatypes::_di_JString P2) = 0 ;
+	virtual _di_JPendingResult __cdecl leaveMatchDuringTurn(_di_JGoogleApiClient P1, Androidapi::Jni::Javatypes::_di_JString P2, Androidapi::Jni::Javatypes::_di_JString P3) = 0 ;
+	virtual _di_JPendingResult __cdecl loadMatch(_di_JGoogleApiClient P1, Androidapi::Jni::Javatypes::_di_JString P2) = 0 ;
+	virtual _di_JPendingResult __cdecl loadMatchesByStatus(_di_JGoogleApiClient P1, Androidapi::Jnibridge::TJavaArray__1<int>* P2) = 0 /* overload */;
+	virtual _di_JPendingResult __cdecl loadMatchesByStatus(_di_JGoogleApiClient P1, int P2, Androidapi::Jnibridge::TJavaArray__1<int>* P3) = 0 /* overload */;
+	virtual void __cdecl registerMatchUpdateListener(_di_JGoogleApiClient P1, _di_JOnTurnBasedMatchUpdateReceivedListener P2) = 0 ;
+	virtual _di_JPendingResult __cdecl rematch(_di_JGoogleApiClient P1, Androidapi::Jni::Javatypes::_di_JString P2) = 0 ;
+	virtual _di_JPendingResult __cdecl takeTurn(_di_JGoogleApiClient P1, Androidapi::Jni::Javatypes::_di_JString P2, Androidapi::Jnibridge::TJavaArray__1<System::Byte>* P3, Androidapi::Jni::Javatypes::_di_JString P4) = 0 /* overload */;
+	virtual _di_JPendingResult __cdecl takeTurn(_di_JGoogleApiClient P1, Androidapi::Jni::Javatypes::_di_JString P2, Androidapi::Jnibridge::TJavaArray__1<System::Byte>* P3, Androidapi::Jni::Javatypes::_di_JString P4, Androidapi::Jnibridge::TJavaObjectArray__1<_di_JParticipantResult>* P5) = 0 /* overload */;
+	virtual _di_JPendingResult __cdecl takeTurn(_di_JGoogleApiClient P1, Androidapi::Jni::Javatypes::_di_JString P2, Androidapi::Jnibridge::TJavaArray__1<System::Byte>* P3, Androidapi::Jni::Javatypes::_di_JString P4, Androidapi::Jni::Javatypes::_di_JList P5) = 0 /* overload */;
+	virtual void __cdecl unregisterMatchUpdateListener(_di_JGoogleApiClient P1) = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJTurnBasedMultiplayer : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JTurnBasedMultiplayerClass,_di_JTurnBasedMultiplayer>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JTurnBasedMultiplayerClass,_di_JTurnBasedMultiplayer> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJTurnBasedMultiplayer() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JTurnBasedMultiplayerClass,_di_JTurnBasedMultiplayer>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJTurnBasedMultiplayer() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{00689D29-79E4-435C-B192-0459D98069D4}") JTurnBasedMultiplayer_CancelMatchResultClass  : public Japi_ResultClass 
+{
+	
+};
+
+__interface  INTERFACE_UUID("{215C5A5C-60DE-4E1E-B985-AB83191706AF}") JTurnBasedMultiplayer_CancelMatchResult  : public Japi_Result 
+{
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl getMatchId() = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJTurnBasedMultiplayer_CancelMatchResult : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JTurnBasedMultiplayer_CancelMatchResultClass,_di_JTurnBasedMultiplayer_CancelMatchResult>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JTurnBasedMultiplayer_CancelMatchResultClass,_di_JTurnBasedMultiplayer_CancelMatchResult> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJTurnBasedMultiplayer_CancelMatchResult() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JTurnBasedMultiplayer_CancelMatchResultClass,_di_JTurnBasedMultiplayer_CancelMatchResult>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJTurnBasedMultiplayer_CancelMatchResult() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{CDAEF6C0-647B-4312-82F2-C4001A7A6BD8}") JTurnBasedMultiplayer_InitiateMatchResultClass  : public Japi_ResultClass 
+{
+	
+};
+
+__interface  INTERFACE_UUID("{B15827DF-BFF6-4252-B8E0-09682BD9CD03}") JTurnBasedMultiplayer_InitiateMatchResult  : public Japi_Result 
+{
+	virtual _di_JTurnBasedMatch __cdecl getMatch() = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJTurnBasedMultiplayer_InitiateMatchResult : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JTurnBasedMultiplayer_InitiateMatchResultClass,_di_JTurnBasedMultiplayer_InitiateMatchResult>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JTurnBasedMultiplayer_InitiateMatchResultClass,_di_JTurnBasedMultiplayer_InitiateMatchResult> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJTurnBasedMultiplayer_InitiateMatchResult() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JTurnBasedMultiplayer_InitiateMatchResultClass,_di_JTurnBasedMultiplayer_InitiateMatchResult>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJTurnBasedMultiplayer_InitiateMatchResult() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{DA0CCA23-9021-4661-8202-1E05C9647106}") JTurnBasedMultiplayer_LeaveMatchResultClass  : public Japi_ResultClass 
+{
+	
+};
+
+__interface  INTERFACE_UUID("{C33033C0-A7C7-4027-ACF2-7CA55314283C}") JTurnBasedMultiplayer_LeaveMatchResult  : public Japi_Result 
+{
+	virtual _di_JTurnBasedMatch __cdecl getMatch() = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJTurnBasedMultiplayer_LeaveMatchResult : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JTurnBasedMultiplayer_LeaveMatchResultClass,_di_JTurnBasedMultiplayer_LeaveMatchResult>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JTurnBasedMultiplayer_LeaveMatchResultClass,_di_JTurnBasedMultiplayer_LeaveMatchResult> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJTurnBasedMultiplayer_LeaveMatchResult() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JTurnBasedMultiplayer_LeaveMatchResultClass,_di_JTurnBasedMultiplayer_LeaveMatchResult>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJTurnBasedMultiplayer_LeaveMatchResult() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{E5B48A09-C6AE-4180-8F5A-1EF94CBBB9C8}") JTurnBasedMultiplayer_LoadMatchResultClass  : public Japi_ResultClass 
+{
+	
+};
+
+__interface  INTERFACE_UUID("{4A00ED34-6B14-41D6-B473-38A27AFAE258}") JTurnBasedMultiplayer_LoadMatchResult  : public Japi_Result 
+{
+	virtual _di_JTurnBasedMatch __cdecl getMatch() = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJTurnBasedMultiplayer_LoadMatchResult : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JTurnBasedMultiplayer_LoadMatchResultClass,_di_JTurnBasedMultiplayer_LoadMatchResult>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JTurnBasedMultiplayer_LoadMatchResultClass,_di_JTurnBasedMultiplayer_LoadMatchResult> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJTurnBasedMultiplayer_LoadMatchResult() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JTurnBasedMultiplayer_LoadMatchResultClass,_di_JTurnBasedMultiplayer_LoadMatchResult>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJTurnBasedMultiplayer_LoadMatchResult() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{E624C2E0-1395-4E36-891B-53CB9F3AD6CB}") JTurnBasedMultiplayer_LoadMatchesResultClass  : public JReleasableClass 
+{
+	
+};
+
+__interface  INTERFACE_UUID("{58CE62D7-DFDE-4998-9C85-09B98F206D2F}") JTurnBasedMultiplayer_LoadMatchesResult  : public JReleasable 
+{
+	virtual _di_JLoadMatchesResponse __cdecl getMatches() = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJTurnBasedMultiplayer_LoadMatchesResult : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JTurnBasedMultiplayer_LoadMatchesResultClass,_di_JTurnBasedMultiplayer_LoadMatchesResult>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JTurnBasedMultiplayer_LoadMatchesResultClass,_di_JTurnBasedMultiplayer_LoadMatchesResult> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJTurnBasedMultiplayer_LoadMatchesResult() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JTurnBasedMultiplayer_LoadMatchesResultClass,_di_JTurnBasedMultiplayer_LoadMatchesResult>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJTurnBasedMultiplayer_LoadMatchesResult() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{3F5FDD6B-7F93-4D99-989B-858C8195FF9A}") JTurnBasedMultiplayer_UpdateMatchResultClass  : public Japi_ResultClass 
+{
+	
+};
+
+__interface  INTERFACE_UUID("{AAB2F685-D99E-4D81-9377-C0120E886D92}") JTurnBasedMultiplayer_UpdateMatchResult  : public Japi_Result 
+{
+	virtual _di_JTurnBasedMatch __cdecl getMatch() = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJTurnBasedMultiplayer_UpdateMatchResult : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JTurnBasedMultiplayer_UpdateMatchResultClass,_di_JTurnBasedMultiplayer_UpdateMatchResult>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JTurnBasedMultiplayer_UpdateMatchResultClass,_di_JTurnBasedMultiplayer_UpdateMatchResult> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJTurnBasedMultiplayer_UpdateMatchResult() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JTurnBasedMultiplayer_UpdateMatchResultClass,_di_JTurnBasedMultiplayer_UpdateMatchResult>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJTurnBasedMultiplayer_UpdateMatchResult() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{6DAD5588-CD4D-469A-A7C0-5BF7CB1CED72}") JGameRequestClass  : public Androidapi::Jni::Os::JParcelableClass 
+{
+	virtual int __cdecl _GetRECIPIENT_STATUS_ACCEPTED() = 0 ;
+	virtual int __cdecl _GetRECIPIENT_STATUS_PENDING() = 0 ;
+	virtual int __cdecl _GetTYPE_ALL() = 0 ;
+	virtual int __cdecl _GetTYPE_GIFT() = 0 ;
+	virtual int __cdecl _GetTYPE_WISH() = 0 ;
+	__property int RECIPIENT_STATUS_ACCEPTED = {read=_GetRECIPIENT_STATUS_ACCEPTED};
+	__property int RECIPIENT_STATUS_PENDING = {read=_GetRECIPIENT_STATUS_PENDING};
+	__property int TYPE_ALL = {read=_GetTYPE_ALL};
+	__property int TYPE_GIFT = {read=_GetTYPE_GIFT};
+	__property int TYPE_WISH = {read=_GetTYPE_WISH};
+};
+
+__interface  INTERFACE_UUID("{70609BDA-B518-4AD2-9FDE-30BF7DF43336}") JGameRequest  : public Androidapi::Jni::Os::JParcelable 
+{
+	virtual Androidapi::Jni::Javatypes::_di_JArrayList __cdecl fU() = 0 ;
+	virtual __int64 __cdecl getCreationTimestamp() = 0 ;
+	virtual Androidapi::Jnibridge::TJavaArray__1<System::Byte>* __cdecl getData() = 0 ;
+	virtual __int64 __cdecl getExpirationTimestamp() = 0 ;
+	virtual _di_JGame __cdecl getGame() = 0 ;
+	virtual _di_JPlayer __cdecl getRecipient() = 0 ;
+	virtual int __cdecl getRecipientStatus() = 0 /* overload */;
+	virtual int __cdecl getRecipientStatus(Androidapi::Jni::Javatypes::_di_JString P1) = 0 /* overload */;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl getRequestId() = 0 ;
+	virtual _di_JPlayer __cdecl getSender() = 0 ;
+	virtual int __cdecl getType() = 0 ;
+	virtual bool __cdecl isConsumed() = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJGameRequest : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JGameRequestClass,_di_JGameRequest>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JGameRequestClass,_di_JGameRequest> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJGameRequest() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JGameRequestClass,_di_JGameRequest>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJGameRequest() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{AB7AEABD-B81B-4280-8D5F-9A935E811E93}") JGameRequestEntityClass  : public Androidapi::Jni::Javatypes::JObjectClass 
+{
+	virtual _di_JGameRequestEntityCreator __cdecl _GetCREATOR() = 0 ;
+	HIDESBASE virtual _di_JGameRequestEntity __cdecl init(_di_JGameRequest request) = 0 /* overload */;
+	__property _di_JGameRequestEntityCreator CREATOR = {read=_GetCREATOR};
+};
+
+__interface  INTERFACE_UUID("{4048B292-ADF1-4A22-B012-498F04F17F43}") JGameRequestEntity  : public Androidapi::Jni::Javatypes::JObject 
+{
+	virtual int __cdecl describeContents() = 0 ;
+	HIDESBASE virtual bool __cdecl equals(Androidapi::Jni::Javatypes::_di_JObject obj) = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JArrayList __cdecl fU() = 0 ;
+	virtual _di_JGameRequest __cdecl freeze() = 0 ;
+	virtual __int64 __cdecl getCreationTimestamp() = 0 ;
+	virtual Androidapi::Jnibridge::TJavaArray__1<System::Byte>* __cdecl getData() = 0 ;
+	virtual __int64 __cdecl getExpirationTimestamp() = 0 ;
+	virtual _di_JGame __cdecl getGame() = 0 ;
+	virtual _di_JPlayer __cdecl getRecipient() = 0 ;
+	virtual int __cdecl getRecipientStatus() = 0 /* overload */;
+	virtual int __cdecl getRecipientStatus(Androidapi::Jni::Javatypes::_di_JString playerId) = 0 /* overload */;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl getRequestId() = 0 ;
+	virtual _di_JPlayer __cdecl getSender() = 0 ;
+	virtual int __cdecl getType() = 0 ;
+	virtual int __cdecl getVersionCode() = 0 ;
+	virtual Androidapi::Jni::Os::_di_JBundle __cdecl gf() = 0 ;
+	HIDESBASE virtual int __cdecl hashCode() = 0 ;
+	virtual bool __cdecl isConsumed() = 0 ;
+	virtual bool __cdecl isDataValid() = 0 ;
+	HIDESBASE virtual Androidapi::Jni::Javatypes::_di_JString __cdecl toString() = 0 ;
+	virtual void __cdecl writeToParcel(Androidapi::Jni::Os::_di_JParcel dest, int flags) = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJGameRequestEntity : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JGameRequestEntityClass,_di_JGameRequestEntity>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JGameRequestEntityClass,_di_JGameRequestEntity> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJGameRequestEntity() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JGameRequestEntityClass,_di_JGameRequestEntity>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJGameRequestEntity() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{50DD5950-4AD4-454C-B289-F557D8EBB681}") JGameRequestEntityCreatorClass  : public Androidapi::Jni::Javatypes::JObjectClass 
+{
+	virtual int __cdecl _GetCONTENT_DESCRIPTION() = 0 ;
+	HIDESBASE virtual _di_JGameRequestEntityCreator __cdecl init() = 0 ;
+	__property int CONTENT_DESCRIPTION = {read=_GetCONTENT_DESCRIPTION};
+};
+
+__interface  INTERFACE_UUID("{9868F73A-2A83-42EA-9274-DAC09233DB3A}") JGameRequestEntityCreator  : public Androidapi::Jni::Javatypes::JObject 
+{
+	virtual _di_JGameRequestEntity __cdecl createFromParcel(Androidapi::Jni::Os::_di_JParcel parcel) = 0 ;
+	virtual Androidapi::Jnibridge::TJavaObjectArray__1<_di_JGameRequestEntity>* __cdecl newArray(int size) = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJGameRequestEntityCreator : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JGameRequestEntityCreatorClass,_di_JGameRequestEntityCreator>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JGameRequestEntityCreatorClass,_di_JGameRequestEntityCreator> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJGameRequestEntityCreator() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JGameRequestEntityCreatorClass,_di_JGameRequestEntityCreator>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJGameRequestEntityCreator() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{336594BE-184D-4760-B289-9F58F433E19D}") JOnRequestReceivedListenerClass  : public Androidapi::Jnibridge::IJavaClass 
+{
+	
+};
+
+__interface  INTERFACE_UUID("{DD30FCA8-4BE4-43D5-8F06-A7126CF9A61A}") JOnRequestReceivedListener  : public Androidapi::Jnibridge::IJavaInstance 
+{
+	virtual void __cdecl onRequestReceived(_di_JGameRequest P1) = 0 ;
+	virtual void __cdecl onRequestRemoved(Androidapi::Jni::Javatypes::_di_JString P1) = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJOnRequestReceivedListener : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JOnRequestReceivedListenerClass,_di_JOnRequestReceivedListener>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JOnRequestReceivedListenerClass,_di_JOnRequestReceivedListener> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJOnRequestReceivedListener() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JOnRequestReceivedListenerClass,_di_JOnRequestReceivedListener>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJOnRequestReceivedListener() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{6C6595E8-3441-4173-97CA-480352E053B0}") JRequestsClass  : public Androidapi::Jnibridge::IJavaClass 
+{
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetEXTRA_REQUESTS() = 0 ;
+	virtual int __cdecl _GetREQUEST_DEFAULT_LIFETIME_DAYS() = 0 ;
+	virtual int __cdecl _GetREQUEST_DIRECTION_INBOUND() = 0 ;
+	virtual int __cdecl _GetREQUEST_DIRECTION_OUTBOUND() = 0 ;
+	virtual int __cdecl _GetREQUEST_UPDATE_OUTCOME_FAIL() = 0 ;
+	virtual int __cdecl _GetREQUEST_UPDATE_OUTCOME_RETRY() = 0 ;
+	virtual int __cdecl _GetREQUEST_UPDATE_OUTCOME_SUCCESS() = 0 ;
+	virtual int __cdecl _GetREQUEST_UPDATE_TYPE_ACCEPT() = 0 ;
+	virtual int __cdecl _GetREQUEST_UPDATE_TYPE_DISMISS() = 0 ;
+	virtual int __cdecl _GetSORT_ORDER_EXPIRING_SOON_FIRST() = 0 ;
+	virtual int __cdecl _GetSORT_ORDER_SOCIAL_AGGREGATION() = 0 ;
+	__property Androidapi::Jni::Javatypes::_di_JString EXTRA_REQUESTS = {read=_GetEXTRA_REQUESTS};
+	__property int REQUEST_DEFAULT_LIFETIME_DAYS = {read=_GetREQUEST_DEFAULT_LIFETIME_DAYS};
+	__property int REQUEST_DIRECTION_INBOUND = {read=_GetREQUEST_DIRECTION_INBOUND};
+	__property int REQUEST_DIRECTION_OUTBOUND = {read=_GetREQUEST_DIRECTION_OUTBOUND};
+	__property int REQUEST_UPDATE_OUTCOME_FAIL = {read=_GetREQUEST_UPDATE_OUTCOME_FAIL};
+	__property int REQUEST_UPDATE_OUTCOME_RETRY = {read=_GetREQUEST_UPDATE_OUTCOME_RETRY};
+	__property int REQUEST_UPDATE_OUTCOME_SUCCESS = {read=_GetREQUEST_UPDATE_OUTCOME_SUCCESS};
+	__property int REQUEST_UPDATE_TYPE_ACCEPT = {read=_GetREQUEST_UPDATE_TYPE_ACCEPT};
+	__property int REQUEST_UPDATE_TYPE_DISMISS = {read=_GetREQUEST_UPDATE_TYPE_DISMISS};
+	__property int SORT_ORDER_EXPIRING_SOON_FIRST = {read=_GetSORT_ORDER_EXPIRING_SOON_FIRST};
+	__property int SORT_ORDER_SOCIAL_AGGREGATION = {read=_GetSORT_ORDER_SOCIAL_AGGREGATION};
+};
+
+__interface  INTERFACE_UUID("{CBF33035-7D1A-491E-BF89-226CCB0D1880}") JRequests  : public Androidapi::Jnibridge::IJavaInstance 
+{
+	virtual _di_JPendingResult __cdecl acceptRequest(_di_JGoogleApiClient P1, Androidapi::Jni::Javatypes::_di_JString P2) = 0 ;
+	virtual _di_JPendingResult __cdecl acceptRequests(_di_JGoogleApiClient P1, Androidapi::Jni::Javatypes::_di_JList P2) = 0 ;
+	virtual _di_JPendingResult __cdecl dismissRequest(_di_JGoogleApiClient P1, Androidapi::Jni::Javatypes::_di_JString P2) = 0 ;
+	virtual _di_JPendingResult __cdecl dismissRequests(_di_JGoogleApiClient P1, Androidapi::Jni::Javatypes::_di_JList P2) = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JArrayList __cdecl getGameRequestsFromBundle(Androidapi::Jni::Os::_di_JBundle P1) = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JArrayList __cdecl getGameRequestsFromInboxResponse(Androidapi::Jni::Graphicscontentviewtext::_di_JIntent P1) = 0 ;
+	virtual Androidapi::Jni::Graphicscontentviewtext::_di_JIntent __cdecl getInboxIntent(_di_JGoogleApiClient P1) = 0 ;
+	virtual int __cdecl getMaxLifetimeDays(_di_JGoogleApiClient P1) = 0 ;
+	virtual int __cdecl getMaxPayloadSize(_di_JGoogleApiClient P1) = 0 ;
+	virtual Androidapi::Jni::Graphicscontentviewtext::_di_JIntent __cdecl getSendIntent(_di_JGoogleApiClient P1, int P2, Androidapi::Jnibridge::TJavaArray__1<System::Byte>* P3, int P4, Androidapi::Jni::Graphicscontentviewtext::_di_JBitmap P5, Androidapi::Jni::Javatypes::_di_JString P6) = 0 ;
+	virtual _di_JPendingResult __cdecl loadRequests(_di_JGoogleApiClient P1, int P2, int P3, int P4) = 0 ;
+	virtual void __cdecl registerRequestListener(_di_JGoogleApiClient P1, _di_JOnRequestReceivedListener P2) = 0 ;
+	virtual void __cdecl unregisterRequestListener(_di_JGoogleApiClient P1) = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJRequests : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JRequestsClass,_di_JRequests>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JRequestsClass,_di_JRequests> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJRequests() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JRequestsClass,_di_JRequests>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJRequests() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{AB63BE05-AE84-441E-B4AC-256BD71A0F54}") JRequests_LoadRequestsResultClass  : public JReleasableClass 
+{
+	
+};
+
+__interface  INTERFACE_UUID("{90E3224D-5E03-4174-8216-2FFCBD9A49CF}") JRequests_LoadRequestsResult  : public JReleasable 
+{
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJRequests_LoadRequestsResult : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JRequests_LoadRequestsResultClass,_di_JRequests_LoadRequestsResult>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JRequests_LoadRequestsResultClass,_di_JRequests_LoadRequestsResult> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJRequests_LoadRequestsResult() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JRequests_LoadRequestsResultClass,_di_JRequests_LoadRequestsResult>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJRequests_LoadRequestsResult() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{071DD03A-A2FD-41A4-BDCC-0A481CA73422}") JRequests_UpdateRequestsResultClass  : public JReleasableClass 
+{
+	
+};
+
+__interface  INTERFACE_UUID("{1FF36067-6392-4CD1-BC48-932275820982}") JRequests_UpdateRequestsResult  : public JReleasable 
+{
+	virtual Androidapi::Jni::Javatypes::_di_JSet __cdecl getRequestIds() = 0 ;
+	virtual int __cdecl getRequestOutcome(Androidapi::Jni::Javatypes::_di_JString P1) = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJRequests_UpdateRequestsResult : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JRequests_UpdateRequestsResultClass,_di_JRequests_UpdateRequestsResult>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JRequests_UpdateRequestsResultClass,_di_JRequests_UpdateRequestsResult> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJRequests_UpdateRequestsResult() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JRequests_UpdateRequestsResultClass,_di_JRequests_UpdateRequestsResult>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJRequests_UpdateRequestsResult() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{452B4174-FF9C-48F5-9609-674C8206C28A}") JGoogleCloudMessagingClass  : public Androidapi::Jni::Javatypes::JObjectClass 
+{
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetERROR_MAIN_THREAD() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetERROR_SERVICE_NOT_AVAILABLE() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetMESSAGE_TYPE_DELETED() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetMESSAGE_TYPE_MESSAGE() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetMESSAGE_TYPE_SEND_ERROR() = 0 ;
+	virtual _di_JGoogleCloudMessaging __cdecl getInstance(Androidapi::Jni::Graphicscontentviewtext::_di_JContext context) = 0 ;
+	HIDESBASE virtual _di_JGoogleCloudMessaging __cdecl init() = 0 ;
+	__property Androidapi::Jni::Javatypes::_di_JString ERROR_MAIN_THREAD = {read=_GetERROR_MAIN_THREAD};
+	__property Androidapi::Jni::Javatypes::_di_JString ERROR_SERVICE_NOT_AVAILABLE = {read=_GetERROR_SERVICE_NOT_AVAILABLE};
+	__property Androidapi::Jni::Javatypes::_di_JString MESSAGE_TYPE_DELETED = {read=_GetMESSAGE_TYPE_DELETED};
+	__property Androidapi::Jni::Javatypes::_di_JString MESSAGE_TYPE_MESSAGE = {read=_GetMESSAGE_TYPE_MESSAGE};
+	__property Androidapi::Jni::Javatypes::_di_JString MESSAGE_TYPE_SEND_ERROR = {read=_GetMESSAGE_TYPE_SEND_ERROR};
+};
+
+__interface  INTERFACE_UUID("{A4F0B5B0-FCB2-45F8-A3CB-D37481F2FBD8}") JGoogleCloudMessaging  : public Androidapi::Jni::Javatypes::JObject 
+{
+	virtual void __cdecl close() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl getMessageType(Androidapi::Jni::Graphicscontentviewtext::_di_JIntent intent) = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl Register(Androidapi::Jnibridge::TJavaObjectArray__1<Androidapi::Jni::Javatypes::_di_JString>* senderIds) = 0 ;
+	virtual void __cdecl send(Androidapi::Jni::Javatypes::_di_JString to_, Androidapi::Jni::Javatypes::_di_JString msgId, Androidapi::Jni::Os::_di_JBundle data) = 0 /* overload */;
+	virtual void __cdecl send(Androidapi::Jni::Javatypes::_di_JString to_, Androidapi::Jni::Javatypes::_di_JString msgId, __int64 timeToLive, Androidapi::Jni::Os::_di_JBundle data) = 0 /* overload */;
+	virtual void __cdecl unregister() = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJGoogleCloudMessaging : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JGoogleCloudMessagingClass,_di_JGoogleCloudMessaging>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JGoogleCloudMessagingClass,_di_JGoogleCloudMessaging> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJGoogleCloudMessaging() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JGoogleCloudMessagingClass,_di_JGoogleCloudMessaging>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJGoogleCloudMessaging() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{DBF3A3AE-E129-45AC-A4D9-2C87DD1DAFBB}") Jintents_AddressClass  : public Androidapi::Jni::Javatypes::JObjectClass 
+{
+	HIDESBASE virtual _di_Jintents_Address __cdecl init() = 0 ;
+	virtual void __cdecl requestUserAddress(_di_JGoogleApiClient googleApiClient, _di_JUserAddressRequest request, int requestCode) = 0 ;
+};
+
+__interface  INTERFACE_UUID("{2AC3757E-5A92-4C8A-95CB-DAFE3B20EA96}") Jintents_Address  : public Androidapi::Jni::Javatypes::JObject 
+{
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJintents_Address : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_Jintents_AddressClass,_di_Jintents_Address>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_Jintents_AddressClass,_di_Jintents_Address> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJintents_Address() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_Jintents_AddressClass,_di_Jintents_Address>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJintents_Address() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{3D8E2465-5B20-49C8-B6CB-A22E9CA07A8C}") JAddress_AddressOptionsClass  : public Androidapi::Jni::Javatypes::JObjectClass 
+{
+	HIDESBASE virtual _di_JAddress_AddressOptions __cdecl init() = 0 /* overload */;
+	HIDESBASE virtual _di_JAddress_AddressOptions __cdecl init(int theme) = 0 /* overload */;
+};
+
+__interface  INTERFACE_UUID("{DE0F410A-6A53-4C94-808C-DA5B1EAB3975}") JAddress_AddressOptions  : public Androidapi::Jni::Javatypes::JObject 
+{
+	virtual int __cdecl _Gettheme() = 0 ;
+	__property int theme = {read=_Gettheme};
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJAddress_AddressOptions : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JAddress_AddressOptionsClass,_di_JAddress_AddressOptions>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JAddress_AddressOptionsClass,_di_JAddress_AddressOptions> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJAddress_AddressOptions() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JAddress_AddressOptionsClass,_di_JAddress_AddressOptions>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJAddress_AddressOptions() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{9B4E2D73-17C3-40A7-BC9B-F0CED8A55626}") JAddressConstantsClass  : public Androidapi::Jnibridge::IJavaClass 
+{
+	
+};
+
+__interface  INTERFACE_UUID("{C5EB8FCB-B4BA-4377-9D58-BAD48980576A}") JAddressConstants  : public Androidapi::Jnibridge::IJavaInstance 
+{
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJAddressConstants : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JAddressConstantsClass,_di_JAddressConstants>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JAddressConstantsClass,_di_JAddressConstants> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJAddressConstants() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JAddressConstantsClass,_di_JAddressConstants>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJAddressConstants() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{E14113DD-B9B4-417E-81BF-6604E2675651}") JAddressConstants_ErrorCodesClass  : public Androidapi::Jnibridge::IJavaClass 
+{
+	virtual int __cdecl _GetERROR_CODE_NO_APPLICABLE_ADDRESSES() = 0 ;
+	__property int ERROR_CODE_NO_APPLICABLE_ADDRESSES = {read=_GetERROR_CODE_NO_APPLICABLE_ADDRESSES};
+};
+
+__interface  INTERFACE_UUID("{666CB3AB-56A5-44F5-B458-12A5E36A0B6F}") JAddressConstants_ErrorCodes  : public Androidapi::Jnibridge::IJavaInstance 
+{
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJAddressConstants_ErrorCodes : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JAddressConstants_ErrorCodesClass,_di_JAddressConstants_ErrorCodes>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JAddressConstants_ErrorCodesClass,_di_JAddressConstants_ErrorCodes> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJAddressConstants_ErrorCodes() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JAddressConstants_ErrorCodesClass,_di_JAddressConstants_ErrorCodes>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJAddressConstants_ErrorCodes() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{549D643A-E12F-4138-BD39-79B0518F40A7}") JAddressConstants_ExtrasClass  : public Androidapi::Jnibridge::IJavaClass 
+{
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetEXTRA_ADDRESS() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetEXTRA_ERROR_CODE() = 0 ;
+	__property Androidapi::Jni::Javatypes::_di_JString EXTRA_ADDRESS = {read=_GetEXTRA_ADDRESS};
+	__property Androidapi::Jni::Javatypes::_di_JString EXTRA_ERROR_CODE = {read=_GetEXTRA_ERROR_CODE};
+};
+
+__interface  INTERFACE_UUID("{6F864646-3C19-47D0-8920-E258F135BB7C}") JAddressConstants_Extras  : public Androidapi::Jnibridge::IJavaInstance 
+{
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJAddressConstants_Extras : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JAddressConstants_ExtrasClass,_di_JAddressConstants_Extras>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JAddressConstants_ExtrasClass,_di_JAddressConstants_Extras> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJAddressConstants_Extras() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JAddressConstants_ExtrasClass,_di_JAddressConstants_Extras>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJAddressConstants_Extras() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{5F369424-C926-4B91-907A-D248459BE02A}") JAddressConstants_ResultCodesClass  : public Androidapi::Jnibridge::IJavaClass 
+{
+	virtual int __cdecl _GetRESULT_ERROR() = 0 ;
+	__property int RESULT_ERROR = {read=_GetRESULT_ERROR};
+};
+
+__interface  INTERFACE_UUID("{BED01B31-C1C4-4F8B-8FAD-1F0E0A2A6636}") JAddressConstants_ResultCodes  : public Androidapi::Jnibridge::IJavaInstance 
+{
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJAddressConstants_ResultCodes : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JAddressConstants_ResultCodesClass,_di_JAddressConstants_ResultCodes>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JAddressConstants_ResultCodesClass,_di_JAddressConstants_ResultCodes> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJAddressConstants_ResultCodes() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JAddressConstants_ResultCodesClass,_di_JAddressConstants_ResultCodes>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJAddressConstants_ResultCodes() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{94A8196A-D22C-4F10-8A71-BE510ADCB6B6}") JAddressConstants_ThemesClass  : public Androidapi::Jnibridge::IJavaClass 
+{
+	virtual int __cdecl _GetTHEME_HOLO_DARK() = 0 ;
+	virtual int __cdecl _GetTHEME_HOLO_LIGHT() = 0 ;
+	__property int THEME_HOLO_DARK = {read=_GetTHEME_HOLO_DARK};
+	__property int THEME_HOLO_LIGHT = {read=_GetTHEME_HOLO_LIGHT};
+};
+
+__interface  INTERFACE_UUID("{4DE2D115-7F21-4716-915E-76B606E59EF7}") JAddressConstants_Themes  : public Androidapi::Jnibridge::IJavaInstance 
+{
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJAddressConstants_Themes : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JAddressConstants_ThemesClass,_di_JAddressConstants_Themes>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JAddressConstants_ThemesClass,_di_JAddressConstants_Themes> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJAddressConstants_Themes() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JAddressConstants_ThemesClass,_di_JAddressConstants_Themes>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJAddressConstants_Themes() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{7769F733-61A6-4ED8-9898-9FB3C4846183}") JUserAddressRequestClass  : public Androidapi::Jni::Javatypes::JObjectClass 
+{
+	virtual Androidapi::Jni::Os::_di_JParcelable_Creator __cdecl _GetCREATOR() = 0 ;
+	virtual _di_JUserAddressRequest_Builder __cdecl newBuilder() = 0 ;
+	__property Androidapi::Jni::Os::_di_JParcelable_Creator CREATOR = {read=_GetCREATOR};
+};
+
+__interface  INTERFACE_UUID("{99E3E81E-CB5D-4FB7-808C-44BC38D6B7F7}") JUserAddressRequest  : public Androidapi::Jni::Javatypes::JObject 
+{
+	virtual int __cdecl describeContents() = 0 ;
+	virtual int __cdecl getVersionCode() = 0 ;
+	virtual void __cdecl writeToParcel(Androidapi::Jni::Os::_di_JParcel out_, int flags) = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJUserAddressRequest : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JUserAddressRequestClass,_di_JUserAddressRequest>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JUserAddressRequestClass,_di_JUserAddressRequest> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJUserAddressRequest() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JUserAddressRequestClass,_di_JUserAddressRequest>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJUserAddressRequest() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{56B47CD2-8B63-4F0B-BB68-0EB44ADD96C2}") JUserAddressRequest_BuilderClass  : public Androidapi::Jni::Javatypes::JObjectClass 
+{
+	
+};
+
+__interface  INTERFACE_UUID("{2E269938-5C3C-4061-8D5C-A401679EB227}") JUserAddressRequest_Builder  : public Androidapi::Jni::Javatypes::JObject 
+{
+	virtual _di_JUserAddressRequest_Builder __cdecl addAllowedCountrySpecification(_di_JCountrySpecification countrySpecification) = 0 ;
+	virtual _di_JUserAddressRequest_Builder __cdecl addAllowedCountrySpecifications(Androidapi::Jni::Javatypes::_di_JCollection countrySpecifications) = 0 ;
+	virtual _di_JUserAddressRequest __cdecl build() = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJUserAddressRequest_Builder : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JUserAddressRequest_BuilderClass,_di_JUserAddressRequest_Builder>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JUserAddressRequest_BuilderClass,_di_JUserAddressRequest_Builder> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJUserAddressRequest_Builder() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JUserAddressRequest_BuilderClass,_di_JUserAddressRequest_Builder>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJUserAddressRequest_Builder() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{2D2AFA53-034E-44CB-9A89-7412861AC785}") JCountrySpecificationClass  : public Androidapi::Jni::Javatypes::JObjectClass 
+{
+	virtual Androidapi::Jni::Os::_di_JParcelable_Creator __cdecl _GetCREATOR() = 0 ;
+	HIDESBASE virtual _di_JCountrySpecification __cdecl init(Androidapi::Jni::Javatypes::_di_JString countryCode) = 0 /* overload */;
+	__property Androidapi::Jni::Os::_di_JParcelable_Creator CREATOR = {read=_GetCREATOR};
+};
+
+__interface  INTERFACE_UUID("{E113A36B-85D5-49EF-AFAF-E1970E16C43C}") JCountrySpecification  : public Androidapi::Jni::Javatypes::JObject 
+{
+	virtual int __cdecl describeContents() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl getCountryCode() = 0 ;
+	virtual int __cdecl getVersionCode() = 0 ;
+	virtual void __cdecl writeToParcel(Androidapi::Jni::Os::_di_JParcel dest, int flags) = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJCountrySpecification : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JCountrySpecificationClass,_di_JCountrySpecification>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JCountrySpecificationClass,_di_JCountrySpecification> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJCountrySpecification() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JCountrySpecificationClass,_di_JCountrySpecification>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJCountrySpecification() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{183AC8EE-44C2-4A5F-ABBE-C991DACC2F93}") JUserAddressClass  : public Androidapi::Jni::Javatypes::JObjectClass 
+{
+	virtual Androidapi::Jni::Os::_di_JParcelable_Creator __cdecl _GetCREATOR() = 0 ;
+	virtual _di_JUserAddress __cdecl fromIntent(Androidapi::Jni::Graphicscontentviewtext::_di_JIntent data) = 0 ;
+	__property Androidapi::Jni::Os::_di_JParcelable_Creator CREATOR = {read=_GetCREATOR};
+};
+
+__interface  INTERFACE_UUID("{23D9A9E0-C6CC-4336-83E6-67FAE1D26C9F}") JUserAddress  : public Androidapi::Jni::Javatypes::JObject 
+{
+	virtual int __cdecl describeContents() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl getAddress1() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl getAddress2() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl getAddress3() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl getAddress4() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl getAddress5() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl getAdministrativeArea() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl getCompanyName() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl getCountryCode() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl getEmailAddress() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl getLocality() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl getName() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl getPhoneNumber() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl getPostalCode() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl getSortingCode() = 0 ;
+	virtual int __cdecl getVersionCode() = 0 ;
+	virtual bool __cdecl isPostBox() = 0 ;
+	virtual void __cdecl writeToParcel(Androidapi::Jni::Os::_di_JParcel out_, int flags) = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJUserAddress : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JUserAddressClass,_di_JUserAddress>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JUserAddressClass,_di_JUserAddress> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJUserAddress() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JUserAddressClass,_di_JUserAddress>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJUserAddress() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{95B0BA47-C41F-422C-BDB9-5E46A67A208E}") JActivityRecognitionClientClass  : public Androidapi::Jni::Javatypes::JObjectClass 
+{
+	HIDESBASE virtual _di_JActivityRecognitionClient __cdecl init(Androidapi::Jni::Graphicscontentviewtext::_di_JContext context, _di_JGooglePlayServicesClient_ConnectionCallbacks connectedListener, _di_JGooglePlayServicesClient_OnConnectionFailedListener connectionFailedListener) = 0 ;
+};
+
+__interface  INTERFACE_UUID("{2F41C8A5-18B8-495C-B359-D9BE961E5AD3}") JActivityRecognitionClient  : public Androidapi::Jni::Javatypes::JObject 
+{
+	virtual void __cdecl connect() = 0 ;
+	virtual void __cdecl disconnect() = 0 ;
+	virtual bool __cdecl isConnected() = 0 ;
+	virtual bool __cdecl isConnecting() = 0 ;
+	virtual bool __cdecl isConnectionCallbacksRegistered(_di_JGooglePlayServicesClient_ConnectionCallbacks listener) = 0 ;
+	virtual bool __cdecl isConnectionFailedListenerRegistered(_di_JGooglePlayServicesClient_OnConnectionFailedListener listener) = 0 ;
+	virtual void __cdecl registerConnectionCallbacks(_di_JGooglePlayServicesClient_ConnectionCallbacks listener) = 0 ;
+	virtual void __cdecl registerConnectionFailedListener(_di_JGooglePlayServicesClient_OnConnectionFailedListener listener) = 0 ;
+	virtual void __cdecl removeActivityUpdates(Androidapi::Jni::App::_di_JPendingIntent callbackIntent) = 0 ;
+	virtual void __cdecl requestActivityUpdates(__int64 detectionIntervalMillis, Androidapi::Jni::App::_di_JPendingIntent callbackIntent) = 0 ;
+	virtual void __cdecl unregisterConnectionCallbacks(_di_JGooglePlayServicesClient_ConnectionCallbacks listener) = 0 ;
+	virtual void __cdecl unregisterConnectionFailedListener(_di_JGooglePlayServicesClient_OnConnectionFailedListener listener) = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJActivityRecognitionClient : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JActivityRecognitionClientClass,_di_JActivityRecognitionClient>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JActivityRecognitionClientClass,_di_JActivityRecognitionClient> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJActivityRecognitionClient() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JActivityRecognitionClientClass,_di_JActivityRecognitionClient>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJActivityRecognitionClient() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{454FB055-9DBD-42AB-898C-FEA2F58D210B}") JActivityRecognitionResultClass  : public Androidapi::Jni::Javatypes::JObjectClass 
+{
+	virtual _di_JActivityRecognitionResultCreator __cdecl _GetCREATOR() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetEXTRA_ACTIVITY_RESULT() = 0 ;
+	virtual _di_JActivityRecognitionResult __cdecl extractResult(Androidapi::Jni::Graphicscontentviewtext::_di_JIntent intent) = 0 ;
+	virtual bool __cdecl hasResult(Androidapi::Jni::Graphicscontentviewtext::_di_JIntent intent) = 0 ;
+	HIDESBASE virtual _di_JActivityRecognitionResult __cdecl init(Androidapi::Jni::Javatypes::_di_JList probableActivities, __int64 time, __int64 elapsedRealtimeMillis) = 0 /* overload */;
+	HIDESBASE virtual _di_JActivityRecognitionResult __cdecl init(_di_JDetectedActivity mostProbableActivity, __int64 time, __int64 elapsedRealtimeMillis) = 0 /* overload */;
+	HIDESBASE virtual _di_JActivityRecognitionResult __cdecl init(int versionCode, Androidapi::Jni::Javatypes::_di_JList probableActivities, __int64 timeMillis, __int64 elapsedRealtimeMillis) = 0 /* overload */;
+	__property _di_JActivityRecognitionResultCreator CREATOR = {read=_GetCREATOR};
+	__property Androidapi::Jni::Javatypes::_di_JString EXTRA_ACTIVITY_RESULT = {read=_GetEXTRA_ACTIVITY_RESULT};
+};
+
+__interface  INTERFACE_UUID("{D9E1E70E-2A71-4999-9A98-8A3FC0137BB3}") JActivityRecognitionResult  : public Androidapi::Jni::Javatypes::JObject 
+{
+	virtual int __cdecl describeContents() = 0 ;
+	virtual int __cdecl getActivityConfidence(int activityType) = 0 ;
+	virtual __int64 __cdecl getElapsedRealtimeMillis() = 0 ;
+	virtual _di_JDetectedActivity __cdecl getMostProbableActivity() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JList __cdecl getProbableActivities() = 0 ;
+	virtual __int64 __cdecl getTime() = 0 ;
+	virtual int __cdecl getVersionCode() = 0 ;
+	HIDESBASE virtual Androidapi::Jni::Javatypes::_di_JString __cdecl toString() = 0 ;
+	virtual void __cdecl writeToParcel(Androidapi::Jni::Os::_di_JParcel out_, int flags) = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJActivityRecognitionResult : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JActivityRecognitionResultClass,_di_JActivityRecognitionResult>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JActivityRecognitionResultClass,_di_JActivityRecognitionResult> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJActivityRecognitionResult() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JActivityRecognitionResultClass,_di_JActivityRecognitionResult>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJActivityRecognitionResult() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{6A3F9406-3D43-411E-8C6B-9EFD51DAD599}") JActivityRecognitionResultCreatorClass  : public Androidapi::Jni::Javatypes::JObjectClass 
+{
+	virtual int __cdecl _GetCONTENT_DESCRIPTION() = 0 ;
+	HIDESBASE virtual _di_JActivityRecognitionResultCreator __cdecl init() = 0 ;
+	__property int CONTENT_DESCRIPTION = {read=_GetCONTENT_DESCRIPTION};
+};
+
+__interface  INTERFACE_UUID("{0CD362C5-4246-4771-9F67-0079A2D4889A}") JActivityRecognitionResultCreator  : public Androidapi::Jni::Javatypes::JObject 
+{
+	virtual _di_JActivityRecognitionResult __cdecl createFromParcel(Androidapi::Jni::Os::_di_JParcel parcel) = 0 ;
+	virtual Androidapi::Jnibridge::TJavaObjectArray__1<_di_JActivityRecognitionResult>* __cdecl newArray(int size) = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJActivityRecognitionResultCreator : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JActivityRecognitionResultCreatorClass,_di_JActivityRecognitionResultCreator>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JActivityRecognitionResultCreatorClass,_di_JActivityRecognitionResultCreator> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJActivityRecognitionResultCreator() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JActivityRecognitionResultCreatorClass,_di_JActivityRecognitionResultCreator>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJActivityRecognitionResultCreator() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{4BF1C57E-0AC8-498A-9EE6-506F8D632C07}") JDetectedActivityClass  : public Androidapi::Jni::Javatypes::JObjectClass 
+{
+	virtual _di_JDetectedActivityCreator __cdecl _GetCREATOR() = 0 ;
+	virtual int __cdecl _GetIN_VEHICLE() = 0 ;
+	virtual int __cdecl _GetON_BICYCLE() = 0 ;
+	virtual int __cdecl _GetON_FOOT() = 0 ;
+	virtual int __cdecl _GetSTILL() = 0 ;
+	virtual int __cdecl _GetTILTING() = 0 ;
+	virtual int __cdecl _GetUNKNOWN() = 0 ;
+	HIDESBASE virtual _di_JDetectedActivity __cdecl init(int activityType, int confidence) = 0 /* overload */;
+	HIDESBASE virtual _di_JDetectedActivity __cdecl init(int versionCode, int activityType, int confidence) = 0 /* overload */;
+	__property _di_JDetectedActivityCreator CREATOR = {read=_GetCREATOR};
+	__property int IN_VEHICLE = {read=_GetIN_VEHICLE};
+	__property int ON_BICYCLE = {read=_GetON_BICYCLE};
+	__property int ON_FOOT = {read=_GetON_FOOT};
+	__property int STILL = {read=_GetSTILL};
+	__property int TILTING = {read=_GetTILTING};
+	__property int UNKNOWN = {read=_GetUNKNOWN};
+};
+
+__interface  INTERFACE_UUID("{8A5265C3-15DA-4CEC-87AF-F46270E042F6}") JDetectedActivity  : public Androidapi::Jni::Javatypes::JObject 
+{
+	virtual int __cdecl describeContents() = 0 ;
+	virtual int __cdecl getConfidence() = 0 ;
+	virtual int __cdecl getType() = 0 ;
+	virtual int __cdecl getVersionCode() = 0 ;
+	HIDESBASE virtual Androidapi::Jni::Javatypes::_di_JString __cdecl toString() = 0 ;
+	virtual void __cdecl writeToParcel(Androidapi::Jni::Os::_di_JParcel out_, int flags) = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJDetectedActivity : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JDetectedActivityClass,_di_JDetectedActivity>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JDetectedActivityClass,_di_JDetectedActivity> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJDetectedActivity() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JDetectedActivityClass,_di_JDetectedActivity>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJDetectedActivity() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{73440C81-DB55-48AC-983D-0B5D428937A2}") JDetectedActivityCreatorClass  : public Androidapi::Jni::Javatypes::JObjectClass 
+{
+	virtual int __cdecl _GetCONTENT_DESCRIPTION() = 0 ;
+	HIDESBASE virtual _di_JDetectedActivityCreator __cdecl init() = 0 ;
+	__property int CONTENT_DESCRIPTION = {read=_GetCONTENT_DESCRIPTION};
+};
+
+__interface  INTERFACE_UUID("{8FB1C7BF-D0DF-4BD7-B5FE-B9B5EA0C0A1B}") JDetectedActivityCreator  : public Androidapi::Jni::Javatypes::JObject 
+{
+	virtual _di_JDetectedActivity __cdecl createFromParcel(Androidapi::Jni::Os::_di_JParcel parcel) = 0 ;
+	virtual Androidapi::Jnibridge::TJavaObjectArray__1<_di_JDetectedActivity>* __cdecl newArray(int size) = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJDetectedActivityCreator : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JDetectedActivityCreatorClass,_di_JDetectedActivityCreator>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JDetectedActivityCreatorClass,_di_JDetectedActivityCreator> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJDetectedActivityCreator() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JDetectedActivityCreatorClass,_di_JDetectedActivityCreator>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJDetectedActivityCreator() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{CF428A28-2F37-48E7-9D9F-C67737813FE0}") JGeofenceClass  : public Androidapi::Jnibridge::IJavaClass 
+{
+	virtual int __cdecl _GetGEOFENCE_TRANSITION_DWELL() = 0 ;
+	virtual int __cdecl _GetGEOFENCE_TRANSITION_ENTER() = 0 ;
+	virtual int __cdecl _GetGEOFENCE_TRANSITION_EXIT() = 0 ;
+	virtual __int64 __cdecl _GetNEVER_EXPIRE() = 0 ;
+	__property int GEOFENCE_TRANSITION_DWELL = {read=_GetGEOFENCE_TRANSITION_DWELL};
+	__property int GEOFENCE_TRANSITION_ENTER = {read=_GetGEOFENCE_TRANSITION_ENTER};
+	__property int GEOFENCE_TRANSITION_EXIT = {read=_GetGEOFENCE_TRANSITION_EXIT};
+	__property __int64 NEVER_EXPIRE = {read=_GetNEVER_EXPIRE};
+};
+
+__interface  INTERFACE_UUID("{03F411F4-AF94-4BCE-B572-036C56891F2B}") JGeofence  : public Androidapi::Jnibridge::IJavaInstance 
+{
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl getRequestId() = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJGeofence : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JGeofenceClass,_di_JGeofence>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JGeofenceClass,_di_JGeofence> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJGeofence() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JGeofenceClass,_di_JGeofence>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJGeofence() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{1B065D39-AA46-4D6C-90DB-9E097BAE3C0A}") JGeofence_BuilderClass  : public Androidapi::Jni::Javatypes::JObjectClass 
+{
+	HIDESBASE virtual _di_JGeofence_Builder __cdecl init() = 0 ;
+};
+
+__interface  INTERFACE_UUID("{64706B21-BE55-455E-8488-7A316C9184CE}") JGeofence_Builder  : public Androidapi::Jni::Javatypes::JObject 
+{
+	virtual _di_JGeofence __cdecl build() = 0 ;
+	virtual _di_JGeofence_Builder __cdecl setCircularRegion(double latitude, double longitude, float radius) = 0 ;
+	virtual _di_JGeofence_Builder __cdecl setExpirationDuration(__int64 durationMillis) = 0 ;
+	virtual _di_JGeofence_Builder __cdecl setLoiteringDelay(int loiteringDelayMs) = 0 ;
+	virtual _di_JGeofence_Builder __cdecl setNotificationResponsiveness(int notificationResponsivenessMs) = 0 ;
+	virtual _di_JGeofence_Builder __cdecl setRequestId(Androidapi::Jni::Javatypes::_di_JString requestId) = 0 ;
+	virtual _di_JGeofence_Builder __cdecl setTransitionTypes(int transitionTypes) = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJGeofence_Builder : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JGeofence_BuilderClass,_di_JGeofence_Builder>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JGeofence_BuilderClass,_di_JGeofence_Builder> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJGeofence_Builder() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JGeofence_BuilderClass,_di_JGeofence_Builder>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJGeofence_Builder() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{B47354B9-C242-4A10-9B83-BDCA3C4747F1}") JGeofenceStatusCodesClass  : public JCommonStatusCodesClass 
+{
+	virtual int __cdecl _GetGEOFENCE_NOT_AVAILABLE() = 0 ;
+	virtual int __cdecl _GetGEOFENCE_TOO_MANY_GEOFENCES() = 0 ;
+	virtual int __cdecl _GetGEOFENCE_TOO_MANY_PENDING_INTENTS() = 0 ;
+	__property int GEOFENCE_NOT_AVAILABLE = {read=_GetGEOFENCE_NOT_AVAILABLE};
+	__property int GEOFENCE_TOO_MANY_GEOFENCES = {read=_GetGEOFENCE_TOO_MANY_GEOFENCES};
+	__property int GEOFENCE_TOO_MANY_PENDING_INTENTS = {read=_GetGEOFENCE_TOO_MANY_PENDING_INTENTS};
+};
+
+__interface  INTERFACE_UUID("{63DCF9DB-94B3-4594-8897-E2A31B5EB7ED}") JGeofenceStatusCodes  : public JCommonStatusCodes 
+{
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJGeofenceStatusCodes : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JGeofenceStatusCodesClass,_di_JGeofenceStatusCodes>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JGeofenceStatusCodesClass,_di_JGeofenceStatusCodes> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJGeofenceStatusCodes() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JGeofenceStatusCodesClass,_di_JGeofenceStatusCodes>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJGeofenceStatusCodes() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{19DD64B8-D7AB-46B0-8B0D-1BCE42BED9E8}") JLocationClientClass  : public Androidapi::Jni::Javatypes::JObjectClass 
+{
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetKEY_LOCATION_CHANGED() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetKEY_MOCK_LOCATION() = 0 ;
+	virtual int __cdecl getErrorCode(Androidapi::Jni::Graphicscontentviewtext::_di_JIntent intent) = 0 ;
+	virtual int __cdecl getGeofenceTransition(Androidapi::Jni::Graphicscontentviewtext::_di_JIntent intent) = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JList __cdecl getTriggeringGeofences(Androidapi::Jni::Graphicscontentviewtext::_di_JIntent intent) = 0 ;
+	virtual bool __cdecl hasError(Androidapi::Jni::Graphicscontentviewtext::_di_JIntent intent) = 0 ;
+	HIDESBASE virtual _di_JLocationClient __cdecl init(Androidapi::Jni::Graphicscontentviewtext::_di_JContext context, _di_JGooglePlayServicesClient_ConnectionCallbacks connectionCallbacks, _di_JGooglePlayServicesClient_OnConnectionFailedListener connectionFailedListener) = 0 ;
+	__property Androidapi::Jni::Javatypes::_di_JString KEY_LOCATION_CHANGED = {read=_GetKEY_LOCATION_CHANGED};
+	__property Androidapi::Jni::Javatypes::_di_JString KEY_MOCK_LOCATION = {read=_GetKEY_MOCK_LOCATION};
+};
+
+__interface  INTERFACE_UUID("{259FAD38-6C6B-4F7A-AB03-F40E8B41FF0E}") JLocationClient  : public Androidapi::Jni::Javatypes::JObject 
+{
+	virtual void __cdecl addGeofences(Androidapi::Jni::Javatypes::_di_JList geofences, Androidapi::Jni::App::_di_JPendingIntent pendingIntent, _di_JLocationClient_OnAddGeofencesResultListener listener) = 0 ;
+	virtual void __cdecl connect() = 0 ;
+	virtual void __cdecl disconnect() = 0 ;
+	virtual Androidapi::Jni::Location::_di_JLocation __cdecl getLastLocation() = 0 ;
+	virtual bool __cdecl isConnected() = 0 ;
+	virtual bool __cdecl isConnecting() = 0 ;
+	virtual bool __cdecl isConnectionCallbacksRegistered(_di_JGooglePlayServicesClient_ConnectionCallbacks listener) = 0 ;
+	virtual bool __cdecl isConnectionFailedListenerRegistered(_di_JGooglePlayServicesClient_OnConnectionFailedListener listener) = 0 ;
+	virtual void __cdecl registerConnectionCallbacks(_di_JGooglePlayServicesClient_ConnectionCallbacks listener) = 0 ;
+	virtual void __cdecl registerConnectionFailedListener(_di_JGooglePlayServicesClient_OnConnectionFailedListener listener) = 0 ;
+	virtual void __cdecl removeGeofences(Androidapi::Jni::Javatypes::_di_JList geofenceRequestIds, _di_JLocationClient_OnRemoveGeofencesResultListener listener) = 0 /* overload */;
+	virtual void __cdecl removeGeofences(Androidapi::Jni::App::_di_JPendingIntent pendingIntent, _di_JLocationClient_OnRemoveGeofencesResultListener listener) = 0 /* overload */;
+	virtual void __cdecl removeLocationUpdates(_di_Jlocation_LocationListener listener) = 0 /* overload */;
+	virtual void __cdecl removeLocationUpdates(Androidapi::Jni::App::_di_JPendingIntent callbackIntent) = 0 /* overload */;
+	virtual void __cdecl requestLocationUpdates(_di_JLocationRequest request, Androidapi::Jni::App::_di_JPendingIntent callbackIntent) = 0 /* overload */;
+	virtual void __cdecl requestLocationUpdates(_di_JLocationRequest request, _di_Jlocation_LocationListener listener) = 0 /* overload */;
+	virtual void __cdecl requestLocationUpdates(_di_JLocationRequest request, _di_Jlocation_LocationListener listener, Androidapi::Jni::Os::_di_JLooper looper) = 0 /* overload */;
+	virtual void __cdecl setMockLocation(Androidapi::Jni::Location::_di_JLocation mockLocation) = 0 ;
+	virtual void __cdecl setMockMode(bool isMockMode) = 0 ;
+	virtual void __cdecl unregisterConnectionCallbacks(_di_JGooglePlayServicesClient_ConnectionCallbacks listener) = 0 ;
+	virtual void __cdecl unregisterConnectionFailedListener(_di_JGooglePlayServicesClient_OnConnectionFailedListener listener) = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJLocationClient : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JLocationClientClass,_di_JLocationClient>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JLocationClientClass,_di_JLocationClient> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJLocationClient() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JLocationClientClass,_di_JLocationClient>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJLocationClient() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{6F178CD1-33E6-47D5-BA34-1C1C6C0CD9E9}") JLocationClient_OnAddGeofencesResultListenerClass  : public Androidapi::Jnibridge::IJavaClass 
+{
+	
+};
+
+__interface  INTERFACE_UUID("{699002BC-F53B-4868-88FA-884F26323132}") JLocationClient_OnAddGeofencesResultListener  : public Androidapi::Jnibridge::IJavaInstance 
+{
+	virtual void __cdecl onAddGeofencesResult(int P1, Androidapi::Jnibridge::TJavaObjectArray__1<Androidapi::Jni::Javatypes::_di_JString>* P2) = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJLocationClient_OnAddGeofencesResultListener : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JLocationClient_OnAddGeofencesResultListenerClass,_di_JLocationClient_OnAddGeofencesResultListener>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JLocationClient_OnAddGeofencesResultListenerClass,_di_JLocationClient_OnAddGeofencesResultListener> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJLocationClient_OnAddGeofencesResultListener() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JLocationClient_OnAddGeofencesResultListenerClass,_di_JLocationClient_OnAddGeofencesResultListener>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJLocationClient_OnAddGeofencesResultListener() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{592937ED-EA3B-43A9-9B13-BF89F0B46332}") JLocationClient_OnRemoveGeofencesResultListenerClass  : public Androidapi::Jnibridge::IJavaClass 
+{
+	
+};
+
+__interface  INTERFACE_UUID("{B3640090-9A62-45D6-949E-6B8253D9785F}") JLocationClient_OnRemoveGeofencesResultListener  : public Androidapi::Jnibridge::IJavaInstance 
+{
+	virtual void __cdecl onRemoveGeofencesByPendingIntentResult(int P1, Androidapi::Jni::App::_di_JPendingIntent P2) = 0 ;
+	virtual void __cdecl onRemoveGeofencesByRequestIdsResult(int P1, Androidapi::Jnibridge::TJavaObjectArray__1<Androidapi::Jni::Javatypes::_di_JString>* P2) = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJLocationClient_OnRemoveGeofencesResultListener : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JLocationClient_OnRemoveGeofencesResultListenerClass,_di_JLocationClient_OnRemoveGeofencesResultListener>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JLocationClient_OnRemoveGeofencesResultListenerClass,_di_JLocationClient_OnRemoveGeofencesResultListener> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJLocationClient_OnRemoveGeofencesResultListener() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JLocationClient_OnRemoveGeofencesResultListenerClass,_di_JLocationClient_OnRemoveGeofencesResultListener>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJLocationClient_OnRemoveGeofencesResultListener() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{FCF58DA8-B892-497A-A676-40D6D32A4DE9}") Jlocation_LocationListenerClass  : public Androidapi::Jnibridge::IJavaClass 
+{
+	
+};
+
+__interface  INTERFACE_UUID("{01DB4B21-C92D-4BBC-8D21-D8270F4C0370}") Jlocation_LocationListener  : public Androidapi::Jnibridge::IJavaInstance 
+{
+	virtual void __cdecl onLocationChanged(Androidapi::Jni::Location::_di_JLocation P1) = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJlocation_LocationListener : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_Jlocation_LocationListenerClass,_di_Jlocation_LocationListener>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_Jlocation_LocationListenerClass,_di_Jlocation_LocationListener> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJlocation_LocationListener() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_Jlocation_LocationListenerClass,_di_Jlocation_LocationListener>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJlocation_LocationListener() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{05119402-67C2-4B28-9127-852977268AC1}") JLocationRequestClass  : public Androidapi::Jni::Javatypes::JObjectClass 
+{
+	virtual _di_JLocationRequestCreator __cdecl _GetCREATOR() = 0 ;
+	virtual int __cdecl _GetPRIORITY_BALANCED_POWER_ACCURACY() = 0 ;
+	virtual int __cdecl _GetPRIORITY_HIGH_ACCURACY() = 0 ;
+	virtual int __cdecl _GetPRIORITY_LOW_POWER() = 0 ;
+	virtual int __cdecl _GetPRIORITY_NO_POWER() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl bj(int P1) = 0 ;
+	virtual _di_JLocationRequest __cdecl create() = 0 ;
+	HIDESBASE virtual _di_JLocationRequest __cdecl init() = 0 /* overload */;
+	__property _di_JLocationRequestCreator CREATOR = {read=_GetCREATOR};
+	__property int PRIORITY_BALANCED_POWER_ACCURACY = {read=_GetPRIORITY_BALANCED_POWER_ACCURACY};
+	__property int PRIORITY_HIGH_ACCURACY = {read=_GetPRIORITY_HIGH_ACCURACY};
+	__property int PRIORITY_LOW_POWER = {read=_GetPRIORITY_LOW_POWER};
+	__property int PRIORITY_NO_POWER = {read=_GetPRIORITY_NO_POWER};
+};
+
+__interface  INTERFACE_UUID("{C5E84DA4-6E65-4EBC-85C2-E084C59E736B}") JLocationRequest  : public Androidapi::Jni::Javatypes::JObject 
+{
+	virtual int __cdecl describeContents() = 0 ;
+	HIDESBASE virtual bool __cdecl equals(Androidapi::Jni::Javatypes::_di_JObject object_) = 0 ;
+	virtual __int64 __cdecl getExpirationTime() = 0 ;
+	virtual __int64 __cdecl getFastestInterval() = 0 ;
+	virtual __int64 __cdecl getInterval() = 0 ;
+	virtual int __cdecl getNumUpdates() = 0 ;
+	virtual int __cdecl getPriority() = 0 ;
+	virtual float __cdecl getSmallestDisplacement() = 0 ;
+	HIDESBASE virtual int __cdecl hashCode() = 0 ;
+	virtual _di_JLocationRequest __cdecl setExpirationDuration(__int64 millis) = 0 ;
+	virtual _di_JLocationRequest __cdecl setExpirationTime(__int64 millis) = 0 ;
+	virtual _di_JLocationRequest __cdecl setFastestInterval(__int64 millis) = 0 ;
+	virtual _di_JLocationRequest __cdecl setInterval(__int64 millis) = 0 ;
+	virtual _di_JLocationRequest __cdecl setNumUpdates(int numUpdates) = 0 ;
+	virtual _di_JLocationRequest __cdecl setPriority(int priority) = 0 ;
+	virtual _di_JLocationRequest __cdecl setSmallestDisplacement(float smallestDisplacementMeters) = 0 ;
+	HIDESBASE virtual Androidapi::Jni::Javatypes::_di_JString __cdecl toString() = 0 ;
+	virtual void __cdecl writeToParcel(Androidapi::Jni::Os::_di_JParcel parcel, int flags) = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJLocationRequest : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JLocationRequestClass,_di_JLocationRequest>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JLocationRequestClass,_di_JLocationRequest> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJLocationRequest() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JLocationRequestClass,_di_JLocationRequest>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJLocationRequest() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{B08AC569-2E09-4BA7-A642-8E124C566B70}") JLocationRequestCreatorClass  : public Androidapi::Jni::Javatypes::JObjectClass 
+{
+	virtual int __cdecl _GetCONTENT_DESCRIPTION() = 0 ;
+	HIDESBASE virtual _di_JLocationRequestCreator __cdecl init() = 0 ;
+	__property int CONTENT_DESCRIPTION = {read=_GetCONTENT_DESCRIPTION};
+};
+
+__interface  INTERFACE_UUID("{35AA2153-52CF-4BEE-82EC-6A666A3961C6}") JLocationRequestCreator  : public Androidapi::Jni::Javatypes::JObject 
+{
+	virtual _di_JLocationRequest __cdecl createFromParcel(Androidapi::Jni::Os::_di_JParcel parcel) = 0 ;
+	virtual Androidapi::Jnibridge::TJavaObjectArray__1<_di_JLocationRequest>* __cdecl newArray(int size) = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJLocationRequestCreator : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JLocationRequestCreatorClass,_di_JLocationRequestCreator>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JLocationRequestCreatorClass,_di_JLocationRequestCreator> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJLocationRequestCreator() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JLocationRequestCreatorClass,_di_JLocationRequestCreator>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJLocationRequestCreator() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{0571787B-F88E-41B1-A5CC-3681EB3C4590}") JLocationStatusCodesClass  : public Androidapi::Jni::Javatypes::JObjectClass 
+{
+	virtual int __cdecl _GetERROR() = 0 ;
+	virtual int __cdecl _GetGEOFENCE_NOT_AVAILABLE() = 0 ;
+	virtual int __cdecl _GetGEOFENCE_TOO_MANY_GEOFENCES() = 0 ;
+	virtual int __cdecl _GetGEOFENCE_TOO_MANY_PENDING_INTENTS() = 0 ;
+	virtual int __cdecl _GetSUCCESS() = 0 ;
+	virtual int __cdecl bl(int P1) = 0 ;
+	__property int ERROR = {read=_GetERROR};
+	__property int GEOFENCE_NOT_AVAILABLE = {read=_GetGEOFENCE_NOT_AVAILABLE};
+	__property int GEOFENCE_TOO_MANY_GEOFENCES = {read=_GetGEOFENCE_TOO_MANY_GEOFENCES};
+	__property int GEOFENCE_TOO_MANY_PENDING_INTENTS = {read=_GetGEOFENCE_TOO_MANY_PENDING_INTENTS};
+	__property int SUCCESS = {read=_GetSUCCESS};
+};
+
+__interface  INTERFACE_UUID("{47492F6A-FD16-40E4-945F-9F9979B4B620}") JLocationStatusCodes  : public Androidapi::Jni::Javatypes::JObject 
+{
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJLocationStatusCodes : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JLocationStatusCodesClass,_di_JLocationStatusCodes>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JLocationStatusCodesClass,_di_JLocationStatusCodes> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJLocationStatusCodes() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JLocationStatusCodesClass,_di_JLocationStatusCodes>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJLocationStatusCodes() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{B0D507FB-1009-4A6F-B8AD-9D189A889109}") JPanoramaClass  : public Androidapi::Jni::Javatypes::JObjectClass 
+{
+	virtual _di_JPendingResult __cdecl loadPanoramaInfo(_di_JGoogleApiClient client, Androidapi::Jni::Net::_di_Jnet_Uri uri) = 0 ;
+	virtual _di_JPendingResult __cdecl loadPanoramaInfoAndGrantAccess(_di_JGoogleApiClient client, Androidapi::Jni::Net::_di_Jnet_Uri uri) = 0 ;
+};
+
+__interface  INTERFACE_UUID("{A564B0E0-77F7-4982-B49F-DDF89FF5F557}") JPanorama  : public Androidapi::Jni::Javatypes::JObject 
+{
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJPanorama : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JPanoramaClass,_di_JPanorama>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JPanoramaClass,_di_JPanorama> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJPanorama() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JPanoramaClass,_di_JPanorama>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJPanorama() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{58A22AAC-838F-48F2-8EF5-66CE8B0A3004}") JPanorama_PanoramaResultClass  : public Japi_ResultClass 
+{
+	
+};
+
+__interface  INTERFACE_UUID("{BA75192D-1960-46E8-9BEA-2052821D5504}") JPanorama_PanoramaResult  : public Japi_Result 
+{
+	virtual Androidapi::Jni::Graphicscontentviewtext::_di_JIntent __cdecl getViewerIntent() = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJPanorama_PanoramaResult : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JPanorama_PanoramaResultClass,_di_JPanorama_PanoramaResult>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JPanorama_PanoramaResultClass,_di_JPanorama_PanoramaResult> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJPanorama_PanoramaResult() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JPanorama_PanoramaResultClass,_di_JPanorama_PanoramaResult>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJPanorama_PanoramaResult() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{688D7707-E775-4552-B421-F6037A124F89}") JPanoramaClientClass  : public Androidapi::Jni::Javatypes::JObjectClass 
+{
+	HIDESBASE virtual _di_JPanoramaClient __cdecl init(Androidapi::Jni::Graphicscontentviewtext::_di_JContext context, _di_JGooglePlayServicesClient_ConnectionCallbacks connectionCallbacks, _di_JGooglePlayServicesClient_OnConnectionFailedListener connectionFailedListener) = 0 ;
+};
+
+__interface  INTERFACE_UUID("{142D7115-631D-45B3-A430-7602789E78F9}") JPanoramaClient  : public Androidapi::Jni::Javatypes::JObject 
+{
+	virtual void __cdecl connect() = 0 ;
+	virtual void __cdecl disconnect() = 0 ;
+	virtual bool __cdecl isConnected() = 0 ;
+	virtual bool __cdecl isConnecting() = 0 ;
+	virtual bool __cdecl isConnectionCallbacksRegistered(_di_JGooglePlayServicesClient_ConnectionCallbacks listener) = 0 ;
+	virtual bool __cdecl isConnectionFailedListenerRegistered(_di_JGooglePlayServicesClient_OnConnectionFailedListener listener) = 0 ;
+	virtual void __cdecl loadPanoramaInfo(_di_JPanoramaClient_OnPanoramaInfoLoadedListener listener, Androidapi::Jni::Net::_di_Jnet_Uri uri) = 0 ;
+	virtual void __cdecl loadPanoramaInfoAndGrantAccess(_di_JPanoramaClient_OnPanoramaInfoLoadedListener listener, Androidapi::Jni::Net::_di_Jnet_Uri uri) = 0 ;
+	virtual void __cdecl registerConnectionCallbacks(_di_JGooglePlayServicesClient_ConnectionCallbacks listener) = 0 ;
+	virtual void __cdecl registerConnectionFailedListener(_di_JGooglePlayServicesClient_OnConnectionFailedListener listener) = 0 ;
+	virtual void __cdecl unregisterConnectionCallbacks(_di_JGooglePlayServicesClient_ConnectionCallbacks listener) = 0 ;
+	virtual void __cdecl unregisterConnectionFailedListener(_di_JGooglePlayServicesClient_OnConnectionFailedListener listener) = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJPanoramaClient : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JPanoramaClientClass,_di_JPanoramaClient>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JPanoramaClientClass,_di_JPanoramaClient> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJPanoramaClient() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JPanoramaClientClass,_di_JPanoramaClient>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJPanoramaClient() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{98EE122A-4A2E-4086-947A-CAE0E786F3DC}") JPanoramaClient_OnPanoramaInfoLoadedListenerClass  : public Androidapi::Jnibridge::IJavaClass 
+{
+	
+};
+
+__interface  INTERFACE_UUID("{2EEE0D0D-9E71-4292-B757-2B5A8DC23C92}") JPanoramaClient_OnPanoramaInfoLoadedListener  : public Androidapi::Jnibridge::IJavaInstance 
+{
+	virtual void __cdecl onPanoramaInfoLoaded(_di_JConnectionResult P1, Androidapi::Jni::Graphicscontentviewtext::_di_JIntent P2) = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJPanoramaClient_OnPanoramaInfoLoadedListener : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JPanoramaClient_OnPanoramaInfoLoadedListenerClass,_di_JPanoramaClient_OnPanoramaInfoLoadedListener>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JPanoramaClient_OnPanoramaInfoLoadedListenerClass,_di_JPanoramaClient_OnPanoramaInfoLoadedListener> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJPanoramaClient_OnPanoramaInfoLoadedListener() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JPanoramaClient_OnPanoramaInfoLoadedListenerClass,_di_JPanoramaClient_OnPanoramaInfoLoadedListener>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJPanoramaClient_OnPanoramaInfoLoadedListener() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{CAEF528A-BC1B-4666-89C9-66BC7205C1DA}") Jplus_AccountClass  : public Androidapi::Jnibridge::IJavaClass 
+{
+	
+};
+
+__interface  INTERFACE_UUID("{EA2ADA8B-4C5A-410A-A206-C57DF1F32738}") Jplus_Account  : public Androidapi::Jnibridge::IJavaInstance 
+{
+	virtual void __cdecl clearDefaultAccount(_di_JGoogleApiClient P1) = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl getAccountName(_di_JGoogleApiClient P1) = 0 ;
+	virtual _di_JPendingResult __cdecl revokeAccessAndDisconnect(_di_JGoogleApiClient P1) = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJplus_Account : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_Jplus_AccountClass,_di_Jplus_Account>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_Jplus_AccountClass,_di_Jplus_Account> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJplus_Account() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_Jplus_AccountClass,_di_Jplus_Account>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJplus_Account() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{E9FD16F1-8122-459A-86C4-8020AC20066C}") JMomentsClass  : public Androidapi::Jnibridge::IJavaClass 
+{
+	
+};
+
+__interface  INTERFACE_UUID("{B742048D-C2B1-4955-B36B-B9AEE1D1C6CE}") JMoments  : public Androidapi::Jnibridge::IJavaInstance 
+{
+	virtual _di_JPendingResult __cdecl load(_di_JGoogleApiClient P1) = 0 /* overload */;
+	virtual _di_JPendingResult __cdecl load(_di_JGoogleApiClient P1, int P2, Androidapi::Jni::Javatypes::_di_JString P3, Androidapi::Jni::Net::_di_Jnet_Uri P4, Androidapi::Jni::Javatypes::_di_JString P5, Androidapi::Jni::Javatypes::_di_JString P6) = 0 /* overload */;
+	virtual _di_JPendingResult __cdecl remove(_di_JGoogleApiClient P1, Androidapi::Jni::Javatypes::_di_JString P2) = 0 ;
+	virtual _di_JPendingResult __cdecl write(_di_JGoogleApiClient P1, _di_JMoment P2) = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJMoments : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMomentsClass,_di_JMoments>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMomentsClass,_di_JMoments> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJMoments() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMomentsClass,_di_JMoments>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJMoments() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{236E2B93-CDDB-4AF8-8F9A-DA87783210E9}") JMoments_LoadMomentsResultClass  : public JReleasableClass 
+{
+	
+};
+
+__interface  INTERFACE_UUID("{D3228DB1-E049-43C8-96E3-98CB2A71DD67}") JMoments_LoadMomentsResult  : public JReleasable 
+{
+	virtual _di_JMomentBuffer __cdecl getMomentBuffer() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl getNextPageToken() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl getUpdated() = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJMoments_LoadMomentsResult : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMoments_LoadMomentsResultClass,_di_JMoments_LoadMomentsResult>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMoments_LoadMomentsResultClass,_di_JMoments_LoadMomentsResult> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJMoments_LoadMomentsResult() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMoments_LoadMomentsResultClass,_di_JMoments_LoadMomentsResult>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJMoments_LoadMomentsResult() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{2F96F9C5-A73C-4E48-8688-893A5D2A9371}") JPeopleClass  : public Androidapi::Jnibridge::IJavaClass 
+{
+	
+};
+
+__interface  INTERFACE_UUID("{F6F545BD-AD06-48B9-9D56-E2FB5B3715B1}") JPeople  : public Androidapi::Jnibridge::IJavaInstance 
+{
+	virtual _di_JPerson __cdecl getCurrentPerson(_di_JGoogleApiClient P1) = 0 ;
+	virtual _di_JPendingResult __cdecl load(_di_JGoogleApiClient P1, Androidapi::Jni::Javatypes::_di_JCollection P2) = 0 /* overload */;
+	virtual _di_JPendingResult __cdecl load(_di_JGoogleApiClient P1, Androidapi::Jnibridge::TJavaObjectArray__1<Androidapi::Jni::Javatypes::_di_JString>* P2) = 0 /* overload */;
+	virtual _di_JPendingResult __cdecl loadConnected(_di_JGoogleApiClient P1) = 0 ;
+	virtual _di_JPendingResult __cdecl loadVisible(_di_JGoogleApiClient P1, Androidapi::Jni::Javatypes::_di_JString P2) = 0 /* overload */;
+	virtual _di_JPendingResult __cdecl loadVisible(_di_JGoogleApiClient P1, int P2, Androidapi::Jni::Javatypes::_di_JString P3) = 0 /* overload */;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJPeople : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JPeopleClass,_di_JPeople>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JPeopleClass,_di_JPeople> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJPeople() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JPeopleClass,_di_JPeople>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJPeople() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{36BFFCBF-81CA-4428-A00E-4B0784BAE332}") JPeople_LoadPeopleResultClass  : public JReleasableClass 
+{
+	
+};
+
+__interface  INTERFACE_UUID("{C729EF0D-B552-4F08-9545-82B89909B8E3}") JPeople_LoadPeopleResult  : public JReleasable 
+{
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl getNextPageToken() = 0 ;
+	virtual _di_JPersonBuffer __cdecl getPersonBuffer() = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJPeople_LoadPeopleResult : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JPeople_LoadPeopleResultClass,_di_JPeople_LoadPeopleResult>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JPeople_LoadPeopleResultClass,_di_JPeople_LoadPeopleResult> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJPeople_LoadPeopleResult() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JPeople_LoadPeopleResultClass,_di_JPeople_LoadPeopleResult>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJPeople_LoadPeopleResult() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{9D5D8170-C24A-4CF8-8F13-0A73E6BE817E}") JPeople_OrderByClass  : public Androidapi::Jnibridge::IJavaClass 
+{
+	virtual int __cdecl _GetALPHABETICAL() = 0 ;
+	virtual int __cdecl _GetBEST() = 0 ;
+	__property int ALPHABETICAL = {read=_GetALPHABETICAL};
+	__property int BEST = {read=_GetBEST};
+};
+
+__interface  INTERFACE_UUID("{F9795555-737C-4DB4-B622-AC5B3B2F4171}") JPeople_OrderBy  : public Androidapi::Jnibridge::IJavaInstance 
+{
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJPeople_OrderBy : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JPeople_OrderByClass,_di_JPeople_OrderBy>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JPeople_OrderByClass,_di_JPeople_OrderBy> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJPeople_OrderBy() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JPeople_OrderByClass,_di_JPeople_OrderBy>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJPeople_OrderBy() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{648B9F94-0955-48F5-9DC5-2100CE513C4D}") JPlusClass  : public Androidapi::Jni::Javatypes::JObjectClass 
+{
+	virtual _di_Jplus_Account __cdecl _GetAccountApi() = 0 ;
+	virtual _di_JMoments __cdecl _GetMomentsApi() = 0 ;
+	virtual _di_JPeople __cdecl _GetPeopleApi() = 0 ;
+	virtual _di_JScope __cdecl _GetSCOPE_PLUS_LOGIN() = 0 ;
+	virtual _di_JScope __cdecl _GetSCOPE_PLUS_PROFILE() = 0 ;
+	__property _di_Jplus_Account AccountApi = {read=_GetAccountApi};
+	__property _di_JMoments MomentsApi = {read=_GetMomentsApi};
+	__property _di_JPeople PeopleApi = {read=_GetPeopleApi};
+	__property _di_JScope SCOPE_PLUS_LOGIN = {read=_GetSCOPE_PLUS_LOGIN};
+	__property _di_JScope SCOPE_PLUS_PROFILE = {read=_GetSCOPE_PLUS_PROFILE};
+};
+
+__interface  INTERFACE_UUID("{67C5123D-AC48-4C05-BD4B-418B6F32BF0D}") JPlus  : public Androidapi::Jni::Javatypes::JObject 
+{
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJPlus : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JPlusClass,_di_JPlus>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JPlusClass,_di_JPlus> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJPlus() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JPlusClass,_di_JPlus>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJPlus() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{1D95C460-2E41-4509-94FB-0B7885DD7042}") JPlus_PlusOptionsClass  : public Androidapi::Jni::Javatypes::JObjectClass 
+{
+	virtual _di_JPlusOptions_Builder __cdecl builder() = 0 ;
+};
+
+__interface  INTERFACE_UUID("{E15C8E82-5F60-48D2-8625-728B5206251B}") JPlus_PlusOptions  : public Androidapi::Jni::Javatypes::JObject 
+{
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJPlus_PlusOptions : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JPlus_PlusOptionsClass,_di_JPlus_PlusOptions>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JPlus_PlusOptionsClass,_di_JPlus_PlusOptions> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJPlus_PlusOptions() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JPlus_PlusOptionsClass,_di_JPlus_PlusOptions>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJPlus_PlusOptions() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{B1C7D100-8E1C-463C-A6C5-CC83BF82DF9B}") JPlusOptions_BuilderClass  : public Androidapi::Jni::Javatypes::JObjectClass 
+{
+	HIDESBASE virtual _di_JPlusOptions_Builder __cdecl init() = 0 ;
+};
+
+__interface  INTERFACE_UUID("{83B7AA12-B9AB-4233-946D-E23D0C84DA67}") JPlusOptions_Builder  : public Androidapi::Jni::Javatypes::JObject 
+{
+	virtual _di_JPlusOptions_Builder __cdecl addActivityTypes(Androidapi::Jnibridge::TJavaObjectArray__1<Androidapi::Jni::Javatypes::_di_JString>* activityTypes) = 0 ;
+	virtual _di_JPlus_PlusOptions __cdecl build() = 0 ;
+	virtual _di_JPlusOptions_Builder __cdecl setServerClientId(Androidapi::Jni::Javatypes::_di_JString clientId) = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJPlusOptions_Builder : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JPlusOptions_BuilderClass,_di_JPlusOptions_Builder>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JPlusOptions_BuilderClass,_di_JPlusOptions_Builder> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJPlusOptions_Builder() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JPlusOptions_BuilderClass,_di_JPlusOptions_Builder>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJPlusOptions_Builder() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{2AA2BFD3-460D-4079-AD6A-957E42CC2FF4}") JPlusClientClass  : public Androidapi::Jni::Javatypes::JObjectClass 
+{
+	
+};
+
+__interface  INTERFACE_UUID("{EAB6DF55-278D-473C-BA80-D1B2C1C0F2BC}") JPlusClient  : public Androidapi::Jni::Javatypes::JObject 
+{
+	virtual void __cdecl clearDefaultAccount() = 0 ;
+	virtual void __cdecl connect() = 0 ;
+	virtual void __cdecl disconnect() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl getAccountName() = 0 ;
+	virtual _di_JPerson __cdecl getCurrentPerson() = 0 ;
+	virtual bool __cdecl isConnected() = 0 ;
+	virtual bool __cdecl isConnecting() = 0 ;
+	virtual bool __cdecl isConnectionCallbacksRegistered(_di_JGooglePlayServicesClient_ConnectionCallbacks listener) = 0 ;
+	virtual bool __cdecl isConnectionFailedListenerRegistered(_di_JGooglePlayServicesClient_OnConnectionFailedListener listener) = 0 ;
+	virtual void __cdecl loadMoments(_di_JPlusClient_OnMomentsLoadedListener listener) = 0 /* overload */;
+	virtual void __cdecl loadMoments(_di_JPlusClient_OnMomentsLoadedListener listener, int maxResults, Androidapi::Jni::Javatypes::_di_JString pageToken, Androidapi::Jni::Net::_di_Jnet_Uri targetUrl, Androidapi::Jni::Javatypes::_di_JString type_, Androidapi::Jni::Javatypes::_di_JString userId) = 0 /* overload */;
+	virtual void __cdecl loadPeople(_di_JPlusClient_OnPeopleLoadedListener listener, Androidapi::Jni::Javatypes::_di_JCollection personIds) = 0 /* overload */;
+	virtual void __cdecl loadPeople(_di_JPlusClient_OnPeopleLoadedListener listener, Androidapi::Jnibridge::TJavaObjectArray__1<Androidapi::Jni::Javatypes::_di_JString>* personIds) = 0 /* overload */;
+	virtual void __cdecl loadVisiblePeople(_di_JPlusClient_OnPeopleLoadedListener listener, Androidapi::Jni::Javatypes::_di_JString pageToken) = 0 /* overload */;
+	virtual void __cdecl loadVisiblePeople(_di_JPlusClient_OnPeopleLoadedListener listener, int orderBy, Androidapi::Jni::Javatypes::_di_JString pageToken) = 0 /* overload */;
+	virtual void __cdecl registerConnectionCallbacks(_di_JGooglePlayServicesClient_ConnectionCallbacks listener) = 0 ;
+	virtual void __cdecl registerConnectionFailedListener(_di_JGooglePlayServicesClient_OnConnectionFailedListener listener) = 0 ;
+	virtual void __cdecl removeMoment(Androidapi::Jni::Javatypes::_di_JString momentId) = 0 ;
+	virtual void __cdecl revokeAccessAndDisconnect(_di_JPlusClient_OnAccessRevokedListener listener) = 0 ;
+	virtual void __cdecl unregisterConnectionCallbacks(_di_JGooglePlayServicesClient_ConnectionCallbacks listener) = 0 ;
+	virtual void __cdecl unregisterConnectionFailedListener(_di_JGooglePlayServicesClient_OnConnectionFailedListener listener) = 0 ;
+	virtual void __cdecl writeMoment(_di_JMoment moment) = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJPlusClient : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JPlusClientClass,_di_JPlusClient>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JPlusClientClass,_di_JPlusClient> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJPlusClient() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JPlusClientClass,_di_JPlusClient>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJPlusClient() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{DBA13DC0-04DE-4A35-9287-C39E7D157EE6}") JPlusClient_BuilderClass  : public Androidapi::Jni::Javatypes::JObjectClass 
+{
+	HIDESBASE virtual _di_JPlusClient_Builder __cdecl init(Androidapi::Jni::Graphicscontentviewtext::_di_JContext context, _di_JGooglePlayServicesClient_ConnectionCallbacks connectionCallbacks, _di_JGooglePlayServicesClient_OnConnectionFailedListener connectionFailedListener) = 0 ;
+};
+
+__interface  INTERFACE_UUID("{29ED300A-FFB2-4DB9-8DED-319CABCE900B}") JPlusClient_Builder  : public Androidapi::Jni::Javatypes::JObject 
+{
+	virtual _di_JPlusClient __cdecl build() = 0 ;
+	virtual _di_JPlusClient_Builder __cdecl clearScopes() = 0 ;
+	virtual _di_JPlusClient_Builder __cdecl setAccountName(Androidapi::Jni::Javatypes::_di_JString accountName) = 0 ;
+	virtual _di_JPlusClient_Builder __cdecl setActions(Androidapi::Jnibridge::TJavaObjectArray__1<Androidapi::Jni::Javatypes::_di_JString>* actions) = 0 ;
+	virtual _di_JPlusClient_Builder __cdecl setScopes(Androidapi::Jnibridge::TJavaObjectArray__1<Androidapi::Jni::Javatypes::_di_JString>* scopes) = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJPlusClient_Builder : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JPlusClient_BuilderClass,_di_JPlusClient_Builder>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JPlusClient_BuilderClass,_di_JPlusClient_Builder> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJPlusClient_Builder() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JPlusClient_BuilderClass,_di_JPlusClient_Builder>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJPlusClient_Builder() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{37BBB8DE-48CE-4DDE-94D7-ECD2D634F555}") JPlusClient_OnAccessRevokedListenerClass  : public Androidapi::Jnibridge::IJavaClass 
+{
+	
+};
+
+__interface  INTERFACE_UUID("{339A35F4-5039-4539-84E1-A54BB83E8462}") JPlusClient_OnAccessRevokedListener  : public Androidapi::Jnibridge::IJavaInstance 
+{
+	virtual void __cdecl onAccessRevoked(_di_JConnectionResult P1) = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJPlusClient_OnAccessRevokedListener : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JPlusClient_OnAccessRevokedListenerClass,_di_JPlusClient_OnAccessRevokedListener>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JPlusClient_OnAccessRevokedListenerClass,_di_JPlusClient_OnAccessRevokedListener> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJPlusClient_OnAccessRevokedListener() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JPlusClient_OnAccessRevokedListenerClass,_di_JPlusClient_OnAccessRevokedListener>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJPlusClient_OnAccessRevokedListener() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{3BAE124C-4C24-4365-B6CB-EC63C78CCD71}") JPlusClient_OnMomentsLoadedListenerClass  : public Androidapi::Jnibridge::IJavaClass 
+{
+	
+};
+
+__interface  INTERFACE_UUID("{05069DAE-57BB-4F77-BAC6-3C57DFD827CF}") JPlusClient_OnMomentsLoadedListener  : public Androidapi::Jnibridge::IJavaInstance 
+{
+	virtual void __cdecl onMomentsLoaded(_di_JConnectionResult P1, _di_JMomentBuffer P2, Androidapi::Jni::Javatypes::_di_JString P3, Androidapi::Jni::Javatypes::_di_JString P4) = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJPlusClient_OnMomentsLoadedListener : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JPlusClient_OnMomentsLoadedListenerClass,_di_JPlusClient_OnMomentsLoadedListener>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JPlusClient_OnMomentsLoadedListenerClass,_di_JPlusClient_OnMomentsLoadedListener> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJPlusClient_OnMomentsLoadedListener() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JPlusClient_OnMomentsLoadedListenerClass,_di_JPlusClient_OnMomentsLoadedListener>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJPlusClient_OnMomentsLoadedListener() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{3ED45DFB-197C-41ED-8DF6-E73FA84D02E8}") JPlusClient_OnPeopleLoadedListenerClass  : public Androidapi::Jnibridge::IJavaClass 
+{
+	
+};
+
+__interface  INTERFACE_UUID("{4ECCBDF1-0DB9-48F9-BF3C-15F7B09E12E7}") JPlusClient_OnPeopleLoadedListener  : public Androidapi::Jnibridge::IJavaInstance 
+{
+	virtual void __cdecl onPeopleLoaded(_di_JConnectionResult P1, _di_JPersonBuffer P2, Androidapi::Jni::Javatypes::_di_JString P3) = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJPlusClient_OnPeopleLoadedListener : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JPlusClient_OnPeopleLoadedListenerClass,_di_JPlusClient_OnPeopleLoadedListener>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JPlusClient_OnPeopleLoadedListenerClass,_di_JPlusClient_OnPeopleLoadedListener> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJPlusClient_OnPeopleLoadedListener() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JPlusClient_OnPeopleLoadedListenerClass,_di_JPlusClient_OnPeopleLoadedListener>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJPlusClient_OnPeopleLoadedListener() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{318FADB7-DFAB-4ABF-8CD2-01240A277164}") JPlusClient_OrderByClass  : public Androidapi::Jnibridge::IJavaClass 
+{
+	virtual int __cdecl _GetALPHABETICAL() = 0 ;
+	virtual int __cdecl _GetBEST() = 0 ;
+	__property int ALPHABETICAL = {read=_GetALPHABETICAL};
+	__property int BEST = {read=_GetBEST};
+};
+
+__interface  INTERFACE_UUID("{3335E9DA-CE30-42BB-B782-4AB6DBA68373}") JPlusClient_OrderBy  : public Androidapi::Jnibridge::IJavaInstance 
+{
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJPlusClient_OrderBy : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JPlusClient_OrderByClass,_di_JPlusClient_OrderBy>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JPlusClient_OrderByClass,_di_JPlusClient_OrderBy> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJPlusClient_OrderBy() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JPlusClient_OrderByClass,_di_JPlusClient_OrderBy>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJPlusClient_OrderBy() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{3657EE37-DA35-4156-BE68-79159FB480AD}") JPlusOneButtonClass  : public Androidapi::Jni::Widget::JFrameLayoutClass 
+{
+	virtual int __cdecl _GetANNOTATION_BUBBLE() = 0 ;
+	virtual int __cdecl _GetANNOTATION_INLINE() = 0 ;
+	virtual int __cdecl _GetANNOTATION_NONE() = 0 ;
+	virtual int __cdecl _GetDEFAULT_ACTIVITY_REQUEST_CODE() = 0 ;
+	virtual int __cdecl _GetSIZE_MEDIUM() = 0 ;
+	virtual int __cdecl _GetSIZE_SMALL() = 0 ;
+	virtual int __cdecl _GetSIZE_STANDARD() = 0 ;
+	virtual int __cdecl _GetSIZE_TALL() = 0 ;
+	HIDESBASE virtual _di_JPlusOneButton __cdecl init(Androidapi::Jni::Graphicscontentviewtext::_di_JContext context) = 0 /* overload */;
+	HIDESBASE virtual _di_JPlusOneButton __cdecl init(Androidapi::Jni::Graphicscontentviewtext::_di_JContext context, Androidapi::Jni::Util::_di_JAttributeSet attrs) = 0 /* overload */;
+	__property int ANNOTATION_BUBBLE = {read=_GetANNOTATION_BUBBLE};
+	__property int ANNOTATION_INLINE = {read=_GetANNOTATION_INLINE};
+	__property int ANNOTATION_NONE = {read=_GetANNOTATION_NONE};
+	__property int DEFAULT_ACTIVITY_REQUEST_CODE = {read=_GetDEFAULT_ACTIVITY_REQUEST_CODE};
+	__property int SIZE_MEDIUM = {read=_GetSIZE_MEDIUM};
+	__property int SIZE_SMALL = {read=_GetSIZE_SMALL};
+	__property int SIZE_STANDARD = {read=_GetSIZE_STANDARD};
+	__property int SIZE_TALL = {read=_GetSIZE_TALL};
+};
+
+__interface  INTERFACE_UUID("{673E8BED-682D-4DD7-AFE5-24B67EB89D9E}") JPlusOneButton  : public Androidapi::Jni::Widget::JFrameLayout 
+{
+	virtual void __cdecl initialize(Androidapi::Jni::Javatypes::_di_JString url, int activityRequestCode) = 0 /* overload */;
+	virtual void __cdecl initialize(Androidapi::Jni::Javatypes::_di_JString url, _di_JPlusOneButton_OnPlusOneClickListener plusOneClickListener) = 0 /* overload */;
+	virtual void __cdecl setAnnotation(int annotation) = 0 ;
+	virtual void __cdecl setOnPlusOneClickListener(_di_JPlusOneButton_OnPlusOneClickListener listener) = 0 ;
+	virtual void __cdecl setSize(int size) = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJPlusOneButton : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JPlusOneButtonClass,_di_JPlusOneButton>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JPlusOneButtonClass,_di_JPlusOneButton> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJPlusOneButton() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JPlusOneButtonClass,_di_JPlusOneButton>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJPlusOneButton() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{C32D6623-7C69-4984-897E-6CFEFD16D5C0}") JPlusOneButton_DefaultOnPlusOneClickListenerClass  : public Androidapi::Jni::Javatypes::JObjectClass 
+{
+	HIDESBASE virtual _di_JPlusOneButton_DefaultOnPlusOneClickListener __cdecl init(_di_JPlusOneButton proxy, _di_JPlusOneButton_OnPlusOneClickListener P2) = 0 ;
+};
+
+__interface  INTERFACE_UUID("{14A21E34-B2CD-4AFA-87E8-9AF8AA7BEB2B}") JPlusOneButton_DefaultOnPlusOneClickListener  : public Androidapi::Jni::Javatypes::JObject 
+{
+	virtual void __cdecl onClick(Androidapi::Jni::Graphicscontentviewtext::_di_JView view) = 0 ;
+	virtual void __cdecl onPlusOneClick(Androidapi::Jni::Graphicscontentviewtext::_di_JIntent intent) = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJPlusOneButton_DefaultOnPlusOneClickListener : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JPlusOneButton_DefaultOnPlusOneClickListenerClass,_di_JPlusOneButton_DefaultOnPlusOneClickListener>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JPlusOneButton_DefaultOnPlusOneClickListenerClass,_di_JPlusOneButton_DefaultOnPlusOneClickListener> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJPlusOneButton_DefaultOnPlusOneClickListener() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JPlusOneButton_DefaultOnPlusOneClickListenerClass,_di_JPlusOneButton_DefaultOnPlusOneClickListener>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJPlusOneButton_DefaultOnPlusOneClickListener() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{42763D8A-94F3-4096-9C01-EBDF8ED918EC}") JPlusOneButton_OnPlusOneClickListenerClass  : public Androidapi::Jnibridge::IJavaClass 
+{
+	
+};
+
+__interface  INTERFACE_UUID("{5F317FCE-AD9C-4B7F-BA9A-5E76573B8DC2}") JPlusOneButton_OnPlusOneClickListener  : public Androidapi::Jnibridge::IJavaInstance 
+{
+	virtual void __cdecl onPlusOneClick(Androidapi::Jni::Graphicscontentviewtext::_di_JIntent P1) = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJPlusOneButton_OnPlusOneClickListener : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JPlusOneButton_OnPlusOneClickListenerClass,_di_JPlusOneButton_OnPlusOneClickListener>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JPlusOneButton_OnPlusOneClickListenerClass,_di_JPlusOneButton_OnPlusOneClickListener> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJPlusOneButton_OnPlusOneClickListener() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JPlusOneButton_OnPlusOneClickListenerClass,_di_JPlusOneButton_OnPlusOneClickListener>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJPlusOneButton_OnPlusOneClickListener() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{6A8BC622-0DEA-4EF4-B278-B4B5B63161F8}") JPlusOneDummyViewClass  : public Androidapi::Jni::Widget::JFrameLayoutClass 
+{
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetTAG() = 0 ;
+	HIDESBASE virtual _di_JPlusOneDummyView __cdecl init(Androidapi::Jni::Graphicscontentviewtext::_di_JContext context, int size) = 0 ;
+	__property Androidapi::Jni::Javatypes::_di_JString TAG = {read=_GetTAG};
+};
+
+__interface  INTERFACE_UUID("{A3ACF6ED-DE0E-43C6-924E-858C7F67599B}") JPlusOneDummyView  : public Androidapi::Jni::Widget::JFrameLayout 
+{
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJPlusOneDummyView : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JPlusOneDummyViewClass,_di_JPlusOneDummyView>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JPlusOneDummyViewClass,_di_JPlusOneDummyView> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJPlusOneDummyView() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JPlusOneDummyViewClass,_di_JPlusOneDummyView>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJPlusOneDummyView() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{F5B23902-E272-45DE-B1D8-79F147BC1153}") JPlusShareClass  : public Androidapi::Jni::Javatypes::JObjectClass 
+{
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetEXTRA_CALL_TO_ACTION() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetEXTRA_CONTENT_DEEP_LINK_ID() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetEXTRA_CONTENT_DEEP_LINK_METADATA() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetEXTRA_CONTENT_URL() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetEXTRA_IS_INTERACTIVE_POST() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetEXTRA_SENDER_ID() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetKEY_CALL_TO_ACTION_DEEP_LINK_ID() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetKEY_CALL_TO_ACTION_LABEL() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetKEY_CALL_TO_ACTION_URL() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetKEY_CONTENT_DEEP_LINK_METADATA_DESCRIPTION() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetKEY_CONTENT_DEEP_LINK_METADATA_THUMBNAIL_URL() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetKEY_CONTENT_DEEP_LINK_METADATA_TITLE() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetPARAM_CONTENT_DEEP_LINK_ID() = 0 ;
+	virtual Androidapi::Jni::Os::_di_JBundle __cdecl a(Androidapi::Jni::Javatypes::_di_JString P1, Androidapi::Jni::Javatypes::_di_JString P2, Androidapi::Jni::Net::_di_Jnet_Uri P3) = 0 ;
+	virtual _di_JPerson __cdecl createPerson(Androidapi::Jni::Javatypes::_di_JString id, Androidapi::Jni::Javatypes::_di_JString displayName) = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl getDeepLinkId(Androidapi::Jni::Graphicscontentviewtext::_di_JIntent intent) = 0 ;
+	__property Androidapi::Jni::Javatypes::_di_JString EXTRA_CALL_TO_ACTION = {read=_GetEXTRA_CALL_TO_ACTION};
+	__property Androidapi::Jni::Javatypes::_di_JString EXTRA_CONTENT_DEEP_LINK_ID = {read=_GetEXTRA_CONTENT_DEEP_LINK_ID};
+	__property Androidapi::Jni::Javatypes::_di_JString EXTRA_CONTENT_DEEP_LINK_METADATA = {read=_GetEXTRA_CONTENT_DEEP_LINK_METADATA};
+	__property Androidapi::Jni::Javatypes::_di_JString EXTRA_CONTENT_URL = {read=_GetEXTRA_CONTENT_URL};
+	__property Androidapi::Jni::Javatypes::_di_JString EXTRA_IS_INTERACTIVE_POST = {read=_GetEXTRA_IS_INTERACTIVE_POST};
+	__property Androidapi::Jni::Javatypes::_di_JString EXTRA_SENDER_ID = {read=_GetEXTRA_SENDER_ID};
+	__property Androidapi::Jni::Javatypes::_di_JString KEY_CALL_TO_ACTION_DEEP_LINK_ID = {read=_GetKEY_CALL_TO_ACTION_DEEP_LINK_ID};
+	__property Androidapi::Jni::Javatypes::_di_JString KEY_CALL_TO_ACTION_LABEL = {read=_GetKEY_CALL_TO_ACTION_LABEL};
+	__property Androidapi::Jni::Javatypes::_di_JString KEY_CALL_TO_ACTION_URL = {read=_GetKEY_CALL_TO_ACTION_URL};
+	__property Androidapi::Jni::Javatypes::_di_JString KEY_CONTENT_DEEP_LINK_METADATA_DESCRIPTION = {read=_GetKEY_CONTENT_DEEP_LINK_METADATA_DESCRIPTION};
+	__property Androidapi::Jni::Javatypes::_di_JString KEY_CONTENT_DEEP_LINK_METADATA_THUMBNAIL_URL = {read=_GetKEY_CONTENT_DEEP_LINK_METADATA_THUMBNAIL_URL};
+	__property Androidapi::Jni::Javatypes::_di_JString KEY_CONTENT_DEEP_LINK_METADATA_TITLE = {read=_GetKEY_CONTENT_DEEP_LINK_METADATA_TITLE};
+	__property Androidapi::Jni::Javatypes::_di_JString PARAM_CONTENT_DEEP_LINK_ID = {read=_GetPARAM_CONTENT_DEEP_LINK_ID};
+};
+
+__interface  INTERFACE_UUID("{B5154807-934B-4AEA-B761-7B3E99A5F5C7}") JPlusShare  : public Androidapi::Jni::Javatypes::JObject 
+{
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJPlusShare : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JPlusShareClass,_di_JPlusShare>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JPlusShareClass,_di_JPlusShare> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJPlusShare() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JPlusShareClass,_di_JPlusShare>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJPlusShare() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{452E7438-523E-49EE-8D62-DC1F947CB0F0}") JPlusShare_BuilderClass  : public Androidapi::Jni::Javatypes::JObjectClass 
+{
+	HIDESBASE virtual _di_JPlusShare_Builder __cdecl init(Androidapi::Jni::Graphicscontentviewtext::_di_JContext context) = 0 /* overload */;
+	HIDESBASE virtual _di_JPlusShare_Builder __cdecl init(Androidapi::Jni::App::_di_JActivity launchingActivity) = 0 /* overload */;
+	HIDESBASE virtual _di_JPlusShare_Builder __cdecl init(Androidapi::Jni::App::_di_JActivity launchingActivity, _di_JPlusClient plusClient) = 0 /* overload */;
+};
+
+__interface  INTERFACE_UUID("{84FC9DA5-38FA-4A1F-AB92-0E3DCF29AD94}") JPlusShare_Builder  : public Androidapi::Jni::Javatypes::JObject 
+{
+	virtual _di_JPlusShare_Builder __cdecl addCallToAction(Androidapi::Jni::Javatypes::_di_JString label_, Androidapi::Jni::Net::_di_Jnet_Uri uri, Androidapi::Jni::Javatypes::_di_JString deepLinkId) = 0 ;
+	virtual _di_JPlusShare_Builder __cdecl addStream(Androidapi::Jni::Net::_di_Jnet_Uri streamUri) = 0 ;
+	virtual Androidapi::Jni::Graphicscontentviewtext::_di_JIntent __cdecl getIntent() = 0 ;
+	virtual _di_JPlusShare_Builder __cdecl setContentDeepLinkId(Androidapi::Jni::Javatypes::_di_JString deepLinkId) = 0 /* overload */;
+	virtual _di_JPlusShare_Builder __cdecl setContentDeepLinkId(Androidapi::Jni::Javatypes::_di_JString deepLinkId, Androidapi::Jni::Javatypes::_di_JString title, Androidapi::Jni::Javatypes::_di_JString description, Androidapi::Jni::Net::_di_Jnet_Uri thumbnailUri) = 0 /* overload */;
+	virtual _di_JPlusShare_Builder __cdecl setContentUrl(Androidapi::Jni::Net::_di_Jnet_Uri uri) = 0 ;
+	virtual _di_JPlusShare_Builder __cdecl setRecipients(Androidapi::Jni::Javatypes::_di_JList recipientList) = 0 /* overload */;
+	virtual _di_JPlusShare_Builder __cdecl setRecipients(_di_JPerson user, Androidapi::Jni::Javatypes::_di_JList recipientList) = 0 /* overload */;
+	virtual _di_JPlusShare_Builder __cdecl setStream(Androidapi::Jni::Net::_di_Jnet_Uri streamUri) = 0 ;
+	virtual _di_JPlusShare_Builder __cdecl setText(Androidapi::Jni::Javatypes::_di_JCharSequence text) = 0 ;
+	virtual _di_JPlusShare_Builder __cdecl setType(Androidapi::Jni::Javatypes::_di_JString mimeType) = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJPlusShare_Builder : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JPlusShare_BuilderClass,_di_JPlusShare_Builder>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JPlusShare_BuilderClass,_di_JPlusShare_Builder> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJPlusShare_Builder() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JPlusShare_BuilderClass,_di_JPlusShare_Builder>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJPlusShare_Builder() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{90BF2FA8-0757-4289-BF48-62B51B34B736}") JPlusCommonExtrasClass  : public Androidapi::Jni::Javatypes::JObjectClass 
+{
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetTAG() = 0 ;
+	virtual void __cdecl _SetTAG(Androidapi::Jni::Javatypes::_di_JString Value) = 0 ;
+	HIDESBASE virtual _di_JPlusCommonExtras __cdecl init() = 0 /* overload */;
+	__property Androidapi::Jni::Javatypes::_di_JString TAG = {read=_GetTAG, write=_SetTAG};
+};
+
+__interface  INTERFACE_UUID("{1DFA6828-65ED-4482-9BCD-E2D3F8CE4FE3}") JPlusCommonExtras  : public Androidapi::Jni::Javatypes::JObject 
+{
+	virtual int __cdecl describeContents() = 0 ;
+	HIDESBASE virtual bool __cdecl equals(Androidapi::Jni::Javatypes::_di_JObject obj) = 0 ;
+	virtual int __cdecl getVersionCode() = 0 ;
+	HIDESBASE virtual int __cdecl hashCode() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl ho() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl hp() = 0 ;
+	virtual void __cdecl m(Androidapi::Jni::Os::_di_JBundle P1) = 0 ;
+	HIDESBASE virtual Androidapi::Jni::Javatypes::_di_JString __cdecl toString() = 0 ;
+	virtual void __cdecl writeToParcel(Androidapi::Jni::Os::_di_JParcel out_, int flags) = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJPlusCommonExtras : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JPlusCommonExtrasClass,_di_JPlusCommonExtras>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JPlusCommonExtrasClass,_di_JPlusCommonExtras> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJPlusCommonExtras() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JPlusCommonExtrasClass,_di_JPlusCommonExtras>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJPlusCommonExtras() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{236B5A11-B17F-4B73-AB0B-3CEE2FD976B6}") JItemScopeClass  : public JFreezableClass 
+{
+	
+};
+
+__interface  INTERFACE_UUID("{B5E3B8DA-655E-4DE0-9E9E-C2E2EAD3A645}") JItemScope  : public JFreezable 
+{
+	virtual _di_JItemScope __cdecl getAbout() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JList __cdecl getAdditionalName() = 0 ;
+	virtual _di_JItemScope __cdecl getAddress() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl getAddressCountry() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl getAddressLocality() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl getAddressRegion() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JList __cdecl getAssociated_media() = 0 ;
+	virtual int __cdecl getAttendeeCount() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JList __cdecl getAttendees() = 0 ;
+	virtual _di_JItemScope __cdecl getAudio() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JList __cdecl getAuthor() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl getBestRating() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl getBirthDate() = 0 ;
+	virtual _di_JItemScope __cdecl getByArtist() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl getCaption() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl getContentSize() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl getContentUrl() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JList __cdecl getContributor() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl getDateCreated() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl getDateModified() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl getDatePublished() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl getDescription() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl getDuration() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl getEmbedUrl() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl getEndDate() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl getFamilyName() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl getGender() = 0 ;
+	virtual _di_JItemScope __cdecl getGeo() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl getGivenName() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl getHeight() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl getId() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl getImage() = 0 ;
+	virtual _di_JItemScope __cdecl getInAlbum() = 0 ;
+	virtual double __cdecl getLatitude() = 0 ;
+	virtual _di_JItemScope __cdecl getLocation() = 0 ;
+	virtual double __cdecl getLongitude() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl getName() = 0 ;
+	virtual _di_JItemScope __cdecl getPartOfTVSeries() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JList __cdecl getPerformers() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl getPlayerType() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl getPostOfficeBoxNumber() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl getPostalCode() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl getRatingValue() = 0 ;
+	virtual _di_JItemScope __cdecl getReviewRating() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl getStartDate() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl getStreetAddress() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl getText() = 0 ;
+	virtual _di_JItemScope __cdecl getThumbnail() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl getThumbnailUrl() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl getTickerSymbol() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl getType() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl getUrl() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl getWidth() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl getWorstRating() = 0 ;
+	virtual bool __cdecl hasAbout() = 0 ;
+	virtual bool __cdecl hasAdditionalName() = 0 ;
+	virtual bool __cdecl hasAddress() = 0 ;
+	virtual bool __cdecl hasAddressCountry() = 0 ;
+	virtual bool __cdecl hasAddressLocality() = 0 ;
+	virtual bool __cdecl hasAddressRegion() = 0 ;
+	virtual bool __cdecl hasAssociated_media() = 0 ;
+	virtual bool __cdecl hasAttendeeCount() = 0 ;
+	virtual bool __cdecl hasAttendees() = 0 ;
+	virtual bool __cdecl hasAudio() = 0 ;
+	virtual bool __cdecl hasAuthor() = 0 ;
+	virtual bool __cdecl hasBestRating() = 0 ;
+	virtual bool __cdecl hasBirthDate() = 0 ;
+	virtual bool __cdecl hasByArtist() = 0 ;
+	virtual bool __cdecl hasCaption() = 0 ;
+	virtual bool __cdecl hasContentSize() = 0 ;
+	virtual bool __cdecl hasContentUrl() = 0 ;
+	virtual bool __cdecl hasContributor() = 0 ;
+	virtual bool __cdecl hasDateCreated() = 0 ;
+	virtual bool __cdecl hasDateModified() = 0 ;
+	virtual bool __cdecl hasDatePublished() = 0 ;
+	virtual bool __cdecl hasDescription() = 0 ;
+	virtual bool __cdecl hasDuration() = 0 ;
+	virtual bool __cdecl hasEmbedUrl() = 0 ;
+	virtual bool __cdecl hasEndDate() = 0 ;
+	virtual bool __cdecl hasFamilyName() = 0 ;
+	virtual bool __cdecl hasGender() = 0 ;
+	virtual bool __cdecl hasGeo() = 0 ;
+	virtual bool __cdecl hasGivenName() = 0 ;
+	virtual bool __cdecl hasHeight() = 0 ;
+	virtual bool __cdecl hasId() = 0 ;
+	virtual bool __cdecl hasImage() = 0 ;
+	virtual bool __cdecl hasInAlbum() = 0 ;
+	virtual bool __cdecl hasLatitude() = 0 ;
+	virtual bool __cdecl hasLocation() = 0 ;
+	virtual bool __cdecl hasLongitude() = 0 ;
+	virtual bool __cdecl hasName() = 0 ;
+	virtual bool __cdecl hasPartOfTVSeries() = 0 ;
+	virtual bool __cdecl hasPerformers() = 0 ;
+	virtual bool __cdecl hasPlayerType() = 0 ;
+	virtual bool __cdecl hasPostOfficeBoxNumber() = 0 ;
+	virtual bool __cdecl hasPostalCode() = 0 ;
+	virtual bool __cdecl hasRatingValue() = 0 ;
+	virtual bool __cdecl hasReviewRating() = 0 ;
+	virtual bool __cdecl hasStartDate() = 0 ;
+	virtual bool __cdecl hasStreetAddress() = 0 ;
+	virtual bool __cdecl hasText() = 0 ;
+	virtual bool __cdecl hasThumbnail() = 0 ;
+	virtual bool __cdecl hasThumbnailUrl() = 0 ;
+	virtual bool __cdecl hasTickerSymbol() = 0 ;
+	virtual bool __cdecl hasType() = 0 ;
+	virtual bool __cdecl hasUrl() = 0 ;
+	virtual bool __cdecl hasWidth() = 0 ;
+	virtual bool __cdecl hasWorstRating() = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJItemScope : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JItemScopeClass,_di_JItemScope>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JItemScopeClass,_di_JItemScope> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJItemScope() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JItemScopeClass,_di_JItemScope>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJItemScope() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{D190EF3D-EEB6-4FDB-B3FC-67C90C5B9758}") JItemScope_BuilderClass  : public Androidapi::Jni::Javatypes::JObjectClass 
+{
+	HIDESBASE virtual _di_JItemScope_Builder __cdecl init() = 0 ;
+};
+
+__interface  INTERFACE_UUID("{56EBB360-26B6-419C-9094-9E4CCFD02E67}") JItemScope_Builder  : public Androidapi::Jni::Javatypes::JObject 
+{
+	virtual _di_JItemScope __cdecl build() = 0 ;
+	virtual _di_JItemScope_Builder __cdecl setAbout(_di_JItemScope about) = 0 ;
+	virtual _di_JItemScope_Builder __cdecl setAdditionalName(Androidapi::Jni::Javatypes::_di_JList additionalName) = 0 ;
+	virtual _di_JItemScope_Builder __cdecl setAddress(_di_JItemScope address) = 0 ;
+	virtual _di_JItemScope_Builder __cdecl setAddressCountry(Androidapi::Jni::Javatypes::_di_JString addressCountry) = 0 ;
+	virtual _di_JItemScope_Builder __cdecl setAddressLocality(Androidapi::Jni::Javatypes::_di_JString addressLocality) = 0 ;
+	virtual _di_JItemScope_Builder __cdecl setAddressRegion(Androidapi::Jni::Javatypes::_di_JString addressRegion) = 0 ;
+	virtual _di_JItemScope_Builder __cdecl setAssociated_media(Androidapi::Jni::Javatypes::_di_JList associated_media) = 0 ;
+	virtual _di_JItemScope_Builder __cdecl setAttendeeCount(int attendeeCount) = 0 ;
+	virtual _di_JItemScope_Builder __cdecl setAttendees(Androidapi::Jni::Javatypes::_di_JList attendees) = 0 ;
+	virtual _di_JItemScope_Builder __cdecl setAudio(_di_JItemScope audio) = 0 ;
+	virtual _di_JItemScope_Builder __cdecl setAuthor(Androidapi::Jni::Javatypes::_di_JList author) = 0 ;
+	virtual _di_JItemScope_Builder __cdecl setBestRating(Androidapi::Jni::Javatypes::_di_JString bestRating) = 0 ;
+	virtual _di_JItemScope_Builder __cdecl setBirthDate(Androidapi::Jni::Javatypes::_di_JString birthDate) = 0 ;
+	virtual _di_JItemScope_Builder __cdecl setByArtist(_di_JItemScope byArtist) = 0 ;
+	virtual _di_JItemScope_Builder __cdecl setCaption(Androidapi::Jni::Javatypes::_di_JString caption) = 0 ;
+	virtual _di_JItemScope_Builder __cdecl setContentSize(Androidapi::Jni::Javatypes::_di_JString contentSize) = 0 ;
+	virtual _di_JItemScope_Builder __cdecl setContentUrl(Androidapi::Jni::Javatypes::_di_JString contentUrl) = 0 ;
+	virtual _di_JItemScope_Builder __cdecl setContributor(Androidapi::Jni::Javatypes::_di_JList contributor) = 0 ;
+	virtual _di_JItemScope_Builder __cdecl setDateCreated(Androidapi::Jni::Javatypes::_di_JString dateCreated) = 0 ;
+	virtual _di_JItemScope_Builder __cdecl setDateModified(Androidapi::Jni::Javatypes::_di_JString dateModified) = 0 ;
+	virtual _di_JItemScope_Builder __cdecl setDatePublished(Androidapi::Jni::Javatypes::_di_JString datePublished) = 0 ;
+	virtual _di_JItemScope_Builder __cdecl setDescription(Androidapi::Jni::Javatypes::_di_JString description) = 0 ;
+	virtual _di_JItemScope_Builder __cdecl setDuration(Androidapi::Jni::Javatypes::_di_JString duration) = 0 ;
+	virtual _di_JItemScope_Builder __cdecl setEmbedUrl(Androidapi::Jni::Javatypes::_di_JString embedUrl) = 0 ;
+	virtual _di_JItemScope_Builder __cdecl setEndDate(Androidapi::Jni::Javatypes::_di_JString endDate) = 0 ;
+	virtual _di_JItemScope_Builder __cdecl setFamilyName(Androidapi::Jni::Javatypes::_di_JString familyName) = 0 ;
+	virtual _di_JItemScope_Builder __cdecl setGender(Androidapi::Jni::Javatypes::_di_JString gender) = 0 ;
+	virtual _di_JItemScope_Builder __cdecl setGeo(_di_JItemScope geo) = 0 ;
+	virtual _di_JItemScope_Builder __cdecl setGivenName(Androidapi::Jni::Javatypes::_di_JString givenName) = 0 ;
+	virtual _di_JItemScope_Builder __cdecl setHeight(Androidapi::Jni::Javatypes::_di_JString height) = 0 ;
+	virtual _di_JItemScope_Builder __cdecl setId(Androidapi::Jni::Javatypes::_di_JString id) = 0 ;
+	virtual _di_JItemScope_Builder __cdecl setImage(Androidapi::Jni::Javatypes::_di_JString image) = 0 ;
+	virtual _di_JItemScope_Builder __cdecl setInAlbum(_di_JItemScope inAlbum) = 0 ;
+	virtual _di_JItemScope_Builder __cdecl setLatitude(double latitude) = 0 ;
+	virtual _di_JItemScope_Builder __cdecl setLocation(_di_JItemScope location) = 0 ;
+	virtual _di_JItemScope_Builder __cdecl setLongitude(double longitude) = 0 ;
+	virtual _di_JItemScope_Builder __cdecl setName(Androidapi::Jni::Javatypes::_di_JString name) = 0 ;
+	virtual _di_JItemScope_Builder __cdecl setPartOfTVSeries(_di_JItemScope partOfTVSeries) = 0 ;
+	virtual _di_JItemScope_Builder __cdecl setPerformers(Androidapi::Jni::Javatypes::_di_JList performers) = 0 ;
+	virtual _di_JItemScope_Builder __cdecl setPlayerType(Androidapi::Jni::Javatypes::_di_JString playerType) = 0 ;
+	virtual _di_JItemScope_Builder __cdecl setPostOfficeBoxNumber(Androidapi::Jni::Javatypes::_di_JString postOfficeBoxNumber) = 0 ;
+	virtual _di_JItemScope_Builder __cdecl setPostalCode(Androidapi::Jni::Javatypes::_di_JString postalCode) = 0 ;
+	virtual _di_JItemScope_Builder __cdecl setRatingValue(Androidapi::Jni::Javatypes::_di_JString ratingValue) = 0 ;
+	virtual _di_JItemScope_Builder __cdecl setReviewRating(_di_JItemScope reviewRating) = 0 ;
+	virtual _di_JItemScope_Builder __cdecl setStartDate(Androidapi::Jni::Javatypes::_di_JString startDate) = 0 ;
+	virtual _di_JItemScope_Builder __cdecl setStreetAddress(Androidapi::Jni::Javatypes::_di_JString streetAddress) = 0 ;
+	virtual _di_JItemScope_Builder __cdecl setText(Androidapi::Jni::Javatypes::_di_JString text) = 0 ;
+	virtual _di_JItemScope_Builder __cdecl setThumbnail(_di_JItemScope thumbnail) = 0 ;
+	virtual _di_JItemScope_Builder __cdecl setThumbnailUrl(Androidapi::Jni::Javatypes::_di_JString thumbnailUrl) = 0 ;
+	virtual _di_JItemScope_Builder __cdecl setTickerSymbol(Androidapi::Jni::Javatypes::_di_JString tickerSymbol) = 0 ;
+	virtual _di_JItemScope_Builder __cdecl setType(Androidapi::Jni::Javatypes::_di_JString type_) = 0 ;
+	virtual _di_JItemScope_Builder __cdecl setUrl(Androidapi::Jni::Javatypes::_di_JString url) = 0 ;
+	virtual _di_JItemScope_Builder __cdecl setWidth(Androidapi::Jni::Javatypes::_di_JString width) = 0 ;
+	virtual _di_JItemScope_Builder __cdecl setWorstRating(Androidapi::Jni::Javatypes::_di_JString worstRating) = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJItemScope_Builder : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JItemScope_BuilderClass,_di_JItemScope_Builder>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JItemScope_BuilderClass,_di_JItemScope_Builder> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJItemScope_Builder() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JItemScope_BuilderClass,_di_JItemScope_Builder>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJItemScope_Builder() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{4F99F47F-21F8-4492-98A3-1EAC01C6E87A}") JMomentClass  : public JFreezableClass 
+{
+	
+};
+
+__interface  INTERFACE_UUID("{313E023A-E21E-4C51-A33B-98FD3FE5BD5C}") JMoment  : public JFreezable 
+{
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl getId() = 0 ;
+	virtual _di_JItemScope __cdecl getResult() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl getStartDate() = 0 ;
+	virtual _di_JItemScope __cdecl getTarget() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl getType() = 0 ;
+	virtual bool __cdecl hasId() = 0 ;
+	virtual bool __cdecl hasResult() = 0 ;
+	virtual bool __cdecl hasStartDate() = 0 ;
+	virtual bool __cdecl hasTarget() = 0 ;
+	virtual bool __cdecl hasType() = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJMoment : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMomentClass,_di_JMoment>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMomentClass,_di_JMoment> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJMoment() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMomentClass,_di_JMoment>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJMoment() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{02E48441-AAC0-4256-AB90-E655FE75E9C3}") JMoment_BuilderClass  : public Androidapi::Jni::Javatypes::JObjectClass 
+{
+	HIDESBASE virtual _di_JMoment_Builder __cdecl init() = 0 ;
+};
+
+__interface  INTERFACE_UUID("{7C265211-A570-404E-AE7E-D29FCD819EE9}") JMoment_Builder  : public Androidapi::Jni::Javatypes::JObject 
+{
+	virtual _di_JMoment __cdecl build() = 0 ;
+	virtual _di_JMoment_Builder __cdecl setId(Androidapi::Jni::Javatypes::_di_JString id) = 0 ;
+	virtual _di_JMoment_Builder __cdecl setResult(_di_JItemScope result) = 0 ;
+	virtual _di_JMoment_Builder __cdecl setStartDate(Androidapi::Jni::Javatypes::_di_JString startDate) = 0 ;
+	virtual _di_JMoment_Builder __cdecl setTarget(_di_JItemScope target) = 0 ;
+	virtual _di_JMoment_Builder __cdecl setType(Androidapi::Jni::Javatypes::_di_JString type_) = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJMoment_Builder : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMoment_BuilderClass,_di_JMoment_Builder>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMoment_BuilderClass,_di_JMoment_Builder> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJMoment_Builder() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMoment_BuilderClass,_di_JMoment_Builder>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJMoment_Builder() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{416E2747-6851-4A1B-8EBE-F614C92C251D}") JMomentBufferClass  : public JDataBufferClass 
+{
+	HIDESBASE virtual _di_JMomentBuffer __cdecl init(_di_JDataHolder dataHolder) = 0 ;
+};
+
+__interface  INTERFACE_UUID("{B8DEF9D3-75C0-4C86-A439-6612B998A9EA}") JMomentBuffer  : public JDataBuffer 
+{
+	HIDESBASE virtual _di_JMoment __cdecl get(int position) = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJMomentBuffer : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMomentBufferClass,_di_JMomentBuffer>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMomentBufferClass,_di_JMomentBuffer> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJMomentBuffer() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMomentBufferClass,_di_JMomentBuffer>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJMomentBuffer() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{73914393-03C0-47A6-8267-A900E6A8E1FE}") JPersonClass  : public JFreezableClass 
+{
+	
+};
+
+__interface  INTERFACE_UUID("{BA0A0480-FDFF-4DFC-BB62-5E4C7CA1693B}") JPerson  : public JFreezable 
+{
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl getAboutMe() = 0 ;
+	virtual _di_JPerson_AgeRange __cdecl getAgeRange() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl getBirthday() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl getBraggingRights() = 0 ;
+	virtual int __cdecl getCircledByCount() = 0 ;
+	virtual _di_JPerson_Cover __cdecl getCover() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl getCurrentLocation() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl getDisplayName() = 0 ;
+	virtual int __cdecl getGender() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl getId() = 0 ;
+	virtual _di_JPerson_Image __cdecl getImage() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl getLanguage() = 0 ;
+	virtual _di_JPerson_Name __cdecl getName() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl getNickname() = 0 ;
+	virtual int __cdecl getObjectType() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JList __cdecl getOrganizations() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JList __cdecl getPlacesLived() = 0 ;
+	virtual int __cdecl getPlusOneCount() = 0 ;
+	virtual int __cdecl getRelationshipStatus() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl getTagline() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl getUrl() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JList __cdecl getUrls() = 0 ;
+	virtual bool __cdecl hasAboutMe() = 0 ;
+	virtual bool __cdecl hasAgeRange() = 0 ;
+	virtual bool __cdecl hasBirthday() = 0 ;
+	virtual bool __cdecl hasBraggingRights() = 0 ;
+	virtual bool __cdecl hasCircledByCount() = 0 ;
+	virtual bool __cdecl hasCover() = 0 ;
+	virtual bool __cdecl hasCurrentLocation() = 0 ;
+	virtual bool __cdecl hasDisplayName() = 0 ;
+	virtual bool __cdecl hasGender() = 0 ;
+	virtual bool __cdecl hasId() = 0 ;
+	virtual bool __cdecl hasImage() = 0 ;
+	virtual bool __cdecl hasIsPlusUser() = 0 ;
+	virtual bool __cdecl hasLanguage() = 0 ;
+	virtual bool __cdecl hasName() = 0 ;
+	virtual bool __cdecl hasNickname() = 0 ;
+	virtual bool __cdecl hasObjectType() = 0 ;
+	virtual bool __cdecl hasOrganizations() = 0 ;
+	virtual bool __cdecl hasPlacesLived() = 0 ;
+	virtual bool __cdecl hasPlusOneCount() = 0 ;
+	virtual bool __cdecl hasRelationshipStatus() = 0 ;
+	virtual bool __cdecl hasTagline() = 0 ;
+	virtual bool __cdecl hasUrl() = 0 ;
+	virtual bool __cdecl hasUrls() = 0 ;
+	virtual bool __cdecl hasVerified() = 0 ;
+	virtual bool __cdecl isPlusUser() = 0 ;
+	virtual bool __cdecl isVerified() = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJPerson : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JPersonClass,_di_JPerson>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JPersonClass,_di_JPerson> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJPerson() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JPersonClass,_di_JPerson>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJPerson() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{755F2210-AB4C-4A53-B17E-3D9CC136167A}") JPerson_AgeRangeClass  : public JFreezableClass 
+{
+	
+};
+
+__interface  INTERFACE_UUID("{F89766AD-8608-40F8-984E-2239413488D2}") JPerson_AgeRange  : public JFreezable 
+{
+	virtual int __cdecl getMax() = 0 ;
+	virtual int __cdecl getMin() = 0 ;
+	virtual bool __cdecl hasMax() = 0 ;
+	virtual bool __cdecl hasMin() = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJPerson_AgeRange : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JPerson_AgeRangeClass,_di_JPerson_AgeRange>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JPerson_AgeRangeClass,_di_JPerson_AgeRange> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJPerson_AgeRange() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JPerson_AgeRangeClass,_di_JPerson_AgeRange>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJPerson_AgeRange() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{2A01AA50-3C30-46A4-A619-A5F534ECE9AF}") JPerson_CoverClass  : public JFreezableClass 
+{
+	
+};
+
+__interface  INTERFACE_UUID("{E13C8C39-D1B3-4E10-9548-2FEF8EF93128}") JPerson_Cover  : public JFreezable 
+{
+	virtual _di_JCover_CoverInfo __cdecl getCoverInfo() = 0 ;
+	virtual _di_JCover_CoverPhoto __cdecl getCoverPhoto() = 0 ;
+	virtual int __cdecl getLayout() = 0 ;
+	virtual bool __cdecl hasCoverInfo() = 0 ;
+	virtual bool __cdecl hasCoverPhoto() = 0 ;
+	virtual bool __cdecl hasLayout() = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJPerson_Cover : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JPerson_CoverClass,_di_JPerson_Cover>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JPerson_CoverClass,_di_JPerson_Cover> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJPerson_Cover() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JPerson_CoverClass,_di_JPerson_Cover>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJPerson_Cover() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{5B6BC276-5F96-4282-98A4-9790D72CAF54}") JCover_CoverInfoClass  : public JFreezableClass 
+{
+	
+};
+
+__interface  INTERFACE_UUID("{006DC380-FDF0-4FA3-9F8C-217EA45B4B5E}") JCover_CoverInfo  : public JFreezable 
+{
+	virtual int __cdecl getLeftImageOffset() = 0 ;
+	virtual int __cdecl getTopImageOffset() = 0 ;
+	virtual bool __cdecl hasLeftImageOffset() = 0 ;
+	virtual bool __cdecl hasTopImageOffset() = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJCover_CoverInfo : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JCover_CoverInfoClass,_di_JCover_CoverInfo>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JCover_CoverInfoClass,_di_JCover_CoverInfo> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJCover_CoverInfo() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JCover_CoverInfoClass,_di_JCover_CoverInfo>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJCover_CoverInfo() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{5E73FFC1-DF5D-41C2-A163-0673962BE9AE}") JCover_CoverPhotoClass  : public JFreezableClass 
+{
+	
+};
+
+__interface  INTERFACE_UUID("{33A3B764-B1B4-4E0F-B4C7-DAD6578FBCCD}") JCover_CoverPhoto  : public JFreezable 
+{
+	virtual int __cdecl getHeight() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl getUrl() = 0 ;
+	virtual int __cdecl getWidth() = 0 ;
+	virtual bool __cdecl hasHeight() = 0 ;
+	virtual bool __cdecl hasUrl() = 0 ;
+	virtual bool __cdecl hasWidth() = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJCover_CoverPhoto : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JCover_CoverPhotoClass,_di_JCover_CoverPhoto>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JCover_CoverPhotoClass,_di_JCover_CoverPhoto> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJCover_CoverPhoto() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JCover_CoverPhotoClass,_di_JCover_CoverPhoto>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJCover_CoverPhoto() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{5E0959E7-198F-427F-A926-C97B63E79B11}") JCover_LayoutClass  : public Androidapi::Jni::Javatypes::JObjectClass 
+{
+	virtual int __cdecl _GetBANNER() = 0 ;
+	__property int BANNER = {read=_GetBANNER};
+};
+
+__interface  INTERFACE_UUID("{E7631A78-F831-4040-ACA8-C44B23E692AC}") JCover_Layout  : public Androidapi::Jni::Javatypes::JObject 
+{
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJCover_Layout : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JCover_LayoutClass,_di_JCover_Layout>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JCover_LayoutClass,_di_JCover_Layout> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJCover_Layout() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JCover_LayoutClass,_di_JCover_Layout>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJCover_Layout() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{C5EFF326-3D1E-47C0-8380-08A20A233161}") JPerson_GenderClass  : public Androidapi::Jni::Javatypes::JObjectClass 
+{
+	virtual int __cdecl _GetFEMALE() = 0 ;
+	virtual int __cdecl _GetMALE() = 0 ;
+	virtual int __cdecl _GetOTHER() = 0 ;
+	__property int FEMALE = {read=_GetFEMALE};
+	__property int MALE = {read=_GetMALE};
+	__property int OTHER = {read=_GetOTHER};
+};
+
+__interface  INTERFACE_UUID("{281D7398-5B5B-48D1-B017-BC092805F5AF}") JPerson_Gender  : public Androidapi::Jni::Javatypes::JObject 
+{
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJPerson_Gender : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JPerson_GenderClass,_di_JPerson_Gender>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JPerson_GenderClass,_di_JPerson_Gender> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJPerson_Gender() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JPerson_GenderClass,_di_JPerson_Gender>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJPerson_Gender() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{6DB0FFAC-5A6D-4DAB-A867-62C95962B79A}") JPerson_ImageClass  : public JFreezableClass 
+{
+	
+};
+
+__interface  INTERFACE_UUID("{2EAA856D-748D-46BE-91E6-1B6ECF906959}") JPerson_Image  : public JFreezable 
+{
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl getUrl() = 0 ;
+	virtual bool __cdecl hasUrl() = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJPerson_Image : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JPerson_ImageClass,_di_JPerson_Image>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JPerson_ImageClass,_di_JPerson_Image> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJPerson_Image() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JPerson_ImageClass,_di_JPerson_Image>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJPerson_Image() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{1F3419CD-2F77-4055-9DF0-19AF842C36F3}") JPerson_NameClass  : public JFreezableClass 
+{
+	
+};
+
+__interface  INTERFACE_UUID("{1524AC78-0D17-4E1F-9374-6DAE864F2F3D}") JPerson_Name  : public JFreezable 
+{
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl getFamilyName() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl getFormatted() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl getGivenName() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl getHonorificPrefix() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl getHonorificSuffix() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl getMiddleName() = 0 ;
+	virtual bool __cdecl hasFamilyName() = 0 ;
+	virtual bool __cdecl hasFormatted() = 0 ;
+	virtual bool __cdecl hasGivenName() = 0 ;
+	virtual bool __cdecl hasHonorificPrefix() = 0 ;
+	virtual bool __cdecl hasHonorificSuffix() = 0 ;
+	virtual bool __cdecl hasMiddleName() = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJPerson_Name : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JPerson_NameClass,_di_JPerson_Name>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JPerson_NameClass,_di_JPerson_Name> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJPerson_Name() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JPerson_NameClass,_di_JPerson_Name>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJPerson_Name() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{F7264D9D-1876-4E97-ACA0-A612669722C4}") JPerson_ObjectTypeClass  : public Androidapi::Jni::Javatypes::JObjectClass 
+{
+	virtual int __cdecl _GetPAGE() = 0 ;
+	virtual int __cdecl _GetPERSON() = 0 ;
+	__property int PAGE = {read=_GetPAGE};
+	__property int PERSON = {read=_GetPERSON};
+};
+
+__interface  INTERFACE_UUID("{5286AD08-0594-46C2-91CC-A7BF5AF29B32}") JPerson_ObjectType  : public Androidapi::Jni::Javatypes::JObject 
+{
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJPerson_ObjectType : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JPerson_ObjectTypeClass,_di_JPerson_ObjectType>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JPerson_ObjectTypeClass,_di_JPerson_ObjectType> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJPerson_ObjectType() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JPerson_ObjectTypeClass,_di_JPerson_ObjectType>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJPerson_ObjectType() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{518FDD9A-EFE3-4253-8BE6-7EF263AD3213}") JPerson_OrganizationsClass  : public JFreezableClass 
+{
+	
+};
+
+__interface  INTERFACE_UUID("{E6C4E8DE-9009-459D-956F-6C8440A3D70B}") JPerson_Organizations  : public JFreezable 
+{
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl getDepartment() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl getDescription() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl getEndDate() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl getLocation() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl getName() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl getStartDate() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl getTitle() = 0 ;
+	virtual int __cdecl getType() = 0 ;
+	virtual bool __cdecl hasDepartment() = 0 ;
+	virtual bool __cdecl hasDescription() = 0 ;
+	virtual bool __cdecl hasEndDate() = 0 ;
+	virtual bool __cdecl hasLocation() = 0 ;
+	virtual bool __cdecl hasName() = 0 ;
+	virtual bool __cdecl hasPrimary() = 0 ;
+	virtual bool __cdecl hasStartDate() = 0 ;
+	virtual bool __cdecl hasTitle() = 0 ;
+	virtual bool __cdecl hasType() = 0 ;
+	virtual bool __cdecl isPrimary() = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJPerson_Organizations : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JPerson_OrganizationsClass,_di_JPerson_Organizations>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JPerson_OrganizationsClass,_di_JPerson_Organizations> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJPerson_Organizations() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JPerson_OrganizationsClass,_di_JPerson_Organizations>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJPerson_Organizations() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{F3B7E31B-1878-4F86-BDF0-14672C1CB488}") JOrganizations_TypeClass  : public Androidapi::Jni::Javatypes::JObjectClass 
+{
+	virtual int __cdecl _GetSCHOOL() = 0 ;
+	virtual int __cdecl _GetWORK() = 0 ;
+	__property int SCHOOL = {read=_GetSCHOOL};
+	__property int WORK = {read=_GetWORK};
+};
+
+__interface  INTERFACE_UUID("{D2D199DB-8AE7-41D8-BE84-4BFA75045008}") JOrganizations_Type  : public Androidapi::Jni::Javatypes::JObject 
+{
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJOrganizations_Type : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JOrganizations_TypeClass,_di_JOrganizations_Type>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JOrganizations_TypeClass,_di_JOrganizations_Type> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJOrganizations_Type() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JOrganizations_TypeClass,_di_JOrganizations_Type>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJOrganizations_Type() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{92550503-05E8-4307-AEC2-A3BFD35FEE3C}") JPerson_PlacesLivedClass  : public JFreezableClass 
+{
+	
+};
+
+__interface  INTERFACE_UUID("{087C2C27-6FA3-4A64-A848-530978D04BD9}") JPerson_PlacesLived  : public JFreezable 
+{
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl getValue() = 0 ;
+	virtual bool __cdecl hasPrimary() = 0 ;
+	virtual bool __cdecl hasValue() = 0 ;
+	virtual bool __cdecl isPrimary() = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJPerson_PlacesLived : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JPerson_PlacesLivedClass,_di_JPerson_PlacesLived>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JPerson_PlacesLivedClass,_di_JPerson_PlacesLived> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJPerson_PlacesLived() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JPerson_PlacesLivedClass,_di_JPerson_PlacesLived>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJPerson_PlacesLived() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{16F8D0BC-2ECD-47A3-810F-425D0B22BC00}") JPerson_RelationshipStatusClass  : public Androidapi::Jni::Javatypes::JObjectClass 
+{
+	virtual int __cdecl _GetENGAGED() = 0 ;
+	virtual int __cdecl _GetIN_A_RELATIONSHIP() = 0 ;
+	virtual int __cdecl _GetIN_CIVIL_UNION() = 0 ;
+	virtual int __cdecl _GetIN_DOMESTIC_PARTNERSHIP() = 0 ;
+	virtual int __cdecl _GetITS_COMPLICATED() = 0 ;
+	virtual int __cdecl _GetMARRIED() = 0 ;
+	virtual int __cdecl _GetOPEN_RELATIONSHIP() = 0 ;
+	virtual int __cdecl _GetSINGLE() = 0 ;
+	virtual int __cdecl _GetWIDOWED() = 0 ;
+	__property int ENGAGED = {read=_GetENGAGED};
+	__property int IN_A_RELATIONSHIP = {read=_GetIN_A_RELATIONSHIP};
+	__property int IN_CIVIL_UNION = {read=_GetIN_CIVIL_UNION};
+	__property int IN_DOMESTIC_PARTNERSHIP = {read=_GetIN_DOMESTIC_PARTNERSHIP};
+	__property int ITS_COMPLICATED = {read=_GetITS_COMPLICATED};
+	__property int MARRIED = {read=_GetMARRIED};
+	__property int OPEN_RELATIONSHIP = {read=_GetOPEN_RELATIONSHIP};
+	__property int SINGLE = {read=_GetSINGLE};
+	__property int WIDOWED = {read=_GetWIDOWED};
+};
+
+__interface  INTERFACE_UUID("{16665CEF-172C-493B-A0E3-A300E3569328}") JPerson_RelationshipStatus  : public Androidapi::Jni::Javatypes::JObject 
+{
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJPerson_RelationshipStatus : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JPerson_RelationshipStatusClass,_di_JPerson_RelationshipStatus>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JPerson_RelationshipStatusClass,_di_JPerson_RelationshipStatus> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJPerson_RelationshipStatus() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JPerson_RelationshipStatusClass,_di_JPerson_RelationshipStatus>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJPerson_RelationshipStatus() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{F4F0CAD5-A2F2-4749-BA4B-294B87D8827A}") JPerson_UrlsClass  : public JFreezableClass 
+{
+	
+};
+
+__interface  INTERFACE_UUID("{75FAAEDA-782C-46FA-9A33-33C1D2CE45CB}") JPerson_Urls  : public JFreezable 
+{
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl getLabel() = 0 ;
+	virtual int __cdecl getType() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl getValue() = 0 ;
+	virtual bool __cdecl hasLabel() = 0 ;
+	virtual bool __cdecl hasType() = 0 ;
+	virtual bool __cdecl hasValue() = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJPerson_Urls : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JPerson_UrlsClass,_di_JPerson_Urls>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JPerson_UrlsClass,_di_JPerson_Urls> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJPerson_Urls() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JPerson_UrlsClass,_di_JPerson_Urls>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJPerson_Urls() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{FCDE35BA-BA1A-4AAB-A7B8-BA4BA79C6116}") JUrls_TypeClass  : public Androidapi::Jni::Javatypes::JObjectClass 
+{
+	virtual int __cdecl _GetCONTRIBUTOR() = 0 ;
+	virtual int __cdecl _GetOTHER() = 0 ;
+	virtual int __cdecl _GetOTHER_PROFILE() = 0 ;
+	virtual int __cdecl _GetWEBSITE() = 0 ;
+	__property int CONTRIBUTOR = {read=_GetCONTRIBUTOR};
+	__property int OTHER = {read=_GetOTHER};
+	__property int OTHER_PROFILE = {read=_GetOTHER_PROFILE};
+	__property int WEBSITE = {read=_GetWEBSITE};
+};
+
+__interface  INTERFACE_UUID("{B7224F92-BC58-4572-88F0-8AA7266F7B88}") JUrls_Type  : public Androidapi::Jni::Javatypes::JObject 
+{
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJUrls_Type : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JUrls_TypeClass,_di_JUrls_Type>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JUrls_TypeClass,_di_JUrls_Type> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJUrls_Type() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JUrls_TypeClass,_di_JUrls_Type>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJUrls_Type() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{4AEB7532-3916-4C78-BD28-EDEF098AD60E}") JPersonBufferClass  : public JDataBufferClass 
+{
+	HIDESBASE virtual _di_JPersonBuffer __cdecl init(_di_JDataHolder dataHolder) = 0 ;
+};
+
+__interface  INTERFACE_UUID("{E90B2976-B2D6-4A8E-979A-6A26C86DAC66}") JPersonBuffer  : public JDataBuffer 
+{
+	HIDESBASE virtual _di_JPerson __cdecl get(int position) = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJPersonBuffer : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JPersonBufferClass,_di_JPersonBuffer>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JPersonBufferClass,_di_JPersonBuffer> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJPersonBuffer() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JPersonBufferClass,_di_JPersonBuffer>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJPersonBuffer() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{13D42C8A-CC12-4879-86A5-D097640A9ACB}") JContainerClass  : public Androidapi::Jni::Javatypes::JObjectClass 
+{
+	
+};
+
+__interface  INTERFACE_UUID("{CD237D96-0AF8-4906-A086-4431D98EAB8B}") JContainer  : public Androidapi::Jni::Javatypes::JObject 
+{
+	virtual bool __cdecl getBoolean(Androidapi::Jni::Javatypes::_di_JString key) = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl getContainerId() = 0 ;
+	virtual double __cdecl getDouble(Androidapi::Jni::Javatypes::_di_JString key) = 0 ;
+	virtual __int64 __cdecl getLastRefreshTime() = 0 ;
+	virtual __int64 __cdecl getLong(Androidapi::Jni::Javatypes::_di_JString key) = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl getString(Androidapi::Jni::Javatypes::_di_JString key) = 0 ;
+	virtual bool __cdecl isDefault() = 0 ;
+	virtual void __cdecl registerFunctionCallMacroCallback(Androidapi::Jni::Javatypes::_di_JString customMacroName, _di_JContainer_FunctionCallMacroCallback customMacroCallback) = 0 ;
+	virtual void __cdecl registerFunctionCallTagCallback(Androidapi::Jni::Javatypes::_di_JString customTagName, _di_JContainer_FunctionCallTagCallback customTagCallback) = 0 ;
+	virtual void __cdecl unregisterFunctionCallMacroCallback(Androidapi::Jni::Javatypes::_di_JString customMacroName) = 0 ;
+	virtual void __cdecl unregisterFunctionCallTagCallback(Androidapi::Jni::Javatypes::_di_JString customTagName) = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJContainer : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JContainerClass,_di_JContainer>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JContainerClass,_di_JContainer> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJContainer() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JContainerClass,_di_JContainer>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJContainer() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{485AB590-5BDD-4D8A-9C78-0FEDDF841BE9}") JContainer_FunctionCallMacroCallbackClass  : public Androidapi::Jnibridge::IJavaClass 
+{
+	
+};
+
+__interface  INTERFACE_UUID("{F4067FF1-6061-4523-B3FB-2D9777A8FA15}") JContainer_FunctionCallMacroCallback  : public Androidapi::Jnibridge::IJavaInstance 
+{
+	virtual Androidapi::Jni::Javatypes::_di_JObject __cdecl getValue(Androidapi::Jni::Javatypes::_di_JString P1, Androidapi::Jni::Javatypes::_di_JMap P2) = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJContainer_FunctionCallMacroCallback : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JContainer_FunctionCallMacroCallbackClass,_di_JContainer_FunctionCallMacroCallback>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JContainer_FunctionCallMacroCallbackClass,_di_JContainer_FunctionCallMacroCallback> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJContainer_FunctionCallMacroCallback() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JContainer_FunctionCallMacroCallbackClass,_di_JContainer_FunctionCallMacroCallback>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJContainer_FunctionCallMacroCallback() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{20439BC6-EE43-46F4-A936-A888E7F926B4}") JContainer_FunctionCallTagCallbackClass  : public Androidapi::Jnibridge::IJavaClass 
+{
+	
+};
+
+__interface  INTERFACE_UUID("{85D4D602-8D35-4B7E-944D-5AD730F45C90}") JContainer_FunctionCallTagCallback  : public Androidapi::Jnibridge::IJavaInstance 
+{
+	virtual void __cdecl execute(Androidapi::Jni::Javatypes::_di_JString P1, Androidapi::Jni::Javatypes::_di_JMap P2) = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJContainer_FunctionCallTagCallback : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JContainer_FunctionCallTagCallbackClass,_di_JContainer_FunctionCallTagCallback>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JContainer_FunctionCallTagCallbackClass,_di_JContainer_FunctionCallTagCallback> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJContainer_FunctionCallTagCallback() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JContainer_FunctionCallTagCallbackClass,_di_JContainer_FunctionCallTagCallback>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJContainer_FunctionCallTagCallback() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{335F9D22-4ABC-49B5-8C5A-71C48797785C}") JContainerHolderClass  : public JReleasableClass 
+{
+	
+};
+
+__interface  INTERFACE_UUID("{02879145-964B-4057-8DE6-275AB693AB2D}") JContainerHolder  : public JReleasable 
+{
+	virtual _di_JContainer __cdecl getContainer() = 0 ;
+	virtual void __cdecl refresh() = 0 ;
+	virtual void __cdecl setContainerAvailableListener(_di_JContainerHolder_ContainerAvailableListener P1) = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJContainerHolder : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JContainerHolderClass,_di_JContainerHolder>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JContainerHolderClass,_di_JContainerHolder> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJContainerHolder() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JContainerHolderClass,_di_JContainerHolder>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJContainerHolder() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{0AD01FA3-2890-4255-87FC-3C8BD2BAC95C}") JContainerHolder_ContainerAvailableListenerClass  : public Androidapi::Jnibridge::IJavaClass 
+{
+	
+};
+
+__interface  INTERFACE_UUID("{F5BB73DB-4803-48F7-96FA-EF480247B297}") JContainerHolder_ContainerAvailableListener  : public Androidapi::Jnibridge::IJavaInstance 
+{
+	virtual void __cdecl onContainerAvailable(_di_JContainerHolder P1, Androidapi::Jni::Javatypes::_di_JString P2) = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJContainerHolder_ContainerAvailableListener : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JContainerHolder_ContainerAvailableListenerClass,_di_JContainerHolder_ContainerAvailableListener>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JContainerHolder_ContainerAvailableListenerClass,_di_JContainerHolder_ContainerAvailableListener> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJContainerHolder_ContainerAvailableListener() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JContainerHolder_ContainerAvailableListenerClass,_di_JContainerHolder_ContainerAvailableListener>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJContainerHolder_ContainerAvailableListener() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{EEF9D7D5-1942-4FF5-ABD7-6A714657E5D5}") JDataLayerClass  : public Androidapi::Jni::Javatypes::JObjectClass 
+{
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetEVENT_KEY() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JObject __cdecl _GetOBJECT_NOT_PRESENT() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JList __cdecl listOf(Androidapi::Jnibridge::TJavaObjectArray__1<Androidapi::Jni::Javatypes::_di_JObject>* objects) = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JMap __cdecl mapOf(Androidapi::Jnibridge::TJavaObjectArray__1<Androidapi::Jni::Javatypes::_di_JObject>* objects) = 0 ;
+	__property Androidapi::Jni::Javatypes::_di_JString EVENT_KEY = {read=_GetEVENT_KEY};
+	__property Androidapi::Jni::Javatypes::_di_JObject OBJECT_NOT_PRESENT = {read=_GetOBJECT_NOT_PRESENT};
+};
+
+__interface  INTERFACE_UUID("{A4A6A3D2-4262-4BF4-A5B8-998408F6C99A}") JDataLayer  : public Androidapi::Jni::Javatypes::JObject 
+{
+	virtual Androidapi::Jni::Javatypes::_di_JObject __cdecl get(Androidapi::Jni::Javatypes::_di_JString key) = 0 ;
+	virtual void __cdecl push(Androidapi::Jni::Javatypes::_di_JMap update) = 0 /* overload */;
+	virtual void __cdecl push(Androidapi::Jni::Javatypes::_di_JString key, Androidapi::Jni::Javatypes::_di_JObject value) = 0 /* overload */;
+	virtual void __cdecl pushEvent(Androidapi::Jni::Javatypes::_di_JString eventName, Androidapi::Jni::Javatypes::_di_JMap update) = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJDataLayer : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JDataLayerClass,_di_JDataLayer>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JDataLayerClass,_di_JDataLayer> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJDataLayer() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JDataLayerClass,_di_JDataLayer>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJDataLayer() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{5587357D-D93E-4F59-A5AC-AFEC11FE6C55}") JInstallReferrerReceiverClass  : public Androidapi::Jni::Graphicscontentviewtext::JBroadcastReceiverClass 
+{
+	HIDESBASE virtual _di_JInstallReferrerReceiver __cdecl init() = 0 ;
+};
+
+__interface  INTERFACE_UUID("{3D002A39-17ED-4CA2-9559-440DDDCE210B}") JInstallReferrerReceiver  : public Androidapi::Jni::Graphicscontentviewtext::JBroadcastReceiver 
+{
+	HIDESBASE virtual void __cdecl onReceive(Androidapi::Jni::Graphicscontentviewtext::_di_JContext context, Androidapi::Jni::Graphicscontentviewtext::_di_JIntent intent) = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJInstallReferrerReceiver : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JInstallReferrerReceiverClass,_di_JInstallReferrerReceiver>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JInstallReferrerReceiverClass,_di_JInstallReferrerReceiver> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJInstallReferrerReceiver() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JInstallReferrerReceiverClass,_di_JInstallReferrerReceiver>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJInstallReferrerReceiver() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{3B3C22BC-FC4C-47E0-BC33-7EEB6DEFE319}") JInstallReferrerServiceClass  : public Androidapi::Jni::App::JIntentServiceClass 
+{
+	HIDESBASE virtual _di_JInstallReferrerService __cdecl init() = 0 /* overload */;
+	HIDESBASE virtual _di_JInstallReferrerService __cdecl init(Androidapi::Jni::Javatypes::_di_JString name) = 0 /* overload */;
+};
+
+__interface  INTERFACE_UUID("{A69BD9BA-391B-415B-BFD6-7DB066917D97}") JInstallReferrerService  : public Androidapi::Jni::App::JIntentService 
+{
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJInstallReferrerService : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JInstallReferrerServiceClass,_di_JInstallReferrerService>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JInstallReferrerServiceClass,_di_JInstallReferrerService> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJInstallReferrerService() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JInstallReferrerServiceClass,_di_JInstallReferrerService>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJInstallReferrerService() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{8D0A3E1C-3597-4AD0-8417-2988199FEAEB}") JPreviewActivityClass  : public Androidapi::Jni::App::JActivityClass 
+{
+	HIDESBASE virtual _di_JPreviewActivity __cdecl init() = 0 ;
+};
+
+__interface  INTERFACE_UUID("{7F3FC8F2-6FBE-47E2-BB05-F85BE168246D}") JPreviewActivity  : public Androidapi::Jni::App::JActivity 
+{
+	HIDESBASE virtual void __cdecl onCreate(Androidapi::Jni::Os::_di_JBundle savedInstanceState) = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJPreviewActivity : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JPreviewActivityClass,_di_JPreviewActivity>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JPreviewActivityClass,_di_JPreviewActivity> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJPreviewActivity() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JPreviewActivityClass,_di_JPreviewActivity>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJPreviewActivity() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{6C3D6F8E-D79D-426D-9BE4-891CBA998101}") JTagManagerClass  : public Androidapi::Jni::Javatypes::JObjectClass 
+{
+	virtual _di_JTagManager __cdecl getInstance(Androidapi::Jni::Graphicscontentviewtext::_di_JContext context) = 0 ;
+};
+
+__interface  INTERFACE_UUID("{A192709D-F3F8-4D98-8039-41E91B79026D}") JTagManager  : public Androidapi::Jni::Javatypes::JObject 
+{
+	virtual _di_JDataLayer __cdecl getDataLayer() = 0 ;
+	virtual _di_JPendingResult __cdecl loadContainerDefaultOnly(Androidapi::Jni::Javatypes::_di_JString containerId, int defaultContainerResourceId) = 0 /* overload */;
+	virtual _di_JPendingResult __cdecl loadContainerDefaultOnly(Androidapi::Jni::Javatypes::_di_JString containerId, int defaultContainerResourceId, Androidapi::Jni::Os::_di_JHandler handler) = 0 /* overload */;
+	virtual _di_JPendingResult __cdecl loadContainerPreferFresh(Androidapi::Jni::Javatypes::_di_JString containerId, int defaultContainerResourceId) = 0 /* overload */;
+	virtual _di_JPendingResult __cdecl loadContainerPreferFresh(Androidapi::Jni::Javatypes::_di_JString containerId, int defaultContainerResourceId, Androidapi::Jni::Os::_di_JHandler handler) = 0 /* overload */;
+	virtual _di_JPendingResult __cdecl loadContainerPreferNonDefault(Androidapi::Jni::Javatypes::_di_JString containerId, int defaultContainerResourceId) = 0 /* overload */;
+	virtual _di_JPendingResult __cdecl loadContainerPreferNonDefault(Androidapi::Jni::Javatypes::_di_JString containerId, int defaultContainerResourceId, Androidapi::Jni::Os::_di_JHandler handler) = 0 /* overload */;
+	virtual void __cdecl setVerboseLoggingEnabled(bool enableVerboseLogging) = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJTagManager : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JTagManagerClass,_di_JTagManager>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JTagManagerClass,_di_JTagManager> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJTagManager() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JTagManagerClass,_di_JTagManager>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJTagManager() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{39C12781-F4F3-4349-A2D3-A49142481D4D}") Jwallet_AddressClass  : public Androidapi::Jni::Javatypes::JObjectClass 
+{
+	virtual Androidapi::Jni::Os::_di_JParcelable_Creator __cdecl _GetCREATOR() = 0 ;
+	__property Androidapi::Jni::Os::_di_JParcelable_Creator CREATOR = {read=_GetCREATOR};
+};
+
+__interface  INTERFACE_UUID("{B4F52D95-46DC-4740-B373-5212AD663A61}") Jwallet_Address  : public Androidapi::Jni::Javatypes::JObject 
+{
+	virtual int __cdecl describeContents() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl getAddress1() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl getAddress2() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl getAddress3() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl getCity() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl getCompanyName() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl getCountryCode() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl getName() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl getPhoneNumber() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl getPostalCode() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl getState() = 0 ;
+	virtual int __cdecl getVersionCode() = 0 ;
+	virtual bool __cdecl isPostBox() = 0 ;
+	virtual void __cdecl writeToParcel(Androidapi::Jni::Os::_di_JParcel out_, int flags) = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJwallet_Address : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_Jwallet_AddressClass,_di_Jwallet_Address>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_Jwallet_AddressClass,_di_Jwallet_Address> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJwallet_Address() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_Jwallet_AddressClass,_di_Jwallet_Address>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJwallet_Address() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{26AAB1B5-B511-4AAA-B0DF-0A0612A41EF7}") JCartClass  : public Androidapi::Jni::Javatypes::JObjectClass 
+{
+	virtual Androidapi::Jni::Os::_di_JParcelable_Creator __cdecl _GetCREATOR() = 0 ;
+	virtual _di_JCart_Builder __cdecl newBuilder() = 0 ;
+	__property Androidapi::Jni::Os::_di_JParcelable_Creator CREATOR = {read=_GetCREATOR};
+};
+
+__interface  INTERFACE_UUID("{3C3D2A7B-1A86-4DA4-ACBE-5EB51278A239}") JCart  : public Androidapi::Jni::Javatypes::JObject 
+{
+	virtual int __cdecl describeContents() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl getCurrencyCode() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JArrayList __cdecl getLineItems() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl getTotalPrice() = 0 ;
+	virtual int __cdecl getVersionCode() = 0 ;
+	virtual void __cdecl writeToParcel(Androidapi::Jni::Os::_di_JParcel dest, int flags) = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJCart : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JCartClass,_di_JCart>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JCartClass,_di_JCart> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJCart() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JCartClass,_di_JCart>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJCart() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{1376ACBA-687D-4934-9688-DC123BC32E49}") JCart_BuilderClass  : public Androidapi::Jni::Javatypes::JObjectClass 
+{
+	
+};
+
+__interface  INTERFACE_UUID("{A4F94163-6853-49DF-93CB-8A369E1D053E}") JCart_Builder  : public Androidapi::Jni::Javatypes::JObject 
+{
+	virtual _di_JCart_Builder __cdecl addLineItem(_di_JLineItem lineItem) = 0 ;
+	virtual _di_JCart __cdecl build() = 0 ;
+	virtual _di_JCart_Builder __cdecl setCurrencyCode(Androidapi::Jni::Javatypes::_di_JString currencyCode) = 0 ;
+	virtual _di_JCart_Builder __cdecl setLineItems(Androidapi::Jni::Javatypes::_di_JList lineItems) = 0 ;
+	virtual _di_JCart_Builder __cdecl setTotalPrice(Androidapi::Jni::Javatypes::_di_JString totalPrice) = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJCart_Builder : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JCart_BuilderClass,_di_JCart_Builder>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JCart_BuilderClass,_di_JCart_Builder> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJCart_Builder() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JCart_BuilderClass,_di_JCart_Builder>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJCart_Builder() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{4997A236-245A-4B17-8899-61486D997BA5}") Jwallet_CountrySpecificationClass  : public Androidapi::Jni::Javatypes::JObjectClass 
+{
+	virtual Androidapi::Jni::Os::_di_JParcelable_Creator __cdecl _GetCREATOR() = 0 ;
+	HIDESBASE virtual _di_Jwallet_CountrySpecification __cdecl init(Androidapi::Jni::Javatypes::_di_JString countryCode) = 0 /* overload */;
+	__property Androidapi::Jni::Os::_di_JParcelable_Creator CREATOR = {read=_GetCREATOR};
+};
+
+__interface  INTERFACE_UUID("{DE1D89EF-8B1A-4AC2-8943-043DCAD14641}") Jwallet_CountrySpecification  : public Androidapi::Jni::Javatypes::JObject 
+{
+	virtual int __cdecl describeContents() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl getCountryCode() = 0 ;
+	virtual int __cdecl getVersionCode() = 0 ;
+	virtual void __cdecl writeToParcel(Androidapi::Jni::Os::_di_JParcel dest, int flags) = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJwallet_CountrySpecification : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_Jwallet_CountrySpecificationClass,_di_Jwallet_CountrySpecification>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_Jwallet_CountrySpecificationClass,_di_Jwallet_CountrySpecification> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJwallet_CountrySpecification() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_Jwallet_CountrySpecificationClass,_di_Jwallet_CountrySpecification>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJwallet_CountrySpecification() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{9597C68F-0413-4E15-B626-2DF40B6FF267}") JEnableWalletOptimizationReceiverClass  : public Androidapi::Jni::Graphicscontentviewtext::JBroadcastReceiverClass 
+{
+	HIDESBASE virtual _di_JEnableWalletOptimizationReceiver __cdecl init() = 0 ;
+};
+
+__interface  INTERFACE_UUID("{E74CC918-923A-4333-8FB8-650BE14BAD2E}") JEnableWalletOptimizationReceiver  : public Androidapi::Jni::Graphicscontentviewtext::JBroadcastReceiver 
+{
+	HIDESBASE virtual void __cdecl onReceive(Androidapi::Jni::Graphicscontentviewtext::_di_JContext context, Androidapi::Jni::Graphicscontentviewtext::_di_JIntent intent) = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJEnableWalletOptimizationReceiver : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JEnableWalletOptimizationReceiverClass,_di_JEnableWalletOptimizationReceiver>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JEnableWalletOptimizationReceiverClass,_di_JEnableWalletOptimizationReceiver> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJEnableWalletOptimizationReceiver() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JEnableWalletOptimizationReceiverClass,_di_JEnableWalletOptimizationReceiver>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJEnableWalletOptimizationReceiver() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{D7E7B05D-5A06-44C9-93FF-1C31E27266B9}") JFullWalletClass  : public Androidapi::Jni::Javatypes::JObjectClass 
+{
+	virtual Androidapi::Jni::Os::_di_JParcelable_Creator __cdecl _GetCREATOR() = 0 ;
+	__property Androidapi::Jni::Os::_di_JParcelable_Creator CREATOR = {read=_GetCREATOR};
+};
+
+__interface  INTERFACE_UUID("{E8A45B58-79DA-4038-BCB3-23D9D0801F23}") JFullWallet  : public Androidapi::Jni::Javatypes::JObject 
+{
+	virtual int __cdecl describeContents() = 0 ;
+	virtual _di_Jwallet_Address __cdecl getBillingAddress() = 0 ;
+	virtual _di_JUserAddress __cdecl getBuyerBillingAddress() = 0 ;
+	virtual _di_JUserAddress __cdecl getBuyerShippingAddress() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl getEmail() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl getGoogleTransactionId() = 0 ;
+	virtual Androidapi::Jnibridge::TJavaObjectArray__1<_di_JInstrumentInfo>* __cdecl getInstrumentInfos() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl getMerchantTransactionId() = 0 ;
+	virtual Androidapi::Jnibridge::TJavaObjectArray__1<Androidapi::Jni::Javatypes::_di_JString>* __cdecl getPaymentDescriptions() = 0 ;
+	virtual _di_JProxyCard __cdecl getProxyCard() = 0 ;
+	virtual _di_Jwallet_Address __cdecl getShippingAddress() = 0 ;
+	virtual int __cdecl getVersionCode() = 0 ;
+	virtual void __cdecl writeToParcel(Androidapi::Jni::Os::_di_JParcel out_, int flags) = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJFullWallet : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JFullWalletClass,_di_JFullWallet>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JFullWalletClass,_di_JFullWallet> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJFullWallet() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JFullWalletClass,_di_JFullWallet>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJFullWallet() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{A357FE59-2715-4A82-A348-50FA98BDB1FD}") JFullWalletRequestClass  : public Androidapi::Jni::Javatypes::JObjectClass 
+{
+	virtual Androidapi::Jni::Os::_di_JParcelable_Creator __cdecl _GetCREATOR() = 0 ;
+	virtual _di_JFullWalletRequest_Builder __cdecl newBuilder() = 0 ;
+	__property Androidapi::Jni::Os::_di_JParcelable_Creator CREATOR = {read=_GetCREATOR};
+};
+
+__interface  INTERFACE_UUID("{82DE62CE-5CC6-41C4-A753-2E6E742EB44D}") JFullWalletRequest  : public Androidapi::Jni::Javatypes::JObject 
+{
+	virtual int __cdecl describeContents() = 0 ;
+	virtual _di_JCart __cdecl getCart() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl getGoogleTransactionId() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl getMerchantTransactionId() = 0 ;
+	virtual int __cdecl getVersionCode() = 0 ;
+	virtual void __cdecl writeToParcel(Androidapi::Jni::Os::_di_JParcel dest, int flags) = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJFullWalletRequest : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JFullWalletRequestClass,_di_JFullWalletRequest>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JFullWalletRequestClass,_di_JFullWalletRequest> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJFullWalletRequest() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JFullWalletRequestClass,_di_JFullWalletRequest>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJFullWalletRequest() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{E09F8266-2115-4FAD-8B01-396EE097479F}") JFullWalletRequest_BuilderClass  : public Androidapi::Jni::Javatypes::JObjectClass 
+{
+	
+};
+
+__interface  INTERFACE_UUID("{9CA179E6-EFD1-47D9-B3AC-07310F0C4D78}") JFullWalletRequest_Builder  : public Androidapi::Jni::Javatypes::JObject 
+{
+	virtual _di_JFullWalletRequest __cdecl build() = 0 ;
+	virtual _di_JFullWalletRequest_Builder __cdecl setCart(_di_JCart cart) = 0 ;
+	virtual _di_JFullWalletRequest_Builder __cdecl setGoogleTransactionId(Androidapi::Jni::Javatypes::_di_JString googleTransactionId) = 0 ;
+	virtual _di_JFullWalletRequest_Builder __cdecl setMerchantTransactionId(Androidapi::Jni::Javatypes::_di_JString merchantTransactionId) = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJFullWalletRequest_Builder : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JFullWalletRequest_BuilderClass,_di_JFullWalletRequest_Builder>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JFullWalletRequest_BuilderClass,_di_JFullWalletRequest_Builder> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJFullWalletRequest_Builder() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JFullWalletRequest_BuilderClass,_di_JFullWalletRequest_Builder>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJFullWalletRequest_Builder() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{3791B20A-AC75-446B-8572-3A5BFD82911C}") JInstrumentInfoClass  : public Androidapi::Jni::Javatypes::JObjectClass 
+{
+	virtual Androidapi::Jni::Os::_di_JParcelable_Creator __cdecl _GetCREATOR() = 0 ;
+	__property Androidapi::Jni::Os::_di_JParcelable_Creator CREATOR = {read=_GetCREATOR};
+};
+
+__interface  INTERFACE_UUID("{8B7F951C-78F8-43B8-A16A-9EE82781FF6B}") JInstrumentInfo  : public Androidapi::Jni::Javatypes::JObject 
+{
+	virtual int __cdecl describeContents() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl getInstrumentDetails() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl getInstrumentType() = 0 ;
+	virtual int __cdecl getVersionCode() = 0 ;
+	virtual void __cdecl writeToParcel(Androidapi::Jni::Os::_di_JParcel out_, int flags) = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJInstrumentInfo : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JInstrumentInfoClass,_di_JInstrumentInfo>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JInstrumentInfoClass,_di_JInstrumentInfo> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJInstrumentInfo() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JInstrumentInfoClass,_di_JInstrumentInfo>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJInstrumentInfo() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{EE3060C3-96EA-4421-BF1F-2EB1630F8F6F}") JLineItemClass  : public Androidapi::Jni::Javatypes::JObjectClass 
+{
+	virtual Androidapi::Jni::Os::_di_JParcelable_Creator __cdecl _GetCREATOR() = 0 ;
+	virtual _di_JLineItem_Builder __cdecl newBuilder() = 0 ;
+	__property Androidapi::Jni::Os::_di_JParcelable_Creator CREATOR = {read=_GetCREATOR};
+};
+
+__interface  INTERFACE_UUID("{6FD105BC-96DA-444E-A4FA-9A66C212EC56}") JLineItem  : public Androidapi::Jni::Javatypes::JObject 
+{
+	virtual int __cdecl describeContents() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl getCurrencyCode() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl getDescription() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl getQuantity() = 0 ;
+	virtual int __cdecl getRole() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl getTotalPrice() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl getUnitPrice() = 0 ;
+	virtual int __cdecl getVersionCode() = 0 ;
+	virtual void __cdecl writeToParcel(Androidapi::Jni::Os::_di_JParcel dest, int flags) = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJLineItem : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JLineItemClass,_di_JLineItem>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JLineItemClass,_di_JLineItem> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJLineItem() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JLineItemClass,_di_JLineItem>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJLineItem() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{42664D59-4303-413B-BD74-CB1BD5EECABB}") JLineItem_BuilderClass  : public Androidapi::Jni::Javatypes::JObjectClass 
+{
+	
+};
+
+__interface  INTERFACE_UUID("{946ACD0E-DAF5-4D99-9BF8-B6083D016050}") JLineItem_Builder  : public Androidapi::Jni::Javatypes::JObject 
+{
+	virtual _di_JLineItem __cdecl build() = 0 ;
+	virtual _di_JLineItem_Builder __cdecl setCurrencyCode(Androidapi::Jni::Javatypes::_di_JString currencyCode) = 0 ;
+	virtual _di_JLineItem_Builder __cdecl setDescription(Androidapi::Jni::Javatypes::_di_JString description) = 0 ;
+	virtual _di_JLineItem_Builder __cdecl setQuantity(Androidapi::Jni::Javatypes::_di_JString quantity) = 0 ;
+	virtual _di_JLineItem_Builder __cdecl setRole(int role) = 0 ;
+	virtual _di_JLineItem_Builder __cdecl setTotalPrice(Androidapi::Jni::Javatypes::_di_JString totalPrice) = 0 ;
+	virtual _di_JLineItem_Builder __cdecl setUnitPrice(Androidapi::Jni::Javatypes::_di_JString unitPrice) = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJLineItem_Builder : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JLineItem_BuilderClass,_di_JLineItem_Builder>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JLineItem_BuilderClass,_di_JLineItem_Builder> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJLineItem_Builder() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JLineItem_BuilderClass,_di_JLineItem_Builder>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJLineItem_Builder() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{6A88CA39-D9DF-421C-BA64-67B2C93C1AE5}") JLineItem_RoleClass  : public Androidapi::Jnibridge::IJavaClass 
+{
+	virtual int __cdecl _GetREGULAR() = 0 ;
+	virtual int __cdecl _GetSHIPPING() = 0 ;
+	virtual int __cdecl _GetTAX() = 0 ;
+	__property int REGULAR = {read=_GetREGULAR};
+	__property int SHIPPING = {read=_GetSHIPPING};
+	__property int TAX = {read=_GetTAX};
+};
+
+__interface  INTERFACE_UUID("{5EEECE7B-F9D9-4E72-87D7-CEABE8A4A17D}") JLineItem_Role  : public Androidapi::Jnibridge::IJavaInstance 
+{
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJLineItem_Role : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JLineItem_RoleClass,_di_JLineItem_Role>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JLineItem_RoleClass,_di_JLineItem_Role> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJLineItem_Role() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JLineItem_RoleClass,_di_JLineItem_Role>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJLineItem_Role() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{3C7F4444-DAA6-4653-9B19-FFE34F5E2B0E}") JLoyaltyWalletObjectClass  : public Androidapi::Jni::Javatypes::JObjectClass 
+{
+	virtual Androidapi::Jni::Os::_di_JParcelable_Creator __cdecl _GetCREATOR() = 0 ;
+	__property Androidapi::Jni::Os::_di_JParcelable_Creator CREATOR = {read=_GetCREATOR};
+};
+
+__interface  INTERFACE_UUID("{4DFDEF7E-4F39-4550-9DAB-18A871A4889C}") JLoyaltyWalletObject  : public Androidapi::Jni::Javatypes::JObject 
+{
+	virtual int __cdecl describeContents() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl getAccountId() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl getAccountName() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl getBarcodeAlternateText() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl getBarcodeType() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl getBarcodeValue() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl getId() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl getIssuerName() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl getProgramName() = 0 ;
+	virtual int __cdecl getVersionCode() = 0 ;
+	virtual void __cdecl writeToParcel(Androidapi::Jni::Os::_di_JParcel dest, int flags) = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJLoyaltyWalletObject : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JLoyaltyWalletObjectClass,_di_JLoyaltyWalletObject>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JLoyaltyWalletObjectClass,_di_JLoyaltyWalletObject> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJLoyaltyWalletObject() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JLoyaltyWalletObjectClass,_di_JLoyaltyWalletObject>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJLoyaltyWalletObject() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{4FE56C09-FF5A-4D50-9676-01D64D9A94FD}") JMaskedWalletClass  : public Androidapi::Jni::Javatypes::JObjectClass 
+{
+	virtual Androidapi::Jni::Os::_di_JParcelable_Creator __cdecl _GetCREATOR() = 0 ;
+	__property Androidapi::Jni::Os::_di_JParcelable_Creator CREATOR = {read=_GetCREATOR};
+};
+
+__interface  INTERFACE_UUID("{DA630E66-38E2-42C0-ADD0-3A8CCDB5958E}") JMaskedWallet  : public Androidapi::Jni::Javatypes::JObject 
+{
+	virtual int __cdecl describeContents() = 0 ;
+	virtual _di_Jwallet_Address __cdecl getBillingAddress() = 0 ;
+	virtual _di_JUserAddress __cdecl getBuyerBillingAddress() = 0 ;
+	virtual _di_JUserAddress __cdecl getBuyerShippingAddress() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl getEmail() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl getGoogleTransactionId() = 0 ;
+	virtual Androidapi::Jnibridge::TJavaObjectArray__1<_di_JInstrumentInfo>* __cdecl getInstrumentInfos() = 0 ;
+	virtual Androidapi::Jnibridge::TJavaObjectArray__1<_di_JLoyaltyWalletObject>* __cdecl getLoyaltyWalletObjects() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl getMerchantTransactionId() = 0 ;
+	virtual Androidapi::Jnibridge::TJavaObjectArray__1<_di_JOfferWalletObject>* __cdecl getOfferWalletObjects() = 0 ;
+	virtual Androidapi::Jnibridge::TJavaObjectArray__1<Androidapi::Jni::Javatypes::_di_JString>* __cdecl getPaymentDescriptions() = 0 ;
+	virtual _di_Jwallet_Address __cdecl getShippingAddress() = 0 ;
+	virtual int __cdecl getVersionCode() = 0 ;
+	virtual void __cdecl writeToParcel(Androidapi::Jni::Os::_di_JParcel dest, int flags) = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJMaskedWallet : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMaskedWalletClass,_di_JMaskedWallet>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMaskedWalletClass,_di_JMaskedWallet> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJMaskedWallet() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMaskedWalletClass,_di_JMaskedWallet>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJMaskedWallet() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{C3DF4C6B-EF6D-45BE-94B6-856DEC328C30}") JMaskedWalletRequestClass  : public Androidapi::Jni::Javatypes::JObjectClass 
+{
+	virtual Androidapi::Jni::Os::_di_JParcelable_Creator __cdecl _GetCREATOR() = 0 ;
+	virtual _di_JMaskedWalletRequest_Builder __cdecl newBuilder() = 0 ;
+	__property Androidapi::Jni::Os::_di_JParcelable_Creator CREATOR = {read=_GetCREATOR};
+};
+
+__interface  INTERFACE_UUID("{9E280C32-1C2A-48FD-BFD9-4EB5DB0B016B}") JMaskedWalletRequest  : public Androidapi::Jni::Javatypes::JObject 
+{
+	virtual bool __cdecl allowDebitCard() = 0 ;
+	virtual bool __cdecl allowPrepaidCard() = 0 ;
+	virtual int __cdecl describeContents() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JArrayList __cdecl getAllowedCountrySpecificationsForShipping() = 0 ;
+	virtual Androidapi::Jnibridge::TJavaObjectArray__1<_di_Jwallet_CountrySpecification>* __cdecl getAllowedShippingCountrySpecifications() = 0 ;
+	virtual _di_JCart __cdecl getCart() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl getCurrencyCode() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl getEstimatedTotalPrice() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl getMerchantName() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl getMerchantTransactionId() = 0 ;
+	virtual int __cdecl getVersionCode() = 0 ;
+	virtual bool __cdecl isBillingAgreement() = 0 ;
+	virtual bool __cdecl isPhoneNumberRequired() = 0 ;
+	virtual bool __cdecl isShippingAddressRequired() = 0 ;
+	virtual bool __cdecl shouldRetrieveWalletObjects() = 0 ;
+	virtual bool __cdecl useMinimalBillingAddress() = 0 ;
+	virtual void __cdecl writeToParcel(Androidapi::Jni::Os::_di_JParcel dest, int flags) = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJMaskedWalletRequest : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMaskedWalletRequestClass,_di_JMaskedWalletRequest>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMaskedWalletRequestClass,_di_JMaskedWalletRequest> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJMaskedWalletRequest() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMaskedWalletRequestClass,_di_JMaskedWalletRequest>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJMaskedWalletRequest() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{0CB024E2-4CB5-4CBB-9A42-4A64F63C4572}") JMaskedWalletRequest_BuilderClass  : public Androidapi::Jni::Javatypes::JObjectClass 
+{
+	
+};
+
+__interface  INTERFACE_UUID("{E6567874-D318-4191-BAF9-079E8760212D}") JMaskedWalletRequest_Builder  : public Androidapi::Jni::Javatypes::JObject 
+{
+	virtual _di_JMaskedWalletRequest_Builder __cdecl addAllowedCountrySpecificationForShipping(_di_JCountrySpecification countrySpecification) = 0 ;
+	virtual _di_JMaskedWalletRequest_Builder __cdecl addAllowedCountrySpecificationsForShipping(Androidapi::Jni::Javatypes::_di_JCollection countrySpecifications) = 0 ;
+	virtual _di_JMaskedWalletRequest __cdecl build() = 0 ;
+	virtual _di_JMaskedWalletRequest_Builder __cdecl setAllowDebitCard(bool allowDebitCard) = 0 ;
+	virtual _di_JMaskedWalletRequest_Builder __cdecl setAllowPrepaidCard(bool allowPrepaidCard) = 0 ;
+	virtual _di_JMaskedWalletRequest_Builder __cdecl setCart(_di_JCart cart) = 0 ;
+	virtual _di_JMaskedWalletRequest_Builder __cdecl setCurrencyCode(Androidapi::Jni::Javatypes::_di_JString currencyCode) = 0 ;
+	virtual _di_JMaskedWalletRequest_Builder __cdecl setEstimatedTotalPrice(Androidapi::Jni::Javatypes::_di_JString estimatedTotalPrice) = 0 ;
+	virtual _di_JMaskedWalletRequest_Builder __cdecl setIsBillingAgreement(bool isBillingAgreement) = 0 ;
+	virtual _di_JMaskedWalletRequest_Builder __cdecl setMerchantName(Androidapi::Jni::Javatypes::_di_JString merchantName) = 0 ;
+	virtual _di_JMaskedWalletRequest_Builder __cdecl setMerchantTransactionId(Androidapi::Jni::Javatypes::_di_JString merchantTransactionId) = 0 ;
+	virtual _di_JMaskedWalletRequest_Builder __cdecl setPhoneNumberRequired(bool phoneNumberRequired) = 0 ;
+	virtual _di_JMaskedWalletRequest_Builder __cdecl setShippingAddressRequired(bool shippingAddressRequired) = 0 ;
+	virtual _di_JMaskedWalletRequest_Builder __cdecl setShouldRetrieveWalletObjects(bool shouldRetrieveWalletObjects) = 0 ;
+	virtual _di_JMaskedWalletRequest_Builder __cdecl setUseMinimalBillingAddress(bool useMinimalBillingAddress) = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJMaskedWalletRequest_Builder : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMaskedWalletRequest_BuilderClass,_di_JMaskedWalletRequest_Builder>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMaskedWalletRequest_BuilderClass,_di_JMaskedWalletRequest_Builder> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJMaskedWalletRequest_Builder() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JMaskedWalletRequest_BuilderClass,_di_JMaskedWalletRequest_Builder>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJMaskedWalletRequest_Builder() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{4836ECDC-66DD-4350-AFD5-077764AD6EB6}") JNotifyTransactionStatusRequestClass  : public Androidapi::Jni::Javatypes::JObjectClass 
+{
+	virtual Androidapi::Jni::Os::_di_JParcelable_Creator __cdecl _GetCREATOR() = 0 ;
+	virtual _di_JNotifyTransactionStatusRequest_Builder __cdecl newBuilder() = 0 ;
+	__property Androidapi::Jni::Os::_di_JParcelable_Creator CREATOR = {read=_GetCREATOR};
+};
+
+__interface  INTERFACE_UUID("{7FAB9A55-328E-4C86-940A-23FEBAAF6C3F}") JNotifyTransactionStatusRequest  : public Androidapi::Jni::Javatypes::JObject 
+{
+	virtual int __cdecl describeContents() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl getDetailedReason() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl getGoogleTransactionId() = 0 ;
+	virtual int __cdecl getStatus() = 0 ;
+	virtual int __cdecl getVersionCode() = 0 ;
+	virtual void __cdecl writeToParcel(Androidapi::Jni::Os::_di_JParcel out_, int flags) = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJNotifyTransactionStatusRequest : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JNotifyTransactionStatusRequestClass,_di_JNotifyTransactionStatusRequest>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JNotifyTransactionStatusRequestClass,_di_JNotifyTransactionStatusRequest> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJNotifyTransactionStatusRequest() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JNotifyTransactionStatusRequestClass,_di_JNotifyTransactionStatusRequest>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJNotifyTransactionStatusRequest() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{45A9D9CC-4C12-461D-ABCD-31C5EA4EE960}") JNotifyTransactionStatusRequest_BuilderClass  : public Androidapi::Jni::Javatypes::JObjectClass 
+{
+	
+};
+
+__interface  INTERFACE_UUID("{CBFADF37-0283-4657-9873-725A5E30984D}") JNotifyTransactionStatusRequest_Builder  : public Androidapi::Jni::Javatypes::JObject 
+{
+	virtual _di_JNotifyTransactionStatusRequest __cdecl build() = 0 ;
+	virtual _di_JNotifyTransactionStatusRequest_Builder __cdecl setDetailedReason(Androidapi::Jni::Javatypes::_di_JString detailedReason) = 0 ;
+	virtual _di_JNotifyTransactionStatusRequest_Builder __cdecl setGoogleTransactionId(Androidapi::Jni::Javatypes::_di_JString googleTransactionId) = 0 ;
+	virtual _di_JNotifyTransactionStatusRequest_Builder __cdecl setStatus(int status) = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJNotifyTransactionStatusRequest_Builder : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JNotifyTransactionStatusRequest_BuilderClass,_di_JNotifyTransactionStatusRequest_Builder>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JNotifyTransactionStatusRequest_BuilderClass,_di_JNotifyTransactionStatusRequest_Builder> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJNotifyTransactionStatusRequest_Builder() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JNotifyTransactionStatusRequest_BuilderClass,_di_JNotifyTransactionStatusRequest_Builder>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJNotifyTransactionStatusRequest_Builder() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{3CE3433B-3BD2-4DDC-AA92-EF0E2DBB7892}") JNotifyTransactionStatusRequest_StatusClass  : public Androidapi::Jnibridge::IJavaClass 
+{
+	virtual int __cdecl _GetSUCCESS() = 0 ;
+	__property int SUCCESS = {read=_GetSUCCESS};
+};
+
+__interface  INTERFACE_UUID("{4923FE24-E229-4A2C-AD97-B9233635FF8C}") JNotifyTransactionStatusRequest_Status  : public Androidapi::Jnibridge::IJavaInstance 
+{
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJNotifyTransactionStatusRequest_Status : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JNotifyTransactionStatusRequest_StatusClass,_di_JNotifyTransactionStatusRequest_Status>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JNotifyTransactionStatusRequest_StatusClass,_di_JNotifyTransactionStatusRequest_Status> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJNotifyTransactionStatusRequest_Status() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JNotifyTransactionStatusRequest_StatusClass,_di_JNotifyTransactionStatusRequest_Status>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJNotifyTransactionStatusRequest_Status() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{66265EE6-C7C3-405B-A515-3C76B2EA7C12}") JStatus_ErrorClass  : public Androidapi::Jnibridge::IJavaClass 
+{
+	virtual int __cdecl _GetAVS_DECLINE() = 0 ;
+	virtual int __cdecl _GetBAD_CARD() = 0 ;
+	virtual int __cdecl _GetBAD_CVC() = 0 ;
+	virtual int __cdecl _GetDECLINED() = 0 ;
+	virtual int __cdecl _GetFRAUD_DECLINE() = 0 ;
+	virtual int __cdecl _GetOTHER() = 0 ;
+	virtual int __cdecl _GetUNKNOWN() = 0 ;
+	__property int AVS_DECLINE = {read=_GetAVS_DECLINE};
+	__property int BAD_CARD = {read=_GetBAD_CARD};
+	__property int BAD_CVC = {read=_GetBAD_CVC};
+	__property int DECLINED = {read=_GetDECLINED};
+	__property int FRAUD_DECLINE = {read=_GetFRAUD_DECLINE};
+	__property int OTHER = {read=_GetOTHER};
+	__property int UNKNOWN = {read=_GetUNKNOWN};
+};
+
+__interface  INTERFACE_UUID("{56B47111-CA28-49D0-9DD8-0D0947076CAE}") JStatus_Error  : public Androidapi::Jnibridge::IJavaInstance 
+{
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJStatus_Error : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JStatus_ErrorClass,_di_JStatus_Error>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JStatus_ErrorClass,_di_JStatus_Error> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJStatus_Error() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JStatus_ErrorClass,_di_JStatus_Error>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJStatus_Error() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{F0BB4A58-DC78-4BED-9AA5-C48D4A95772A}") JOfferWalletObjectClass  : public Androidapi::Jni::Javatypes::JObjectClass 
+{
+	virtual Androidapi::Jni::Os::_di_JParcelable_Creator __cdecl _GetCREATOR() = 0 ;
+	__property Androidapi::Jni::Os::_di_JParcelable_Creator CREATOR = {read=_GetCREATOR};
+};
+
+__interface  INTERFACE_UUID("{9F21BF81-A8B3-4F34-B83E-2C13916A9DCB}") JOfferWalletObject  : public Androidapi::Jni::Javatypes::JObject 
+{
+	virtual int __cdecl describeContents() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl getId() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl getRedemptionCode() = 0 ;
+	virtual int __cdecl getVersionCode() = 0 ;
+	virtual void __cdecl writeToParcel(Androidapi::Jni::Os::_di_JParcel dest, int flags) = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJOfferWalletObject : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JOfferWalletObjectClass,_di_JOfferWalletObject>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JOfferWalletObjectClass,_di_JOfferWalletObject> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJOfferWalletObject() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JOfferWalletObjectClass,_di_JOfferWalletObject>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJOfferWalletObject() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{BA83B757-C4FC-41DB-B648-5E20A9085ABA}") JProxyCardClass  : public Androidapi::Jni::Javatypes::JObjectClass 
+{
+	virtual Androidapi::Jni::Os::_di_JParcelable_Creator __cdecl _GetCREATOR() = 0 ;
+	__property Androidapi::Jni::Os::_di_JParcelable_Creator CREATOR = {read=_GetCREATOR};
+};
+
+__interface  INTERFACE_UUID("{5028EF53-E2FE-4F59-950A-DB373434285F}") JProxyCard  : public Androidapi::Jni::Javatypes::JObject 
+{
+	virtual int __cdecl describeContents() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl getCvn() = 0 ;
+	virtual int __cdecl getExpirationMonth() = 0 ;
+	virtual int __cdecl getExpirationYear() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl getPan() = 0 ;
+	virtual int __cdecl getVersionCode() = 0 ;
+	virtual void __cdecl writeToParcel(Androidapi::Jni::Os::_di_JParcel out_, int flags) = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJProxyCard : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JProxyCardClass,_di_JProxyCard>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JProxyCardClass,_di_JProxyCard> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJProxyCard() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JProxyCardClass,_di_JProxyCard>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJProxyCard() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{7575E6CB-2C74-41C5-87F1-DD647C08968B}") JWalletClass  : public Androidapi::Jni::Javatypes::JObjectClass 
+{
+	virtual void __cdecl changeMaskedWallet(_di_JGoogleApiClient googleApiClient, Androidapi::Jni::Javatypes::_di_JString googleTransactionId, Androidapi::Jni::Javatypes::_di_JString merchantTransactionId, int requestCode) = 0 ;
+	virtual void __cdecl checkForPreAuthorization(_di_JGoogleApiClient googleApiClient, int requestCode) = 0 ;
+	virtual void __cdecl loadFullWallet(_di_JGoogleApiClient googleApiClient, _di_JFullWalletRequest request, int requestCode) = 0 ;
+	virtual void __cdecl loadMaskedWallet(_di_JGoogleApiClient googleApiClient, _di_JMaskedWalletRequest request, int requestCode) = 0 ;
+	virtual void __cdecl notifyTransactionStatus(_di_JGoogleApiClient googleApiClient, _di_JNotifyTransactionStatusRequest request) = 0 ;
+};
+
+__interface  INTERFACE_UUID("{31E9E303-DA39-4C47-8AC1-FC0EC22F029A}") JWallet  : public Androidapi::Jni::Javatypes::JObject 
+{
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJWallet : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JWalletClass,_di_JWallet>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JWalletClass,_di_JWallet> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJWallet() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JWalletClass,_di_JWallet>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJWallet() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{7B45115E-23E1-4566-A12C-787B10672B14}") JWallet_WalletOptionsClass  : public Androidapi::Jni::Javatypes::JObjectClass 
+{
+	
+};
+
+__interface  INTERFACE_UUID("{08BE6E71-06F7-464A-9C44-F5D59A5E821B}") JWallet_WalletOptions  : public Androidapi::Jni::Javatypes::JObject 
+{
+	virtual int __cdecl _Getenvironment() = 0 ;
+	virtual int __cdecl _Gettheme() = 0 ;
+	__property int environment = {read=_Getenvironment};
+	__property int theme = {read=_Gettheme};
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJWallet_WalletOptions : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JWallet_WalletOptionsClass,_di_JWallet_WalletOptions>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JWallet_WalletOptionsClass,_di_JWallet_WalletOptions> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJWallet_WalletOptions() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JWallet_WalletOptionsClass,_di_JWallet_WalletOptions>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJWallet_WalletOptions() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{2D7F47EC-DF04-49AE-8744-CFFFDA9EE280}") JWalletOptions_BuilderClass  : public Androidapi::Jni::Javatypes::JObjectClass 
+{
+	HIDESBASE virtual _di_JWalletOptions_Builder __cdecl init() = 0 ;
+};
+
+__interface  INTERFACE_UUID("{AAC458C7-384E-4216-8311-100622FC1903}") JWalletOptions_Builder  : public Androidapi::Jni::Javatypes::JObject 
+{
+	virtual _di_JWallet_WalletOptions __cdecl build() = 0 ;
+	virtual _di_JWalletOptions_Builder __cdecl setEnvironment(int environment) = 0 ;
+	virtual _di_JWalletOptions_Builder __cdecl setTheme(int theme) = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJWalletOptions_Builder : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JWalletOptions_BuilderClass,_di_JWalletOptions_Builder>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JWalletOptions_BuilderClass,_di_JWalletOptions_Builder> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJWalletOptions_Builder() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JWalletOptions_BuilderClass,_di_JWalletOptions_Builder>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJWalletOptions_Builder() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{F9EF54F5-1893-4D5A-A831-4F29751E0F39}") JWalletClientClass  : public Androidapi::Jni::Javatypes::JObjectClass 
+{
+	HIDESBASE virtual _di_JWalletClient __cdecl init(Androidapi::Jni::App::_di_JActivity activity, int environment, Androidapi::Jni::Javatypes::_di_JString accountName, _di_JGooglePlayServicesClient_ConnectionCallbacks connectionCallbacks, _di_JGooglePlayServicesClient_OnConnectionFailedListener connectionFailedListener) = 0 /* overload */;
+	HIDESBASE virtual _di_JWalletClient __cdecl init(Androidapi::Jni::App::_di_JActivity activity, int environment, Androidapi::Jni::Javatypes::_di_JString accountName, int theme, _di_JGooglePlayServicesClient_ConnectionCallbacks connectionCallbacks, _di_JGooglePlayServicesClient_OnConnectionFailedListener connectionFailedListener) = 0 /* overload */;
+};
+
+__interface  INTERFACE_UUID("{3B50C6A1-9FD5-4FE1-BAAB-1519EA350155}") JWalletClient  : public Androidapi::Jni::Javatypes::JObject 
+{
+	virtual void __cdecl changeMaskedWallet(Androidapi::Jni::Javatypes::_di_JString googleTransactionId, Androidapi::Jni::Javatypes::_di_JString merchantTransactionId, int requestCode) = 0 ;
+	virtual void __cdecl checkForPreAuthorization(int requestCode) = 0 ;
+	virtual void __cdecl connect() = 0 ;
+	virtual void __cdecl disconnect() = 0 ;
+	virtual bool __cdecl isConnected() = 0 ;
+	virtual bool __cdecl isConnecting() = 0 ;
+	virtual bool __cdecl isConnectionCallbacksRegistered(_di_JGooglePlayServicesClient_ConnectionCallbacks listener) = 0 ;
+	virtual bool __cdecl isConnectionFailedListenerRegistered(_di_JGooglePlayServicesClient_OnConnectionFailedListener listener) = 0 ;
+	virtual void __cdecl loadFullWallet(_di_JFullWalletRequest request, int requestCode) = 0 ;
+	virtual void __cdecl loadMaskedWallet(_di_JMaskedWalletRequest request, int requestCode) = 0 ;
+	virtual void __cdecl notifyTransactionStatus(_di_JNotifyTransactionStatusRequest request) = 0 ;
+	virtual void __cdecl registerConnectionCallbacks(_di_JGooglePlayServicesClient_ConnectionCallbacks listener) = 0 ;
+	virtual void __cdecl registerConnectionFailedListener(_di_JGooglePlayServicesClient_OnConnectionFailedListener listener) = 0 ;
+	virtual void __cdecl unregisterConnectionCallbacks(_di_JGooglePlayServicesClient_ConnectionCallbacks listener) = 0 ;
+	virtual void __cdecl unregisterConnectionFailedListener(_di_JGooglePlayServicesClient_OnConnectionFailedListener listener) = 0 ;
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJWalletClient : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JWalletClientClass,_di_JWalletClient>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JWalletClientClass,_di_JWalletClient> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJWalletClient() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JWalletClientClass,_di_JWalletClient>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJWalletClient() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+__interface  INTERFACE_UUID("{01A525AF-D011-466F-A6E4-FEE7DF74ABA9}") JWalletConstantsClass  : public Androidapi::Jni::Javatypes::JObjectClass 
+{
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetACTION_ENABLE_WALLET_OPTIMIZATION() = 0 ;
+	virtual int __cdecl _GetENVIRONMENT_PRODUCTION() = 0 ;
+	virtual int __cdecl _GetENVIRONMENT_SANDBOX() = 0 ;
+	virtual int __cdecl _GetENVIRONMENT_STRICT_SANDBOX() = 0 ;
+	virtual int __cdecl _GetERROR_CODE_AUTHENTICATION_FAILURE() = 0 ;
+	virtual int __cdecl _GetERROR_CODE_BUYER_ACCOUNT_ERROR() = 0 ;
+	virtual int __cdecl _GetERROR_CODE_INVALID_PARAMETERS() = 0 ;
+	virtual int __cdecl _GetERROR_CODE_INVALID_TRANSACTION() = 0 ;
+	virtual int __cdecl _GetERROR_CODE_MERCHANT_ACCOUNT_ERROR() = 0 ;
+	virtual int __cdecl _GetERROR_CODE_SERVICE_UNAVAILABLE() = 0 ;
+	virtual int __cdecl _GetERROR_CODE_SPENDING_LIMIT_EXCEEDED() = 0 ;
+	virtual int __cdecl _GetERROR_CODE_UNKNOWN() = 0 ;
+	virtual int __cdecl _GetERROR_CODE_UNSUPPORTED_API_VERSION() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetEXTRA_ERROR_CODE() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetEXTRA_FULL_WALLET() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetEXTRA_IS_USER_PREAUTHORIZED() = 0 ;
+	virtual Androidapi::Jni::Javatypes::_di_JString __cdecl _GetEXTRA_MASKED_WALLET() = 0 ;
+	virtual int __cdecl _GetRESULT_ERROR() = 0 ;
+	virtual int __cdecl _GetTHEME_HOLO_DARK() = 0 ;
+	virtual int __cdecl _GetTHEME_HOLO_LIGHT() = 0 ;
+	virtual Androidapi::Jni::Accounts::_di_JAccount __cdecl _GetZy() = 0 ;
+	__property Androidapi::Jni::Javatypes::_di_JString ACTION_ENABLE_WALLET_OPTIMIZATION = {read=_GetACTION_ENABLE_WALLET_OPTIMIZATION};
+	__property int ENVIRONMENT_PRODUCTION = {read=_GetENVIRONMENT_PRODUCTION};
+	__property int ENVIRONMENT_SANDBOX = {read=_GetENVIRONMENT_SANDBOX};
+	__property int ENVIRONMENT_STRICT_SANDBOX = {read=_GetENVIRONMENT_STRICT_SANDBOX};
+	__property int ERROR_CODE_AUTHENTICATION_FAILURE = {read=_GetERROR_CODE_AUTHENTICATION_FAILURE};
+	__property int ERROR_CODE_BUYER_ACCOUNT_ERROR = {read=_GetERROR_CODE_BUYER_ACCOUNT_ERROR};
+	__property int ERROR_CODE_INVALID_PARAMETERS = {read=_GetERROR_CODE_INVALID_PARAMETERS};
+	__property int ERROR_CODE_INVALID_TRANSACTION = {read=_GetERROR_CODE_INVALID_TRANSACTION};
+	__property int ERROR_CODE_MERCHANT_ACCOUNT_ERROR = {read=_GetERROR_CODE_MERCHANT_ACCOUNT_ERROR};
+	__property int ERROR_CODE_SERVICE_UNAVAILABLE = {read=_GetERROR_CODE_SERVICE_UNAVAILABLE};
+	__property int ERROR_CODE_SPENDING_LIMIT_EXCEEDED = {read=_GetERROR_CODE_SPENDING_LIMIT_EXCEEDED};
+	__property int ERROR_CODE_UNKNOWN = {read=_GetERROR_CODE_UNKNOWN};
+	__property int ERROR_CODE_UNSUPPORTED_API_VERSION = {read=_GetERROR_CODE_UNSUPPORTED_API_VERSION};
+	__property Androidapi::Jni::Javatypes::_di_JString EXTRA_ERROR_CODE = {read=_GetEXTRA_ERROR_CODE};
+	__property Androidapi::Jni::Javatypes::_di_JString EXTRA_FULL_WALLET = {read=_GetEXTRA_FULL_WALLET};
+	__property Androidapi::Jni::Javatypes::_di_JString EXTRA_IS_USER_PREAUTHORIZED = {read=_GetEXTRA_IS_USER_PREAUTHORIZED};
+	__property Androidapi::Jni::Javatypes::_di_JString EXTRA_MASKED_WALLET = {read=_GetEXTRA_MASKED_WALLET};
+	__property int RESULT_ERROR = {read=_GetRESULT_ERROR};
+	__property int THEME_HOLO_DARK = {read=_GetTHEME_HOLO_DARK};
+	__property int THEME_HOLO_LIGHT = {read=_GetTHEME_HOLO_LIGHT};
+	__property Androidapi::Jni::Accounts::_di_JAccount Zy = {read=_GetZy};
+};
+
+__interface  INTERFACE_UUID("{13B4F268-3BBC-47D7-9F9B-753692FCE265}") JWalletConstants  : public Androidapi::Jni::Javatypes::JObject 
+{
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(push,4)
+#endif /* not __aarch64__ */
+class PASCALIMPLEMENTATION TJWalletConstants : public Androidapi::Jnibridge::TJavaGenericImport__2<_di_JWalletConstantsClass,_di_JWalletConstants>
+{
+	typedef Androidapi::Jnibridge::TJavaGenericImport__2<_di_JWalletConstantsClass,_di_JWalletConstants> inherited;
+	
+public:
+	/* TObject.Create */ inline __fastcall TJWalletConstants() : Androidapi::Jnibridge::TJavaGenericImport__2<_di_JWalletConstantsClass,_di_JWalletConstants>() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TJWalletConstants() { }
+	
+};
+
+#ifndef __aarch64__
+#pragma pack(pop)
+#endif /* not __aarch64__ */
+
+//-- var, const, procedure ---------------------------------------------------
+}	/* namespace Playservices */
+}	/* namespace Jni */
+}	/* namespace Androidapi */
+#if !defined(DELPHIHEADER_NO_IMPLICIT_NAMESPACE_USE) && !defined(NO_USING_NAMESPACE_ANDROIDAPI_JNI_PLAYSERVICES)
+using namespace Androidapi::Jni::Playservices;
+#endif
+#if !defined(DELPHIHEADER_NO_IMPLICIT_NAMESPACE_USE) && !defined(NO_USING_NAMESPACE_ANDROIDAPI_JNI)
+using namespace Androidapi::Jni;
+#endif
+#if !defined(DELPHIHEADER_NO_IMPLICIT_NAMESPACE_USE) && !defined(NO_USING_NAMESPACE_ANDROIDAPI)
+using namespace Androidapi;
+#endif
+#pragma pack(pop)
+#pragma option pop
+
+#pragma delphiheader end.
+//-- end unit ----------------------------------------------------------------
+#endif	// Androidapi_Jni_PlayservicesHPP
