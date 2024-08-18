@@ -6,10 +6,6 @@
 #include <iomanip>
 #include <string_view>
 
-using namespace std;
-/*
- -><-
-*/
 template <typename T, size_t Ta >
 int level_1(T(&arr1)[Ta], int f) {
 
@@ -117,7 +113,7 @@ int main()
 
     std::cout << "conv2D = ";
     conv2D(conv_1, conv_test, true);
-    std::cout << endl;
+    std::cout << "\n";
     std::cout << "conv2D_invert = ";
     conv2D(conv_1, conv_test, false);
 
