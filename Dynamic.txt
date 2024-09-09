@@ -1,0 +1,63 @@
+#include <iostream>
+#include <string>
+#include <cstring>
+#include <cstdlib>
+#include <dlfcn.h> // Для динамической загрузки библиотек
+#include <tcc/libtcc.h>
+
+void compile_and_run(const std::string& code) {
+    // Создаем экземпляр TCC
+    TCCState *tcc = tcc_new();
+    if (!tcc) {
+        std::cerr << "Could not create TCC state\n";
+        return;
+    }
+
+    // Устанавливаем вывод в память
+    tcc_set_output_type(tcc, TCC_OUTPUT_MEMORY);
+
+    // Компилируем код
+    if (tcc_compile_string(tcc, code.c_str()) == -1) {
+        std::cerr << "Compilation error\n";
+        tcc_delete(tcc);
+        return;
+    }
+
+    // Создаем исполняемый файл в памяти
+    if (tcc_relocate(tcc, TCC_RELOCATE_AUTO) < 0) {
+        std::cerr << "Relocation error\n";
+        tcc_delete(tcc);
+        return;
+    }
+
+    // Определяем функцию main
+    void (*func)() = (void (*)())tcc_get_symbol(tcc, "main");
+    if (!func) {
+        std::cerr << "Could not find main function\n";
+        tcc_delete(tcc);
+        return;
+    }
+
+    // Вызываем функцию main
+    func();
+
+    // Освобождаем ресурсы
+    tcc_delete(tcc);
+}
+
+int main() {
+    std::string code = R"(
+        #include <iostream>
+
+        int main() {
+            for (int i = 0; i < 10; i++) {
+                std::cout << "i = " << i << std::endl;
+            }
+            return 0;
+        }
+    )";
+
+    compile_and_run(code);
+
+    return 0;
+}
