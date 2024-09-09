@@ -36,3 +36,19 @@
 **/Debug/
 **/.vs/
 **/x64/
+
+# temp data
+output/*
+__*
+*.cpp-*
+*.tmp
+*.vrc
+*.$*
+
+# rad local files
+*.tds
+*.local
+*.stat
+*.dsk
+*.map
+*.~*
