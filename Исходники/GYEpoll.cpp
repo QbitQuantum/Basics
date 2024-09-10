@@ -1,0 +1,4 @@
+GYEpollReactor::GYEpollReactor()
+{
+    _CleanUp();
+}

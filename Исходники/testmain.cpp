@@ -1,0 +1,1 @@
+ bool operator () (const UnitTest::Test* const test) const { return strcmp(test->m_details.testName, tname) == 0; }

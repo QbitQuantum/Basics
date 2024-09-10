@@ -1,0 +1,1 @@
+static float raise_fpe_overflow()  { return expf(  88.8f ); }

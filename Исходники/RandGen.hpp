@@ -1,0 +1,1 @@
+ double myrand () { return gen.rand(); }

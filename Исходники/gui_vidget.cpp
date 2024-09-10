@@ -1,0 +1,15 @@
+GUIVidget::GUIVidget()
+{
+	Init();
+	SetX(0);
+	SetY(0);
+	SetWidth(0);
+	SetHeight(0);
+	SetColor(DEFAULT_CONTROL_COLOR);
+	SetVisible(false);
+	SetDead(false);
+	SetTexture(NULL);
+	SetParent((GUIBaseControl*)NULL);
+	SetBorder(false);
+	SetBorderType(btNone);
+}

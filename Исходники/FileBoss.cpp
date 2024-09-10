@@ -1,0 +1,1 @@
+ virtual FileType getFileType(StrLen path) { return fs.getFileType(path); }

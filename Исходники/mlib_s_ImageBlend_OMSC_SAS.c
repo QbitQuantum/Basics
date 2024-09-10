@@ -1,0 +1,163 @@
+mlib_status
+__mlib_ImageBlend_OMSC_SAS(
+    mlib_image *dst,
+    const mlib_image *src1,
+    const mlib_image *src2,
+    mlib_s32 cmask)
+{
+	mlib_s32 src_alpha, dst_alpha;
+	mlib_s32 min;
+
+	BLEND_VALIDATE;
+
+	if (channels == 3)
+		return (__mlib_ImageBlend_OMSC_ZERO(dst, src1, src2, cmask));
+
+	mlib_s32 d_s0, d_s1, d_s2, d_s3;
+	int k;
+	__m128i *px, *py, *pz;
+	__m128i dx, dy;
+/* upper - 1 lower - 0 */
+	__m128i dx_1, dx_0, dy_1, dy_0, dz_1, dz_0;
+	__m128i dall_zero;
+	__m128i df_f = _mm_set1_epi32(0x00ff00ff);
+	__m128i done_one = _mm_set1_epi32(0x00010001);
+
+	dall_zero = _mm_setzero_si128();
+	if (cmask == 8) {
+		if (0 == (((((mlib_addr) psrc1 | (mlib_addr)psrc2 |
+				(mlib_addr)pdst)) & 0xf)) &&
+			(0 == (((src1_stride | src2_stride |
+			dst_stride) & 0xf) || (1 == dst_height)))) {
+			for (j = 0; j < dst_height; j++) {
+				px = (__m128i *)psrc1;
+				py = (__m128i *)psrc2;
+				pz = (__m128i *)pdst;
+#ifdef __SUNPRO_C
+#pragma pipeloop(0)
+#endif /* __SUNPRO_C */
+				for (i = 0; i <= dst_width - 4; i += 4) {
+					dx = _mm_load_si128(px);
+					dy = _mm_load_si128(py);
+
+					UNPACK_UNSIGN_BYTE;
+
+					PROCESS_DATA_8(dx_1, dy_1, dz_1);
+					PROCESS_DATA_8(dx_0, dy_0, dz_0);
+					dz_0 = _mm_packus_epi16(dz_0, dz_1);
+					_mm_store_si128(pz, dz_0);
+					px++;
+					py++;
+					pz++;
+				}
+
+#ifdef __SUNPRO_C
+#pragma pipeloop(0)
+#endif /* __SUNPRO_C */
+				DO_REST_8;
+				psrc1 += src1_stride;
+				psrc2 += src2_stride;
+				pdst += dst_stride;
+			}
+		} else {
+			for (j = 0; j < dst_height; j++) {
+				px = (__m128i *)psrc1;
+				py = (__m128i *)psrc2;
+				pz = (__m128i *)pdst;
+#ifdef __SUNPRO_C
+#pragma pipeloop(0)
+#endif /* __SUNPRO_C */
+				for (i = 0; i <= dst_width - 4; i += 4) {
+					dx = _mm_loadu_si128(px);
+					dy = _mm_loadu_si128(py);
+
+					UNPACK_UNSIGN_BYTE;
+
+					PROCESS_DATA_8(dx_1, dy_1, dz_1);
+					PROCESS_DATA_8(dx_0, dy_0, dz_0);
+					dz_0 = _mm_packus_epi16(dz_0, dz_1);
+					_mm_storeu_si128(pz, dz_0);
+					px++;
+					py++;
+					pz++;
+				}
+
+#ifdef __SUNPRO_C
+#pragma pipeloop(0)
+#endif /* __SUNPRO_C */
+				DO_REST_8;
+				psrc1 += src1_stride;
+				psrc2 += src2_stride;
+				pdst += dst_stride;
+			}
+		}
+	} else {
+		if (0 == (((((mlib_addr) psrc1 | (mlib_addr)psrc2 |
+				(mlib_addr)pdst)) & 0xf)) &&
+			(0 == (((src1_stride | src2_stride |
+			dst_stride) & 0xf) || (1 == dst_height)))) {
+			for (j = 0; j < dst_height; j++) {
+				px = (__m128i *)psrc1;
+				py = (__m128i *)psrc2;
+				pz = (__m128i *)pdst;
+#ifdef __SUNPRO_C
+#pragma pipeloop(0)
+#endif /* __SUNPRO_C */
+				for (i = 0; i <= dst_width - 4; i += 4) {
+					dx = _mm_load_si128(px);
+					dy = _mm_load_si128(py);
+
+					UNPACK_UNSIGN_BYTE;
+
+					PROCESS_DATA_1(dx_1, dy_1, dz_1);
+					PROCESS_DATA_1(dx_0, dy_0, dz_0);
+					dz_0 = _mm_packus_epi16(dz_0, dz_1);
+					_mm_store_si128(pz, dz_0);
+					px++;
+					py++;
+					pz++;
+				}
+
+#ifdef __SUNPRO_C
+#pragma pipeloop(0)
+#endif /* __SUNPRO_C */
+				DO_REST_1;
+				psrc1 += src1_stride;
+				psrc2 += src2_stride;
+				pdst += dst_stride;
+			}
+		} else {
+			for (j = 0; j < dst_height; j++) {
+				px = (__m128i *)psrc1;
+				py = (__m128i *)psrc2;
+				pz = (__m128i *)pdst;
+#ifdef __SUNPRO_C
+#pragma pipeloop(0)
+#endif /* __SUNPRO_C */
+				for (i = 0; i <= dst_width - 4; i += 4) {
+					dx = _mm_loadu_si128(px);
+					dy = _mm_loadu_si128(py);
+
+					UNPACK_UNSIGN_BYTE;
+
+					PROCESS_DATA_1(dx_1, dy_1, dz_1);
+					PROCESS_DATA_1(dx_0, dy_0, dz_0);
+					dz_0 = _mm_packus_epi16(dz_0, dz_1);
+					_mm_storeu_si128(pz, dz_0);
+					px++;
+					py++;
+					pz++;
+				}
+#ifdef __SUNPRO_C
+#pragma pipeloop(0)
+#endif /* __SUNPRO_C */
+				DO_REST_1;
+				psrc1 += src1_stride;
+				psrc2 += src2_stride;
+				pdst += dst_stride;
+			}
+		}
+	}
+
+	return (MLIB_SUCCESS);
+}

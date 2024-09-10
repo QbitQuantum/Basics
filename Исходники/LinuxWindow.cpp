@@ -1,0 +1,3 @@
+	LinuxWindow::~LinuxWindow() {
+		destroyWindow();
+	}

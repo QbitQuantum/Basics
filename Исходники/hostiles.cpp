@@ -1,0 +1,25 @@
+void HostilesList::DoDataExchange(CDataExchange* pDX)
+{
+	CDialog::DoDataExchange(pDX);
+	//{{AFX_DATA_MAP(HostilesList)
+	DDX_Control(pDX, IDC_RLISTBOXCTRL1, m_IDC_RLISTBOXCTRL1);
+	DDX_Control(pDX, IDC_RBUTTONAUTHORISE, m_IDC_RBUTTONAUTHORISE);
+	DDX_Control(pDX, IDC_RBUTTONASSIGNPATROL, m_IDC_RBUTTONASSIGNPATROL);
+	DDX_Control(pDX, IDC_RBUTTONINTELL, m_IDC_RBUTTONINTELL);
+	DDX_Control(pDX, IDC_RBUTTONMISSIONFOLDER, m_IDC_RBUTTONMISSIONFOLDER);
+	DDX_Control(pDX, IDC_ATTARGET, m_IDC_ATTARGET);
+	DDX_Control(pDX, IDC_FORMING, m_IDC_FORMING);
+	DDX_Control(pDX, IDC_INCOMING, m_IDC_INCOMING);
+	DDX_Control(pDX, IDC_RAID_ENGAGED, m_IDC_RAID_ENGAGED);
+	DDX_Control(pDX, IDC_ENGAGED, m_IDC_ENGAGED);
+	DDX_Control(pDX, IDC_NORESPONSE, m_IDC_NORESPONSE);
+	DDX_Control(pDX, IDC_OUTGOING, m_IDC_OUTGOING);
+	DDX_Control(pDX, IDC_RESPONSES, m_IDC_RESPONSES);
+	//}}AFX_DATA_MAP
+	CRListBox* rlistbox;
+	rlistbox=GETDLGITEM(IDC_RLISTBOXCTRL1);
+	rlistbox->AddString("",0);
+	rlistbox->AddColumn(32);										  //RDH 02/06/99
+	rlistbox->AddColumn(20);										  //RDH 02/06/99
+	rlistbox->AddColumn(2);
+}

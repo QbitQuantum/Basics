@@ -1,0 +1,1 @@
+	double distance_squared(area const& a) const { return distance_squared(clamp_inside(a)); }

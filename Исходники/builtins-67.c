@@ -1,0 +1,1 @@
+int irintl (long double a) { return (int) rintl (a); }

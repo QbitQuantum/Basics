@@ -1,0 +1,1 @@
+void Sdl2Application::createContext() { createContext({}); }

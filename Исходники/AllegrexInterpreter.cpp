@@ -1,0 +1,1 @@
+static __inline u32 __clz(u32 rt) { return rt ? __lzcnt(rt) : 32; }

@@ -1,0 +1,1 @@
+void u32toa_amartin(uint32_t v, char* p) { itoa(v, p); }

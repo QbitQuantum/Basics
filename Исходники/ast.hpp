@@ -1,0 +1,1 @@
+ virtual std::string asString() { return lhs->asString() + " " + op.asString() +  " " + rhs->asString(); }

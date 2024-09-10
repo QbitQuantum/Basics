@@ -1,0 +1,1 @@
+long lrintl(long double a1) { return lrint(a1); }

@@ -1,0 +1,17 @@
+//////////////////////////////////////////////////////////////////////////
+//
+//	class CWinDB
+//
+//////////////////////////////////////////////////////////////////////////
+WINDB_API CWinDB::CWinDB(LPCTSTR lpszDB/* = NULL*/):
+	m_inst(lpszDB)
+{
+	Reset(true);
+	JET_ERR err = JetInit(m_inst);
+	if (err != JET_errSuccess){
+		throw CWinDBErrExp(err);
+	}
+
+	m_lpSes = m_inst.NewSession();
+
+}

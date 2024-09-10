@@ -1,0 +1,4 @@
+CCpDesktop::CCpDesktop()
+{
+	CoInitialize(NULL);
+}

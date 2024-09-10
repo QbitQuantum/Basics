@@ -1,0 +1,1 @@
+ Cpair operator()(const Cpair x){return intStrat_->operator()(x);};

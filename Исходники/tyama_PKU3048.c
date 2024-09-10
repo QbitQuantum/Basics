@@ -1,0 +1,9 @@
+main(m,n,x,i,r){createtable();scanf("%d",&n);
+  for(r=1;n;n--){
+    scanf("%d",&x);
+    for(i=19999;i;i--)
+      if(!table[i]&&!(x%i))break;
+    if(m<i)m=i,r=x;
+  }
+  printf("%d\n",r);
+}

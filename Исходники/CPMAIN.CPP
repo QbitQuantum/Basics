@@ -1,0 +1,61 @@
+void on(item i)
+{
+  switch(i)
+    {
+     case C	: setcolor(CYAN);
+		  ellipse(64,64,0,360,60,60);
+		  line(125,30,64,64);
+		  line(64,64,125,78);
+		  setfillstyle(LINE_FILL, CYAN);
+		  floodfill(60,60,CYAN);
+		  break;
+     case H	: setcolor(BLUE);
+		  rectangle(148,20,236,108);
+		  line(168,0,192,54);
+		  line(192,54,216,0);
+		  line(168,128,192,74);
+		  line(192,74,216,128);
+		  setfillstyle(INTERLEAVE_FILL, BLUE);
+		  floodfill(192,64,BLUE);
+		  break;
+     case E	: setcolor(GREEN);
+		  rectangle(266,20,364,108);
+		  moveto(380,10);
+		  lineto(320,37);
+		  lineto(380,64);
+		  lineto(320,91);
+		  lineto(380,118);
+		  setfillstyle(HATCH_FILL, GREEN);
+		  floodfill(270,30,GREEN);
+		  break;
+     case S1	: setcolor(YELLOW);
+		  moveto(510,10);
+		  lineto(390,50);
+		  lineto(510,50);
+		  lineto(390,100);
+		  break;
+     case S2	: setcolor(LIGHTGRAY);
+		  moveto(639,1);
+		  lineto(520,55);
+		  lineto(639,55);
+		  lineto(520,125);
+		  break;
+     case PLUS	: setcolor(WHITE);
+		  setfillstyle(WIDE_DOT_FILL, RED);
+		  bar(293,150,352,350);
+		  bar(220,216,420,282);
+		  moveto(293,150);
+		  lineto(352,150);
+		  lineto(352,216);
+		  lineto(420,216);
+		  lineto(420,282);
+		  lineto(352,282);
+		  lineto(352,350);
+		  lineto(293,350);
+		  lineto(293,282);
+		  lineto(220,282);
+		  lineto(220,216);
+		  lineto(293,216);
+		  lineto(293,150);
+    };
+}

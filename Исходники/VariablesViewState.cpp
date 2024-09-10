@@ -1,0 +1,4 @@
+VariablesViewState::~VariablesViewState()
+{
+	_Cleanup();
+}

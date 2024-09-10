@@ -1,0 +1,1 @@
+double HHVM_FUNCTION(tanh, double arg) { return tanh(arg); }

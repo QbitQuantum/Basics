@@ -1,0 +1,45 @@
+// Construct from components
+Foam::thoboisValve::thoboisValve
+(
+    const word& name,
+    const polyMesh& mesh,
+    const autoPtr<coordinateSystem>& valveCS,
+    const word& bottomPatchName,
+    const word& poppetPatchName,
+    const word& sidePatchName,
+    const word& stemPatchName,
+    const word& detachInCylinderPatchName,
+    const word& detachInPortPatchName,
+    const word& detachFacesName,
+    const graph& liftProfile,
+    const scalar minLift,
+    const scalar diameter,
+    const word& staticPointsName,
+    const word& movingPointsName,
+    const word& movingInternalPointsName,
+    const word& staticCellsName,
+    const word& movingCellsName
+)
+:
+    name_(name),
+    mesh_(mesh),
+    engineDB_(refCast<const engineTime>(mesh.time())),
+    csPtr_(valveCS),
+    bottomPatch_(bottomPatchName, mesh.boundaryMesh()),
+    poppetPatch_(poppetPatchName, mesh.boundaryMesh()),
+    sidePatch_(sidePatchName, mesh.boundaryMesh()),
+    stemPatch_(stemPatchName, mesh.boundaryMesh()),
+    detachInCylinderPatch_(detachInCylinderPatchName, mesh.boundaryMesh()),
+    detachInPortPatch_(detachInPortPatchName, mesh.boundaryMesh()),
+    detachFacesName_(detachFacesName),
+    liftProfile_(liftProfile),
+    liftProfileStart_(min(liftProfile_.x())),
+    liftProfileEnd_(max(liftProfile_.x())),
+    minLift_(minLift),
+    diameter_(diameter),
+    staticPointsName_(staticPointsName),
+    movingPointsName_(movingPointsName),
+    movingInternalPointsName_(movingInternalPointsName),
+    staticCellsName_(staticCellsName),
+    movingCellsName_(movingCellsName)
+{}

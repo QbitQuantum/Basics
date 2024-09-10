@@ -1,0 +1,4 @@
+ AudioDeviceManager::~AudioDeviceManager()
+ {
+     unInitialize();
+ }

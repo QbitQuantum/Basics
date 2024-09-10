@@ -1,0 +1,4 @@
+XUILife::~XUILife(void)
+{
+	OnExit();
+}

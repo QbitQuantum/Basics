@@ -1,0 +1,1 @@
+inline double _d0_cosh(double arg)         { return (sinh(arg)); }

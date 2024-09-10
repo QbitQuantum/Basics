@@ -1,0 +1,4 @@
+		MutexImpl::MutexImpl()
+		{
+			InitializeCriticalSection(&myMutex);
+		}

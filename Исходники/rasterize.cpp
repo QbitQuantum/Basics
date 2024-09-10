@@ -1,0 +1,1 @@
+template<typename T> T _max(T a, T b, T c) { return max(max(a,b),c); }

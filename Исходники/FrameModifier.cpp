@@ -1,0 +1,4 @@
+FrameModifier::~FrameModifier()
+{
+	Remove();
+}

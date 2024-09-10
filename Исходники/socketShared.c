@@ -1,0 +1,1 @@
+		int pollFunc(socketHandle *ufds, size_t nfds, int timeout){ return WSAPoll(ufds, nfds, timeout); }

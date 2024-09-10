@@ -1,0 +1,1 @@
+	inline void CleanCLI() { system("clean"); }

@@ -1,0 +1,4 @@
+ ~WebInputStream()
+ {
+     closeSocket();
+ }

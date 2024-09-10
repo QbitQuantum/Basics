@@ -1,0 +1,1 @@
+static int Is_wc_8(int c) { return iswctype(c, ctype[CTYPES+7].wtype); }

@@ -1,0 +1,3 @@
+	~CriticalSectionScope(){
+		critSec->Exit();
+	}

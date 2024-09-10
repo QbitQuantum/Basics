@@ -1,0 +1,4 @@
+CEncoder::~CEncoder()
+{
+  Free();
+}

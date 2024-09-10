@@ -1,0 +1,4 @@
+OutputMessage::OutputMessage()
+{
+	freeMessage();
+}

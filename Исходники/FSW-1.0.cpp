@@ -1,0 +1,5 @@
+void OLcommandModeCommand(){
+  setupOpenLog();
+  gotoCommandMode();
+
+}

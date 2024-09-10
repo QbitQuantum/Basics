@@ -1,0 +1,1 @@
+ SIMDType<float, 1> operator()(const SIMDType<float, 1> a) { return coshf(a.mVal); }

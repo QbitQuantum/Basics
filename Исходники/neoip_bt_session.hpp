@@ -1,0 +1,1 @@
+	void cnx_unlink(bt_session_cnx_t *cnx)	throw()	{ cnx_db.remove(cnx);		}

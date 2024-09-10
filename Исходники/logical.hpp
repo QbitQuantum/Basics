@@ -1,0 +1,1 @@
+KFR_SINTRIN bool bittestany(const i64avx512& x) { return _mm512_test_epi64_mask(*x, *x); }

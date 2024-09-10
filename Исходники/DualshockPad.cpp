@@ -1,0 +1,1 @@
+static inline uint16_t bswap16(uint16_t val) { return _byteswap_ushort(val); }

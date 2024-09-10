@@ -1,0 +1,4 @@
+void applyDiscount::sApply()
+{
+  accept();
+}

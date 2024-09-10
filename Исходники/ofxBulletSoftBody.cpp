@@ -1,0 +1,4 @@
+//--------------------------------------------------------------
+ofxBulletSoftBody::~ofxBulletSoftBody() {
+    remove();
+}

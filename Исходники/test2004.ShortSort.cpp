@@ -1,0 +1,1 @@
+ Type next() { return random.select(100,200); }

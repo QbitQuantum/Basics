@@ -1,0 +1,1 @@
+	inline static QChar map(const QChar& ch) { return ch.toUpper(); }

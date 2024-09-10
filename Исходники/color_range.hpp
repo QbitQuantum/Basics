@@ -1,0 +1,1 @@
+ ColorVal max(int p) const override { return ranges->max(p); }

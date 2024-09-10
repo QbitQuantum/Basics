@@ -1,0 +1,4 @@
+StackFrameValues::~StackFrameValues()
+{
+	_Cleanup();
+}

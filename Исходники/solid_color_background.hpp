@@ -1,0 +1,1 @@
+ Vector3f get_pos() const { return Vector3f(); }

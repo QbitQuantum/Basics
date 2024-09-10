@@ -1,0 +1,4 @@
+XnFileDevice::~XnFileDevice()
+{
+	Free();
+}

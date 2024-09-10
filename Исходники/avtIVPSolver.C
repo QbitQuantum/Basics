@@ -1,0 +1,20 @@
+void
+avtIVPSolver::AcceptStateVisitor(avtIVPStateHelper& aiss)
+{
+    aiss.Accept(order)
+        .Accept(yCur)
+        .Accept(vCur)
+        .Accept(h)
+        .Accept(h_max)
+        .Accept(tol)
+        .Accept(t)
+        .Accept(direction)
+        .Accept(periodic_boundary_x)
+        .Accept(periodic_boundary_y)
+        .Accept(periodic_boundary_z)
+        .Accept(period)
+        .Accept(baseTime)
+        .Accept(maxTime)
+        .Accept(convertToCartesian)
+        .Accept(convertToCylindrical);
+}

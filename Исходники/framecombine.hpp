@@ -1,0 +1,1 @@
+ ColorVal max(int p) const { if (p<3) return ranges->max(p); else if (p==3) return alpha_max; else return numPrevFrames; }

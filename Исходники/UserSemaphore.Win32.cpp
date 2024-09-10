@@ -1,0 +1,1 @@
+	UserSemaphore::UserSemaphore( uint32 maximumCount, uint32 initialCount ) : _semaphore( CreateSemaphoreW( nullptr, static_cast<LONG>( initialCount ), static_cast<LONG>( maximumCount ), nullptr ) ) {}

@@ -1,0 +1,11 @@
+///////////////////////////////////////////////////////////////////////////////
+// dtor
+CXScrollBar::~CXScrollBar()
+{
+	if (m_hCursor != NULL)
+	{
+		DestroyCursor(m_hCursor);
+	}
+
+	m_hCursor = NULL;
+}

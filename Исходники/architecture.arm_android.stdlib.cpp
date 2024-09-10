@@ -1,0 +1,1 @@
+INLINE float log_f32(float x) {return logf(x);}

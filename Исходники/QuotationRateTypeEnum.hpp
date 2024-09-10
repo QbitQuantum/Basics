@@ -1,0 +1,1 @@
+ int IValue(){return (int)(atoi(this->valueStr.c_str()));}

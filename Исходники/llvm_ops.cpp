@@ -1,0 +1,1 @@
+OSL_SHADEOP float osl_trunc_ff (float x) { return truncf(x); }

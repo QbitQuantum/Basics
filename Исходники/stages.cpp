@@ -1,0 +1,38 @@
+void PokemonStadium::Initialize() {
+	name = "pokemonstadium";
+	width = 512;
+	height = 256;
+	topdeath = -320;
+	bottomdeath = 256;
+	leftdeath = -192;
+	rightdeath = 704;
+	minhorizscroll = -128;
+	maxhorizscroll = 384;
+	minvertscroll = -192;
+	maxvertscroll = 64;
+	spawnx.push_back(160);
+	spawnx.push_back(288);
+	spawnx.push_back(96);
+	spawnx.push_back(352);
+	spawny.push_back(26);
+	spawny.push_back(26);
+	spawny.push_back(26);
+	spawny.push_back(26);
+	floors.push_back(Floor(42, 154, 428, 0, false));
+	floors.push_back(Floor(128, 110, 62, 0, true));
+	floors.push_back(Floor(324, 110, 62, 0, true));
+	walls.push_back(Wall(43, 154, 102, "left"));
+	walls.push_back(Wall(469, 154, 102, "right"));
+	ceilings.push_back(Ceiling(42, 216, 428));
+	ledges.push_back(Ledge(42, 154, "left"));
+	ledges.push_back(Ledge(470, 154, "right"));
+	songnames.push_back("Pokemon Gym / Evolution");
+	songnames.push_back("Battle Theme");
+	songnames.push_back("Lugia's Song");
+	songartists.push_back("Pokemon Red/Blue/Yellow");
+	songartists.push_back("Pokemon Gold/Silver/Crystal");
+	songartists.push_back("Pokemon 2000");
+	songs.push_back("SSBDS_Files/music/stages/pokemonstadium1.mp3");
+	songs.push_back("SSBDS_Files/music/stages/pokemonstadium2.mp3");
+	songs.push_back("SSBDS_Files/music/stages/pokemonstadium3.mp3");
+} // initializes the pokemon stadium stage

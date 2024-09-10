@@ -1,0 +1,21 @@
+void close() {
+  //Free loaded images
+  gTimeTextTexture.free();
+  gStartPromptTexture.free();
+  gPausePromptTexture.free();
+
+  //Free global font
+  TTF_CloseFont( gFont );
+  gFont = NULL;
+
+  //Destroy window
+  SDL_DestroyRenderer( gRenderer );
+  SDL_DestroyWindow( gWindow );
+  gWindow = NULL;
+  gRenderer = NULL;
+
+  //Quit SDL subsystems
+  TTF_Quit();
+  IMG_Quit();
+  SDL_Quit();
+}

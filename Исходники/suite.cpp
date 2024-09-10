@@ -1,0 +1,1 @@
+inline bool uncaught_exception() noexcept(true) {return current_exception() != nullptr;}

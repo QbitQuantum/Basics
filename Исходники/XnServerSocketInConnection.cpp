@@ -1,0 +1,4 @@
+ServerSocketInConnection::~ServerSocketInConnection()
+{
+	Shutdown();
+}

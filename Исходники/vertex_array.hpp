@@ -1,0 +1,1 @@
+	vertex_array& operator=( vertex_array lhs ) { swap(*this, lhs); return *this; }

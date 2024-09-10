@@ -1,0 +1,1 @@
+		Packet(Ip::Endpoint e, udp::Header h): header(h), parts(h.totalParts), created(time(0)), validParts(0), endpoint(e) {}

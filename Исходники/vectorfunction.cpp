@@ -1,0 +1,1 @@
+void MaximumScalarFieldFunction::Gradient(const Vector& x,Vector& grad) { grad.setZero(); grad(index)=One; }

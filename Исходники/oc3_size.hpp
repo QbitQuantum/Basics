@@ -1,0 +1,1 @@
+ SizeF operator+(const SizeF& other) const { return SizeF( x + other.x, y + other.y ); }

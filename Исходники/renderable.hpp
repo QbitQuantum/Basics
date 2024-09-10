@@ -1,0 +1,3 @@
+		~Renderable( ) {
+			renderables.remove( this );
+		}

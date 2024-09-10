@@ -1,0 +1,4 @@
+Cobolt::~Cobolt()
+{
+    Shutdown();
+}

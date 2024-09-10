@@ -1,0 +1,1 @@
+ double posMod(double posIn) const {return fmod(posIn,circ);}        // get position modulo circumference

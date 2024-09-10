@@ -1,0 +1,1 @@
+ double argument() const { return atan2(im, re); }

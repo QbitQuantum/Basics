@@ -1,0 +1,1 @@
+void test1(va_list args) { vprintf("%d %f %ld %c %s %% %x %X %i\n", args); }

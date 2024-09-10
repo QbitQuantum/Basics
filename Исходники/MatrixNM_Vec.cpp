@@ -1,0 +1,1 @@
+Matrix34 lookatRH(Vec3CR eye, Vec3CR at, Vec3CR up) {Vec3 z = (eye - at).normal(); Vec3 x = up.cross(z).normal(); Vec3 y = z.cross(x); return Matrix34(x.x, y.x, z.x, x.y, y.y, z.y, x.z, y.z, z.z,  x.dot(eye),  y.dot(eye),  z.dot(eye));}

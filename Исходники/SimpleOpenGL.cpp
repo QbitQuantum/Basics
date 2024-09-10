@@ -1,0 +1,4 @@
+ void onAnimationTimer()
+ {
+   invalidateRect();
+ }

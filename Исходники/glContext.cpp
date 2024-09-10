@@ -1,0 +1,4 @@
+GLContext::~GLContext()
+{
+	DestroyContext();
+}

@@ -1,0 +1,1 @@
+	void full_unlink(bt_swarm_full_t *full)	throw()	{ full_db.remove(full);		}

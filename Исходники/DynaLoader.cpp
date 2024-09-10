@@ -1,0 +1,4 @@
+DynaLoader::~DynaLoader ()
+{
+    freeLibrary();
+}

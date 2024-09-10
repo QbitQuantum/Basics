@@ -1,0 +1,1 @@
+ inline bool erase(const TKey key) { return remove(key); }

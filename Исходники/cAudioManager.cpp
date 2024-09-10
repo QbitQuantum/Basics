@@ -1,0 +1,4 @@
+	cAudioManager::~cAudioManager() 
+	{ 			
+		shutDown();
+	}

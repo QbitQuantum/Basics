@@ -1,0 +1,1 @@
+static void  app_clearerr(FILE *fp)	{ clearerr(fp); }

@@ -1,0 +1,1 @@
+template<class G, class N> inline double angle(const Vec3<G> v, const Vec3<N> u){return acos((v*u)/(v.distance()*u.distance()));}

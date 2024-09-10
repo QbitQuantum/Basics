@@ -1,0 +1,3 @@
+DXTest::~DXTest() {
+	shutDown();
+}

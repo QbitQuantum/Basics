@@ -1,0 +1,1 @@
+	void ProfileData::addTrackedName(const string& mTrackedName)	{ trackedNames.push_back(toLower(mTrackedName)); }

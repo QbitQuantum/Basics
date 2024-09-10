@@ -1,0 +1,1 @@
+ instance_scarlet_monastery(Map* pMap) : ScriptedInstance(pMap) {Initialize();};

@@ -1,0 +1,6 @@
+MfVideoOut::~MfVideoOut()
+{
+	MFShutdown();
+
+	CoUninitialize();
+}

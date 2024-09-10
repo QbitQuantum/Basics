@@ -1,0 +1,4 @@
+QQuestionsTableWidget::~QQuestionsTableWidget()
+{
+    deleteMenu();
+}

@@ -1,0 +1,1 @@
+CHAR*       FrmStrncat( CHAR* s, const CHAR* ct, UINT32 n )   { return strncat( s, ct, n ); }

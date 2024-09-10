@@ -1,0 +1,1 @@
+__device__ inline float  occaCuda_fastTanh(const float x){  return tanhf(x); }

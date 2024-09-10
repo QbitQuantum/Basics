@@ -1,0 +1,111 @@
+JNIEXPORT void JNICALL Java_com_lightcrafts_jai_opimage_ColorSelectionMaskOpImage_nativeUshortLoop
+(JNIEnv *env, jobject cls, jshortArray jsrcData, jbyteArray jdstData,
+ jint width, jint height, jintArray jsrcBandOffsets,
+ jint dstOffset, jint srcLineStride, jint dstLineStride,
+ jfloatArray jcolorSelection, jfloat wr, jfloat wg, jfloat wb)
+{
+    ushort *srcData = (ushort *) env->GetPrimitiveArrayCritical(jsrcData, 0);
+    byte *dstData = (byte *) env->GetPrimitiveArrayCritical(jdstData, 0);
+    int *srcBandOffsets = (int *) env->GetPrimitiveArrayCritical(jsrcBandOffsets, 0);
+    float *colorSelection = (float *) env->GetPrimitiveArrayCritical(jcolorSelection, 0);
+    
+    int srcROffset = srcBandOffsets[0];
+    int srcGOffset = srcBandOffsets[1];
+    int srcBOffset = srcBandOffsets[2];
+    
+    float hueLower                  = colorSelection[0];
+    float hueLowerFeather           = colorSelection[1];
+    float hueUpper                  = colorSelection[2];
+    float hueUpperFeather           = colorSelection[3];
+    float luminosityLower           = colorSelection[4];
+    float luminosityLowerFeather    = colorSelection[5];
+    float luminosityUpper           = colorSelection[6];
+    float luminosityUpperFeather    = colorSelection[7];
+    
+    int hueOffset = 0;
+    
+    if (hueLower < 0 || hueLower - hueLowerFeather < 0 || hueUpper < 0) {
+        hueLower += 1;
+        hueUpper += 1;
+        hueOffset = 1;
+    } else if (hueLower > 1 || hueUpper + hueUpperFeather > 1 || hueUpper > 1) {
+        hueOffset = -1;
+    }
+    
+    for (int row = 0; row < height; row++) {
+        for (int col = 0; col < width; col++) {
+            float r = srcData[3 * col + row * srcLineStride + srcROffset];
+            float g = srcData[3 * col + row * srcLineStride + srcGOffset];
+            float b = srcData[3 * col + row * srcLineStride + srcBOffset];
+            
+            // float hue = hue(r / (float) 0xffff, g / (float) 0xffff, b / (float) 0xffff) / (float) (2 * Math.PI);
+            
+            float cmax = (r > g) ? r : g;
+            if (b > cmax) cmax = b;
+            float cmin = (r < g) ? r : g;
+            if (b < cmin) cmin = b;
+            
+            float saturation;
+            if (cmax != 0)
+                saturation = (cmax - cmin) / cmax;
+            else
+                saturation = 0;
+
+#if defined(__ppc__)            
+            float luminosity = (float) (log1pf((wr * r + wg * g + wb * b)/0x100) / (8 * logf(2)));
+#else
+            float luminosity = (float) (fast_log2((wr * r + wg * g + wb * b)/0x100) / 8);
+#endif
+            float luminosityMask, colorMask;
+            
+            const float stmin = 0.01f;
+            const float stmax = 0.02f;
+            
+            const float ltmin = .01;
+            const float ltmax = .02;
+            
+            if (saturation > stmin && luminosity > ltmin) {
+                float h = hue(r, g, b) / (float) (2 * M_PI);
+                
+                if (hueOffset == 1 && h < hueLower - hueLowerFeather)
+                    h += 1;
+                else if (hueOffset == -1 && h < 0.5)
+                    h += 1;
+                
+                if (h >= hueLower && h <= hueUpper)
+                    colorMask = 1;
+                else if (h >= (hueLower - hueLowerFeather) && h < hueLower)
+                    colorMask = (h - (hueLower - hueLowerFeather))/hueLowerFeather;
+                else if (h > hueUpper && h <= (hueUpper + hueUpperFeather))
+                    colorMask = (hueUpper + hueUpperFeather - h)/hueUpperFeather;
+                else
+                    colorMask = 0;
+                
+                if (saturation < stmax)
+                    colorMask *= (saturation - stmin) / (stmax - stmin);
+
+                if (luminosity < ltmax)
+                    colorMask *= (luminosity - ltmin) / (ltmax - ltmin);
+            } else
+                colorMask = 0;
+            
+            if (luminosity >= luminosityLower && luminosity <= luminosityUpper)
+                luminosityMask = 1;
+            else if (luminosity >= (luminosityLower - luminosityLowerFeather) && luminosity < luminosityLower)
+                luminosityMask = (luminosity - (luminosityLower - luminosityLowerFeather))/luminosityLowerFeather;
+            else if (luminosity > luminosityUpper && luminosity <= (luminosityUpper + luminosityUpperFeather))
+                luminosityMask = (luminosityUpper + luminosityUpperFeather - luminosity)/luminosityUpperFeather;
+            else
+                luminosityMask = 0;
+            
+            colorMask *= luminosityMask;
+            
+            dstData[col + row * dstLineStride + dstOffset] = (byte) (0xff * colorMask);
+        }
+    }    
+    
+    env->ReleasePrimitiveArrayCritical(jsrcData, srcData, 0);
+    env->ReleasePrimitiveArrayCritical(jdstData, dstData, 0);
+    env->ReleasePrimitiveArrayCritical(jsrcBandOffsets, srcBandOffsets, 0);
+    env->ReleasePrimitiveArrayCritical(jcolorSelection, colorSelection, 0);
+}

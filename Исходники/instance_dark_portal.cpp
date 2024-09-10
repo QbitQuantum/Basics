@@ -1,0 +1,1 @@
+ instance_dark_portal(Map *map) : ScriptedInstance(map) {Initialize();};

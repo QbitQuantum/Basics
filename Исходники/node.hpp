@@ -1,0 +1,1 @@
+		float distance(Node<Coord> other) { return coordinate.distance(&other.coordinate); }

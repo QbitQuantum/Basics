@@ -1,0 +1,4 @@
+TextureMap::~TextureMap()
+{
+  Free();
+}

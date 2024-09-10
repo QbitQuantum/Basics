@@ -1,0 +1,4 @@
+WatcherThread::~WatcherThread()
+{
+    closeHandle();
+}

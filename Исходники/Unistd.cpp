@@ -1,0 +1,1 @@
+int getdtablesize() { return _getmaxstdio(); }

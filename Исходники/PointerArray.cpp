@@ -1,0 +1,4 @@
+PointerArray::~PointerArray()
+{
+	unInitialize();
+}

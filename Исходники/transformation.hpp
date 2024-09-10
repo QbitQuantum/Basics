@@ -1,0 +1,1 @@
+transform3d(const mat4& m) : mat(m), inv(m.inverse()) {}

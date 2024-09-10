@@ -1,0 +1,4 @@
+ChangeBrightness::~ChangeBrightness()
+{
+    FreeLibrary();
+}

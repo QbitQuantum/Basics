@@ -1,0 +1,8 @@
+///////////////////////////////////////////////////////////////////////////////
+/// \brief
+/// Terminate the repository manager.
+///
+void MgRepositoryManager::Terminate()
+{
+    CommitTransaction();
+}

@@ -1,0 +1,1 @@
+inline Vector3d midpoint_slerp(const Vector3d& a, const Vector3d &b){Vector3d n = (a+b)*0.5; n.normalize(); return n;}

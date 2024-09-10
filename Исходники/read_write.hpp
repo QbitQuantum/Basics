@@ -1,0 +1,1 @@
+KFR_INTRINSIC void write(cunaligned_t, i64* ptr, const i64avx512& x) { _mm512_storeu_epi64(ptr, x.v); }

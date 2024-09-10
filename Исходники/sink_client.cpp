@@ -1,0 +1,5 @@
+ // Destructor
+ ~Connection()
+ {
+   socket.close();
+ }

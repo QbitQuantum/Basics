@@ -1,0 +1,1 @@
+void ExprCopy::visit(const ExprTanh& e)  { if (unary_copy(e,tanh )) clone.insert(e,&tanh (EXPR)); }

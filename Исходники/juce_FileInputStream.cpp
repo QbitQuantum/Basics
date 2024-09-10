@@ -1,0 +1,4 @@
+FileInputStream::~FileInputStream()
+{
+    closeHandle();
+}

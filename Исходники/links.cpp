@@ -1,0 +1,4 @@
+CLinkObject::~CLinkObject()
+{
+    UnLink();
+}

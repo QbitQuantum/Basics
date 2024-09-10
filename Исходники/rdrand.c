@@ -1,0 +1,1 @@
+inline int rdrand64_step(uint64_t *x) { return _rdrand64_step ( (unsigned long long*) x ); }

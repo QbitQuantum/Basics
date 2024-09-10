@@ -1,0 +1,5 @@
+CallbackPipeline::~CallbackPipeline() {
+	ENTER();
+
+	EXIT();
+}

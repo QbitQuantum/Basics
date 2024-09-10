@@ -1,0 +1,4 @@
+ExpressionValues::~ExpressionValues()
+{
+	_Cleanup();
+}

@@ -1,0 +1,1 @@
+void PHPDebugStartDlg::OnOkUI(wxUpdateUIEvent& event) { event.Enable(!GetPath().IsEmpty()); }

@@ -1,0 +1,1 @@
+ mint pow(T n) const { return POW(*this,n); }

@@ -1,0 +1,3 @@
+void AudioDriver::Close() {
+	CloseDriver() ;
+};

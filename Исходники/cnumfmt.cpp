@@ -1,0 +1,4 @@
+CNumFmt::~CNumFmt()
+{
+UnLink();
+}

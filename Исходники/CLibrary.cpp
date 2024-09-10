@@ -1,0 +1,4 @@
+CLibrary::~CLibrary()
+{
+	Free();
+}

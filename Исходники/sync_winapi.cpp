@@ -1,0 +1,4 @@
+	void notify()
+	{
+		WakeAllConditionVariable(&cv);
+	}

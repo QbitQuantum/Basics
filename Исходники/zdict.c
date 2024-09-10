@@ -1,0 +1,1 @@
+static clock_t ZDICT_clockSpan(clock_t nPrevious) { return clock() - nPrevious; }

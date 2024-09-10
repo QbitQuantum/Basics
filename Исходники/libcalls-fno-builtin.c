@@ -1,0 +1,1 @@
+long double t20(char **x) { return strtold("123.4", x); }

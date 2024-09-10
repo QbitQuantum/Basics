@@ -1,0 +1,4 @@
+XNSDriverClient::~XNSDriverClient()
+{
+    CloseDriver();
+}

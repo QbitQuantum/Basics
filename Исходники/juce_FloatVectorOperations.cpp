@@ -1,0 +1,1 @@
+ static forcedinline ParallelType load1 (Type v) noexcept                        { return _mm_load1_pd (&v); }

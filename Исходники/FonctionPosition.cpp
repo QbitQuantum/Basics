@@ -1,0 +1,1 @@
+sf::Vector2f Fonction::bottomRightCorner(const sf::Texture& texture)	{ return VECTOR2F(texture.getSize()); }

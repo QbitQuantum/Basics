@@ -1,0 +1,4 @@
+wxsCoder::~wxsCoder()
+{
+    FlushAll();
+}

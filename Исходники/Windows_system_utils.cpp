@@ -1,0 +1,4 @@
+void InitCrashHandler()
+{
+    SetUnhandledExceptionFilter(StackTraceCrashHandler);
+}

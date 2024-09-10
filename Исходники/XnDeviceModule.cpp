@@ -1,0 +1,4 @@
+XnDeviceModule::~XnDeviceModule()
+{
+	Free();
+}

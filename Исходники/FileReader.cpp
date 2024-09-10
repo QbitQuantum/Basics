@@ -1,0 +1,4 @@
+void FileReader::stop()
+{
+    terminate();
+}

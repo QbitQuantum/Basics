@@ -1,0 +1,1 @@
+	bool operator == (const Interval<U>& v){ return min()==v.min() && max()==v.max(); }

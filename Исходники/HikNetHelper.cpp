@@ -1,0 +1,3 @@
+HikNetHelper::~HikNetHelper() {
+    freeLibrary();
+}

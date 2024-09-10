@@ -1,0 +1,1 @@
+ ColorVal max(int p) const { return ranges->max(p); }

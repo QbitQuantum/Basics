@@ -1,0 +1,1 @@
+ void destroyGUIOverlay(CGUIOverlay *pOverlay) {m_lGUIOverlays.remove(pOverlay); delete pOverlay;}

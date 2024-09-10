@@ -1,0 +1,12 @@
+flood(seed_x,seed_y,foreground_col,background_col)
+{
+if(getpixel(seed_x,seed_y)!=background_col&&getpixel(seed_x,seed_y)!=foreground_col)
+{
+putpixel(seed_x,seed_y,foreground_col);
+delay(10);
+flood(seed_x+1,seed_y,foreground_col,background_col);
+flood(seed_x-1,seed_y,foreground_col,background_col);
+flood(seed_x,seed_y+1,foreground_col,background_col);
+flood(seed_x,seed_y-1,foreground_col,background_col);
+}
+}

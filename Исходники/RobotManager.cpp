@@ -1,0 +1,4 @@
+RobotManager::~RobotManager(void)
+{
+	Free();
+}

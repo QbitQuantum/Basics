@@ -1,0 +1,1 @@
+static inline int poll(struct pollfd *pfd, unsigned long nfds, int timeout) { return WSAPoll(pfd, nfds, timeout); }

@@ -1,0 +1,1 @@
+ INLINE explicit avxi( const ssei& a ) : m256(_mm256_insertf128_si256(_mm256_castsi128_si256(a),a,1)) {}

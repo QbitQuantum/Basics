@@ -1,0 +1,1 @@
+ friend double cross(const point & p, const point & q) { return p.cross(q); }

@@ -1,0 +1,4 @@
+CPlotData::~CPlotData()
+{
+  _Cleanup();
+}

@@ -1,0 +1,1 @@
+SHORT file_quit(void) { closewindow(); }

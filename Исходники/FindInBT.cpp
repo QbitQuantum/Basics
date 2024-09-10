@@ -1,0 +1,48 @@
+TSharedRef<ITableRow> SFindInBT::OnGenerateRow( FSearchResult InItem, const TSharedRef<STableViewBase>& OwnerTable )
+{
+	return SNew(STableRow< TSharedPtr<FFindInBTResult> >, OwnerTable)
+		[
+			SNew(SHorizontalBox)
+			+SHorizontalBox::Slot()
+			.VAlign(VAlign_Center)
+			.AutoWidth()
+			[
+				SNew(SBox)
+				.WidthOverride(450.0f)
+				[
+					SNew(SHorizontalBox)
+					+SHorizontalBox::Slot()
+					.AutoWidth()
+					[
+						InItem->CreateIcon()
+					]
+					+SHorizontalBox::Slot()
+					.VAlign(VAlign_Center)
+					.AutoWidth()
+					.Padding(2, 0)
+					[
+						SNew(STextBlock)
+						.Text(FText::FromString(InItem->Value))
+						.HighlightText(HighlightText)
+					]
+				]
+			]
+			+SHorizontalBox::Slot()
+			.AutoWidth()
+			.VAlign(VAlign_Center)
+			[
+				SNew(STextBlock)
+				.Text(FText::FromString(InItem->GetNodeTypeText()))
+				.HighlightText(HighlightText)
+			]
+			+SHorizontalBox::Slot()
+			.HAlign(HAlign_Right)
+			.VAlign(VAlign_Center)
+			[
+				SNew(STextBlock)
+				.Text(FText::FromString(InItem->GetCommentText()))
+				.ColorAndOpacity(FLinearColor::Yellow)
+				.HighlightText(HighlightText)
+			]
+		];
+}

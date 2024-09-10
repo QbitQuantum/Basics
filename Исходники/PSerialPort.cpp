@@ -1,0 +1,4 @@
+CPSerialPort::~CPSerialPort()
+{
+	ClosePort();
+}

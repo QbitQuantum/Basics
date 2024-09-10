@@ -1,0 +1,58 @@
+Foam::displacementSBRStressFvMotionSolver::displacementSBRStressFvMotionSolver
+(
+    const polyMesh& mesh,
+    Istream& msData
+)
+:
+    fvMotionSolver(mesh),
+    points0_
+    (
+        pointIOField
+        (
+            IOobject
+            (
+                "points",
+                time().constant(),
+                polyMesh::meshSubDir,
+                mesh,
+                IOobject::MUST_READ,
+                IOobject::NO_WRITE
+            )
+        )
+    ),
+    pointDisplacement_
+    (
+        IOobject
+        (
+            "pointDisplacement",
+            fvMesh_.time().timeName(),
+            fvMesh_,
+            IOobject::MUST_READ,
+            IOobject::AUTO_WRITE
+        ),
+        pointMesh_
+    ),
+    cellDisplacement_
+    (
+        IOobject
+        (
+            "cellDisplacement",
+            mesh.time().timeName(),
+            mesh,
+            IOobject::READ_IF_PRESENT,
+            IOobject::AUTO_WRITE
+        ),
+        fvMesh_,
+        dimensionedVector
+        (
+            "cellDisplacement",
+            pointDisplacement_.dimensions(),
+            vector::zero
+        ),
+        cellMotionBoundaryTypes<vector>(pointDisplacement_.boundaryField())
+    ),
+    diffusivityPtr_
+    (
+        motionDiffusivity::New(*this, lookup("diffusivity"))
+    )
+{}

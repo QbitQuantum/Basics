@@ -1,0 +1,4 @@
+void installCrashHandler()
+{
+    SetUnhandledExceptionFilter(ExceptionHandler);
+}

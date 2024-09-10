@@ -1,0 +1,5 @@
+void
+ProcessTimer::SystemProcessTimer()
+{
+  HeapCompact();
+}

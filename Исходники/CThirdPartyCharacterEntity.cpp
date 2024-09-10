@@ -1,0 +1,5 @@
+    //-----------------------------------------------------------------------
+    CThirdPartyCharacterEntity::~CThirdPartyCharacterEntity()
+    {
+		unInitialize();
+    }

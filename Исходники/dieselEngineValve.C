@@ -1,0 +1,45 @@
+// Construct from components
+Foam::dieselEngineValve::dieselEngineValve
+(
+    const word& name,
+    const polyMesh& mesh,
+    const autoPtr<coordinateSystem>& valveCS,
+    const word& bottomPatchName,
+    const word& poppetPatchName,
+    const word& sidePatchName,
+    const word& stemPatchName,
+    const word& downInPortPatchName,
+    const word& downInCylinderPatchName,
+    const word& upInPortPatchName,
+    const word& upInCylinderPatchName,
+    const word& detachInCylinderPatchName,
+    const word& detachInPortPatchName,
+    const labelList& detachFaces,
+    const scalar& detachTol,
+    const graph& liftProfile,
+    const scalar minLift,
+    const scalar diameter
+)
+:
+    name_(name),
+    mesh_(mesh),
+    engineDB_(refCast<const engineTime>(mesh.time())),
+    csPtr_(valveCS),
+    bottomPatch_(bottomPatchName, mesh.boundaryMesh()),
+    poppetPatch_(poppetPatchName, mesh.boundaryMesh()),
+    sidePatch_(sidePatchName, mesh.boundaryMesh()),
+    stemPatch_(stemPatchName, mesh.boundaryMesh()),
+    downInPortPatch_(downInPortPatchName, mesh.boundaryMesh()),
+    downInCylinderPatch_(downInCylinderPatchName, mesh.boundaryMesh()),
+    upInPortPatch_(upInPortPatchName, mesh.boundaryMesh()),
+    upInCylinderPatch_(upInCylinderPatchName, mesh.boundaryMesh()),
+    detachInCylinderPatch_(detachInCylinderPatchName, mesh.boundaryMesh()),
+    detachInPortPatch_(detachInPortPatchName, mesh.boundaryMesh()),
+    detachFaces_(detachFaces),
+    detachTol_(detachTol),
+    liftProfile_(liftProfile),
+    liftProfileStart_(min(liftProfile_.x())),
+    liftProfileEnd_(max(liftProfile_.x())),
+    minLift_(minLift),
+    diameter_(diameter)
+{}

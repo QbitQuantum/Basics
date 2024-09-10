@@ -1,0 +1,1 @@
+inline static THREADHANDLE thread_id() { return GetCurrentThread(); }

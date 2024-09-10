@@ -1,0 +1,4 @@
+void CCEGLView::release()
+{
+    CloseWindow();
+}

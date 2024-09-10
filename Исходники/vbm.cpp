@@ -1,0 +1,4 @@
+VBObject::~VBObject(void)
+{
+    Free();
+}

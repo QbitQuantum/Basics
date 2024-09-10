@@ -1,0 +1,13 @@
+//////////////////////////////////////////////////////////////////////
+// Construction/Destruction
+//////////////////////////////////////////////////////////////////////
+bstr_t GUIDGen()
+{
+	GUID NewGuid;
+	CoCreateGuid(&NewGuid);
+	LPOLESTR strW;
+	StringFromCLSID(NewGuid,&strW);
+	CString str = strW;
+	CoTaskMemFree((void*)strW);
+	return str.Mid(1,36);
+}

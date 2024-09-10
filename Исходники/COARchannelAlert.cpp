@@ -1,0 +1,4 @@
+COARartifact::~COARartifact() 
+{
+  _Cleanup();
+}

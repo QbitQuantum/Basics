@@ -1,0 +1,6 @@
+/////////////////////////////////////////////////////////////////////////////
+//	OnGetDefBackColor
+COLORREF MyCug::OnGetDefBackColor(int section)
+{
+	return GetSysColor ( COLOR_APPWORKSPACE );
+}

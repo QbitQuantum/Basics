@@ -1,0 +1,1 @@
+ KFR_SINTRIN f64sse fract(f64sse x) { return x - floor(x); }

@@ -1,0 +1,6 @@
+void
+HTMLAnchorElement::OnDNSPrefetchDeferred()
+{
+  UnsetFlags(HTML_ANCHOR_DNS_PREFETCH_REQUESTED);
+  SetFlags(HTML_ANCHOR_DNS_PREFETCH_DEFERRED);
+}

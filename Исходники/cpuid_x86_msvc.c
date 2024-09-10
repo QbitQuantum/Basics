@@ -1,0 +1,1 @@
+uint32_t GetXCR0Eax(void) { return _xgetbv(0); }

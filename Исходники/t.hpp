@@ -1,0 +1,1 @@
+ Vehicle getInstance() { return Vehicle( o->getInstance() ); }

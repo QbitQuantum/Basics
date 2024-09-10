@@ -1,0 +1,1 @@
+ void print(void) const { printf("D::print\n"); exit(1); }
