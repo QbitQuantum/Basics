@@ -23,35 +23,82 @@ void __fastcall TForm1::Button1Click(TObject* Sender)
     OpenDialog1->InitialDir = "C:\\";
 
     // Show dialog
-    if (OpenDialog1->Execute())
+    if (!OpenDialog1->Execute())
     {
-        // If user selected a file, get its name
-        UnicodeString selectedFileName = OpenDialog1->FileName;
-        int dotPos = selectedFileName.LastDelimiter(L".");
+        return; // User canceled the dialog
+    }
 
-        // Check if dot is found
-        if (dotPos > 0)
-        {
-            UnicodeString fileExtension = selectedFileName.SubString(dotPos + 1, selectedFileName.Length() - dotPos);
+    // Get the selected file name
+    UnicodeString selectedFileName = OpenDialog1->FileName;
 
-            // Check if file extension is "json"
-            if (fileExtension.LowerCase() == "json")
-            {
-                Label1->Caption = selectedFileName;
-                Memo1->Lines->LoadFromFile(selectedFileName);
-                Memo1->ReadOnly = true;
-            }
-            else
-            {
-                // Show error message if extension does not match
-                ShowMessage("The selected file is not a JSON file.");
-            }
-        }
-        else
+    // Check if the file has a valid extension
+    if (!IsValidJsonFile(selectedFileName))
+    {
+        return;
+    }
+
+    // Display the selected file name
+    Label1->Caption = selectedFileName;
+
+    // Read and display the JSON content
+    if (!DisplayJsonContent(selectedFileName))
+    {
+        return;
+    }
+}
+//---------------------------------------------------------------------------
+bool __fastcall TForm1::IsValidJsonFile(const UnicodeString& fileName)
+{
+    int dotPos = fileName.LastDelimiter(L".");
+    if (dotPos < 0)
+    {
+        ShowMessage("The selected file does not have an extension.");
+        return false;
+    }
+
+    UnicodeString fileExtension = fileName.SubString(dotPos + 1, fileName.Length() - dotPos).LowerCase();
+    if (fileExtension != "json")
+    {
+        ShowMessage("The selected file is not a JSON file.");
+        return false;
+    }
+
+    return true;
+}
+//---------------------------------------------------------------------------
+bool __fastcall TForm1::DisplayJsonContent(const UnicodeString& fileName)
+{
+    if (!TFile::Exists(fileName))
+    {
+        ShowMessage("Файл не найден");
+        return false;
+    }
+
+    UnicodeString jsonContent = TFile::ReadAllText(fileName);
+
+    TJSONValue* jsonValue = TJSONObject::ParseJSONValue(jsonContent);
+    if (!jsonValue)
+    {
+        ShowMessage("Failed to parse JSON content.");
+        return false;
+    }
+
+    if (TJSONArray* jsonArray = (TJSONArray*)(jsonValue))
+    {
+        for (int i = 0; i < jsonArray->Count; i++)
         {
-            // Show error message if dot is not found
-            ShowMessage("The selected file does not have an extension.");
+            Memo1->Lines->Add(jsonArray->Items[i]->Format());
         }
     }
+    else
+    {
+        ShowMessage("The JSON content is not an array.");
+        delete jsonValue;
+        return false;
+    }
+
+    Memo1->ReadOnly = true;
+    delete jsonValue;
+    return true;
 }
 //---------------------------------------------------------------------------
