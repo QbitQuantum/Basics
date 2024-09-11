@@ -2,8 +2,8 @@ object Form1: TForm1
   Left = 0
   Top = 0
   Caption = 'Form1'
-  ClientHeight = 560
-  ClientWidth = 1055
+  ClientHeight = 551
+  ClientWidth = 1049
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
@@ -29,7 +29,7 @@ object Form1: TForm1
   object Memo1: TMemo
     Left = 8
     Top = 84
-    Width = 337
+    Width = 345
     Height = 486
     ScrollBars = ssBoth
     TabOrder = 1

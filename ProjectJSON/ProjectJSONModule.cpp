@@ -68,37 +68,25 @@ bool __fastcall TForm1::IsValidJsonFile(const UnicodeString& fileName)
 //---------------------------------------------------------------------------
 bool __fastcall TForm1::DisplayJsonContent(const UnicodeString& fileName)
 {
+    Memo1->ReadOnly = true;
     if (!TFile::Exists(fileName))
     {
-        ShowMessage("Файл не найден");
+        ShowMessage("File is not exists");
         return false;
     }
 
-    UnicodeString jsonContent = TFile::ReadAllText(fileName);
+    string jsonArray = TFile::ReadAllText(fileName);
 
-    TJSONValue* jsonValue = TJSONObject::ParseJSONValue(jsonContent);
-    if (!jsonValue)
+	if (TJSONArray* json = (TJSONArray*)TJSONObject::ParseJSONValue(jsonArray); json ? json->Count > 0 : false)
     {
-        ShowMessage("Failed to parse JSON content.");
-        return false;
-    }
-
-    if (TJSONArray* jsonArray = (TJSONArray*)(jsonValue))
-    {
-        for (int i = 0; i < jsonArray->Count; i++)
+        for (int i = 0; i < json->Count; i++)
         {
-            Memo1->Lines->Add(jsonArray->Items[i]->Format());
+            Memo1->Lines->Add(json->Items[i]->Format());
         }
-    }
-    else
-    {
-        ShowMessage("The JSON content is not an array.");
-        delete jsonValue;
-        return false;
+        delete json;
     }
 
-    Memo1->ReadOnly = true;
-    delete jsonValue;
+    
     return true;
 }
 //---------------------------------------------------------------------------
