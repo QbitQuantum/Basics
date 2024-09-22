@@ -1,6 +1,9 @@
 # Prerequisites
 *.d
 
+# Add
+*.filters
+
 # Compiled Object files
 *.slo
 *.lo
